@@ -1,0 +1,196 @@
+{
+ "_note": "SYNTHETIC. Response shapes copied from Nominatim jsonv2 (addressdetails=1) and the Census addressbatch CSV; coordinate values are invented near the right town and must never be quoted.",
+ "nominatim": {
+  "10321 tanner way|manassas|va|20110": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "38.7623",
+    "lon": "-77.5011",
+    "class": "building",
+    "type": "yes",
+    "addresstype": "building",
+    "display_name": "10321 Tanner Way, Manassas, Prince William County, Virginia, 20110, United States (SYNTHETIC)",
+    "address": {
+     "road": "Tanner Way",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us",
+     "house_number": "10321"
+    },
+    "importance": 0.3
+   }
+  ],
+  "7060 wellington rd|manassas|va|20109": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "38.7701",
+    "lon": "-77.539",
+    "class": "highway",
+    "type": "secondary",
+    "addresstype": "road",
+    "display_name": "Wellington Road, Manassas, Prince William County, Virginia, 20109, United States (SYNTHETIC)",
+    "address": {
+     "road": "Wellington Road",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us"
+    },
+    "importance": 0.3
+   }
+  ],
+  "9040 freedom center blvd|manassas|va|20110": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "38.7555",
+    "lon": "-77.496",
+    "class": "building",
+    "type": "industrial",
+    "addresstype": "building",
+    "display_name": "9040 Freedom Center Boulevard, Manassas, Virginia, 20110, United States (SYNTHETIC)",
+    "address": {
+     "road": "Freedom Center Boulevard",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us",
+     "house_number": "9040"
+    },
+    "importance": 0.3
+   }
+  ],
+  "9400 godwin drive|manassas|va|20110": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "38.7399",
+    "lon": "-77.5018",
+    "class": "place",
+    "type": "city",
+    "addresstype": "city",
+    "display_name": "Manassas, Virginia, United States (SYNTHETIC)",
+    "address": {
+     "road": "Manassas",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us"
+    },
+    "importance": 0.3
+   }
+  ],
+  "10880 airman avenue|manassas|va|20110": [],
+  "7400 infantry ridge road|manassas|va|20109": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "38.7719",
+    "lon": "-77.5301",
+    "class": "office",
+    "type": "yes",
+    "addresstype": "building",
+    "display_name": "7400 Infantry Ridge Road, Manassas, Virginia, 20109, United States (SYNTHETIC)",
+    "address": {
+     "road": "Infantry Ridge Road",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us",
+     "house_number": "7400"
+    },
+    "importance": 0.3
+   }
+  ],
+  "24214 quail ridge lane|aldie|va|20105": [],
+  "21630 red rum drive|ashburn|va|20147": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "39.0217",
+    "lon": "-77.4617",
+    "class": "building",
+    "type": "yes",
+    "addresstype": "building",
+    "display_name": "21630 Red Rum Drive, Ashburn, Loudoun County, Virginia, 20147, United States (SYNTHETIC)",
+    "address": {
+     "road": "Red Rum Drive",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us",
+     "house_number": "21630"
+    },
+    "importance": 0.3
+   }
+  ],
+  "9554 westover hills blvd|san antonio|tx|": [
+   {
+    "place_id": 1,
+    "licence": "Data (c) OpenStreetMap contributors, ODbL 1.0. SYNTHETIC FIXTURE VALUES",
+    "osm_type": "way",
+    "osm_id": 1,
+    "lat": "29.461",
+    "lon": "-98.695",
+    "class": "building",
+    "type": "yes",
+    "addresstype": "building",
+    "display_name": "9554 Westover Hills Boulevard, San Antonio, Bexar County, Texas, 78251, United States (SYNTHETIC)",
+    "address": {
+     "road": "Westover Hills Boulevard",
+     "city": "Manassas",
+     "state": "Virginia",
+     "postcode": "20110",
+     "country_code": "us",
+     "house_number": "9554"
+    },
+    "importance": 0.3
+   }
+  ]
+ },
+ "census_batch": {
+  "va-deq-74081": {
+   "status": "Match",
+   "match_type": "Non_Exact",
+   "matched_address": "7060 WELLINGTON RD, MANASSAS, VA, 20109",
+   "lat": 38.7705,
+   "lon": -77.5402
+  },
+  "va-deq-74161": {
+   "status": "Match",
+   "match_type": "Exact",
+   "matched_address": "9400 GODWIN DR, MANASSAS, VA, 20110",
+   "lat": 38.7633,
+   "lon": -77.5035
+  },
+  "va-deq-74107": {
+   "status": "No_Match",
+   "match_type": "",
+   "matched_address": "",
+   "lat": null,
+   "lon": null
+  },
+  "va-deq-74274": {
+   "status": "Tie",
+   "match_type": "",
+   "matched_address": "",
+   "lat": null,
+   "lon": null
+  }
+ }
+}

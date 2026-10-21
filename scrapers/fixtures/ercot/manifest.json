@@ -1,0 +1,24 @@
+{
+  "_note": "ERCOT fixture set. Each text below is copied VERBATIM from the cited PDF as returned by WebFetch on 2026-10-20 (quoted in consecutive fragments, re-joined with single spaces). Only the passages that carry large-load figures are reproduced, not whole documents. The April 2026 Monthly excerpt is also rendered to a small PDF by make_fixtures.py so the real PDF text-extraction path is exercised.",
+  "documents": [
+    {
+      "file": "ERCOT-Monthly-April-2026-FINAL_p4_excerpt.pdf",
+      "text_file": "ERCOT-Monthly-April-2026-FINAL_p4_excerpt.txt",
+      "source_url": "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf",
+      "page": 4,
+      "verbatim": true
+    },
+    {
+      "text_file": "9-Interconnection-and-Grid-Analysis-Update_2026-04-13_slides2-3_excerpt.txt",
+      "source_url": "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf",
+      "page": "2-3",
+      "verbatim": true
+    },
+    {
+      "text_file": "ERCOT-Monthly-Operational-Overview-August-2026_p9_excerpt.txt",
+      "source_url": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+      "page": 9,
+      "verbatim": true
+    }
+  ]
+}

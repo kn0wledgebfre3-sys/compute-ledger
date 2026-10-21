@@ -1,0 +1,636 @@
+CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 1)
+Texas Commission on Environmental Quality
+Please print or type all information. Direct any questions regarding this application form to the Air Permits Division at
+(512)239-1250 or to the Texas Commission on Environmental Quality, Office of Air, Air-Permits Division (MC 163),
+P.O. Box 13087, Austin, Texas 78711-3087.
+I. Company Identifying Information
+A. Company Name: WinnerLLC
+B. Customer Reference Number (CN): CN 604890723
+C. Submittal Date (mm/dd/yyyy): 10/13/2025
+II. Site Information
+A. Site Name: Alliance
+B. Regulated Entity Reference Number (RN): RN 108641507
+C. Indicate affected state(s) required to review permit application: (Check the appropriate box[es].)
+AR CO KS LA NM OK N/A
+D. Indicate all pollutants for which the site is a major source based on the site’s potential to emit:
+(Check the appropriate box[es].)
+VOC ✔ NO SO PM CO Pb HAPS
+X 2 10
+Other:
+E. Is the site a non-major source subject to the Federal Operating Permit Program? Yes No
+F. Is the site within a local program area jurisdiction? Yes No
+G. Will emissions averaging be used to comply with any Subpart of 40 CFR Part 63? Yes No
+H. Indicate the 40 CFR Part 63 Subpart(s) that will use emissions averaging:
+III. Permit Type
+A. Type of Permit Requested: (Select only one response )
+Site Operating Permit (SOP) Temporary Operating Permit (TOP) General Operating Permit (GOP)
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 2)
+Texas Commission on Environmental Quality
+IV. Initial Application Information (Complete for Initial Issuance Applications Only.)
+A. Is this submittal an abbreviated or a full application? Abbreviated Full
+B. If this is a full application, is the submittal a follow-up to an abbreviated application? Yes No
+C. If this is an abbreviated application, is this an early submittal for a combined
+SOP and Acid Rain permit? Yes No
+D. Has an electronic copy of this application been submitted (or is being submitted) to EPA?
+(Refer to the form instructions for additional information.) Yes No
+E. (cid:43)(cid:68)(cid:86)(cid:3)(cid:87)(cid:75)(cid:72)(cid:3)(cid:85)(cid:72)(cid:84)(cid:88)(cid:76)(cid:85)(cid:72)(cid:71)(cid:3)(cid:51)(cid:88)(cid:69)(cid:79)(cid:76)(cid:70)(cid:3)(cid:44)(cid:81)(cid:89)(cid:82)(cid:79)(cid:89)(cid:72)(cid:80)(cid:72)(cid:81)(cid:87)(cid:3)(cid:51)(cid:79)(cid:68)(cid:81)(cid:3)(cid:69)(cid:72)(cid:72)(cid:81)(cid:3)(cid:76)(cid:81)(cid:70)(cid:79)(cid:88)(cid:71)(cid:72)(cid:71)(cid:3)(cid:90)(cid:76)(cid:87)(cid:75)(cid:3)(cid:87)(cid:75)(cid:76)(cid:86)(cid:3)(cid:68)(cid:83)(cid:83)(cid:79)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:34) Yes No
+V. Confidential Information
+A. Is confidential information submitted in conjunction with this application? Yes No
+VI. Responsible Official (RO) Identifying Information
+RO Name Prefix: ( Mr. Mrs. Ms. Dr.)
+RO Full Name: RandyRidgway
+RO Title: DataCenterCampusFacilityDirector
+Employer Name:
+Mailing Address: 4500LikeWay
+City: FortWorth
+State: Texas
+ZIP Code: 76177
+Territory: N/A
+Country: USA
+Foreign Postal Code: N/A
+Internal Mail Code:
+Telephone No.: (682)216-4937
+Fax No.:
+Email: rridgway@meta.com
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 3)
+Texas Commission on Environmental Quality
+VII. Technical Contact Identifying Information (Complete if different from RO.)
+Technical Contact Name Prefix: ( Mr. Mrs. Ms. Dr.)
+Technical Contact Full Name: CarlyWittman
+Technical Contact Title: ManagingConsultant
+Employer Name: Ramboll
+Mailing Address: 10851MastinBoulevard,Suite100
+City: OverlandPark
+State: KS
+ZIP Code: 66210
+Territory: N/A
+Country: USA
+Foreign Postal Code: N/A
+Internal Mail Code:
+Telephone No.: 913-553-5941
+Fax No.:
+Email: cwittman@ramboll.com
+VIII. Reference Only Requirements (For reference only.)
+A. State Senator: TanParker
+B. State Representative: NateSchatzline,BenBumgarner
+C. Has the applicant paid emissions fees for the most recent agency fiscal year
+(Sept. 1 -August 31)? Yes No N/A
+D. Is the site subject to bilingual notice requirements pursuant to 30 TAC § 122.322? Yes No
+E. Indicate the alternate language(s) in which public notice is required: Spanish
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 4)
+Texas Commission on Environmental Quality
+IX. Off-Site Permit Request
+(Optional for applicants requesting to hold the FOP and records at an off-site location.)
+A. Office/Facility Name:
+B. Physical Address:
+City:
+State:
+ZIP Code:
+Territory:
+Country:
+Foreign Postal Code:
+C. Physical Location:
+D. Contact Name Prefix:( Mr. Mrs. Ms. Dr.)
+Contact Full Name:
+E. Telephone No.:
+X. Application Area Information
+A. Area Name: AllianceSite
+B. Physical Address: 4500LikeWay
+City: FortWorth
+State: Texas
+ZIP Code: 76177
+C. Physical Location:
+4500LikeWay
+D. Nearest City: FortWorth
+E. State: Texas
+F. ZIP Code: 76177
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 5)
+Texas Commission on Environmental Quality
+X. Application Area Information (continued)
+G. Latitude (nearest second): 32°59’02”
+H. Longitude (nearest second): 97° 15’17”
+I. Are there any emission units that were not in compliance with the applicable
+requirements identified in the application at the time of application submittal? Yes No
+J. Indicate the estimated number of emission units in the application area:
+K. Are there any emission units in the application area subject to the Acid Rain Program? Yes No
+L. Affected Source Plant Code (or ORIS/Facility Code):
+XI. Public Notice
+(Complete this section for SOP Applications and Acid Rain Permit Applications only.)
+A. Name of a public place to view application and draft permit: WataugaCityHall
+B. Physical Address: 7105WhitleyRoad
+City: Watauga
+ZIP Code: 76148
+C. Contact Person (Someone who will answer questions from the public during the public notice period):
+Contact Name Prefix: ( Mr. Mrs. Ms. Dr.):
+Contact Person Full Name: LailaNasr
+Contact Mailing Address: 1MetaWay
+City: MenloPark
+State: California
+ZIP Code: 94025
+Territory: N/A
+Country: USA
+Foreign Postal Code: N/A
+Internal Mail Code:
+Telephone No.: 650-308-7461
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 6)
+Texas Commission on Environmental Quality
+XII. Delinquent Fees and Penalties
+Notice: This form will not be processed until all delinquent fees and/or penalties owed to TCEQ or the Office of
+Attorney General on behalf of TCEQ are paid in accordance with the “Delinquent Fee and Penalty Protocol.”
+Complete Sections XIII and XIV for Acid Rain Permit and CSAPR applications only. Please include a copy of the
+Certificate of Representation submitted to EPA.
+XIII. Designated Representative (DR) Identifying Information
+DR Name Prefix: ( Mr. Mrs. Ms. Dr.)
+DR Full Name:
+DR Title:
+Employer Name:
+Mailing Address:
+City:
+State:
+ZIP Code:
+Territory:
+Country:
+Foreign Postal Code:
+Internal Mail Code:
+Telephone No.:
+Fax No.:
+Email:
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____Federal Operating Permit Program
+Site Information Summary
+Form OP-1 (Page 7)
+Texas Commission on Environmental Quality
+Complete Sections XIII and XIV for Acid Rain Permit and CSAPR applications only. Please include a copy of the
+Certificate of Representation submitted to EPA.
+XIV. Alternate Designated Representative (ADR) Identifying Information
+ADR Name Prefix: ( Mr. Mrs. Ms. Dr.)
+ADR Full Name:
+ADR Title:
+Employer Name:
+Mailing Address:
+City:
+State:
+ZIP Code:
+Territory:
+Country:
+Foreign Postal Code:
+Internal Mail Code:
+Telephone No.:
+Fax No.:
+Email:
+PRINT FORM RESET FORM
+TCEQ 10002 (APD ID 251v2, revised 07/24) OP-1
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+OP-2 – Application for Permit Revision/Renewal
+ConfidentialCONFIDENTIAL
+Federal Operating Permit Program
+Application for Permit Revision/Renewal
+Form OP-2-Table 1
+Texas Commission on Environmental Quality
+Date: 10/15/2025
+Permit No.: O4280
+Regulated Entity No.: RN108641507
+Company Name: WinnerLLC
+For Submissions to EPA
+Has an electronic copy of this application been submitted (or is being submitted) to EPA? YES NO
+I. Application Type
+Indicate the type of application:
+Renewal
+Streamlined Revision (Must include provisional terms and conditions as explained in the instructions.)
+Significant Revision
+Revision Requesting Prior Approval
+Administrative Revision
+Response to Reopening
+II. Qualification Statement
+For SOP Revisions Only YES NO
+For GOP Revisions Only YES NO
+TCEQ-10059 (APDG 5722v26, revised 03/22) OP-2
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V release 03/10) Page _____ of _______CONFIDENTIAL
+Federal Operating Permit Program
+Application for Permit Revision/Renewal
+Form OP-2-Table 1 (continued)
+Texas Commission on Environmental Quality
+III. Major Source Pollutants (Complete this section if the permit revision is due to a change at the site or change in regulations.)
+Indicate all pollutants for which the site is a major source based on the site’s potential to emit:
+(Check the appropriate box[es].)
+VOC NO SO PM CO Pb HAP
+X 2 10
+Other:
+IV. Reference Only Requirements (For reference only)
+Has the applicant paid emissions fees for the most recent agency fiscal year (September 1 - August 31)? YES NO N/A
+V. Delinquent Fees and Penalties
+Notice: This form will not be processed until all delinquent fees and/or penalties owed to the TCEQ or the Office of the Attorney General on behalf
+of the TCEQ are paid in accordance with the Delinquent Fee and penalty protocol.
+TCEQ-10059 (APDG 5722v26, revised 03/22) OP-2
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V release 03/10) Page _____ of ______CONFIDENTIAL
+Federal Operating Permit Program
+Application for Permit Revision/Renewal
+Form OP-2-Table 2
+Texas Commission on Environmental Quality
+Date: 12/15/2025
+Permit No.: O4280
+Regulated Entity No.: RN108641507
+Company Name: WinnerLLC
+Using the table below, provide a description of the revision.
+Unit/Group Process
+NSR Description of (cid:38)hange and Provisional
+Revision No. Revision Code New Unit ID No. Applicable Form Authorization Terms and Conditions
+N/A
+TCEQ-10059 (APDG 5722v26, revised 03/22) OP-2
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V release 03/10) Page _____ of ______CONFIDENTIAL
+Federal Operating Permit Program
+Application for Permit Revision/Renewal
+Form OP-2-Table 3
+Texas Commission on Environmental Quality
+Date: 08/15/2025
+Permit No.: O4280
+Regulated Entity No.: RN108641507
+Company Name: WinnerLLC
+I. Significant Revision (Complete this section if you are submitting a significant revision application or a renewal application that includes a
+significant revision.)
+A. Is the site subject to bilingual requirements pursuant to 30 TAC § 122.322? YES NO
+B. Indicate the alternate language(s) in which public notice is required: Spanish
+C. Will, there be a change in air pollutant emissions as a result of the significant revision? YES NO
+TCEQ-10059 (APDG 5722v26, revised 03/22) OP-2
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V release 03/10) Page _____ of ______CONFIDENTIAL
+Federal Operating Permit Program
+Application for Permit Revision/Renewal
+Form OP-2-Table 3
+Texas Commission on Environmental Quality
+Using the table below, indicate the air pollutant(s) that will be changing and include a brief description of the change in pollutant emissions for each
+pollutant:
+Pollutant Description of the Change in Pollutant Emissions
+N/A
+TCEQ-10059 (APDG 5722v26, revised 03/22) OP-2
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V release 03/10) Page _____ of ______CONFIDENTIAL
+OP-REQ1 – Application Area-Wide Applicability Determinations and General
+Information
+ConfidentialCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIALCONFIDENTIAL
+OP-REQ2 – Negative Applicable/Superseded Requirement Determinations
+ConfidentialForm OP-REQ2
+Negative Applicable/Superseded Requirement Determinations
+Texas Commission on Environmental Quality
+Date Permit No. Regulated Entity No.
+12/05/2025 O4280 108641507
+TCEQ-10017 (APD-ID156v2.0, Revised 07/22) Form OP-REQ2 - Negative Applicable/Superseded Requirement Determinations
+This form for use by facilities subject to air quality permit requirements and
+may be revised periodically (Title V Release 10/07) Page ______ of ______CONFIDENTIAL
+Negative
+Unit/Group/Process Unit/Group/Process Potentially Applicable Applicability/Superseded Negative Applicability/Superseded
+Unit AI Revision No. ID No. Applicable Form Regulatory Name Requirement Citation Requirement Reason
+GRPTANK UA3 NSPS Subpart K §60.110 The diesel belly tanks at the Alliance
+Site are new units constructed after
+1978 with a storage capacity less than
+40,000 gallons. Therefore, NSPS
+Subpart K does not apply.
+GRPTANK UA3 NSPS Subpart Ka §60.110a The diesel belly tanks at the Alliance
+Site are new units constructed after
+1984 with a storage capacity less than
+40,000 gallons. Therefore, NSPS
+Subpart Ka does not apply.
+GRPTANK UA3 NSPS Subpart Kb §60.110b(b) The diesel belly tanks at the Alliance
+Site have a storage capacity less than
+19,812.9 gallons. Additionally, diesel
+fuel has a maximum true vapor pressure
+less than 2.2 psia. Therefore, NSPS
+Subpart Kb does not apply.
+GRPTANK UA3 NSPS Subpart Kc §60.110c The diesel belly tanks at the Alliance
+Site have a capacity of less than 20,000
+gallons and were constructed prior to
+2023. Therefore, NSPS Subpart Kc
+does not apply.
+GRPTANK UA3 NESHAP Subpart EEEE §63.2330 The Alliance Site is not a major source
+of HAP emissions. Therefore, NESHAP
+Subpart EEEE does not apply.
+GRPTANK UA3 Chapter 115 §115.111(a)(1) The vapor pressure of diesel in the
+storage tanks at the Alliance Site is less
+than 1.5 psia. Therefore, 30 TAC
+Chapter 115 does not apply. The
+Alliance Site will maintain records of
+the true vapor pressure of the diesel fuel
+stored in its storage tanks
+TCEQ-10017 (Revised 05-15-02) OP-REQ2 Instructions
+This form for use by facilities subject to air quality permit
+(cid:51)(cid:68)(cid:74)(cid:72)(cid:72)(cid:3)(cid:66)(cid:66)(cid:66)(cid:66)(cid:3)(cid:82)(cid:73)(cid:73)(cid:3)(cid:66)(cid:66)(cid:66)
+requirements and may be revised periodically [APDG 5392v21]GRPCOOL UA13 NESHAP Subpart Q §63.400(a) The Alliance Site is not a major source
+of HAP emissions. Therefore, 40 CFR
+63 Subpart Q does not apply.
+TCEQ-10017 (Revised 05-15-02) OP-REQ2 Instructions
+This form for use by facilities subject to air quality permit
+(cid:51)(cid:68)(cid:74)(cid:72)(cid:72)(cid:3)(cid:66)(cid:66)(cid:66)(cid:66)(cid:3)(cid:82)(cid:73)(cid:73)(cid:3)(cid:66)(cid:66)(cid:66)
+requirements and may be revised periodically [APDG 5392v21]CONFIDENTIAL
+OP-ACPS – Application Compliance Plan and Schedule
+ConfidentialCONFIDENTIAL
+Texas Commission on Environmental Quality
+Form OP-ACPS
+Application Compliance Plan and Schedule
+Date: (cid:20)(cid:21)(cid:18)(cid:19)(cid:24)(cid:18)(cid:21)(cid:19)(cid:21)(cid:24) Regulated Entity No.: (cid:53)(cid:49)(cid:20)(cid:19)(cid:27)(cid:25)(cid:23)(cid:20)(cid:24)(cid:19)(cid:26) Permit No.: (cid:50)(cid:23)(cid:21)(cid:27)(cid:19)
+Company Name: (cid:58)(cid:76)(cid:81)(cid:81)(cid:72)(cid:85)(cid:3)(cid:47)(cid:47)(cid:38) Area Name: (cid:36)(cid:79)(cid:79)(cid:76)(cid:68)(cid:81)(cid:70)(cid:72)(cid:3)(cid:54)(cid:76)(cid:87)(cid:72)
+(cid:120) Part 1 of this form must be submitted with all initial FOP applications and renewal applications.
+(cid:120) The Responsible Official must use Form OP-CRO1 (Certification by Responsible Official) to certify
+information contained in this form in accordance with 30 TAC § 122.132(d)(8).
+Part 1
+A. Compliance Plan — Future Activity Committal Statement
+The Responsible Official commits, utilizing reasonable effort, to the following:
+As the responsible official it is my intent that all emission units shall continue to be in compliance with all
+applicable requirements they are currently in compliance with, and all emission units shall be in compliance
+by the compliance dates with any applicable requirements that become effective during the permit term.
+B. Compliance Certification - Statement for Units in Compliance*
+(Indicate response by entering an “X” in the appropriate column)
+1. With the exception of those emission units listed in the Compliance Schedule section YES NO
+of this form (Part 2, below), and based, at minimum, on the compliance method
+specified in the associated applicable requirements, are all emission units addressed
+in this application in compliance with all their respective applicable requirements as
+identified in this application?
+2. Are there any non-compliance situations addressed in the Compliance Schedule YES NO
+Section of this form (Part 2)?
+3. If the response to Item B.2, above, is “Yes,” indicate the total number of Part 2
+attachments included in this submittal. (For reference only)
+* For Site Operating Permits (SOPs), the complete application should be consulted for applicable
+requirements and their corresponding emission units when assessing compliance status.
+For General Operating Permits (GOPs), the application documentation, particularly Form OP-REQ1
+should be consulted as well as the requirements contained in the appropriate General Permits portion of
+30 TAC Chapter 122.
+Compliance should be assessed based, at a minimum, on the required monitoring, testing, record
+keeping, and/or reporting requirements, as appropriate, associated with the applicable requirement in
+question.
+TCEQ - 10100 (APDG 5876v4, Revised 07/17) OP-ACPS
+Thisform is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Texas Commission on Environmental Quality
+Form OP-ACPS
+Application Compliance Plan and Schedule
+Date: Regulated Entity No.: Permit No.:
+Company Name: Area Name:
+Part 2
+A. Compliance Schedule
+If there are non-compliance situations ongoing at time of application, then complete a separate OP-ACPS
+Part 2 for each separate non-compliance situation. (See form instruction for details.) If there are no
+non-compliance situations ongoing at time of application, then this section is not required to be completed.
+1. Specific Non-Compliance Situation
+Unit/Group/Process ID No.(s):
+SOP Index No.:
+Pollutant:
+Applicable Requirement
+Citation Text Description
+2. Compliance Status Assessment Method and Records Location
+Citation Text Description Location of Records/Documentation
+3. Non-compliance Situation Description
+4. Corrective Action Plan Description
+5. List of Activities/Milestones to Implement the Corrective Action Plan
+TCEQ - 10100 (APDG 5876v4, Revised 07/17) OP-ACPS
+This form is for use by sources subject to air quality permit requirements
+and may be revised periodically. Page _____ of _____CONFIDENTIAL
+Texas Commission on Environmental Quality
+Form OP-ACPS
+Application Compliance Plan and Schedule
+Date: Regulated Entity No.: Permit No.:
+Company Name: Area Name:
+Part 2 (continued)
+6. Previously Submitted Compliance Plan(s)
+Type of Action Date Submitted
+7. Progress Report Submission Schedule
+Reset Form
+TCEQ - 10100 (APDG 5876v4, Revised 07/17) OP-ACPS
+This form is for use by sources subject to air quality permit requirements
+andmay be revised periodically. Page _____ of _____CONFIDENTIAL
+OP-CRO1 – Certification by Responsible Official
+ConfidentialCONFIDENTIAL
+Form OP-CRO1
+Certification by Responsible Official
+Federal Operating Permit Program
+Texas Commission on Environmental Quality
+All initial issuance, revision, renewal, and reopening permit application submittals requiring certification must be
+addressed using this form. Updates to site operating permit (SOP) and temporary operating permit (TOP) applications,
+other than public notice verification materials, must be certified prior to authorization of public notice or start of public
+announcement. Updates to general operating permit (GOP) applications must be certified prior to receiving an
+authorization to operate under a GOP.
+I. Identifying Information
+RN: (cid:53)(cid:49)(cid:20)(cid:19)(cid:27)(cid:25)(cid:23)(cid:20)(cid:24)(cid:19)(cid:26)
+CN: (cid:38)(cid:49)(cid:25)(cid:19)(cid:23)(cid:27)(cid:28)(cid:19)(cid:26)(cid:21)(cid:22)
+Account No.: (cid:49)(cid:18)(cid:36)
+Permit No.: (cid:50)(cid:23)(cid:21)(cid:27)(cid:19)
+Project No.: (cid:55)(cid:37)(cid:36)
+Area Name: (cid:36)(cid:79)(cid:79)(cid:76)(cid:68)(cid:81)(cid:70)(cid:72)
+Company Name: (cid:58)(cid:76)(cid:81)(cid:81)(cid:72)(cid:85)(cid:3)(cid:47)(cid:47)(cid:38)
+II. Certification Type (Please mark appropriate box)
+(cid:59) Responsible Official Representative Duly Authorized(cid:3)(cid:53)(cid:72)(cid:83)(cid:85)(cid:72)(cid:86)(cid:72)(cid:81)(cid:87)(cid:68)(cid:87)(cid:76)(cid:89)(cid:72)
+III. Submittal Type (Please mark appropriate box) (Only one response can be accepted per form)
+SOP/TOP Initial Permit Application (cid:59) Permit Revision, Renewal, or Reopening
+GOP Initial Permit Application Update to Permit Application
+Other:
+TCEQ-10009 (APD-ID 270v1, Revised 06/24) OP-CRO1
+This form is for use by facilities subject to air quality permit requirements and
+may be revised periodically. (Title V Release 06/24) Page ____ of ____CONFIDENTIAL
+Form OP-CRO1
+Certification by Responsible Official
+Federal Operating Permit Program
+Texas Commission on Environmental Quality
+IV. Certification of Truth
+This certification does not extend to information which is designated by TCEQ as information for reference only.
+Responisible Official (RO)
+(cid:53)(cid:68)(cid:81)(cid:71)(cid:92)(cid:3)(cid:53)(cid:76)(cid:71)(cid:74)(cid:90)(cid:68)(cid:92)(cid:3)
+I, certify that I am the
+(Certifier Name printed or typed) (RO or DAR)
+and that, based on information and belief formed after reasonable inquiry, the statements and information dated during
+the time period or on the specific date(s) below, are true, accurate, and complete:
+Note: Enter Either a Time Period or Specific Date(s) for each certification. This section must be completed. The
+certification is not valid without documentation date(s).
+Time Period: From to
+(Start Date) (End Date)
+Specific Dates:
+(Date 1) (Date 2) (Date 3) (Date 4)
+(Date 5) (Date 6)
+Signature: Signature Date:
+(cid:39)(cid:68)(cid:87)(cid:68)(cid:3)(cid:38)(cid:72)(cid:81)(cid:87)(cid:72)(cid:85)(cid:3)(cid:38)(cid:68)(cid:80)(cid:83)(cid:88)(cid:86)(cid:3)(cid:41)(cid:68)(cid:70)(cid:76)(cid:79)(cid:76)(cid:87)(cid:92)(cid:3)(cid:39)(cid:76)(cid:85)(cid:72)(cid:70)(cid:87)(cid:82)(cid:85)(cid:3)
+Title:
+TCEQ-10009 (APD-ID 270v1, Revised 06/24) OP-CRO1
+This form is for use by facilities subject to air quality permit requirements and may be revised periodically. (Title V Release 06/24) Page ______ of _____CONFIDENTIAL
+Form OP-CRO1
+Certification by Responsible Official
+Federal Operating Permit Program
+Texas Commission on Environmental Quality
+All initial issuance, revision, and renewal permit application submittals requiring certification must be accompanied by
+this form. Updates to acid rain or CSAPR (other than public notice verification materials) must be certified prior to
+authorization of public notice for the draft permit.
+I. Identifying Information
+RN: (cid:53)(cid:49)(cid:20)(cid:19)(cid:27)(cid:25)(cid:23)(cid:20)(cid:24)(cid:19)(cid:26)
+CN: (cid:38)(cid:49)(cid:25)(cid:19)(cid:23)(cid:27)(cid:28)(cid:19)(cid:26)(cid:21)(cid:22)
+Account No.:
+Permit No.:
+Project No.:
+Area Name:
+Company Name:
+II. Certification Type (Please mark appropriate box)
+Designated Representative Alternated Designated Representative
+III. Requirement and Submittal Type (Please mark the appropriate boxes for each row)
+Requirement: Acid Rain Permit (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:16)(cid:54)(cid:87)(cid:68)(cid:87)(cid:72)(cid:3)(cid:36)(cid:76)(cid:85)(cid:3)(cid:51)(cid:82)(cid:79)(cid:79)(cid:88)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:53)(cid:88)(cid:79)(cid:72)(cid:3)(cid:11)CSAPR(cid:12)
+Submittal Type: Initial Permit Application Update to Permit Application
+Permit Revision or Renewal Other:
+TCEQ-10009 (APD-ID 270v1, Revised 06/24) OP-CRO1
+This form is for use by facilities subject to air quality permit requirements and may be revised periodically. (Title V Release 06/24) Page ______ of _____CONFIDENTIAL
+Form OP-CRO1
+Certification by Responsible Official
+Federal Operating Permit Program
+Texas Commission on Environmental Quality
+IV. Certification of Truth
+I, certify that I am the
+(Certifier Name printed or typed) (RO or DAR)
+am authorized to make this submission on behalf of the owners and operators of the source or units for which the
+submission is made. I certify under penalty of law that I have personally examined, and am familiar with, the statements
+and information submitted in this document and all its attachments. Based on my inquiry of those individuals with
+primary responsibility for obtaining the information, I certify that the statements are to the best of my knowledge and
+belief true, accurate, and complete. I am aware that there are significant penalties for submitting false statements and
+information or omitting required statements and information, including the possibility of fine or imprisonment. The
+above certification is for the statements and information dated during the time period or on the specific date(s) below:
+Note: Enter Either a Time Period or Specific Date(s) for each certification. This section must be completed. The
+certification is not valid without documentation date(s).
+Time Period: From to
+(Start Date) (End Date)
+Specific Dates:
+(Date 1) (Date 2) (Date 3) (Date 4)
+(Date 5) (Date 6)
+Signature: SignatureDate:
+Title:
+TCEQ-10009 (APD-ID 270v1, Revised 06/24) OP-CRO1
+This form is for use by facilities subject to air quality permit requirements and may be revised periodically. (Title V Release 06/24) Page ______ of _____Steven Piper
+From: eNotice TCEQ
+Sent: Thursday, January 15, 2026 4:31 PM
+To: tan.parker@senate.texas.gov; nate.schatzline@house.texas.gov
+Subject: TCEQ Notice - Permit Number O4280
+Attachments: TCEQ Notice - O4280_39681.pdf
+This email is being sent to electronically transmit an official document issued by the Office of Air of the
+Texas Commission on Environmental Quality.
+This email is being sent to you because either (a) you filed a document with the Office of the Chief Clerk
+that made you part of the official mailing list for the above referenced matter, or (b) notice to you is
+legally required. As authorized by Texas Water Code 5.128, this electronic transmittal is replacing the
+previous practice of hard copy distribution. Amendments to Texas Government Code 552.137 prompted
+a change to the agency's privacy policy regarding confidentiality of certain email addresses. The revised
+privacy policy can be viewed at http://www.tceq.state.tx.us/help/policies/electronic_info_policy.html.
+Questions regarding this email may be submitted either by replying directly to this email or by calling
+Mr. Rhyan Stone with the Air Permits Division at (512) 239-1293.
+The attached document is provided in an Adobe Acrobat .pdf format. If you cannot display the
+attachment, you may need to visit the Adobe web site (http://get.adobe.com/reader) to download the
+free Adobe Acrobat Reader software.
+1Brooke T. Paup, Chairwoman
+Catarina R. Gonzales, Commissioner
+Tonya R. Miller, Commissioner
+Kelly Keel, Executive Director
+TEXAS COMMISSION ON ENVIRONMENTAL QUALITY
+Protecting Texas by Reducing and Preventing Pollution
+January 15, 2026
+THE HONORABLE TAN PARKER
+TEXAS SENATE
+PO BOX 12068
+AUSTIN TX 78711-2068
+Re: Accepted Federal Operating Permit Renewal Application
+Project Number: 39681
+Permit Number: O4280
+Winner LLC
+Alliance Site
+Fort Worth, Tarrant County
+Regulated Entity Number: RN108641507
+Customer Reference Number: CN604890723
+Dear Senator Parker:
+This letter notifies you that the Texas Commission on Environmental Quality has received a federal
+operating permit (FOP) renewal application for a site located in your district. As part of this permitting
+process, the applicant is required to publish a formal newspaper public notice. The notice will inform the
+public of their right to make comments or request a public hearing. This link to an electronic map of the
+site or facility's general location is provided as a public courtesy and not part of the application or notice.
+For exact location, refer to application. https://gisweb.tceq.texas.gov/LocationMapper/?marker=-
+97.254722,32.983888&level=13.
+The FOP program regulates both new and existing major sources of emissions. The goal of the program
+is to improve air quality in Texas through increased compliance by codifying existing applicable regulatory
+requirements into the FOP. The FOP provides the applicant authorization to operate the equipment at the
+site. The FOP identifies and codifies air emission requirements (known as applicable requirements) that
+apply to the emission units at the site. The FOP does not authorize construction of emission units or
+emissions from those units. The New Source Review (NSR) permit is the mechanism for these
+authorizations.
+P.O. Box 13087 • Austin, Texas 78711-3087 • 512-239-1000 • tceq.texas.gov
+How is our customer service? tceq.texas.gov/customersurvey
+printed on recycled paperThe Honorable Tan Parker
+Page 2
+January 15, 2026
+Re: Accepted Federal Operating Permit Renewal Application
+This letter is being sent to you for information only and no action is required. If you need further
+information, please contact me at (512) 239-1250.
+Sincerely,
+Samuel Short, Deputy Director
+Air Permits Division
+Office of Air
+Texas Commission on Environmental QualityBrooke T. Paup, Chairwoman
+Catarina R. Gonzales, Commissioner
+Tonya R. Miller, Commissioner
+Kelly Keel, Executive Director
+TEXAS COMMISSION ON ENVIRONMENTAL QUALITY
+Protecting Texas by Reducing and Preventing Pollution
+January 15, 2026
+THE HONORABLE NATE SCHATZLINE
+TEXAS HOUSE OF REPRESENTATIVES
+PO BOX 2910
+AUSTIN TX 78768-2910
+Re: Accepted Federal Operating Permit Renewal Application
+Project Number: 39681
+Permit Number: O4280
+Winner LLC
+Alliance Site
+Fort Worth, Tarrant County
+Regulated Entity Number: RN108641507
+Customer Reference Number: CN604890723
+Dear Representative Schatzline:
+This letter notifies you that the Texas Commission on Environmental Quality has received a federal
+operating permit (FOP) renewal application for a site located in your district. As part of this permitting
+process, the applicant is required to publish a formal newspaper public notice. The notice will inform the
+public of their right to make comments or request a public hearing. This link to an electronic map of the
+site or facility's general location is provided as a public courtesy and not part of the application or notice.
+For exact location, refer to application. https://gisweb.tceq.texas.gov/LocationMapper/?marker=-
+97.254722,32.983888&level=13.
+The FOP program regulates both new and existing major sources of emissions. The goal of the program
+is to improve air quality in Texas through increased compliance by codifying existing applicable regulatory
+requirements into the FOP. The FOP provides the applicant authorization to operate the equipment at
+the site.
+This letter is being sent to you for information only and no action is required. If you need further
+information, please contact me at (512) 239-1250.
+Sincerely,
+Samuel Short, Deputy Director
+Air Permits Division
+Office of Air
+Texas Commission on Environmental Quality
+P.O. Box 13087 • Austin, Texas 78711-3087 • 512-239-1000 • tceq.texas.gov
+How is our customer service? tceq.texas.gov/customersurvey
+printed on recycled paper

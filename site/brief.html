@@ -1,0 +1,81 @@
+<title>Datacenters for Climate TRACE</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a two-minute brief. One dataset, one test, one column, one ask. Narrow column; no navigation. */
+:root{
+  --paper:#F4F6F3; --paper-2:#E9EDE8; --ink:#17211E; --ink-2:#4B5955; --rule:#C9D1CC; --accent:#1C6B5F;
+  --fossil:#B2481F; --sys:#C9733F; --clean:#2E8B57; --grid:#8A6D1F; --cert:#9A4F9E; --other:#4B5955;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif; --body:"Source Serif 4",Georgia,serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --paper:#121816; --paper-2:#1A2320; --ink:#E6ECE8; --ink-2:#A3B0AB; --rule:#2E3B36; --accent:#4FB3A3; --fossil:#E07A4E; --sys:#E0995E; --clean:#5BC58A; --grid:#D0A94C; --cert:#CF8FD3; --other:#A3B0AB; color-scheme:dark } }
+:root[data-theme="dark"]{ --paper:#121816; --paper-2:#1A2320; --ink:#E6ECE8; --ink-2:#A3B0AB; --rule:#2E3B36; --accent:#4FB3A3; --fossil:#E07A4E; --sys:#E0995E; --clean:#5BC58A; --grid:#D0A94C; --cert:#CF8FD3; --other:#A3B0AB; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:760px;margin:0 auto}
+h1,h2{font-family:var(--display);font-stretch:85%;text-wrap:balance;line-height:1.1;margin:0}
+h1{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-.02em}
+h2{font-size:22px;font-weight:700;margin-block:40px 10px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);margin-bottom:12px}
+p{margin:0 0 1em}
+a{color:var(--accent)}
+.sub{font-family:var(--mono);font-size:12px;color:var(--ink-2);letter-spacing:.04em}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);text-align:left;padding:6px 10px 6px 0;border-bottom:1px solid var(--ink)}
+td{padding:8px 10px 8px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.n{font-family:var(--mono);font-size:13px;white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+.tabwrap{overflow-x:auto}
+.bar{display:flex;height:34px;border-radius:3px;overflow:hidden;margin:12px 0 8px}
+.bar div{display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:12px;color:#fff;min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+ol,ul{padding-left:20px} li{margin-bottom:6px}
+.ask{background:var(--paper-2);border:1px solid var(--rule);padding:18px 20px;border-radius:4px;margin-top:28px}
+.ask p:last-child{margin:0}
+.rev{border-left:4px solid var(--accent);padding:2px 0 2px 18px;margin:18px 0;font-size:16px}
+.foot{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin-top:40px;border-top:1px solid var(--rule);padding-top:14px}
+</style>
+<div class="wrap">
+<div class="eyebrow">A brief for the Climate TRACE coalition · 21 October 2026</div>
+<h1>Datacenters as a facility type: the paper layer imagery can't see</h1>
+<p>You estimate what power plants emit. A datacenter has no chimney; its footprint is the plant that serves it, and which plant that is sits in utility dockets, air permits and licence applications. The Compute Ledger has been collecting those documents, site by site, in 40 countries. This page is what they give you, with the limits stated.</p>
+
+<h2>Ireland: a site list with permit-grade coordinates, and the test any estimate must pass</h2>
+<p>Ireland is the only country whose statistics office meters datacenter electricity nationally: <strong>7,663 GWh in 2025, 23% of metered consumption</strong> (CSO). Nobody keeps a site register, so we built one from EPA industrial-emissions licences, EU ETS permits and planning appeals: <strong>40 sites, 22 located</strong>, most of them from grid references inside the EPA documents themselves (per-stack coordinates in licence attachments, site-centre points on application forms, main-entrance references on older permits). Sixteen operating sites carry permitted standby generation: 3,830 MW thermal by licence cap, 4,279 by sum of units.</p>
+<p>Generators are sized to carry a site's full design load, so permitted standby bounds load from above once the redundancy design is known. That design is the uncertain factor. Under N+1 the metered total bounds utilisation of permitted capacity at roughly 0.54–0.71 and plausibly puts it at 0.3–0.5; under 2N it imposes no bound. The one site with a published meter (Microsoft DUB14/15, 111.9 GWh in 2024, campus ramping) reads 0.12–0.23 depending on how its gas and diesel layers are counted.</p>
+<div class="rev">What this gives a datacenter subsector: a located site list in a metered country, a permit-derived capacity ceiling per site, and a national total that any set of per-site estimates must sum to. What it does not give: a utilisation factor. The redundancy design has to be read from the licence operational reports, which is the next step.</div>
+
+<h2>How supply is documented when you read the dockets</h2>
+<p>For 43 sites and clusters in the ledger we recorded how electricity actually arrives: 30 rows rest on a regulator, court, grid-operator or statutory document, 13 on press or operator statements and flagged as such.</p>
+<div class="bar">
+  <div style="flex:19;background:var(--grid)">grid only 19</div>
+  <div style="flex:5;background:var(--sys)">system gas 5</div>
+  <div style="flex:3;background:var(--fossil)">gas 3</div>
+  <div style="flex:5;background:var(--clean)">clean firm 5</div>
+  <div style="flex:4;background:var(--cert)">certs 4</div>
+  <div style="flex:7;background:var(--other)">other 7</div>
+</div>
+<div class="legend"><span style="--c:var(--grid)">no documented arrangement beyond the grid</span><span style="--c:var(--sys)">utility system gas plant with datacenter load as the stated driver</span><span style="--c:var(--fossil)">gas plant built or certified for a named load</span><span style="--c:var(--clean)">geothermal, hydro allocation, nuclear PPA</span><span style="--c:var(--cert)">renewable claim rests on certificates only</span><span style="--c:var(--other)">wheeled, bring-your-own, mixed, unpermitted</span></div>
+<p style="margin-top:14px">Three documented cases of gas built or certified for a named load (Meta Hyperion, Louisiana; Homer City, Pennsylvania; xAI Southaven, Mississippi), five more where a utility's system gas plant was approved with datacenter growth as the stated reason, and five documented clean-firm arrangements. Each row carries the document and the operator's statement about the same supply. This is the field, call it α, that your facility Scope 2 approach would need for datacenters and that no satellite produces.</p>
+
+<h2>Method, in one paragraph</h2>
+<p>Site emissions = load × [α · EF<sub>dedicated</sub> + (1 − α) · EF<sub>grid</sub>], reported as a range with a confidence rating. That is your 5.11.0 facility Scope 2 pattern with one added field. Load must come from a signal independent of the supply document (permit generator MW, interconnection MW, register IT load, footprint), never from the supply MW itself; dedicated supply counts only from the year it is physically in service; the result is Scope 2, non-additive to your power-sector rows. We drafted five worked rows and withdrew them after review because they broke the first of those rules. The method note and the review are both in the package.</p>
+
+<h2>What's in the handover</h2>
+<ol>
+  <li>96 sites in your v5.11.0 emissions and ownership column order, 78 with coordinates, 28 with permit-derived capacity, with source URL, cooling, status, operator claim and ledger gap in the <code>other</code> slots. Emissions fields empty by design.</li>
+  <li>Ireland: the 40-site list, the coordinate method, and the metered check as a table of bounds across redundancy assumptions.</li>
+  <li>The dedicated-supply column, 43 rows, each with its document and confidence.</li>
+  <li>The method note.</li>
+  <li>A register backlog of 325 sites (Virginia DEQ air permits, Texas Comptroller) with a tested extraction pipeline; eight Virginia permits opened so far.</li>
+  <li>An independent hostile review of this handover, unedited, with what we changed in response.</li>
+</ol>
+
+<div class="ask">
+<h2 style="margin-top:0">The ask</h2>
+<p>Gavin said on Lawfare in April that your database holds the world's datacenters and a hyperscaler dataset is coming. If it is still being assembled, we would like to contribute the permit-derived capacity and dedicated-supply fields, under CC BY 4.0, and keep them current. If it already covers this, tell us what it lacks and the ledger will fill that instead.</p>
+<p>A bounded first step: Northern Virginia, where the DEQ publishes every datacenter air permit. We extract the permits; you do the estimate; the method gets tested where every input is public.</p>
+</div>
+
+<p class="foot">Compute Ledger · 117 entries in 40 countries, 397 linked documents, 3 cases worked to receipt standard · data CC BY 4.0, code MIT · every figure on this page traces to a file in the attached package.</p>
+</div>

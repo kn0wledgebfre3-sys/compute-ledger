@@ -1,0 +1,2 @@
+Loads Approved to Energize - Observations
+Of the 9,456 MW that have received Approval to Energize, ERCOT has observed a non-simultaneous monthly peak consumption of 4,316 MW in August 2026, which is a slight decrease since July 2026. This is calculated as the sum of the maximum value for each individual load per month. This value represents how much approved load ERCOT believes is now operational.

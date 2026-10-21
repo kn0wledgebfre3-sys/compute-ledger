@@ -1,0 +1,1019 @@
+[
+ {
+  "id": "us-va-chesterfield-dominion-cerc-gas",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Chesterfield Energy Reliability Center (944 MW gas peaker) and Dominion data center load",
+  "operator": "Dominion Energy Virginia",
+  "lat": 37.38,
+  "lon": -77.38,
+  "category": "power",
+  "record": "SCC Final Order in Case PUR-2025-00037 (2025-11-25) approved a ~944 MW four-turbine gas peaker at Chesterfield Power Station at $1.47B (excl. financing), COD by 2029-06-01, finding an 'imminent reliability threat'; the order says data center development is 'not an insignificant contributing factor' but gives no data center MW figure. DEQ air permit issued 2025-12-19 and is under appeal in Richmond Circuit Court. The same SCC order created a large-load rate class (>25 MW, >75% load factor, 14-year contracts, 85%/85%/60% minimum demand charges).",
+  "record_sources": [
+   {
+    "title": "SCC Final Order, PUR-2025-00037 (CERC)",
+    "url": "https://npr.brightspotcdn.com/3a/5d/aa4657d64958974419dd9cfb55c0/cerc-scc.pdf",
+    "publisher": "Virginia State Corporation Commission (mirror)",
+    "date": "2025-11-25"
+   },
+   {
+    "title": "SCC approves Chesterfield gas plant and Dominion rate hike, creates new rate class for data centers",
+    "url": "https://virginiamercury.com/2025/11/25/scc-approves-chesterfield-gas-plant-and-dominion-rate-hike-creates-new-rate-class-for-data-centers/",
+    "publisher": "Virginia Mercury",
+    "date": "2025-11-25"
+   },
+   {
+    "title": "SCC declines to reconsider Chesterfield gas plant approval; advocacy groups appeal air permit",
+    "url": "https://virginiamercury.com/2026/02/16/scc-declines-to-reconsider-chesterfield-gas-plant-approval-advocacy-groups-appeal-air-permit/",
+    "publisher": "Virginia Mercury",
+    "date": "2026-02-16"
+   }
+  ],
+  "claim": "Dominion reported ~40 GW of data center capacity 'in various stages of contracting' as of December 2024 (21 GW in July 2024) and describes its generation approach as 'all of the above'; spokesperson said CERC 'will provide reliable power for hundreds of thousands of homes, businesses, schools and hospitals.'",
+  "claim_sources": [
+   {
+    "title": "Dominion Energy seeks approval for 1GW Virginia gas plant amid data center boom",
+    "url": "https://datacenterdynamics.com/en/news/dominion-energy-seeks-approval-for-1gw-virginia-gas-plant-amid-data-center-boom",
+    "publisher": "Data Center Dynamics",
+    "date": "2025"
+   }
+  ],
+  "gap": "Utility cites ~40 GW of contracted data center capacity, while the regulator's approval order declines to quantify the data center share of the need the plant serves.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-va-loudoun-diesel-backup-generators",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Northern Virginia data center backup diesel generators and DEQ 'planned outage' proposal",
+  "operator": "Multiple (Loudoun/Prince William data center operators); regulator: Virginia DEQ",
+  "lat": 39.04,
+  "lon": -77.49,
+  "category": "fuel",
+  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days.",
+  "record_sources": [
+   {
+    "title": "DEQ Guidance Memo APG-578: Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages",
+    "url": "https://townhall.virginia.gov/l/GetFile.cfm?File=C:\\TownHall\\docroot\\GuidanceDocs_Proposed\\440\\GDoc_DEQ_8407_20251003.pdf",
+    "publisher": "Virginia DEQ (Virginia Regulatory Town Hall)",
+    "date": "2025-10-01"
+   },
+   {
+    "title": "Data Centers in Virginia (2024) – report page",
+    "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+    "publisher": "Joint Legislative Audit and Review Commission",
+    "date": "2024-12-09"
+   },
+   {
+    "title": "JLARC Data Centers in Virginia – report summary",
+    "url": "https://pwcva.gov/assets/2024-12/JLARC%20Report%20Summary_12-16-2024.pdf",
+    "publisher": "Prince William County / JLARC",
+    "date": "2024-12-09"
+   },
+   {
+    "title": "Virginia regulators weigh letting data centers run diesel backup generators during planned outages",
+    "url": "https://www.vpm.org/news/2025-12-17/virginia-data-centers-diesel-backup-generators-deq-loudoun-turner-dowd",
+    "publisher": "VPM",
+    "date": "2025-12-17"
+   }
+  ],
+  "claim": "DEQ: 'each data center will need to comply with their permitted emission limits'; Data Center Coalition supports the new definition. No operator-level renewable or emissions claim specific to Loudoun generators was found.",
+  "claim_sources": [
+   {
+    "title": "Virginia regulators weigh letting data centers run diesel backup generators during planned outages",
+    "url": "https://www.vpm.org/news/2025-12-17/virginia-data-centers-diesel-backup-generators-deq-loudoun-turner-dowd",
+    "publisher": "VPM",
+    "date": "2025-12-17"
+   }
+  ],
+  "gap": "Generator counts in the public record come from third-party tallies of DEQ permits; no consolidated DEQ figure for total permitted backup MW was located.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "DEQ memo APG-578 (Town Hall PDF) confirms the 14-calendar-day planned-outage provision but is dated 2025-10-01, not 2025-09-30 as in press; JLARC report page and summary confirm <4% of regional NOx and ~5,050 MW; generator counts remain third-party (PEC) tallies, not DEQ figures.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "us-va-prince-william-digital-gateway-court",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Prince William Digital Gateway rezoning (2,100+ acres, 22M sq ft, 37 data centers)",
+  "operator": "QTS and Compass Datacenters (H&H Capital Acquisitions, GW Acquisition Co.)",
+  "lat": 38.8,
+  "lon": -77.58,
+  "category": "moratorium",
+  "record": "Prince William Circuit Court (Judge Kimberly Irving, August 2025) voided the December 2023 rezoning for failure to meet state and county public-notice requirements; the Virginia Court of Appeals upheld the ruling on 2026-03-31; Compass Datacenters announced on 2026-04-28 it would not continue the appeal.",
+  "record_sources": [
+   {
+    "title": "Judge voids Digital Gateway rezoning in Prince William County",
+    "url": "https://wtop.com/prince-william-county/2025/08/judge-voids-digital-gateway-rezoning-in-prince-william-county/",
+    "publisher": "WTOP",
+    "date": "2025-08"
+   },
+   {
+    "title": "Developer to end appeal in Digital Gateway data center case",
+    "url": "https://www.insidenova.com/news/prince_william/updated-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
+    "publisher": "InsideNoVa",
+    "date": "2026-04-29"
+   }
+  ],
+  "claim": "Compass: 'recent legal actions and compounding regulatory hurdles' closed a viable path to proceed. QTS had not stated its position as of 2026-04-29.",
+  "claim_sources": [
+   {
+    "title": "Developer to end appeal in Digital Gateway data center case",
+    "url": "https://www.insidenova.com/news/prince_william/updated-developer-to-end-appeal-in-digital-gateway-data-center-case-putting-the-massive-project/article_d17048b9-8d0a-47ad-aeec-1cbd02f73f47.html",
+    "publisher": "InsideNoVa",
+    "date": "2026-04-29"
+   }
+  ],
+  "gap": "none documented; project status after one developer's withdrawal remains unresolved in the record.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-tx-ercot-large-load-queue-audit",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "ERCOT large-load interconnection queue and Governor's audit/pause",
+  "operator": "ERCOT / Public Utility Commission of Texas",
+  "lat": 30.27,
+  "lon": -97.74,
+  "category": "grid_policy",
+  "record": "ERCOT testimony to the Texas Senate (2026-07-29) reports ~474 GW of large loads seeking interconnection as of June 2026, ~90% data centers, >1,800 projects, more than five times record peak; ~205 GW preliminarily eligible for Batch Zero. On 2026-08-03 Gov. Abbott directed PUCT/ERCOT to audit all queued data centers (power, water/cooling, ownership, tax breaks) and ERCOT paused Batch Zero; at the 2026-08-20 PUCT meeting ERCOT said 17 loads (~6.6 GW) had passed stability assessment but none were approved to energize, with an audit report targeted for 2026-12-10. An ERCOT briefing in early 2026 put actually connected large load at ~7.5 GW. SB 6 (2025) sets a 75 MW threshold, fee, duplicate-request and backup-generation disclosure, and emergency curtailment.",
+  "record_sources": [
+   {
+    "title": "ERCOT Senate July 29 Panel 1: Assessing the Grid",
+    "url": "https://www.ercot.com/files/docs/2026/07/29/ERCOT-Senate-July-29-Panel-1-Assessing-The-Grid.pdf",
+    "publisher": "ERCOT",
+    "date": "2026-07-29"
+   },
+   {
+    "title": "Abbott orders audit of Texas data center projects",
+    "url": "https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/",
+    "publisher": "Texas Tribune",
+    "date": "2026-08-03"
+   },
+   {
+    "title": "ERCOT, Texas PUC detail data center audit timeline",
+    "url": "https://utilitydive.com/news/ercot-texas-puc-data-center-audit/828472",
+    "publisher": "Utility Dive",
+    "date": "2026-08-21"
+   },
+   {
+    "title": "Texas grid sees 233 GW of data center requests; how much is real?",
+    "url": "https://www.bicmagazine.com/industry/powergen/texas-grid-sees-233-gw-data-center-requests-much-real/",
+    "publisher": "BIC Magazine",
+    "date": "2026-03-06"
+   }
+  ],
+  "claim": "Gov. Abbott: 'Simply put, Texans must come first.' Data Center Coalition said a careful review could separate responsible from irresponsible developers.",
+  "claim_sources": [
+   {
+    "title": "Abbott orders audit of Texas data center projects",
+    "url": "https://www.texastribune.org/2026/08/03/texas-data-center-project-audit-greg-abbott/",
+    "publisher": "Texas Tribune",
+    "date": "2026-08-03"
+   }
+  ],
+  "gap": "Queue requests (~474 GW) exceed connected large load (~7.5 GW) by roughly 60x; the regulator itself describes the queue as partly speculative and the audit is pending.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-tn-memphis-xai-colossus-turbines",
+  "country": "United States",
+  "region": "Tennessee",
+  "site_or_subject": "xAI Colossus (South Memphis) on-site gas turbines",
+  "operator": "xAI",
+  "lat": 35.05,
+  "lon": -90.14,
+  "category": "fuel",
+  "record": "A 2024-08-26 SELC letter to the Shelby County Health Department documented at least 18 turbines (~100 MW) operating without permits under a claimed 364-day 'nonroad' exemption. SCHD issued a construction permit on 2025-07-02 for 15 Solar SMT-130 turbines (up to 247 MW) with rolling 12-month caps of 87 t NOx, 94 t CO, 85 t VOC, 73 t PM and ~14 t HAPs; SELC stated up to 35 turbines (421 MW) had run unpermitted. The Memphis-Shelby County Air Pollution Control Board upheld the permit 6–1 on 2025-12-15. EPA's final NSPS rule signed 2026-01-09 states turbines 'mounted on a vehicle (or trailer) for portability' are 'still considered stationary.'",
+  "record_sources": [
+   {
+    "title": "Letter to SCHD re xAI operating without permits",
+    "url": "https://interactive.localmemphis.com/pdfs/2024-08-26-Letter-to-SCHD-re-xAI-operating-without-permits.pdf",
+    "publisher": "SELC (filed with Shelby County Health Department)",
+    "date": "2024-08-26"
+   },
+   {
+    "title": "xAI gets permits for 15 natural gas generators at Memphis data center",
+    "url": "https://techcrunch.com/2025/07/03/xai-gets-permits-for-15-natural-gas-generators-at-memphis-data-center",
+    "publisher": "TechCrunch",
+    "date": "2025-07-03"
+   },
+   {
+    "title": "xAI permit upheld after intense Shelby County Air Pollution Control Board hearing",
+    "url": "https://tri-statedefender.com/xai-permit-upheld-after-intense-shelby-county-air-pollution-control-board-hearing/12/19/",
+    "publisher": "Tri-State Defender",
+    "date": "2025-12-19"
+   },
+   {
+    "title": "NSPS Review for Stationary Combustion Turbines (final rule preamble, EPA-HQ-OAR-2024-0419)",
+    "url": "https://www.epa.gov/system/files/documents/2026-01/for-website_preamble-clean-san11542-combustion-turbines-frm-20260108-eo-12866.pdf",
+    "publisher": "US EPA",
+    "date": "2026-01-09"
+   }
+  ],
+  "claim": "xAI said its on-site generation will use 'state-of-the-art emissions control technology' making the facility 'the lowest emitting of its kind in the country,' and that temporary turbines would be removed by end of July 2025; its counsel told the Board rules on temporary turbines are 'clear as mud.'",
+  "claim_sources": [
+   {
+    "title": "Health dept. grants permit for xAI turbines",
+    "url": "https://www.actionnews5.com/2025/07/02/health-dept-grants-permit-xai-turbines/",
+    "publisher": "Action News 5",
+    "date": "2025-07-02"
+   },
+   {
+    "title": "xAI permit upheld after Air Pollution Control Board hearing",
+    "url": "https://tri-statedefender.com/xai-permit-upheld-after-intense-shelby-county-air-pollution-control-board-hearing/12/19/",
+    "publisher": "Tri-State Defender",
+    "date": "2025-12-19"
+   }
+  ],
+  "gap": "Roughly a year of on-site gas generation (100–421 MW per filings) preceded the first permit; the local regulator and EPA's later rule text differ on whether trailer-mounted turbines were exempt.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-ms-southaven-xai-1.2gw-gas",
+  "country": "United States",
+  "region": "Mississippi",
+  "site_or_subject": "xAI Southaven power plant (41 turbines, 1.2 GW) and temporary turbines serving Colossus 2",
+  "operator": "xAI (MZX Tech)",
+  "lat": 34.99,
+  "lon": -90.0,
+  "category": "fuel",
+  "record": "MDEQ approved a Clean Air Act construction permit for 41 gas turbines totaling 1.2 GW at a former Duke Energy site in Southaven (meeting ~2026-03-10). Separately, 69 trailer-mounted temporary turbines operated by subsidiary MZX Tech (18 in Aug 2025, 46 by May 2026) are subject to an MDEQ retirement schedule: retirements from 2026-08-18, most by April 2027, 13 units allowed past the original 12-month limit, last units off by 2027-07-14.",
+  "record_sources": [
+   {
+    "title": "Agreed Order, Mississippi Commission on Environmental Quality v. MZX Tech LLC (Stanton Road facility, Southaven), Appendix A retirement schedule",
+    "url": "https://earthjustice.org/document/mdeq-mzx-tech-agreed-order",
+    "publisher": "MDEQ / Mississippi Commission on Environmental Quality (copy hosted by Earthjustice)",
+    "date": "2026-07"
+   },
+   {
+    "title": "Musk's xAI gets go-ahead for 41 natural gas turbines in Mississippi to power Colossus data centers",
+    "url": "https://www.datacenterdynamics.com/en/news/musks-xai-gets-go-ahead-for-41-natural-gas-turbines-in-mississippi-to-power-colossus-data-centers",
+    "publisher": "Data Center Dynamics",
+    "date": "2026-03-11"
+   },
+   {
+    "title": "State sets dates to retire temporary xAI turbines in Southaven",
+    "url": "https://mississippitoday.org/2026/07/31/southaven-xai-turbines-deadline/",
+    "publisher": "Mississippi Today",
+    "date": "2026-07-31"
+   }
+  ],
+  "claim": "xAI (on X): 'thrilled that MDEQ approved our permanent construction permit unlocking 1.2GW of self-generating power capacity'; says it is 'rapidly removing' mobile turbines as permanent power comes online and investing in emission controls, sound walls and silencers.",
+  "claim_sources": [
+   {
+    "title": "Musk's xAI gets go-ahead for 41 natural gas turbines in Mississippi",
+    "url": "https://www.datacenterdynamics.com/en/news/musks-xai-gets-go-ahead-for-41-natural-gas-turbines-in-mississippi-to-power-colossus-data-centers",
+    "publisher": "Data Center Dynamics",
+    "date": "2026-03-11"
+   },
+   {
+    "title": "State sets dates to retire temporary xAI turbines in Southaven",
+    "url": "https://mississippitoday.org/2026/07/31/southaven-xai-turbines-deadline/",
+    "publisher": "Mississippi Today",
+    "date": "2026-07-31"
+   }
+  ],
+  "gap": "Operator says mobile turbines are being removed rapidly; the state schedule allows some temporary units to run until July 2027.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "MDEQ–MZX Tech Agreed Order (Earthjustice copy; order number and date line blank, signed ~late July 2026) confirms 69 mobile turbines, first retirement 2026-08-18, 13 SMT-130 units allowed to 2026-12-31 beyond 12 months, last units 2027-07-14; the 41-turbine/1.2 GW construction permit could not be retrieved (MDEQ enSearch hearing page rendered empty; searches returned only press and SELC), so permit figures remain press-sourced.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-la-richland-meta-entergy-gas",
+  "country": "United States",
+  "region": "Louisiana",
+  "site_or_subject": "Meta Hyperion data center (Holly Ridge, Richland Parish) and Entergy gas plants",
+  "operator": "Meta (Laidley LLC) / Entergy Louisiana",
+  "lat": 32.5,
+  "lon": -91.68,
+  "category": "power",
+  "record": "LPSC minutes (Docket U-37425, 2025-08-20) record a 4–1 vote accepting a settlement authorizing generation and transmission for Meta's Holly Ridge data center with 'numerous protective conditions.' As reported from Entergy filings: three 754 MW combustion-turbine plants (2,262 MW), $3.2B for plants and ~$5B total including a 500-kV line; 15-year contract with Laidley LLC with minimum bills intended to cover 100% of generator cost; Meta to pay for 1,500 MW of solar/solar+storage. LDEQ issued a minor-source air permit (July 2025, amended 2026-06-06) for 31 emergency diesel generators and 44 gas boilers at 96.83 tpy NOx and 98.94 tpy CO, just under the 100 tpy major-source threshold; Entergy's turbines are permitted separately.",
+  "record_sources": [
+   {
+    "title": "LPSC Business & Executive Session Minutes, August 20, 2025",
+    "url": "https://lpsc.louisiana.gov/docs/minutes/August-20-2025-Minutes.pdf",
+    "publisher": "Louisiana Public Service Commission",
+    "date": "2025-08-20"
+   },
+   {
+    "title": "Louisiana regulators approve new Entergy infrastructure for $10 bil Meta data center",
+    "url": "https://www.spglobal.com/commodity-insights/en/news-research/latest-news/natural-gas/082025-louisiana-regulators-approve-new-entergy-infrastructure-for-10-bil-meta-data-center",
+    "publisher": "S&P Global Commodity Insights",
+    "date": "2025-08"
+   },
+   {
+    "title": "Meta data center pollution permit doesn't account for all its emissions, Sierra Club says",
+    "url": "https://lailluminator.com/2026/08/04/meta-data-center-pollution-permit-doesnt-account-for-all-its-emissions-sierra-club-says/",
+    "publisher": "Louisiana Illuminator",
+    "date": "2026-08-04"
+   }
+  ],
+  "claim": "Meta (2025-12-19): ~4 million sq ft campus; local water restoration projects 'will return 100% of the center's water consumption' to the Boeuf, Tensas and Lower Mississippi watersheds; supporting three new Louisiana clean energy projects; Entergy arrangement saves other customers ~$650M over 15 years. Meta told LDEQ diesel units are emergency backup not meant to run continuously.",
+  "claim_sources": [
+   {
+    "title": "Meta's Richland Parish Data Center Supports Louisiana Economy",
+    "url": "https://about.fb.com/news/2025/12/metas-richland-parish-data-center-supports-louisiana-economy-875-million-in-contracts/",
+    "publisher": "Meta Newsroom",
+    "date": "2025-12-19"
+   }
+  ],
+  "gap": "Operator emphasizes water restoration and clean energy projects; the regulator-approved supply for the site is 2,262 MW of new gas capacity, with site air permit emissions set just below the major-source threshold.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-ga-georgia-power-large-load-certification",
+  "country": "United States",
+  "region": "Georgia",
+  "site_or_subject": "Georgia Power 2025 IRP and 9,885 MW certification for large-load growth",
+  "operator": "Georgia Power / Georgia PSC",
+  "lat": 33.75,
+  "lon": -84.39,
+  "category": "power",
+  "record": "The PSC's 2025 IRP stipulation (Dockets 56002/56003, 2025-07-08) lets Georgia Power seek up to 8,500 MW from its 2029–2031 All-Source RFP and notes the load forecast 'is largely driven by the anticipated growth from only one customer class', for which historic information is lacking. Georgia Power's 2025-07-31 certification request (~9,900 MW) included five company-owned combined cycles totaling 3,692 MW (Bowen 1,482; McIntosh 757; Wansley 1,453), 3,022.5 MW of batteries and eleven PPAs (2,821 MW). On 2025-12-19 the PSC voted 5–0 to certify 9,885 MW, stating most is 'intended to serve large new customers, such as data centers,' with Georgia Power backstopping 2029–2031 costs and a rate freeze through 2028.",
+  "record_sources": [
+   {
+    "title": "2025 IRP Stipulation, Dockets 56002 and 56003",
+    "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223391/104616",
+    "publisher": "Georgia Public Service Commission",
+    "date": "2025-07-09"
+   },
+   {
+    "title": "Media advisory: December 19 decision",
+    "url": "https://psc.ga.gov/site/assets/files/9176/media_advisory_dec_19_decision.pdf",
+    "publisher": "Georgia Public Service Commission",
+    "date": "2025-12-19"
+   },
+   {
+    "title": "Georgia Power requests certification of approximately 9,900 MW of new resources",
+    "url": "https://finviz.com/news/123120/georgia-power-requests-certification-of-approximately-9900-mw-of-new-resources-from-the-georgia-public-service-commission",
+    "publisher": "Georgia Power via PR Newswire",
+    "date": "2025-07-31"
+   }
+  ],
+  "claim": "PSC Chair Jason Shaw: 'confident this is a good deal for Georgians' and that data centers or Georgia Power will pay for the new infrastructure. Georgia Power says it has cut carbon emissions >60% since 2007.",
+  "claim_sources": [
+   {
+    "title": "Media advisory: December 19 decision",
+    "url": "https://psc.ga.gov/site/assets/files/9176/media_advisory_dec_19_decision.pdf",
+    "publisher": "Georgia Public Service Commission",
+    "date": "2025-12-19"
+   }
+  ],
+  "gap": "The stipulation itself flags that the load forecast rests on one customer class with limited history; no committed data center MW figure appears in the PSC documents retrieved.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verification_note": "Stipulation PDF (Supply Side Plan para. 2, p. 1) re-checked for the quoted forecast language: the earlier quote 'depends largely on one customer class with limited historical data' was a paraphrase; replaced with the document's wording 'is largely driven by the anticipated growth from only one customer class', with the lack of historic information given as unquoted paraphrase."
+ },
+ {
+  "id": "us-oh-aep-ohio-data-center-tariff",
+  "country": "United States",
+  "region": "Ohio",
+  "site_or_subject": "AEP Ohio data center tariff (central Ohio)",
+  "operator": "AEP Ohio / PUCO",
+  "lat": 39.96,
+  "lon": -83.0,
+  "category": "grid_policy",
+  "record": "PUCO order of 2025-07-09 in Case 24-508-EL-ATA (approved 5–0) adopted a data center tariff: loads above 25 MW must pay for at least 85% of subscribed capacity monthly, contracts up to 12 years with a four-year ramp; existing facilities grandfathered. AEP Ohio reported inquiries from >50 customers at >90 sites totaling >30 GW; central Ohio data center load rose from ~100 MW (2020) to ~600 MW (2024) with ~5 GW projected by 2030; a moratorium on new data center service in place since March 2023 was ended.",
+  "record_sources": [
+   {
+    "title": "PUCO Commission meeting minutes, July 9, 2025 (Item 2: 24-508-EL-ATA Ohio Power Company, opinion and order)",
+    "url": "https://dam.assets.ohio.gov/image/upload/puco.ohio.gov/Commission%20minutes/2025/July_9_2025.pdf",
+    "publisher": "Public Utilities Commission of Ohio",
+    "date": "2025-07-09"
+   },
+   {
+    "title": "Regulator approves AEP Ohio's landmark data center tariff",
+    "url": "https://www.powermag.com/regulator-approves-aep-ohios-landmark-data-center-tariff/",
+    "publisher": "POWER Magazine",
+    "date": "2025-07-10"
+   }
+  ],
+  "claim": "PUCO Chair Jenifer French: the order is 'a well-balanced package that safeguards non-data center customers.' Data Center Coalition: 'no one customer type or industry should be singled out for disparate rate treatment.'",
+  "claim_sources": [
+   {
+    "title": "Regulator approves AEP Ohio's landmark data center tariff",
+    "url": "https://www.powermag.com/regulator-approves-aep-ohios-landmark-data-center-tariff/",
+    "publisher": "POWER Magazine",
+    "date": "2025-07-10"
+   }
+  ],
+  "gap": "none documented; the order text itself was not retrieved, so tariff terms rest on press reporting of the order.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "PUCO minutes of 2025-07-09 confirm the Case 24-508-EL-ATA (Ohio Power Co.) opinion and order was approved 5–0; the order text with the 85%/25 MW/12-year/ramp terms and AEP load figures was not found (PUCO newsroom page returned no content; searches did not surface the DIS docket PDF), so those figures remain press-sourced.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-pa-susquehanna-talen-aws-colocation",
+  "country": "United States",
+  "region": "Pennsylvania",
+  "site_or_subject": "AWS data center campus co-located at Susquehanna nuclear plant",
+  "operator": "Talen Energy / Amazon Web Services",
+  "lat": 41.09,
+  "lon": -76.15,
+  "category": "power",
+  "record": "FERC rejected (2–1, 2024-11-01, accession 20241101-3061) PJM's amended ISA to raise co-located load from 300 MW to 480 MW, finding PJM had not justified the non-standard terms; opponents cited up to $140M/yr in avoided transmission charges. FERC denied rehearing in April 2025 (accession 20250410-3081). Talen's FY2025 10-K states an amended June 2025 PPA for 'up to 1,920 MW' through 2042, transitioning to a front-of-the-meter arrangement beginning spring 2026 and completing spring 2027, with full volume no later than 2032.",
+  "record_sources": [
+   {
+    "title": "FERC rejects amended interconnection agreement for Amazon data center at Susquehanna",
+    "url": "https://www.power-eng.com/business/policy-and-regulation/ferc-rejects-amended-interconnection-agreement-for-amazon-data-center-at-susquehanna-nuclear-plant/",
+    "publisher": "Power Engineering",
+    "date": "2024-11-04"
+   },
+   {
+    "title": "FERC denies Talen-Amazon agreement—again",
+    "url": "https://www.ans.org/news/2025-04-16/article-6937",
+    "publisher": "American Nuclear Society",
+    "date": "2025-04-16"
+   },
+   {
+    "title": "Talen Energy Corp Form 10-K FY2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000017/tln-20251231.htm",
+    "publisher": "US SEC EDGAR",
+    "date": "2026"
+   }
+  ],
+  "claim": "Talen 10-K: 'we will provide AWS with 1,920 MW of carbon-free nuclear power through 2042.'",
+  "claim_sources": [
+   {
+    "title": "Talen Energy Corp Form 10-K FY2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1622536/000162253626000017/tln-20251231.htm",
+    "publisher": "US SEC EDGAR",
+    "date": "2026"
+   }
+  ],
+  "gap": "positive example: contracted existing carbon-free nuclear supply; after FERC's rejection of the behind-the-meter expansion the arrangement was restructured so the load pays grid charges as front-of-meter load.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-pa-homer-city-gas-campus",
+  "country": "United States",
+  "region": "Pennsylvania",
+  "site_or_subject": "Homer City Redevelopment gas-powered data center campus (former coal plant)",
+  "operator": "Homer City Redevelopment / Homer City Generation; Kiewit; GE Vernova",
+  "lat": 40.51,
+  "lon": -79.2,
+  "category": "fuel",
+  "record": "PA DEP Plan Approval 32-00457A to Homer City Generation LP (technical review memo signed 2025-11-18; application received 2025-04-04) covers seven GE Vernova 7HA.02 combined-cycle turbines and ten Mitsubishi Power FT8 MOBILEPAC simple-cycle units totaling 4,678 MWe, with 12-month rolling limits of 141.04 tpy NOx per combined-cycle unit and 13.30 tpy per simple-cycle unit; the memo states potential GHG emissions exceed 25,000 t/yr without giving a total. Press reported the approval came 157 days after application versus a projected 285 and describes the 3,200-acre former 1,884 MW coal site as a ~$10B campus with first turbine deliveries in 2026 and power from 2027, fed from the Texas Eastern pipeline with a $5M state grant for the lateral; a FERC filing shows Knighthead Capital at ~75% ownership.",
+  "record_sources": [
+   {
+    "title": "Technical Review Memo, Plan Approval 32-00457A, Homer City Generation LP (signed 2025-11-18)",
+    "url": "https://files.dep.state.pa.us/regionalresources/NWRO/NWROPortalFiles/Homer-City/Air/Final-AQ-Plan-Approval/Tech%20Review%20Memo%20Signed%2020251118.pdf",
+    "publisher": "Pennsylvania Department of Environmental Protection",
+    "date": "2025-11-18"
+   },
+   {
+    "title": "Homer City data center campus gets state permit approval",
+    "url": "https://technical.ly/civics/homer-city-indiana-county-pennsylvania-data-center-permit-approval/",
+    "publisher": "Technical.ly",
+    "date": "2025-11-19"
+   },
+   {
+    "title": "Homer City coal plant site to host 4.5-GW gas-fired data center campus",
+    "url": "https://www.utilitydive.com/news/homer-city-gas-fired-power-station-data-center-firstenergy/744332/",
+    "publisher": "Utility Dive",
+    "date": "2025"
+   }
+  ],
+  "claim": "Developer: gas turbines will cut emissions up to 65% (or ~60% per MWh) versus the former coal plant; >10,000 construction jobs and ~1,000 permanent positions.",
+  "claim_sources": [
+   {
+    "title": "Homer City data center campus gets state permit approval",
+    "url": "https://technical.ly/civics/homer-city-indiana-county-pennsylvania-data-center-permit-approval/",
+    "publisher": "Technical.ly",
+    "date": "2025-11-19"
+   }
+  ],
+  "gap": "Developer's emissions comparison is relative to the retired coal plant; DEP's review memo sets per-unit annual limits but gives no facility-wide CO2e total, and no water source is specified in the retrieved documents.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "PA DEP technical review memo for Plan Approval 32-00457A (signed 2025-11-18) lists 7 GE 7HA.02 combined-cycle and 10 Mitsubishi FT8 simple-cycle units totaling 4,678 MWe, where press had 4.4–4.5 GW and seven turbines; it records the application as received 2025-04-04, which does not reconcile with the press '157 days' figure.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "us-wi-mount-pleasant-microsoft-we-energies",
+  "country": "United States",
+  "region": "Wisconsin",
+  "site_or_subject": "Microsoft Mount Pleasant data center and We Energies gas build",
+  "operator": "Microsoft / We Energies (WEC)",
+  "lat": 42.72,
+  "lon": -87.89,
+  "category": "power",
+  "record": "PSC Wisconsin approved (reported 2025-05-22; Oak Creek final decision in docket 6630-CE-317 issued 2025-07-02) a 1,100 MW simple-cycle gas plant at Oak Creek (five CTs, $1.205B excl. AFUDC) and a 128 MW RICE peaker in Paris, Kenosha County, with We Energies citing 'energy-intensive data centers'; the filing also sought a $456M LNG storage facility and a $186M 33-mile pipeline. In May 2026 the PSC struck a provision in Microsoft's 15-year service contract requiring supply plants be located in eastern Wisconsin or Michigan's UP; Microsoft signed the contract as-is on 2026-07-16 and We Energies says the PSC order governs. We Energies is also seeking to buy the Red Oak Ridge gas plant from Invenergy for $1.8B, with Microsoft already contracted for its output.",
+  "record_sources": [
+   {
+    "title": "Oak Creek Generation Project (Docket 6630-CE-317) case page",
+    "url": "https://psc.wi.gov/Pages/CommissionActions/CasePages/OakCreekGeneration.aspx",
+    "publisher": "Public Service Commission of Wisconsin",
+    "date": "2025-07-02"
+   },
+   {
+    "title": "Regulators approve plans for two new gas-fired plants in Wisconsin",
+    "url": "https://www.powermag.com/regulators-approve-plans-for-two-new-gas-fired-plants-in-wisconsin",
+    "publisher": "POWER Magazine",
+    "date": "2025-05-29"
+   },
+   {
+    "title": "Mount Pleasant data center contract retains power plant provision struck down by Wisconsin regulators",
+    "url": "https://wisconsinwatch.org/2026/08/wisconsin-we-energies-microsoft-data-center-contract-terms-conflict-psc-regulators-electricity/",
+    "publisher": "Wisconsin Watch",
+    "date": "2026-08"
+   }
+  ],
+  "claim": "Microsoft says Mt. Pleasant will pilot zero-water-evaporation closed-loop cooling in 2026 (all new designs since Aug 2024; >125 million litres/yr avoided per site; FY2024 WUE 0.30 L/kWh). We Energies says the gas plants are part of an 'all of the above' approach consistent with its 2050 decarbonization goal.",
+  "claim_sources": [
+   {
+    "title": "Sustainable by design: next-generation datacenters consume zero water for cooling",
+    "url": "https://microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling",
+    "publisher": "Microsoft",
+    "date": "2024-12-09"
+   },
+   {
+    "title": "Regulators approve plans for two new gas-fired plants in Wisconsin",
+    "url": "https://www.powermag.com/regulators-approve-plans-for-two-new-gas-fired-plants-in-wisconsin",
+    "publisher": "POWER Magazine",
+    "date": "2025-05-29"
+   }
+  ],
+  "gap": "Operator's public claims focus on water (closed-loop pilot); the regulator-approved supply additions are ~1,228 MW of new gas capacity plus a proposed $1.8B gas plant purchase.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "PSC case page confirms docket 6630-CE-317, up to 1,100 MW from five simple-cycle CTs, $1.205B excl. AFUDC, final decision 2025-07-02; the final decision PDF (ERF docid 552626) failed to load, so Paris RICE, LNG/pipeline and the May 2026 contract ruling were not confirmed from primary; contract signing date corrected from 2025-07-16 to 2026-07-16 to match the cited Wisconsin Watch article.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-or-the-dalles-google-water-records",
+  "country": "United States",
+  "region": "Oregon",
+  "site_or_subject": "Google data centers, The Dalles – municipal water use records",
+  "operator": "Google",
+  "lat": 45.6,
+  "lon": -121.18,
+  "category": "water",
+  "record": "The city sued the reporter who requested Google's water records (Wasco County Circuit Court 21CV42306, filed 2021-10-29, Google covering the city's costs) and settled on 2022-12-14, releasing ten years of annual use and agreeing to future disclosure [press]. City records as reported: 104.3 million gallons in 2012, 355.1 million in 2021 (29% of city consumption), 383.9 million in 2023 and 434.4 million in 2024 (about one third). The 2021 agreement ($28.5 million, approved 5-0 on 2021-11-08) transferred smelter groundwater rights to the city; the city now states only part of those rights transferred. Google's own site-level figures use different metrics (274.5 million gallons consumed in 2021; 461.1 million withdrawn in 2024) and no document reconciles them with the city's.",
+  "record_sources": [
+   {
+    "title": "Oregon city drops fight to keep Google water use private",
+    "url": "https://www.courthousenews.com/oregon-city-drops-fight-to-keep-google-water-use-private/",
+    "publisher": "Courthouse News / AP",
+    "date": "2022-12-15"
+   },
+   {
+    "title": "Google's water use is soaring in The Dalles, records show",
+    "url": "https://waterwatch.org/googles-water-use-is-soaring-in-the-dalles-records-show-with-two-more-data-centers-to-come",
+    "publisher": "WaterWatch of Oregon (summarizing The Oregonian)",
+    "date": "2022-12"
+   },
+   {
+    "title": "As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest",
+    "url": "https://oregoncapitalchronicle.com/?p=19760",
+    "publisher": "Oregon Capital Chronicle / OPB",
+    "date": "2026-01-19"
+   }
+  ],
+  "claim": "Google says it has offset its water use through watershed investments, that the 2021 agreement is adequate for future needs (a joint Google/city statement), that its local use equals '1.8 golf courses', that the aquifer storage system it transferred in October 2025 gives the community 100 million more gallons a year, and that it is not behind the federal land-transfer bill.",
+  "claim_sources": [
+   {
+    "title": "As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest",
+    "url": "https://oregoncapitalchronicle.com/?p=19760",
+    "publisher": "Oregon Capital Chronicle / OPB",
+    "date": "2026-01-19"
+   },
+   {
+    "title": "Google's water use is soaring in The Dalles, records show",
+    "url": "https://waterwatch.org/googles-water-use-is-soaring-in-the-dalles-records-show-with-two-more-data-centers-to-come",
+    "publisher": "WaterWatch of Oregon",
+    "date": "2022-12"
+   }
+  ],
+  "gap": "Records became public only through a settlement thirteen months after the city sued the requester; the city's figures and Google's site-level figures differ by metric and none reconciles them; the replenishment claim has no measured volume behind it in the record (the watermaster described testing as ongoing).",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "receipt": "the_dalles_google_water",
+  "verification_note": " Worked into a full receipt (28 dated rows, 40 sources); three registry statements corrected from it: smelter right only partly transferred, 2024 share is 'about a third' with no city total stated, and the 'adequate' statement was joint."
+ },
+ {
+  "id": "us-az-goodyear-mesa-water-records-vs-claims",
+  "country": "United States",
+  "region": "Arizona",
+  "site_or_subject": "Phoenix-area data center water (Goodyear Microsoft campus; Mesa industrial users)",
+  "operator": "Microsoft; Meta; Apple; others",
+  "lat": 33.44,
+  "lon": -112.36,
+  "category": "water",
+  "record": "City of Goodyear's amended development agreement (approved March 2023) caps Microsoft's industrial discharge at 500,000 gal/day and requires all data centers after PHX-12 to be air-cooled (original plan: five evaporatively cooled buildings at up to 1 million gal/day each); Microsoft funds $36M of a ~$90M wastewater expansion. A 2024 City of Mesa document on the ADWR-hosted site puts industrial users at ~6% of potable use with ~7,800 acre-feet of supplemental supplies, without naming companies. No per-facility withdrawal figures are public.",
+  "record_sources": [
+   {
+    "title": "Microsoft swapping water for air cooling at campus in Phoenix, Arizona",
+    "url": "https://www.datacenterdynamics.com/en/news/microsoft-swapping-water-for-air-cooling-at-campus-in-phoenix-arizona/",
+    "publisher": "Data Center Dynamics",
+    "date": "2023-03-16"
+   },
+   {
+    "title": "Arizona's water is drying up. That's not stopping the data center rush",
+    "url": "https://grist.org/technology/arizona-water-data-centers-semiconducters/",
+    "publisher": "Grist",
+    "date": "2026-03-04"
+   }
+  ],
+  "claim": "Microsoft: Arizona water-cooled sites consume water on net only above 85°F; will build only zero-water sites in Arizona going forward; Phoenix pilots zero-water-evaporation design in 2026; FY2024 WUE 0.30 L/kWh. Meta: zero-water systems 'depending on local conditions.' Amazon: 'we use water only when we need to.'",
+  "claim_sources": [
+   {
+    "title": "Sustainable by design: next-generation datacenters consume zero water for cooling",
+    "url": "https://microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling",
+    "publisher": "Microsoft",
+    "date": "2024-12-09"
+   },
+   {
+    "title": "Arizona's water is drying up. That's not stopping the data center rush",
+    "url": "https://grist.org/technology/arizona-water-data-centers-semiconducters/",
+    "publisher": "Grist",
+    "date": "2026-03-04"
+   }
+  ],
+  "gap": "Operators report global water metrics and design intentions; city records are aggregate and anonymized, so claims cannot be checked against facility-level withdrawals.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched for the 2023 Goodyear council action and amended Microsoft development agreement; the only city PDF found (goodyearaz.gov doc 31288) is an unrelated 2024 Rainbow Valley WRF agreement with Estrella North LLC; the 500,000 gal/day cap, air-cooling requirement and $36M contribution remain press-sourced, and the Mesa/ADWR document was not re-fetched.",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "us-nv-google-nv-energy-clean-transition-tariff",
+  "country": "United States",
+  "region": "Nevada",
+  "site_or_subject": "Google data centers (Storey County) – NV Energy Clean Transition Tariff with 115 MW Fervo geothermal",
+  "operator": "Google / NV Energy (Sierra Pacific Power) / Fervo Energy",
+  "lat": 39.55,
+  "lon": -119.45,
+  "category": "power",
+  "record": "Google (as Callisto Enterprises LLC) and NV Energy (Sierra Pacific Power) filed an energy supply agreement with the PUCN on 2024-06-10 (Docket 24-06014), tied to the Clean Transition Tariff then pending in Docket 24-05023, for 115 MW from Fervo's Corsac Station enhanced geothermal project; per the PUCN notice, the applicants state the arrangement 'does not result in any increased costs or forgone benefits for non-participating customers.' The PUCN approved the CTT the week of 2025-05-15, with the ESA and the Fervo–NV Energy PPA still requiring approval.",
+  "record_sources": [
+   {
+    "title": "PUCN Notice of Joint Application, Docket No. 24-06014 (Sierra Pacific Power Co. and Callisto Enterprises LLC)",
+    "url": "https://www.recordcourier.com/news/2024/jun/25/douglas-county-legal-44391/",
+    "publisher": "Public Utilities Commission of Nevada (legal notice, via The Record-Courier)",
+    "date": "2024-06-17"
+   },
+   {
+    "title": "Google seeks approval of agreement to supply Nevada data centers",
+    "url": "https://www.publicpower.org/node/23810",
+    "publisher": "American Public Power Association",
+    "date": "2024-06"
+   },
+   {
+    "title": "Google, Fervo and NV Energy ask Nevada PUC to approve clean energy tariff",
+    "url": "https://www.utilitydive.com/news/google-fervo-nv-energy-nevada-puc-clean-energy-tariff/719472",
+    "publisher": "Utility Dive",
+    "date": "2024-06-21"
+   },
+   {
+    "title": "The Clean Transition Tariff won approval in Nevada. What's next for Fervo?",
+    "url": "https://www.latitudemedia.com/news/the-clean-transition-tariff-won-approval-in-nevada-whats-next-for-fervo/",
+    "publisher": "Latitude Media",
+    "date": "2025-05-15"
+   }
+  ],
+  "claim": "Google: 115 MW of new enhanced geothermal will bring 'round-the-clock clean power' to the grid serving its Nevada data centers toward its 24/7 carbon-free energy by 2030 goal; NV Energy CEO: the deal 'will not be paid for by NV Energy's other customers.'",
+  "claim_sources": [
+   {
+    "title": "How we're working with utilities to create a new model for clean energy",
+    "url": "https://blog.google/outreach-initiatives/sustainability/google-clean-energy-partnership/",
+    "publisher": "Google",
+    "date": "2024-06-11"
+   }
+  ],
+  "gap": "positive example: regulator-approved firm clean supply for data center load; no public hourly-matching verification mechanism appears in the retrieved record.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "PUCN legal notice (dated 2024-06-17) shows the ESA was filed 2024-06-10 in Docket 24-06014 by Sierra Pacific and Callisto Enterprises LLC (Google), not 2024-06-07 in Docket 24-05023 as in press, and confirms the no-increased-cost statement; it does not mention Fervo or 115 MW, and no PUCN order approving the CTT was found by search, so those remain press-sourced.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-ia-west-des-moines-microsoft-water",
+  "country": "United States",
+  "region": "Iowa",
+  "site_or_subject": "Microsoft West Des Moines data centers – municipal water use",
+  "operator": "Microsoft",
+  "lat": 41.57,
+  "lon": -93.71,
+  "category": "water",
+  "record": "West Des Moines Water Works reports Microsoft's five sites use 2–7% of monthly pumped water and 48,751,325 gallons in January–September 2025, used for evaporative cooling per the utility spokesperson; Iowa DNR requires a permit above 25,000 gal/day.",
+  "record_sources": [
+   {
+    "title": "Energy, water use under close watch as data centers expand in Iowa",
+    "url": "https://www.businessrecord.com/energy-water-use-under-close-watch-as-data-centers-expand-in-iowa/",
+    "publisher": "Business Record",
+    "date": "2025-11-28"
+   }
+  ],
+  "claim": "Microsoft 2025 Environmental Sustainability Report: goal of 'becoming water positive by 2030'; newer data centers use closed-loop liquid cooling that eliminates evaporation; $25M invested in local water infrastructure. Google (Council Bluffs): aims to replenish 120% of water used, ~66% there.",
+  "claim_sources": [
+   {
+    "title": "Energy, water use under close watch as data centers expand in Iowa",
+    "url": "https://www.businessrecord.com/energy-water-use-under-close-watch-as-data-centers-expand-in-iowa/",
+    "publisher": "Business Record",
+    "date": "2025-11-28"
+   }
+  ],
+  "gap": "Utility describes the existing West Des Moines sites as evaporatively cooled while the operator's claims concern newer closed-loop designs and a global 'water positive' target.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched for West Des Moines Water Works reports or board records and Iowa DNR water-use permit records for Microsoft; results were press (Business Record, WHO13, Axios) and Microsoft corporate material only, so the 48,751,325-gallon and 2–7% figures could not be confirmed from a utility or DNR document.",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "us-wa-seattle-westin-amazon-heat-reuse",
+  "country": "United States",
+  "region": "Washington",
+  "site_or_subject": "Westin Building Exchange data center waste heat to Amazon Denny Triangle campus",
+  "operator": "Clise Properties / Digital Realty (Westin Building Exchange); Amazon; McKinstry",
+  "lat": 47.61,
+  "lon": -122.34,
+  "category": "heat_reuse",
+  "record": "The Westin Building Exchange (~400,000 sq ft, 70% data center) transfers up to 5 MW of waste heat via a McKinstry-designed exchange to Amazon's ~4 million sq ft Denny Triangle campus; projected savings ~4 million kWh/yr; up to 3,000 gpm circulation; district system to serve >3 million sq ft; first phase opened December 2015 with City of Seattle sustainability office involvement.",
+  "record_sources": [
+   {
+    "title": "Amazon will heat its new Seattle campus with waste heat from next-door data centers",
+    "url": "https://www.bdcnetwork.com/energy-efficiency/article/55148128/amazon-will-heat-its-new-seattle-campus-with-waste-heat-from-next-door-data-centers",
+    "publisher": "Building Design + Construction",
+    "date": "2015-11-16"
+   }
+  ],
+  "claim": "Clise Properties: system cost in 'the low millions' and will pay for itself through energy savings.",
+  "claim_sources": [
+   {
+    "title": "Amazon will heat its new Seattle campus with waste heat from next-door data centers",
+    "url": "https://www.bdcnetwork.com/energy-efficiency/article/55148128/amazon-will-heat-its-new-seattle-campus-with-waste-heat-from-next-door-data-centers",
+    "publisher": "Building Design + Construction",
+    "date": "2015-11-16"
+   }
+  ],
+  "gap": "positive example: operating urban data center heat reuse; figures are 2015 design projections and no post-commissioning performance data was found (source older than 2024).",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched for City of Seattle / Office of Sustainability and other primary records on the Westin Building Exchange–Amazon heat transfer; results returned only copies of the 2015 BD+C article, so the 5 MW, ~4 million kWh/yr and 3,000 gpm design figures could not be confirmed from a primary document.",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ca-ab-aeso-large-load-byog-greenlight",
+  "country": "Canada",
+  "region": "Alberta",
+  "site_or_subject": "AESO large-load connection cap, gas-only BYOG bridging, and Greenlight Electricity Centre (932 MW gas)",
+  "operator": "AESO; Pembina Pipeline / Kineticor / Morgan Stanley Infrastructure (Greenlight)",
+  "lat": 53.8,
+  "lon": -113.2,
+  "category": "fuel",
+  "record": "AESO's interim approach (rolled out 2025-06-04) limited large-load (≥75 MW) connections to 1,200 MW through 2028; by September 2025 AESO reported 33 data center proposals (~20.7 GW) of which 15 (~4.8 GW) were judged viable. Draft June 2026 'bring your own generation' rules would add a ~1.6 GW interruptible bridging pool limited to gas-fired generation ('renewables and hybrid facilities are not eligible for now'). AUC Decision 30261-D02-2026 (2026-06-25) approved Greenlight as a 1,864 MW two-stage combined-cycle plant near Gibbons; Pembina took FID on 2026-07-02 on the first 932 MW (2× Siemens SGT6-8000H), C$4.6B gross including financing costs, Sturgeon County, ~150 MMcf/d gas, COD second half 2030, long-term tolling to an unnamed data center customer.",
+  "record_sources": [
+   {
+    "title": "Greenlight Electricity Centre (Proceeding 30261; Decision 30261-D02-2026)",
+    "url": "https://www.auc.ab.ca/featured/greenlight-electricity-centre/",
+    "publisher": "Alberta Utilities Commission",
+    "date": "2026-06-25"
+   },
+   {
+    "title": "Phase 2A: Large Load Integration | BYOG Process",
+    "url": "https://aesoengage.aeso.ca/pre-engagement-phase-ii-large-load-integration",
+    "publisher": "AESO",
+    "date": "2026-09"
+   },
+   {
+    "title": "Alberta grid operator launches interim plan to connect up to 1.2GW of data centers by 2028",
+    "url": "https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/",
+    "publisher": "Data Center Dynamics",
+    "date": "2025-06-05"
+   },
+   {
+    "title": "Alberta's bring-your-own-generation large load plan",
+    "url": "https://thelogic.co/news/alberta-byog-large-load-plan/",
+    "publisher": "The Logic",
+    "date": "2026-06-24"
+   },
+   {
+    "title": "Pembina Pipeline announces positive final investment decision on the Greenlight Electricity Centre",
+    "url": "https://mms.businesswire.com/media/20260701575540/en/2844087/1/July_2%2C_2026_Press_Release_vF.pdf?download=1",
+    "publisher": "Pembina Pipeline (Business Wire)",
+    "date": "2026-07-02"
+   },
+   {
+    "title": "Pembina reaches FID on $3.2 billion Alberta gas power project for data center",
+    "url": "https://pgjonline.com/news/2026/july/pembina-reaches-fid-on-32-billion-alberta-gas-power-project-for-data-center",
+    "publisher": "Pipeline & Gas Journal",
+    "date": "2026-07"
+   }
+  ],
+  "claim": "AESO CEO: connecting all large loads seeking access would impair reliability. Pembina CEO: dedicated contracted gas-to-power is 'a promising new growth platform' that will drive new natural gas demand. The Logic reported the Greenlight customer is Meta, which Meta has not publicly confirmed.",
+  "claim_sources": [
+   {
+    "title": "Alberta's bring-your-own-generation large load plan",
+    "url": "https://thelogic.co/news/alberta-byog-large-load-plan/",
+    "publisher": "The Logic",
+    "date": "2026-06-24"
+   }
+  ],
+  "gap": "Grid operator's bridging program for data centers is formally gas-only; the data center customer of the approved 932 MW plant is not publicly identified in the record.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "AUC page confirms Decision 30261-D02-2026 (2026-06-25) approving 1,864 MW in two stages; AESO engagement page confirms the 1,200 MW interim limit (2025-06-04) and a proposed BYOG process posted 2026-06-26; Pembina release confirms 932 MW, C$4.6B, ~150 MMcf/d, 2H 2030; the ~1.6 GW gas-only bridging pool and 33-proposal/20.7 GW figures were not found in AESO material retrieved and remain press-sourced.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "ca-qc-hydro-quebec-data-centre-tariff-allocation",
+  "country": "Canada",
+  "region": "Quebec",
+  "site_or_subject": "Hydro-Québec data centre allocation and proposed CD tariff (Régie R-4333-2026)",
+  "operator": "Hydro-Québec / Régie de l'énergie / Government of Québec",
+  "lat": 46.81,
+  "lon": -71.21,
+  "category": "grid_policy",
+  "record": "Hydro-Québec's 2026-06-22 response in Régie docket R-4333-2026 proposes a data-centre (CD) tariff of ~13 ¢/kWh (12 ¢ energy + ~2 ¢ capacity avoided cost at 95% load factor) for loads ≥5 MW, effective 2026-11-01 if approved; 2025 data-centre subscriptions total 187 MW peak and 662 MVA authorized (~93% of sector consumption); HQ declined to disclose project-level pipeline. Bill 69 (June 2025) and Decrees 88-2026/89-2026 (Jan 2026) require ministerial authorization for ≥5 MW projects, scored on benefits per MW including heat-rejection recovery. HQ's 2026-02-19 release projects sector demand above 1,000 MW by 2035.",
+  "record_sources": [
+   {
+    "title": "R-4333-2026-B-0035 – Réponses de HQD aux demandes de renseignements",
+    "url": "https://www.regie-energie.qc.ca/fr/participants/dossiers/R-4333-2026/doc/R-4333-2026-B-0035-DDR-RepDDR-2026_06_22.pdf",
+    "publisher": "Régie de l'énergie du Québec",
+    "date": "2026-06-22"
+   },
+   {
+    "title": "Hydro-Québec proposing to the Régie de l'énergie a new rate for large data centres",
+    "url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html",
+    "publisher": "Hydro-Québec",
+    "date": "2026-02-19"
+   },
+   {
+    "title": "Data centre regulation in Quebec: from honeyed promise to iron control",
+    "url": "https://www.blg.com/en/insights/2026/07/data-centre-regulation-in-quebec-from-honeyed-promise-to-iron-control",
+    "publisher": "BLG",
+    "date": "2026-07"
+   }
+  ],
+  "claim": "Hydro-Québec: the new rates ensure data centres cover the costs of their demand while remaining competitive, using fully renewable electricity; the government backs the approach via Orders in Council.",
+  "claim_sources": [
+   {
+    "title": "Hydro-Québec proposing a new rate for large data centres",
+    "url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html",
+    "publisher": "Hydro-Québec",
+    "date": "2026-02-19"
+   }
+  ],
+  "gap": "positive example on supply (hydro-based allocation with heat-recovery criterion); allocated MW per project is not disclosed in the docket.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "ca-on-bill-40-data-centre-playbook",
+  "country": "Canada",
+  "region": "Ontario",
+  "site_or_subject": "Ontario Bill 40 and Data Centre Playbook (grid access and cost responsibility)",
+  "operator": "Government of Ontario / IESO / Ontario Energy Board",
+  "lat": 43.65,
+  "lon": -79.38,
+  "category": "grid_policy",
+  "record": "Bill 40, the Protect Ontario by Securing Affordable Energy for Generations Act, 2025 (third reading 2025-12-08; Royal Assent 2025-12-11, S.O. 2025, c. 22), adds economic-growth objects for the IESO and an economic-growth objective for the OEB, makes transmitters' non-discriminatory-access licence conditions subject to new connection restrictions (s. 28.1), and bars transmitters and distributors from connecting 'specified load facilities' unless requirements set by regulation are met; regulations may specify who gives or withholds connection approvals. ERO posting 026-0853 (Ministry of Energy and Mines, 2026-08-13; comments closed 2026-09-12) proposes a Data Centre Playbook assessing new data centres on economic development, digital sovereignty and security, and community investment and public trust, and a separate Global Adjustment rate class (e.g., Class C) under O. Reg. 429/04 for new data centres above a demand threshold (example: 1 MW) that would not be eligible for the Industrial Conservation Initiative. Torys reports the framework would also have new data centres bear full generation and transmission upgrade costs, with only non-financial support from the province.",
+  "record_sources": [
+   {
+    "title": "Bill 40, Protect Ontario by Securing Affordable Energy for Generations Act, 2025 (status and text)",
+    "url": "https://www.ola.org/en/legislative-business/bills/parliament-44/session-1/bill-40",
+    "publisher": "Legislative Assembly of Ontario",
+    "date": "2025-12-11"
+   },
+   {
+    "title": "Economic and Strategic Assessment Framework for New Data Centres (ERO 026-0853)",
+    "url": "https://ero.ontario.ca/node/16431",
+    "publisher": "Ontario Ministry of Energy and Mines (Environmental Registry of Ontario)",
+    "date": "2026-08-13"
+   },
+   {
+    "title": "New framework for data centre grid connections",
+    "url": "https://www.torys.com/our-latest-thinking/publications/2026/08/new-framework-for-data-centre-grid-connections",
+    "publisher": "Torys LLP",
+    "date": "2026-08"
+   }
+  ],
+  "claim": "Province describes the Playbook as a 'whole-of-government effort' prioritizing economic development, data sovereignty and community investment, including reduced water use, noise and air pollution.",
+  "claim_sources": [
+   {
+    "title": "New framework for data centre grid connections",
+    "url": "https://www.torys.com/our-latest-thinking/publications/2026/08/new-framework-for-data-centre-grid-connections",
+    "publisher": "Torys LLP",
+    "date": "2026-08"
+   }
+  ],
+  "gap": "none documented; IESO connection-request volumes (GW) were not located in the record.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "Bill 40 text/status (ola.org) and ERO 026-0853 checked: the earlier summary said the bill 'removed the non-discrimination principle' and set ministerial approval for 'large load facilities', whereas the statute subordinates non-discriminatory-access licence conditions to s. 28.1, uses 'specified load facility' and leaves the approver to regulation; GA class (1 MW example), ICI exclusion and 2026-08-13/09-12 dates confirmed; cost-responsibility statement is not in the ERO notice and is attributed to Torys.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "ca-bc-vancouver-telus-garden-heat-reuse",
+  "country": "Canada",
+  "region": "British Columbia",
+  "site_or_subject": "TELUS Garden district energy centre (data centre waste heat), Vancouver",
+  "operator": "FortisBC Alternative Energy Services (owner/operator); TELUS; Creative Energy (peaking)",
+  "lat": 49.28,
+  "lon": -123.12,
+  "category": "heat_reuse",
+  "record": "BCUC Order C-1-13 (2013-02-04) approved FortisBC Alternative Energy Services' TELUS Garden thermal energy system, which uses heat exchangers and water-to-water heat pumps to recover warm-water waste heat from the TELUS data centre (1,400 kW available 24/7) for the ~1 million sq ft TELUS Garden development (a 24-storey office tower and a residential tower, 44 storeys in the 2013 application), designed to meet 94% of annual heating demand, with Central Heat Distribution Limited (now Creative Energy) steam for peaking and backup; forecast peak loads were 5.8 MW heating and 5.5 MW cooling, and forecast emissions ~12 tCO2e/yr versus >1,210 tCO2e/yr business as usual.",
+  "record_sources": [
+   {
+    "title": "Order C-1-13 and Reasons for Decision: FortisBC Alternative Energy Services Inc., TELUS Garden Thermal Energy System",
+    "url": "https://www.ordersdecisions.bcuc.com/bcuc/orders/en/118621/1/document.do",
+    "publisher": "British Columbia Utilities Commission",
+    "date": "2013-02-04"
+   },
+   {
+    "title": "The FAES Energy Centre at TELUS Garden (IDEA 2018 presentation listing)",
+    "url": "https://www.districtenergy.org/viewdocument/the-faes-energy-centre-at-telus-gar",
+    "publisher": "International District Energy Association",
+    "date": "2018-07-03"
+   },
+   {
+    "title": "Offices and homes to use waste heat from Telus data center",
+    "url": "https://www.datacenterdynamics.com/en/news/offices-and-homes-to-use-waste-heat-from-telus-data-center/",
+    "publisher": "Data Center Dynamics",
+    "date": "2013-03-06"
+   }
+  ],
+  "claim": "none found beyond the FortisBC emissions projection.",
+  "claim_sources": [],
+  "gap": "positive example: operating data centre heat reuse in a North American district system; no verified post-commissioning MW or emissions data found (sources older than 2024).",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "BCUC Order C-1-13 and reasons (2013) confirm the data-centre heat-recovery design and give 1,400 kW of 24/7 waste heat, 5.8 MW peak heating, 94% of annual heat and ~12 vs >1,210 tCO2e/yr (consistent with the earlier '~1 million kg/yr' reduction); the order describes a 44-storey residential tower where the record had 53 storeys.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "mx-qro-queretaro-colon-water-grid",
+  "country": "Mexico",
+  "region": "Querétaro",
+  "site_or_subject": "Querétaro/Colón data center cluster – water concessions and CFE grid capacity",
+  "operator": "Microsoft, AWS, Google, CloudHQ, ODATA; CFE/CENACE; CONAGUA",
+  "lat": 20.78,
+  "lon": -100.05,
+  "category": "water",
+  "record": "CONAGUA data cited by the Thomson Reuters Foundation (2024-09-06) show Microsoft acquired an existing concession of 25 million litres/yr in Colón, equal to 24% of the municipality's public-use allocation, in the Valle de San Juan del Río aquifer which CONAGUA reports at a 56.8 billion-litre deficit; CONAGUA says it has granted no new concessions and the state development secretary said he had no data on water allocated to the ~20 data centers. On grid: MEXDC reports Querétaro holds 72% of Mexico's 279 MW installed (May 2026); CFE's transmission program adds up to 800 MW; CloudHQ's 900 MW campus secured its first 200 MW with CFE/CENACE; a former CRE chair said some facilities waited up to two years for connection.",
+  "record_sources": [
+   {
+    "title": "Thirsty data centres spring up in water-poor Mexican town",
+    "url": "https://www.context.news/ai/thirsty-data-centres-spring-up-in-water-poor-mexican-town",
+    "publisher": "Context / Thomson Reuters Foundation",
+    "date": "2024-09-06"
+   },
+   {
+    "title": "La CFE fortalece el suministro eléctrico para el auge de centros de datos en Querétaro",
+    "url": "https://www.datacenterdynamics.com/es/noticias/la-cfe-fortalece-el-suministro-el%C3%A9ctrico-para-el-auge-de-centros-de-datos-en-quer%C3%A9taro/",
+    "publisher": "Data Center Dynamics (es)",
+    "date": "2026-01-13"
+   },
+   {
+    "title": "Hay centros de datos en Querétaro que llevan dos años esperando poder conectarse a la red eléctrica",
+    "url": "https://www.xataka.com.mx/robotica-e-ia/hay-centros-datos-queretaro-que-llevan-dos-anos-esperando-algo-basico-poder-conectarse-a-red-electrica",
+    "publisher": "Xataka México",
+    "date": "2026-09-09"
+   }
+  ],
+  "claim": "Microsoft: Querétaro data centers consume water 'less than 5% of the year.' AWS: air-cooled design 'will not require the ongoing use of cooling water in operations.' Google: working with suppliers to reduce water use (no figures). Governor Kuri denies data centers cause an energy deficit, attributing delays to transmission/distribution infrastructure.",
+  "claim_sources": [
+   {
+    "title": "Thirsty data centres spring up in water-poor Mexican town",
+    "url": "https://www.context.news/ai/thirsty-data-centres-spring-up-in-water-poor-mexican-town",
+    "publisher": "Context / Thomson Reuters Foundation",
+    "date": "2024-09-06"
+   },
+   {
+    "title": "Hay centros de datos en Querétaro que llevan dos años esperando poder conectarse a la red eléctrica",
+    "url": "https://www.xataka.com.mx/robotica-e-ia/hay-centros-datos-queretaro-que-llevan-dos-anos-esperando-algo-basico-poder-conectarse-a-red-electrica",
+    "publisher": "Xataka México",
+    "date": "2026-09-09"
+   }
+  ],
+  "gap": "Operators describe low or zero cooling-water designs; the only public withdrawal figure is one concession, and the state reports no aggregate allocation data for the cluster.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched in Spanish for CONAGUA's availability study for aquifer 2202 (Valle de San Juan del Río) and REPDA concession records; the CONAGUA PDF (sigagis.conagua.gob.mx/gas1/Edos_Acuiferos_18/queretaro/DR_2202.pdf) could not be fetched (access not granted) and no concession title or CFE/CENACE interconnection document was found, so the 25 million L/yr, 24% and 56.8 billion-litre figures remain sourced to TRF reporting of CONAGUA data.",
+  "verification_status": "not_found"
+ }
+]

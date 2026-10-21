@@ -1,0 +1,103 @@
+{
+ "_fixture_note": "SYNTHETIC values in the EIA API v2 envelope (response.total/data). Row keys = facet ids (location, sectorid, fueltypeid) + data id (generation) + '<id>-units', following the convention visible in EIA's documented retail-sales example and gridstatus' facility-fuel parser. Description keys are not used by the parser.",
+ "response": {
+  "total": "8",
+  "dateFormat": "YYYY-MM",
+  "frequency": "monthly",
+  "data": [
+   {
+    "period": "2026-06",
+    "location": "TX",
+    "stateDescription": "Texas",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "ALL",
+    "fuelTypeDescription": "all fuels",
+    "generation": 50000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-06",
+    "location": "TX",
+    "stateDescription": "Texas",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "NG",
+    "fuelTypeDescription": "natural gas",
+    "generation": 25000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-07",
+    "location": "TX",
+    "stateDescription": "Texas",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "ALL",
+    "fuelTypeDescription": "all fuels",
+    "generation": 56000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-07",
+    "location": "TX",
+    "stateDescription": "Texas",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "NG",
+    "fuelTypeDescription": "natural gas",
+    "generation": 30000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-06",
+    "location": "VA",
+    "stateDescription": "Virginia",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "ALL",
+    "fuelTypeDescription": "all fuels",
+    "generation": 10000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-06",
+    "location": "VA",
+    "stateDescription": "Virginia",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "NG",
+    "fuelTypeDescription": "natural gas",
+    "generation": 5000.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-07",
+    "location": "VA",
+    "stateDescription": "Virginia",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "ALL",
+    "fuelTypeDescription": "all fuels",
+    "generation": 11200.0,
+    "generation-units": "thousand megawatthours"
+   },
+   {
+    "period": "2026-07",
+    "location": "VA",
+    "stateDescription": "Virginia",
+    "sectorid": "99",
+    "sectorDescription": "All Sectors",
+    "fueltypeid": "NG",
+    "fuelTypeDescription": "natural gas",
+    "generation": 6000.0,
+    "generation-units": "thousand megawatthours"
+   }
+  ],
+  "description": "SYNTHETIC"
+ },
+ "request": {
+  "command": "/v2/electricity/electric-power-operational-data/data/"
+ },
+ "apiVersion": "2.1.x"
+}

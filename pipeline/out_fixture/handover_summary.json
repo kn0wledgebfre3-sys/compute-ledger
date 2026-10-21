@@ -1,0 +1,58 @@
+{
+  "mode": "fixture",
+  "fixture_warning": "FIXTURE RUN: numbers come from the small sample files in fixtures/, not the full source. They test parsing only and must not be quoted as real totals.",
+  "format_inspected": "2026-10-20",
+  "retrieved_at": null,
+  "sources": [
+    {
+      "name": "seed_sites.json (v1)",
+      "path": "/Users/az/Desktop/environment/repo/registry/seed_sites.json",
+      "rows": 56
+    }
+  ],
+  "sites_total": 214,
+  "sites_v1_kept": 56,
+  "sites_v1_updated_from_permits": 8,
+  "sites_added": 158,
+  "with_coordinates": 63,
+  "with_generator_mw": 13,
+  "with_coordinates_and_generator_mw": 11,
+  "by_state": {
+    "Virginia": {
+      "sites": 18,
+      "with_coordinates": 8,
+      "with_generator_mw": 8,
+      "generator_mw_sum": 1525.7,
+      "needs_review": 10
+    },
+    "Texas": {
+      "sites": 147,
+      "with_coordinates": 6,
+      "with_generator_mw": 1,
+      "generator_mw_sum": 176.5,
+      "needs_review": 142
+    },
+    "other (v1 rows)": {
+      "sites": 49,
+      "with_coordinates": 49,
+      "with_generator_mw": 4,
+      "generator_mw_sum": 6465.8,
+      "needs_review": 0
+    }
+  },
+  "by_coord_method": {
+    "none": 151,
+    "v1": 56,
+    "geocode:nominatim:rooftop": 5,
+    "geocode:census:census_non_exact": 1,
+    "geocode:census:census_exact": 1
+  },
+  "climate_trace": {
+    "emissions_rows": 63,
+    "ownership_rows": 63,
+    "columns_emissions": 44,
+    "columns_ownership": 19,
+    "schema": "Climate TRACE v5.11.0 asset files (to_climate_trace.py mapping)"
+  },
+  "weak_matches_included": false
+}

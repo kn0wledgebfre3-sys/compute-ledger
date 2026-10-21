@@ -1,0 +1,304 @@
+{
+  "id": "us-ga-datacenter-exemption",
+  "title": "Georgia data center sales and use tax exemption: the January 2026 DOAA job revision",
+  "jurisdiction": "United States, Georgia",
+  "summary": "Georgia exempts high-technology data center equipment from state and local sales and use tax under O.C.G.A. § 48-8-3(68.1). The exemption was enacted in 2018 (HB 696), and HB 1291 (2022) moved the end of the exemption period to 31 Dec 2031. An evaluation prepared for the Department of Audits and Accounts (DOAA) by UGA's Carl Vinson Institute was released on 24 Dec 2025 [press]. It estimates FY2025 forgone state revenue at $474,182,904 and attributes 30% of data center activity to the exemption. DOAA's summary reported 28,350 construction and 5,471 operations jobs [press]. On 14 Jan 2026 [press] DOAA reissued the summary, marked Revised January 2026, with 8,505 and 1,641 jobs: 30% of the earlier figures [arithmetic], with cost unchanged and no stated reason. A March 2024 fiscal note signed by the same State Auditor had put FY2025 forgone state revenue at $50.2 million. A 2024 pause bill was vetoed, and a 2026 repeal bill passed the Senate but not the House [press]. Over the same period the PSC certified 9,885 MW of new generation, most of it for large new customers, and Georgia Power reported 12,400 MW of committed large-load customers by March 2026.",
+  "claim": {
+    "who": "Georgia Department of Audits and Accounts (DOAA), summarizing the Carl Vinson Institute of Government (UGA) evaluation of the data center sales and use tax exemption",
+    "what": "For 2025 the summary reported 28,350 construction jobs ($3.4 billion value added) and 5,471 operations jobs ($823 million value added), against $474 million in forgone FY2025 state revenue. [press: the original summary was not retrieved; the same job and value-added figures are the totals of Tables 3 and 4 of the evaluation report at the linked URL]",
+    "date": "2025-12-24",
+    "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298"
+  },
+  "timeline": [
+    {
+      "date": "2018",
+      "document": "UGA/CVIOG, Tax Incentive Evaluation: Georgia High-Tech Data Center Equipment Exemption (Dec 2022), history of HB 696",
+      "figure": "HB 696 (2018) created O.C.G.A. § 48-8-3(68.1). Original terms: 20 quality jobs in every county tier; minimum investment $100M, $150M or $250M by county population.",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=29072",
+      "locator": "p. 2; Background/History p. 9; Table 1, p. 10"
+    },
+    {
+      "date": "2018-03-07",
+      "document": "Office of Gov. Nathan Deal: Facebook to invest $750 million in Stanton Springs data center",
+      "figure": "$750 million over five years; at least 100 full-time jobs; Stanton Springs, Newton County. Incentives not mentioned.",
+      "url": "https://nathandeal.georgia.gov/press-releases/2018-03-07/deal-facebook-invest-750-million-stanton-springs-data-center",
+      "locator": "Release body"
+    },
+    {
+      "date": "2022",
+      "document": "HB 1291 (2022), as passed House and Senate",
+      "figure": "Exemption period end moved from 31 Dec 2028 to 31 Dec 2031; repeal by operation of law 1 Jan 2032. Terms as amended: 25 new quality jobs and $250M (counties over 50,000), 10 and $75M (over 30,000 to 50,000), 5 and $25M (under 30,001).",
+      "url": "https://gov.georgia.gov/document/2022-signed-legislation/hb-1291/download",
+      "locator": "Section 3, pp. 4-5, lines 84-112"
+    },
+    {
+      "date": "2022-12",
+      "document": "UGA/CVIOG, Tax Incentive Evaluation: Georgia High-Tech Data Center Equipment Exemption (for DOAA)",
+      "figure": "90% of Georgia data center activity attributed to the exemption. Forgone state revenue $8,243,715 (2018), projected $80,124,609 (2030). The Department of Revenue provided too little data to use.",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=29072",
+      "locator": "p. 25; Table A, p. 4; pp. 2, 12"
+    },
+    {
+      "date": "2024-03-14",
+      "document": "Fiscal note, HB 1192 (LC 50 0792S), signed by State Auditor Greg S. Griffin and OPB Director Richard Dunn",
+      "figure": "Existing exemption: forgone state revenue ($50.2M) FY2025 and ($56.2M) FY2026. HB 1192 would have raised state revenue by $5.5M in FY2025 by suspending new certificates 1 Jul 2024 to 30 Jun 2026. HTDCE purchases $1,254.4M in FY2025; $50.2M is 4% of $1,254.4M [arithmetic].",
+      "url": "https://opb.georgia.gov/document/fiscal-notes-2024/lc-50-0792s/download",
+      "locator": "Table 1, p. 1; Tables 2-3, p. 2"
+    },
+    {
+      "date": "2024-05-07",
+      "document": "Governor Kemp, 2024 veto messages: HB 1192",
+      "figure": "Veto of a two-year pause on new certificates from 1 Jul 2024. The message says the pause risked \"undermining the investments made by high-technology data center operators\" and notes the legislature had extended the exemption through 2031. [press: veto date per Capitol Beat 2024-05-07; the message is undated]",
+      "url": "https://gov.georgia.gov/document/2024-vetoed-legislation/2024-veto-messages/download",
+      "locator": "p. 4 of 5"
+    },
+    {
+      "date": "2025-01-07",
+      "document": "Amazon (AWS): investment in Georgia AI and cloud infrastructure",
+      "figure": "At least $11 billion; at least 550 new jobs; Butts and Douglas counties. Incentives not mentioned. Company statement; no governor's office release located.",
+      "url": "https://aboutamazon.com/news/aws/aws-investment-georgia-ai-cloud-infrastructure",
+      "locator": "Release body"
+    },
+    {
+      "date": "2025-07-08",
+      "document": "Georgia PSC stipulation, Dockets 56002 (2025 IRP) and 56003",
+      "figure": "Georgia Power may seek certification of up to 8,500 MW from the 2029-2031 All-Source RFP. The parties note the load forecast is driven by growth from \"only one customer class\", for which historic information is lacking. Quarterly Large Load Economic Development Reports are required.",
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223391/104616",
+      "locator": "Supply Side ¶2, p. 1; ¶2(a) and ¶2(c), p. 2; cover letter dated 2025-07-09"
+    },
+    {
+      "date": "2025-11-12",
+      "document": "PSC staff testimony, as reported by Utility Dive (2025-11-24)",
+      "figure": "About 1,900 MW of the proposed generation backed by executed contracts under the large-load framework; 33 data center projects totaling 11,332 MW left the pipeline since the 2023 IRP Update. [press]",
+      "url": "https://www.utilitydive.com/news/georgia-power-large-load-data-centers/806300/",
+      "locator": "Article body; testimony not retrieved"
+    },
+    {
+      "date": "2025-12-19",
+      "document": "Georgia PSC media advisory: December 19 decision",
+      "figure": "5-0 vote certifying 9,885 MW, most of it to serve large new customers such as data centers. Georgia Power backstops 2029-2031 project costs; rate freeze through 2028. Staff noted contracts were not signed for all expected data centers.",
+      "url": "https://psc.ga.gov/site/assets/files/9176/media_advisory_dec_19_decision.pdf",
+      "locator": "Advisory text"
+    },
+    {
+      "date": "2025-12",
+      "document": "UGA/CVIOG, Tax Incentive Evaluation: Georgia Data Center Sales & Use Tax Exemption (DOAA report 33298), released 2025-12-24 [press]",
+      "figure": "Forgone state revenue FY2025: $474,182,904. 30% of activity attributed to the exemption; 70% would have occurred anyway. DOR supplied data on 34 data centers using or applying for the exemption. FY2025 is a modeled estimate.",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298",
+      "locator": "Table A (p. 5/6); Executive Summary, But For (p. 3/4); pp. 4-5"
+    },
+    {
+      "date": "2025-12",
+      "document": "Same report (DOAA report 33298), Tables 3-5",
+      "figure": "Table 3 (2025 construction, $3.3B direct output): 28,350 jobs (15,809 direct), value added $3,351,493,594. Table 4 (2025 operations, $715M direct output): 5,471 jobs (1,873 direct), value added $823,346,992. Table 5 (30% but-for adjustment): value added only, no jobs rows; 2025 operations $247,004,097.",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298",
+      "locator": "Tables 3-4 (p. 29/30); Table 5 (p. 30/31)"
+    },
+    {
+      "date": "2025-12",
+      "document": "Same report (DOAA report 33298), Table 7",
+      "figure": "Alternate use of the $474.2M in forgone 2025 revenue: 10,371 jobs and $624.6M value added.",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298",
+      "locator": "Table 7 (p. 35)"
+    },
+    {
+      "date": "2025-12-24",
+      "document": "DOAA summary, original release (not retrieved), as reported by The Center Square via The Augusta Press (2025-12-27)",
+      "figure": "28,350 construction jobs and $3.4B value added; 5,471 operations jobs and $823M value added; 30% attribution. [press]",
+      "url": "https://theaugustapress.com/report-30-of-georgias-data-centers-traced-to-2018-tax-break/",
+      "locator": "Press account"
+    },
+    {
+      "date": "2026-01-14",
+      "document": "DOAA, Data Center Tax Exemption Summary (Revised)",
+      "figure": "Date line December 2025, marked Revised January 2026. Construction: 8,505 jobs, $1.01B value added, $34.6M state tax generated, $474.2M forgone, economic ROI 289%, fiscal ROI 4%. Operations: 1,641 jobs, $247.0M value added, $6.9M state tax. 30% attribution. No statement of what was revised. 8,505/28,350 = 0.300; 1,641/5,471 = 0.300 [arithmetic]. [press: 14 Jan issue date per Capitol Beat]",
+      "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf",
+      "locator": "Impact on Employment, Economic Activity, and Revenue section; summary table"
+    },
+    {
+      "date": "2026-01-14",
+      "document": "Capitol Beat News Service: correction report",
+      "figure": "Correction issued Wednesday (14 Jan 2026). \"There was no explanation for the error.\" The underlying report's table still showed the December figures. [press]",
+      "url": "https://capitol-beat.org/2026/01/error-in-state-auditors-data-center-review-inflated-job-production-and-economic-value/",
+      "locator": "Article body"
+    },
+    {
+      "date": "2026-02-19",
+      "document": "Alston & Bird advisory on 2026 Georgia data center exemption bills",
+      "figure": "SB 408: end the exemption 1 Jan 2027. SB 410: end it on effect. SB 436: suspend new certificates 1 Jul 2026 to 30 Jun 2027. HB 559 (filed Feb 2025): sunset 31 Dec 2026. Current expiry 31 Dec 2031. [secondary: law-firm advisory; bill texts not readable]",
+      "url": "https://www.alston.com/en/insights/publications/2026/02/georgia-sales-tax-exemptions-data-centers",
+      "locator": "Advisory body"
+    },
+    {
+      "date": "2026-03-06",
+      "document": "WABE: Georgia bill to repeal new data center tax breaks advances out of Senate",
+      "figure": "SB 410 (Sen. Matt Brass) passed the Senate 32-21. It repeals the (68) and (68.1) exemptions for new users; current data center users may continue to the end of 2031. [press]",
+      "url": "https://www.wabe.org/georgia-bill-to-repeal-new-data-center-tax-breaks-advances-out-of-senate/",
+      "locator": "Article body"
+    },
+    {
+      "date": "2026-04-03",
+      "document": "Bloomberg Law: Data Center Break Survives Georgia Income, Property Tax Push",
+      "figure": "The House did not take up the exemption repeal and the SB 410 effort ended; the exemption remains in force. [press]",
+      "url": "https://news.bloomberglaw.com/capital-markets/data-center-break-survives-georgia-income-property-tax-push",
+      "locator": "Article body"
+    },
+    {
+      "date": "2026-05-15",
+      "document": "Georgia Power, Q1 2026 Large Load Economic Development Report (Docket 56002)",
+      "figure": "Total pipeline 76,200 MW, of which 73,100 MW is large-load economic development. 12,400 MW committed by 31 customers. 21 projects have broken ground (10 online), representing 8,500 MW of commitments.",
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/226607/107887",
+      "locator": "Report cover (Docket No. 56002); pp. 1-2, 4"
+    }
+  ],
+  "gaps": [
+    "The DOAA summary of 24 Dec 2025 reported 28,350 construction and 5,471 operations jobs for 2025 [press]. The revised summary of 14 Jan 2026 reports 8,505 and 1,641, which are 30.0% of the earlier figures [arithmetic], while forgone FY2025 revenue stays at $474.2 million. (timeline: 2025-12-24 DOAA summary; 2026-01-14 DOAA revised summary)",
+    "The original job and value-added figures match the totals of Tables 3 and 4 of the evaluation report, which give statewide 2025 data center construction and operations impacts. The report's own 30% but-for table (Table 5) carries value added only, and its 2025 operations figure of $247,004,097 matches the revised summary's $247.0 million. (timeline: 2025-12 report Tables 3-5; 2025-12-24; 2026-01-14)",
+    "The revised summary does not say what was changed or why, and no DOAA document stating a reason was found. As checked on 20 Oct 2026, the Open Georgia copy of report 33298 is not marked revised and still shows 28,350 and 5,471 in Tables 3-4. (timeline: 2025-12 report Tables 3-5; 2026-01-14 DOAA revised summary; 2026-01-14 Capitol Beat)",
+    "The fiscal note signed by the State Auditor on 14 Mar 2024 put FY2025 forgone state revenue from the existing exemption at $50.2 million. The evaluation DOAA released on 24 Dec 2025 puts FY2025 forgone state revenue at $474,182,904. (timeline: 2024-03-14; 2025-12 report)",
+    "The 2022 evaluation attributed 90% of Georgia data center activity to the exemption, and the 2025 evaluation attributes 30%. (timeline: 2022-12; 2025-12 report)"
+  ],
+  "limits": [
+    "The text of the original 24 Dec 2025 DOAA summary was not retrieved. Its figures are confirmed only through press (Capitol Beat 2026-01-14; The Center Square via The Augusta Press 2025-12-27; WABE/Capitol Beat 2026-01-06), and no archived copy could be reached.",
+    "No statement from DOAA or the Carl Vinson Institute explaining the revision was found. Press reports state that none was given.",
+    "The $474,182,904 FY2025 figure is a model estimate. The report says 2018-2024 values draw on Department of Revenue information and 2025-2030 values are estimates (report 33298, pp. 4-5).",
+    "The 2024 fiscal note covers equipment purchases and does not mention construction materials. The 2025 report describes computer equipment and software (p. 4) and refers to building materials (p. 13). No document reconciles $50.2 million with $474.2 million.",
+    "No public count of jobs actually created at certified data centers was found. The report's employment figures are model outputs, and the only enforcement it describes is a performance bond tied to the investment minimum, not to jobs (p. 13).",
+    "The record does not state the number of certified projects. The report says the Department of Revenue supplied data on 34 data centers that were using or had applied for the exemption.",
+    "HB 1291 ends the exemption period on 31 Dec 2031 and repeals it on 1 Jan 2032, and the 2024 veto message refers to an extension through 2031. The 2025 report states 2033 (p. 12), and no document reconciles these.",
+    "The Q1 2026 Large Load report does not say how many of its 31 committed customers are data centers, and the 2025 stipulation states no data center MW figure.",
+    "The Facebook (2018) and AWS (2025) project announcements do not mention the exemption, and no record of jobs delivered at those sites was located.",
+    "Industry-commissioned totals measure all data center activity, not activity attributable to the exemption. The PwC study for the Data Center Coalition reports 30,070 direct and 176,790 total Georgia jobs for 2023 [press: Capitol Beat 2025-07-03, https://capitol-beat.org/2025/07/impact-of-data-centers-in-georgia-a-mixed-bag/]. The PwC report itself was not retrieved.",
+    "The House outcome for SB 410 is confirmed only through press. Bill status pages and texts on legis.ga.gov could not be read (the API returned binary).",
+    "Page numbers for the UGA reports come from extracted text and varied by one page between fetches. Table numbers are exact, and figures matched across repeated fetches."
+  ],
+  "sources": [
+    {
+      "title": "Tax Incentive Evaluation: Georgia Data Center Sales & Use Tax Exemption, Summary (Revised)",
+      "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf",
+      "publisher": "Georgia Department of Audits and Accounts",
+      "date": "2026-01"
+    },
+    {
+      "title": "Tax Incentive Evaluation: Georgia Data Center Sales & Use Tax Exemption (DOAA report 33298)",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298",
+      "publisher": "Carl Vinson Institute of Government, University of Georgia, for Georgia DOAA (Open Georgia)",
+      "date": "2025-12"
+    },
+    {
+      "title": "Tax Incentive Evaluation: Georgia High-Tech Data Center Equipment Exemption",
+      "url": "https://open.ga.gov/openga/report/downloadFile?rid=29072",
+      "publisher": "Carl Vinson Institute of Government, University of Georgia, for Georgia DOAA (Open Georgia)",
+      "date": "2022-12"
+    },
+    {
+      "title": "Data Center Sales Tax Exemption Summary",
+      "url": "https://www.audits2.ga.gov/wp-content/uploads/2023/01/Data-Center-Sales-Tax-Exemption-Summary.pdf",
+      "publisher": "Georgia Department of Audits and Accounts",
+      "date": "2022-12"
+    },
+    {
+      "title": "HB 1291 (2022), as passed House and Senate",
+      "url": "https://gov.georgia.gov/document/2022-signed-legislation/hb-1291/download",
+      "publisher": "Office of the Governor of Georgia",
+      "date": "2022"
+    },
+    {
+      "title": "Fiscal note, HB 1192 (LC 50 0792S)",
+      "url": "https://opb.georgia.gov/document/fiscal-notes-2024/lc-50-0792s/download",
+      "publisher": "Georgia Department of Audits and Accounts and Office of Planning and Budget",
+      "date": "2024-03-14"
+    },
+    {
+      "title": "2024 veto messages",
+      "url": "https://gov.georgia.gov/document/2024-vetoed-legislation/2024-veto-messages/download",
+      "publisher": "Office of the Governor of Georgia",
+      "date": "2024-05-07"
+    },
+    {
+      "title": "Kemp vetoes bill suspending data centers tax break",
+      "url": "https://capitol-beat.org/2024/05/kemp-vetoes-bill-suspending-data-centers-tax-break/",
+      "publisher": "Capitol Beat News Service",
+      "date": "2024-05-07"
+    },
+    {
+      "title": "Deal: Facebook to invest $750 million in Stanton Springs data center",
+      "url": "https://nathandeal.georgia.gov/press-releases/2018-03-07/deal-facebook-invest-750-million-stanton-springs-data-center",
+      "publisher": "Office of Governor Nathan Deal",
+      "date": "2018-03-07"
+    },
+    {
+      "title": "AWS investment in Georgia AI and cloud infrastructure",
+      "url": "https://aboutamazon.com/news/aws/aws-investment-georgia-ai-cloud-infrastructure",
+      "publisher": "Amazon",
+      "date": "2025-01-07"
+    },
+    {
+      "title": "Stipulation, Georgia Power 2025 IRP (Docket 56002) and Certification Application (Docket 56003)",
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/223391/104616",
+      "publisher": "Georgia Public Service Commission",
+      "date": "2025-07-09"
+    },
+    {
+      "title": "Media advisory: December 19 decision",
+      "url": "https://psc.ga.gov/site/assets/files/9176/media_advisory_dec_19_decision.pdf",
+      "publisher": "Georgia Public Service Commission",
+      "date": "2025-12-19"
+    },
+    {
+      "title": "Q1 2026 Large Load Economic Development Report (Docket 56002)",
+      "url": "https://services.psc.ga.gov/api/v1/External/Public/Get/Document/DownloadFile/226607/107887",
+      "publisher": "Georgia Power Company (filed with Georgia PSC)",
+      "date": "2026-05-15"
+    },
+    {
+      "title": "Georgia Power large load pipeline (reporting PSC staff testimony)",
+      "url": "https://www.utilitydive.com/news/georgia-power-large-load-data-centers/806300/",
+      "publisher": "Utility Dive",
+      "date": "2025-11-24"
+    },
+    {
+      "title": "Report: 30% of Georgia's data centers traced to 2018 tax break",
+      "url": "https://theaugustapress.com/report-30-of-georgias-data-centers-traced-to-2018-tax-break/",
+      "publisher": "The Augusta Press (The Center Square)",
+      "date": "2025-12-27"
+    },
+    {
+      "title": "State report says data centers a boon to economy despite tax giveaway",
+      "url": "https://www.wabe.org/state-report-says-data-centers-a-boon-to-economy-despite-tax-giveaway/",
+      "publisher": "WABE (Capitol Beat News Service)",
+      "date": "2026-01-06"
+    },
+    {
+      "title": "Error in state auditors' data center review inflated job production and economic value",
+      "url": "https://capitol-beat.org/2026/01/error-in-state-auditors-data-center-review-inflated-job-production-and-economic-value/",
+      "publisher": "Capitol Beat News Service",
+      "date": "2026-01-14"
+    },
+    {
+      "title": "Georgia sales tax exemptions for data centers (2026 bills)",
+      "url": "https://www.alston.com/en/insights/publications/2026/02/georgia-sales-tax-exemptions-data-centers",
+      "publisher": "Alston & Bird",
+      "date": "2026-02-19"
+    },
+    {
+      "title": "Georgia bill to repeal new data center tax breaks advances out of Senate",
+      "url": "https://www.wabe.org/georgia-bill-to-repeal-new-data-center-tax-breaks-advances-out-of-senate/",
+      "publisher": "WABE",
+      "date": "2026-03-06"
+    },
+    {
+      "title": "Data Center Break Survives Georgia Income, Property Tax Push",
+      "url": "https://news.bloomberglaw.com/capital-markets/data-center-break-survives-georgia-income-property-tax-push",
+      "publisher": "Bloomberg Law",
+      "date": "2026-04-03"
+    },
+    {
+      "title": "Impact of data centers in Georgia a mixed bag",
+      "url": "https://capitol-beat.org/2025/07/impact-of-data-centers-in-georgia-a-mixed-bag/",
+      "publisher": "Capitol Beat News Service",
+      "date": "2025-07-03"
+    }
+  ],
+  "last_checked": "2026-10-20"
+}

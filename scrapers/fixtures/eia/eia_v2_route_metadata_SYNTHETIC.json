@@ -1,0 +1,30 @@
+{
+ "_fixture_note": "SYNTHETIC route-metadata response, used to test the facet/data-column check.",
+ "response": {
+  "id": "electric-power-operational-data",
+  "facets": [
+   {
+    "id": "location"
+   },
+   {
+    "id": "sectorid"
+   },
+   {
+    "id": "fueltypeid"
+   }
+  ],
+  "data": {
+   "generation": {
+    "units": "thousand megawatthours"
+   }
+  },
+  "frequency": [
+   {
+    "id": "monthly"
+   },
+   {
+    "id": "annual"
+   }
+  ]
+ }
+}

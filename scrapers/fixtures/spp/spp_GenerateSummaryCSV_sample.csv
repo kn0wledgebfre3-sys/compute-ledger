@@ -1,0 +1,19 @@
+"Last Updated On",10/19/2026,
+Generation Interconnection Number,IFS Queue Number,Current Cluster,Cluster Group, Nearest Town or County,State,TO at POI,In-Service Date,Commercial Operation Date,Cessation Date,Original Generator Commercial Op Date,Capacity,MAX Summer MW,MAX Winter MW,Service Type,Requested Maximum Injection Capability (MW),Requested Network Resource Deliverability (MW),Nameplate Capacity,Generation Type,Fuel Type,Substation or Line,Request Received,Date Withdrawn,Status,JTIQ Participant,JTIQ Commitment,Cause of Delay
+TI-18-0827,,RTOE Transitional Cluster,,Weld County,CO,TSGT,6/24/2022,,,,145,145,145,ER/NR,0,0,0,Wind,Wind,Redtail 115  Substation,8/27/2018,,IA FULLY EXECUTED/COMMERCIAL OPERATION,,,
+TI-17-0224,,RTOE Transitional Cluster,,Kit Carson/Cheyenne Counties,CO,TSGT,9/2/2020,,,,104,104,104,ER/NR,0,0,0,Wind,Wind,Windtalker 230 Switching Station,2/24/2017,,IA FULLY EXECUTED/COMMERCIAL OPERATION,,,
+TI-12-0217,,RTOE Transitional Cluster,,Ouray County,CO,TSGT,11/1/2013,,,,7.2,7.2,7.2,ER/NR,0,0,0,Solar,Photovoltaic,Cow Creek 115 Switching Station,2/17/2012,,IA FULLY EXECUTED/COMMERCIAL OPERATION,,,
+TI-08-0502,,RTOE Transitional Cluster,,Kit Carson County,CO,TSGT,10/15/2010,,,,51,51,51,ER/NR,0,0,0,Wind,Wind,Landsman Creek 230 SwitchingStation,5/2/2008,,IA FULLY EXECUTED/COMMERCIAL OPERATION,,,
+TI-08-0204,,RTOE Transitional Cluster,,Kit Carson County,CO,TSGT,11/30/2015,,,,150,150,150,ER/NR,0,0,0,Wind,Wind,Burlington 230  Bus,2/4/2008,,IA FULLY EXECUTED/COMMERCIAL OPERATION,,,
+GI-TC-2024-31,,RTOE Transitional Cluster,,Elbert County,CO,TSGT,10/1/2027,12/31/2028,,,398,398,398,ER,0,0,0,Hybrid,Solar/Storage,Lincoln - Midway 230  Line,5/29/2024,,IA FULLY EXECUTED/ON SCHEDULE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-30,,RTOE Transitional Cluster,,Morgan County,CO,TSGT,3/1/2028,,,,199.9,199.9,199.9,ER/NR,0,0,0,Hybrid,Solar/Storage,Story 230 Substation,5/29/2024,,IA FULLY EXECUTED/ON SCHEDULE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-29,,RTOE Transitional Cluster,,Kit Carson County,CO,TSGT,9/15/2027,10/1/2028,,,170,170,170,ER/NR,0,0,0,Wind,Wind,Landsman Creek-Windtalker 230Line,5/29/2024,,FACILITY STUDY STAGE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-28,,RTOE Transitional Cluster,,Weld County,CO,TSGT,6/2/2031,12/31/2027,,,222.3,222.3,222.3,ER/NR,0,0,0,Solar,Photovoltaic,Lloyd Sisson 115  Substation,5/31/2023,,FACILITY STUDY STAGE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-26,,RTOE Transitional Cluster,,Elbert County,CO,TSGT,1/1/2028,8/17/2027,,,199,199,199,ER/NR,0,0,0,Hybrid,Solar/Storage,Lincoln – Midway 230  Line,5/31/2023,,IA FULLY EXECUTED/ON SCHEDULE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-25,,RTOE Transitional Cluster,,Weld County,CO,TSGT,6/2/2031,12/1/2028,,,350,350,350,ER,0,0,0,Wind,Wind,"Ault - Laramie River Station 345
+Line",5/28/2024,,FACILITY STUDY STAGE,,,GIA delayed due to  Affected Systems Study
+GI-TC-2024-22,,RTOE Transitional Cluster,,Weld County,CO,TSGT,6/2/2031,3/1/2028,,,140,140,140,ER/NR,0,0,0,Solar,Photovoltaic,Lloyd Sisson 115  Substation,5/23/2024,,FACILITY STUDY STAGE,,,GIA delayed due to  Affected Systems Study
+GI-CS-2025-27,,RTOE Transitional Cluster,,"Delta County,",CO,TSGT,,4/1/2029,,,199,199,199,ER/NR,0,0,0,Thermal,Gas,Starr Nelson 115 Substation,10/3/2025,,WITHDRAWN,,,
+GEN-2024-GR1,,Replacement,04 SOUTHEAST,Harrah,OK,OG&E,,12/31/2026,12/31/2026,,492,492,492,ER,0,0,0,Thermal,CTG,Horseshoe Lake 138kV,1/8/2024,,IA FULLY EXECUTED/ON SCHEDULE,N/A,,
+GEN-2024-379,,DISIS-2024-001,04 SOUTHEAST,Bossier Parish,LA,AEP,5/1/2030,12/15/2031,,,1350,1310,1350,ER/NR,1350,1350,1694.135,Thermal,Gas,Longwood - El Dorado 345 kV Line,3/1/2025,,DISIS STAGE,Yes,,
+GEN-2024-377,,DISIS-2024-001,04 SOUTHEAST,Harrison,TX,AEP,1/5/2030,12/15/2031,,,1350,1310,1350,ER/NR,1350,1350,1694.135,Thermal,Gas,Pirkey 345 kV Substation,3/1/2025,,DISIS STAGE,Yes,,

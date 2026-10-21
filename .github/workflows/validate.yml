@@ -1,0 +1,28 @@
+name: Validate registry and receipts
+
+# Every push and pull request: the registry must parse, every entry must have a
+# record source URL, ids must be unique, guide ids must exist, receipts must
+# match their schema, and the page must build. A correction that breaks any of
+# this does not merge.
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build page (validates registry, guide and receipts)
+        run: python3 -I site/build_page.py
+      - name: Fail on schema problems
+        run: python3 -I site/build_page.py 2>&1 | grep -q "PROBLEMS" && exit 1 || true
+      - name: Scraper fixture tests
+        run: |
+          cd scrapers && pip install -r requirements.txt
+          for s in ercot_large_load pjm_queue miso_spp_nyiso_queues eia_860_923 neso_demand climate_trace_match; do
+            python3 $s.py --fixture --out /tmp/out || exit 1
+          done
+          python3 cross_check.py --fixture --out /tmp/out

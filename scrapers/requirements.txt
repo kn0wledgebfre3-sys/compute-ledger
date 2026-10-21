@@ -1,0 +1,7 @@
+# Tested here (fixture mode only) with: Python 3.13, requests 2.34.2, pandas 3.0.5, openpyxl 3.1.5, pypdf 5.9.0
+requests>=2.31
+pandas>=2.1
+openpyxl>=3.1
+pypdf>=4.0          # ERCOT: text extraction from ERCOT's PDFs
+# Only needed to rebuild fixtures/ (python fixtures/make_fixtures.py):
+# reportlab>=4.0

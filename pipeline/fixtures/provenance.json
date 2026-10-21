@@ -1,0 +1,94 @@
+{
+ "_read_me": "Every fixture was built on 2026-10-20 with WebFetch/WebSearch only (shell network to deq.virginia.gov / tceq.texas.gov was blocked, so no PDF was downloaded as a file). WebFetch returns a model summary with verbatim quotes capped at ~125 characters each, so the .txt fixtures are those verbatim fragments re-assembled in the layout the summary described, NOT pdfplumber output. Lines marked RECONSTRUCTED below carry values reported by the fetch but wording that is mine. Totals computed from fixtures match the independent sums reported by the fetch tool where noted.",
+ "va_permits/74129.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25843/638628762496730000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "Cover lines, all 11 gen-set rows, exempt-tank rows, conditions 7-10 quoted verbatim. The cover LETTER (first 11 lines: COMMONWEALTH .. Dear Permittee ..) is RECONSTRUCTED as a typical DEQ letter. Expected: reg 74129, 97 gen-sets, 236.3 MW, 10321 Tanner Way Manassas 20110, approved 2018-02-21 amended 2021-06-28."
+ },
+ "va_permits/74081.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25815/638628727334530000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS (partial)",
+  "detail": "Only the 3 equipment rows the fetch quoted are present (9+40+3 units = 134.75 MW); the real permit sums to ~215 MW over more rows, so the 'Previously Permitted Equipment' table is left as a placeholder line. Address lines and conditions 7/8/10 verbatim."
+ },
+ "va_permits/74171.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25930/638633796930430000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "Cell-per-line layout as the fetch described. Row '1 through 18 and 23 through 40 / Thirty-six (36)' is RECONSTRUCTED from the fetch's statement that 47 3516C-HD units exist (8 + 36 + 3). Expected 49 units, 121.5 MW (matches the fetch's own sum)."
+ },
+ "va_permits/74161.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/26026/638634507154830000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "All 5 equipment rows verbatim incl. the either/or rating row Gen55-Gen159 (2,250 or 2,500 ekW). Expected 159 units, 364.25-390.5 MW (midpoint 377.375, confidence low)."
+ },
+ "va_permits/74107.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25823/638628737610070000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "Cell-per-line layout with '(36 units)' counts and ekW-before-bhp ratings, verbatim. Expected 103 units, 298 MW (matches the fetch's sum). List name is 'Cloud HQ'; permittees are three LLCs."
+ },
+ "va_permits/73200.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25702/638628522004500000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "2006 Verizon Business permit (older layout: 'Three Caterpillar model 3516B ... 2848 brake horsepower or 2000 ekW, each', 'limited to 2279 hours per year'). Expected 7 units, 14 MW. The DEQ list shows this registration as 'Equinix, LLC - DC 14' with a 2007 permit."
+ },
+ "va_permits/74274.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/26010/638633959051770000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "Rows '(92) Cummins ..' and 'Four (4) ..' verbatim; transitory row 'T1 and T2 Two (2) Caterpillar 3516C 2,000 ekW' RECONSTRUCTED from the fetch's statement of 2 transitory units. Expected 98 units, 237 MW (matches the fetch's sum)."
+ },
+ "va_permits/73743.txt": {
+  "source": "https://deq.virginia.gov/home/showpublisheddocument/25760/638628578230570000",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "zColo 2022 permit; rows EG2-1..26 and EG2BB verbatim; row '1A through 3S Fourteen (14) .. 2,000 ekW' RECONSTRUCTED from the fetch's '14 previously constructed 3516C units at 2,000 ekW'. Page headers print 74743 while the cover prints 73743 (real discrepancy). Expected 41 units, 106.75 MW."
+ },
+ "tx_applications/38509-ac.txt": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/38509-ac.pdf",
+  "provenance": "REAL-VERBATIM-FRAGMENTS + RECONSTRUCTED OP-SUM rows",
+  "detail": "Core Data Form lines, OP-1 lines and 4 OP-SUM rows verbatim. The remaining 69 OP-SUM rows are RECONSTRUCTED in the same format from the unit mix stated in seed_sites.json (SN1 12x2.5 MW, SN2 12x2.5, SN4 2x1.5+20x2+4x2.5, SN7 1x0.5+16x3+6x2.5 = 73 units, 176.5 MW). Expected coords 29.480036/-98.692555 (core_data_form_decimal)."
+ },
+ "tx_applications/37072-ac.txt": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/37072-ac.pdf",
+  "provenance": "REAL-VERBATIM-FRAGMENTS (partial)",
+  "detail": "STEERS block, OP-1 lines and OP-SUM rows EMGEN1-10, 191-196 verbatim; EMGEN11-190 and 197-390 omitted (placeholder lines). Expected coords 32.537981/-96.804371 (steers_decimal), 16 units in fixture (390 in the real file), no kW."
+ },
+ "tx_applications/37459-tc.txt": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/37459-tc.pdf",
+  "provenance": "REAL-VERBATIM-FRAGMENTS",
+  "detail": "Alamo Mission: STEERS block with two addresses, OP-SUM group rows (GRP-1..GRP-4A, no unit counts), binned OP-UA2 tables. Expected coords 32.531786/-96.792527; generator_count null (groups only)."
+ },
+ "tx_applications/40584-ac.txt": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/40584-ac.pdf",
+  "provenance": "REAL-VERBATIM-FRAGMENTS (garbled)",
+  "detail": "CyrusOne DFW package whose text layer is glyph codes; the 4 quoted lines are repeated to exceed the 200-char minimum. Expected text_quality=garbled."
+ },
+ "va_deq_list_page.html": {
+  "source": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+  "provenance": "SYNTHETIC-LAYOUT with real values",
+  "detail": "Table columns and first 8 rows as read on 2026-10-20; further rows from seed_sites_unlocated.csv; hyperlinks on 6 names point at real PDFs but the live page's link structure is unverified; row 'Google LLC - Arcola 99999' is a FAKE row to exercise the no-PDF path."
+ },
+ "va_known_documents.csv": {
+  "provenance": "REAL",
+  "detail": "showpublisheddocument URLs surfaced by web search on 2026-10-20; 8 opened and mapped to registration numbers, 12 not opened."
+ },
+ "tx_pending_titlev.html": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/titlev-pending-permits.html",
+  "provenance": "SYNTHETIC-LAYOUT with real rows",
+  "detail": "Column headers, letter-divider rows, link text and 7 real rows (Data Updated 9/16/2026)."
+ },
+ "tx_pending_nsr.html": {
+  "source": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/nsr-pending-permits.html",
+  "provenance": "SYNTHETIC-LAYOUT with real rows",
+  "detail": "6 real rows incl. the Plain Language Notice link inside applicant cells (Data Updated 8/28/2026)."
+ },
+ "tx_known_documents.csv": {
+  "provenance": "REAL",
+  "detail": "Application URLs from seed_sites.json and the Title V index; comptroller_match regexes are my judgement."
+ },
+ "geocode_responses.json": {
+  "provenance": "SYNTHETIC",
+  "detail": "Nominatim jsonv2 / Census addressbatch shapes with invented coordinates near the right towns; exercises rooftop, street-level, locality-only, no-result, Census Exact/Non_Exact/No_Match/Tie paths."
+ },
+ "seed_sites.json": {
+  "provenance": "COPY",
+  "detail": "Copy of /home/claude/registry/seed_sites.json (56 rows) taken 2026-10-20 so fixture runs do not depend on the registry directory."
+ }
+}

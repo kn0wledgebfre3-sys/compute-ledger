@@ -1,0 +1,30 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-21T13:26:35+00:00",
+  "sources": [
+    {
+      "name": "Nominatim (OSM, ODbL)",
+      "url": "https://nominatim.openstreetmap.org/search"
+    },
+    {
+      "name": "US Census Geocoder (public domain)",
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch"
+    }
+  ],
+  "addresses": 156,
+  "geocoded": 127,
+  "by_geocoder": {
+    "nominatim": 104,
+    "none": 29,
+    "census": 23
+  },
+  "by_quality": {
+    "rooftop": 92,
+    "none": 29,
+    "census_exact": 17,
+    "unknown_type": 12,
+    "census_non_exact": 6
+  }
+}

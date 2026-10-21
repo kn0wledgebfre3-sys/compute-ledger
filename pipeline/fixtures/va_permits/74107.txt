@@ -1,0 +1,73 @@
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+Abteen Ventures LLC (MCC1)
+Bourzou Ventures LLC (MCC2)
+Manuchehr Ventures LLC (MCC6)
+1212 New York Avenue NW, Suite 1000
+Washington, DC 20005
+Registration No.: 74107
+is authorized to construct and operate
+emergency diesel engine generator sets (gen-sets)
+located at
+MCC1 – 10880 Airman Avenue
+MCC2 – 10100 Harry J. Parrish Boulevard
+MCC6 – 10901 Airman Avenue
+Manassas, VA  20110
+(Prince William County)
+in accordance with the Conditions of this permit.
+Approved on    August 24, 2020.
+Amended July 26, 2021
+Abteen Ventures LLC
+Registration Number: 74107
+August 24, 2020 (amended July 26, 2021)
+Page 2
+Equipment to be Constructed at MCC6:
+Reference No.
+Equipment Description
+Rated Capacity (Standby)
+Delegated Federal Requirements
+Original Permit Date
+66 through 101
+Caterpillar model C175-16 diesel engine driven emergency gen-sets (36 units)
+3,000 ekW 4,423 bhp (each unit)
+None
+August 24, 2020
+102 and 103
+Caterpillar model 3512C diesel engine driven emergency gen-sets (2 units)
+1,750 ekW 2,584 bhp (each unit)
+None
+August 24, 2020, amended July 26, 2021
+Equipment previously permitted at MCC1:
+Reference No.
+Equipment Description
+Rated Capacity (Standby)
+Delegated Federal Requirements
+Original Permit Date
+1S
+Cummins model QSK50-DQGAF emergency diesel engine gen-set (1 unit)
+1,500 ekW 2,220 bhp
+None
+December 8, 2016, amended June 14, 2017
+2 through 29
+Cummins model QSK78-DQLF emergency diesel engine gen-sets (28 units)
+2,750 ekW 4,060 bhp (each unit)
+None
+December 8, 2016, amended June 14, 2017
+Equipment previously permitted at MCC2:
+Reference No.
+Equipment Description
+Rated Capacity (Standby)
+Delegated Federal Requirements
+Original Permit Date
+30 through 65
+Caterpillar model C175-16 emergency diesel engine gen-sets (36 units)
+3,000 ekW 4,423 bhp (each unit)
+None
+May 3, 2019
+Abteen Ventures LLC
+Registration Number: 74107
+August 24, 2020 (amended July 26, 2021)
+Page 3
+7. Each individual emergency diesel engine gen-set (Ref. Nos. 1S, 2 through 103) shall not operate more than 20 hours per year for scheduled maintenance and readiness testing
+and more than 500 hours per year for all purposes (as provided in Condition 6) combined. The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period.
+8. The approved fuel for the emergency diesel engine gen-sets (Ref. 1S, 2 through 103) is diesel fuel. The diesel fuel shall meet the American Society for Testing and Materials (ASTM) D975 specification
+for Grade No. 1-D S15 or Grade No. 2-D S15 and have a maximum sulfur content of 15 ppm, per shipment.

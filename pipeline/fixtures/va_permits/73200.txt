@@ -1,0 +1,26 @@
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+Permit No. NVRO-195-06
+Verizon Business
+2400 North Glenville Drive
+Richardson, TX 75082
+Registration No.: 73200
+is authorized to construct and operate
+seven diesel engine-driven emergency generators
+at the computer data center
+located at
+7400 Infantry Ridge Road
+Manassas, Virginia 20109
+in accordance with the Conditions of this permit.
+Approved on: October 19, 2006
+Verizon Business
+Registration No.: 73200
+Page 2
+Reference No. Equipment Description Rated Capacity Federal Requirements
+EGU1 thru EGU3 Three Caterpillar model 3516B diesel engine-driven emergency generators 2848 brake horsepower or 2000 ekW, each N/A
+ASTM Thru AST1-3 Three above ground diesel fuel storage tanks 12,000 gallon, each N/A
+EGU4 thru EGU7 Four Caterpillar model 3516B diesel engine-driven emergency generators 2848 brake horsepower or 2000 ekW, each NSPS Subpart IIII
+3. A device to continuously measure engine operating hours shall be installed on each generator.
+4. a. Cumulative operation of the emergency generators is limited to 2279 hours per year, calculated on a rolling 12-month basis.
+5. The approved fuel for the generators is grade low sulfur diesel fuel.
+6. The fuel shall meet ASTM D975 for low sulfur No. 1 or No. 2 diesel. Maximum sulfur content per shipment: 0.05%.
+16. a. Monthly hours of operation of each emergency generator shall be recorded.

@@ -1,0 +1,36 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-21T13:20:50+00:00",
+  "sources": [
+    {
+      "name": "VA DEQ issued air permits for data centers",
+      "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+      "page_source": "/Users/az/Desktop/deq_list.html",
+      "list_as_of": null,
+      "list_rows": 194,
+      "rows_with_links": 194
+    }
+  ],
+  "registrations": 183,
+  "with_pdf_text": 181,
+  "with_generator_mw": 156,
+  "with_street_address": 154,
+  "total_standby_mw_sum": 96726.3,
+  "by_locator": {
+    "manual_dir": 182,
+    "page_link": 1
+  },
+  "by_mw_confidence": {
+    "low": 128,
+    "none": 27,
+    "medium": 24,
+    "high": 4
+  },
+  "by_address_confidence": {
+    "high": 133,
+    "low": 47,
+    "none": 3
+  }
+}

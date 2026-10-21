@@ -1,0 +1,50 @@
+name: Monthly scrape and cross-check
+
+# Runs the scrapers against live public sources on the 3rd of each month
+# (after EIA-860M and the ISO queues have usually updated), commits the dated
+# outputs under data/<YYYY-MM>/, and rebuilds the page. Nothing here needs a
+# secret except the free EIA API key (EIA_API_KEY) for the generation series;
+# capacity data runs without it.
+
+on:
+  schedule:
+    - cron: "17 6 3 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scrapers/requirements.txt
+      - name: Run scrapers
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+        run: |
+          set -e
+          OUT="data/$(date -u +%Y-%m)"
+          mkdir -p "$OUT"
+          cd scrapers
+          # Each scraper fails loudly if its source moved; a failure here is a signal, not noise.
+          python3 ercot_large_load.py --out "../$OUT"       || echo "ercot: FAILED" >> "../$OUT/failures.txt"
+          python3 pjm_queue.py --out "../$OUT"              || echo "pjm: FAILED"   >> "../$OUT/failures.txt"
+          python3 miso_spp_nyiso_queues.py --out "../$OUT"  || echo "iso: FAILED"   >> "../$OUT/failures.txt"
+          if [ -n "$EIA_API_KEY" ]; then python3 eia_860_923.py --out "../$OUT" || echo "eia: FAILED" >> "../$OUT/failures.txt";
+          else python3 eia_860_923.py --skip-generation --out "../$OUT" || echo "eia: FAILED" >> "../$OUT/failures.txt"; fi
+          python3 neso_demand.py --out "../$OUT"            || echo "neso: FAILED"  >> "../$OUT/failures.txt"
+          python3 cross_check.py --out "../$OUT"            || echo "cross: FAILED" >> "../$OUT/failures.txt"
+      - name: Rebuild page
+        run: python3 -I site/build_page.py
+      - name: Commit results
+        run: |
+          git config user.name "ledger-bot"
+          git config user.email "ledger-bot@users.noreply.github.com"
+          git add data site/index.html
+          git diff --cached --quiet || git commit -m "Monthly scrape $(date -u +%Y-%m)"
+          git push

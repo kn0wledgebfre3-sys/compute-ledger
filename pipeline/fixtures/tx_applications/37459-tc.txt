@@ -1,0 +1,36 @@
+Texas Commission on Environmental Quality
+Date Permit No. Regulated Entity No. Rev. 6/16/2025 4709 RN110852753
+Alamo Mission LLC
+Title V Federal Operating Permit Application - Technically Complete
+3.2. Select the permit/project number for which this update should be applied. 4709-37459
+STEERS Site Information (6/25/2025)
+What is the name of the Regulated Entity (RE)? ALAMO MISSION
+What is the Regulated Entity's Number (RN)? RN110852753
+Site physical address
+Number and Street 156 N AUSTIN BLVD
+City RED OAK
+State TX
+ZIP 75154
+County ELLIS
+RE physical address
+Number and Street 500 E OVILLA RD
+City RED OAK
+State TX
+ZIP 75154
+County ELLIS
+Latitude (N) (##.######) 32.531786
+Longitude (W) (-###.######) -96.792527
+Primary NAICS Code 518210
+Facility NAICS Code 518210
+Primary Business of the Regulated Entity DATA CENTER
+Form OP-1 (General Application)
+C. Submittal Date (mm/dd/yyyy): 12/04/2024
+A. Site Name: Alamo Mission
+X. Site Location
+J. Number of units: 10 (emission groups)
+Form OP-SUM (Individual Unit Summary) Table 1
+Unit ID Applicable Form Unit Name/Description Preconstruction Authorization Group ID
+GRP-1 OP-UA2 Engine Group 1 106.511/09/04/2000 [167790, 170469] GRP-1 GRP-1A OP-UA2 Engine Group 1A 106.511/09/04/2000 [167790, 170469] GRP-1A GRP-2 OP-UA2 Engine Group 2 106.511/09/04/2000 [167790, 170469] GRP-2 GRP-2A OP-UA2 Engine Group 2A 106.511/09/04/2000 [167790, 170469] GRP-2A GRP-3 OP-UA2 Engine Group 3 106.511/09/04/2000 [167790, 170469] GRP-3 GRP-3A OP-UA2 Engine Group 3A 106.511/09/04/2000 [167790, 170469] GRP-3A GRP-4 OP-UA2 Engine Group 4 106.511/09/04/2000 [167790, 170469] GRP-4 GRP-4A OP-UA2 Engine Group 4A 106.511/09/04/2000 [167790, 170469] GRP-4A GRPTANKS OP-UA4 Tanks 106.472 GRPTANKS GRPCLTWRS OP-UA17 Cooling towers 106.511 GRPCLTWRS UNLOAD OP-UA13 Fuel unloading 106.472 UNLOAD
+Table 1a GRP-2A R7403-0001 50+ D2007+
+Table 2a GRP-4 63ZZZZ-0002 AREA 300-500 06+ GRP-4A 63ZZZZ-0004 AREA 100- 06+
+Table 5c GRP-4 60IIII-0003 E130-368 NO NO MANU YES GRP-4A 60IIII-0005 E37-75 NO NO MANU YES

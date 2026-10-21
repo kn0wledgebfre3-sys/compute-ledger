@@ -1,0 +1,749 @@
+[
+ {
+  "id": "ie-national-cso-share-2025",
+  "country": "Ireland",
+  "region": "National (97% of sites in Dublin region)",
+  "site_or_subject": "Data centre share of metered electricity consumption, 2025",
+  "operator": "All operators (ESB Networks meter data)",
+  "lat": 53.35,
+  "lon": -6.26,
+  "category": "power",
+  "record": "CSO release 'Data Centres Metered Electricity Consumption 2025' (7 July 2026): data centres used 23% of Ireland's metered electricity in 2025, up from 22% in 2024 and 5% in 2015; urban households 18% and rural households 9%. Press reports citing the release give 7,663 GWh in 2025 vs 6,973 GWh in 2024 (+10%) and 1,991 GWh in Q4 2025 alone.",
+  "record_sources": [
+   {
+    "title": "Data Centres Metered Electricity Consumption 2025",
+    "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption2025/",
+    "publisher": "Central Statistics Office (Ireland)",
+    "date": "2026-07-07"
+   },
+   {
+    "title": "Data centres account for almost a quarter of Irish electricity usage in 2025",
+    "url": "https://www.irishtimes.com/business/2026/07/07/data-centres-account-for-almost-one-quarter-of-irish-electricity-usage-in-2025/",
+    "publisher": "The Irish Times",
+    "date": "2026-07-07"
+   }
+  ],
+  "claim": "none found (no single operator claim applies to the national figure); CRU notes 97% of Irish data centres are located in Dublin.",
+  "claim_sources": [
+   {
+    "title": "Large Energy Users Connection Policy Decision (CRU/2025236) summary",
+    "url": "https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf",
+    "publisher": "Matheson LLP summarising CRU",
+    "date": "2026-02"
+   }
+  ],
+  "gap": "none documented; the 23% figure is an official metered share and is the highest documented national share in Europe.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "ie-cru-leu-connection-policy-2025",
+  "country": "Ireland",
+  "region": "National",
+  "site_or_subject": "CRU Large Energy Users Connection Policy Decision CRU/2025236",
+  "operator": "Commission for Regulation of Utilities (regulator); applies to all new data-centre connections",
+  "lat": 53.33,
+  "lon": -6.25,
+  "category": "grid_policy",
+  "record": "CRU decision CRU/2025236 (12 Dec 2025): new data centres >=10 MVA must provide dispatchable on-site or proximate generation/storage at least equal to their Maximum Import Capacity (de-rated), separately metered and participating in wholesale and capacity markets, before ramping to full MIC; 1-<10 MVA sites need behind-the-meter autoproduction covering 100% of MIC; all >=1 MVA sites must source >=80% of annual demand from additional Irish renewables over a 6-year glide path. 'Islanded' gas-only data centres are stated to be inconsistent with national policy. System Operators must publish locational constraint maps (initial proposals due 31 Mar 2026).",
+  "record_sources": [
+   {
+    "title": "Large Energy Users Connection Policy Decision (CRU/2025236) summary",
+    "url": "https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf",
+    "publisher": "Matheson LLP summarising CRU",
+    "date": "2026-02"
+   },
+   {
+    "title": "CRU202504 LEU Connection Policy Proposed Decision",
+    "url": "https://consult.cru.ie/en/system/files/materials/200/CRU202504%20LEU%20connection%20policy%20proposed%20decision_0.pdf",
+    "publisher": "Commission for Regulation of Utilities",
+    "date": "2025"
+   }
+  ],
+  "claim": "Government Large Energy User Action Plan (13 Jan 2026) supports plan-led siting of large energy users near renewable generation, including 'green energy parks', especially from 2030.",
+  "claim_sources": [
+   {
+    "title": "Large Energy Users Connection Policy Decision (CRU/2025236) summary",
+    "url": "https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf",
+    "publisher": "Matheson LLP summarising CRU",
+    "date": "2026-02"
+   }
+  ],
+  "gap": "Policy requires on-site dispatchable capacity equal to import capacity; fuel type (gas vs storage) is not prescribed, so the fuel footprint outcome is not yet documented.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "ie-dublin-vantage-dub13-abp-refusal",
+  "country": "Ireland",
+  "region": "Dublin (Clondalkin, South Dublin)",
+  "site_or_subject": "Vantage DUB 13 data hall, Profile Park (An Bord Pleanala ABP-317446-23)",
+  "operator": "Vantage Data Centers",
+  "lat": 53.32,
+  "lon": -6.42,
+  "category": "fuel",
+  "record": "An Bord Pleanala refused permission (2025) for a 12,893 sq m data hall with 13 emergency backup generators referencing 'permitted on-site gas powered generation', departing from the Inspector's recommendation to grant. Reasons: no fixed grid connection agreement was demonstrated; the Board could not rule out on-site gas becoming the primary energy source, which would conflict with the 2022 Government Statement on Data Centres ('islanded' developments not in line with national policy) and Climate Action Plan 2024; the EIAR did not assess the no-grid-connection scenario. South Dublin County Council had refused on 29 May 2023.",
+  "record_sources": [
+   {
+    "title": "Board Order ABP-317446-23",
+    "url": "https://www.pleanala.ie/anbordpleanala/media/abp/cases/orders/317/d317446.pdf",
+    "publisher": "An Bord Pleanala",
+    "date": "2025"
+   },
+   {
+    "title": "Board Direction ABP-317446-23",
+    "url": "https://www.pleanala.ie/anbordpleanala/media/abp/cases/directions/317/s317446.pdf",
+    "publisher": "An Bord Pleanala",
+    "date": "2025"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Planning record treats on-site gas as a potential primary supply absent a grid agreement; no operator statement on intended run-hours of the gas plant was located.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "nl-amsterdam-vestigingsbeleid-cap",
+  "country": "Netherlands",
+  "region": "Amsterdam (incl. Weesp)",
+  "site_or_subject": "Amsterdam data centre siting policy 2020-2030, first revision (growth cap removed)",
+  "operator": "Gemeente Amsterdam / Omgevingsdienst Noordzeekanaalgebied",
+  "lat": 52.37,
+  "lon": 4.9,
+  "category": "moratorium",
+  "record": "The 2020 policy capped connected-capacity growth at 67 MW per year (670 MVA by 2030). The first revision (preparatory decision 8 Nov 2023, draft 28 Dec 2023) removes the growth allowance so no further growth is currently possible under the policy. 2024 contracted data-centre capacity in Amsterdam is about 150 MW with recorded peak about 100 MW. Residual-heat use is mandatory; groundwater extraction is prohibited; data-centre drinking-water use is about 1-1.5% of supply and Waternet expects to stay below 5%.",
+  "record_sources": [
+   {
+    "title": "Vestigingsbeleid datacenters 2020-2030 Amsterdam Duurzaam Digitaal, eerste herziening",
+    "url": "https://odnzkg.nl/wp-content/uploads/2026/07/Vestigingsbeleid-datacenters-2020-2030-Amsterdam-Duurzaam-Digitaal-eerste-herziening.pdf",
+    "publisher": "Gemeente Amsterdam (hosted by OD NZKG)",
+    "date": "2026-07"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "positive example: municipal cap tightened rather than lifted; water use remains a small documented share of supply.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "nl-haarlemmermeer-tennet-goodman-ruling",
+  "country": "Netherlands",
+  "region": "Noord-Holland (Vijfhuizen / Haarlemmermeer, near Schiphol)",
+  "site_or_subject": "TenneT congestion upheld: Goodman v TenneT summary proceedings (ECLI:NL:RBGEL:2026:3358)",
+  "operator": "Goodman (developer); TenneT (TSO)",
+  "lat": 52.33,
+  "lon": 4.68,
+  "category": "grid_policy",
+  "record": "Rechtbank Gelderland (29 Apr 2026) dismissed Goodman's claims to force TenneT to resume a connection process started in 2021. The court found the grid in the Vijfhuizen focus area is full, TenneT had shown overload, Goodman was not a contracted customer (no connection and transport agreement) and stays on the waiting list; TenneT paused the process in early 2026. Press reports give the requested connection as 70 MW and note Goodman sought EUR 500,000/day penalties from 1 June 2026; constraints may persist to about 2035.",
+  "record_sources": [
+   {
+    "title": "TenneT niet gehouden tot hervatten aansluittraject projectontwikkelaar",
+    "url": "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-gelderland/nieuws/2026/04/tennet-niet-gehouden-tot-hervatten-aansluittraject-projectontwikkelaar",
+    "publisher": "Rechtspraak.nl (Rechtbank Gelderland)",
+    "date": "2026-04-29"
+   },
+   {
+    "title": "Judge rules electricity grid in Haarlemmermeer full; data centre connection delayed",
+    "url": "https://nltimes.nl/2026/04/29/judge-rules-electricity-grid-haarlemmermeer-full-data-centre-connection-delayed",
+    "publisher": "NL Times",
+    "date": "2026-04-29"
+   }
+  ],
+  "claim": "Goodman argued it was already a contracted customer and that TenneT knew of the congestion reason for longer; the court did not accept this.",
+  "claim_sources": [
+   {
+    "title": "TenneT niet gehouden tot hervatten aansluittraject projectontwikkelaar",
+    "url": "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-gelderland/nieuws/2026/04/tennet-niet-gehouden-tot-hervatten-aansluittraject-projectontwikkelaar",
+    "publisher": "Rechtspraak.nl",
+    "date": "2026-04-29"
+   }
+  ],
+  "gap": "Court record confirms congestion; TenneT's own MW headroom figures for Vijfhuizen were not located in a primary document.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "nl-zeewolde-meta-cancelled",
+  "country": "Netherlands",
+  "region": "Flevoland (Zeewolde)",
+  "site_or_subject": "Meta hyperscale campus Zeewolde (cancelled) and national hyperscale siting rule",
+  "operator": "Meta",
+  "lat": 52.33,
+  "lon": 5.54,
+  "category": "moratorium",
+  "record": "[older: 2022] On 10 June 2022 the cabinet approved a draft decree barring municipalities from permitting new hyperscale data centres except in two areas: the former Eemsmond part of Het Hogeland and the Agriport A7/B1 sites in Hollands Kroon; the draft decree (2023 text, Barro art. 2.15.1) defines hyperscale as more than 10 ha and 70 MW or more, and exempts applications made on or before the 16 Feb 2022 voorbereidingsbesluit. The cabinet said the rule did not apply to Zeewolde, where the zoning plan had already been adopted, but that the Rijksvastgoedbedrijf could not sell the state land to the municipality, citing a TNO assessment that some conditions were not met. The Eerste Kamer had adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale data centres. Meta's planned campus (five data halls, 200 MW at full build) was cancelled by July 2022; press also reports a March 2022 Senate motion to halt site works.",
+  "record_sources": [
+   {
+    "title": "Kabinet beperkt mogelijkheid tot vestiging hyperscale datacentra",
+    "url": "https://www.rijksoverheid.nl/actueel/nieuws/2022/06/10/kabinet-beperkt-mogelijkheid-tot-vestiging-hyperscale-datacentra",
+    "publisher": "Rijksoverheid",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Ontwerpbesluit instructieregels voor hyperscale datacentra (wijziging Barro en Bkl)",
+    "url": "https://wetgevingskalender.overheid.nl/Regeling/WGK014205/Download/cde3c2f6-5ff8-4d84-adec-5d41904d35a6_1.pdf",
+    "publisher": "Ministerie van Volkshuisvesting en Ruimtelijke Ordening (Wetgevingskalender)",
+    "date": "2023-04-04"
+   },
+   {
+    "title": "Motie-Koffeman (PvdD) c.s. over het opschorten van de verkoop van agrarische gronden ten behoeve van hyperscale datacenters (35.925 XIV, H)",
+    "url": "https://www.eerstekamer.nl/motiedossier/35925_xiv_h_motie_koffeman_pvdd_c",
+    "publisher": "Eerste Kamer der Staten-Generaal",
+    "date": "2021-12-21"
+   },
+   {
+    "title": "Hyperscale-datacenters in Nederland? Nog maar op twee plekken welkom",
+    "url": "https://nos.nl/l/2432219",
+    "publisher": "NOS",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Facebook parent Meta officially kills Zeewolde data center after pushback",
+    "url": "https://datacenterdynamics.com/en/news/facebook-parent-meta-officially-kills-zeewolde-data-center-after-pushback-in-the-netherlands",
+    "publisher": "Data Center Dynamics",
+    "date": "2022-07-01"
+   }
+  ],
+  "claim": "Meta stated that building in Zeewolde 'is not the right investment' and that its siting priority is 'a good match with the environment'.",
+  "claim_sources": [
+   {
+    "title": "Facebook parent Meta officially kills Zeewolde data center after pushback",
+    "url": "https://datacenterdynamics.com/en/news/facebook-parent-meta-officially-kills-zeewolde-data-center-after-pushback-in-the-netherlands",
+    "publisher": "Data Center Dynamics",
+    "date": "2022-07-01"
+   }
+  ],
+  "gap": "positive example (from a siting-control perspective): the draft national rule did not apply to Zeewolde, whose procedures had started, but the state did not sell the required land and the 200 MW project was cancelled; record is 2022 and no later reversal was found.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "Rijksoverheid release (2022-06-10), the 2023 draft decree (>10 ha, >=70 MW; 16 Feb 2022 cut-off) and the Eerste Kamer motion dossier confirm the rule and the land-sale position; the exemption covers two specific areas rather than whole municipalities as previously stated, the rule expressly did not cover Zeewolde, and the confirmed Senate motion is 35925 XIV H of 21 Dec 2021 (a March 2022 motion was not found); Meta's 200 MW figure remains press-sourced.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "nl-middenmeer-microsoft-water",
+  "country": "Netherlands",
+  "region": "Noord-Holland (Middenmeer, Hollands Kroon)",
+  "site_or_subject": "Microsoft Middenmeer (Agriport) drinking-water use and AMS13/14 permit",
+  "operator": "Microsoft",
+  "lat": 52.8,
+  "lon": 4.99,
+  "category": "water",
+  "record": "In June 2021 Microsoft gave the municipality a drinking-water figure of 12-20 million litres a year, which the executive repeated to residents [press]. In April 2022 Microsoft reported 84 million litres used in 2021 (75 million operations, 9 million facilities) and the municipality changed its website figures without notice [press]. Documents released under a Wob request included an engineering-firm estimate above 100,000 m3 a year made for Microsoft before the lower figure circulated [press]. The Tweede Kamer adopted a motion on 4 Oct 2022 citing both figures and asking the government to examine a cap on drinking-water use in hyperscale permits; the municipal permit documents retrieved contain no drinking-water volume. The 2025-27 provincial strategy records that PWN now gives drinking-water connections only for office use.",
+  "record_sources": [
+   {
+    "title": "Drought-stricken Holland discovers Microsoft data center slurped 84m liters of drinking water last year",
+    "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year",
+    "publisher": "Data Center Dynamics (citing Noordhollands Dagblad and Hollands Kroon)",
+    "date": "2022-08-16"
+   },
+   {
+    "title": "Microsoft gains construction permission for data center in Hollands Kroon",
+    "url": "https://datacenterdynamics.com/en/news/microsoft-gains-construction-permission-for-data-center-in-hollands-kroon",
+    "publisher": "Data Center Dynamics (citing OD NZKG permit)",
+    "date": "2023-04-21"
+   }
+  ],
+  "claim": "Microsoft said the earlier figure described use at the time, that the 2021 volume included construction water, that a mature site is on track for about 10 million litres a year, and that 36 million litres were discharged back, leaving net consumption near 48 million litres [press]. Its 2023 fact sheet gives a WUE of 0.08 L/kWh for 2022.",
+  "claim_sources": [
+   {
+    "title": "Drought-stricken Holland discovers Microsoft data center slurped 84m liters of drinking water last year",
+    "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year",
+    "publisher": "Data Center Dynamics",
+    "date": "2022-08-16"
+   }
+  ],
+  "gap": "The 2021 metered figure is 4.2 to 7 times the figure given to residents the same year; Microsoft's own net figure is still 2.4 to 4 times it; the 75,000 m3 component was described three different ways across statements; an earlier estimate above 100,000 m3 existed and had been denied by the municipality; the municipal document carrying the 84 million litres is itself not online, so every volume rests on press reports of documents.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched (Dutch) for Hollands Kroon council information on the 84 million litres and for the OD NZKG omgevingsvergunning for AMS13/14; results were press only (DCD, Aquatech, Dutch IT Channel, NH Nieuws) and no municipal letter or permit decision was retrieved, so the 2021 volumes and permit specifications remain press-sourced. Worked into a full receipt (41 dated rows, 43 sources; parliamentary papers, permits, the Council of State ruling and the provincial strategy fetched directly; the municipal letter with the 84 million litres was not reachable, so volumes stay [press]). Generator count corrected: 2 x 0.5 MW per the 2020 municipal note, not 2 x 1 MW.",
+  "verification_status": "not_found",
+  "receipt": "middenmeer_microsoft_water"
+ },
+ {
+  "id": "fi-espoo-kirkkonummi-microsoft-fortum-heat",
+  "country": "Finland",
+  "region": "Uusimaa (Espoo Hepokorpi, Kirkkonummi Kolabacken)",
+  "site_or_subject": "Fortum heat-pump plants recovering Microsoft data-centre waste heat into district heating",
+  "operator": "Microsoft (data centres); Fortum (heat)",
+  "lat": 60.22,
+  "lon": 24.66,
+  "category": "heat_reuse",
+  "record": "Fortum press release (6 May 2026): heat production started at Kolabacken and Hepokorpi; 72 water-to-water heat pumps providing up to 180 MW of district heat, 40 air-to-water heat pumps, 200 MW of electric boilers, 20,000 m3 / 800 MWh thermal storage; about EUR 225 million investment with NextGenerationEU and Finnish state support; about 250,000 heat users; waste-heat recovery from the data centres starts in phases in 2027.",
+  "record_sources": [
+   {
+    "title": "Fortum has started heat production at two large data centre sites in Finland",
+    "url": "https://www.fortum.com/media/2026/05/fortum-has-started-heat-production-two-large-data-centre-sites-finland",
+    "publisher": "Fortum",
+    "date": "2026-05-06"
+   }
+  ],
+  "claim": "At the March 2022 announcement, the City of Espoo, Fortum and Microsoft stated the data centres' waste heat would cover about 40% of the heat demand of 250,000 district-heat users in Espoo, Kauniainen and Kirkkonummi and cut district-heat CO2 by about 400,000 t/yr; Fortum in May 2026 restated 'approximately 40 per cent' of the area's ~2 TWh/yr demand once fully implemented.",
+  "claim_sources": [
+   {
+    "title": "Microsoft and Fortum collaborate in Espoo: planned data centre region will produce zero-emission heat",
+    "url": "https://www.espoo.fi/en/news/2022/03/microsoft-and-fortum-collaborate-espoo-microsofts-planned-data-centre-region-espoo-will-produce-zero",
+    "publisher": "City of Espoo",
+    "date": "2022-03-17"
+   },
+   {
+    "title": "Fortum has started heat production at two large data centre sites in Finland",
+    "url": "https://www.fortum.com/media/2026/05/fortum-has-started-heat-production-two-large-data-centre-sites-finland",
+    "publisher": "Fortum",
+    "date": "2026-05-06"
+   }
+  ],
+  "gap": "positive example: plants built and operating; the 40% waste-heat share remains a forward expectation because data-centre heat recovery begins in 2027, and no delivered-MWh figure is yet published.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "fi-hamina-google-heat-seawater",
+  "country": "Finland",
+  "region": "Kymenlaakso (Hamina)",
+  "site_or_subject": "Google Hamina data centre: seawater cooling and off-site heat recovery to Haminan Energia",
+  "operator": "Google; Haminan Energia (CapMan Infra)",
+  "lat": 60.57,
+  "lon": 27.2,
+  "category": "heat_reuse",
+  "record": "Business Finland (20 May 2024) recorded a EUR 1 billion Hamina expansion with recovered heat estimated to cover about 80% of Hamina's district-heating needs, contributing by late 2025. Haminan Energia's owner CapMan Infra (18 May 2026) states the heat-recovery pump plant supplied first heat in Q4 2025, was inaugurated 12 May 2026, and once fully operational will cover about 70-75% of Hamina's district-heating energy, roughly the heating of 2,000 apartments. Google states the site uses seawater to cool its servers.",
+  "record_sources": [
+   {
+    "title": "Google announced an expansion of its Hamina data center and a new heat recovery project",
+    "url": "https://businessfinland.fi/en/News/news/2024/google-announced-an-expansion-of-its-hamina-data-center",
+    "publisher": "Business Finland (state agency)",
+    "date": "2024-05-20"
+   },
+   {
+    "title": "CapMan Infra's portfolio company Haminan Energia advances local energy transition through a new heat recovery facility",
+    "url": "https://capman.com/stories/capman-infras-portfolio-company-haminan-energia-new-heat-recovery-facility/",
+    "publisher": "CapMan",
+    "date": "2026-05-18"
+   }
+  ],
+  "claim": "Google stated heat from the data centre will supply 80% of the district heating network's requirements and that the facility uses seawater cooling.",
+  "claim_sources": [
+   {
+    "title": "Google launches heat recovery project at data center in Hamina, Finland",
+    "url": "https://datacenterdynamics.com/en/news/google-launches-heat-recovery-project-at-data-center-in-hamina-finland",
+    "publisher": "Data Center Dynamics",
+    "date": "2024-05-21"
+   }
+  ],
+  "gap": "positive example: plant delivered on the announced timeline; the owner's stated coverage (70-75%) is slightly below Google's announced 80%.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "dk-national-heat-reuse-and-forecast",
+  "country": "Denmark",
+  "region": "National",
+  "site_or_subject": "Data-centre electricity forecast (ENS AF25) and waste-heat utilisation count",
+  "operator": "All operators",
+  "lat": 55.68,
+  "lon": 12.57,
+  "category": "heat_reuse",
+  "record": "Energistyrelsen's 'Analyseforudsaetninger til Energinet 2025 - Datacentre' (Nov 2025) forecasts data-centre consumption of 6.0 TWh in 2030, 26.8 TWh in 2040 and 35.9 TWh in 2050. Dansk Fjernvarme's consultation response (14 Oct 2025) cites about 2.6 TWh in 2024 (industry analysis, 7% of Danish consumption) and notes AF25's 2025 figure of about 1.2 TWh is probably low. Ingenioeren (17 Aug 2026) reports an Energistyrelsen count of about 4 of roughly 50 Danish data centres using waste heat (about 8%).",
+  "record_sources": [
+   {
+    "title": "Analyseforudsaetninger til Energinet 2025 - Datacentre (baggrundsnotat)",
+    "url": "https://ens.dk/media/7603/download",
+    "publisher": "Energistyrelsen (Danish Energy Agency)",
+    "date": "2025-11"
+   },
+   {
+    "title": "Dansk Fjernvarmes hoeringssvar vedroerende Analyseforudsaetninger til Energinet 2025",
+    "url": "https://ens.dk/media/7620/download",
+    "publisher": "Dansk Fjernvarme via Energistyrelsen",
+    "date": "2025-10-14"
+   },
+   {
+    "title": "Naesten al overskudsvarme fra datacentre gaar tabt",
+    "url": "https://ing.dk/artikel/naesten-al-overskudsvarme-fra-datacentre-gaar-tabt-vanskeligere-end-de-fleste-forestillede-sig",
+    "publisher": "Ingenioeren",
+    "date": "2026-08-17"
+   }
+  ],
+  "claim": "Industry association Datacenterindustrien states 7 data centres use their waste heat (vs ENS count of about 4).",
+  "claim_sources": [
+   {
+    "title": "Naesten al overskudsvarme fra datacentre gaar tabt",
+    "url": "https://ing.dk/artikel/naesten-al-overskudsvarme-fra-datacentre-gaar-tabt-vanskeligere-end-de-fleste-forestillede-sig",
+    "publisher": "Ingenioeren",
+    "date": "2026-08-17"
+   }
+  ],
+  "gap": "Agency count (about 4) and industry count (7) of heat-reusing data centres differ; 2024-2025 actual consumption figures also differ across sources (1.2 vs 2.6 vs 3 TWh).",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "ENS AF25 background note (ens.dk/media/7603) confirms 6.0/26.8/35.9 TWh for 2030/2040/2050, and Dansk Fjernvarme's response (ens.dk/media/7620, 2025-10-14) confirms ~2.6 TWh/7% for 2024 and that AF25's ~1.2 TWh for 2025 is 'formentlig i den lave ende'; the ENS count of ~4 of ~50 heat-reusing data centres was not found in any ENS document (a Folketing annex checked was an unrelated cost-benefit order), so the agency-vs-industry comparison remains press-sourced.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "no-north-statnett-datacentre-reservations",
+  "country": "Norway",
+  "region": "Nordland / NO4 (north of Svartisen; Narvik)",
+  "site_or_subject": "Statnett reserved grid capacity for data centres in northern Norway",
+  "operator": "Aker (Narvik) and others",
+  "lat": 68.44,
+  "lon": 17.43,
+  "category": "power",
+  "record": "Commentary citing Statnett figures (5 May 2026): data centres north of Svartisen hold 334 MW of reserved capacity, second only to Melkoeya (350 MW); the largest is Aker's facility outside Narvik. Salten-and-north has 1,150 MW of new consumption with reserved capacity and about 1,100 MW queued; NO4 reservations total 2,375 MW against current demand of about 1,500 MW. Statnett's 11 Nov 2025 capacity-management presentation confirms continuing data-centre demand growth and notes Green Mountain connected at 110 MW total.",
+  "record_sources": [
+   {
+    "title": "Utfyllende svar på brev om tilknytningsplikt nord for Svartisen (svarbrev til RME)",
+    "url": "https://www.statnett.no/globalassets/for-aktorer-i-kraftsystemet/nyheter-for-aktorer-i-kraftbransjen/svarbrev-rme---tilknytningsplikt-nord-for-svartisen-15.06.2026.pdf",
+    "publisher": "Statnett",
+    "date": "2026-06-15"
+   },
+   {
+    "title": "Skriftlig spørsmål og svar (olje- og energiministerens svar om reservert kapasitet nord for Ofoten)",
+    "url": "https://www.stortinget.no/no/Saker-og-publikasjoner/Sporsmal/Skriftlige-sporsmal-og-svar/Skriftlig-sporsmal/?qid=95096",
+    "publisher": "Stortinget",
+    "date": "2023-08-18"
+   },
+   {
+    "title": "Er det egentlig krise i nord?",
+    "url": "https://www.tu.no/artikler/er-det-egentlig-krise-i-nord/571604",
+    "publisher": "Teknisk Ukeblad (citing Statnett)",
+    "date": "2026-05-05"
+   },
+   {
+    "title": "Slik forvalter vi kapasitet (Statnett, Nasjonalt Utviklingsforum)",
+    "url": "https://www.nve.no/media/19347/4-statnett-tilknytning.pdf",
+    "publisher": "Statnett via NVE",
+    "date": "2025-11-11"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No Statnett primary document with a national GW figure for data-centre requests was located; the 334 MW figure is reported second-hand from Statnett data.",
+  "confidence": "low",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Statnett's 2026-06-15 letter to RME on the connection obligation north of Svartisen confirms ~1,150 MW of reserved new consumption (and ~1,000 MW reserved on Helgeland), and a 2023 ministerial answer confirms 350 MW reserved for Hammerfest LNG (Melkøya); the 334 MW data-centre reservation, the ~1,100 MW queue and the NO4 totals (2,375 MW vs ~1,500 MW) were not found in the Statnett documents retrieved.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "de-enefg-datacentre-obligations",
+  "country": "Germany",
+  "region": "National (largest cluster: Frankfurt am Main)",
+  "site_or_subject": "Energy Efficiency Act (EnEfG) data-centre PUE, heat-reuse and renewable obligations",
+  "operator": "All operators",
+  "lat": 50.11,
+  "lon": 8.68,
+  "category": "heat_reuse",
+  "record": "EnEfG § 11 (statute text): data centres commissioned from 1 July 2026 must reach an energy usage effectiveness (PUE) <= 1.2 within two years of commissioning and a share of reused energy of at least 10% (planned 15% from 1 July 2027 and 20% from 1 July 2028; DIN EN 50600-4-6, with listed exemptions); existing data centres must reach PUE <= 1.5 from 1 July 2027 and <= 1.3 from 1 July 2030; electricity use must be covered on a balance-sheet basis by renewable electricity at 50% from 1 Jan 2024 and 100% from 1 Jan 2027; operators must also report to the Energieeffizienzregister fuer Rechenzentren (per the TUV summary). A government bill amending the EnEfG was still in draft when the Bundesrat gave its opinion on 10 July 2026 (BR-Drs. 388/26). Mainova (30 June 2026) reports Frankfurt's daily peak load exceeded 900 MW on 25-26 June 2026, up from clearly above 850 MW a year earlier, with grid capacity expected to more than double; the release does not attribute the load to data centres.",
+  "record_sources": [
+   {
+    "title": "§ 11 EnEfG – Klimaneutrale Rechenzentren (statute text mirror)",
+    "url": "https://gesetze.legal/bund/enefg/11",
+    "publisher": "Gesetze.legal (text of Energieeffizienzgesetz)",
+    "date": "2023-11"
+   },
+   {
+    "title": "Stellungnahme des Bundesrates: Entwurf eines Gesetzes zur Beschleunigung der Umsetzung der Energieeffizienzrichtlinie (Drucksache 388/26 (Beschluss))",
+    "url": "https://dserver.bundestag.de/brd/2026/0388-26B.pdf",
+    "publisher": "Bundesrat",
+    "date": "2026-07-10"
+   },
+   {
+    "title": "EnEfG im Rechenzentrum: Was Betreiber jetzt wissen muessen",
+    "url": "https://consulting.tuv.com/aktuelles/datacenter/enefg-im-rechenzentrum",
+    "publisher": "TUV Rheinland Consulting (summary of EnEfG)",
+    "date": "2025"
+   },
+   {
+    "title": "Pressemitteilung Tageshoechstlast 30.06.2026",
+    "url": "https://www.mainova.de/resource/blob/170090/b25e161948b42535e3c0587eb0ce0906/20260630-tageshoechstlast-data.pdf",
+    "publisher": "Mainova AG",
+    "date": "2026-06-30"
+   },
+   {
+    "title": "Energieeffizienzgesetz (EnEfG) section 11 (statute text; not fetched in this session)",
+    "url": "https://www.gesetze-im-internet.de/enefg/__11.html",
+    "publisher": "Bundesministerium der Justiz",
+    "date": "2023-11"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Statutory numeric heat-reuse targets exist, but no public aggregate from the national register showing compliance with the 1 July 2026 threshold was located.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "EnEfG § 11 statute text (gesetze.legal mirror; the gesetze-im-internet.de request was not approved) confirms every PUE, reuse-share and renewable threshold and date previously taken from the TUV summary; Bundesrat Drs. 388/26 (2026-07-10) shows an amending bill was still in draft, and its enactment status by October 2026 was not checked.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "uk-neso-demand-queue-datacentres-2026",
+  "country": "United Kingdom",
+  "region": "Great Britain (transmission)",
+  "site_or_subject": "NESO Demand Call for Input: data-centre share of transmission demand connection responses",
+  "operator": "All developers",
+  "lat": 51.5,
+  "lon": -0.12,
+  "category": "grid_policy",
+  "record": "NESO's Demand CFI High Level Summary (March 2026, CFI issued 6 Nov 2025) received 243 responses representing over 90 GW (technology table 92,947 MW). Data centres were the largest category at 50,802 MW (about 55%) across 152 of 279 project phases; 32% of data-centre projects had secured an off-taker and 68% had not. NESO describes the figures as indicative developer intent, not confirmed deliverability.",
+  "record_sources": [
+   {
+    "title": "Demand Call for Input (CFI) High Level Summary",
+    "url": "https://www.neso.energy/document/378226/download",
+    "publisher": "National Energy System Operator (NESO)",
+    "date": "2026-03"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "none documented; the 50.8 GW is self-reported pipeline and far exceeds current data-centre load (NESO's Jan 2025 estimate cited elsewhere: about 7 TWh/yr in 2025).",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "uk-thames-affinity-water-datacentres",
+  "country": "United Kingdom",
+  "region": "London and South East (Thames Water and Affinity Water regions; West London / Slough)",
+  "site_or_subject": "Water utility statements on data-centre demand",
+  "operator": "Multiple operators (Slough / West London cluster)",
+  "lat": 51.51,
+  "lon": -0.6,
+  "category": "water",
+  "record": "Affinity Water's written evidence to Parliament (DCU0083) counts about 125 data centres proposed or under construction in its region, with individual requests up to 35 litres/second (peak demand of 3,500 homes) and one proposal for 21 Ml/day (about 147,000 people), against only 6.90 Ml/d (Central) and 7.68 Ml/d (company-wide) potentially available for data centres in 2025-2030; it asks government for guidance on potable water supply to data centres. Thames Water's annual report identifies 108 'hyper or large' data centres in its pipeline, and its strategy director Cathryn Ross said planned data centres equate to serving 1.68 million additional homes. [older: 2022] Thames Water said a proposed Slough data centre applied for 25 l/s and that drinking-quality water 'isn't necessary' for cooling; the GLA recorded that data-centre demand had absorbed capacity in Hillingdon, Ealing and Hounslow with new connections not before 2035.",
+  "record_sources": [
+   {
+    "title": "Written submission from Affinity Water (DCU0083)",
+    "url": "https://committees.parliament.uk/writtenevidence/166455/html/",
+    "publisher": "UK Parliament committees",
+    "date": "2025"
+   },
+   {
+    "title": "Thames Water faces rocketing demand for supplies",
+    "url": "https://www.yahoo.com/news/articles/thames-water-faces-rocketing-demand-150415291.html",
+    "publisher": "The Telegraph via Yahoo News (citing Thames Water annual report)",
+    "date": "2025"
+   },
+   {
+    "title": "Thames: Planned data centres like adding 1.7m homes in our region",
+    "url": "https://staging4.utilityweek.co.uk/thames-planned-data-centres-like-adding-1-7m-homes-in-our-region/?amp=true",
+    "publisher": "Utility Week",
+    "date": "2025"
+   },
+   {
+    "title": "Thames Water launches data center water probe in London & Slough amid drought",
+    "url": "https://datacenterdynamics.com/en/news/thames-water-launches-data-center-water-probe-in-london-slough-amid-drought",
+    "publisher": "Data Center Dynamics",
+    "date": "2022-08-23"
+   },
+   {
+    "title": "GLA wants to change applications process to ease West London power crisis",
+    "url": "https://www.datacenterdynamics.com/en/news/gla-wants-to-change-applications-process-to-ease-west-london-power-crisis",
+    "publisher": "Data Center Dynamics (citing GLA note)",
+    "date": "2022-08-04"
+   }
+  ],
+  "claim": "none found (no operator-level water figures for the cluster were located).",
+  "claim_sources": [],
+  "gap": "Utilities publish pipeline counts and per-site requests but no metered actual data-centre water consumption; Thames Water annual-report figure could not be retrieved directly.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Affinity Water written evidence DCU0083 (UK Parliament) re-fetched and confirms ~125 data centres, 35 l/s, 21 Ml/d (~147,000 people) and 6.90/7.68 Ml/d; Thames Water's '108 hyper or large data centres' and 1.68 million homes figures were not found in the visible part of its 2024-25 Annual Performance Report and remain press-sourced; the 2022 GLA note was not re-fetched.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "es-ree-demand-capacity-map-2026",
+  "country": "Spain",
+  "region": "National (transmission network)",
+  "site_or_subject": "Red Electrica demand access capacity map by consumption type",
+  "operator": "All operators",
+  "lat": 40.42,
+  "lon": -3.7,
+  "category": "grid_policy",
+  "record": "Red Electrica press release (1 Oct 2026): 18.52 GW of demand access granted on the transmission network, of which 11.05 GW is for installations not yet in service; data centres hold 6,329 MW (34.2%) of granted access, none of it yet in service; industry 5,838 MW (4,346 MW in service); rail 19.2%; hydrogen/renewable gas 13.2%. Excludes distribution-level requests. Trade press citing El Periodico de la Energia (5 Oct 2026) puts cumulative data-centre connection requests at about 22 GW; utility association aelec reported about 40 GW of all 2025 access requests with 12% (4.5 GW) granted.",
+  "record_sources": [
+   {
+    "title": "Red Electrica publica el mapa de capacidades de demanda por tipo de consumo",
+    "url": "https://www.ree.es/es/sala-de-prensa/actualidad/nota-de-prensa/2026/10/red-electrica-publica-el-mapa-de-capacidades-de-demanda-tipo-consumo",
+    "publisher": "Red Electrica de Espana",
+    "date": "2026-10-01"
+   },
+   {
+    "title": "Espana afronta 22 GW de solicitudes de centros de datos",
+    "url": "https://www.datacenterdynamics.com/es/noticias/espa%C3%B1a-afronta-22-gw-de-solicitudes-de-centros-de-datos/",
+    "publisher": "Data Center Dynamics ES",
+    "date": "2026-10-05"
+   },
+   {
+    "title": "Solo el 12% de las solicitudes de acceso y conexion fueron concedidas en 2025",
+    "url": "https://www.renewableenergymagazine.com/panorama/solo-el-12-de-las-solicitudes-de-20251223",
+    "publisher": "Energias Renovables (citing aelec)",
+    "date": "2025-12-22"
+   }
+  ],
+  "claim": "Industry association SpainDC estimates 2.6-3 GW of operational data-centre capacity by 2030.",
+  "claim_sources": [
+   {
+    "title": "Espana afronta 22 GW de solicitudes de centros de datos",
+    "url": "https://www.datacenterdynamics.com/es/noticias/espa%C3%B1a-afronta-22-gw-de-solicitudes-de-centros-de-datos/",
+    "publisher": "Data Center Dynamics ES",
+    "date": "2026-10-05"
+   }
+  ],
+  "gap": "Granted (6.3 GW), requested (about 22 GW) and industry-expected operational (2.6-3 GW by 2030) figures differ by an order of magnitude; none of the granted data-centre capacity is yet in service.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "es-aragon-amazon-blackstone-approvals",
+  "country": "Spain",
+  "region": "Aragon (Zaragoza province: Huesca/Villanueva de Gallego/El Burgo de Ebro; Calatorao)",
+  "site_or_subject": "Aragon regional-interest approvals: Amazon four expansions and Blackstone Calatorao",
+  "operator": "Amazon Web Services; Blackstone",
+  "lat": 41.65,
+  "lon": -0.89,
+  "category": "water",
+  "record": "Regional press citing official filings (27-28 Aug 2025): the Aragon government's PIGA approval for Amazon's expansions was published in the Boletin Oficial de Aragon on 25 Aug 2025; the five largest projects (Amazon x4 and Blackstone Calatorao) total over 2,000 MW and nearly 16,000 GWh/yr average consumption versus about 10,000 GWh consumed by all of Aragon in the prior year; Amazon's four centres are documented at about 1 million m3/yr of water (equivalent to a population of about 9,000); regional access requests rose from 3,000 MW to 7,400 MW over five months; ten bottlenecked grid nodes total 2,380 MW. Amazon received environmental clearance for its largest Aragon centre in July 2026.",
+  "record_sources": [
+   {
+    "title": "La explosion de los centros de datos en Aragon: entre la opacidad, el choque institucional y el riesgo de colapso",
+    "url": "https://www.eldiario.es/aragon/politica/explosion-centros-datos-aragon-opacidad-choque-institucional-riesgo-colapso_1_12559021.html",
+    "publisher": "elDiario.es (citing BOA and Aragon energy directorate)",
+    "date": "2025-08-28"
+   },
+   {
+    "title": "Amazon recibe el aval ambiental para levantar su mayor centro de datos en Aragon",
+    "url": "https://www.merca2.es/2026/07/16/centro-datos-amazon-aragon-permiso-ambiental-2418205/",
+    "publisher": "Merca2",
+    "date": "2026-07-16"
+   }
+  ],
+  "claim": "Amazon states EUR 15,700 million of investment and about 1,000 direct operational jobs in Aragon.",
+  "claim_sources": [
+   {
+    "title": "La explosion de los centros de datos en Aragon",
+    "url": "https://www.eldiario.es/aragon/politica/explosion-centros-datos-aragon-opacidad-choque-institucional-riesgo-colapso_1_12559021.html",
+    "publisher": "elDiario.es",
+    "date": "2025-08-28"
+   }
+  ],
+  "gap": "Approved projects' stated consumption (about 16 TWh/yr) is roughly 1.6x Aragon's total current consumption; the BOA resolution and any Ebro basin (CHE) water concession were not retrieved directly.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "Searched (Spanish) for the BOA final approval; aragon.es PIGA pages for 'Expansión de la Región AWS en Aragón' list only the initial approval (Orden FOM/1517/2024, BOA 241, 2024-12-13) and 2025 line-project orders, with no 2025-08-25 final-approval BOA and none of the MW, GWh, water or access-request figures; no CHE water concession was found, so the figures remain sourced to elDiario.es.",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "fr-idf-rte-datacentre-connections-2025",
+  "country": "France",
+  "region": "Ile-de-France",
+  "site_or_subject": "RTE Ile-de-France electricity review 2025: data-centre connections and pipeline",
+  "operator": "All operators",
+  "lat": 48.86,
+  "lon": 2.35,
+  "category": "power",
+  "record": "RTE's Bilan electrique Ile-de-France 2025 (9 July 2026): at end-2025, 6 data centres were connected to RTE's transmission network in the region with 640 MW; about 8 GW across some 50 sites were in the connection process and about 7 GW across some 30 sites under study; regional consumption was 66.3 TWh (+1.1%), 14.7% of national. RTE notes the figures are a snapshot that evolves daily.",
+  "record_sources": [
+   {
+    "title": "Bilan electrique 2025 Ile-de-France",
+    "url": "https://assets.rte-france.com/prod/public/2026-07/2026-07-09-bilan-electrique-idf-2026.pdf",
+    "publisher": "RTE",
+    "date": "2026-07-09"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "none documented; pipeline (about 15 GW) is about 23x connected capacity (640 MW).",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "it-terna-datacentre-requests-2025",
+  "country": "Italy",
+  "region": "National (concentrated in Lombardy)",
+  "site_or_subject": "Terna data-centre connection requests",
+  "operator": "All operators",
+  "lat": 45.46,
+  "lon": 9.19,
+  "category": "grid_policy",
+  "record": "Terna's presentation to ANCI Lombardia (9 June 2025, data as of May 2025) puts data-centre connection requests to the national transmission grid at about 44 GW (44.1 GW in its historical chart; 43.7 GW in a later slide), with Lombardy at 26.25 GW (59.5%) and the Milan area close to 30% of the total. Reuters figures cited by QualEnergia (2 Sep 2025) gave 42 GW by March 2025 and nearly 50 GW by June 2025. QualEnergia's own estimate of realistic IT load is 1.4-2.0 GW by 2030.",
+  "record_sources": [
+   {
+    "title": "Terna – Convegno ANCI Lombardia (presentation on data centre connection requests)",
+    "url": "https://anci.lombardia.it/documenti/21883-TERNA-Convegno-ANCI-Lombardia-9giu2025_rev09giu.pdf",
+    "publisher": "Terna (via ANCI Lombardia)",
+    "date": "2025-06-09"
+   },
+   {
+    "title": "I data center in Italia: da 50 GW di rumore a 5 GW di realta",
+    "url": "https://www.qualenergia.it/articoli/data-center-italia-da-50-gw-rumore-a-5-gw-realta/",
+    "publisher": "QualEnergia (citing Reuters/Terna)",
+    "date": "2025-09-02"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Terna's figure (about 44 GW, May 2025) is a queue of connection requests, not committed load; no Terna figure for connected or under-construction data-centre capacity was located.",
+  "confidence": "high",
+  "last_checked": "2026-10-20",
+  "verified_primary": true,
+  "verification_note": "Terna's own presentation (2025-06-09, data as of May 2025) gives about 44 GW of data-centre connection requests (26.25 GW in Lombardy); the record previously rested only on Reuters figures via QualEnergia (42 GW March 2025, nearly 50 GW June 2025), which are retained as press figures.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "eu-eed-datacentre-reporting-2024-period",
+  "country": "European Union",
+  "region": "EU-27 (18 member states reported)",
+  "site_or_subject": "Energy Efficiency Directive data-centre reporting database: first technical assessment",
+  "operator": "All operators",
+  "lat": 50.85,
+  "lon": 4.35,
+  "category": "power",
+  "record": "The Commission's first technical report (July 2025, 2024 reporting period) under Delegated Regulation (EU) 2024/1364 covers 776 data centres in 18 member states reporting 6.4 GW installed IT power demand, 16.7 TWh energy consumption and a weighted average PUE of 1.36; Germany has the most reporting sites and the highest installed IT power. About 36% of obligated operators reported; Czechia reported none and Ireland about 1 in 6 of expected facilities. Renewable Energy Factor claims rely about 70% on guarantees of origin, 29% on PPAs and under 0.5% on on-site generation. A public dashboard exists; a report on the 2025 period is under preparation; the Commission proposed a common rating scheme on 21 Sept 2026 with minimum performance standards planned for Q2 2027.",
+  "record_sources": [
+   {
+    "title": "Energy performance of data centres (EED)",
+    "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive/energy-performance-data-centres_en",
+    "publisher": "European Commission DG ENER",
+    "date": "2026"
+   },
+   {
+    "title": "Assessment of the energy performance and sustainability of data centres in EU - First technical report",
+    "url": "https://op.europa.eu/en/publication-detail/-/publication/83be4c3e-5c79-11f0-a9d0-01aa75ed71a1/language-en",
+    "publisher": "Publications Office of the EU",
+    "date": "2025-07"
+   },
+   {
+    "title": "European Commission releases aggregate EED data center data: operators report 6.4GW of installed capacity",
+    "url": "https://www.datacenterdynamics.com/en/news/european-commission-releases-aggregate-eed-data-center-data-operators-report-64gw-of-installed-capacity-across-the-eu/",
+    "publisher": "Data Center Dynamics",
+    "date": "2026-04-17"
+   },
+   {
+    "title": "What we've learned about the sustainability of datacentres in Europe from the EED",
+    "url": "https://www.thegreenwebfoundation.org/news/what-weve-learned-about-the-sustainability-of-datacentres-in-europe-from-the-eed/",
+    "publisher": "Green Web Foundation (analysis of the EC report)",
+    "date": "2025-07-31"
+   }
+  ],
+  "claim": "Reported Renewable Energy Factor: at least 85% for small operators, over 96% for the second-largest size band, about 92% for hyperscale facilities (operator self-reports to the database).",
+  "claim_sources": [
+   {
+    "title": "What we've learned about the sustainability of datacentres in Europe from the EED",
+    "url": "https://www.thegreenwebfoundation.org/news/what-weve-learned-about-the-sustainability-of-datacentres-in-europe-from-the-eed/",
+    "publisher": "Green Web Foundation",
+    "date": "2025-07-31"
+   }
+  ],
+  "gap": "EU-reported total (16.7 TWh) is only about 2.2x Ireland's CSO-metered 7.66 TWh, indicating substantial under-reporting (about 36% compliance); aggregate water (WUE) and heat-reuse (ERF) values were not published in the text sources retrieved.",
+  "confidence": "medium",
+  "last_checked": "2026-10-20",
+  "verified_primary": false,
+  "verification_note": "DG ENER page confirms the 21 Sept 2026 rating-scheme proposal, the Q2 2027 minimum-performance-standards timeline, the public dashboard and that the 2025-period report is in preparation, but gives no aggregate figures; the Publications Office page returned only title metadata and no report PDF was found, so 776 sites, 6.4 GW, 16.7 TWh, PUE 1.36, ~36% reporting and the GO/PPA shares were not confirmed from the report text.",
+  "verification_status": "partial"
+ }
+]

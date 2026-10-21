@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+/tmp/
+
+# raw source PDFs: large, re-downloadable by the scrapers
+pipeline/out/tx_pdfs/

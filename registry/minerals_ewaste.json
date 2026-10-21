@@ -1,0 +1,771 @@
+[
+ {
+  "id": "cd-cobalt-usgs-share",
+  "country": "Democratic Republic of the Congo",
+  "region": "Lualaba / Haut-Katanga (Copperbelt)",
+  "site_or_subject": "DRC cobalt mine output share, 2025 export ban and quotas",
+  "operator": "Multiple (CMOC, Glencore, ERG, Gécamines JV); Government of DRC (ARECOMS quotas)",
+  "lat": -10.72,
+  "lon": 25.47,
+  "category": "minerals",
+  "record": "USGS records world mined cobalt at 302,000 t (2024) and 310,000 t (2025e), with Congo (Kinshasa) at 226,000 t (2024) and 230,000 t (2025e), an estimated 73% of world total. DRC banned cobalt exports in February 2025, replaced in October 2025 by quotas of 18,125 t for the rest of 2025 and up to 96,600 t/yr for 2026-2027 (incl. 9,600 t strategic reserve). Institutional estimates of the artisanal (ASM) share range from 15-30% (historical) to about 2% of global output in 2024.",
+  "record_sources": [
+   {
+    "title": "Mineral Commodity Summaries 2026: Cobalt",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf",
+    "publisher": "U.S. Geological Survey",
+    "date": "2026-01"
+   },
+   {
+    "title": "Country Profile: Democratic Republic of Congo",
+    "url": "https://www.iisd.org/system/files/2026-06/country-profile-democratic-republic-congo_0.pdf",
+    "publisher": "International Institute for Sustainable Development",
+    "date": "2026-06"
+   },
+   {
+    "title": "Beneath the Green: Key Findings (RAID/AFREWATCH)",
+    "url": "https://raid-uk.org/wp-content/uploads/2024/03/KEY-FINDINGS-DRC_Raid_Report_English_27-March.pdf",
+    "publisher": "RAID and AFREWATCH",
+    "date": "2024-03-27"
+   }
+  ],
+  "claim": "Apple's Form SD for calendar 2025 (signed 28 May 2026) covers only tin, tantalum, tungsten and gold; it states 100% of identified 3TG smelters/refiners are required to undergo annual independent third-party audit and that Apple found no reasonable basis to conclude any financed armed groups in the DRC region. Cobalt is not covered by the statutory filing. Mining companies responding to RAID/AFREWATCH attributed pollution largely to historic contamination and artisanal mining and said their mines run closed circuits.",
+  "claim_sources": [
+   {
+    "title": "Apple Conflict Minerals Report / Form SD (CY2025)",
+    "url": "https://s203.q4cdn.com/367071867/files/doc_downloads/2026/05/Conflict-Minerals-Filing.pdf",
+    "publisher": "Apple Inc. (SEC Form SD)",
+    "date": "2026-05-28"
+   },
+   {
+    "title": "Beneath the Green: Key Findings (company responses)",
+    "url": "https://raid-uk.org/wp-content/uploads/2024/03/KEY-FINDINGS-DRC_Raid_Report_English_27-March.pdf",
+    "publisher": "RAID and AFREWATCH",
+    "date": "2024-03-27"
+   }
+  ],
+  "gap": "Statutory traceability filings (Form SD) do not cover cobalt; company water-quality rebuttals were not accompanied by published third-party audits per RAID/AFREWATCH.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "cl-copper-cochilco-seawater",
+  "country": "Chile",
+  "region": "Antofagasta Region (Atacama Desert)",
+  "site_or_subject": "Copper-mining water demand and desalination shift, 2023-2034",
+  "operator": "Industry-wide (Codelco, BHP Escondida, Antofagasta Minerals, Collahuasi, others)",
+  "lat": -23.65,
+  "lon": -70.4,
+  "category": "water",
+  "record": "Cochilco (DEEP 06/2025, June 2025) records total copper-mining water use of 18.8 m3/s (2023) and 18.9 m3/s (2024), projected 22.1 m3/s by 2034. Continental water fell from 12.02 m3/s (63.8%) in 2023 to 10.76 m3/s (56.9%) in 2024 and is projected at 7.6 m3/s in 2034; seawater rose from 6.81 m3/s (36.2%) to 8.16 m3/s (43.1%) and is projected at 14.5 m3/s (about 66%). Antofagasta Region continental use is projected to fall 25% (3.82 to 2.84 m3/s). 16 desalination plants operating or under construction. A March 2026 Cochilco update gives slightly different values (40.7% seawater in 2024, 67.6% in 2034).",
+  "record_sources": [
+   {
+    "title": "Proyeccion de la Demanda de Agua en la Mineria del Cobre, periodo 2024-2034 (DEEP 06/2025)",
+    "url": "https://www.cochilco.cl/web/download/991/2025/13626/proyeccion-de-la-demanda-de-agua-en-la-mineria-del-cobre-periodo-2024-2034.pdf",
+    "publisher": "Comision Chilena del Cobre (Cochilco)",
+    "date": "2025-06"
+   },
+   {
+    "title": "Chilean miners to use more seawater to meet rising demand by 2034",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-03-18/chilean-miners-use-more-seawater-meet-rising-demand-2034",
+    "publisher": "Kitco / Reuters (reporting Cochilco)",
+    "date": "2026-03-18"
+   }
+  ],
+  "claim": "none found beyond the government projection itself; Cochilco is a state agency and the figures are its own.",
+  "claim_sources": [],
+  "gap": "positive example: regulator-published data show continental (inland) water use by copper mining falling in absolute terms as seawater desalination grows; the same report contains minor internal inconsistencies (continental reduction stated as 36.7% and 35%; seawater share 66% and 65.6%).",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "cl-lithium-atacama-sqm-sma",
+  "country": "Chile",
+  "region": "Salar de Atacama, Antofagasta Region",
+  "site_or_subject": "SQM lithium brine extraction: SMA sanction and compliance program",
+  "operator": "SQM Salar SpA (Codelco partnership agreed 31 May 2024)",
+  "lat": -23.5,
+  "lon": -68.25,
+  "category": "water",
+  "record": "Chile's Superintendencia del Medio Ambiente (SMA) opened sanction proceeding Rol F-041-2016 in November 2016 after an audit found brine over-extraction and incomplete information (six infractions; charge 1 covers brine extraction above the authorised amount between August 2013 and August 2015). The SMA approved SQM Salar's compliance program by Res. Ex. N° 38/2022 of 29 August 2022 (press-reported cost more than CLP 46,000 million, about USD 52 million). The program steps the average maximum brine extraction down to 822 L/s from 2027 (slightly under 50% of the limit in RCA 226/2006), a step tied to an EIA still under evaluation, with a limit of 1,026 L/s for the 2025–2026 environmental year, and caps industrial freshwater pumping at 120 L/s (-50% versus RCA 226/2006). SQM filed progress report 15 of 20 on 27 Feb 2026 (program period 30 Aug 2022–28 May 2027). An environmental court had mandated an earlier plan in 2020.",
+  "record_sources": [
+   {
+    "title": "Programa de Cumplimiento SQM Salar (Rol F-041-2016; PdC Res. Ex. 38/2022): reporte de avance N° 15 (SPDC-3469-2026)",
+    "url": "https://snifa.sma.gob.cl/General/DescargarPdcReporte/3248",
+    "publisher": "Superintendencia del Medio Ambiente (SNIFA)",
+    "date": "2026-02-27"
+   },
+   {
+    "title": "SMA aprueba programa de cumplimiento para SQM Salar por mas de $46 mil millones",
+    "url": "https://www.df.cl/sma-aprueba-programa-de-cumplimiento-para-sqm-salar-por-mas-de-46-000",
+    "publisher": "Diario Financiero (reporting SMA resolution)",
+    "date": "2022-08-30"
+   },
+   {
+    "title": "SQM gets green light on environmental plan",
+    "url": "https://www.mining.com/web/chile-lithium-producer-sqm-gets-green-light-on-environmental-plan/",
+    "publisher": "Mining.com / Reuters",
+    "date": "2022-08-30"
+   }
+  ],
+  "claim": "SQM announced on 14 October 2020 it would cut Salar de Atacama brine extraction by 50% by 2030 (after an immediate 20% cut) and reduce water consumption 40% by 2030 and 65% by 2040 across all operations, with a Sustainability Plan of more than USD 200 million. Its FY2024 Form 20-F restates the goal as reducing water by 65% and brine extraction by 50% of authorized limits.",
+  "claim_sources": [
+   {
+    "title": "SQM to cut brine extraction from the Salar de Atacama by 50% and water consumption at all its operations by 40%",
+    "url": "https://sqm.com/en/?p=6706",
+    "publisher": "SQM",
+    "date": "2020-10-14"
+   },
+   {
+    "title": "SQM Form 20-F FY2024",
+    "url": "https://www.sec.gov/Archives/edgar/data/909037/000090903725000020/sqm-20241231.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2025"
+   }
+  ],
+  "gap": "Regulator record (822 L/s from 2027, conditional on a pending EIA; 1,026 L/s in 2025–2026) and company claim (50% by 2030) are directionally consistent; measured extraction volumes against these limits were not located in the documents fetched. Older sources (2020-2022) flagged.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched SMA SNIFA compliance-program progress report (SQM Salar, Rol F-041-2016, PdC approved by Res. 38/2022 of 29 Aug 2022): confirms 822 L/s from 2027 and the 120 L/s freshwater cap; adds that the 822 L/s step depends on an EIA under evaluation and that the 2025–2026 limit is 1,026 L/s; corrected the approval date from 30 Aug 2022 (press date) to 29 Aug 2022. The CLP 46,000 million total and six-infraction count are not stated in the excerpt and remain via Diario Financiero.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "id-nickel-halmahera-weda-bay",
+  "country": "Indonesia",
+  "region": "North Maluku (Halmahera) and Central Sulawesi (Morowali)",
+  "site_or_subject": "Indonesian nickel output, captive coal power and concession deforestation",
+  "operator": "IWIP (Tsingshan/Huayou/Zhenshi); Weda Bay Nickel (Eramet/Tsingshan); industry-wide",
+  "lat": 0.45,
+  "lon": 127.9,
+  "category": "minerals",
+  "record": "USGS records Indonesia nickel mine output of 2,310,000 t (2024) and 2,600,000 t (2025e) of 3,710,000 / 3,900,000 t world (about 62-67%), up an estimated 13% in 2025. A CREA/Global Energy Monitor report (27 Jan 2026) records 19.3 GW of operating captive coal in Indonesia as of July 2025, 15.4 GW of it serving nickel, with 3.6 GW under construction and nearly 31 GW including the announced pipeline; GEM's Boom and Bust Coal 2025 (as reported by Eco-Business) gave 16.6 GW at end-2024, roughly triple 2019, with 1.1 GW starting construction in 2024. Climate Rights International ('Nickel Unearthed', Jan 2024), using Global Forest Watch data, records at least 5,331 ha of tropical forest cut within Halmahera nickel concessions and states IWIP has built at least five captive coal-fired plants and will ultimately host twelve new coal-fired plants; Mongabay's report on the study cites 1,456 ha cleared in the Weda Bay Nickel concession as of 2022.",
+  "record_sources": [
+   {
+    "title": "Indonesia captive coal in 2025 (31 GW of captive coal)",
+    "url": "https://energyandcleanair.org/wp/wp-content/uploads/2026/02/EN-CREA_GEM_Indonesia-captive-coal-in-2025_REV.pdf",
+    "publisher": "Centre for Research on Energy and Clean Air and Global Energy Monitor",
+    "date": "2026-01-27"
+   },
+   {
+    "title": "Nickel Unearthed (report)",
+    "url": "https://cri.org/reports/nickel-unearthed/",
+    "publisher": "Climate Rights International",
+    "date": "2024-01"
+   },
+   {
+    "title": "Mineral Commodity Summaries 2026: Nickel",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-nickel.pdf",
+    "publisher": "U.S. Geological Survey",
+    "date": "2026-01"
+   },
+   {
+    "title": "Indonesia stands alone in Southeast Asia with new coal proposals in 2024 (GEM Boom-Bust Coal 2025)",
+    "url": "https://www.eco-business.com/news/indonesia-stands-alone-in-southeast-asia-with-new-coal-proposals-in-2024-report/",
+    "publisher": "Eco-Business reporting Global Energy Monitor",
+    "date": "2025-04-08"
+   },
+   {
+    "title": "Indonesian nickel project harms environment and human rights, report says (Climate Rights International)",
+    "url": "https://news.mongabay.com/2024/02/indonesian-nickel-project-harms-environment-and-human-rights-report-says/",
+    "publisher": "Mongabay reporting CRI",
+    "date": "2024-02"
+   }
+  ],
+  "claim": "Eramet (Weda Bay Nickel shareholder) stated WBN obtained a permit to exploit its concession and met compensation and rehabilitation requirements, and that local communities lack legal or customary ownership of the forested land; Tsingshan and WBN did not respond to CRI.",
+  "claim_sources": [
+   {
+    "title": "Indonesian nickel project harms environment and human rights, report says",
+    "url": "https://news.mongabay.com/2024/02/indonesian-nickel-project-harms-environment-and-human-rights-report-says/",
+    "publisher": "Mongabay",
+    "date": "2024-02"
+   }
+  ],
+  "gap": "No Indonesian ministry (ESDM/KLHK) figures for HPAL tailings, captive coal or concession deforestation were located; the record rests on USGS, CREA/GEM and NGO geospatial analysis.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched USGS MCS 2026 nickel (output and +13% confirmed), CRI 'Nickel Unearthed' (5,331 ha confirmed; IWIP coal plants given as at least five built and twelve new planned, correcting the earlier press-based '11 built, 3 planned'; the 1,456 ha WBN figure is not in the report and is attributed to Mongabay) and the CREA/GEM Jan 2026 report (19.3 GW operating captive coal at July 2025, 15.4 GW nickel). GEM's Boom and Bust 2025 page did not show the 16.6 GW end-2024 figure, which is attributed to Eco-Business.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "mm-rare-earths-kachin-pangwa",
+  "country": "Myanmar",
+  "region": "Kachin State, Special Region 1 (Pangwa / Chipwe)",
+  "site_or_subject": "Heavy rare-earth (ionic clay) mining and exports to China",
+  "operator": "Unlisted Chinese-linked operators under NDA-K / Kachin Special Region 1 control",
+  "lat": 26.1,
+  "lon": 98.45,
+  "category": "minerals",
+  "record": "USGS records Burma rare-earth output of 27,000 t REO (2024) and 22,000 t (2025e), explicitly 'estimated based on reported import data for China'; China produced 270,000 t of 380,000-390,000 t world (about 70%). Global Witness (23 May 2024) records more than 300 mining sites in Kachin Special Region 1 by 2023 (+40% since 2021), expansion in Momauk Township from 9 to over 40 sites, and Chinese import data of 41,700 t of heavy rare-earth oxides from Myanmar in 2023 (US$1.4 bn), up from 19,500 t in 2021; stream sampling showed high acidity and elevated arsenic (no numeric values published). China imposed export controls on seven REEs in April 2025, expanded them in October 2025, then suspended the October controls for one year in November 2025.",
+  "record_sources": [
+   {
+    "title": "Mineral Commodity Summaries 2026: Rare Earths",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf",
+    "publisher": "U.S. Geological Survey",
+    "date": "2026-01"
+   },
+   {
+    "title": "Fuelling the future, poisoning the present: Myanmar's rare earth boom",
+    "url": "https://www.globalwitness.org/en/campaigns/natural-resource-governance/fuelling-the-future-poisoning-the-present-myanmars-rare-earth-boom/",
+    "publisher": "Global Witness",
+    "date": "2024-05-23"
+   }
+  ],
+  "claim": "none found (no Myanmar government production record exists; Chinese customs import data are the only official series).",
+  "claim_sources": [],
+  "gap": "The only official production figure is a USGS back-calculation from Chinese import data; no government or UN water-quality dataset for Kachin was located.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched USGS MCS 2026 rare earths (Burma 27,000 t 2024 / 22,000 t 2025e with footnote 'Estimated based on reported import data for China'; China 270,000 t; world 380,000/390,000 t; April 2025 controls, October expansion and November one-year suspension) and the Global Witness report page (>300 sites by 2023, +40% since 2021, Momauk 9 to >40 sites, 41,700 t HREO in 2023 vs 19,500 t in 2021, US$1.4 bn trade value, no numeric water values); all figures confirmed.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "cn-gallium-export-controls",
+  "country": "China",
+  "region": "National (primary gallium from alumina refining)",
+  "site_or_subject": "Gallium supply concentration and export controls 2023-2025",
+  "operator": "Government of China (MOFCOM); Chinese alumina refiners",
+  "lat": 39.9,
+  "lon": 116.4,
+  "category": "minerals",
+  "record": "USGS records China at 839,000 kg of 848,000 kg world primary low-purity gallium in 2024 (99%) and 900,000 kg in 2025e. Export controls were implemented in August 2023; China banned all gallium exports to the United States in December 2024; in November 2025 China lifted the US ban for one year. US gallium metal imports 2021-24: Canada 28%, Japan 22%, China 18%, Germany 16%.",
+  "record_sources": [
+   {
+    "title": "Mineral Commodity Summaries 2026: Gallium",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gallium.pdf",
+    "publisher": "U.S. Geological Survey",
+    "date": "2026-01"
+   }
+  ],
+  "claim": "none found (MOFCOM announcement texts not retrieved in this check).",
+  "claim_sources": [],
+  "gap": "none documented between sources; germanium chapter and primary MOFCOM texts not yet captured.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "tw-tsmc-hsinchu-2021-drought",
+  "country": "Taiwan",
+  "region": "Hsinchu Science Park / Baoshan reservoirs",
+  "site_or_subject": "TSMC Taiwan fab water during 2021 drought vs reported recycling and unit-water metrics",
+  "operator": "TSMC",
+  "lat": 24.78,
+  "lon": 121.0,
+  "category": "fab",
+  "record": "Water Resources Agency data showed Baoshan Second Reservoir (Hsinchu Science Park supply) at 12% on 7 March 2021, Liyutan and Zengwen at 15%; water was trucked from Taoyuan to Hsinchu and science parks were allowed temporary wells. In May 2021 the WRA set Hsinchu and Taichung park firms' water-saving requirement at 15%, rising to 17% if red alert began 1 June; central/southern reservoirs were below 5%. TSMC's 2024 Annual Report records total Taiwan water use rising from 114 Mm3 (2023) to 129 Mm3 (2024) and marks its 2024 unit-water target (-2.7%) 'Unachieved' at +14.3%. TSMC's 2025 Sustainability Report records 153.3 L per 12-inch-equivalent mask layer (2010 baseline 140.9 L).",
+  "record_sources": [
+   {
+    "title": "Water levels in south remain low (WRA data)",
+    "url": "https://www.taipeitimes.com/News/biz/archives/2021/03/08/2003753428",
+    "publisher": "Taipei Times (reporting Water Resources Agency)",
+    "date": "2021-03-08"
+   },
+   {
+    "title": "Hsinchu water curbs may start June 1 (WRA)",
+    "url": "https://taipeitimes.com/News/front/archives/2021/05/20/2003757719",
+    "publisher": "Taipei Times (reporting Water Resources Agency)",
+    "date": "2021-05-20"
+   },
+   {
+    "title": "Taiwan steps up curbs on water use by chip hub Hsinchu during drought",
+    "url": "https://www.cnbc.com/2021/05/19/taiwan-steps-up-curbs-on-water-use-by-chip-hub-hsinchu-during-drought.html",
+    "publisher": "CNBC / Reuters",
+    "date": "2021-05-19"
+   },
+   {
+    "title": "TSMC 2024 Annual Report, p.159 (water)",
+    "url": "https://investor.tsmc.com/static/annualReports/2024/english/ebook/files/basic-html/page159.html",
+    "publisher": "TSMC",
+    "date": "2025"
+   }
+  ],
+  "claim": "TSMC stated in May 2021 it 'would rely more on water trucks' and that operations would not be affected. Its 2025 Sustainability Report claims an 88.1% average process-water recycling rate, 318.94 Mm3 of water recycled in 2025 (+12%), tap water consumption of 18.2 Mm3 (Taiwan fabs) and 108.9 Mm3 (overseas subsidiaries), and a goal of -30% unit water by 2030 vs 2010. No ISAE 3000/AA1000 assurance statement for water data was found in the fetched text; AWS site certification and ISO 14046 product water footprint verification are cited.",
+  "claim_sources": [
+   {
+    "title": "TSMC 2025 Sustainability Report",
+    "url": "https://esg.tsmc.com/en-US/file/public/e-APractitionerofGreenPower.pdf",
+    "publisher": "TSMC",
+    "date": "2026"
+   },
+   {
+    "title": "Hsinchu water curbs may start June 1 (TSMC statement)",
+    "url": "https://taipeitimes.com/News/front/archives/2021/05/20/2003757719",
+    "publisher": "Taipei Times",
+    "date": "2021-05-20"
+   }
+  ],
+  "gap": "The company-reported 88.1% recycling rate coexists with a regulator-recorded 2021 reliance on trucked water and a reported unit-water figure (153.3 L) that is above the 2010 baseline (140.9 L); whether water figures are externally assured could not be confirmed. 2021 sources are older.",
+  "confidence": "medium",
+  "verified_primary": true,
+  "verification_note": "Partial: fetched TSMC 2024 Annual Report p.159 (statutory; confirms Taiwan total water usage 114 to 129 Mm3 and unit water +14.3% vs -2.7% target, 'Unachieved') and the 2025 Sustainability Report water chapter (confirms 88.1%, 318.94 Mm3, 153.3 L vs 140.9 L baseline; names only ISO 14046 product verification and AWS certification, no ISAE 3000/AA1000 assurance of water data; the extracted chart assigns 18.2 Mm3 to Taiwan and 108.9 Mm3 to subsidiaries, which appears inconsistent with the annual report's Taiwan total). The 2021 Water Resources Agency reservoir and curtailment data remain via Taipei Times/CNBC; no WRA primary fetched, so confidence left medium.",
+  "last_checked": "2026-10-20",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-az-tsmc-phoenix-water",
+  "country": "United States",
+  "region": "Arizona, north Phoenix (Maricopa County)",
+  "site_or_subject": "TSMC Arizona fab water intake, recycling and reclamation plant",
+  "operator": "TSMC Arizona",
+  "lat": 33.73,
+  "lon": -112.07,
+  "category": "fab",
+  "record": "As of 24 August 2026, TSMC Arizona's Water Resource Center engineers stated the site uses 4.75 million gallons/day supplied through the City of Phoenix portfolio (mostly reclaimed wastewater with a small groundwater share), under a City of Phoenix industrial pretreatment discharge permit. No Arizona Department of Water Resources withdrawal figure for the site was located.",
+  "record_sources": [
+   {
+    "title": "Arizona's chip footprint grows, but TSMC's water demand sparks questions",
+    "url": "https://www.azfamily.com/2026/08/24/arizonas-chip-footprint-grows-tsmcs-water-demand-sparks-questions/",
+    "publisher": "AZFamily (KTVK/KPHO)",
+    "date": "2026-08-24"
+   }
+  ],
+  "claim": "TSMC states it currently recycles 65% of intake (about 3.5 million gallons/day) and that its Industrial Reclamation Water Plant, under construction, will raise reuse 'from 65% reuse all the way to 90% reuse or better' but is not expected to be fully operational until 2028.",
+  "claim_sources": [
+   {
+    "title": "Arizona's chip footprint grows, but TSMC's water demand sparks questions",
+    "url": "https://www.azfamily.com/2026/08/24/arizonas-chip-footprint-grows-tsmcs-water-demand-sparks-questions/",
+    "publisher": "AZFamily",
+    "date": "2026-08-24"
+   }
+  ],
+  "gap": "The 65% (current) and 90% (post-2028) figures are company statements; no regulator-published withdrawal or discharge volume for the site was found, and expansion-phase water demand is not disclosed.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched City of Phoenix council reports, industrial pretreatment permit records and ADWR for TSMC Arizona intake/discharge volumes and the Industrial Reclamation Water Plant; no primary document located (only press and trade reports). The 4.75 MGD and 65%/90% figures remain company statements via AZFamily.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "kr-samsung-fabs-water",
+  "country": "South Korea",
+  "region": "Gyeonggi Province (Hwaseong, Giheung, Pyeongtaek)",
+  "site_or_subject": "Samsung Electronics semiconductor fab water withdrawal",
+  "operator": "Samsung Electronics (Device Solutions)",
+  "lat": 37.2,
+  "lon": 127.05,
+  "category": "fab",
+  "record": "Samsung's Water Stewardship disclosure (2022 data) reports Korea manufacturing withdrawal of 344,000 t/day: Hwaseong 51.038 Mt/yr, Giheung 22.450 Mt/yr, Pyeongtaek 46.909 Mt/yr (+9.931 Mt YoY), Onyang+Cheonan 4.985 Mt/yr; China 17.601 Mt and US 10.190 Mt. Water reused at Korea sites in 2022: 235,000 t. Discharge agreement to Osan Stream: 45,000 t/day average. No percentage reuse rate is stated. No separate Korean Ministry of Environment withdrawal record was located.",
+  "record_sources": [
+   {
+    "title": "Samsung Semiconductors Water Stewardship",
+    "url": "https://download.semiconductor.samsung.com/resources/others/Samsung_Semiconductors_Water_Stewardship_ENG.pdf",
+    "publisher": "Samsung Electronics",
+    "date": "2023"
+   }
+  ],
+  "claim": "Samsung states a 2030 target to hold withdrawal at the 2021 level (about 0.3 Mt/day) despite capacity growth, cites the Ministry of Environment's National Water Management Master Plan (2021-2030) as reference, and reports Alliance for Water Stewardship 'Platinum' certification at Hwaseong in 2022.",
+  "claim_sources": [
+   {
+    "title": "Samsung Semiconductors Water Stewardship",
+    "url": "https://download.semiconductor.samsung.com/resources/others/Samsung_Semiconductors_Water_Stewardship_ENG.pdf",
+    "publisher": "Samsung Electronics",
+    "date": "2023"
+   }
+  ],
+  "gap": "Company data only; Pyeongtaek withdrawal rose about 27% YoY in 2022 while the company target is to hold total withdrawal flat at 2021 levels; no regulator-published site withdrawal record found. Data year 2022 (older).",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Fetched Samsung Electronics Sustainability Report 2025: it gives no site-level withdrawal for Hwaseong, Giheung or Pyeongtaek, reports DS Korea water reuse of 1.01 Mt (2024) and a 2030 goal of holding Korea withdrawal at the 2021 base-year level; the Independent Assurance Report text was not extractable, so whether water data are assured could not be confirmed. No Ministry of Environment site record located; 2022 figures remain from Samsung's Water Stewardship document.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "global-gem-2024-ewaste",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "UN Global E-waste Monitor 2024: generation, formal collection, small IT, transboundary flows",
+  "operator": "ITU / UNITAR SCYCLE",
+  "lat": null,
+  "lon": null,
+  "category": "ewaste",
+  "record": "GEM 2024 (launched 20 March 2024) records 62 billion kg of e-waste generated in 2022 (7.8 kg/capita), of which 13.8 billion kg (22.3%) was documented as formally collected and recycled; Europe 42.8%, Africa under 1%; projection 82 billion kg by 2030 with the rate falling to 20%. Small IT and telecommunication equipment totaled about 5 billion kg in 2022 with only 22% documented as formally collected. 5.1 billion kg crossed borders, 3.3 billion kg from high-income to middle/low-income countries, and 1.86 billion kg (35%) as controlled movements. Metals value in 2022 e-waste: USD 91 billion. Servers/data-center hardware are not a separate category.",
+  "record_sources": [
+   {
+    "title": "The Global E-waste Monitor 2024 (landing page)",
+    "url": "https://www.itu.int/en/ITU-D/Environment/Pages/Publications/The-Global-E-Waste-Monitor-2024.aspx",
+    "publisher": "ITU and UNITAR",
+    "date": "2024-03-20"
+   },
+   {
+    "title": "The Global E-waste Monitor 2024 (full report PDF)",
+    "url": "https://ewastemonitor.info/wp-content/uploads/2024/12/GEM_2024_EN_11_NOV-web.pdf",
+    "publisher": "ITU and UNITAR SCYCLE",
+    "date": "2024"
+   }
+  ],
+  "claim": "none found (UN statistical publication).",
+  "claim_sources": [],
+  "gap": "Report is internally inconsistent on whether the 5.1 billion kg transboundary figure refers to 2019 or 2022, and on small-IT generation (4.6, 4.9 and 5 billion kg appear in different places); no server-specific category exists.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "global-basel-ewaste-amendments-tracking",
+  "country": "Global",
+  "region": "Basel Convention Parties; US to Hong Kong/SE Asia and EU to West Africa flows",
+  "site_or_subject": "Basel e-waste amendments (in force 1 Jan 2025) vs GPS-tracked and trade-data export flows",
+  "operator": "Basel Convention Secretariat; Basel Action Network (tracking studies)",
+  "lat": 22.4,
+  "lon": 114.1,
+  "category": "ewaste",
+  "record": "Decision BC-15/18 (COP-15, 2022) replaced Annex VIII entry A1180 with A1181 (hazardous e-waste) and added Annex II entry Y49 (all other e-waste), making all transboundary e-waste movements subject to prior informed consent from 1 January 2025 for all Parties except those that notified the Depositary of non-acceptance by 1 January 2025. BAN's 'Scam Recycling' (15 Sep 2016) recorded 69 of 205 US-deployed GPS trackers (34%) exported, 37 to Hong Kong, 66 (96%) likely illegal, 23 of 61 recycler-traced exports from R2-certified firms. BAN's EU study (Feb 2019) recorded 19 of 314 devices (6%) exported, 11 (3.5%) to developing countries (Nigeria 5), with an extrapolation of 352,474 t/yr. BAN's 'Brokers of Shame' (22 Oct 2025) extrapolates from 26 months of trade data (Jan 2023–Feb 2025) for 10 brokers (10,026 containers) to an estimated 395,352 t/yr of US exports; 8 of 10 brokers were R2V3-certified. Presentations to the Basel OEWG-15 (25 June 2026) record 914 US-origin containers at Batam, Indonesia, with more than 650 slated for destruction.",
+  "record_sources": [
+   {
+    "title": "Questions and answers related to the Basel Convention E-waste Amendments",
+    "url": "https://www.basel.int/Implementation/Ewaste/EwasteAmendments/EwasteAmendmentsFAQs/tabid/10107/Default.aspx",
+    "publisher": "Secretariat of the Basel Convention",
+    "date": "2024"
+   },
+   {
+    "title": "Status of ratifications: E-waste Amendments",
+    "url": "https://www.basel.int/Countries/StatusofRatifications/EwasteAmendments/tabid/10103/Default.aspx",
+    "publisher": "Secretariat of the Basel Convention",
+    "date": "2025"
+   },
+   {
+    "title": "Scam Recycling: e-Dumping on Asia by US Recyclers",
+    "url": "https://resource-recycling.com/e-scrap/wp-content/uploads/sites/2/2016/09/BANReportTwo.pdf",
+    "publisher": "Basel Action Network",
+    "date": "2016-09-15"
+   },
+   {
+    "title": "Holes in the Circular Economy: WEEE Leakage from Europe (release and report link)",
+    "url": "https://www.ban.org/news-new/2019/2/6/gps-trackers-discover-illegal-e-waste-exports-to-africa-and-asia",
+    "publisher": "Basel Action Network",
+    "date": "2019-02-06"
+   },
+   {
+    "title": "Brokers of Shame: The New Tsunami of American e-Waste Exports to Asia",
+    "url": "https://wiki.ban.org/images/f/f7/Brokers_of_Shame_-_Report.pdf",
+    "publisher": "Basel Action Network",
+    "date": "2025-10-22"
+   },
+   {
+    "title": "Basel OEWG-15 side-event presentations on e-waste amendments 18 months in",
+    "url": "https://www.genevaenvironmentnetwork.org/wp-content/uploads/2026/06/Presentation-26June26_BaselOEWG-Ewaste.pdf",
+    "publisher": "Geneva Environment Network (BAN, Nexus3, BAN Toxics decks)",
+    "date": "2026-06-25"
+   }
+  ],
+  "claim": "none found from exporting governments; Basel national-reporting export datasets exist but were not parsed in this check.",
+  "claim_sources": [
+   {
+    "title": "Export data on hazardous wastes (national reporting archive)",
+    "url": "https://www.basel.int/Countries/NationalReporting/NationalReportingArchives/Exportdataonhazardouswastes/tabid/1418/Default.aspx",
+    "publisher": "Secretariat of the Basel Convention",
+    "date": "n.d."
+   }
+  ],
+  "gap": "Tracked and trade-data flows come from an advocacy organisation's sample-based studies (34% US, 6% EU) and extrapolations; no government dataset reconciling declared exports with tracked flows was located. The US is not a Basel Party. 2016 and 2019 studies are older.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched the Basel Secretariat e-waste amendments FAQ (BC-15/18 at COP-15 2022, A1180 replaced by A1181, new Y49, entry into force 1 Jan 2025, binding on all Parties except those notifying non-acceptance by 1 Jan 2025, PIC for all e-waste) and BAN 'Brokers of Shame' (22 Oct 2025; 10 brokers, 26 months, 10,026 containers, 395,352 t/yr as an extrapolated estimate, 8 of 10 R2V3-certified); confirmed, with non-acceptance wording aligned to the FAQ. The 2016 and 2019 BAN figures come from the original BAN reports already cited and were not re-fetched.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "eu-weee-collection-rate-2023",
+  "country": "European Union",
+  "region": "EU-27",
+  "site_or_subject": "WEEE collection rate vs 65% legal target (Eurostat)",
+  "operator": "EU member states (WEEE Directive 2012/19/EU)",
+  "lat": 50.85,
+  "lon": 4.35,
+  "category": "ewaste",
+  "record": "Eurostat (data extracted 28 August 2026) records EEE placed on the market at 14.4 Mt in 2022 and 2023, WEEE collected at 5.2 Mt in 2023 (11.6 kg per inhabitant), and an EU collection rate of 37.5% in 2023 against the 65% target (collected weight relative to average EEE placed on the market in 2020-2022). Only Bulgaria, Latvia and Slovakia met the target; Czechia reached 61.7%. Category 6 'small IT and telecommunication equipment' is defined but no category-level figure is given on the page.",
+  "record_sources": [
+   {
+    "title": "Waste statistics - electrical and electronic equipment (Statistics Explained)",
+    "url": "https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/32212.pdf",
+    "publisher": "Eurostat",
+    "date": "2026-08-28"
+   }
+  ],
+  "claim": "none found (statutory target of 65% set by Directive 2012/19/EU).",
+  "claim_sources": [],
+  "gap": "EU-wide collection rate (37.5%) is well below the 65% legal target; category-level IT figures require the env_waselee dataset.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "us-epa-ewaste-2018-no-federal-law",
+  "country": "United States",
+  "region": "National",
+  "site_or_subject": "US consumer electronics waste generation/recycling (EPA) and export destinations",
+  "operator": "U.S. EPA (data); no federal e-waste statute",
+  "lat": 38.9,
+  "lon": -77.04,
+  "category": "ewaste",
+  "record": "EPA's most recent national figures (current through calendar 2018) record 2.7 million short tons of selected consumer electronics generated and about 1 million tons recycled (about 37%, calculated). No newer federal dataset was found. Export destinations documented by BAN tracking and trade-data studies include Hong Kong (37 of 69 tracked exports in 2016), mainland China, Taiwan, Pakistan, Mexico, and, in 2025-2026, Indonesia (Batam, 914 containers) and the Philippines (about 234 containers).",
+  "record_sources": [
+   {
+    "title": "National Overview: Facts and Figures on Materials, Wastes and Recycling",
+    "url": "https://www.epa.gov/facts-and-figures-about-materials-waste-and-recycling/national-overview-facts-and-figures-materials",
+    "publisher": "U.S. Environmental Protection Agency",
+    "date": "2018 data"
+   },
+   {
+    "title": "Scam Recycling: e-Dumping on Asia by US Recyclers",
+    "url": "https://resource-recycling.com/e-scrap/wp-content/uploads/sites/2/2016/09/BANReportTwo.pdf",
+    "publisher": "Basel Action Network",
+    "date": "2016-09-15"
+   },
+   {
+    "title": "Basel OEWG-15 side-event presentations",
+    "url": "https://www.genevaenvironmentnetwork.org/wp-content/uploads/2026/06/Presentation-26June26_BaselOEWG-Ewaste.pdf",
+    "publisher": "Geneva Environment Network",
+    "date": "2026-06-25"
+   }
+  ],
+  "claim": "none found.",
+  "claim_sources": [],
+  "gap": "Federal statistics stop at 2018 (older) and there is no federal export-reporting dataset; destination evidence is from NGO tracking and importing-country seizures.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched EPA National Overview: confirms 2.7 million tons of selected consumer electronics generated and about 1 million tons recycled in 2018, data current through calendar 2018, no newer data; the 37% rate is a calculation, not an EPA-published rate. Destination figures come from BAN's original reports and the OEWG-15 presentations already cited.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "gh-agbogbloshie-demolition-2021",
+  "country": "Ghana",
+  "region": "Accra (Agbogbloshie / Old Fadama)",
+  "site_or_subject": "Agbogbloshie scrapyard demolition (1 July 2021) and site status",
+  "operator": "Greater Accra Regional Coordinating Council ('Let's Make Accra Work')",
+  "lat": 5.55,
+  "lon": -0.225,
+  "category": "ewaste",
+  "record": "The Greater Accra Regional Coordinating Council cleared the Agbogbloshie scrapyard on 1 July 2021 with armed police support; the 20-acre scrapyard sat within more than 80 acres reclaimed, of which about 15 acres were earmarked for the Ablekuma Central Municipal Hospital. By 24 January 2025 about 100 unauthorised structures had been rebuilt on the land by scrap dealers and others. A peer-reviewed study (IJURR) surveyed 350 displaced workers and reports them 'securing new workspaces' elsewhere.",
+  "record_sources": [
+   {
+    "title": "Agbogbloshie reclaimed land under siege: scrap dealers, onion sellers occupy 80-acre land",
+    "url": "https://www.graphic.com.gh/news/general-news/ghana-news-agbogbloshie-reclaimed-land-under-siege-scrap-dealers-onion-sellers-occupy-80-acre-land.html",
+    "publisher": "Daily Graphic (Ghana state-owned)",
+    "date": "2025-01-24"
+   },
+   {
+    "title": "Behind the curtain of Agbogbloshie's demolition: a victims' perspective beyond revanchism",
+    "url": "https://www.ijurr.org/article/behind-the-curtain-of-agbogbloshies-demolition-a-victims-perspective-beyond-revanchism/",
+    "publisher": "International Journal of Urban and Regional Research",
+    "date": "2024"
+   }
+  ],
+  "claim": "Government framed the clearance under the 'Let's Make Accra Work' initiative with a hospital planned on part of the site; onion traders agreed to relocate to Adjen Kotoku.",
+  "claim_sources": [
+   {
+    "title": "Agbogbloshie reclaimed land under siege",
+    "url": "https://www.graphic.com.gh/news/general-news/ghana-news-agbogbloshie-reclaimed-land-under-siege-scrap-dealers-onion-sellers-occupy-80-acre-land.html",
+    "publisher": "Daily Graphic",
+    "date": "2025-01-24"
+   }
+  ],
+  "gap": "The site was cleared but no formal replacement recycling facility is documented; informal reoccupation was recorded within four years and no Ghana EPA monitoring data for the dispersed workers' new sites was located.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched for Greater Accra Regional Coordinating Council or Ministry of Information releases on the 1 Jul 2021 clearance (acreage, hospital allocation) and for Ghana EPA monitoring; only press located (Daily Graphic, Citi Newsroom). The IJURR study was not re-fetched. Figures remain via Daily Graphic.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "cn-guiyu-industrial-park",
+  "country": "China",
+  "region": "Guiyu, Shantou, Guangdong",
+  "site_or_subject": "Guiyu informal e-waste consolidation into industrial park and child blood-lead record",
+  "operator": "Guiyu town / Shantou municipal government; Guiyu Circular Economy Industrial Park",
+  "lat": 23.33,
+  "lon": 116.36,
+  "category": "ewaste",
+  "record": "In December 2015 Chinese state media (Xinhua, ecns) reported that all informal e-scrap processors in Guiyu were required to move into a newly built USD 230 million industrial park by the start of 2016; about 400 large workshops had moved by late November 2015 while roughly 3,000 small businesses had not. A 2021 peer-reviewed study (Int Arch Occup Environ Health 94:911-918) of children sampled in 2014 (222 exposed vs 204 control) found median blood lead of 8.5 ug/dL (IQR 6.6-10.9) in Guiyu vs 6.0 (4.8-7.9) in Haojiang District (P<0.01).",
+  "record_sources": [
+   {
+    "title": "China's Guiyu shifts away from crude processing",
+    "url": "http://resource-recycling.com/e-scrap/2015/12/17/chinas-guiyu-shifts-away-crude-processing/",
+    "publisher": "E-Scrap News (citing Xinhua, ecns, BAN)",
+    "date": "2015-12-17"
+   },
+   {
+    "title": "Effect of lead exposure from electronic waste on haemoglobin synthesis in children",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238723",
+    "publisher": "International Archives of Occupational and Environmental Health (PMC)",
+    "date": "2021-01-20"
+   }
+  ],
+  "claim": "Local government position (via state media, 2015) was that consolidation into the park would end crude open-air processing.",
+  "claim_sources": [
+   {
+    "title": "China's Guiyu shifts away from crude processing",
+    "url": "http://resource-recycling.com/e-scrap/2015/12/17/chinas-guiyu-shifts-away-crude-processing/",
+    "publisher": "E-Scrap News",
+    "date": "2015-12-17"
+   }
+  ],
+  "gap": "Sources are older (2014-2015 data; 2021 publication); no post-consolidation government monitoring dataset or tonnage for the park was located.",
+  "confidence": "medium",
+  "verified_primary": true,
+  "verification_note": "Partial: fetched the PMC full text of the 2021 study (Int Arch Occup Environ Health 94(5):911–918): confirms 2014 sampling, 222 exposed vs 204 control (the abstract states 224 exposed), median BLL 8.5 (6.6–10.9) vs 6.0 (4.8–7.9) ug/dL, P<0.01. The 2015 relocation figures (USD 230 million park, ~400 workshops moved, ~3,000 small businesses not) were not found in a Xinhua/ecns original or government document and remain via E-Scrap News/BAN, so confidence left medium.",
+  "last_checked": "2026-10-20",
+  "verification_status": "partial"
+ },
+ {
+  "id": "ng-lagos-person-in-the-port",
+  "country": "Nigeria",
+  "region": "Lagos (Tin Can Island / Apapa ports; Alaba market)",
+  "site_or_subject": "Used EEE and e-waste imports into Lagos (Person in the Port Project)",
+  "operator": "UNU-SCYCLE and Basel Convention Coordinating Centre for Africa (BCCC-Africa)",
+  "lat": 6.44,
+  "lon": 3.35,
+  "category": "ewaste",
+  "record": "The Person in the Port Project (UNU-ViE SCYCLE and BCCC-Africa; container inspections from 23 March 2015; results presented to the Nigerian Government in May 2017; report dated 13 December 2017 in the UNU repository and publicised 27 April 2018) reviewed 3,622 container import documents and inspected 201 containers and 2,184 Ro-Ro vehicles at the Lagos (Apapa) and Tin Can Island ports. It estimates about 60,000 t of used EEE imported in each of 2015 and 2016 (59,800 t/yr before rounding), of which at least 15,600 t/yr was non-functional (best case); about 69% (~41,500 t/yr) arrived inside Ro-Ro vehicles, mostly undeclared, and about 77% originated in EU member states (Germany ~20%, UK ~19.5%, Belgium ~9.4%), with EU states accounting for 98% of the UEEE imported in vehicles.",
+  "record_sources": [
+   {
+    "title": "Person in the Port Project: Assessing Import of Used Electrical and Electronic Equipment into Nigeria (full report)",
+    "url": "https://epflicht.ulb.uni-bonn.de/download/pdf/409632",
+    "publisher": "UNU-ViE SCYCLE and BCCC-Africa (deposit copy, ULB Bonn)",
+    "date": "2017-12-13"
+   },
+   {
+    "title": "Stuffed inside used vehicles, thousands of tonnes of e-waste reach Nigeria every year (reporting UNU/BCCC-Africa PiP report)",
+    "url": "https://www.downtoearth.org.in/amp/story/waste/stuffed-inside-used-vehicles-thousands-of-tonnes-of-e-waste-reach-nigeria-every-year-60340",
+    "publisher": "Down To Earth (reporting UNU-SCYCLE / BCCC-Africa)",
+    "date": "2018-04-27"
+   },
+   {
+    "title": "Person in the Port Project flyer",
+    "url": "https://i.unu.edu/media/ias.unu.edu-en/news/5651/Flyer_Person_in_the_Port_Project.pdf",
+    "publisher": "United Nations University",
+    "date": "2015"
+   }
+  ],
+  "claim": "none found from exporting governments.",
+  "claim_sources": [],
+  "gap": "Older (2015-2016 data); documented imports contrast with EU WEEE rules prohibiting export of non-functional equipment; no updated port-inspection dataset after the 2025 Basel amendments was located.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched the full PiP report (UNU/BCCC-Africa): confirms 3,622 documents, 201 containers, 2,184 Ro-Ro vehicles, at least 15,600 t/yr non-functional, ~41,500 t/yr in vehicles (69%), 77% EU and 98% EU for vehicle imports. Corrected the earlier press-based reading of ~60,000 t as a 2015–2016 total (the report gives ~60,000 t per year), the fieldwork start (23 Mar 2015, not Jan 2015) and the 15,400 t non-functional figure (not in the report).",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "in-delhi-seelampur-informal",
+  "country": "India",
+  "region": "Delhi (Seelampur, Shahdara; Mustafabad; Mayapuri)",
+  "site_or_subject": "Informal e-waste processing hotspots in Delhi",
+  "operator": "Informal sector; Delhi Pollution Control Committee (regulator)",
+  "lat": 28.67,
+  "lon": 77.27,
+  "category": "ewaste",
+  "record": "A Toxics Link study (2019; reported 17 October 2019) identified 15 informal e-waste processing hotspots operating without safeguards, including New & Old Seelampur, Mustafabad, Mayapuri, Seemapuri, Shastri Park and Zafrabad in Delhi and Loni and Behta Hazipur in Ghaziabad (Uttar Pradesh); Delhi-NCR generation was cited at 85,000 t (Assocham, as quoted by Down To Earth). No measured metal concentrations, worker counts or CPCB/DPCC figures were given.",
+  "record_sources": [
+   {
+    "title": "Informal E-Waste Recycling in Delhi",
+    "url": "https://toxicslink.org/toxicslink/informal-ewaste-recycling-in-delhi/",
+    "publisher": "Toxics Link",
+    "date": "2019"
+   },
+   {
+    "title": "Study identifies 15 e-waste processing hotspots in Delhi operating without safeguards",
+    "url": "https://www.downtoearth.org.in/news/waste/study-identifies-15-e-waste-processing-hotspots-in-delhi-operating-without-safeguards-67309",
+    "publisher": "Down To Earth (reporting Toxics Link)",
+    "date": "2019-10-17"
+   },
+   {
+    "title": "Knowledge, Attitude and Practice Study of Health Risks Among E-waste Recyclers in Delhi",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8009644",
+    "publisher": "PMC (peer-reviewed)",
+    "date": "2021"
+   }
+  ],
+  "claim": "none found.",
+  "claim_sources": [],
+  "gap": "Only NGO mapping and a KAP survey were located (older, 2019-2021); no government monitoring dataset with concentrations for Seelampur was found.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched Toxics Link's own study page (2019): confirms 15 hotspots and names them; corrected the location of Loni (and Behta Hazipur), which are in Ghaziabad, Uttar Pradesh, not Delhi. The 85,000 t Assocham figure does not appear on the study page and is attributed to Down To Earth. No CPCB/DPCC dataset located.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "us-hyperscaler-server-lifespan-circularity",
+  "country": "United States",
+  "region": "Global data-center fleets (Amazon, Alphabet, Microsoft)",
+  "site_or_subject": "Server/AI hardware depreciation lives in SEC filings vs circularity claims",
+  "operator": "Amazon (AWS), Alphabet (Google), Microsoft",
+  "lat": 47.6,
+  "lon": -122.3,
+  "category": "ewaste",
+  "record": "Amazon's 10-K disclosures: servers' useful life 4 to 5 years from 1 Jan 2022 (depreciation -USD 3.6 bn), 5 to 6 years from 1 Jan 2024 (-USD 3.2 bn), then 'a subset of servers and networking equipment' cut from 6 to 5 years from 1 Jan 2025 citing 'the increased pace of technology development' in AI/ML (depreciation +USD 1.4 bn, net income -USD 1.0 bn, primarily AWS). Alphabet extended servers from 4 to 6 years beginning FY2023 (Q1-2023 depreciation -USD 988 m). Microsoft's 2025 Environmental Data Fact Sheet shows Deloitte & Touche LLP limited assurance on Section 1 (GHG, energy, water, waste and circularity tables) for FY24, with diverted waste of 28,285 t. Google reports 84% of data-center operational waste diverted (2024) and UL 2799 Zero-Waste validation at two data centers and one warehouse. No public filing stating a physical lifespan for GPUs, or an assured GPU resale/refurbishment volume, was found.",
+  "record_sources": [
+   {
+    "title": "Alphabet FY2025 Environmental Indicators Assurance Letter (EY review)",
+    "url": "https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf",
+    "publisher": "Ernst & Young LLP / Alphabet",
+    "date": "2026"
+   },
+   {
+    "title": "Amazon Server and Networking Equipment Useful Life Changes (10-K language summary)",
+    "url": "https://www.hudson-labs.com/research/amazon-server-depreciation-amzn",
+    "publisher": "Hudson Labs",
+    "date": "2026"
+   },
+   {
+    "title": "Amazon.com Inc. Form 10-K FY2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2026-02"
+   },
+   {
+    "title": "Google extends estimated life of network equipment to 6 years",
+    "url": "https://convergedigest.com/google-extends-estimated-life-of-network-equipment-to-6-years/",
+    "publisher": "Converge Digest",
+    "date": "2023-04-25"
+   },
+   {
+    "title": "2025 Microsoft Environmental Data Fact Sheet",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2025"
+   },
+   {
+    "title": "Google Data Centers: Circularity",
+    "url": "https://datacenters.google/circularity",
+    "publisher": "Google",
+    "date": "2025"
+   }
+  ],
+  "claim": "Microsoft claims a 90.9% reuse-and-recycling rate for servers and components (FY24), six Circular Centers with three more under construction, 3.2 million components reused, and more than 2,500 t of packaging diverted from more than 30,000 server racks. Google claims about 8.8 million components harvested for reuse/resale in 2024, more than 7.5 million harvested and 2.6 million resold in 2025 (more than 54 million since 2015), and zero-waste campuses rising from 23% (2022) to 50% (2025).",
+  "claim_sources": [
+   {
+    "title": "Our 2025 Environmental Sustainability Report",
+    "url": "https://blogs.microsoft.com/on-the-issues/2025/05/29/environmental-sustainability-report/",
+    "publisher": "Microsoft",
+    "date": "2025-05-29"
+   },
+   {
+    "title": "Microsoft Surpasses 2025 Zero-Waste Goal with 90.9% Hardware Circularity",
+    "url": "https://esgnews.com/?p=35392",
+    "publisher": "ESG News",
+    "date": "2025-04"
+   },
+   {
+    "title": "What Google's latest report means for ITAD (Google 2026 Environmental Report)",
+    "url": "https://resource-recycling.com/e-scrap/2026/07/08/what-googles-latest-report-means-for-itad/",
+    "publisher": "E-Scrap News",
+    "date": "2026-07-08"
+   },
+   {
+    "title": "Google Data Centers: Circularity",
+    "url": "https://datacenters.google/circularity",
+    "publisher": "Google",
+    "date": "2025"
+   }
+  ],
+  "gap": "positive example with caveats: Microsoft's waste tables (including 28,285 t diverted) carry Deloitte limited assurance for FY24, but the 90.9% server reuse/recycling metric does not appear in the reviewed fact sheet; Google's component counts sit outside EY's FY2025 review scope (select GHG, energy and water metrics only) and UL 2799 covers site waste only; accounting lives of 5-6 years are estimates, and Amazon's 2025 reversal is the only filing-level signal that AI hardware is treated as shorter-lived.",
+  "confidence": "medium",
+  "verified_primary": true,
+  "verification_note": "Partial: fetched Microsoft's 2025 Environmental Data Fact Sheet (Deloitte review covers Section 1 only; diverted waste 28,285 t in Table 10 is inside scope; the 90.9% server/component reuse-recycling rate is not in the fact sheet and so is outside the assured scope) and Alphabet's FY2025 EY assurance letter (AT-C 210 review of select GHG, energy and water metrics; no waste or circularity metric in scope). Amazon's FY2024/FY2025 10-K and Q4-2024 8-K text as fetched did not reach the useful-life passages (tool truncation), and Alphabet's 4-to-6-year change was not fetched from a filing; depreciation figures remain via Hudson Labs and Converge Digest, so confidence left medium.",
+  "last_checked": "2026-10-20",
+  "verification_status": "partial"
+ }
+]

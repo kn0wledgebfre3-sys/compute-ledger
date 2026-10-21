@@ -1,0 +1,38 @@
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+Amazon Data Services, Inc.
+13200 Woodland Park Road
+Herndon, Virginia 20171
+Registration No.: 74081
+is authorized to construct and operate
+emergency diesel engine generator sets (gen-sets)
+at the IAD-73, IAD-74, IAD-602, IAD-193, and IAD-194 data centers
+located at
+7060, 7070, and 7080 Wellington Rd and
+8300 and 8400 Buckeye Timber Drive
+Manassas, VA 20109
+(Prince William County)
+in accordance with the Conditions of this permit.
+This permit supersedes the permit dated March 6, 2015.
+Approved on: July 8, 2024
+Amazon Data Services, Inc.
+Registration Number: 74081
+July 8, 2024
+Page 2
+Equipment to be Constructed:
+Ref. Nos. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+3, 4, 17 through 20, 34 through 36 Nine (9) Caterpillar model 3516C emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each) None 07/08/2024
+Equipment Not Previously Permitted:
+Ref. Nos. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+37 through 76 Forty (40) Caterpillar model 3516E emergency diesel engine gen-sets 4,043 bhp 2,750 ekW (each) None 07/08/2024
+78 through 80 Three (3) Caterpillar model C18 emergency diesel engine gen-sets 1,112 bhp 750 ekW (each) None 07/08/2024
+Previously Permitted Equipment:
+Ref. Nos. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+[rows not transcribed - see fixtures/provenance.json]
+Amazon Data Services, Inc.
+Registration Number: 74081
+July 8, 2024
+Page 3
+7. Each individual emergency diesel engine gen-set shall not operate more than 35 hours per year for scheduled maintenance checks and readiness testing
+and no more than 500 hours per year for all purposes (as provided in Condition 6).
+8. The approved fuel for the emergency diesel engine gen-sets is ultra-low sulfur diesel fuel oil.
+10. The emergency diesel engine gen-sets combined shall consume no more than 673,143 gallons of diesel fuel oil per year.

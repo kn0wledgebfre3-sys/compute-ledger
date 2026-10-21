@@ -1,0 +1,368 @@
+{
+  "id": "nl-middenmeer-microsoft-water",
+  "title": "Microsoft Middenmeer (Agriport A7, Hollands Kroon) and drinking-water use, 2021",
+  "jurisdiction": "Netherlands, Noord-Holland, municipality of Hollands Kroon",
+  "summary": "Microsoft operates hyperscale data centers on the Agriport A7 business park at Middenmeer (Hollands Kroon) and holds a permit for two further buildings, AMS13 and AMS14, at Cultuurweg 11. In June 2021 Microsoft gave a drinking-water figure of 12 to 20 million litres a year, which the municipal executive repeated to residents and councillors [press]. In April 2022 Microsoft reported to the municipality that the site had used 84 million litres of drinking water in 2021 (75 million for operations, 9 million for facilities), and the municipality changed the figures on its website [press]. The Noordhollands Dagblad published the 84 million figure on 11 August 2022, eight days after the Minister of Infrastructure and Water Management had reported a national actual water shortage (LCW level 2) to parliament. Microsoft's responses, all reported through press, were that the earlier figure described use at the time, that the 2021 volume included construction water, that a mature site is on track for about 10 million litres a year, and that 36 million litres were discharged back, leaving net consumption near 48 million litres. On 4 October 2022 the Tweede Kamer adopted a motion citing the 84 million and 12-20 million figures and asking the government to examine a ban or cap on drinking-water use in hyperscale permits. The Omgevingsdienst Noordzeekanaalgebied granted the AMS13/14 permit on 19 April 2023; press reports of the permit give an evaporative air-cooling system and 40 x 3.3 MW plus 2 x 1 MW backup generators but no water volume. From 1 January 2024 a national instruction rule confines new hyperscale data centers to parts of Hollands Kroon and Het Hogeland. No metered drinking-water figure for Middenmeer for any year after 2021 was found in a public document.",
+  "claim": {
+    "who": "Microsoft (statements to the Noordhollands Dagblad, to the municipality of Hollands Kroon, and to trade press); the municipality of Hollands Kroon repeated the June 2021 figure to residents and councillors",
+    "what": "(a) June 2021: the Middenmeer data centers use 12 to 20 million litres of drinking water a year [press]. (b) August 2022: the 84 million litres used in 2021 included water for constructing the next phase; a mature data center is on track to consume 10 million litres a year; 36 million litres were discharged back to the regional supply, so consumption is closer to 48 million litres [press].",
+    "date": "2022-08-16",
+    "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year"
+  },
+  "timeline": [
+    {
+      "date": "2019-05-05",
+      "document": "Gedeputeerde Staten Noord-Holland, answers to Statenvragen nr. 22 (Mantel, JA21), decided 2 Apr 2024",
+      "figure": "Environmental component of Microsoft's AMS13/14 project at Cultuurweg 11 handled as a notification under the Activiteitenbesluit; Microsoft paid municipal fees on a 2019 application.",
+      "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/9f4d3be5-50d0-40a0-b9e0-900e9d2fbf8a",
+      "locator": "Answers on permit history and fees"
+    },
+    {
+      "date": "2018 [press]",
+      "document": "Computer Weekly, 2 Nov 2022, citing Noordhollands Dagblad",
+      "figure": "A 2018 Microsoft application for expansion works, released under transparency law, showed 86,000 m3 for cooling [press]. Application not located.",
+      "url": "https://computerweekly.com/news/252526831/Microsoft-claims-summer-heatwave-led-to-no-excess-water-use-by-its-datacentres",
+      "locator": "Article body"
+    },
+    {
+      "date": "2020-07-16",
+      "document": "Hollands Kroon, Nota van zienswijzen, draft omgevingsvergunning datacenter Cultuurweg 11 Middenmeer",
+      "figure": "Draft permit on inspection from 16 Jul 2020; AMS13 and AMS14; 40 x 3.3 MW and 2 x 0.5 MW diesel standby generators; 241 MWth during outage; reverse osmosis treats about 70% of wastewater, 30% removed by tanker; draft clause allowing 10 m3/h process water to sewer proposed for removal. Drinking water and PWN not mentioned.",
+      "url": "https://hollandskroon.bestuurlijkeinformatie.nl/Document/View/1a17df25-f56d-42f5-a78c-834f70f6c187",
+      "locator": "Sections on generators and on process water"
+    },
+    {
+      "date": "2021-01-05",
+      "document": "Gemeenteblad 2021, nr. 7972: gewijzigde vaststelling omgevingsvergunning Z-222830, Cultuurweg 11 Middenmeer (published 11 Jan 2021)",
+      "figure": "Municipal executive granted the permit for a data center at Cultuurweg 11, deviating from the draft; no water condition in the notice.",
+      "url": "https://zoek.officielebekendmakingen.nl/gmb-2021-7972.pdf",
+      "locator": "Notice body"
+    },
+    {
+      "date": "2021-03-02",
+      "document": "GS Noord-Holland, answers to Statenvragen nr. 22 (2 Apr 2024)",
+      "figure": "GS concluded the province was the competent authority (combustion installation above 50 MW, IPPC); Microsoft submitted a complete new application on 3 Aug 2021.",
+      "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/9f4d3be5-50d0-40a0-b9e0-900e9d2fbf8a",
+      "locator": "Answers on competence"
+    },
+    {
+      "date": "2021-03-19",
+      "document": "NOS: Datacenters in Noord-Holland kunnen leiden tot drinkwatertekort",
+      "figure": "De Telegraaf, citing internal provincial documents: 525 m3/h or 4.6 million m3/yr for the two existing Hollands Kroon data centers; five planned sites about 10 million m3/yr more [press]. Microsoft: air-cooled about 95% of the year. Province: study sample too small.",
+      "url": "https://nos.nl/artikel/2373234-datacenters-in-noord-holland-kunnen-leiden-tot-drinkwatertekort",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-04-12",
+      "document": "Minister van Infrastructuur en Waterstaat, answers to Kamervragen 2021Z04890 (Van Dijk, PvdA), AH 2300",
+      "figure": "Per province and PWN: cooling water including data centers is 0.6% of total supply in the PWN area, 650,000 m3/yr in 2020. Two Wieringermeer data centers hold HHNK discharge permits. Microsoft not named.",
+      "url": "https://app.1848.nl/static/pdf/1d/16/1d16192e21c4b30644fc331ae2e816793aaa43f8.pdf",
+      "locator": "Answer to question 3"
+    },
+    {
+      "date": "2021-05-21",
+      "document": "Data Center Dynamics: Microsoft plans to use rainwater to cool Dutch data center",
+      "figure": "Microsoft told EenVandaag it would cool with rainwater and pass surplus to greenhouses; ECW Energy: Microsoft needs about 30% of the rainwater it could collect at Agriport [press].",
+      "url": "https://datacenterdynamics.com/en/news/microsoft-plans-to-user-rainwater-to-cool-dutch-environmental-data-center-protests",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-06 [press]",
+      "document": "Noordhollands Dagblad, 11 Aug 2022 (Bart Vuijk), reposted by Stichting JAS; Computer Weekly, 2 Nov 2022",
+      "figure": "In June 2021 Microsoft gave the newspaper 12,000 to 20,000 m3 (12 to 20 million litres) [press]; per Computer Weekly a council spokesman said the executive put the figure in a memo to councillors before the expansion vote [press].",
+      "url": "https://www.stichting-jas.nl/2022/08/datacenter-microsoft-wieringermeer.html",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-06-29 [press]",
+      "document": "NH Nieuws, 30 Jun 2021: Gemeenteraad Hollands Kroon akkoord met nieuw datacenter",
+      "figure": "Council adopted zoning plan Uitbreiding Agriport A7, deelgebied B1 (west of the A7); PvdA, OHK, LADA and GroenLinks against; water and energy use raised without figures [press].",
+      "url": "https://www.nhnieuws.nl/nieuws/288180/gemeenteraad-hollands-kroon-akkoord-met-nieuw-datacenter",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-07-16",
+      "document": "GS Noord-Holland, intrekking reactieve aanwijzing bestemmingsplan Uitbreiding Agriport A7, deelgebied B1 (25/26 Oct 2022)",
+      "figure": "Province issued a reactive directive on 16 Jul 2021; withdrawal letter grounds it in traffic safety at the N239 junction. NH Nieuws (16 Sep 2022) reports cooling-water use among the province's concerns [press].",
+      "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/cae5224a-51c1-4229-955a-92b09cb717f8",
+      "locator": "Letter to the council, reference 1665207/1912233"
+    },
+    {
+      "date": "2021-09-15",
+      "document": "NH Nieuws, 16 Sep 2021; GS answers nr. 22 (2024)",
+      "figure": "OD NZKG tolerance decision (gedoogbeslissing) allowing early construction at Cultuurweg; a second on 17 Feb 2022. LTO Noord named cooling-water use among objections.",
+      "url": "https://www.nhnieuws.nl/nieuws/291765/licht-weer-op-groen-voor-microsoft-bouw-datacenter-kan-op-eigen-risico-beginnen",
+      "locator": "GS answers; article body"
+    },
+    {
+      "date": "2021-10-18",
+      "document": "Microsoft, report of information meeting on the Middenmeer data centers (posted 8 Apr 2022)",
+      "figure": "Water used only when outside temperature exceeds 29 C; water collected and reused; leaves the site purified. No volume. Venster-West holds seven data centers, two more planned.",
+      "url": "https://local.microsoft.com/blog/verslag-informatiebijeenkomst-over-de-microsoft-datacenters-in-middenmeer/",
+      "locator": "Post body, water section"
+    },
+    {
+      "date": "2021-12-14",
+      "document": "GS Noord-Holland, voordracht Datacenterstrategie Noord-Holland",
+      "figure": "Strategy submitted to Provinciale Staten (adopted 31 Jan 2022); data center monitor covering energy and water use announced, progress report due 2023. No volumes.",
+      "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/d10eb957-619f-4734-b1f0-ce1eae4bcdc4",
+      "locator": "Memo body, monitoring section"
+    },
+    {
+      "date": "2022-02-16",
+      "document": "Minister De Jonge, Kamerstuk 26 643, nr. 819",
+      "figure": "Nine-month preparatory decision halting new hyperscale permits (10 ha and 70 MW or more); Het Hogeland and Hollands Kroon excluded from the stop. No water passage.",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-26643-819.pdf",
+      "locator": "Letter body"
+    },
+    {
+      "date": "2022-04 [press]",
+      "document": "Computer Weekly, 2 Nov 2022; Noordhollands Dagblad via Stichting JAS",
+      "figure": "Microsoft told Hollands Kroon it used 84,000 m3 in 2021: 75,000 m3 operations and 9,000 m3 facilities (email excerpt seen by Computer Weekly) [press]. Municipality told Microsoft the figures differed from earlier information and changed its website without notice [press]. Construction at Cultuurweg 11 began 11 Apr 2022 (GS answers).",
+      "url": "https://computerweekly.com/news/252526831/Microsoft-claims-summer-heatwave-led-to-no-excess-water-use-by-its-datacentres",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2022-06-23",
+      "document": "Verslag commissiedebat Datacenters, Kamerstuk 26 643, nr. 900 (adopted 3 Aug 2022)",
+      "figure": "Minister De Jonge: hyperscale means 10 ha and 70 MW or more, both conditions; Hollands Kroon and Het Hogeland the two exceptions; expansion of existing Hollands Kroon sites may be possible. Rajkowski (VVD): drinking water should not be used for data center cooling.",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-26643-900.pdf",
+      "locator": "pp. 17, 22-23"
+    },
+    {
+      "date": "2022-06-28 [press]",
+      "document": "NOS: Een van de twee gemeenten voor megadatacenters stribbelt tegen",
+      "figure": "Hollands Kroon coalition agreement calls for a pause on new data centers and greenhouses, keeps Agriport within its current outline, seeks independent inquiry into past decisions [press].",
+      "url": "https://nos.nl/l/2434458",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-07-08",
+      "document": "GS answers nr. 22 (2024); BZK beslisnota 2023-0000206728 (26 May 2023)",
+      "figure": "OD NZKG published the draft permit decision for AMS13/14.",
+      "url": "https://berthub.eu/tkconv/getraw/2023D22857",
+      "locator": "Permit chronology"
+    },
+    {
+      "date": "2022-08-03",
+      "document": "Minister Harbers, Kamerstuk 27 625, nr. 586",
+      "figure": "LCW moved to level 2, actual water shortage (feitelijk watertekort); level 1 since 13 Jul 2022; drinking-water companies had asked customers to use water sparingly. Data centers not mentioned.",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-27625-586.pdf",
+      "locator": "Letter body"
+    },
+    {
+      "date": "2022-08-11 [press]",
+      "document": "Noordhollands Dagblad (Bart Vuijk), reposted by Stichting JAS; Bright.nl 12 Aug 2022; Techzine 11 Aug 2022",
+      "figure": "84 million litres (84,000 m3) in 2021. Wob documents contained an estimate by an engineering firm hired by Microsoft above 100,000 m3, which the municipality had denied. Microsoft: the 12-20 million figure described then-current use; water used above 25 C, six days in 2021 at KNMI Den Helder. All [press].",
+      "url": "https://www.stichting-jas.nl/2022/08/datacenter-microsoft-wieringermeer.html",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2022-08-12 [press]",
+      "document": "Dutch IT Channel: Microsoft-datacenter Wieringermeer verbruikt meer koelwater dan verwacht",
+      "figure": "Reports 83 million litres against a stated maximum of 20 million; Microsoft told the newspaper the figures reflected use at that time [press]. PWN asking residents to conserve drinking water.",
+      "url": "https://www.dutchitchannel.nl/news/184205/microsoft-datacenter-wieringermeer-verbruikt-meer-koelwater-dan-verwacht",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-08-13",
+      "document": "LADA&Anders! council questions (Henk van Gameren), De Meerpeen",
+      "figure": "Eleven questions to the executive: why the council was not informed, what the actual volume is, why Microsoft's data are used rather than PWN's, whether permits should be refused to data centers cooling with drinking water. Executive's answer not located.",
+      "url": "https://www.demeerpeen.nl/nieuws/regionaal-nieuws/ladaanders-stellen-politieke-vragen-over-waterverbruik-datatcenters/",
+      "locator": "Letter as published"
+    },
+    {
+      "date": "2022-08-16 [press]",
+      "document": "Data Center Dynamics (Peter Judge)",
+      "figure": "Municipal figures: 75 million litres cooling, 9 million other. Microsoft update: figure includes construction water for the next phase; mature site on track for 10 million litres/yr; 36 million litres discharged back, consumption closer to 48 million litres. Municipal site: all Noord-Holland data centers 550 million litres, about 0.5% of 112 billion litres. All [press].",
+      "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-08-31",
+      "document": "KNMI, seizoensoverzicht zomer 2022",
+      "figure": "Summer 2022: 135 mm precipitation (normal 224 mm); national precipitation deficit about 300 mm at end of August (normal just over 100 mm), largest in among others the Kop van Noord-Holland; 9 tropical days at De Bilt (normal 5).",
+      "url": "https://www.knmi.nl/nederland-nu/klimatologie/maand-en-seizoensoverzichten/2022/zomer",
+      "locator": "Overview page"
+    },
+    {
+      "date": "2022-09-07",
+      "document": "Aquatech: Microsoft data centre uses too much water",
+      "figure": "Microsoft statement that the water figure refers to the construction phase rather than operations [press].",
+      "url": "https://www.aquatechtrade.com/news/industrial-water/microsoft-data-centre-uses-too-much-water",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-09-15",
+      "document": "Raad van State 202207134/1/R1 (19 Jun 2024); NH Nieuws 16 Sep 2022",
+      "figure": "Council adopted amended plan Uitbreiding Agriport A7, deelgebied B1, allowing a data center on about 50 ha; four votes against [press for the vote]. Province withdrew its directive 25 Oct 2022.",
+      "url": "https://www.raadvanstate.nl/@144124/202207134-1-r1/",
+      "locator": "Ruling, facts section; article body"
+    },
+    {
+      "date": "2022-10-04",
+      "document": "Motie Grinwis c.s., Kamerstuk 26 643, nr. 911 (27 Sep 2022), amended as nr. 919 and adopted 4 Oct 2022",
+      "figure": "Motion records 84 million litres of drinking water for cooling in 2021 at Microsoft's Wieringermeer hyperscale and a permit-application estimate of 12 to 20 million litres; asks government to examine a ban or maximum on drinking-water use in the national assessment framework and enforceable sustainability conditions.",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-26643-919.pdf",
+      "locator": "Motion text; voting record at https://www.eerstekamer.nl/bijlage/20221006/verslag_tweede_kamer_van/document3/f=/vlwynt985hlw.pdf"
+    },
+    {
+      "date": "2022-10-05 [press]",
+      "document": "Computable (Alfred Monterie): CU vindt dorst van Microsoft nog altijd bedenkelijk",
+      "figure": "Microsoft disputed that the 12-20 million figure was in its permit application and said 75 million litres was cooling water, the rest staff facilities. Grinwis: figures were in a separate estimate the municipality also used; legally Microsoft is right [press].",
+      "url": "https://www.computable.nl/?p=37027",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-11-02 [press]",
+      "document": "Computer Weekly (Mark Ballard)",
+      "figure": "Microsoft: the 75,000 m3 was for operation and construction, the 9,000 m3 for facilities; a mature data center would use about 10,000 m3. PWN (Anneke de Groot): 650,000 m3 to industry for cooling in 2020, 0.6% of supply, mostly data centers, use falling. Council vote on the Microsoft permit 18-10 [press].",
+      "url": "https://computerweekly.com/news/252526831/Microsoft-claims-summer-heatwave-led-to-no-excess-water-use-by-its-datacentres",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-11-08",
+      "document": "Minister Adriaansens, Kamerstuk 26 643, nr. 939",
+      "figure": "Draft AMvB would allow hyperscale data centers only in Hollands Kroon and part of Het Hogeland; IenW minister had told parliament that using drinking water for data center cooling is not desirable. Microsoft and Middenmeer not named.",
+      "url": "https://zoek.officielebekendmakingen.nl/kst-26643-939.odt",
+      "locator": "Aanbeveling 1"
+    },
+    {
+      "date": "2023-03",
+      "document": "Microsoft, Netherlands (West Europe) datacenter sustainability fact sheet",
+      "figure": "WUE 0.08 L/kWh and PUE 1.158 for calendar 2022 (region level). New Netherlands data centers use no water for cooling below 29.4 C, under 5% of the year. No withdrawal or consumption volume.",
+      "url": "https://datacenters.microsoft.com/globe/pdfs/sustainability/factsheets/Netherlands%20(West%20Europe).pdf",
+      "locator": "Netherlands section"
+    },
+    {
+      "date": "2023-04-19",
+      "document": "GS answers nr. 22 (2024); Dutch IT Channel 19 Apr 2023; Data Center Dynamics 21 Apr 2023",
+      "figure": "OD NZKG granted the omgevingsvergunning for AMS13/14 at Cultuurweg 11 on behalf of GS. Per DCD: two 36 MW buildings on 14.4 ha, direct air cooling with an evaporation system, estimated PUE 1.18, 40 x 3.3 MW and 2 x 1 MW generators; no water condition reported [press for all specifications].",
+      "url": "https://datacenterdynamics.com/en/news/microsoft-gains-construction-permission-for-data-center-in-hollands-kroon",
+      "locator": "GS chronology; article bodies"
+    },
+    {
+      "date": "2023-12-20",
+      "document": "Staatsblad 2023, 492: wijziging Besluit kwaliteit leefomgeving, instructieregel hyperscale datacentra (in force 1 Jan 2024)",
+      "figure": "Art. 5.161ba: hyperscale is more than 10 ha built area and 70 MW or more; arts. 5.161bb-bc: excluded everywhere except designated locations in Het Hogeland and Hollands Kroon (Agriport A7 named in the explanatory note). Note section 2.3: fresh-water availability under pressure; cooling water and warmed discharges named as impacts.",
+      "url": "https://zoek.officielebekendmakingen.nl/stb-2023-492.pdf",
+      "locator": "Articles 5.161ba-bc; explanatory note section 2.3"
+    },
+    {
+      "date": "2024-01-12",
+      "document": "Provinciaal Blad 2024, nr. 531: aanvraag vergunning Cultuurweg 11 Middenmeer, AMS13 en AMS14",
+      "figure": "Microsoft Datacenter Netherlands B.V. applied (received 20 Dec 2023, zaaknummer 12486932) to change, environmentally neutrally, the way cooling water is purified. No volume.",
+      "url": "https://zoek.officielebekendmakingen.nl/prb-2024-531.pdf",
+      "locator": "Notice body"
+    },
+    {
+      "date": "2024-02-21",
+      "document": "GS answers nr. 22 (2 Apr 2024)",
+      "figure": "Rechtbank Noord-Holland (HAA 23/3500) found the appeal by Stichting Red de Wieringermeer against the AMS13/14 permit unfounded and upheld provincial competence. GS declined an independent MER; an MER assessment was done instead.",
+      "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/9f4d3be5-50d0-40a0-b9e0-900e9d2fbf8a",
+      "locator": "Answers on the court ruling"
+    },
+    {
+      "date": "2024-03-11 [press]",
+      "document": "Dutch IT Channel 12 Mar 2024; Binnenlands Bestuur 12 Mar 2024",
+      "figure": "Berenschot report Tijden veranderen, commissioned by the council: no legal or financial misconduct in Agriport decisions since 2009; vision never recalibrated; small project group; promised heat reuse infeasible; council and residents little involved. No water figures reported [press].",
+      "url": "https://www.dutchitchannel.nl/news/425707/communicatie-rond-komst-datacenters-in-hollands-kroon-kan-beter",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2024-06-19",
+      "document": "Raad van State, 202207134/1/R1",
+      "figure": "Appeal against the B1 plan upheld in part: art. 3.1(a) rewritten so the 300 MW combustion limit applies per data center. Water use not among the grounds decided.",
+      "url": "https://www.raadvanstate.nl/@144124/202207134-1-r1/",
+      "locator": "Ruling"
+    },
+    {
+      "date": "2025-02",
+      "document": "Provincie Noord-Holland, Datacenterstrategie NH 2025-2027",
+      "figure": "PWN supplies 0.6% of its water to data centers; in practice PWN now provides a drinking-water connection only for office use; cooling water is category 4 in the allocation order, curtailed first in drought. Agriport planning space fully used; Google and Microsoft each developing a further hyperscale in Hollands Kroon. No new hyperscale initiatives for the strategy period.",
+      "url": "https://www.noord-holland.nl/bestanden/pdf/Economie_Werk/Datacenterstrategie%20NH%202025-2027.pdf",
+      "locator": "Section 4.3.2 pp. 15-16; pp. 9-11; pp. 3, 5"
+    },
+    {
+      "date": "2025-09-12 [press]",
+      "document": "NH Nieuws, 9 Sep 2025 and 12 Sep 2025",
+      "figure": "Microsoft announced a further Middenmeer expansion west of the A7 and said it would switch from tap water to rainwater as far as possible. ECW waterbank stores about 500 million litres of rainwater; ECW's director put the Wieringermeer data centers' cooling demand a few years ago at about 83 million litres a year, mostly drinking water, needed above 29 C. Wethouder Leever: municipality is pausing. All [press].",
+      "url": "https://www.nhnieuws.nl/nieuws/352274/honderden-miljoenen-liters-regenwater-opgevangen-om-datacenters-te-koelen",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2025-10",
+      "document": "Microsoft, Microsoft datacenters in Netherlands (localized)",
+      "figure": "Above 29.4 C, water from PWN circulates two to five times through the cooling system; some evaporates, the rest goes to the local treatment plant. Water used for cooling under 5% of the year. Middenmeer hosts a rainwater-harvesting programme. No volumes.",
+      "url": "https://local.microsoft.com/wp-content/uploads/2025/10/Microsoft-datacenters-in-Netherlands-LOCALIZED.pdf",
+      "locator": "Water section"
+    }
+  ],
+  "gaps": [
+    "The figure given in June 2021 (12,000-20,000 m3 a year) and the figure Microsoft reported to the municipality in April 2022 for calendar 2021 (84,000 m3) describe the same site; 84,000 / 20,000 = 4.2 and 84,000 / 12,000 = 7.0 [arithmetic]; both figures are confirmed only through press (T9, T16, T21).",
+    "Microsoft's net figure of 48 million litres (84 million withdrawn less 36 million discharged) is 2.4 to 4.0 times the June 2021 range [arithmetic], and the 10 million litre figure for a mature site has no published metered year against which to check it (T24, T30).",
+    "The 75,000 m3 component was described as operations (April 2022 email), as cooling (to the newspaper, August 2022, and per Computable, October 2022), and as operation and construction (to Computer Weekly, November 2022); no single Microsoft document reconciles these descriptions (T16, T21, T29, T30).",
+    "The Tweede Kamer motion adopted on 4 October 2022 states that the 12-20 million litre estimate was in Microsoft's permit application; Microsoft said it was not, Grinwis accepted that point, and the municipal permit documents retrieved for this receipt (the 2020 Nota van zienswijzen and the January 2021 notice) contain no drinking-water volume (T3, T4, T28, T29).",
+    "Documents released under the Wob request contained an engineering-firm estimate above 100,000 m3 a year made for Microsoft before the 12-20 million figure was circulated; the municipality had denied that estimate, and the Wob documents were not located (T21)."
+  ],
+  "limits": [
+    "The municipal document carrying the 84 million litres was not retrieved; the figure rests on the Noordhollands Dagblad (via the Stichting JAS repost), DCD, Computer Weekly and the adopted motion, which repeats the newspaper figure.",
+    "Press describes the 84 million litres as reported by Microsoft to the municipality, not as a PWN meter reading; no PWN document naming Microsoft's volume was found, and PWN's published figures (650,000 m3 in 2020; 0.6% of supply) cover all cooling customers in its area.",
+    "The 36 million litre discharge and 48 million litre net figure appear only in DCD (16 Aug 2022); no Microsoft statement, HHNK discharge record or municipal document stating them was located.",
+    "No document separates construction water from cooling water within the 84 million litres.",
+    "No municipal, provincial, PWN or Microsoft metered figure for Middenmeer drinking-water use in 2022, 2023, 2024 or 2025 was found; the provincial monitor announced in December 2021 was not located with site figures; Microsoft's fact sheet gives a regional WUE (0.08 L/kWh, 2022) without volumes.",
+    "The OD NZKG permit decision of 19 April 2023 was not retrieved; its cooling description, PUE and generator counts are from DCD; whether the permit sets a drinking-water limit is not shown; the 2024 application to change cooling-water purification gives no volume.",
+    "Press reports of Microsoft's 2022 responses give a 25 C water-cooling threshold; Microsoft's October 2021 meeting report gives 29 C and its 2023 and 2025 documents give 29.4 C for new buildings; no document states which threshold applied to the existing buildings in 2021.",
+    "Dutch IT Channel (2022) and NH Nieuws (2025) give 83 million litres; other reports and the motion give 84 million.",
+    "The Hollands Kroon executive's answer to the LADA&Anders! council questions of 13 August 2022 was not located.",
+    "The 2018 application showing 86,000 m3 for cooling is reported by Computer Weekly citing the newspaper; the document was not located.",
+    "The six days above 25 C at Den Helder in 2021 are from press; the KNMI 2021 summer overview could not be fetched.",
+    "Generator counts differ between the 2020 municipal Nota van zienswijzen (2 x 0.5 MW) and DCD's report of the 2023 permit (2 x 1 MW); not resolved."
+  ],
+  "sources": [
+    {"title": "Datacenter Microsoft Wieringermeer slurpte vorig jaar 84 miljoen liter drinkwater (Noordhollands Dagblad, Bart Vuijk; repost)", "url": "https://www.stichting-jas.nl/2022/08/datacenter-microsoft-wieringermeer.html", "publisher": "Stichting JAS", "date": "2022-08-11"},
+    {"title": "Drought-stricken Holland discovers Microsoft data center slurped 84m liters of drinking water last year", "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year", "publisher": "Data Center Dynamics", "date": "2022-08-16"},
+    {"title": "Microsoft claims summer heatwave led to no excess water use by its datacentres", "url": "https://computerweekly.com/news/252526831/Microsoft-claims-summer-heatwave-led-to-no-excess-water-use-by-its-datacentres", "publisher": "Computer Weekly", "date": "2022-11-02"},
+    {"title": "Microsoft data center guzzles scarce water supply amidst heatwave", "url": "https://www.techzine.eu/news/infrastructure/85915/microsoft-data-center-guzzles-scarce-water-supply-amidst-heatwave/", "publisher": "Techzine", "date": "2022-08-11"},
+    {"title": "Datacenter Microsoft: hoger verbruik drinkwater, 84 miljoen liter", "url": "https://www.bright.nl/nieuws/1132914/datacenter-microsoft-hoger-verbruik-drinkwater-84-miljoen-liter.html", "publisher": "Bright.nl", "date": "2022-08-12"},
+    {"title": "Microsoft-datacenter Wieringermeer verbruikt meer koelwater dan verwacht", "url": "https://www.dutchitchannel.nl/news/184205/microsoft-datacenter-wieringermeer-verbruikt-meer-koelwater-dan-verwacht", "publisher": "Dutch IT Channel", "date": "2022-08-12"},
+    {"title": "LADA&Anders! stellen politieke vragen over waterverbruik datacenters", "url": "https://www.demeerpeen.nl/nieuws/regionaal-nieuws/ladaanders-stellen-politieke-vragen-over-waterverbruik-datatcenters/", "publisher": "De Meerpeen", "date": "2022-08-13"},
+    {"title": "Microsoft data centre uses too much water", "url": "https://www.aquatechtrade.com/news/industrial-water/microsoft-data-centre-uses-too-much-water", "publisher": "Aquatech", "date": "2022-09-07"},
+    {"title": "CU vindt 'dorst' van Microsoft nog altijd bedenkelijk", "url": "https://www.computable.nl/?p=37027", "publisher": "Computable", "date": "2022-10-05"},
+    {"title": "Motie van het lid Grinwis c.s., Kamerstuk 26 643, nr. 911", "url": "https://zoek.officielebekendmakingen.nl/kst-26643-911.pdf", "publisher": "Tweede Kamer", "date": "2022-09-27"},
+    {"title": "Gewijzigde motie van het lid Grinwis c.s., Kamerstuk 26 643, nr. 919", "url": "https://zoek.officielebekendmakingen.nl/kst-26643-919.pdf", "publisher": "Tweede Kamer", "date": "2022-10-04"},
+    {"title": "Stemmingen moties Datacenters, 7e vergadering", "url": "https://www.eerstekamer.nl/bijlage/20221006/verslag_tweede_kamer_van/document3/f=/vlwynt985hlw.pdf", "publisher": "Tweede Kamer (via Eerste Kamer)", "date": "2022-10-04"},
+    {"title": "Antwoord op Kamervragen 2021Z04890 (Van Dijk), AH 2300", "url": "https://app.1848.nl/static/pdf/1d/16/1d16192e21c4b30644fc331ae2e816793aaa43f8.pdf", "publisher": "Minister van Infrastructuur en Waterstaat (via 1848.nl)", "date": "2021-04-12"},
+    {"title": "Brief inzake voorbereidingsbesluit hyperscale datacenters, Kamerstuk 26 643, nr. 819", "url": "https://zoek.officielebekendmakingen.nl/kst-26643-819.pdf", "publisher": "Minister voor Volkshuisvesting en Ruimtelijke Ordening", "date": "2022-02-16"},
+    {"title": "Verslag van een commissiedebat Datacenters, Kamerstuk 26 643, nr. 900", "url": "https://zoek.officielebekendmakingen.nl/kst-26643-900.pdf", "publisher": "Tweede Kamer", "date": "2022-08-03"},
+    {"title": "Brief over watertekort, Kamerstuk 27 625, nr. 586", "url": "https://zoek.officielebekendmakingen.nl/kst-27625-586.pdf", "publisher": "Minister van Infrastructuur en Waterstaat", "date": "2022-08-03"},
+    {"title": "Reactie op Rathenau-rapport, Kamerstuk 26 643, nr. 939", "url": "https://zoek.officielebekendmakingen.nl/kst-26643-939.odt", "publisher": "Minister van Economische Zaken en Klimaat", "date": "2022-11-08"},
+    {"title": "Besluit wijziging Besluit kwaliteit leefomgeving, instructieregel hyperscale datacentra, Stb. 2023, 492", "url": "https://zoek.officielebekendmakingen.nl/stb-2023-492.pdf", "publisher": "Staatsblad", "date": "2023-12-20"},
+    {"title": "Beslisnota beantwoording Kamervragen GroenLinks over Microsoft datacentrum", "url": "https://berthub.eu/tkconv/getraw/2023D22857", "publisher": "Ministerie van BZK (via tkconv)", "date": "2023-05-26"},
+    {"title": "Gewijzigde vaststelling omgevingsvergunning Cultuurweg 11 Middenmeer, Gemeenteblad 2021, 7972", "url": "https://zoek.officielebekendmakingen.nl/gmb-2021-7972.pdf", "publisher": "Gemeente Hollands Kroon", "date": "2021-01-11"},
+    {"title": "Nota van zienswijzen, omgevingsvergunning datacenter Cultuurweg 11 Middenmeer", "url": "https://hollandskroon.bestuurlijkeinformatie.nl/Document/View/1a17df25-f56d-42f5-a78c-834f70f6c187", "publisher": "Gemeente Hollands Kroon", "date": "2020-12"},
+    {"title": "Beantwoording Statenvragen nr. 22 (Mantel, JA21) over uitspraak Rechtbank Noord-Holland", "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/9f4d3be5-50d0-40a0-b9e0-900e9d2fbf8a", "publisher": "Gedeputeerde Staten Noord-Holland", "date": "2024-04-02"},
+    {"title": "Voordracht Datacenterstrategie Noord-Holland", "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/d10eb957-619f-4734-b1f0-ce1eae4bcdc4", "publisher": "Gedeputeerde Staten Noord-Holland", "date": "2021-12-14"},
+    {"title": "Intrekking reactieve aanwijzing bestemmingsplan Uitbreiding Agriport A7, deelgebied B1", "url": "https://noordholland.bestuurlijkeinformatie.nl/Document/View/cae5224a-51c1-4229-955a-92b09cb717f8", "publisher": "Gedeputeerde Staten Noord-Holland", "date": "2022-10-26"},
+    {"title": "Datacenterstrategie NH 2025-2027", "url": "https://www.noord-holland.nl/bestanden/pdf/Economie_Werk/Datacenterstrategie%20NH%202025-2027.pdf", "publisher": "Provincie Noord-Holland", "date": "2025-02"},
+    {"title": "Aanvraag vergunning Cultuurweg 11 Middenmeer, AMS13 en AMS14, Provinciaal Blad 2024, 531", "url": "https://zoek.officielebekendmakingen.nl/prb-2024-531.pdf", "publisher": "Omgevingsdienst Noordzeekanaalgebied", "date": "2024-01-12"},
+    {"title": "Uitspraak 202207134/1/R1 (Red de Wieringermeer v. raad Hollands Kroon)", "url": "https://www.raadvanstate.nl/@144124/202207134-1-r1/", "publisher": "Raad van State", "date": "2024-06-19"},
+    {"title": "Zomer 2022 (juni, juli, augustus) seizoensoverzicht", "url": "https://www.knmi.nl/nederland-nu/klimatologie/maand-en-seizoensoverzichten/2022/zomer", "publisher": "KNMI", "date": "2022-08-31"},
+    {"title": "Report of information meeting about the Microsoft datacenters in Middenmeer", "url": "https://local.microsoft.com/blog/verslag-informatiebijeenkomst-over-de-microsoft-datacenters-in-middenmeer/", "publisher": "Microsoft (local.microsoft.com)", "date": "2022-04-08"},
+    {"title": "Netherlands (West Europe) datacenter sustainability fact sheet", "url": "https://datacenters.microsoft.com/globe/pdfs/sustainability/factsheets/Netherlands%20(West%20Europe).pdf", "publisher": "Microsoft", "date": "2023-03"},
+    {"title": "Microsoft datacenters in Netherlands (localized)", "url": "https://local.microsoft.com/wp-content/uploads/2025/10/Microsoft-datacenters-in-Netherlands-LOCALIZED.pdf", "publisher": "Microsoft (local.microsoft.com)", "date": "2025-10"},
+    {"title": "'Datacenters in Noord-Holland kunnen leiden tot drinkwatertekort'", "url": "https://nos.nl/artikel/2373234-datacenters-in-noord-holland-kunnen-leiden-tot-drinkwatertekort", "publisher": "NOS", "date": "2021-03-19"},
+    {"title": "Microsoft plans to use rainwater to cool Dutch data center", "url": "https://datacenterdynamics.com/en/news/microsoft-plans-to-user-rainwater-to-cool-dutch-environmental-data-center-protests", "publisher": "Data Center Dynamics", "date": "2021-05-21"},
+    {"title": "Gemeenteraad Hollands Kroon akkoord met nieuw datacenter", "url": "https://www.nhnieuws.nl/nieuws/288180/gemeenteraad-hollands-kroon-akkoord-met-nieuw-datacenter", "publisher": "NH Nieuws", "date": "2021-06-30"},
+    {"title": "Licht wéér op groen voor Microsoft: bouw datacenter kan 'op eigen risico' beginnen", "url": "https://www.nhnieuws.nl/nieuws/291765/licht-weer-op-groen-voor-microsoft-bouw-datacenter-kan-op-eigen-risico-beginnen", "publisher": "NH Nieuws", "date": "2021-09-16"},
+    {"title": "Een van de twee gemeenten voor megadatacenters stribbelt tegen", "url": "https://nos.nl/l/2434458", "publisher": "NOS", "date": "2022-06-28"},
+    {"title": "Alle acties ten spijt geeft de raad toch groen licht voor bouw nieuw datacenter", "url": "https://www.nhnieuws.nl/nieuws/308646/alle-acties-ten-spijt-geeft-de-raad-toch-groen-licht-voor-bouw-nieuw-datacenter", "publisher": "NH Nieuws", "date": "2022-09-16"},
+    {"title": "Definitieve omgevingsvergunning datacenter Microsoft is verleend", "url": "https://www.dutchitchannel.nl/news/229461/definitieve-omgevingsvergunning-datacenter-microsoft-verleend", "publisher": "Dutch IT Channel", "date": "2023-04-19"},
+    {"title": "Microsoft gains construction permission for data center in Hollands Kroon", "url": "https://datacenterdynamics.com/en/news/microsoft-gains-construction-permission-for-data-center-in-hollands-kroon", "publisher": "Data Center Dynamics", "date": "2023-04-21"},
+    {"title": "Communicatie rond komst datacenters in Hollands Kroon kan beter", "url": "https://www.dutchitchannel.nl/news/425707/communicatie-rond-komst-datacenters-in-hollands-kroon-kan-beter", "publisher": "Dutch IT Channel", "date": "2024-03-12"},
+    {"title": "Onderzoek datacenters Hollands Kroon afgerond", "url": "https://www.binnenlandsbestuur.nl/ruimte-en-milieu/onderzoek-datacenters-hollands-kroon-afgerond", "publisher": "Binnenlands Bestuur", "date": "2024-03-12"},
+    {"title": "Wéér een datacenter in Middenmeer, Microsoft kondigt uitbreiding aan", "url": "https://www.nhnieuws.nl/nieuws/352169/weer-een-datacenter-in-middenmeer-microsoft-kondigt-uitbreiding-aan", "publisher": "NH Nieuws", "date": "2025-09-09"},
+    {"title": "Honderden miljoenen liters regenwater opgevangen om datacenters te koelen", "url": "https://www.nhnieuws.nl/nieuws/352274/honderden-miljoenen-liters-regenwater-opgevangen-om-datacenters-te-koelen", "publisher": "NH Nieuws", "date": "2025-09-12"}
+  ],
+  "last_checked": "2026-10-20"
+}

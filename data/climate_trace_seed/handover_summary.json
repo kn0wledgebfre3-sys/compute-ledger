@@ -1,0 +1,61 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-21T13:32:50+00:00",
+  "sources": [
+    {
+      "name": "seed_sites.json (v1)",
+      "path": "/Users/az/Desktop/environment/repo/registry/seed_sites.json",
+      "rows": 56
+    }
+  ],
+  "sites_total": 382,
+  "sites_v1_kept": 56,
+  "sites_v1_updated_from_permits": 8,
+  "sites_added": 326,
+  "with_coordinates": 175,
+  "with_generator_mw": 159,
+  "with_coordinates_and_generator_mw": 105,
+  "by_state": {
+    "Virginia": {
+      "sites": 185,
+      "with_coordinates": 116,
+      "with_generator_mw": 153,
+      "generator_mw_sum": 19186.4,
+      "needs_review": 162
+    },
+    "Texas": {
+      "sites": 148,
+      "with_coordinates": 10,
+      "with_generator_mw": 2,
+      "generator_mw_sum": 179.5,
+      "needs_review": 143
+    },
+    "other (v1 rows)": {
+      "sites": 49,
+      "with_coordinates": 49,
+      "with_generator_mw": 4,
+      "generator_mw_sum": 6465.8,
+      "needs_review": 0
+    }
+  },
+  "by_coord_method": {
+    "none": 207,
+    "geocode:nominatim:rooftop": 92,
+    "v1": 56,
+    "geocode:census:census_exact": 17,
+    "geocode:census:census_non_exact": 6,
+    "permit:map_marker": 2,
+    "permit:op1_dms": 1,
+    "permit:steers_decimal": 1
+  },
+  "climate_trace": {
+    "emissions_rows": 175,
+    "ownership_rows": 175,
+    "columns_emissions": 44,
+    "columns_ownership": 19,
+    "schema": "Climate TRACE v5.11.0 asset files (to_climate_trace.py mapping)"
+  },
+  "weak_matches_included": false
+}

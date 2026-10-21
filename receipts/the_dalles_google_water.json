@@ -1,0 +1,472 @@
+{
+  "id": "us-or-the-dalles-google-water-records",
+  "title": "Google's data centers in The Dalles, Oregon, and the municipal water records released after litigation",
+  "jurisdiction": "United States, Oregon (Wasco County, City of The Dalles)",
+  "summary": "Google has operated data centers in The Dalles since 2006 on and near a former aluminum smelter site. On 24 September 2021 The Oregonian requested Google's water-use records; the city denied them as a trade secret, the Wasco County District Attorney ordered disclosure on 15 October 2021, and on 29 October 2021 the city sued the reporter and newspaper in Wasco County Circuit Court (Case 21CV42306), with Google responsible for the city's costs. On 8 November 2021 the council approved 5-0 a $28.5 million water-infrastructure agreement with Google's subsidiary Design LLC for two new data centers, under which Google transfers smelter-site groundwater rights to the city and the city supplies an undisclosed volume. On 14 December 2022 the city settled, releasing ten years of annual use (2012-2021), agreeing to future disclosures and paying $53,000 toward the newspaper's costs, which Google reimbursed along with the city's $106,000 [press]. Released records show 104.3 million gallons in 2012 rising to 355.1 million gallons in 2021, 29% of city consumption [press: City records as reported]. City records reported by OPB show 383.9 million gallons in 2023 and 434.4 million in 2024, about one third of city water [press]. In November 2022 Google began publishing site-level figures and compared global use to 29 golf courses. In October 2025 Google transferred a completed aquifer storage and recovery system and the smelter groundwater rights to the city and said this gives the community 100 million more gallons a year. In January 2026 Google said it had offset its local use through watershed investments and was not behind a federal bill transferring 150 acres of national forest for a reservoir expansion from 900 to about 3,000 acre-feet; city officials say the expansion is not for Google. No document in the record reconciles Google's replenishment claims against the city-metered volumes.",
+  "claim": {
+    "who": "Google (Ben Townsend, global head of infrastructure sustainability) and Google corporate statements",
+    "what": "(a) November 2022: global fleet consumed about 4.3 billion gallons in 2021, comparable to 29 golf courses; Google would publish site-level annual water metrics for U.S. sites, with The Dalles at 274.5 million gallons for 2021 [press] and a comparison to about 1.8 golf courses reported by The Oregonian [press]. (b) Google and the city said the 2021 $28.5 million upgrade would meet future water needs for the company and its neighbors [press]. (c) October 2025: the aquifer storage and recovery system and transferred groundwater rights give the community access to 100 million more gallons a year; Google aims to replenish more water than it consumes. (d) January 2026: Google offset its water use in The Dalles through watershed investments (tree planting in burned areas, rebuilding a canal) and is not behind the federal land transfer for the reservoir expansion.",
+    "date": "2022-11-21 [press: date per AP]; 2025-10-22 / 2025-10-29; 2026-01-15",
+    "url": "https://www.opb.org/article/2026/01/15/as-googles-water-demands-grow-the-dalles-aims-to-pull-more-from-mount-hood-forest/"
+  },
+  "timeline": [
+    {
+      "date": "1959",
+      "document": "OWRD critical groundwater area designation for The Dalles, as described by the District 3 watermaster to Wasco County commissioners (Columbia Gorge News, Mar 2025)",
+      "figure": "Critical groundwater area declared in 1959; no new basalt-aquifer rights since; wells serving the former aluminum plant abandoned years ago [press]. 1959 order held in OWRD vault (not retrieved).",
+      "url": "https://www.columbiagorgenews.com/news/watermaster-highlights-groundwater-losses-in-mosier-the-dalles-dufur/article_9cc07aa8-fe49-11ef-b7cf-2f08b8635f5f.html",
+      "locator": "Article body"
+    },
+    {
+      "date": "2006",
+      "document": "Oregon Business, 29 Oct 2025",
+      "figure": "Google opened its first U.S. data center in The Dalles in 2006; more than $2.4 billion invested in Oregon since (company figure).",
+      "url": "https://oregonbusiness.com/google-advances-commitment-to-the-dalles-launching-sustainable-water-storage-system/",
+      "locator": "Article body"
+    },
+    {
+      "date": "2016",
+      "document": "OPB, 23 Jan 2026 (and OPB, 15 Jan 2026)",
+      "figure": "Google bought the former smelter property in 2016 and later transferred part of its water rights to the city; the smelter rights allowed pumping up to 3.88 million gallons per day [press].",
+      "url": "https://opb.org/article/2026/01/23/the-dalles-mayor-data-center-google",
+      "locator": "Groundwater section; article body"
+    },
+    {
+      "date": "2021-06-29 [press]",
+      "document": "Governor Kate Brown drought declaration for Umatilla, Union, Grant and Wasco counties, reported by Elkhorn Media Group (29 Jun 2021) and East Oregonian (3 Jul 2021)",
+      "figure": "Drought emergency declared for Wasco County, expiring 31 December 2021; executive order number not given in either report [press].",
+      "url": "https://elkhornmediagroup.com/?p=122574",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2021-09-24",
+      "document": "Records request by Mike Rogoway (The Oregonian) to the City of The Dalles, as described by Columbia Gorge News (Nov 2021) and Columbia Community Connection (27 Oct 2021)",
+      "figure": "Request for Google's water use for 2020 and the five preceding years; denied the same day under the trade-secret exemption; appeal petition filed 7 October; city response 12 October.",
+      "url": "https://www.columbiagorgenews.com/news/city-to-appeal-decision-requiring-release-of-google-water-usage/article_fbeb732c-3c21-11ec-b4e1-43def58169e8.html",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2021-09-27",
+      "document": "City council review of the proposed water plan, reported by Columbia Community Connection, 28 Sep 2021",
+      "figure": "Proposed $28.5 million upgrade paid by Google; two new wells capable of 1.4 billion gallons a year; Google purchased 3.88 MGD rights from Northwest Aluminum; city capacity 9.9 MGD rising to 17.5 MGD; plan uses under 5,500 acre-feet a year from The Dalles Groundwater Reservoir; up to 244 million gallons storable underground in one year; studies by GSI, RH2 and Maul Foster & Alongi paid for by Google.",
+      "url": "https://columbiacommunityconnection.com/the-dalles/td-city-council-hears-concerns-on-googles-water-need",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-10-15",
+      "document": "Order of Wasco County District Attorney Matthew Ellis, as described by Columbia Community Connection (27 Oct 2021) and Columbia Gorge News (Nov 2021)",
+      "figure": "Petition granted; city had not shown water use was a trade secret; disclosure ordered. City gave notice on 22 October of intent to sue.",
+      "url": "https://columbiacommunityconnection.com/the-dalles/google-water-usage-in-the-dalles-could-be-disclosed-after-litigation",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2021-10-22",
+      "document": "AP (Selsky and Valdes), 22 Oct 2021",
+      "figure": "Wasco County in extreme and exceptional drought per U.S. Drought Monitor [press]; Google's smelter-purchase rights put at 3.9 MGD by the public works director; new data centers may not use Columbia River water; projected use confidential, received by councilors that week.",
+      "url": "https://www.ksat.com/tech/2021/10/22/big-tech-data-centers-spark-worry-over-scarce-western-water/",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-10-29",
+      "document": "Complaint, City of The Dalles v. Rogoway, Case 21CV42306, Wasco County Circuit Court (RCFP case page)",
+      "figure": "Reverse public-records suit against the reporter and Advance Local Media LLC; RCFP attorney Ellen Osoinach for defendants. Complaint on DocumentCloud not retrieved.",
+      "url": "https://www.rcfp.org/litigation/city-of-the-dalles-v-rogoway/",
+      "locator": "Case page"
+    },
+    {
+      "date": "2021-11-02",
+      "document": "The Oregonian (Rogoway), 2 Nov 2021, republished by Deschutes River Conservancy",
+      "figure": "City capacity about 10 MGD, planned 15 MGD; later withdrawals limited to 90% of water pumped into the aquifer under state law; prior tax deals saved Google more than $240 million over 15 years; critical groundwater area designated 1959.",
+      "url": "https://www.deschutesriver.org/in-the-media/the-dalles-sues-to-keep-googles-water-use-a-secret",
+      "locator": "Article body"
+    },
+    {
+      "date": "2021-11-08",
+      "document": "City council vote on the infrastructure agreement with Design LLC, reported by Columbia Community Connection (9 Nov 2021), The Oregonian via Columbia Insight (10 Nov 2021), AP (9 Nov 2021) and OPB (9 Nov 2021)",
+      "figure": "Approved 5-0. Google pays about $28.5 million; Google's 3.88 MGD rights go to the city, which also uses its own 1.3 MGD rights; groundwater reservoir 5,500 acre-feet a year per a 2018 study, current withdrawal about 1,800 acre-feet; recharge through a new well on Google property; volume the city must supply undisclosed; future use confidential; Google holds the city harmless for litigation costs; 35 acres to Wasco County. Council packet, minutes and unsigned agreement posted online but not retrieved.",
+      "url": "https://columbiacommunityconnection.com/the-dalles/afouddmne860m5ethubiuocdzxw92w",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2021-11-09",
+      "document": "Strategic Investment Program agreement and Google statement, per OPB (23 Jan 2026), AP (9 Nov 2021) and Columbia Community Connection (8 Nov 2021)",
+      "figure": "SIP signed by Google 9 Nov 2021 (city and county in October 2021). Google (Kate Franko): proud to expand its commitment to the region. Abatements of 40% and 50% on the two new data centers, worth up to $147 million over 15 years.",
+      "url": "https://opb.org/article/2026/01/23/the-dalles-mayor-data-center-google",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2022-11-14",
+      "document": "City council authorization to settle, reported by Columbia Gorge News (Nov 2022)",
+      "figure": "Unanimous vote after executive session; attorney authorized to pay up to $100,000; Google to reimburse.",
+      "url": "https://www.columbiagorgenews.com/news/city-authorizes-attorney-to-settle-oregonian-lawsuit/article_041ab7d6-6a9f-11ed-b099-1b2b2ac7eea3.html",
+      "locator": "Article body"
+    },
+    {
+      "date": "2022-11-21 [press: date per AP]",
+      "document": "Google, 'Our commitment to climate-conscious data center cooling'",
+      "figure": "Global fleet consumed about 4.3 billion gallons in the prior year, comparable to 29 southwest U.S. golf courses; Google to publish annual water metrics for U.S. sites starting with 2021. Site-level 2021: The Dalles 274.5 million gallons, U.S. total 3.3 billion, Council Bluffs 845.8 million (The Register, 19 Dec 2022) [press]. The Oregonian reported a Google comparison of Dalles use to about 1.8 golf courses [press].",
+      "url": "https://blog.google/outreach-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/",
+      "locator": "Post body; The Register and WaterWatch article bodies"
+    },
+    {
+      "date": "2022-12-14",
+      "document": "Settlement and dismissal, City of The Dalles v. Advance Local Media, Wasco County Circuit Court, as described by The Oregonian via GovTech (15 Dec 2022), RCFP (15 Dec 2022) and AP via Courthouse News (15 Dec 2022)",
+      "figure": "City to provide ten years of data (2012-2021) within one day of effect and future annual data on request; city pays $53,000 toward RCFP costs; city's own costs $106,000; Google committed to cover both [press]. Settlement PDF posted by RCFP not retrieved.",
+      "url": "https://www.govtech.com/analytics/the-dalles-ore-settles-lawsuit-over-google-data-centers",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2022-12-17",
+      "document": "Records released by the City of The Dalles, as reported by The Oregonian (Rogoway, 17 Dec 2022, republished by WaterWatch) and tabulated by DCD (19 Dec 2022)",
+      "figure": "Google annual use, million gallons: 2012 104.3; 2013 108.9; 2014 132.3; 2015 148.3; 2016 113.1; 2017 124.2; 2018 150.7; 2019 233.3; 2020 279.8; 2021 355.1. 2021 use was 29% of city consumption. Dalles Country Club nine-hole course about 20 million gallons a year per the club. Google's funding of the city's suit exceeded $100,000 [press: City records as reported]. Chart source line 'City of The Dalles' (OregonLive Datawrapper).",
+      "url": "https://www.datacenterdynamics.com/en/news/we-now-know-how-much-water-googles-oregon-data-centers-use-after-city-drops-lawsuit-against-journalists/",
+      "locator": "Article bodies; chart"
+    },
+    {
+      "date": "2023-04-19",
+      "document": "Office of Governor Tina Kotek, drought emergency in Wasco and Harney counties",
+      "figure": "Executive Order 23-10 (Wasco); 23% of county in moderate drought, 49% in severe drought; streamflow 64% of long-term average for the water year to date.",
+      "url": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-tina-kotek-declares-drought-emergency-in-wasco-and-harney-counties-81569",
+      "locator": "Release body"
+    },
+    {
+      "date": "2024-11 (adoption hearing 2024-12-09)",
+      "document": "City of The Dalles Water System Master Plan Update, Nov 2024, as cited by OPB (15 and 23 Jan 2026); hearing notice in Columbia Community Connection (2 Dec 2024)",
+      "figure": "Future industrial user of about 1 MGD average in 2024-2074 projections; about 78% of supply from surface water; about $260 million of upgrades over 20 years including a $70 million reservoir expansion from 900 to about 3,000 acre-feet; residential rates forecast to rise 99% by 2036; Google-related revenue to cover almost a quarter of upgrades [press: plan not retrieved].",
+      "url": "https://opb.org/article/2026/01/23/the-dalles-mayor-data-center-google",
+      "locator": "Plan as cited; article bodies"
+    },
+    {
+      "date": "2025-03-05",
+      "document": "OWRD District 3 watermaster briefing to Wasco County commissioners, reported by Columbia Gorge News (Mar 2025)",
+      "figure": "City drilled two new municipal wells, one designed for ASR; testing ongoing; early data suggest the aquifer accepts and returns water with limited volume; certain well owners report monthly use [press].",
+      "url": "https://www.columbiagorgenews.com/news/watermaster-highlights-groundwater-losses-in-mosier-the-dalles-dufur/article_9cc07aa8-fe49-11ef-b7cf-2f08b8635f5f.html",
+      "locator": "Article body"
+    },
+    {
+      "date": "2025-04-29",
+      "document": "House Natural Resources Committee, Subcommittee on Federal Lands, hearing memo on four bills including H.R. 655",
+      "figure": "H.R. 655 conveys about 150 acres of Mt. Hood National Forest to the city without consideration on request within one year; Crow Creek Reservoir supplies 80% of city water; officials have discussed raising capacity from 900 to 3,000 acre-feet; Google, data centers and industrial users not mentioned; Mayor Mays testified in support.",
+      "url": "https://naturalresources.house.gov/UploadedFiles/Hearing_Memo_--_Sub_on_FL_Leg_Hrg_on_4_Bills_04.29.25.pdf",
+      "locator": "pp. 4-5, 7"
+    },
+    {
+      "date": "2025 (report year)",
+      "document": "Google 2025 Environmental Report, site-level water table, as cited by Columbia Insight (Hahm, 18 Jun 2026); company-wide figures per Axios (3 Jun 2026)",
+      "figure": "The Dalles 2024: withdrawal 461.1 million gallons; consumption 361.4 million gallons; discharge 99.7 million gallons [press: report not retrieved; cited to p. 110]. Company-wide 2024: about 7.2 billion gallons consumed, about 4.5 billion replenished, about 64% [press].",
+      "url": "https://columbiainsight.org/?p=27944",
+      "locator": "Report p. 110 as cited; article bodies"
+    },
+    {
+      "date": "2025-10-22 (event); 2025-10-29 (publication)",
+      "document": "Oregon Business (29 Oct 2025); DCD (23 Oct 2025); Google water stewardship page",
+      "figure": "ASR system completed; Google permanently transferred the system and the smelter-site groundwater rights to the city; Google says the initiatives give the community access to 100 million more gallons a year and that it aims to replenish more than it consumes; investment cited as $28 million; support for East Fork Irrigation District canal piping and a Wasco County SWCD Fifteenmile Creek project. Google's page lists the ASR and irrigation projects as in development and a 150-acre watershed reforestation as completed, with no volumes.",
+      "url": "https://oregonbusiness.com/google-advances-commitment-to-the-dalles-launching-sustainable-water-storage-system/",
+      "locator": "Article bodies; page"
+    },
+    {
+      "date": "2025-12-09",
+      "document": "Rep. Cliff Bentz, press release on House passage of H.R. 655",
+      "figure": "House passed H.R. 655; city relies on the municipal watershed for 80% of annual supply (mayor quoted at 85%); no mention of Google or data centers.",
+      "url": "https://bentz.house.gov/media/press-releases/congressman-bentz-s-bill-to-expand-the-city-of-the-dalles-water-passed-in-us-house-of-representatives",
+      "locator": "Release body"
+    },
+    {
+      "date": "2026-01-15 (updated 2026-01-23)",
+      "document": "OPB (Ehrlich), 'As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest', and OPB follow-up of 23 Jan 2026",
+      "figure": "City records as reported: Google used 104 million gallons in 2012 (12% of city water), 383.9 million in 2023, 434.4 million in 2024 (about one third; about 1.19 MGD); 3.88 MGD is almost as much as the whole city averaged per day in 2024. Google (Townsend) said it offset its use through watershed investments and was protecting physical security of assets in 2021; Google said it is not behind the land transfer. Google property taxes $7.3 million in 2025 after a 92% discount. OPB reviewed 2,675 pages and 22 hours of meetings; corrected a rate figure (7% to 99%) and added that only part of the smelter rights was transferred [press].",
+      "url": "https://www.opb.org/article/2026/01/15/as-googles-water-demands-grow-the-dalles-aims-to-pull-more-from-mount-hood-forest/",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2026-01-17 to 2026-01-26",
+      "document": "Mayor Richard Mays' post and retired Public Works Director Dave Anderson's letter, read to council 26 Jan 2026, reported by Columbia Gorge News (Avery)",
+      "figure": "City position: Google is not the unnamed industrial user; the reservoir expansion dates to the 1990s and the 2006 plan; the $28.5 million upgrade was a condition of service, not a trade for tax breaks; data center groundwater use is within sustainable capacity per planning studies; the city acquired only part of the smelter rights. Anderson called the OPB story egregiously misleading; the mayor told OPB Google is not a factor in the expansion.",
+      "url": "https://www.columbiagorgenews.com/news/city-officials-rebuke-opb-data-center-story/article_9926226a-6af9-4a0b-92da-199d07a3bc31.html",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2026-02-18",
+      "document": "WaterWatch of Oregon, coalition letter release on H.R. 655",
+      "figure": "Fourteen organizations ask Sen. Wyden to oppose H.R. 655; about 80% of city supply from the Dog River; historic diversion about 12 cfs; bypass flow 0.5 cfs; pipeline capacity recently doubled; the letter says much of the water appears intended for Google but gives no volume.",
+      "url": "https://waterwatch.org/wp-content/uploads/2026/02/WaterWatch_Dog_River_Release_021826_2.pdf",
+      "locator": "Release body"
+    },
+    {
+      "date": "2026-04 [press]",
+      "document": "The Oregonian, April 2026, 'More Oregon water for Google's data centers, more concern over secrecy' (not retrieved), as cited by Sierra via WaterWatch (3 May 2026) and Daily Tidings (12 Apr 2026)",
+      "figure": "Google's share of city water reported at 40% for the most recent year, with 550 million gallons cited; the retrieved text does not state the year [press].",
+      "url": "https://waterwatch.org/data-centers-are-hogging-this-towns-water/",
+      "locator": "Article bodies"
+    },
+    {
+      "date": "2026-06-24",
+      "document": "Office of Governor Tina Kotek, drought emergency in Josephine and Wasco counties",
+      "figure": "Executive Order 26-11; as of 9 June, 54% of Wasco County in moderate to severe drought, 23% in severe drought; fifth drought order of 2026; 19 of 36 counties declared.",
+      "url": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-declares-drought-emergency-in-josephine-and-wasco-counties",
+      "locator": "Release body"
+    }
+  ],
+  "gaps": [
+    "The volumes became public only through a settlement filed 14 December 2022, thirteen months after the city sued the reporter, with Google reimbursing the city's $106,000 and the $53,000 paid to the newspaper's counsel [press]; the council had approved the $28.5 million agreement on 8 November 2021 with Google's projected use confidential. (T5, T7, T9, T11, T15)",
+    "City records as reported put Google at 355.1 million gallons and 29% of city consumption in 2021 and 434.4 million gallons and about one third in 2024, a rise of 22% in volume [arithmetic]; Google's statements in October 2025 and January 2026 describe replenishment and offsets without a Dalles-specific volume, and no document in the record sets the replenished volume beside the metered use. (T16, T22, T24)",
+    "For 2021 Google's site-level disclosure is 274.5 million gallons while the city's record is 355.1 million gallons; for 2024 Google's reported withdrawal is 461.1 million gallons while the city's record is 434.4 million gallons [press]; the documents use different metrics and none reconciles them. (T14, T16, T21, T24)",
+    "Google says the ASR system and the rights transfer give the community 100 million more gallons a year; the watermaster's March 2025 briefing described ASR testing as ongoing with limited volume, and the record contains no measured recovered volume. (T19, T22)",
+    "The 2024 master plan includes an unnamed industrial user of about 1 MGD; OPB reports Google at about 1.19 MGD in 2024; the city says Google is not that user; no document identifies the user. (T18, T24, T25)"
+  ],
+  "limits": [
+    "The city's total consumption in gallons is not stated in any retrieved document; the 29% (2021) and one-third (2024) shares are reported from city records; the Nov 2024 master plan could not be read; no implied total was computed.",
+    "Google's 2022 and 2025 annual volumes were not located; the April 2026 figure of 550 million gallons / 40% is not tied to a stated year in the retrieved text.",
+    "The settlement and dismissal PDF posted by RCFP could not be read; terms are confirmed through The Oregonian, RCFP's post and AP.",
+    "The unsigned infrastructure agreement, the 8 Nov 2021 council packet and minutes could not be read; section numbers for the $28.5 million, confidentiality, hold-harmless and supply-volume terms are not given; the supply volume was described as undisclosed at the vote.",
+    "No OWRD certificate or transfer numbers for the smelter-site rights were located; the city says it received only part of the rights and the portion is not stated.",
+    "Google's replenishment projects in The Dalles are listed without volumes; the 2025 Water Stewardship Project Portfolio (cited at p. 22) could not be read.",
+    "The Google 2025 Environmental Report could not be read; the 2024 Dalles withdrawal, consumption and discharge figures come from a Columbia Insight opinion piece citing p. 110.",
+    "The 2021 Wasco County drought executive order number was not found; the 2023 (EO 23-10) and 2026 (EO 26-11) orders are from the Governor's office.",
+    "No document allocates the proposed 2,100 acre-feet of added reservoir capacity [arithmetic: 3,000 minus 900] to any user; the city attributes the expansion to long-standing plans and growth, OPB and a coalition connect it to Google.",
+    "No document states the volume injected or recovered by the ASR system since its completion in October 2025."
+  ],
+  "sources": [
+    {
+      "title": "Our commitment to climate-conscious data center cooling",
+      "url": "https://blog.google/outreach-initiatives/sustainability/our-commitment-to-climate-conscious-data-center-cooling/",
+      "publisher": "Google",
+      "date": "2022-11-21 [press: date]"
+    },
+    {
+      "title": "Water stewardship (data centers)",
+      "url": "https://datacenters.google/water/",
+      "publisher": "Google",
+      "date": "undated"
+    },
+    {
+      "title": "Google Advances Commitment to The Dalles, Launching Sustainable Water Storage System",
+      "url": "https://oregonbusiness.com/google-advances-commitment-to-the-dalles-launching-sustainable-water-storage-system/",
+      "publisher": "Oregon Business",
+      "date": "2025-10-29"
+    },
+    {
+      "title": "Google launches water sustainability project in The Dalles, Oregon",
+      "url": "https://www.datacenterdynamics.com/en/news/google-launches-water-sustainability-project-in-the-dalles-oregon/",
+      "publisher": "Data Center Dynamics",
+      "date": "2025-10-23"
+    },
+    {
+      "title": "As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest",
+      "url": "https://www.opb.org/article/2026/01/15/as-googles-water-demands-grow-the-dalles-aims-to-pull-more-from-mount-hood-forest/",
+      "publisher": "OPB",
+      "date": "2026-01-15"
+    },
+    {
+      "title": "The Dalles' mayor called OPB's data center story inaccurate. Here are the facts",
+      "url": "https://opb.org/article/2026/01/23/the-dalles-mayor-data-center-google",
+      "publisher": "OPB",
+      "date": "2026-01-23"
+    },
+    {
+      "title": "As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest (republication)",
+      "url": "https://oregoncapitalchronicle.com/?p=19760",
+      "publisher": "Oregon Capital Chronicle",
+      "date": "2026-01-19"
+    },
+    {
+      "title": "City officials rebuke OPB data center story",
+      "url": "https://www.columbiagorgenews.com/news/city-officials-rebuke-opb-data-center-story/article_9926226a-6af9-4a0b-92da-199d07a3bc31.html",
+      "publisher": "Columbia Gorge News",
+      "date": "2026-01"
+    },
+    {
+      "title": "Google's Water Use Soaring in the Dalles, Records Show (The Oregonian, republished)",
+      "url": "https://waterwatch.org/googles-water-use-is-soaring-in-the-dalles-records-show-with-two-more-data-centers-to-come",
+      "publisher": "WaterWatch of Oregon",
+      "date": "2022-12-18"
+    },
+    {
+      "title": "We now know how much water Google's Oregon data centers use after city drops lawsuit against journalists",
+      "url": "https://www.datacenterdynamics.com/en/news/we-now-know-how-much-water-googles-oregon-data-centers-use-after-city-drops-lawsuit-against-journalists/",
+      "publisher": "Data Center Dynamics",
+      "date": "2022-12-19"
+    },
+    {
+      "title": "Google's annual water use in The Dalles, in gallons (chart)",
+      "url": "https://datawrapper.dwcdn.net/iJXhA/4",
+      "publisher": "OregonLive / Datawrapper",
+      "date": "2022-12"
+    },
+    {
+      "title": "Google datacenters use 'a quarter of all water' in one US city",
+      "url": "https://www.theregister.com/2022/12/19/google_datacenters_dalles/",
+      "publisher": "The Register",
+      "date": "2022-12-19"
+    },
+    {
+      "title": "The Dalles settles lawsuit over Google data centers (The Oregonian, republished)",
+      "url": "https://www.govtech.com/analytics/the-dalles-ore-settles-lawsuit-over-google-data-centers",
+      "publisher": "GovTech",
+      "date": "2022-12-15"
+    },
+    {
+      "title": "The Dalles, Google and The Oregonian settle",
+      "url": "https://www.rcfp.org/dalles-google-oregonian-settlement/",
+      "publisher": "Reporters Committee for Freedom of the Press",
+      "date": "2022-12-15"
+    },
+    {
+      "title": "City of The Dalles v. Rogoway (case page)",
+      "url": "https://www.rcfp.org/litigation/city-of-the-dalles-v-rogoway/",
+      "publisher": "Reporters Committee for Freedom of the Press",
+      "date": "2021-10"
+    },
+    {
+      "title": "Oregon city drops fight to keep Google water use private",
+      "url": "https://www.courthousenews.com/oregon-city-drops-fight-to-keep-google-water-use-private/",
+      "publisher": "Courthouse News Service (AP)",
+      "date": "2022-12-15"
+    },
+    {
+      "title": "City authorizes attorney to settle Oregonian lawsuit",
+      "url": "https://www.columbiagorgenews.com/news/city-authorizes-attorney-to-settle-oregonian-lawsuit/article_041ab7d6-6a9f-11ed-b099-1b2b2ac7eea3.html",
+      "publisher": "Columbia Gorge News",
+      "date": "2022-11"
+    },
+    {
+      "title": "City to appeal decision requiring release of Google water usage",
+      "url": "https://www.columbiagorgenews.com/news/city-to-appeal-decision-requiring-release-of-google-water-usage/article_fbeb732c-3c21-11ec-b4e1-43def58169e8.html",
+      "publisher": "Columbia Gorge News",
+      "date": "2021-11"
+    },
+    {
+      "title": "City of TD to sue Oregonian writer over Google 'trade secret' request",
+      "url": "https://columbiacommunityconnection.com/the-dalles/google-water-usage-in-the-dalles-could-be-disclosed-after-litigation",
+      "publisher": "Columbia Community Connection",
+      "date": "2021-10-27"
+    },
+    {
+      "title": "TD City Council hears concerns on Google's water need",
+      "url": "https://columbiacommunityconnection.com/the-dalles/td-city-council-hears-concerns-on-googles-water-need",
+      "publisher": "Columbia Community Connection",
+      "date": "2021-09-28"
+    },
+    {
+      "title": "City of The Dalles (council to decide on $28.5M Google agreement)",
+      "url": "https://columbiacommunityconnection.com/the-dalles/google/data-plant/water/agreement/city-of-the-dalles",
+      "publisher": "Columbia Community Connection",
+      "date": "2021-11-08"
+    },
+    {
+      "title": "Hecklers and hard questions don't stop Google water deal",
+      "url": "https://columbiacommunityconnection.com/the-dalles/afouddmne860m5ethubiuocdzxw92w",
+      "publisher": "Columbia Community Connection",
+      "date": "2021-11-09"
+    },
+    {
+      "title": "Secrecy shrouds The Dalles water deal with Google (The Oregonian, republished)",
+      "url": "https://columbiainsight.org/secrecy-shrouds-the-dalles-water-deal-with-google/",
+      "publisher": "Columbia Insight",
+      "date": "2021-11-10"
+    },
+    {
+      "title": "The Dalles sues to keep Google's water use a secret (The Oregonian, republished)",
+      "url": "https://www.deschutesriver.org/in-the-media/the-dalles-sues-to-keep-googles-water-use-a-secret",
+      "publisher": "Deschutes River Conservancy",
+      "date": "2021-11-02"
+    },
+    {
+      "title": "The Dalles OKs Google data centers amid secrecy, water worries",
+      "url": "https://katu.com/news/local/the-dalles-oks-google-data-centers-amid-secrecy-water-worries",
+      "publisher": "KATU (AP)",
+      "date": "2021-11-09"
+    },
+    {
+      "title": "Big Tech data centers spark worry over scarce Western water",
+      "url": "https://www.ksat.com/tech/2021/10/22/big-tech-data-centers-spark-worry-over-scarce-western-water/",
+      "publisher": "KSAT (AP)",
+      "date": "2021-10-22"
+    },
+    {
+      "title": "The Dalles approves Google water deal amid trade secret dispute",
+      "url": "https://opb.org/article/2021/11/09/google-the-dalles-water-data-center",
+      "publisher": "OPB",
+      "date": "2021-11-09"
+    },
+    {
+      "title": "Watermaster highlights groundwater losses in Mosier, The Dalles, Dufur",
+      "url": "https://www.columbiagorgenews.com/news/watermaster-highlights-groundwater-losses-in-mosier-the-dalles-dufur/article_9cc07aa8-fe49-11ef-b7cf-2f08b8635f5f.html",
+      "publisher": "Columbia Gorge News",
+      "date": "2025-03"
+    },
+    {
+      "title": "City of The Dalles to consider adoption of Water Master Plan",
+      "url": "https://columbiacommunityconnection.com/the-dalles/city-of-the-dalles-to-consider-adoption-of-water-master-plan",
+      "publisher": "Columbia Community Connection",
+      "date": "2024-12-02"
+    },
+    {
+      "title": "Hearing memo, Subcommittee on Federal Lands legislative hearing on four bills",
+      "url": "https://naturalresources.house.gov/UploadedFiles/Hearing_Memo_--_Sub_on_FL_Leg_Hrg_on_4_Bills_04.29.25.pdf",
+      "publisher": "U.S. House Committee on Natural Resources",
+      "date": "2025-04-29"
+    },
+    {
+      "title": "Congressman Bentz's bill to expand the City of The Dalles water passed in U.S. House",
+      "url": "https://bentz.house.gov/media/press-releases/congressman-bentz-s-bill-to-expand-the-city-of-the-dalles-water-passed-in-us-house-of-representatives",
+      "publisher": "Office of Rep. Cliff Bentz",
+      "date": "2025-12-09"
+    },
+    {
+      "title": "Coalition letter release on H.R. 655",
+      "url": "https://waterwatch.org/wp-content/uploads/2026/02/WaterWatch_Dog_River_Release_021826_2.pdf",
+      "publisher": "WaterWatch of Oregon",
+      "date": "2026-02-18"
+    },
+    {
+      "title": "Data Centers Are Hogging The Dalles' Water (Sierra, republished)",
+      "url": "https://waterwatch.org/data-centers-are-hogging-this-towns-water/",
+      "publisher": "WaterWatch of Oregon",
+      "date": "2026-05-03"
+    },
+    {
+      "title": "Google Data Centers Used 40% of The Dalles' Water in Oregon Last Year",
+      "url": "https://www.dailytidings.com/google-data-centers-used-40-of-the-dalles-water-in-oregon-last-year/",
+      "publisher": "Daily Tidings",
+      "date": "2026-04-12"
+    },
+    {
+      "title": "OPINION: Questioning how much water AI is actually using",
+      "url": "https://columbiainsight.org/?p=27944",
+      "publisher": "Columbia Insight",
+      "date": "2026-06-18"
+    },
+    {
+      "title": "Google pushes water standards amid data center backlash",
+      "url": "https://axios.com/2026/06/03/google-pushes-water-standards-data-center-backlash",
+      "publisher": "Axios",
+      "date": "2026-06-03"
+    },
+    {
+      "title": "Governor Tina Kotek declares drought emergency in Wasco and Harney counties",
+      "url": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-tina-kotek-declares-drought-emergency-in-wasco-and-harney-counties-81569",
+      "publisher": "Office of the Governor of Oregon",
+      "date": "2023-04-19"
+    },
+    {
+      "title": "Governor Kotek declares drought emergency in Josephine and Wasco counties",
+      "url": "https://apps.oregon.gov/oregon-newsroom/OR/GOV/Posts/Post/governor-kotek-declares-drought-emergency-in-josephine-and-wasco-counties",
+      "publisher": "Office of the Governor of Oregon",
+      "date": "2026-06-24"
+    },
+    {
+      "title": "Drought declared for Umatilla, Union, Grant, and Wasco counties",
+      "url": "https://elkhornmediagroup.com/?p=122574",
+      "publisher": "Elkhorn Media Group",
+      "date": "2021-06-29"
+    },
+    {
+      "title": "Gov. Kate Brown declares Umatilla County in drought disaster",
+      "url": "https://eastoregonian.com/?p=495425",
+      "publisher": "East Oregonian",
+      "date": "2021-07-03"
+    }
+  ],
+  "last_checked": "2026-10-20"
+}

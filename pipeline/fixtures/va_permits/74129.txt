@@ -1,0 +1,80 @@
+COMMONWEALTH of VIRGINIA
+DEPARTMENT OF ENVIRONMENTAL QUALITY
+Northern Regional Office
+13901 Crown Court, Woodbridge, Virginia 22193
+February 21, 2018
+Amazon Data Services, Inc.
+13200 Woodland Park Road
+Herndon, Virginia 20171
+Location: IAD-100, IAD-101, IAD-102, and IAD-103, Prince William County
+Registration No.: 74129
+Dear Permittee:
+Enclosed is a minor new source review (mNSR) permit for the construction and operation of emergency diesel engine gen-sets at the above location.
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+Amazon Data Services, Inc.
+13200 Woodland Park Road
+Herndon, Virginia 20171
+Registration No.: 74129
+is authorized to construct and operate
+emergency diesel engine generator sets (gen-sets)
+at the IAD-100, IAD-101, IAD-102, and IAD-103 data centers
+located at
+10321, 10301, 10281, and 10261 Tanner Way
+Manassas, Virginia 20110
+(Prince William County)
+in accordance with the Conditions of this permit.
+Approved on: February 21, 2018
+Last Amended June 28, 2021
+Amazon Data Services, Inc.
+Registration Number: 74129
+February 21, 2019 (Last amended June 28, 2021)
+Page 2
+Equipment to be Constructed at IAD-100:
+Reference No. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+1 through 23 Twenty three (23) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+Equipment to be Constructed at IAD-101:
+Reference No. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+24 through 46 Twenty three (23) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+88 through 90 Three (3) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+S1 Caterpillar model C18 emergency diesel engine gen-set 909 bhp 600 ekW None January 28, 2021
+Equipment to be Constructed at IAD-102:
+Reference No. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+47 through 69 Twenty three (23) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+91 and 92 Two (2) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+93 Caterpillar model 3516C-HD emergency diesel engine gen-set 3,634 bhp 2,500 ekW None January 28, 2021
+S2 Caterpillar model C18 emergency diesel engine gen-set 909 bhp 600 ekW None January 28, 2021
+Amazon Data Services, Inc.
+Registration Number: 74129
+February 21, 2019 (Last amended June 28, 2021)
+Page 3
+Equipment to be Constructed at IAD-103:
+Reference No. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+70 through 87 Eighteen (18) Caterpillar model 3516C-HD emergency diesel engine gen-sets 3,634 bhp 2,500 ekW (each unit) None February 15, 2018
+S3 Caterpillar model C18 emergency diesel engine gen-set 909 bhp 600 ekW None January 28, 2021
+Transitory Equipment to be Constructed at IAD-100, IAD-101, IAD-102, and IAD-103:
+Reference No. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+T1 Caterpillar model 3516C emergency diesel engine gen-set 2,937 bhp 2,000 ekW None February 15, 2018
+Equipment Exempt from Permitting:
+Reference No. Equipment Description Rated Capacity Exemption Citation Exemption Date
+AST 1 through AST 23 Twenty-three (23) diesel fuel oil storage tanks 2,500 gallon (each tank) 9 VAC 5-80-1105 B.8 February 15, 2018
+AST 24 through 92 Sixty-nine (69) diesel fuel oil storage tanks 5,000 gallon (each tank) 9 VAC 5-80-1105 B.8 February 15, 2018
+AST 93 Diesel fuel oil storage tank 5,000 gallon 9 VAC 5-80-1105 B.8 January 28, 2021
+AST T1 diesel fuel oil storage tank 1,250 gallon 9 VAC 5-80-1105 B.8 February 15, 2018
+AST S1 through AST S3 Three (3) diesel fuel oil storage tanks 2,200 gallon (each tank) 9 VAC 5-80-1105 B.8 January 28, 2021
+Amazon Data Services, Inc.
+Registration Number: 74129
+February 21, 2019 (Last amended June 28, 2021)
+Page 4
+Operating Limitations
+7. Each individual emergency diesel engine gen-set (Ref. Nos. 1 through 92 and T1) shall not operate more than 100 hours per year
+for maintenance checks and readiness testing (MC/RT) and no more than 500 hours per year for all purposes (as provided in
+Condition 6). The annual limits for hours of operation shall be calculated monthly as the sum of each consecutive 12-month period.
+8. Each individual emergency diesel engine gen-set (Ref. Nos. 93, S1 through S3) shall not operate more than 26 hours per year for scheduled maintenance
+checks and readiness testing (MC/RT) and no more than 500 hours per year for all purposes (as provided in Condition 6).
+9. Fuel Throughput Limits
+a. The emergency diesel engine gen-sets (Ref. Nos: 1 through 93) combined, shall consume no more than 641,268 gallons of diesel fuel per year.
+b. The emergency diesel engine gen-sets (Ref. Nos. S1 through S3) combined, shall consume no more than 67,500 gallons of diesel fuel per year.
+c. The emergency diesel engine gen-set (Ref. No. T1) shall consume no more than 2,070 gallons of diesel fuel per year.
+10. The approved fuel for the emergency diesel engine gen-sets (Ref. Nos. 1 through 93, S1 through S3, and T1) is ultra-low sulfur diesel fuel oil which:
+a. Does not exceed the American Society for Testing and Materials (ASTM) specification, D975, for grade ultra-low sulfur 2-D; and
+b. Has a maximum sulfur content not to exceed 0.0015% by weight (15 ppm).

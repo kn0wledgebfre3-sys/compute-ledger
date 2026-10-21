@@ -1,0 +1,2 @@
+Batch Study Process for Large Load Interconnections
+The Large Load Interconnection Queue continues to grow, with applications of large loads now totaling 445.8 gigawatts (GW) by 2033. Of these current applications, 321 GW of these applications have No Studies Submitted yet to ERCOT. 93.7 GW of Large Load applications are classified as Under ERCOT Review, and 22 GW having Section 9.5 Requirements Met. ERCOT has 5.9 GW of Observed Energized Large Loads, with another 3.2 GW of loads that have Approval to Energize but are not Operational.

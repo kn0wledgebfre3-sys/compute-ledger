@@ -1,0 +1,745 @@
+[
+ {
+  "id": "cl-cerrillos-google-water",
+  "country": "Chile",
+  "region": "Región Metropolitana / Cerrillos",
+  "site_or_subject": "Cerrillos Data Center (Google / Inversiones y Servicios Dataluna Ltda.)",
+  "operator": "Google (Dataluna)",
+  "lat": -33.5,
+  "lon": -70.71,
+  "category": "water",
+  "record": "RCA Res. Ex. N° 127 (24 Feb 2020) approved a design drawing up to 169 L/s of groundwater from purchased rights in the Acuífero Santiago Central, a sector under restriction since 2005 and a prohibition zone since 1 Feb 2020. On 26 Feb 2024 the Segundo Tribunal Ambiental (R-271-2020 acum. R-270-2020) partially annulled the RCA and Res. Ex. 524/2020 for lack of evidence of no significant impact on the aquifer, ordered the SEA to roll back the evaluation to incorporate climate-change effects, and suspended the project until a complementary RCA is issued. In Sept 2024 Dataluna told the SEA it would not proceed with the approved project and would start a new air-cooled design from scratch.",
+  "record_sources": [
+   {
+    "title": "Sentencia R-271-2020 acum. R-270-2020, Segundo Tribunal Ambiental (PDF)",
+    "url": "https://media-front.elmostrador.cl/2024/02/2024.02.26_Sentencia_R-271-2020_Acum._R_N°_270-2020.pdf",
+    "publisher": "Segundo Tribunal Ambiental de Santiago (mirror: El Mostrador)",
+    "date": "2024-02-26"
+   },
+   {
+    "title": "Anulan parcialmente permiso de data center de Google: piden que incluya efectos de cambio climático",
+    "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2024/02/27/anulan-parcialmente-permiso-de-data-center-de-google-piden-que-incluya-efectos-de-cambio-climatico.shtml",
+    "publisher": "BioBioChile",
+    "date": "2024-02-27"
+   },
+   {
+    "title": "Usará miles de litros de agua y se aprobó sin conocer su impacto en el saturado acuífero local",
+    "url": "https://www.ciperchile.cl/?p=138241",
+    "publisher": "CIPER Chile",
+    "date": "2020-05-25"
+   }
+  ],
+  "claim": "Google said (Feb 2024) it had already submitted a design change to air cooling; in Sept 2024 it said it will not proceed with the project as approved in 2020 and will start a new air-cooled project at the same site from scratch, aligned with its 24/7 carbon-free energy goal.",
+  "claim_sources": [
+   {
+    "title": "Chile revoca parcialmente los permisos al nuevo centro de datos de Google",
+    "url": "https://www.datacenterdynamics.com/es/noticias/chile-revoca-parcialmente-los-permisos-al-nuevo-centro-de-datos-de-google-por-preocupaciones-sobre-uso-de-agua",
+    "publisher": "DCD",
+    "date": "2024-02-29"
+   },
+   {
+    "title": "Google se rinde con proyecto original de data center en Cerrillos y anuncia futuro rediseño",
+    "url": "https://www.cnnchile.com/negocios/google-se-rinde-con-proyecto-original-de-data-center-en-cerrillos-y-anuncia-futuro-rediseno-de-la-iniciativa_20240917/",
+    "publisher": "CNN Chile",
+    "date": "2024-09-17"
+   }
+  ],
+  "gap": "Positive example: court-forced reassessment followed by operator withdrawal and announced air-cooled redesign; no new SEA submission documented as of Oct 2026.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "cl-national-datacenter-plan",
+  "country": "Chile",
+  "region": "National",
+  "site_or_subject": "Plan Nacional de Data Centers 2024–2030",
+  "operator": "Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
+  "lat": -33.45,
+  "lon": -70.67,
+  "category": "grid_policy",
+  "record": "Plan launched May 2024 (VII Foro Internacional de Inversión Extranjera), put to public consultation 29 Oct–20 Nov 2024 and presented 5 Dec 2024. The final text states installed data-center capacity has reached 198 MW (up from no more than 35 MW in 2013) and counts 22 medium/large data centers in operation in the Santiago–Valparaíso area; it proposes a voluntary Acuerdo de Producción Limpia between the State and industry on water sustainability, energy efficiency and emissions (stages 2025–2027 and 2028–2030), a geospatial siting tool (IDE Chile) and AI campuses in regions with high renewable availability. It sets no capacity targets, no numeric water-use limits and no mandatory cooling requirements; cooling technologies are described as options.",
+  "record_sources": [
+   {
+    "title": "Plan Nacional de Data Centers 2024–2030 (PDATA), final text",
+    "url": "https://minciencia.gob.cl/archivos/sharing/1733343018/3496",
+    "publisher": "Ministerio de Ciencia, Tecnología, Conocimiento e Innovación",
+    "date": "2024-12"
+   },
+   {
+    "title": "Plan Nacional de Data Centers (documento de consulta)",
+    "url": "https://guerrero.cl/wp-content/uploads/2024/11/DOC_Plan-Nacional-Data-Centers.pdf",
+    "publisher": "MinCiencia (mirror: Guerrero Olivos)",
+    "date": "2024-10-29"
+   },
+   {
+    "title": "Launch of the National Data Centers Plan 2024-2030",
+    "url": "https://www.carey.cl/en/launch-of-the-national-data-centers-plan-2024-2030",
+    "publisher": "Carey",
+    "date": "2024-12-26"
+   }
+  ],
+  "claim": "Government frames the plan as enabling a decentralized industry with low socio-environmental impact based on renewable energy.",
+  "claim_sources": [
+   {
+    "title": "Launch of the National Data Centers Plan 2024-2030",
+    "url": "https://www.carey.cl/en/launch-of-the-national-data-centers-plan-2024-2030",
+    "publisher": "Carey",
+    "date": "2024-12-26"
+   }
+  ],
+  "gap": "Water and energy sustainability measures are a voluntary agreement; the plan reports installed capacity (198 MW) but sets no capacity target and no binding quantitative water or cooling standard.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched final plan text on minciencia.gob.cl: confirms 22 data centers in operation, voluntary APL on water/energy/emissions (2025–2027, 2028–2030), IDE Chile tool and renewable-region AI campuses; corrected the earlier statement (based on the consultation mirror) that the plan has no MW totals: it states 198 MW installed, up from no more than 35 MW in 2013; no binding water or cooling limit found.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "uy-canelones-google-water",
+  "country": "Uruguay",
+  "region": "Canelones / Parque de las Ciencias",
+  "site_or_subject": "Google data center 'Teros' (Eleanor Applications SRL)",
+  "operator": "Google",
+  "lat": -34.8,
+  "lon": -56.03,
+  "category": "water",
+  "record": "After the Ministry of Environment withheld the project's water need as industrial secrecy, the Juzgado Letrado en lo Contencioso Administrativo and the Tribunal de Apelaciones en lo Civil de 7° Turno (sentence 23 Feb 2023) ordered disclosure to requester Daniel Pena (Cndav). Released figures: 7,600 m³/day (7.6 million L/day) of potable water in the original design, and a Google-stated first-stage peak of 3,800 m³/day (March 2023), during the 2023 Montevideo drinking-water crisis (Paso Severino reservoir; brackish water blended into supply). Revised EIA (Nov 2023): 32 air-cooled closed-loop chillers (7+1 per module), 48 m³/day water for kitchens and bathrooms, one building instead of two, AAP documentation filed 26 Oct 2023.",
+  "record_sources": [
+   {
+    "title": "Uso de agua en data center de Google: tribunal ordena a Ambiente entregar datos",
+    "url": "https://www.elobservador.com.uy/nota/uso-de-agua-en-data-center-de-google-tribunal-ordena-a-ambiente-entregar-datos-202331203016/amp",
+    "publisher": "El Observador",
+    "date": "2023-03-12"
+   },
+   {
+    "title": "Ministro de Ambiente dijo que plan de data center de Google se retiró",
+    "url": "https://www.elobservador.com.uy/nota/ministro-de-ambiente-dijo-que-plan-de-data-center-de-google-se-retiro-hoy-por-hoy-no-tenemos-proyecto--202351893243",
+    "publisher": "El Observador",
+    "date": "2023-05-18"
+   },
+   {
+    "title": "Sin agua, con enfriamiento por aire y un edificio en lugar de dos: los detalles del proyecto de Google en Uruguay",
+    "url": "https://www.elobservador.com.uy/nota/sin-agua-con-enfriamiento-por-aire-y-un-edificio-en-lugar-de-dos-los-detalles-del-proyecto-de-google-en-uruguay-2023112116100",
+    "publisher": "El Observador",
+    "date": "2023-11-22"
+   },
+   {
+    "title": "A briga dos uruguaios contra o Google",
+    "url": "https://apublica.org/2023/08/a-briga-dos-uruguaios-contra-o-google/",
+    "publisher": "Agência Pública",
+    "date": "2023-08"
+   }
+  ],
+  "claim": "Google (Nov 2023): servers will be air-cooled, water use comparable to ordinary commercial/domestic and fire-protection needs. Google (2025): Uruguay was analysed as an alternative when the Chile project was in question; investment >US$850 million.",
+  "claim_sources": [
+   {
+    "title": "Data center de Google en Uruguay enfriará servidores con aire, sin uso intensivo de agua",
+    "url": "https://www.elobservador.com.uy/nota/data-center-de-google-en-uruguay-enfriara-servidores-con-aire-sin-uso-intensivo-de-agua-202311619530",
+    "publisher": "El Observador",
+    "date": "2023-11-07"
+   },
+   {
+    "title": "Google adapta centros de datos en Latam ante retos hídricos: este fue el caso de Uruguay",
+    "url": "https://www.bloomberglinea.com/tecnologia/google-adapta-centros-de-datos-en-latam-ante-retos-hidricos-este-fue-el-caso-de-uruguay/",
+    "publisher": "Bloomberg Línea",
+    "date": "2025"
+   }
+  ],
+  "gap": "Positive example: court-ordered disclosure followed by a redesign cutting stated operational water from 7,600 to 48 m³/day; no MW figure for the site is on the public record.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "br-ons-grid-connection-pipeline",
+  "country": "Brazil",
+  "region": "National (concentration in São Paulo)",
+  "site_or_subject": "Data-center grid connection requests vs. approvals (ONS/EPE)",
+  "operator": "ONS / EPE / ANEEL",
+  "lat": -15.79,
+  "lon": -47.88,
+  "category": "grid_policy",
+  "record": "ONS DG Marcio Rea (ANEEL workshop, 4 Sep 2025): 30 data centers with accepted access opinions totalling ~2.5 GW on the SIN (12 rede básica, 7 other transmission, 11 at generation plants), mostly in São Paulo. EPE: 26.2 GW of data-center projects in the connection process at end-2025 (not contracted); recommended ~R$1.6 bn of São Paulo transmission works for ~4 GW of margin; Northeast study of 30 projects totalling 8.3 GW to 2038. The Redata tax regime (MP 1.318/2025) lapsed 25 Feb 2026 without a Senate vote.",
+  "record_sources": [
+   {
+    "title": "ONS já autorizou conexão de 30 data centers, diz diretor-geral",
+    "url": "https://agenciainfra.com/blog/ons-ja-autorizou-conexao-de-30-data-centers-diz-diretor-geral/",
+    "publisher": "Agência iNFRA",
+    "date": "2025-09-04"
+   },
+   {
+    "title": "Data centers colocam 26,2 GW em pedidos de conexão e testam capacidade da rede elétrica brasileira",
+    "url": "https://cenarioenergia.com.br/2026/09/03/data-centers-262-gw-conexao-capacidade-rede-eletrica-brasileira/",
+    "publisher": "Cenário Energia",
+    "date": "2026-09-03"
+   },
+   {
+    "title": "MP do Redata caduca sem votação no Senado",
+    "url": "https://cenarioenergia.com.br/2026/02/26/mp-do-redata-caduca-sem-votacao-no-senado-e-cria-vacuo-regulatorio-para-data-centers-e-demanda-por-energia-limpa/",
+    "publisher": "Cenário Energia",
+    "date": "2026-02-26"
+   }
+  ],
+  "claim": "ONS says it is working with MME, ANEEL and EPE on structural solutions; Finance Minister Haddad said lawyers are seeking a way to restore Redata within fiscal law.",
+  "claim_sources": [
+   {
+    "title": "ONS já autorizou conexão de 30 data centers, diz diretor-geral",
+    "url": "https://agenciainfra.com/blog/ons-ja-autorizou-conexao-de-30-data-centers-diz-diretor-geral/",
+    "publisher": "Agência iNFRA",
+    "date": "2025-09-04"
+   }
+  ],
+  "gap": "Roughly tenfold gap between grid-accepted (~2.5 GW, Sep 2025) and requested (26.2 GW, end-2025) capacity; no ANEEL/ONS document number retrieved.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched (Portuguese) EPE and ONS publications for the EPE data-center connection note (26.2 GW; R$1.6 bn São Paulo works; 8.3 GW Northeast study) and for ONS access opinions or the 4 Sep 2025 ANEEL workshop presentation; no primary document located. Figures remain via Agência iNFRA and Cenário Energia.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "br-eldorado-scala-ai-city",
+  "country": "Brazil",
+  "region": "Rio Grande do Sul / Eldorado do Sul",
+  "site_or_subject": "Scala AI City",
+  "operator": "Scala Data Centers",
+  "lat": -30.08,
+  "lon": -51.62,
+  "category": "power",
+  "record": "MME Portaria SNTEP/MME nº 2.942 (9 May 2025) recognised Scala Data Centers S.A.'s access alternative to the Rede Básica for the Eldorado do Sul data center (sectioning of the 525 kV Guaíba 3–Nova Santa Rita C1 line, ~2.34 km of double-circuit 525 kV extensions and a new 525/230 kV Scala DC substation) as least-global-cost and compatible with expansion planning. The Portaria states no MW amount, makes effective connection conditional on an ONS Parecer de Acesso, ANEEL authorisation and ONS-verified system availability, and lapses if the installations are not in a transmission-use contract (CUST) by 31 Dec 2033. Company/press figures: 4.75 GW at full build over 10–20 years on a 10 million m² site; phase 1 BRL 3 bn, ~50–54 MW IT. The municipality's enabling law makes licensing 'simplificada e autodeclaratória'; Rio Grande do Sul has no environmental licensing category for data centers (Fepam proposed one, no timeline). The May 2024 flood displaced ~32,000 of the municipality's 39,000 residents; the site itself was not flooded.",
+  "record_sources": [
+   {
+    "title": "Portaria SNTEP/MME nº 2.942, de 9 de maio de 2025 (Scala Data Centers S.A., Eldorado do Sul)",
+    "url": "https://www.gov.br/mme/pt-br/assuntos/secretarias/sntep/acesso-rede-basica/portarias-publicadas/2025/portaria_sntep_mme_2942",
+    "publisher": "Ministério de Minas e Energia",
+    "date": "2025-05-09"
+   },
+   {
+    "title": "Scala AI City: Brazil's Ministry of Mines and Energy approves 5 GW power connection",
+    "url": "https://www.intelligentcio.com/latam/2025/05/15/scala-ai-city-brazils-ministry-of-mines-and-energy-approves-5-gw-power-connection-for-data-center-city-in-rio-grande-do-sul/",
+    "publisher": "Intelligent CIO",
+    "date": "2025-05-15"
+   },
+   {
+    "title": "'Cidade de data centers' no RS pode gastar mais energia que 40 milhões de pessoas",
+    "url": "https://www.brasildefato.com.br/2025/04/22/cidade-de-data-centers-no-rs-pode-gastar-mais-energia-que-40-milhoes-de-pessoas",
+    "publisher": "Brasil de Fato",
+    "date": "2025-04-22"
+   }
+  ],
+  "claim": "Scala claims 100% renewable, I-REC-certified energy with wind and hydro PPAs through at least 2039, and cooling that needs only an initial water charge with no replenishment; it did not state an expected water load for the site.",
+  "claim_sources": [
+   {
+    "title": "Scala AI City: MME approves 5 GW power connection",
+    "url": "https://www.intelligentcio.com/latam/2025/05/15/scala-ai-city-brazils-ministry-of-mines-and-energy-approves-5-gw-power-connection-for-data-center-city-in-rio-grande-do-sul/",
+    "publisher": "Intelligent CIO",
+    "date": "2025-05-15"
+   }
+  ],
+  "gap": "A 4.75 GW full-build plan rests on an MME least-cost access finding that states no MW and still requires ONS and ANEEL access decisions, alongside a self-declaratory municipal licence and no state licensing category; operator's water figure is not on the public record.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched Portaria SNTEP/MME nº 2.942 (9 May 2025) on gov.br: it recognises the 525 kV access alternative but states no MW and requires an ONS Parecer de Acesso and ANEEL authorisation; corrected the earlier press wording 'MME authorised a 5 GW ramp-up connection' (Intelligent CIO). 4.75 GW and phase-1 figures remain company/press figures; the municipal licensing law text was not located.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "br-pecem-casadosventos-bytedance",
+  "country": "Brazil",
+  "region": "Ceará / Caucaia (Pecém)",
+  "site_or_subject": "Data Center Pecém (Casa dos Ventos; ByteDance reported client)",
+  "operator": "Casa dos Ventos",
+  "lat": -3.55,
+  "lon": -38.8,
+  "category": "water",
+  "record": "ONS connection approval reported 30 May 2025 after an earlier rejection on grid-stability grounds; 300 MW initial, up to 900 MW; operations slated Jan 2027. Semace licensed phase 1 via a 658-page Relatório Ambiental Simplificado (31 impacts, 10 significant) classed low-impact; phase 1 210 MW average draw (5,040 MWh/day); water 18–30 m³/day via closed-loop air-cooled chillers, two SRH water-use permits, and an 18 Aug 2025 Cipp S/A–Utilitas reuse-water agreement replacing initially planned artesian wells. On 22 Oct 2025 Idec, the Anacé people, Terramar and Frei Tito asked the MPF to suspend licensing and annul the licença prévia, citing lack of EIA/Rima and ILO 169 consultation. On 10 Sep 2026 the MPF and DPU filed Ação Civil Pública nº 0080626-66.2026.4.05.8100 against builder Omnia and Semace (State of Ceará and Caucaia later added), stating that the licença prévia and licença de instalação had been granted on an RAS, citing 300 MW installed power, ~70 ha and 120 diesel generators, and seeking to bar the operating licence and energisation pending ILO 169 consultation of the Anacé, an EIA/Rima and groundwater pumping tests.",
+  "record_sources": [
+   {
+    "title": "MPF e DPU vão à Justiça para impedir operação de data center no Complexo do Pecém, em Caucaia (CE)",
+    "url": "https://www.mpf.mp.br/o-mpf/unidades/pr-ce/noticias/mpf-e-dpu-vao-a-justica-para-impedir-operacao-de-data-center-no-complexo-do-pecem-em-caucaia-ce",
+    "publisher": "Ministério Público Federal (PR-CE)",
+    "date": "2026-09-10"
+   },
+   {
+    "title": "Entidades pedem suspensão de licenciamentos de data center do TikTok no Ceará",
+    "url": "https://www.opovo.com.br/noticias/economia/2025/10/22/entidades-pedem-suspensao-de-licenciamentos-de-data-center-do-tik-tok-no-ceara.html",
+    "publisher": "O Povo",
+    "date": "2025-10-22"
+   },
+   {
+    "title": "Casa dos Ventos granted approval to construct TikTok-backed 300MW data center in Brazil",
+    "url": "https://www.datacenterdynamics.com/en/news/casa-dos-ventos-granted-approval-to-construct-tiktok-backed-300mw-data-center-in-brazil-report/",
+    "publisher": "DCD",
+    "date": "2025-06-02"
+   }
+  ],
+  "claim": "Casa dos Ventos says the project will run on 100% renewable energy from new dedicated plants and that licences rest on detailed technical studies; Semace says all legal procedures were followed and community hearings are a condition of the installation licence.",
+  "claim_sources": [
+   {
+    "title": "Entidades pedem suspensão de licenciamentos de data center do TikTok no Ceará",
+    "url": "https://www.opovo.com.br/noticias/economia/2025/10/22/entidades-pedem-suspensao-de-licenciamentos-de-data-center-do-tik-tok-no-ceara.html",
+    "publisher": "O Povo",
+    "date": "2025-10-22"
+   }
+  ],
+  "gap": "Low-water design (reuse water, air cooling) is reported from the RAS, while the MPF/DPU action refers to groundwater abstraction for cooling and seeks pumping tests; the simplified licensing route is contested in federal court; ByteDance's role is reported, not confirmed in the licensing or court record.",
+  "confidence": "medium",
+  "verified_primary": true,
+  "verification_note": "Partial: fetched MPF-CE release on ACP nº 0080626-66.2026.4.05.8100 (10 Sep 2026), which confirms RAS-based Semace licensing (LP and LI granted), 300 MW, no EIA/Rima and no Anacé ILO 169 consultation; it gives no water volume, so the 18–30 m³/day, SRH permits and Cipp–Utilitas reuse agreement remain via O Povo and the RAS itself was not fetched; confidence left medium for that reason.",
+  "last_checked": "2026-10-20",
+  "verification_status": "partial"
+ },
+ {
+  "id": "ar-stargate-argentina-rigi",
+  "country": "Argentina",
+  "region": "Patagonia (Neuquén / Río Negro / Chubut candidates)",
+  "site_or_subject": "Stargate Argentina (OpenAI – Sur Energy)",
+  "operator": "Sur Energy / OpenAI",
+  "lat": -40.8,
+  "lon": -68.0,
+  "category": "power",
+  "record": "Announced by the Presidency on 10 Oct 2025: up to US$25 bn, up to 500 MW, letter of intent between OpenAI and Sur Energy, to be structured under RIGI. As of 28 May 2026 the Economy Ministry said the project 'has not been presented' under RIGI; the FARN RIGI Observatory lists 17 approved and 23 under evaluation, none Stargate; no site confirmed.",
+  "record_sources": [
+   {
+    "title": "Chau GPT? No trace of mega-billion-dollar AI project announced before elections",
+    "url": "https://batimes.com.ar/news/economy/chau-gpt-no-trace-of-mega-billion-dollar-ai-project-announced-before-elections.phtml",
+    "publisher": "Buenos Aires Times / Perfil",
+    "date": "2026-05-28"
+   },
+   {
+    "title": "Stargate Argentina: OpenAI announces US$25 billion AI DC project in Patagonia",
+    "url": "https://w.media/stargate-argentina-openai-announces-us-25-billion-ai-dc-project-in-patagonia/",
+    "publisher": "W.Media",
+    "date": "2025-10-14"
+   }
+  ],
+  "claim": "Government and Sam Altman described a 500 MW facility 'fully powered by renewable energy'; Sur Energy says it has contracts with Central Puerto and Genneia, a closed-loop water system, construction in 2026 and operation by early 2027.",
+  "claim_sources": [
+   {
+    "title": "Stargate Argentina: OpenAI announces US$25 billion AI DC project in Patagonia",
+    "url": "https://w.media/stargate-argentina-openai-announces-us-25-billion-ai-dc-project-in-patagonia/",
+    "publisher": "W.Media",
+    "date": "2025-10-14"
+   },
+   {
+    "title": "Chau GPT? No trace of mega-billion-dollar AI project",
+    "url": "https://batimes.com.ar/news/economy/chau-gpt-no-trace-of-mega-billion-dollar-ai-project-announced-before-elections.phtml",
+    "publisher": "Buenos Aires Times / Perfil",
+    "date": "2026-05-28"
+   }
+  ],
+  "gap": "Only claims exist; no RIGI filing, Official Gazette entry, site or permit record as of May 2026.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched for the Presidency release of 10 Oct 2025 and Boletín Oficial RIGI approvals; fetched the Ministry of Economy release of 11 Jun 2026 (argentina.gob.ar/node/504545: 16 RIGI projects approved, 25 under evaluation), which names no projects, so the absence of a Stargate filing could not be confirmed from a primary list. The counts differ from the FARN figures (17/23, May 2026) because of date and source. Figures remain via Buenos Aires Times and W.Media.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ae-abudhabi-uae-us-ai-campus-5gw",
+  "country": "United Arab Emirates",
+  "region": "Abu Dhabi",
+  "site_or_subject": "UAE–US AI Campus (5 GW) incl. Stargate UAE 1 GW cluster",
+  "operator": "G42 / Khazna (with OpenAI, Oracle, Nvidia, Cisco, SoftBank)",
+  "lat": 24.45,
+  "lon": 54.65,
+  "category": "power",
+  "record": "Unveiled 15 May 2025: 5 GW of AI data-center capacity built by G42; compute access jointly regulated by the UAE and US and reserved for US hyperscalers and approved providers. The official release states the campus 'will use nuclear, solar, and gas power' and gives no shares and no water or cooling information. Stargate UAE (1 GW) is being built by Khazna with the first 200 MW targeted for 2026 delivery (G42, Oct 2025).",
+  "record_sources": [
+   {
+    "title": "UAE and US Presidents attend the unveiling of Phase 1 of new 5GW AI campus in Abu Dhabi",
+    "url": "https://content.govdelivery.com/accounts/USDOC/bulletins/3e08f89",
+    "publisher": "US Department of Commerce",
+    "date": "2025-05-15"
+   },
+   {
+    "title": "UAE, US Presidents attend unveiling of Phase 1 of new 5GW AI campus in Abu Dhabi",
+    "url": "https://www.uae-embassy.org/news/uae-us-presidents-attend-unveiling-phase-1-new-5gw-ai-campus-abu-dhabi",
+    "publisher": "UAE Embassy in the US (WAM)",
+    "date": "2025-05-15"
+   },
+   {
+    "title": "G42 announces major progress on Stargate UAE",
+    "url": "https://gulfbusiness.com/en/2025/tech/g42-announces-major-progress-on-stargate-uae/",
+    "publisher": "Gulf Business",
+    "date": "2025-10-19"
+   }
+  ],
+  "claim": "Government: campus will use nuclear, solar and gas 'to minimise carbon emissions once completed'. G42: construction 'well underway and progressing steadily toward the planned 2026 delivery'.",
+  "claim_sources": [
+   {
+    "title": "UAE, US Presidents attend unveiling of Phase 1 of new 5GW AI campus",
+    "url": "https://www.uae-embassy.org/news/uae-us-presidents-attend-unveiling-phase-1-new-5gw-ai-campus-abu-dhabi",
+    "publisher": "UAE Embassy in the US (WAM)",
+    "date": "2025-05-15"
+   },
+   {
+    "title": "G42 announces major progress on Stargate UAE",
+    "url": "https://gulfbusiness.com/en/2025/tech/g42-announces-major-progress-on-stargate-uae/",
+    "publisher": "Gulf Business",
+    "date": "2025-10-19"
+   }
+  ],
+  "gap": "No EWEC/DEWA/Masdar/ENEC document ties specific generation or desalinated-water supply to the campus; generation shares and water use are undisclosed.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched US Department of Commerce release of 15 May 2025: confirms 5 GW, G42 as builder, compute reserved for US hyperscalers and approved cloud providers under KYC controls, 'nuclear, solar, and gas power', and no water, cooling or generation-share figures. The WAM original returned no text; the Stargate UAE 200 MW / 2026 target remains via Gulf Business.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "sa-humain-pif-datacenters",
+  "country": "Saudi Arabia",
+  "region": "Riyadh / Dammam / Eastern Province",
+  "site_or_subject": "Humain data-center programme",
+  "operator": "Humain (Public Investment Fund)",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": "power",
+  "record": "Humain (PIF subsidiary, launched May 2025) confirmed 211 land plots nationwide (Mar 2026), ~6 GW planned over a decade, and first 100 MW facilities in Riyadh and Dammam targeted live Q2 2026. On 2 Sep 2026 National Grid SA and Humain signed a cooperation agreement on electricity supply to a Riyadh AI data-center project; no MW, tariff or generation source was disclosed. CEO target (May 2025): 1.9 GW by 2030, 6.6 GW by ~2034, with 'subsidized electricity' (no figure).",
+  "record_sources": [
+   {
+    "title": "Saudi Energy signs three agreements to support AI data centre growth",
+    "url": "https://www.tradearabia.com/News/467418/Saudi-Energy-signs-three-agreements-to-support-AI-data-centre-growth/OGN",
+    "publisher": "TradeArabia / OGN",
+    "date": "2026-09-02"
+   },
+   {
+    "title": "Humain secures 211 plots of land in Saudi Arabia for data centers",
+    "url": "https://www.datacenterdynamics.com/en/news/humain-secures-211-plots-of-land-in-saudi-arabia-for-data-centers/",
+    "publisher": "DCD",
+    "date": "2026-03-12"
+   }
+  ],
+  "claim": "Humain CEO Tareq Amin: 1.9 GW by 2030 rising to 6.6 GW; Riyadh will subsidize electricity prices; goal to process 7% of global training/inference by 2030.",
+  "claim_sources": [
+   {
+    "title": "Saudi Arabia's AI co Humain looking for US data center equity partner, targets 6.6GW by 2034 with subsidized electricity",
+    "url": "https://www.datacenterdynamics.com/en/news/saudi-arabias-ai-co-humain-looking-for-us-data-center-equity-partner-targets-66gw-by-2034-with-subsidized-electricity",
+    "publisher": "DCD (citing FT)",
+    "date": "2025-05-28"
+   }
+  ],
+  "gap": "Public record consists of capacity targets and a grid cooperation agreement; no SEC/ECRA filing, generation mix, tariff or water/desalination data found.",
+  "confidence": "low",
+  "verified_primary": false,
+  "verification_note": "Searched SPA, Saudi Electricity/Tadawul and Humain releases for the 2 Sep 2026 National Grid SA–Humain agreement and the 211-plot / ~6 GW figures; fetched a Sharikat Mubasher item (news citing SPA, not a filing) that gives no MW, value or generation source. No ECRA, Tadawul or Humain primary document located.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "il-electricity-authority-dc-freeze-2026",
+  "country": "Israel",
+  "region": "National",
+  "site_or_subject": "Electricity Authority 140-day freeze on data-center grid applications",
+  "operator": "Israel Electricity Authority / Noga",
+  "lat": 31.77,
+  "lon": 35.21,
+  "category": "moratorium",
+  "record": "On 20 Jul 2026 the Electricity Authority halted processing of new grid-connection applications for data centers of 8 MW or more for 140 days (to early Dec 2026), with public consultation to 19 Aug. Noga had received ~19 GW of new requests within two months on top of an ~8 GW backlog (~27 GW pending), against average national consumption ~9 GW and an Aug 2025 peak ~17 GW; ~1.5 GW of existing commitments already consume planned capacity through 2035. The surge followed the February 2026 National Cyber Defense Bill classifying data centers as national infrastructure.",
+  "record_sources": [
+   {
+    "title": "Israel freezes data center grid connections for 140 days (CTech)",
+    "url": "https://www.calcalistech.com/ctechnews/article/tvp6729tr",
+    "publisher": "Calcalist / CTech",
+    "date": "2026-07-21"
+   },
+   {
+    "title": "Israeli Electrical Authority freezes grid processing of new data centers for 140 days",
+    "url": "https://www.datacenterdynamics.com/en/news/israeli-electrical-authority-freezes-grid-processing-of-new-data-centers-for-140-days/",
+    "publisher": "DCD",
+    "date": "2026-07-28"
+   }
+  ],
+  "claim": "Authority calls the pause an 'emergency brake' so the system does not commit to connections it 'may be unable to fulfill'; joint review with Ministry of Energy and Noga to set a new allocation policy.",
+  "claim_sources": [
+   {
+    "title": "Israeli Electrical Authority freezes grid processing of new data centers for 140 days",
+    "url": "https://www.datacenterdynamics.com/en/news/israeli-electrical-authority-freezes-grid-processing-of-new-data-centers-for-140-days/",
+    "publisher": "DCD",
+    "date": "2026-07-28"
+   }
+  ],
+  "gap": "None documented; the Authority's consultation document itself was not retrieved.",
+  "confidence": "high",
+  "last_checked": "2026-10-19"
+ },
+ {
+  "id": "za-teraco-solar-wheeling-diesel",
+  "country": "South Africa",
+  "region": "Gauteng (Isando/Bredell), Western Cape, KZN; Free State solar",
+  "site_or_subject": "Teraco portfolio: diesel dependence and 120 MW wheeled solar",
+  "operator": "Teraco",
+  "lat": -26.14,
+  "lon": 28.2,
+  "category": "fuel",
+  "record": "Teraco reported 186 MW of critical power load (Isando 70, Bredell 64, Cape Town 50, Durban 2); CEO Jan Hnizdo said grid availability was 'around 15%' at some sites during load-shedding with diesel spend of 'millions of rands in a month'. In Feb 2024 Teraco announced a 120 MW Free State solar PV plant (~R2 bn, >338,000 MWh/yr) to be wheeled across Eskom and municipal networks after securing its first Eskom grid-capacity allocation, with an 18-month build. Western Cape Government recorded >3,000 hours of load shedding in 2022.",
+  "record_sources": [
+   {
+    "title": "Teraco to build 120MW solar facility to power South Africa's data centres",
+    "url": "https://techpoint.africa/2024/02/21/teraco-build-solar-facility-south-africas",
+    "publisher": "Techpoint Africa",
+    "date": "2024-02-21"
+   },
+   {
+    "title": "Western Cape briefing to NCOP on impact of load shedding",
+    "url": "https://www.parliament.gov.za/storage/app/media/Pages/2023/14-02-2023_NCOP_Ministerial_Briefing_Session_on_the_Impact_of_Loadshedding/session2/Western_Cape.pdf",
+    "publisher": "Parliament of South Africa / Western Cape Government",
+    "date": "2023-02-14"
+   }
+  ],
+  "claim": "Teraco claims 100% uptime over the prior two years despite grid availability as low as ~15% at some sites, and that the solar plant will supply its sites nationwide via wheeling.",
+  "claim_sources": [
+   {
+    "title": "Teraco to build 120MW solar facility",
+    "url": "https://techpoint.africa/2024/02/21/teraco-build-solar-facility-south-africas",
+    "publisher": "Techpoint Africa",
+    "date": "2024-02-21"
+   }
+  ],
+  "gap": "Positive example: documented renewable wheeling response to diesel dependence; no NERSA licence, Eskom wheeling agreement or diesel-volume record located, and plant commissioning status not verified.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Fetched Teraco's own release of 21 Feb 2024 (company statement, not a regulator record): it confirms 120 MW Free State PV, >338,000 MWh/yr, wheeling over Eskom and municipal networks and the first Eskom grid-capacity allocation, but does not contain the R2 bn cost, 18-month build, 186 MW load breakdown, 15% grid availability or diesel-spend figures (interview via Techpoint). DCD (12 Nov 2024) reports construction started with operation projected late 2026. No NERSA or Eskom wheeling document located.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "za-capetown-580mw-objection",
+  "country": "South Africa",
+  "region": "Western Cape / Cape Town",
+  "site_or_subject": "Cape Town new data centers (Cavaleros 360 MW, Teraco +60 MW, Equinix 160 MW peak)",
+  "operator": "Cavaleros Group; Teraco; Equinix",
+  "lat": -33.97,
+  "lon": 18.6,
+  "category": "power",
+  "record": "Four projects total ~580 MW, about 34% of the City of Cape Town's current maximum demand of 1,676 MW (Daily Maverick calculation; the City did not comment). The City declined to release demand projections and backup-generator capacity citing POPIA. A 13 Apr 2026 objection by Foxglove and the Housing Assembly (Legal Resources Centre) to the Equinix rezoning cites undisclosed water volumes, generator numbers, diesel storage and possible Major Hazard Installation status; the City says it is still evaluating the application.",
+  "record_sources": [
+   {
+    "title": "New data centres set to swallow 34% of Cape Town's current electricity supply",
+    "url": "https://www.dailymaverick.co.za/article/2026-04-28-new-data-centres-set-to-swallow-34-of-cape-towns-current-electricity-supply/",
+    "publisher": "Daily Maverick",
+    "date": "2026-04-28"
+   }
+  ],
+  "claim": "Equinix: 160 MW is a 'maximum-case scenario', new halls use dry air cooling with 'no water for data hall cooling'. City of Cape Town: added demand 'might well be seen as a welcome reinvigoration'; it promotes treated effluent for high-consumption users and does not see data-center impact on Eskom EAF as a major concern.",
+  "claim_sources": [
+   {
+    "title": "New data centres set to swallow 34% of Cape Town's current electricity supply",
+    "url": "https://www.dailymaverick.co.za/article/2026-04-28-new-data-centres-set-to-swallow-34-of-cape-towns-current-electricity-supply/",
+    "publisher": "Daily Maverick",
+    "date": "2026-04-28"
+   }
+  ],
+  "gap": "Water volumes, backup generator counts and diesel storage for all four projects are absent from the public record; Equinix's air-cooling statement is a claim not yet in a permit document.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched City of Cape Town Municipal Planning Tribunal records and the 13 Apr 2026 Foxglove/LRC objection; neither located. A Foxglove release of 14 Jul 2026 (objector statement, not a City record) reports MPT approval of Equinix's 174 MVA King Air Industria application with water use deferred to the site development plan stage; later press reports an appeal (Sep 2026). The 580 MW and 1,676 MW figures remain Daily Maverick calculations.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ke-olkaria-ecocloud-geothermal",
+  "country": "Kenya",
+  "region": "Nakuru County / Olkaria (Naivasha)",
+  "site_or_subject": "EcoCloud 'Project Eagle' at KenGen Green Energy Park",
+  "operator": "Olkaria EcoCloud Data Centre (G42 MoU partner)",
+  "lat": -0.88,
+  "lon": 36.31,
+  "category": "power",
+  "record": "Ground broken 1 Sep 2023 at KenGen's Green Energy Park: phase 1 24 MW IT across eight 3 MW halls, 70 MW total expected draw, geothermal power purchased from KenGen at 7 US cents/kWh, air-cooled chilled-water design with target PUE ≤1.25. On 8 Mar 2024 EcoCloud and G42 signed an MoU to start at 100 MW with potential to 1 GW. DCD (May 2026) lists Project Eagle as continuing while the separate Microsoft–G42 project stalled.",
+  "record_sources": [
+   {
+    "title": "Ground broken on geothermal-powered data center in Kenya",
+    "url": "https://datacenterdynamics.com/en/news/ground-broken-on-geothermal-powered-data-center-in-kenya",
+    "publisher": "DCD",
+    "date": "2023-09-01"
+   },
+   {
+    "title": "UAE's G42 partners with Kenya's EcoCloud for geothermal data center",
+    "url": "https://datacenterdynamics.com/en/news/uaes-g42-partners-with-kenyas-ecocloud-for-geothermal-data-center",
+    "publisher": "DCD",
+    "date": "2024-03-08"
+   }
+  ],
+  "claim": "KenGen and EcoCloud describe the site as powered entirely by geothermal energy, 'the first of its kind in Africa'; Prime CS Mudavadi said government 'will facilitate more green data centers'.",
+  "claim_sources": [
+   {
+    "title": "Ground broken on geothermal-powered data center in Kenya",
+    "url": "https://datacenterdynamics.com/en/news/ground-broken-on-geothermal-powered-data-center-in-kenya",
+    "publisher": "DCD",
+    "date": "2023-09-01"
+   }
+  ],
+  "gap": "Positive example: geothermal-fed, air-cooled design with disclosed tariff and PUE target; energised capacity as of 2026 is not on the public record.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Searched KenGen releases and the KenGen 2025 annual report (only an aggregator summary reachable: Green Energy Park gazetted as an SEZ, no EcoCloud mention); no KenGen, EPRA or PPA document confirming the 7 US cents/kWh tariff, 24 MW / 70 MW figures or energised capacity was located. Figures remain via DCD.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ke-olkaria-microsoft-g42-stalled",
+  "country": "Kenya",
+  "region": "Nakuru County / Olkaria",
+  "site_or_subject": "Microsoft–G42 US$1 bn geothermal data-center campus",
+  "operator": "Microsoft / G42 (host: KenGen)",
+  "lat": -0.88,
+  "lon": 36.31,
+  "category": "power",
+  "record": "KenGen release (23 May 2024): US$1 bn campus at the 342 ha Green Energy Park, '100% renewable geothermal', groundbreaking planned Q3 2024, East Africa Cloud Region within 24 months; DCD records an initial 100 MW. In May 2026 President Ruto said the facility would need ~1 GW against Kenya's ~3 GW installed capacity ('we would need to shut off power for half the country'); the National Treasury did not clear the concept note; the May 2026 launch date passed; Bloomberg reported the breakdown stemmed from a Microsoft/G42 request for a government capacity-lease commitment.",
+  "record_sources": [
+   {
+    "title": "KenGen teams up with Microsoft and G42 for $1B green data center in Olkaria",
+    "url": "https://www.kengen.co.ke/kengen-teams-up-with-microsoft-and-g42-for-1b-cutting-edge-green-data-center-in-olkaria/",
+    "publisher": "KenGen",
+    "date": "2024-05-23"
+   },
+   {
+    "title": "Microsoft and G42 data center in Kenya stalled due to lack of power capacity",
+    "url": "https://datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/",
+    "publisher": "DCD",
+    "date": "2026-05-07"
+   },
+   {
+    "title": "Kenya suspends plans for Microsoft's geothermal-powered data centre",
+    "url": "https://www.thinkgeoenergy.com/kenya-suspends-plans-for-microsofts-geothermal-powered-data-centre/?amp=1",
+    "publisher": "ThinkGeoEnergy",
+    "date": "2026-05-08"
+   }
+  ],
+  "claim": "KenGen (2024): campus to run on 100% renewable geothermal power, construction from Q3 2024, East Africa cloud region live within 24 months. Microsoft (2024, as reported by DCD): 'state-of-the-art water conservation technology'. Microsoft and G42 did not respond to DCD's request for comment in May 2026.",
+  "claim_sources": [
+   {
+    "title": "KenGen teams up with Microsoft and G42",
+    "url": "https://www.kengen.co.ke/kengen-teams-up-with-microsoft-and-g42-for-1b-cutting-edge-green-data-center-in-olkaria/",
+    "publisher": "KenGen",
+    "date": "2024-05-23"
+   },
+   {
+    "title": "Microsoft and G42 data center in Kenya stalled due to lack of power capacity",
+    "url": "https://datacenterdynamics.com/en/news/microsoft-and-g42-data-center-in-kenya-stalled-due-to-lack-of-power-capacity/",
+    "publisher": "DCD",
+    "date": "2026-05-07"
+   }
+  ],
+  "gap": "Discrepancy: 100 MW initial capacity in 2024 announcements versus ~1 GW cited by the President in 2026; project stalled with no energised capacity documented.",
+  "confidence": "medium",
+  "verified_primary": false,
+  "verification_note": "Re-fetched KenGen release (23 May 2024): confirms US$1 bn, 342 ha, 100% geothermal, Q3 2024 construction start and 24-month cloud region, but states no campus MW and contains no water-conservation statement (claim line re-attributed to DCD's report). No State House transcript, National Treasury or Microsoft/G42 document on the 2026 stall located; 2026 figures remain via DCD and ThinkGeoEnergy.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ng-lagos-diesel-gas-dependence",
+  "country": "Nigeria",
+  "region": "Lagos State",
+  "site_or_subject": "Lagos data centers: on-site diesel and gas generation",
+  "operator": "Rack Centre; OADC; Nxtra; MTN (sector)",
+  "lat": 6.52,
+  "lon": 3.38,
+  "category": "fuel",
+  "record": "Rack Centre CEO (28 Oct 2025): diesel ~₦1,000/L, a 1 MW diesel-backed load burns ~270 L/h (>₦275,400/h), gas is 30–60% cheaper, energy is >35% of opex, grid delivers ~5,000 MW and is unstable; Rack Centre's 12 MW LG2 runs on a diesel/gas mix. Sector survey (Jun 2025): 17 data centers, 14 in Lagos; ~136.7 MW (2025 estimate); gas gensets are the most common alternative; MTN reported 40% power savings from gas versus diesel; no major operator reports renewables in its current mix.",
+  "record_sources": [
+   {
+    "title": "As power costs soar, Rack Centre goes hybrid with gas and solar",
+    "url": "https://techcabal.com/2025/11/04/rack-centre-goes-hybrid-with-gas-and-solar/",
+    "publisher": "TechCabal",
+    "date": "2025-11-04"
+   },
+   {
+    "title": "Nigeria's data center growth prospects amid power constraints",
+    "url": "https://www.connectingafrica.com/data-centers/nigeria-s-data-center-growth-prospects-amid-power-constraints",
+    "publisher": "Connecting Africa",
+    "date": "2025-06-19"
+   }
+  ],
+  "claim": "Rack Centre says it continues to build gas generation and solar as part of its energy mix; CEO: 'Energy is the elephant in the room' and 'I don't think there's any policy slowing development'.",
+  "claim_sources": [
+   {
+    "title": "As power costs soar, Rack Centre goes hybrid with gas and solar",
+    "url": "https://techcabal.com/2025/11/04/rack-centre-goes-hybrid-with-gas-and-solar/",
+    "publisher": "TechCabal",
+    "date": "2025-11-04"
+   }
+  ],
+  "gap": "No NERC, TCN or Lagos State record of data-center power sourcing or generator permits; all figures are operator statements and market estimates.",
+  "confidence": "low",
+  "verified_primary": false,
+  "verification_note": "Searched NERC permit records and Lagos State sources for data-center generation permits or fuel use; found only press reports of NERC generation permits to other firms (including MTN), none tied to a data center. No primary document located; figures remain operator statements (TechCabal) and a market estimate (Connecting Africa).",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "eg-national-dc-pipeline-grid",
+  "country": "Egypt",
+  "region": "Greater Cairo (Maadi) / national",
+  "site_or_subject": "Egypt data-center pipeline vs. ~60 MW operational base",
+  "operator": "Khazna; Gulf Data Hub–Elsewedy; Vodafone–Elsewedy–Cassava; MCIT",
+  "lat": 29.96,
+  "lon": 31.26,
+  "category": "grid_policy",
+  "record": "As of Sep 2026 Egypt has 14 data centers with ~60 MW operational. Announced projects: Gulf Data Hub–Elsewedy JV (US$2.1 bn, up to 192 MW); Khazna Maadi (US$250 m) within an Egypt–UAE agreement for up to 1 GW in phases; Africa Data Centres Egypt (Vodafone/Elsewedy/Cassava, up to 200 MW, signed 8 Sep 2026); a Swicorp/Incom/Record 'green' center on 200 MW of renewables. MCIT is drafting a national data-center strategy; the article cites a national water deficit of ~7 bn m³/yr.",
+  "record_sources": [
+   {
+    "title": "Our data center boom is waiting on a switch",
+    "url": "https://enterpriseam.com/egypt/hardhats/our-data-center-boom-is-waiting-on-a-switch/",
+    "publisher": "Enterprise (Egypt)",
+    "date": "2026-09-09"
+   }
+  ],
+  "claim": "Government and developers announce >1 GW of phased capacity; MCIT says a national strategy will define capacity needs.",
+  "claim_sources": [
+   {
+    "title": "Our data center boom is waiting on a switch",
+    "url": "https://enterpriseam.com/egypt/hardhats/our-data-center-boom-is-waiting-on-a-switch/",
+    "publisher": "Enterprise (Egypt)",
+    "date": "2026-09-09"
+   }
+  ],
+  "gap": "Only announcements exist; no EETC/EgyptERA grid-connection, generation-source or water record for any named project was found.",
+  "confidence": "low",
+  "verified_primary": false,
+  "verification_note": "Searched MCIT/Cabinet releases and EGX disclosures by Elsewedy Electric for the Gulf Data Hub JV, Khazna Maadi and Africa Data Centres Egypt figures and the ~60 MW operational base; only press and company announcements located. No EETC, EgyptERA, MCIT or EGX primary document fetched.",
+  "last_checked": "2026-10-20",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "ma-naver-500mw-taqa-renewable",
+  "country": "Morocco",
+  "region": "Undisclosed (12 ha site)",
+  "site_or_subject": "Naver / Nexus Core Systems / Lloyds Capital 500 MW AI campus",
+  "operator": "Naver Cloud (platform operator); Nexus Core Systems",
+  "lat": 31.8,
+  "lon": -7.1,
+  "category": "power",
+  "record": "Announced June 2025: up to 500 MW AI data center; phase 1 40 MW (Nvidia GB200) with construction from Q4 2025 (press). TAQA Morocco's FY2025 results presentation (1 Apr 2026) describes the TAQA–Nexus Core Systems arrangement as an MoU signed and in development phase, for an AI and data-center campus in northern Morocco with a target of 500 MW of green energy supplied by TAQA Morocco, naming NVIDIA and NAVER Cloud as partners. No city, Moroccan agency, permit or generation type (solar/wind) is disclosed.",
+  "record_sources": [
+   {
+    "title": "TAQA Morocco – Conférence de presse, résultats 2025 (deck)",
+    "url": "https://www.taqamorocco.ma/sites/default/files/2026-04/TAQA%20Morocco%20Deck%20Conf%C3%A9rence%20de%20presse%201er%20avril%202026.pdf",
+    "publisher": "TAQA Morocco S.A.",
+    "date": "2026-04-01"
+   },
+   {
+    "title": "Naver plans 500MW data center campus in Morocco",
+    "url": "https://www.datacenterdynamics.com/en/news/naver-plans-500mw-data-center-campus-in-morocco/",
+    "publisher": "DCD",
+    "date": "2025-06-13"
+   }
+  ],
+  "claim": "Consortium claims 'sustainable and stable power infrastructure' secured via the TAQA renewable supply contract.",
+  "claim_sources": [
+   {
+    "title": "Naver plans 500MW data center campus in Morocco",
+    "url": "https://www.datacenterdynamics.com/en/news/naver-plans-500mw-data-center-campus-in-morocco/",
+    "publisher": "DCD",
+    "date": "2025-06-13"
+   }
+  ],
+  "gap": "The supplier's disclosure describes an MoU at development stage; no ONEE, MASEN, regional investment-centre or environmental permit record found, and the site is identified only as northern Morocco.",
+  "confidence": "high",
+  "verified_primary": true,
+  "verification_note": "Fetched TAQA Morocco FY2025 results press-conference deck (1 Apr 2026, listed-issuer financial communication): it describes an MoU (development phase) for a 500 MW green-energy supply target to a northern-Morocco campus; corrected the earlier press description (DCD, Jun 2025) of a signed 'strategic renewable energy supply contract'. The phase-1 40 MW / Q4 2025 figures are not in the deck and remain via DCD.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ }
+]

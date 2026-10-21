@@ -1,0 +1,37 @@
+Texas Commission on Environmental Quality
+Air Permits Division
+September 3, 2024
+Compass Datacenters DFW III, LLC
+Re: Administratively Complete Title V Application
+Permit Number: O4679
+Regulated Entity Number: RN111028916
+Customer Number: CN605773720
+Red Oak Datacenter, Ellis County
+STEERS Site Information (Regulated Entity)
+What is the name of the Regulated Entity (RE)? RED OAK DATACENTER
+What is the Regulated Entity's Number (RN)? RN111028916
+What is the applicant's Customer Number
+(CN)?
+CN605773720
+Number and Street 300 HOUSTON SCHOOL RD
+City RED OAK
+State TX
+ZIP 75154
+County ELLIS
+Latitude (N) (##.######) 32.537981
+Longitude (W) (-###.######) -96.804371
+Primary NAICS Code 518210
+Form OP-1 (General Application)
+C. Submittal Date (mm/dd/yyyy): 08/28/2024
+A. Site Name: Red Oak Datacenter
+X. Site Location
+G. Latitude (nearest second): 32° 32' 10.15" N
+H. Longitude (nearest second): 96° 48' 18.27" W
+J. Number of units: 9 (8 emission groups)
+Form OP-SUM (Individual Unit Summary) Table 1 Permit No.: TBD
+Unit ID Applicable Form Unit Name/Description Preconstruction Authorization Group ID
+EMGEN1 OP-UA2 Emergency Generator 1 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN2 OP-UA2 Emergency Generator 2 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN3 OP-UA2 Emergency Generator 3 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN4 OP-UA2 Emergency Generator 4 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN5 OP-UA2 Emergency Generator 5 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN6 OP-UA2 Emergency Generator 6 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN7 OP-UA2 Emergency Generator 7 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN8 OP-UA2 Emergency Generator 8 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN9 OP-UA2 Emergency Generator 9 Group ENG1a 106.511/9/4/2000 GRP-ENG1a EMGEN10 OP-UA2 Emergency Generator 10 Group ENG1a 106.511/9/4/2000 GRP-ENG1a
+[rows EMGEN11 through EMGEN190 not transcribed - see fixtures/provenance.json]
+EMGEN191 OP-UA2 Emergency Generator 191 Group ENG1b 106.511/9/4/2000 GRP-ENG1b EMGEN192 OP-UA2 Emergency Generator 192 Group ENG1b 106.511/9/4/2000 GRP-ENG1b EMGEN193 OP-UA2 Emergency Generator 193 Group ENG1b 106.511/9/4/2000 GRP-ENG1b EMGEN194 OP-UA2 Emergency Generator 194 Group ENG1b 106.511/9/4/2000 GRP-ENG1b EMGEN195 OP-UA2 Emergency Generator 195 Group ENG1b 106.511/9/4/2000 GRP-ENG1b EMGEN196 OP-UA2 Emergency Generator 196 Group ENG2a 106.511/9/4/2000 GRP-ENG2a
+[rows EMGEN197 through EMGEN390 not transcribed - see fixtures/provenance.json]
+The emergency generators are certified as meeting the U.S. EPA Tier 2 emission standards.
