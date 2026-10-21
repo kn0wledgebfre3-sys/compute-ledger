@@ -24,7 +24,7 @@ OWN = ['parent_name','parent_entity_id','parent_entity_type','parent_lei','paren
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument("--out",default=os.path.join(ROOT,"data","climate_trace_seed")); a=ap.parse_args()
     os.makedirs(a.out,exist_ok=True)
-    sites=json.load(open(os.path.join(REG,"seed_sites.json")))
+    sites=json.load(open(os.path.join(ROOT,"sites","seed_sites.json")))
     entries={}
     for f in glob.glob(os.path.join(REG,"*.json")):
         if os.path.basename(f) in ("sources.json","guide.json","standard.json","climate_trace_schema.json","seed_sites.json"): continue

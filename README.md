@@ -2,7 +2,7 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**117 entries · 40 countries · 397 linked documents · 71 open datasets · 3 receipts** (as of 2026-10-20)
+**117 entries · 40 countries · 397 linked documents · 71 open datasets · 3 receipts · 183 Virginia permits extracted** (as of 2026-10-21)
 
 The ledger is built on one rule: a company's statement is a claim, and a document from a regulator, court, grid operator, statistical office, auditor or customs authority is a record. The ledger shows both and states the gap in one line without adjectives.
 
@@ -11,11 +11,14 @@ The ledger is built on one rule: a company's statement is a claim, and a documen
 | Folder | What it holds |
 |---|---|
 | `registry/` | The entries, one JSON file per region plus `sources.json` (the open-data catalogue) and `guide.json` (the guided themes on the page). This is the dataset. |
+| `sites/` | Site lists in seed form (not ledger entries): the worldwide seed list, Ireland's 40 sites from EPA records, the register backlog, the 43-row dedicated-supply column, and Climate TRACE's schema notes. |
+| `pipeline/` | The Virginia and Texas permit extraction: one command reads the DEQ list and every permit PDF, extracts generator inventories, geocodes, and writes the Climate TRACE seed files. Run live 2026-10-21 (183 permits, 153 with MW). The DEQ site blocks scripted PDF downloads, so PDFs are fetched by browser and passed with `--pdf-dir`. |
 | `receipts/` | Cases worked all the way down: the claim, a dated timeline of documents, the gap, the limits. Markdown for reading, JSON for the page. |
 | `scrapers/` | Scripts that pull structured public files (US grid queues, federal plant data, UK register, Climate TRACE) so numbers come from a file, not from anyone's reading. See its README. |
 | `research_notes/` | The working notes behind each region's entries, with the gaps that were found. |
 | `site/` | `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`. |
-| `data/` | Dated outputs of each monthly scraper run (created by the workflow). |
+| `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, the Virginia extraction, the Climate TRACE plant match, the method, and the hostile review). Monthly scraper runs land in dated subfolders. |
+| `review/` | The independent hostile review of the handover, unedited, and what changed in response. |
 
 ## Entry schema
 
@@ -70,4 +73,4 @@ See `scrapers/README.md`. They need a machine with ordinary internet access and,
 
 ## Licence
 
-Data (`registry/`, `receipts/`, `research_notes/`, `data/`): CC BY 4.0. Code (`scrapers/`, `site/`): MIT. Climate TRACE data used by `climate_trace_match.py` is CC BY 4.0 from the Climate TRACE coalition.
+Data (`registry/`, `sites/`, `receipts/`, `research_notes/`, `data/`, `review/`): CC BY 4.0. Code (`scrapers/`, `pipeline/`, `site/`): MIT. Climate TRACE data used by `climate_trace_match.py` is CC BY 4.0 from the Climate TRACE coalition.

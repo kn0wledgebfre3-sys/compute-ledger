@@ -15,7 +15,7 @@ GUIDE_FILE = os.path.join(HERE, "guide.json")
 RECEIPTS_DIR = os.path.join(ROOT, "receipts")
 
 ENTRY_FILES = [f for f in sorted(glob.glob(os.path.join(HERE, "*.json")))
-               if not f.endswith(("sources.json", "guide.json", "standard.json", "climate_trace_schema.json", "seed_sites.json"))]
+               if not f.endswith(("sources.json", "guide.json", "standard.json"))]
 SOURCES_FILE = os.path.join(HERE, "sources.json")
 
 REQUIRED = ["id", "country", "site_or_subject", "category", "record", "record_sources", "gap", "confidence"]

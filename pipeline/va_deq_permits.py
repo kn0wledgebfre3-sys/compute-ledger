@@ -80,7 +80,7 @@ import permit_text as PT  # noqa: E402
 HERE = Path(__file__).resolve().parent
 FIXTURES = HERE / "fixtures"
 LIST_URL = "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers"
-BACKLOG_CSV = Path(__file__).resolve().parent.parent / "registry" / "seed_sites_unlocated.csv"
+BACKLOG_CSV = Path(__file__).resolve().parent.parent / "sites" / "seed_sites_unlocated.csv"
 REQUIRED_HEADERS = ["Air Site Name", "Registration No", "Permit Issuance Date", "Program Type", "City/County", "Regional Office"]
 DDG_HTML = "https://html.duckduckgo.com/html/"
 REQUEST_PAUSE = 1.5  # seconds between DEQ downloads: polite, and the site is a public agency's

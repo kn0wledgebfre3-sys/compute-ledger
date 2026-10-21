@@ -41,7 +41,7 @@ import _common as C  # noqa: E402
 HERE = Path(__file__).resolve().parent
 FIXTURES = HERE / "fixtures"
 ROOT = Path(__file__).resolve().parent.parent
-SEED_SITES = ROOT / "registry" / "seed_sites.json"
+SEED_SITES = ROOT / "sites" / "seed_sites.json"
 SCHEMA_JSON = ROOT / "registry" / "climate_trace_schema.json"
 TO_CT = ROOT / "scrapers"
 

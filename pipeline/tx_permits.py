@@ -70,7 +70,7 @@ from va_deq_permits import parse_html_tables  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 FIXTURES = HERE / "fixtures"
-BACKLOG_CSV = Path(__file__).resolve().parent.parent / "registry" / "seed_sites_unlocated.csv"
+BACKLOG_CSV = Path(__file__).resolve().parent.parent / "sites" / "seed_sites_unlocated.csv"
 COMPTROLLER_URL = "https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php"
 TITLEV_INDEX = "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/titlev-pending-permits.html"
 NSR_INDEX = "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/nsr-pending-permits.html"
