@@ -22,7 +22,7 @@ EMIS = ['source_id','source_name','source_type','iso3_country','sector','subsect
 OWN = ['parent_name','parent_entity_id','parent_entity_type','parent_lei','parent_permid','parent_registration_country','parent_headquarter_country','overall_share_percent','ownership_path','ownership_path_datasource_ids','immediate_source_owner','immediate_source_owner_entity_id','source_operator','source_operator_id','percentage_of_operation','source_id','source_name','source_sector','source_subsector']
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("--out",default=os.path.join(ROOT,"data","climate_trace_seed")); a=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument("--out",default=os.path.join(ROOT,"data","seed_from_registry"))  # the handover files are built by pipeline/build_handover_assets.py; a=ap.parse_args()
     os.makedirs(a.out,exist_ok=True)
     sites=json.load(open(os.path.join(ROOT,"sites","seed_sites.json")))
     entries={}
@@ -41,7 +41,7 @@ def main():
                     "start_time":"","end_time":"","lat":s["lat"],"lon":s["lon"],"gas":"co2e_100yr","emissions_quantity":"",
                     "temporal_granularity":"annual","activity":"","activity_units":"MWh",
                     "capacity":s.get("capacity_mw_it") or "","capacity_units":"MW IT load" if s.get("capacity_mw_it") else "",
-                    "other1":s.get("generator_mw_permitted") or "","other1_def":"Backup generator capacity permitted (MW), from the air permit; a floor on site load",
+                    "other1":s.get("generator_mw_permitted") or "","other1_def":"Backup generator capacity permitted (MW), from the air permit; an upper bound on site load once redundancy is known",
                     "other2":s.get("cooling") or "unknown","other2_def":"Cooling type from permit or environmental assessment: air|evaporative|closed_loop|seawater|unknown",
                     "other3":s.get("status") or "","other3_def":"Site status: operating|under_construction|permitted|announced",
                     "other4":s.get("capacity_source") or "","other4_def":"Where capacity came from: permit|register|operator|osm",

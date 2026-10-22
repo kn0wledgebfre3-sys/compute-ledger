@@ -1,6 +1,6 @@
 # Open, public, scrapeable data sources for an independent global ledger of AI compute's physical footprint
 
-Companion to `/home/claude/registry/sources.json` (70 entries, same ids). All URLs were checked on 2026-10-19 via WebFetch/WebSearch (direct curl is blocked in this environment). `verified: true` means the page was fetched and its content inspected, or its existence was confirmed from the publisher's own search-result pages; `verified: false` means the host answered but content could not be inspected (robots.txt, WAF, or fetch error) or the source is paid and was not tested. Entries are grouped by category, then roughly by country. Tone is descriptive; no vendor endorsements.
+Companion to `registry/sources.json` (70 entries, same ids). All URLs were checked on 2026-10-19 via WebFetch/WebSearch (direct curl is blocked in this environment). `verified: true` means the page was fetched and its content inspected, or its existence was confirmed from the publisher's own search-result pages; `verified: false` means the host answered but content could not be inspected (robots.txt, WAF, or fetch error) or the source is paid and was not tested. Entries are grouped by category, then roughly by country. Tone is descriptive; no vendor endorsements.
 
 ## Key question 1: Which open sources let an outsider reconstruct site-level power, fuel, water, heat reuse, minerals and e-waste for AI compute?
 

@@ -1,6 +1,9 @@
+import os as _os
+_HERE = _os.path.dirname(_os.path.abspath(__file__))
+_REPO = _os.path.dirname(_os.path.dirname(_HERE))
 """Stage 3: assemble va_reread.csv (my figures), compare with pipeline, write comparison + resolved."""
 import pandas as pd, re, json, csv, os
-OUT = '/home/claude/review/va_reread'
+OUT = _HERE
 auto = pd.read_csv(f'{OUT}/auto_reread.csv', dtype={'registration': str})
 dec = pd.read_csv(f'{OUT}/decisions.csv', dtype={'registration': str})
 rows = pd.read_csv(f'{OUT}/auto_rows.csv', dtype={'registration': str})
@@ -48,7 +51,7 @@ rr_df.to_csv(f'{OUT}/va_reread.csv', index=False)
 print('va_reread rows', len(rr_df), 'sum MW', rr_df.reread_mw.sum(), 'units', rr_df.reread_count.sum())
 
 # ---- comparison ----
-pipe = pd.read_csv('/home/claude/kn0wledgebfre3-sys/compute-ledger/pipeline/out/va_permits.csv', dtype={'registration_no': str})
+pipe = pd.read_csv(_os.environ.get('VA_FIRST_READING', _os.path.join(_REPO, 'data', 'climate_trace_seed', 'va_permits.csv')), dtype={'registration_no': str})
 pipe = pipe[['registration_no', 'generator_count', 'total_standby_mw', 'facility_street', 'facility_city', 'unit_kw_list', 'generator_count_confidence', 'total_mw_confidence', 'generator_rows_uncounted']]
 cmp = rr_df[['registration', 'reread_count', 'reread_mw', 'reread_confidence', 'reread_basis', 'site_street', 'site_city_line']].merge(pipe, left_on='registration', right_on='registration_no', how='outer')
 

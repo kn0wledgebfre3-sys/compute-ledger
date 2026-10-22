@@ -1,6 +1,6 @@
 # Final review: "Datacenters for Climate TRACE" package, 21 Oct 2026
 
-Reviewer: same sceptical methodology reviewer as `hostile_review.md`. Scope: `/home/claude/registry/brief.html` against every file in `/home/claude/repo/data/climate_trace_seed/`, the Virginia re-read working directory, the ledger entries in `/home/claude/registry/north_america.json`, and my earlier findings. No web checks.
+Reviewer: same sceptical methodology reviewer as `hostile_review.md`. Scope: `site/brief.html` against every file in `data/climate_trace_seed/`, the Virginia re-read working directory, the ledger entries in `registry/north_america.json`, and my earlier findings. No web checks.
 
 ## Verdict: fix, then send
 
@@ -112,7 +112,7 @@ The brief's method paragraph gives the α formula and "your 5.11.0 facility Scop
 ### G. Package hygiene and README
 
 **G1 — Files referenced but not in the package directory. Blocks send (or delete the references).**
-Referenced in the brief: `climate_trace_matches.csv`, the nearest-generation "second file". Referenced in `VIRGINIA.md`: `va_permits.csv`, `va_generator_rows.csv`, `virginia_nearest_generation.csv`. Referenced in `TEXAS.md`: `tx_permits.csv`, `tx_index_rows.csv`, `tx_unmatched_tceq_packages.csv`. None is in `/home/claude/repo/data/climate_trace_seed/`; they exist only in `/home/claude/kn0wledgebfre3-sys/compute-ledger/…` (older copy, 20:52). Change: copy them in or strip the references.
+Referenced in the brief: `climate_trace_matches.csv`, the nearest-generation "second file". Referenced in `VIRGINIA.md`: `va_permits.csv`, `va_generator_rows.csv`, `virginia_nearest_generation.csv`. Referenced in `TEXAS.md`: `tx_permits.csv`, `tx_index_rows.csv`, `tx_unmatched_tceq_packages.csv`. None is in `data/climate_trace_seed/`; they exist only in `[a local working copy]` (older copy, 20:52). Change: copy them in or strip the references.
 
 **G2 — README is the pre-Virginia README. Fix before send.**
 It lists no Virginia, Texas or Climate TRACE series files; still says the backlog CSV holds "325 register-identified sites … awaiting permit extraction" (the CSV has 333 rows, as I noted last time; and the Virginia 183 are now extracted); still says "Six rows reclassified". Change: add rows for `VIRGINIA.md`, `VIRGINIA_REREAD_REPORT.md`, the three `va_*` CSVs, `TEXAS.md`, `CLIMATE_TRACE_SERIES.md`, the two `climate_trace_*` CSVs; fix 325 → 333 and "awaiting" → "Virginia extracted; Texas 17 matched".
@@ -175,3 +175,5 @@ Presumes their roadmap. "the region we would pilot" or "a natural pilot region".
 5. Recategorise the AESO policy row and Greenlight; regenerate `dedicated_supply_method.md` counts from the JSON.
 6. Delete the §4 "scale 97% … / 1.2" procedure sentence; delete or make true the footer's traceability sentence; cite Lawfare and write it in the second person.
 7. Then send. The Virginia re-read, the Ireland bounds and the supply column are worth their attention.
+
+_Local file paths in this review were replaced with repository-relative paths on 2026-10-22; nothing else was changed._

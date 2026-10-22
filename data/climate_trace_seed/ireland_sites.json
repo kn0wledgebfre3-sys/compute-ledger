@@ -401,7 +401,7 @@
   "last_checked": "2026-10-20",
   "coord_source_url": null,
   "notes": "NO COORDINATE: no grid reference in the licence NTS or the AER; address 'Unit 75, Grange Castle Business Park, Nangor Road'; adjacent to the DB3-5 block (E303235 N231447) but not located in a record | IE licence P1187-01 (application LA010221, NTS Sept 2022/Mar 2023): 22-unit standby gas generation plant (A2-1..A2-22) plus 21 emergency diesel generators (A3-1..A3-21); free cooling ~95% of year, evaporative cooling with treated rainwater; no chillers. Annual Environmental Report 2024 (LEAP) reports total energy used 402,946.82 GJ = 111.93 GWh for the campus (mainly purchased electricity). Press (DCD, Jul 2023): 170 MW gas plant permitted; Microsoft states it is for backup only. Buildings 56,246 sq m approved 2021.",
-  "generator_mw_basis": "MWth sum of units in licence application NTS LA010221 (22 gas generators x 7.6 MWth = 167.2; 20 diesel x 8.66 + 1 x 2.4 MWth); my arithmetic, not a figure in the document",
+  "generator_mw_basis": "MWth sum of units in licence application NTS LA010221 (22 gas generators x 7.6 MWth = 167.2; 20 diesel x 8.66 + 1 x 2.4 MWth); the ledger's arithmetic, not a figure in the document",
   "generator_count": 43
  },
  {
@@ -590,7 +590,7 @@
   "last_checked": "2026-10-20",
   "coord_source_url": null,
   "notes": "NO COORDINATE: no grid reference in the inspector's report; GHG permit PDF (IE-GHG600-01, which would carry the main-entrance grid reference) is served over http only and could not be fetched | IE licence P1168-01 inspector's report 30 Aug 2022 (application received 29 Nov 2021): 9 dual-fuel turbines, natural gas primary (gas oil for up to 4 turbines in first two years pending HP gas connection Q4 2023), ~112.2 million m3 gas/yr; closed-loop chilled water with 13 cooling towers and chillers (evaporative heat rejection). GHG permit IE-GHG600-01 exists (http-only link not retrievable). Status 'operating' assumed from licence stage and press; verify.",
-  "generator_mw_basis": "MWth, my sum of 9 dual-fuel turbine generators x 18.64 MWth (natural gas) per inspector's report; primary power plant, not standby",
+  "generator_mw_basis": "MWth, the ledger's sum of 9 dual-fuel turbine generators x 18.64 MWth (natural gas) per inspector's report; primary power plant, not standby",
   "generator_count": 9
  },
  {
@@ -858,7 +858,7 @@
   "ledger_entry_id": "ie-dublin-vantage-dub13-abp-refusal",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry/europe.json (ledger entry ie-dublin-vantage-dub13-abp-refusal, 2-decimal lat/lon)",
+  "coord_source_url": "registry/europe.json (ledger entry ie-dublin-vantage-dub13-abp-refusal, 2-decimal lat/lon)",
   "notes": "ABP-317446-23 (SD22A/0420): two-storey data centre 'Building 13', 12,893 sq m, 13 generators with 22.3 m flues, 7 hot-air exhaust vents; SDCC refused 29 May 2023, Board refused 7 Apr 2025 (no grid connection agreement; on-site gas could become primary supply). Coordinate is the ledger entry's 2-decimal lat/lon (+/-0.5 km). Same campus as irl-vantage-dub11-dub12-profile-park-p1203.",
   "generator_mw_basis": "13 emergency back-up generators (12 double-stacked + 1), MW not stated",
   "generator_count": 13
@@ -914,7 +914,7 @@
   "last_checked": "2026-10-20",
   "coord_source_url": null,
   "notes": "NO COORDINATE: operational report and ABP case page give address/Eircode only; no grid reference | IE licence application LA011399 (revised operational report Sept 2024): permanent gas/HVO engine plant as primary power; data halls on closed-loop chilled water with free-cooling chillers (30/70 glycol), free cooling >68% of year. Planning Fingal FW26A/0021E (contribution appeal PL06F.501133 decided 24 Jul 2026). Parent company not identified in the records.",
-  "generator_mw_basis": "MWth, my sum of 9 permanent dual-fuel engines x 21.640 MWth on gas (23.018 MWth on HVO) per operational report; plus 1.15 MWth emergency generator, 0.81 MWth fire pump and temporary 4 x 5.955 MWth gas / 4 x 6.350 MWth HVO engines (49.22 MWth)",
+  "generator_mw_basis": "MWth, the ledger's sum of 9 permanent dual-fuel engines x 21.640 MWth on gas (23.018 MWth on HVO) per operational report; plus 1.15 MWth emergency generator, 0.81 MWth fire pump and temporary 4 x 5.955 MWth gas / 4 x 6.350 MWth HVO engines (49.22 MWth)",
   "generator_count": 9
  },
  {

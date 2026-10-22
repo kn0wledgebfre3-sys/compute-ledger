@@ -146,7 +146,7 @@ def ct_rows(site: dict[str, Any], led: dict[str, Any] | None, emis_cols: list[st
                 "start_time": "", "end_time": "", "lat": s["lat"], "lon": s["lon"], "gas": "co2e_100yr", "emissions_quantity": "",
                 "temporal_granularity": "annual", "activity": "", "activity_units": "MWh",
                 "capacity": s.get("capacity_mw_it") or "", "capacity_units": "MW IT load" if s.get("capacity_mw_it") else "",
-                "other1": s.get("generator_mw_permitted") or "", "other1_def": "Backup generator capacity permitted (MW), from the air permit; a floor on site load",
+                "other1": s.get("generator_mw_permitted") or "", "other1_def": "Backup generator capacity permitted (MW), from the air permit; an upper bound on site load once redundancy is known",
                 "other2": s.get("cooling") or "unknown", "other2_def": "Cooling type from permit or environmental assessment: air|evaporative|closed_loop|seawater|unknown",
                 "other3": s.get("status") or "", "other3_def": "Site status: operating|under_construction|permitted|announced",
                 "other4": s.get("capacity_source") or "", "other4_def": "Where capacity came from: permit|register|operator|osm",
@@ -394,7 +394,7 @@ def main() -> None:
                         "generator_mw_sum": C.round_mw(sum(s.get("generator_mw_permitted") or 0 for s in rows), 1),
                         "needs_review": count(rows, lambda s: s.get("needs_review"))}
     summary = {
-        **C.run_meta(args.fixture, [{"name": "seed_sites.json (v1)", "path": str(seed_path), "rows": len(sites)}]),
+        **C.run_meta(args.fixture, [{"name": "seed_sites.json (v1)", "path": (str(seed_path.relative_to(ROOT)) if seed_path.is_relative_to(ROOT) else seed_path.name), "rows": len(sites)}]),
         "sites_total": len(all_sites), "sites_v1_kept": len(sites), "sites_v1_updated_from_permits": updated, "sites_added": len(new_rows),
         "with_coordinates": len(er), "with_generator_mw": count(all_sites, lambda s: s.get("generator_mw_permitted") is not None),
         "with_coordinates_and_generator_mw": count(all_sites, lambda s: s.get("lat") is not None and s.get("generator_mw_permitted") is not None),

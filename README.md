@@ -2,7 +2,9 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**117 entries · 40 countries · 397 linked documents · 71 open datasets · 3 receipts · 183 Virginia permits extracted** (as of 2026-10-21)
+**118 entries · 38 countries and territories, plus EU-wide and global entries · 404 distinct linked documents · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records** (as of 2026-10-22)
+
+Live page: the Compute Ledger brief and ledger are published as artifacts; the Climate TRACE handover package is in `data/climate_trace_seed/`.
 
 The ledger is built on one rule: a company's statement is a claim, and a document from a regulator, court, grid operator, statistical office, auditor or customs authority is a record. The ledger shows both and states the gap in one line without adjectives.
 
@@ -11,14 +13,15 @@ The ledger is built on one rule: a company's statement is a claim, and a documen
 | Folder | What it holds |
 |---|---|
 | `registry/` | The entries, one JSON file per region plus `sources.json` (the open-data catalogue) and `guide.json` (the guided themes on the page). This is the dataset. |
-| `sites/` | Site lists in seed form (not ledger entries): the worldwide seed list, Ireland's 40 sites from EPA records, the register backlog, the 43-row dedicated-supply column, and Climate TRACE's schema notes. |
-| `pipeline/` | The Virginia and Texas permit extraction: one command reads the DEQ list and every permit PDF, extracts generator inventories, geocodes, and writes the Climate TRACE seed files. Run live 2026-10-21 (183 permits, 153 with MW). The DEQ site blocks scripted PDF downloads, so PDFs are fetched by browser and passed with `--pdf-dir`. |
+| `sites/` | Site lists in seed form (not ledger entries): the worldwide seed list, Ireland's 40 sites from EPA records, the register backlog, the 43-row dedicated-supply column, the Texas site joins, and Climate TRACE's schema notes. `sites/build/` holds the scripts that rebuild the seed and Ireland lists from their embedded, sourced values. |
+| `pipeline/` | The Virginia and Texas permit extraction. `run_all.sh` reads the DEQ list and every permit PDF, extracts generator inventories and geocodes (run live 2026-10-21; the DEQ site blocks scripted PDF downloads, so PDFs are fetched by browser and passed with `--pdf-dir`). The extractor was fixed on 2026-10-22 after an independent second read and now agrees with it on 178 of 182 permits (`tests/`). `tx_fetch.py` rebuilds Texas from issued authorizations; `build_handover_assets.py` writes the handover's Climate TRACE asset files from the reviewed data. CI runs all of them on fixtures. |
 | `receipts/` | Cases worked all the way down: the claim, a dated timeline of documents, the gap, the limits. Markdown for reading, JSON for the page. |
 | `scrapers/` | Scripts that pull structured public files (US grid queues, federal plant data, UK register, Climate TRACE) so numbers come from a file, not from anyone's reading. See its README. |
 | `research_notes/` | The working notes behind each region's entries, with the gaps that were found. |
 | `site/` | `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`. |
-| `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, the Virginia extraction, the Climate TRACE plant match, the method, and the hostile review). Monthly scraper runs land in dated subfolders. |
-| `review/` | The independent hostile review of the handover, unedited, and what changed in response. |
+| `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the method, and the hostile review). Monthly scraper runs land in dated subfolders. |
+| `documents/` | Browser-downloaded copies of public records whose hosts refuse automated access (the Wisconsin PSC final decisions for Oak Creek and Paris), with their original URLs. |
+| `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
 
 ## Entry schema
 
@@ -69,7 +72,7 @@ See `scrapers/README.md`. They need a machine with ordinary internet access and,
 
 **What a receipt is.** One case worked to the point where it cannot be waved away: every figure tied to a page of a document, the timeline reconstructed from dated documents, a short quote at most, no adjectives. Figures confirmed only through press are marked [press]; figures computed from two documented figures are marked [arithmetic].
 
-**Tone.** Entries are descriptions of documents, not findings of fact about any company. Coordinates mark the county or region, not an address.
+**Tone.** Entries are descriptions of documents, not findings of fact about any company. In the ledger, an entry's coordinates mark the county or region, not an address; the site files (`sites/`, and the handover's asset files) carry document-level coordinates where a record gives them.
 
 ## Licence
 

@@ -1,10 +1,13 @@
+import os as _os
+_HERE = _os.path.dirname(_os.path.abspath(__file__))
+_REPO = _os.path.dirname(_os.path.dirname(_HERE))
 """Stage 1: dump text + tables from every PDF to JSON cache (independent re-read)."""
 import json, os, sys, glob, traceback
 import pdfplumber
 from pypdf import PdfReader
 
-PDF_DIR = "/home/claude/kn0wledgebfre3-sys/compute-ledger/pipeline/pdfs_va"
-OUT = "/home/claude/review/va_reread/raw"
+PDF_DIR = _os.environ.get("VA_PDF_DIR", _os.path.join(_REPO, "pipeline", "pdfs_va"))
+OUT = _os.path.join(_HERE, "raw")
 os.makedirs(OUT, exist_ok=True)
 
 def extract(path):

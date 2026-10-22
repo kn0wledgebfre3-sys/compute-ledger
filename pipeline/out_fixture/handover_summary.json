@@ -6,7 +6,7 @@
   "sources": [
     {
       "name": "seed_sites.json (v1)",
-      "path": "/Users/az/Desktop/environment/repo/sites/seed_sites.json",
+      "path": "sites/seed_sites.json",
       "rows": 56
     }
   ],
@@ -22,7 +22,7 @@
       "sites": 18,
       "with_coordinates": 8,
       "with_generator_mw": 8,
-      "generator_mw_sum": 1525.7,
+      "generator_mw_sum": 1512.5,
       "needs_review": 10
     },
     "Texas": {

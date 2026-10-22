@@ -11,7 +11,7 @@
   "ask": [
    [
     "Who pays for the connection?",
-    "Ask the utility commission docket whether large-load customers carry their own transmission and generation costs, or whether they are socialised. Virginia's regulator (in its November 2025 Chesterfield order) and Ohio's have adopted minimum-demand terms for large loads; Ontario has legislated connection restrictions and proposed a separate rate class. Most places in the ledger have not."
+    "Ask the utility commission docket whether large-load customers carry their own transmission and generation costs, or whether they are socialised. Virginia's regulator (in its November 2025 Chesterfield order), Ohio's and Wisconsin's have adopted minimum-demand or long-term contract terms for large loads; Ontario has legislated connection restrictions and proposed a separate rate class. Most places in the ledger have not."
    ],
    [
     "What is in the capacity auction?",
@@ -98,7 +98,7 @@
   "blurb": "Gas plants, turbines and diesel generators built or approved for datacenter load, beside what the operator says about the same site.",
   "why": [
    "A company can buy renewable certificates for every hour it runs and still be served, physically, by a gas plant built for it. The certificate is an accounting instrument. The plant is in the utility's filing and the air permit.",
-   "The clearest records in the ledger are regulator orders and permits: a 944 MW gas peaker approved in Virginia, with datacenter growth named as a contributing factor; 15 turbines (247 MW) permitted in Memphis in July 2025 after xAI had run turbines on site for about a year under an exemption it claimed; a 41-turbine, 1.2 GW plant reported permitted across the state line in Mississippi (press; the state's order retiring 69 temporary turbines is in the ledger); 1,100 MW of gas approved in Wisconsin with datacenter load the utility's stated driver (its link to Microsoft's Mount Pleasant site is press-sourced); and three Entergy gas plants approved for Meta's site in Louisiana (2,262 MW as reported from Entergy's filings). Each entry sets the record beside what the operator says in public."
+   "The clearest records in the ledger are regulator orders and permits: a 944 MW gas peaker approved in Virginia, with datacenter growth named as a contributing factor; 15 turbines (247 MW) permitted in Memphis in July 2025 after xAI had run turbines on site for about a year under an exemption it claimed; a 41-turbine plant of about 1,240 MW permitted across the state line in Mississippi (state permit, March 2026), alongside the state's separate order on 69 temporary turbines; 1,100 MW of gas approved in Wisconsin, which the regulator found \"necessary to satisfy the significant probable future requirements of one customer\", the data center Microsoft is building in Mount Pleasant; and three Entergy gas plants approved for Meta's site in Louisiana (2,262 MW as reported from Entergy's filings). Each entry sets the record beside what the operator says in public."
   ],
   "ask": [
    [
@@ -147,7 +147,7 @@
   "blurb": "How much is asking to connect, how much actually has, and what regulators have done about the gap.",
   "why": [
    "Where grid operators publish both numbers, the load asking to connect is many times what is connected: about 474 GW of large-load requests in Texas (about 90% datacenters) against about 7.5 GW of large load connected, roughly 60 times; about 15 GW in the Paris region's connection pipeline against 640 MW connected to the transmission network, about 23 times; 5.9 GW of contracted maximum demand in Malaysia against 405 MW of recorded load, about 14 times. Operators report high attrition (AEMO: 36% of projects in its 2025 forecast cancelled). Grids plan, and sometimes build, against the queue.",
-   "The response differs by country and the ledger records each: Ireland requires new sites of 10 MVA or more to bring dispatchable capacity equal to their import, Singapore paused new capacity and now allocates it by call for applications, Israel froze new applications for 140 days, Texas ordered an audit, Amsterdam removed its growth allowance. These are the policy levers that exist today."
+   "The response differs by country and the ledger records each: Ireland requires new sites of 10 MVA or more to bring dispatchable capacity equal to their import, Singapore paused new capacity and now allocates it by call for applications, Israel froze new applications for 140 days, Texas ordered an audit and paused datacenter permits at its environmental regulator, Amsterdam removed its growth allowance. These are the policy levers that exist today."
   ],
   "ask": [
    [
@@ -170,6 +170,7 @@
   ],
   "all": [
    "us-tx-ercot-large-load-queue-audit",
+   "us-tx-tceq-datacenter-permit-pause",
    "my-tnb-esa-5-9gw",
    "ie-cru-leu-connection-policy-2025",
    "fr-idf-rte-datacentre-connections-2025",

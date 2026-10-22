@@ -26,3 +26,14 @@ jobs:
             python3 $s.py --fixture --out /tmp/out || exit 1
           done
           python3 cross_check.py --fixture --out /tmp/out
+      - name: Pipeline fixture tests (Virginia and Texas)
+        run: |
+          cd pipeline && pip install -r requirements.txt
+          ./run_all.sh --fixture
+          python3 tx_fetch.py --fixture --out /tmp/tx
+          cmp /tmp/tx/tx_issued_sites.csv ../data/climate_trace_seed/tx_issued_sites.csv
+          cmp /tmp/tx/BROWSER_LIST.csv ../data/climate_trace_seed/tx_browser_list.csv
+          python3 build_handover_assets.py --out /tmp/assets
+          for f in datacenters_emissions_seed.csv datacenters_ownership_seed.csv datacenters_register_backlog_unlocated.csv assets_summary.json; do
+            cmp /tmp/assets/$f ../data/climate_trace_seed/$f || exit 1
+          done

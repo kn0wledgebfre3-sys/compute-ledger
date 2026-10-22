@@ -73,8 +73,8 @@ for e in entries:
     if e["id"] in seen: problems.append(f"duplicate id {e['id']}")
     seen.add(e["id"])
 
-countries = sorted({e["country"] for e in entries})
-n_sources = sum(sum(1 for x in (e["record_sources"] + (e.get("claim_sources") or [])) if not x.get("self")) for e in entries)
+countries = sorted({e["country"] for e in entries} - {"Global", "European Union"})  # EU-wide and global entries are not countries
+n_sources = len({x["url"].strip() for e in entries for x in (e["record_sources"] + (e.get("claim_sources") or [])) if not x.get("self") and x.get("url")})  # distinct documents
 n_verified = sum(1 for e in entries if e.get("verification_status") == "verified")
 today = datetime.date.today().isoformat()
 
@@ -281,7 +281,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     <h1>Compute Ledger</h1>
     <div class="counts">
       <div><b>__N_ENTRIES__</b><span>entries</span></div>
-      <div><b>__N_COUNTRIES__</b><span>countries</span></div>
+      <div><b>__N_COUNTRIES__</b><span>countries and territories</span></div>
       <div><b>__N_SOURCES__</b><span>linked documents</span></div>
       <div><b>__N_DATASETS__</b><span>open datasets</span></div>
     </div>
@@ -332,9 +332,9 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     <li>Texas's grid operator publishes no file of its large-load queue. The totals appear only as numbers printed in monthly reports and board slides, with no breakdown by county or project.</li>
     <li>Great Britain's system operator stated in a freedom-of-information response that it does not keep a register of demand connections. The nearest public list covers only applicants who agreed to be listed.</li>
     <li>The EU's datacenter reporting database is behind an operator login. Only an aggregate report is public; there is no per-site data.</li>
-    <li>Texas's environmental regulator lists datacenter air-permit applications only while they are pending. Once a permit is issued the application leaves the public index, so no public register links a Texas datacenter to its permitted generation.</li>
+    <li>Texas's environmental regulator lists datacenter air-permit applications only while they are pending, and the state's datacenter register (the Comptroller's tax-exemption list) has no addresses. Once a permit is issued, the generator inventory sits in a records system that needs a browser. The ledger rebuilt Texas from EPA's facility registry and TCEQ permit notices instead: 129 facilities, generator inventories for two.</li>
   </ul>
-  <p style="font-size:16px;margin-top:8px">Scripts that pull the queues of PJM, MISO, SPP and NYISO, US federal plant and fuel data, and the British figures exist and pass offline tests; their live numbers will appear here once run. The Virginia DEQ permit extraction (all permits on the statewide list, read twice) and a run of Texas's permit indexes were completed on 21 October 2026; the Virginia figures are in the Virginia generator entry.</p>
+  <p style="font-size:16px;margin-top:8px">Scripts that pull the queues of PJM, MISO, SPP and NYISO, US federal plant and fuel data, and the British figures exist and pass offline tests; their live numbers will appear here once run. The Virginia DEQ permit extraction (all permits on the statewide list, read twice) was completed on 21 October 2026 and the Texas rebuild on 22 October; the Virginia figures are in the Virginia generator entry, and both are in the Climate TRACE handover package in the repository.</p>
 </div>
 <div id="srcs"></div>
 
@@ -594,7 +594,7 @@ page = (page.replace("__TODAY__", today)
             .replace("__DATA__", j({"entries": entries, "sources": sources, "guide": guide, "receipts": receipts, "standard": standard})))
 
 open(OUT, "w").write(page)
-print(f"wrote {OUT}: {len(entries)} entries ({n_verified} verified against primary), {len(countries)} countries, {n_sources} linked docs, {len(sources)} datasets, {len(guide)} themes, {len(receipts)} receipts")
+print(f"wrote {OUT}: {len(entries)} entries ({n_verified} verified against primary), {len(countries)} countries and territories (+ EU-wide and global), {n_sources} distinct linked docs, {len(sources)} datasets, {len(guide)} themes, {len(receipts)} receipts")
 if problems:
     print("PROBLEMS:"); [print(" -", p) for p in problems]
     sys.exit(1 if not entries else 0)

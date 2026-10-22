@@ -131,8 +131,38 @@
   "lat": 1.49,
   "lon": 103.74,
   "category": "moratorium",
-  "record": "Johor's committee began vetting applications in June 2024 and, per its vice-chairman Lee Ting Han (Nov 2024), rejected nearly 30% of applications in five months (4 of 14 foreign-operator bids), citing failure to show sustainable water/energy practices and sites lacking utility infrastructure; Johor capacity was stated at 10 MW (2021), ~1.3 GW (Nov 2024), 2.7 GW projected 2027. In Nov 2025 state exco Mohd Jafni Md Shukor said 51 projects were approved (17 operational, 11 under construction, 23 unbuilt) and the state 'will no longer approve' Tier 1 and Tier 2 facilities, which can use up to 50 million litres/day versus ~200,000 L/day for Tier 3/4; data centres needing water must use reclaimed water rather than Syarikat Air Johor supply. In Jan 2026 the state set a WUE threshold of 1.8.",
+  "record": "Johor's committee (formally the Jawatankuasa Pembangunan Pusat Data Negeri Johor, JPPDNJ, which screens applications for zoning, infrastructure, water, electricity and buffer zones before they reach local authorities, under a state data-centre planning guideline approved in April 2024) began vetting applications in June 2024 and, per its vice-chairman Lee Ting Han (Nov 2024, press), rejected nearly 30% of applications in five months (4 of 14 foreign-operator bids), citing failure to show sustainable water/energy practices and sites lacking utility infrastructure; Johor capacity was stated at 10 MW (2021), ~1.3 GW (Nov 2024), 2.7 GW projected 2027. In a 28 Nov 2024 state-assembly answer the Menteri Besar stated data centres must meet PUE not above 1.5 and WUE of 1.8; on 20 Nov 2025 exco Mohd Jafni Md Shukor told the assembly WUE must be below 1.8 under the planning guideline, with approval priority for applicants not using Syarikat Air Johor (SAJ) water. The state reported 42 approved projects (RM164.45bn) to Q2 2025 and, in a Nov 2025 written answer, 17 operating data centres. In Nov 2025 Jafni told the NST that 51 projects were approved (17 operational, 11 under construction, 23 unbuilt) and the state 'will no longer approve' Tier 1 and Tier 2 facilities, which can use up to 50 million litres/day versus ~200,000 L/day for Tier 3/4; data centres needing water must use reclaimed water rather than SAJ supply.",
   "record_sources": [
+   {
+    "title": "Dewan Negeri Johor: oral questions not reached, 28 Nov 2024 (Q38/A176, Menteri Besar: PUE not above 1.5, WUE 1.8; state coordinating committee)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2024/12/SOALAN-JAWAPAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-HARI-KHAMIS-28-NOV-2024.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2024-11-28"
+   },
+   {
+    "title": "Dewan Negeri Johor: oral questions not reached, 27 Nov 2024 (Q28/A21: Jawatankuasa Pembangunan Pusat Data Negeri Johor (JPPDNJ) role; Q16/A12: Johor data-centre planning guideline approved April 2024)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2024/11/SOALAN-JAWAPAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-HARI-RABU-27-NOV-2024.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2024-11-27"
+   },
+   {
+    "title": "Dewan Negeri Johor: oral questions not reached, 20 Nov 2025 (Q23/A140, Jafni: WUE below 1.8 under data-centre planning guideline; priority to non-SAJ water)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2025/11/SOALAN-LISAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-HARI-KHAMIS-20-NOV-2025.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2025-11-20"
+   },
+   {
+    "title": "Dewan Negeri Johor: written questions and answers, Nov 2025 (B26: 17 data centres operating in Johor)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2025/12/SOALAN-DAN-JAWAPAN-BERTULIS-NOV-2025-terkini.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2025-11"
+   },
+   {
+    "title": "Johor Negeri Pertama Guna Teknologi Air Terawat Untuk Industri Pusat Data (42 projects approved to Q2 2025, RM164.45 bn)",
+    "url": "https://mediadigitaljohor.gov.my/en/johor-negeri-pertama-guna-teknologi-air-terawat-untuk-industri-pusat-data/",
+    "publisher": "Media Digital Johor (Johor state government)",
+    "date": "2025-08-11"
+   },
    {
     "title": "Johor rejects 30 per cent of data centre bids",
     "url": "https://www.nst.com.my/amp/news/nation/2024/11/1136609/johor-rejects-30-cent-data-centre-bids",
@@ -167,12 +197,11 @@
     "date": "2026-01-05"
    }
   ],
-  "gap": "Approved-project counts (42 as of Q2 2025; 51 as of Nov 2025) and MW figures (1.3 GW vs an unreconciled 1.6 GW cited by ISEAS) are not published in a single state register; no primary committee documents are public.",
+  "gap": "Approved-project counts (42 as of Q2 2025 per state media; 51 as of Nov 2025 per press) and MW figures (1.3 GW vs an unreconciled 1.6 GW cited by ISEAS) are not published in a single state register; the ~30% rejection rate and the Tier 1/2 halt appear only in press interviews, and no JPPDNJ decisions or the planning guideline text are public.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Malay and English) for Johor state assembly replies, DCDCC/Special Technical Committee notices and state government statements; only press and Bernama copies were found (NST, Malay Mail, w.media, RTM), so the ~30% rejection, 51-project, Tier 1/2 and WUE 1.8 figures remain press-sourced.",
-  "verification_status": "not_found"
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): Dewan Negeri Johor papers confirm the JPPDNJ committee and April 2024 planning guideline (27 Nov 2024), PUE <=1.5 and WUE 1.8 (28 Nov 2024, MB) and WUE <1.8 (20 Nov 2025, Jafni), and 17 operating data centres (Nov 2025 written B26); Media Digital Johor confirms 42 approvals to Q2 2025. Earlier record dated the WUE 1.8 threshold to Jan 2026; it was stated in the assembly by Nov 2024. Not found in assembly papers (Nov 2024 and Nov 2025 oral/written sets, Nov 2025 Penyata Rasmi excerpt) or state media: the ~30% rejection, 51-project and Tier 1/2 halt figures.",
+  "verification_status": "partial"
  },
  {
   "id": "my-johor-span-water-440mld",
@@ -196,6 +225,24 @@
     "url": "https://www.malaymail.com/news/malaysia/2026/02/07/with-data-centres-booming-johor-looking-into-groundwater-for-industry-needs/208322",
     "publisher": "Malay Mail / Bernama",
     "date": "2026-02-07"
+   },
+   {
+    "title": "Dewan Negeri Johor: written questions and answers, Nov 2024 (B28, Menteri Besar: data-centre treated-water use 7.72 MLD, ~20% of approved demand)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2024/12/Soalan-Jawapan-Bertulis-November-2024-Belanjawan-2025REV-1.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2024-11"
+   },
+   {
+    "title": "Johor Negeri Pertama Guna Teknologi Air Terawat Untuk Industri Pusat Data (alternative-water demand 136 MLD to 30 Jun 2025; IWK 12 MLD)",
+    "url": "https://mediadigitaljohor.gov.my/en/johor-negeri-pertama-guna-teknologi-air-terawat-untuk-industri-pusat-data/",
+    "publisher": "Media Digital Johor (Johor state government)",
+    "date": "2025-08-11"
+   },
+   {
+    "title": "Dewan Negeri Johor: oral questions not reached, 20 Nov 2025 (Q23/A140: WUE below 1.8; SPAN water-supply guideline effective 1 Sep 2025; Q22/Q31: data-centre tariff RM5.33/m3 from 1 Aug 2025)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2025/11/SOALAN-LISAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-HARI-KHAMIS-20-NOV-2025.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2025-11-20"
    }
   ],
   "claim": "Johor state says operators must meet WUE <1.8, are encouraged to reuse water up to six cycles, and an MoU with Indah Water Konsortium will supply treated wastewater.",
@@ -205,14 +252,25 @@
     "url": "https://www.malaymail.com/news/malaysia/2026/02/07/with-data-centres-booming-johor-looking-into-groundwater-for-industry-needs/208322",
     "publisher": "Malay Mail / Bernama",
     "date": "2026-02-07"
+   },
+   {
+    "title": "Dewan Negeri Johor: oral questions not reached, 20 Nov 2025 (Q23/A140: WUE below 1.8)",
+    "url": "https://dewannegeri.johor.gov.my/wp-content/uploads/2025/11/SOALAN-LISAN-YANG-TIDAK-HABIS-DIJAWAB-PADA-HARI-KHAMIS-20-NOV-2025.pdf",
+    "publisher": "Dewan Negeri Johor",
+    "date": "2025-11-20"
+   },
+   {
+    "title": "Johor Negeri Pertama Guna Teknologi Air Terawat Untuk Industri Pusat Data",
+    "url": "https://mediadigitaljohor.gov.my/en/johor-negeri-pertama-guna-teknologi-air-terawat-untuk-industri-pusat-data/",
+    "publisher": "Media Digital Johor (Johor state government)",
+    "date": "2025-08-11"
    }
   ],
-  "gap": "The regulator's 440-614 MLD request figures and its 3-5 year sustainability warning are not reconciled publicly with the state's approval pace; no SAJ permit documents are public.",
+  "gap": "The regulator's 440-614 MLD request figures and its 3-5 year sustainability warning are not reconciled publicly with the state's approval pace; the state assembly was told in Nov 2024 that data centres actually drew 7.72 MLD of treated water (~20% of approved demand), and the state reported 136 MLD of alternative-water demand from data centres to 30 Jun 2025, figures on different bases from SPAN's requests. No SAJ permit documents are public.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Malay) for SPAN's 21 Jan 2025 statement; the parliament-repository document found was SPAN's 2023 annual report, which has no data-centre figures, and no SPAN or Ranhill SAJ release with the 440/614/79 MLD figures was located, so they remain press-sourced.",
-  "verification_status": "not_found"
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): Johor primaries confirm the claim's WUE <1.8 (DUN 20 Nov 2025, Q23) and treated-wastewater supply from Indah Water (three agreements with JSW/IWK, 12 MLD, per Media Digital Johor Aug 2025; described as agreements, not an MoU); the 'six cycles' reuse was not found. SPAN's 440/614/79 MLD, 52/27 data centres and 3-5 year warning were not found in a SPAN, PETRA (Dewan Rakyat 24 Jun 2026 answer) or Johor assembly document; span.gov.my is robots-disallowed (added to browser_fetch_list.csv); Bernama (lite id 2442563) gives the 440/614 MLD figures unattributed in a CIMB note story, while RTM's report of Santiago's 21 Jan 2025 remarks gives none of them.",
+  "verification_status": "partial"
  },
  {
   "id": "id-batam-nongsa-power",
@@ -223,8 +281,20 @@
   "lat": 1.12,
   "lon": 104.1,
   "category": "fuel",
-  "record": "A 24 Sep 2022 joint review by BP Batam, the Energy and Mineral Resources Ministry, BPKP and PLN Batam stated that 11 data centres, once realised, 'will require 500 MW', with planned reservoir solar of >=40 MW (Tembesi) and 720 MW (Duriangkang) and a long-term Sumatra-Batam interconnection of 2,000-3,000 MW. On 16 Jul 2026 PLN Batam signed a PPA with Dalle Energy Batam for two 150 MW gas/steam combined-cycle units (Batam 3 and 4); the city government cited Nongsa Digital Park data centres as a major driver.",
+  "record": "A 24 Sep 2022 joint review by BP Batam, the Energy and Mineral Resources Ministry, BPKP and PLN Batam (Antara) stated that 11 data centres, once realised, 'will require 500 MW', with planned reservoir solar of >=40 MW (Tembesi) and 720 MW (Duriangkang) and a long-term Sumatra-Batam interconnection of 2,000-3,000 MW; BP Batam's own liaison-office release (13 Oct 2022) quotes official Irfan Syakir that when the 11 planned Nongsa data centres are built 'we would need another 500 MW' and that floating solar is planned on the Duriangkang and Tembesi dams. On 16 Jul 2026 PLN Batam and Dalle Energy Batam signed an electricity sales and purchase agreement (PJBTL) for PLTGU Batam 3 and Batam 4 (2 x 150 MW gas/steam combined cycle); per the Batam city government release, city secretary Firmansyah cited investment promotion including the Nongsa Digital Park data-centre area, and PLN Batam listed data centres among Batam's growth sectors.",
   "record_sources": [
+   {
+    "title": "Renewable Energy Sought After By Jakarta, BP Batam Prepares Floating Solar Power Plant (BP Batam liaison office; Irfan Syakir: 11 Nongsa data centres would need another 500 MW)",
+    "url": "https://penghubung.bpbatam.go.id/?p=2814",
+    "publisher": "BP Batam (Penghubung office)",
+    "date": "2022-10-13"
+   },
+   {
+    "title": "Batam Gandeng Dalle Energy, Proyek PLTGU 300 MW Dukung Pertumbuhan Industri Batam",
+    "url": "https://mediacenter.batam.go.id/2026/07/16/batam-gandeng-dalle-energy-proyek-pltgu-300-mw-dukung-pertumbuhan-industri-batam/",
+    "publisher": "Pemerintah Kota Batam Media Center",
+    "date": "2026-07-16"
+   },
    {
     "title": "Joint review conducted on Batam's electrical energy security",
     "url": "https://en.antaranews.com/news/251469/joint-review-conducted-on-batams-electrical-energy-security",
@@ -240,12 +310,11 @@
   ],
   "claim": "none found (no operator PUE, water or renewable claims located in official sources)",
   "claim_sources": [],
-  "gap": "The 2026 capacity addition tied to data-centre growth is gas-fired; no official 2024-2026 status for the 2022 reservoir-solar plans or any data-centre water record was found. 2022 source is older than preferred window.",
-  "confidence": "low",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Indonesian) for BP Batam, ESDM or PLN Batam records of the 2022 joint review and the 2026 Dalle Energy Batam PPA; only Antara, RRI and other press were found (press also reports separate 2026 PLN Batam supply deals with DayOne and Altiva, not verified), so the 500 MW and 2x150 MW figures were not confirmed from primary documents.",
-  "verification_status": "not_found"
+  "gap": "The 2026 capacity addition linked to data-centre growth is gas-fired; no official 2024-2026 status for the 2022 reservoir-solar MW plans or any data-centre water record was found. Antara (25 Sep 2026) reports a BP Batam mapping of ~1.47 GW (IT) of data-centre demand, far above the 2022 500 MW figure, not confirmed from a BP Batam document. 2022 sources are older than preferred window.",
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): BP Batam's liaison-office release (penghubung.bpbatam.go.id, 13 Oct 2022) confirms 11 data centres needing another 500 MW and Duriangkang/Tembesi floating solar (no MW given); Batam city Media Center (16 Jul 2026) confirms the PLN Batam-Dalle Energy PJBTL for PLTGU Batam 3 and 4, 2 x 150 MW. Not confirmed from a primary: the 40/720 MW reservoir-solar figures, the 2,000-3,000 MW interconnection and BPKP participation; BP Batam's own 2022 joint-review release (bpbatam.go.id) returns client errors and the Wayback Machine is blocked to the fetcher (added to browser_fetch_list.csv). The record's 'major driver' wording was softened to match the city release.",
+  "verification_status": "partial"
  },
  {
   "id": "in-mop-26gw-fy32",
@@ -256,8 +325,14 @@
   "lat": 28.6,
   "lon": 77.2,
   "category": "grid_policy",
-  "record": "In a written Rajya Sabha reply reported 31 Jul 2026, Minister of State for Power Shripad Naik said data centres are projected to consume 26.3 GW by FY2031-32, that data-centre demand will be included in the National Electricity Plan for FY28-37 (expected March 2027), that CEA is assessing emerging loads under the 21st Electric Power Survey, and that transmission development is estimated at ~Rs 9.16 trillion by FY32; national peak demand reached 270.8 GW.",
+  "record": "In a written reply to Rajya Sabha Unstarred Question No. 956 answered 27 Jul 2026, Minister of State for Power Shripad Naik stated that, per the mid-term review of the 20th Electric Power Survey, 'an additional load of 26.3 GW from Artificial Intelligence (AI) Data Centres is projected by 2031-32', which 'is expected to be integrated into the grid and primarily served by renewable energy capacity', and that transmission under the National Electricity Plan (2022-32) carries an estimated investment of about Rs 9,16,142 crore; a companion reply the same day (Q953) gives 2026-27 peak demand (to June) of 270,832 MW. Press reports (Construction World, 31 Jul 2026) additionally attribute to the ministry/CEA that data-centre demand will be considered in the NEP for FY28-37 (expected by March 2027) and assessed under the 21st Electric Power Survey; those two statements are not in the reply text.",
   "record_sources": [
+   {
+    "title": "Rajya Sabha Unstarred Question No. 956 (Dr. Santrupt Misra), answered 27.07.2026, in Ministry of Power compilation of RS Unstarred Q943-957",
+    "url": "https://www.powermin.gov.in/static/uploads/2026/07/f59419a881df9acc24bed8753f6d9fda.pdf",
+    "publisher": "Ministry of Power, Government of India",
+    "date": "2026-07-27"
+   },
    {
     "title": "Government Projects 26 GW Data Centre Demand By FY32",
     "url": "https://www.constructionworld.in/policy-updates-and-economic-news/government-projects-26-gw-data-centre-demand-by-fy32/95339",
@@ -280,12 +355,11 @@
     "date": "2026"
    }
   ],
-  "gap": "The 26.3 GW figure is known only via press reports of a parliamentary reply; no CEA document with state-level MW or TWh breakdown was located, and no state approval records with MW for Telangana/Maharashtra/Tamil Nadu were found.",
-  "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched for the Rajya Sabha reply on sansad/PIB; only press copies were found and they differ: PSU Watch dates the written reply 2026-07-27, describes 26.3 GW as additional load from AI data centres by 2031-32 and cites the 20th EPS mid-term review; the reply text was not located, so the record's figures remain press-sourced.",
-  "verification_status": "not_found"
+  "gap": "The reply gives only a national 26.3 GW additional AI data-centre load by 2031-32 (from the 20th EPS mid-term review) with no state-level MW or TWh breakdown, and its statement that this load will be 'primarily served by renewable energy capacity' is not accompanied by a sourcing plan; the NEP FY28-37 and 21st EPS statements are press-attributed only, and no state approval records with MW for Telangana/Maharashtra/Tamil Nadu were found.",
+  "confidence": "high",
+  "last_checked": "2026-10-22",
+  "verification_note": "Verified 2026-10-22 against Ministry of Power PDF of RS Unstarred Q956 (27.07.2026): 26.3 GW additional AI data-centre load by 2031-32 per 20th EPS mid-term review, Rs 9,16,142 crore transmission (2022-32), peak 270,832 MW (Q953); earlier record attributed NEP FY28-37/March 2027 and the 21st EPS to the reply, which the reply text does not contain (press only).",
+  "verification_status": "verified"
  },
  {
   "id": "in-telangana-aws-future-city",
@@ -296,30 +370,53 @@
   "lat": 17.1,
   "lon": 78.4,
   "category": "power",
-  "record": "Foundation stone laid ~15 Jul 2026 at Bharat Future City near Hyderabad for an AWS development of ~Rs 60,000 crore (~US$6.23bn) across phases on 300 acres (202 acres Future City, 98 acres Chandanvelly); first phase within two years. The number of buildings and IT capacity (MW) were not disclosed; no specific power or water supply commitments were reported.",
+  "record": "Foundation stone laid 15 Jul 2026 at Bharat Future City near Hyderabad for an AWS data centre (Amazon India release, same date, quoting CM A. Revanth Reddy and IT Minister D. Sridhar Babu); Amazon's release gives no site investment, acreage, building count or MW, stating only that AWS plans over US$21bn of cloud/AI infrastructure investment in India in 2026-2030. Press reports the overall Telangana AWS investment at ~Rs 60,000 crore (the commitment announced at WEF Davos in Jan 2025) and allotments of 202 acres in Future City and 98 acres in Chandanvelly, with the first phase to be completed in 24 months; no specific power or water supply commitments were reported.",
   "record_sources": [
+   {
+    "title": "AWS data centre Hyderabad: foundation stone at Bharat Future City (Amazon India newsroom)",
+    "url": "https://www.aboutamazon.in/news/aws/aws-data-centre-hyderabad",
+    "publisher": "Amazon India (operator)",
+    "date": "2026-07-15"
+   },
    {
     "title": "Foundation stone laid for AWS data center development in Telangana, India",
     "url": "https://www.datacenterdynamics.com/en/news/foundation-stone-laid-for-aws-data-center-development-in-telangana-india/",
     "publisher": "Data Center Dynamics",
+    "date": "2026-07"
+   },
+   {
+    "title": "WEF 2025: Telangana secures Rs 1.78 lakh crore investments (AWS Rs 60,000 crore commitment)",
+    "url": "https://www.newsonair.gov.in/wef-2025-telangana-secures-₹1-78-lakh-crore-investments-creating-over-47000-jobs",
+    "publisher": "All India Radio News (public broadcaster)",
+    "date": "2025-01"
+   },
+   {
+    "title": "CM Revanth Reddy to Lay Foundation Stone for Rs 60,000-Crore Amazon Data Centre",
+    "url": "https://www.deccanchronicle.com/amp/southern-states/telangana/cm-revanth-reddy-to-lay-foundation-stone-for-60000-crore-amazon-data-centre-1970996",
+    "publisher": "Deccan Chronicle",
     "date": "2026-07"
    }
   ],
   "claim": "Telangana IT Minister D. Sridhar Babu called it 'a strong endorsement of our vision to make the state India's AI and cloud capital' and cited 'abundant clean energy' as a state strength.",
   "claim_sources": [
    {
+    "title": "AWS data centre Hyderabad (Amazon India newsroom; Sridhar Babu statement)",
+    "url": "https://www.aboutamazon.in/news/aws/aws-data-centre-hyderabad",
+    "publisher": "Amazon India (operator)",
+    "date": "2026-07-15"
+   },
+   {
     "title": "Foundation stone laid for AWS data center development in Telangana, India",
     "url": "https://www.datacenterdynamics.com/en/news/foundation-stone-laid-for-aws-data-center-development-in-telangana-india/",
     "publisher": "Data Center Dynamics",
     "date": "2026-07"
    }
   ],
-  "gap": "State claim of 'abundant clean energy' is not accompanied by any published MW, power-source or groundwater (CGWA NOC) record for the site.",
+  "gap": "State claim of 'abundant clean energy' is not accompanied by any published MW, power-source or groundwater (CGWA NOC) record for the site; the Rs 60,000 crore, 300-acre and 24-month first-phase figures appear only in press and broadcaster reports, not in the operator release or a located government order.",
   "confidence": "low",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched for a Telangana government release, G.O. or TGIIC land allotment for the AWS Future City/Chandanvelly sites; only press (DCD, Deccan Chronicle, The Print, Siasat) was found, so the Rs 60,000 crore, 300-acre and phasing figures were not confirmed from a government document.",
-  "verification_status": "not_found"
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): Amazon India's 15 Jul 2026 release confirms the date, Bharat Future City location and Sridhar Babu's 'abundant clean energy' statement, but gives no Rs 60,000 crore, acreage, phase or MW figure (only US$21bn India-wide 2026-2030); Rs 60,000 crore traced to the Jan 2025 Davos commitment (AIR News); 202+98 acres and 24-month phase only in Deccan Chronicle. Telangana GOIR G.O. portal (search form, not fetchable) and TGIIC/I&PR searched without result; GOIR added to browser_fetch_list.csv.",
+  "verification_status": "partial"
  },
  {
   "id": "in-gujarat-jamnagar-policy",
@@ -337,6 +434,12 @@
     "url": "https://superkalam.com/current-affairs/16-07-2026/green-energy-push-7-5-gw-capacity-target-gujarat-s-data-centre-policy-pg12-037f6c10-3313-4b69-8308-f866201d86b5",
     "publisher": "SuperKalam (tertiary, citing Indian Express)",
     "date": "2026-07-16"
+   },
+   {
+    "title": "Gujarat Data Center Policy 2026-2029: A Push For Large-Scale Data Center Infrastructure (law-firm summary quoting policy text; DST nodal department)",
+    "url": "https://corporate.cyrilamarchandblogs.com/2026/07/gujarat-data-center-policy-2026-2029-a-push-for-large-scale-data-center-infrastructure/",
+    "publisher": "Cyril Amarchand Mangaldas (secondary)",
+    "date": "2026-07"
    }
   ],
   "claim": "Reliance has publicly described the Jamnagar project as the world's largest AI data centre (gigawatt-scale) in press coverage.",
@@ -348,11 +451,10 @@
     "date": "2025"
    }
   ],
-  "gap": "Only a 168 MW initial figure and a desalination claim are reported; the Gujarat policy notification itself and any Gujarat approval or water permit for the gigawatt-scale claim were not located.",
+  "gap": "Only a 168 MW initial figure and a desalination claim are reported for Jamnagar; law-firm summaries of the policy report a 20% capex subsidy (or Rs 2 crore per MLD) for captive desalination and doorstep water supply, but no Gujarat approval or water permit for the gigawatt-scale Jamnagar claim was located, and the policy PDF posted by DST Gujarat could not be read here.",
   "confidence": "low",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched for the Viksit Gujarat Data Center Policy 2026-29 notification or government resolution on Gujarat government sites; only press and law-firm summaries were found (IANS reported the policy notified on 2026-08-07), so the 7.5 GW, 51% green power, electricity-duty and Jamnagar 168 MW figures remain sourced to a tertiary summary.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Searched for the Viksit Gujarat Data Center Policy 2026-29 notification or government resolution on Gujarat government sites; only press and law-firm summaries were found (IANS reported the policy notified on 2026-08-07), so the 7.5 GW, 51% green power, electricity-duty and Jamnagar 168 MW figures remain sourced to a tertiary summary. Second pass (2026-10-22): DST Gujarat's Policies page (dst.gujarat.gov.in/Home/Policies) lists 'Viksit Gujarat Data Center Policy (2026-29)' as a PDF, but its session-encoded ViewFile link returns the site homepage to automated fetch (added to browser_fetch_list.csv); DST GR page lists no GR; searched Gujarati terms, CMO/Information Department releases, PwC, India Briefing, DSK Legal and Cyril Amarchand: the law-firm summaries quote policy text matching 7.5 GW, 51% green/RE for core operations, 100% electricity-duty reimbursement for 20 years and Essential Service status under the Gujarat ESMA 1972, and none mentions Jamnagar, Reliance or 168 MW.",
   "verification_status": "not_found"
  },
  {
@@ -394,8 +496,20 @@
   "lat": 42.63,
   "lon": 141.6,
   "category": "power",
-  "record": "OCCTO's FY2025 demand assumption (2025-01-22) separately counts peak-demand additions from new and expanded data centres and semiconductor plants in seven supply areas, including Hokkaido; nationally these total 7.15 GW by FY2034, of which data centres account for 6.16 GW (and 44.0 of 51.4 billion kWh of the corresponding energy increment).",
+  "record": "METI's 7 Nov 2023 adoption notice selected SoftBank Corp.'s Tomakomai, Hokkaido project for the FY2023 Data Center Regional Base Development Subsidy (infrastructure and facilities; amount, MW and energy conditions not stated); SoftBank's same-day release targets a first 50 MW-scale phase in FY2026 with power from Hokkaido Electric and SB Power. OCCTO's demand assumptions count peak-demand additions from new and expanded data centres and semiconductor plants separately in seven supply areas including Hokkaido: the FY2025 assumption (2025-01-22) gave 7.15 GW nationally by FY2034 (data centres 6.16 GW; 44.0 of 51.4 billion kWh), and the FY2026 assumption (2026-01-21) raised this to 7.62 GW by FY2035 (data centres 6.61 GW; 49.4 of 56.8 billion kWh), stating Hokkaido's peak demand rises mainly because of these additions (Hokkaido FY2035 peak 4.60 GW summer / 5.37 GW winter) without a numeric Hokkaido breakdown in the text.",
   "record_sources": [
+   {
+    "title": "令和5年度「データセンター地方拠点整備事業費補助金」の採択結果について (SoftBank Corp., 北海道苫小牧市)",
+    "url": "https://www.meti.go.jp/information/publicoffer/saitaku/2023/downloadfiles/s231107001_2.pdf",
+    "publisher": "METI (Commerce and Information Policy Bureau)",
+    "date": "2023-11-07"
+   },
+   {
+    "title": "全国及び供給区域ごとの需要想定（2026年度）",
+    "url": "https://www.occto.or.jp/assets/news/juyousoutei/260121_juyousoutei_r1.pdf",
+    "publisher": "OCCTO",
+    "date": "2026-01-21"
+   },
    {
     "title": "全国及び供給区域ごとの需要想定（2025年度）",
     "url": "https://www.occto.or.jp/juyousoutei/2024/files/250122_juyousoutei.pdf",
@@ -412,11 +526,10 @@
     "date": "2026"
    }
   ],
-  "gap": "The 100% renewable and >300 MW figures are operator claims; no Hokkaido Electric Power connection record or renewable supply contract was found in public sources.",
+  "gap": "The 100% renewable and >300 MW figures are operator claims (SoftBank's March 2023 slide to an MIC expert meeting gave 'max 300 MW' around 2029 and 'renewable energy use' without a 100% figure); METI's subsidy notice and OCCTO's assumptions give no site MW or renewable condition, and no Hokkaido Electric connection record or renewable supply contract was found in public sources.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Partial: the OCCTO FY2025 demand assumption confirms that data-centre and semiconductor load additions are counted separately for Hokkaido among seven areas (6.16 GW of data-centre peak additions nationally by FY2034), but it gives no site-level figure; SoftBank's >300 MW and 100% renewable statements remain unconfirmed by any utility or regulator record.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): METI's adoption notice confirms the Tomakomai project and subsidy selection (no MW/RE terms); OCCTO FY2026 assumption (2026-01-21) updates the national data-centre peak addition to 6.61 GW by FY2035 and names Hokkaido among areas driven by these additions, with no site figure. Hokkaido Electric press releases and grid-connection records were searched (Japanese) without result; SoftBank's >300 MW and 100% Hokkaido renewable statements remain operator-only, and its 2023 MIC slide did not say 100%.",
   "verification_status": "partial"
  },
  {
@@ -428,8 +541,20 @@
   "lat": 37.57,
   "lon": 126.98,
   "category": "grid_policy",
-  "record": "MOTIE's 11th Basic Plan for Electricity Supply and Demand projects data-centre consumption of 30 TWh and peak demand of 6.2 GW by 2038; KEPCO reported 117 applications totalling 7,343 MW as of Aug 2023, of which 76 (4,718 MW) could be supplied. Data released by Rep. Kim Seong-won from MOTIE/KEPCO show 290 data-centre supply applications from Aug 2024 to Jun 2025, 195 (67%) in the Seoul metropolitan area requesting ~20 GW; of cases reaching MOTIE review, 4 of 19 metro applications passed (21%) versus 10 of 14 non-metro (71%). The assessment (introduced Aug 2024) scores technical 60, non-technical 20, policy 20 points; 72.9% of private data centres were in the metro area.",
+  "record": "MOTIE's March 2023 plan to ease capital-area data-centre concentration counted 147 data centres with 1,762 MW of demand (Dec 2022) and projected 732 facilities with 49,397 MW of new demand by 2029, 58.2% (28,733 MW) in the capital area, where only 40 of 601 applications (6.7%) could be supplied on schedule versus 64 of 131 (48.9%) elsewhere. Asia Economy reports that the 11th Basic Plan for Electricity Supply and Demand projects data-centre consumption of 30 TWh and peak demand of 6.2 GW by 2038, and that KEPCO reported 117 applications totalling 7,343 MW as of Aug 2023, of which 76 (4,718 MW) could be supplied. Data released by Rep. Kim Seong-won from MOTIE/KEPCO show 290 data-centre supply applications from Aug 2024 to Jun 2025, 195 (67%) in the Seoul metropolitan area requesting ~20 GW; of cases reaching MOTIE review, 4 of 19 metro applications passed (21%) versus 10 of 14 non-metro (71%). The assessment (introduced Aug 2024) covers facilities of 10 MW or more and is reviewed by the Power Policy Deliberation Committee; MOTIE's Aug 2024 release names supply headroom (25 points) and difficulty of securing headroom (20 points) among its items, while press reports the overall split as technical 60, non-technical 20, policy 20 points; 72.9% of private data centres were in the metro area.",
   "record_sources": [
+   {
+    "title": "데이터센터 수도권 집중 완화 방안 (Measures to ease capital-area concentration of data centres)",
+    "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/f44086d3d46f975295d5c584675b08ec/778bdbf5db9ced7c8fd52756c00bf0cd",
+    "publisher": "Ministry of Trade, Industry and Energy",
+    "date": "2023-03-09"
+   },
+   {
+    "title": "전력계통영향평가 관련 보도설명자료 (explanatory release responding to Hankyung reports)",
+    "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/5e607e5da1f16e16ee99a05a0768bd5a",
+    "publisher": "Ministry of Trade, Industry and Energy (Power Grid Innovation Division)",
+    "date": "2024-08-12"
+   },
    {
     "title": "2038 Data Center Power Consumption Projected at 30 TWh",
     "url": "https://asiae.co.kr/en/article/2025031717174507098",
@@ -447,6 +572,12 @@
     "url": "https://view.asiae.co.kr/en/article/2024120508501173795",
     "publisher": "Asia Economy",
     "date": "2024-12-05"
+   },
+   {
+    "title": "제11차 전력수급기본계획 전략환경영향평가서",
+    "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/5f008774e60a967aa11c49a7c1679318/778bdbf5db9ced7c8fd52756c00bf0cd",
+    "publisher": "Ministry of Trade, Industry and Energy",
+    "date": "2024-07"
    }
   ],
   "claim": "MOTIE (Choi Sung-jun) says the assessment aims 'to ensure stable power supply and to induce the establishment of large-scale power demand facilities in local areas'; the Korea Data Center Association calls it a de facto 'Data Center Prohibition Act'.",
@@ -460,9 +591,8 @@
   ],
   "gap": "Government and industry characterise the same pass rates differently (regional dispersion vs. de facto ban); the outcome of the 162 metro applications not reaching MOTIE review is not published, and MOTIE's primary notice was not fetched.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "MOTIE's 2025-02-21 release on the finalized 11th Basic Plan (motir.go.kr) confirms data-centre expansion is included in additional demand but gives no data-centre TWh/GW figure; the plan annex PDF could not be fetched (access not granted), and no KEPCO or Rep. Kim Seong-won release with the 290/195/~20 GW and pass-rate figures was found, so these remain press-sourced.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): MOTIE documents on motir.go.kr confirm the March 2023 capital-area concentration figures (147 DCs/1,762 MW; 732 facilities/49,397 MW by 2029; 40 of 601 metro applications suppliable) and, in a 12 Aug 2024 explanatory release, the 10 MW threshold, Power Policy Deliberation Committee review and 25-/20-point grid items, but not the 60/20/20 split or a pass threshold. The 11th Basic Plan's Strategic Environmental Assessment (Jul 2024) and MOTIE's 2025-02-21 release give no data-centre TWh/GW figure, so 30 TWh/6.2 GW remains attributed to the plan only by Asia Economy; KEPCO's 117/7,343 MW and Rep. Kim Seong-won's 290/195/~20 GW and pass rates were not found in a KEPCO, MOTIE or Assembly document (Korean searches).",
   "verification_status": "partial"
  },
  {
@@ -474,7 +604,7 @@
   "lat": 25.03,
   "lon": 121.56,
   "category": "grid_policy",
-  "record": "Taipower stopped accepting supply applications for data centres of 5 MW or more north of Taoyuan (sources date the start to Aug 2023, Sep 2023 or early Aug 2024); spokesperson Tsai Chih-meng cited Executive Yuan data showing 2023 northern demand of 93 billion kWh against 75 billion kWh generated. In July 2026 Taipower chairman Tseng Wen-sheng said Taipower would support local AI data-centre zones near northern power plants after grid/substation assessment, and MOEA Minister Kung Ming-hsin said the government is willing to relax the 5 MW ban; Taoyuan plans an AI computing centre near the Datan gas plant. Economic Daily (Apr 2026) reports data-centre/AI capacity expected to reach ~1 GW by 2030.",
+  "record": "Taipower stopped accepting supply applications for data centres of 5 MW or more north of Taoyuan; chairman Tseng Wen-sheng stated publicly on 9 Aug 2024 that the area 'no longer' approves such supply, and a Taipower press release of 10 Aug 2024 (as reported by Commercial Times) gave 2023 northern consumption of 93.1 billion kWh against 75.0 billion kWh generated (Business Next attributes the same comparison to spokesperson Tsai Chih-meng citing Executive Yuan data; other reports date the start to Aug or Sep 2023). In Nov 2025 the MOEA Energy Administration amended rules under Energy Management Act Art. 16 requiring new or expanded data centres of 5 MW or more to adopt best available technology and submit energy-use plans, with PUE caps of 1.3 (hyperscale) and 1.4 (colocation). In July 2026 Tseng said Taipower would support local AI data-centre zones near northern power plants after grid/substation assessment, and MOEA Minister Kung Ming-hsin told the Legislative Yuan economic committee that 5 MW+ AI data centres could be sited north of Taoyuan conditionally, within roughly 2 km of the Datan and Hsieh-ho plants; Taoyuan plans an AI computing centre near the Datan gas plant. Economic Daily (Apr 2026) reports data-centre/AI capacity expected to reach ~1 GW by 2030.",
   "record_sources": [
    {
     "title": "台電暫停受理桃園以北5MW以上資料中心用電申請",
@@ -493,6 +623,18 @@
     "url": "https://www.taipeitimes.com/News/biz/archives/2026/07/16/2003860797",
     "publisher": "Taipei Times",
     "date": "2026-07-16"
+   },
+   {
+    "title": "台電：桃園以北不再核供5MW以上資料中心 (reports Taipower press release of 10 Aug 2024: 2023 northern use 931 億度 vs generation 750 億度)",
+    "url": "https://www.ctee.com.tw/news/20240810700723-430503",
+    "publisher": "Commercial Times (工商時報)",
+    "date": "2024-08-10"
+   },
+   {
+    "title": "桃園以北設資料中心 限電廠2公里內",
+    "url": "https://udn.com/news/story/7238/9652344",
+    "publisher": "Economic Daily News / UDN",
+    "date": "2026-07-27"
    }
   ],
   "claim": "Taipower says it encourages data centres to locate in central and southern Taiwan where surplus and renewable supply is greater; MOEA says new data centres should be near power plants where possible.",
@@ -504,11 +646,10 @@
     "date": "2026-07-16"
    }
   ],
-  "gap": "Start date of the suspension conflicts across reports (Aug 2023 / Sep 2023 / Aug 2024) and no Taipower primary notice, application counts or MW totals for refused applications are public.",
+  "gap": "Taipower's first public statement of the suspension is dated 9-10 Aug 2024, but reports dating its start to Aug/Sep 2023 are unreconciled; no Taipower primary notice, application counts or MW totals for refused applications are public, and the July 2026 conditional easing (~2 km from Datan/Hsieh-ho) is known only from press accounts of a Legislative Yuan session.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Chinese) for a Taipower or MOEA notice and Legislative Yuan replies on the 5 MW suspension; only press was found (UDN, TechNews, Storm, Business Next), so the start date and the 93 vs 75 billion kWh figures remain unconfirmed; July 2026 UDN headlines describe the northern 5 MW restriction as being lifted for AI data-centre zones, also not confirmed from a primary notice.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Searched (Chinese) for a Taipower or MOEA notice and Legislative Yuan replies on the 5 MW suspension; only press was found (UDN, TechNews, Storm, Business Next), so the start date and the 93 vs 75 billion kWh figures remain unconfirmed; July 2026 UDN headlines describe the northern 5 MW restriction as being lifted for AI data-centre zones, also not confirmed from a primary notice. Second pass (2026-10-22): Commercial Times (10 Aug 2024) says the 93.1 vs 75.0 billion kWh figures came from a Taipower press release that day, but taipower.com.tw and the MOEA news archive (NewsList history) return client errors to automated fetch (both added to browser_fetch_list.csv); MOEA's 10 Aug 2024 response was found only as a Facebook post embedded in TechNews; searched LY gazette/committee terms (立法院公報, 龔明鑫 2公里) and Energy Administration Art. 16 notices, finding only press (UDN, LTN, Yahoo/TechNews).",
   "verification_status": "not_found"
  },
  {
@@ -556,8 +697,14 @@
   "lat": 37.5,
   "lon": 105.2,
   "category": "fuel",
-  "record": "Xinhua (30 May 2025) reports the Inner Mongolia cluster's data centres used 1.22 billion kWh in Q1 2025 with an 84.57% green-power share; Inner Mongolia Energy Bureau director Cao Siyang said wind+solar installed capacity exceeded 135 GW in 2024, surpassing thermal installed capacity; Ulanqab Ucloud recovers ~78,000 GJ/yr of waste heat. People's Daily (28 Jul 2026) reports Zhongwei, Ningxia at 331,000 standard racks, 8 signed ultra-large AI projects (RMB 188.5bn), and an RMB 8.7bn green direct-supply project (1.5 GW wind + 500 MW solar, ~4.3 bn kWh/yr described as 'basically sufficient' for the cluster) operational since May 2026 with line losses under 3%. Ningxia's 2025 cluster targets were PUE <=1.2 and 65% renewable utilisation.",
+  "record": "Xinhua (30 May 2025) reports the Inner Mongolia cluster's data centres used 1.22 billion kWh in Q1 2025 with an 84.57% green-power share; Inner Mongolia Energy Bureau director Cao Siyang said cumulative new-energy installed capacity exceeded 135 GW by end-2024, surpassing thermal installed capacity; Ulanqab Ucloud recovers ~78,000 GJ/yr of waste heat. People's Daily (28 Jul 2026) reports Zhongwei, Ningxia at 331,000 standard racks, 8 signed ultra-large AI projects (RMB 188.5bn), and an RMB 8.7bn green direct-supply project (1.5 GW wind + 500 MW solar, ~4.3 bn kWh/yr described as able to 'basically meet' the cluster's demand) with line losses under 3%. Per the National Energy Administration (8 May 2026), only the 500 MW China Datang Zhongwei solar plant entered operation in May 2026, the 1.5 GW wind farm was scheduled for full-capacity grid connection in September 2026, and the combined output is to meet the Zhongwei cloud base data centres' 2.29 bn kWh annual demand via four dedicated lines (4.6 GW planned after phase two). Xinhua (Dec 2024) reports Ningxia expects the Zhongwei cluster to reach average PUE <=1.2 and 65% renewable utilisation by 2025.",
   "record_sources": [
+   {
+    "title": "全国首个大规模“算电协同”绿电直供项目投运",
+    "url": "https://www.nea.gov.cn/20260508/b975a9364d18444c808318430bf660cf/c.html",
+    "publisher": "National Energy Administration (国家能源局), republishing China Energy News",
+    "date": "2026-05-08"
+   },
    {
     "title": "内蒙古扎实推进绿色算力大基地建设",
     "url": "https://www.news.cn/politics/20250530/e5da7c9099b04454a53b00502b5c6fca/c.html",
@@ -575,6 +722,12 @@
     "url": "https://www.news.cn/tech/20241221/14cb8d01f42d4964a7da90be593a30d5/c.html",
     "publisher": "Xinhua",
     "date": "2024-12-21"
+   },
+   {
+    "title": "绿色算力大基地是怎样炼成的 (Economic Information Daily, republished in official-release section)",
+    "url": "https://www.szzg.gov.cn/2025/xwzx/qwfb/202506/t20250616_5033818.htm",
+    "publisher": "Digital China Summit official site (szzg.gov.cn) / 经济参考报",
+    "date": "2025-06-16"
    }
   ],
   "claim": "Provincial officials and operators state the clusters are 'green computing' bases; Zhongwei operators say electricity price is nearly 50% lower than eastern China and power is >60% of operating cost.",
@@ -586,12 +739,11 @@
     "date": "2026-07-28"
    }
   ],
-  "gap": "Reported green-power shares are quarterly or project-level; neither source gives the coal/thermal generation share actually serving the clusters, and Inner Mongolia's 'wind+solar exceeds thermal' figure is installed capacity, not generation. Carbon Brief (citing IEA) notes ~70% coal in the eastern grid where most Chinese data centres sit.",
+  "gap": "Reported green-power shares are quarterly or project-level; neither source gives the coal/thermal generation share actually serving the clusters, and Inner Mongolia's 'new energy exceeds thermal' figure is installed capacity, not generation. The Zhongwei direct-supply project's 4.3 bn kWh is projected output once the wind farm is fully connected, not delivered supply, and the 2.29 bn kWh demand figure covers the cloud base, not all 331,000 racks. Carbon Brief (citing IEA) notes ~70% coal in the eastern grid where most Chinese data centres sit.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Chinese) for Inner Mongolia Energy Bureau and Ningxia/Zhongwei government documents on cluster consumption, green-power share and the green direct-supply project; only Xinhua, People's Daily and other press copies were found, so the 1.22 billion kWh/84.57%, 331,000-rack and 1.5 GW + 500 MW figures remain sourced to state media.",
-  "verification_status": "not_found"
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): NEA site (8 May 2026) confirms the Zhongwei 500 MW solar (operating) and 1.5 GW wind (full grid connection planned Sep 2026) and 2.29 bn kWh data-centre demand; earlier record said the whole 2 GW project was operational since May 2026. Inner Mongolia Q1 2025 1.22 bn kWh/84.57%, 135 GW and 78,000 GJ found only in Xinhua and Economic Information Daily (republished on szzg.gov.cn), which calls the 135 GW 'new-energy' capacity; Ningxia PUE/65% targets only in Xinhua; Inner Mongolia Energy Bureau/nmg.gov.cn and Ningxia/Zhongwei government searches (Chinese) found no primary.",
+  "verification_status": "partial"
  },
  {
   "id": "au-aemo-2026-esoo-dc-forecast",
@@ -633,8 +785,14 @@
   "lat": -33.78,
   "lon": 151.12,
   "category": "water",
-  "record": "NSW Planning confirmed to Reuters (Sep 2025) that all 10 data-centre applications ruled on since 2021 were approved (A$6.6bn), projecting up to 9.6 GL/yr of potable water (~2% of Sydney's maximum supply); Sydney Water projected data centres could use up to 135 GL (a quarter of available water) by 2035. Site figures in planning documents: AirTrunk 320 MW (rainwater cuts potable use 0.4%); two Amazon centres 195.2 MW and up to 92 ML/yr. NSW's only water standard is that the government be 'satisfied that the development contains measures designed to minimise the consumption of potable water'. The NSW Planning Portal lists Road 1 Data Centre (SSD-80814238, Macquarie Park, 34.3 MW) as approved 1 Oct 2026 with a Sydney Water Growth Data Form attached but no public water volume.",
+  "record": "NSW Planning confirmed to Reuters (Sep 2025) that all 10 data-centre applications ruled on since 2021 were approved (A$6.6bn), projecting up to 9.6 GL/yr of potable water (~2% of Sydney's maximum supply); Reuters reported Sydney Water projecting data centres could use up to 135 GL (a quarter of available water) by 2035; Sydney Water's own answers to the NSW Legislative Council data-centres inquiry (received 22 Jun 2026) instead give 26 smaller data centres approved and connected, 101 servicing requests (75 larger facilities totalling ~250 ML/day), seven planning agreements for 74 ML/day, and average-day demand of ~110 ML/day by 2030 and ~260 ML/day by 2035 if all requests proceed, against ~1,500 ML/day supplied across Greater Sydney (about 95 GL/yr, roughly 17%), attributing the 15-25% range to other submissions citing Sydney Water. Site figures in planning documents: AirTrunk 320 MW (rainwater cuts potable use 0.4%); two Amazon centres 195.2 MW and up to 92 ML/yr. NSW's only water standard is that the government be 'satisfied that the development contains measures designed to minimise the consumption of potable water'. The NSW Planning Portal lists Road 1 Data Centre (SSD-80814238, Macquarie Park, 34.3 MW) as approved 1 Oct 2026 with a Sydney Water Growth Data Form attached but no public water volume.",
   "record_sources": [
+   {
+    "title": "Inquiry into data centres: answers to supplementary questions - Sydney Water (received 22 June 2026)",
+    "url": "https://files.parliament.nsw.gov.au/fileapi/ParlFiles/GetArtifact?serverRelativeUrl=%2Flcdocs%2Fother%2F24022%2FASQ%20-%20Sydney%20Water%20-%20Received%2022%20June%202026.pdf",
+    "publisher": "Parliament of NSW, Legislative Council (Sydney Water answers)",
+    "date": "2026-06-22"
+   },
    {
     "title": "Data centres are booming in Sydney, but who's keeping track of how much drinking water they're using?",
     "url": "https://malaymail.com/news/world/2025/09/15/data-centres-are-booming-in-sydney-but-whos-keeping-track-of-how-much-drinking-water-theyre-using/191230",
@@ -646,6 +804,12 @@
     "url": "https://www.planningportal.nsw.gov.au/major-projects/projects/road-1-data-centre",
     "publisher": "NSW Planning Portal",
     "date": "2026-10-01"
+   },
+   {
+    "title": "IPART Submission to the Parliamentary Inquiry into data centres in NSW",
+    "url": "https://www.ipart.nsw.gov.au/sites/default/files/cm9_documents/IPART-Submission-to-the-Parliamentary-Inquiry-into-data-centres-in-NSW.PDF",
+    "publisher": "IPART (NSW pricing regulator)",
+    "date": "2026-03-27"
    }
   ],
   "claim": "AirTrunk says 'subsequent modelling recently tabled to Sydney Water has determined actual usage will be significantly lower' than planning figures; Amazon says its Australian sites avoid water cooling 95.5% of the year.",
@@ -657,11 +821,10 @@
     "date": "2025-09-15"
    }
   ],
-  "gap": "Planning-stage water projections (up to 9.6 GL/yr) differ from operators' later 'significantly lower' modelling, and NSW imposes no numeric water-use reporting requirement, so actual consumption is not publicly recorded; Ryde council has called for a moratorium.",
+  "gap": "Planning-stage water projections (up to 9.6 GL/yr) differ from operators' later 'significantly lower' modelling, and Sydney Water's 2035 forecast (~260 ML/day, about 95 GL/yr if all requests proceed) differs from the press-reported 135 GL/25%; Sydney Water says it relies on proponents' forecasts, IPART notes its pricing proposal did not include data-centre demand or servicing costs, and NSW imposes no numeric water-use reporting requirement, so actual consumption is not publicly recorded; Ryde council has called for a moratorium.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "NSW Planning Portal re-checked: SSD-80814238 (34.3 MW, City of Ryde) approved 2026-10-01 with a Sydney Water Growth Data Form attached and no water volume shown; NSW Planning's statements to Reuters (10 approvals, A$6.6bn, 9.6 GL/yr), Sydney Water's 135 GL projection and the AirTrunk/Amazon site figures were not found in a primary document and remain press-sourced.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Partial (2026-10-22): Sydney Water's 22 Jun 2026 answers to the NSW LC data-centres inquiry give 26 connected, 101 requests, ~110 ML/day (2030) and ~260 ML/day (2035) vs ~1,500 ML/day supply and do not state 135 GL or 25% (earlier record attributed 135 GL/a quarter to Sydney Water); IPART's 27 Mar 2026 submission cites a preliminary Sydney Water estimate of up to 250 ML/day by 2035. SSD-80814238 (34.3 MW) approval 2026-10-01 confirmed earlier on the Planning Portal. Still press-only: NSW Planning's 10 approvals/A$6.6bn/9.6 GL, AirTrunk 320 MW and Amazon 195.2 MW/92 ML figures (not in the Premier's Department answers; hearing transcripts truncated in fetch; legislation.nsw.gov.au returned errors for the potable-water clause).",
   "verification_status": "partial"
  }
 ]

@@ -1,17 +1,20 @@
 # Permit-extraction pipeline: Virginia DEQ + Texas TCEQ data-center sites
 
-Turns the 325 register-identified sites in `/home/claude/registry/seed_sites_unlocated.csv`
+Turns the 325 register-identified sites in `sites/seed_sites_unlocated.csv`
 (173 Virginia DEQ air-permit registrations, 152 Texas Comptroller registrations) into located,
 generator-rated rows in the seed_sites schema and in Climate TRACE's asset schema.
 
-Written and fixture-tested 2026-10-20/21 from a sandbox that could **not** reach deq.virginia.gov or
-tceq.texas.gov by shell. Every source format below was read with a fetch tool; **no script has run
-against a live source yet.** See "Known fragilities".
+Written and fixture-tested 2026-10-20/21. **Run live 2026-10-21** from a laptop: the DEQ site refuses
+scripted PDF downloads (HTTP 403), so the list page was saved from a browser and the 183 permit PDFs
+were downloaded by browser and passed with `--pdf-dir`. The Virginia extractor was then **fixed on
+2026-10-22** after an independent second read (section "Fixed 2026-10-22" below): it now agrees with
+the hand-resolved figures on 178 of 182 permits. Texas has a second script, `tx_fetch.py`, that works
+from issued authorizations (section "Texas from issued authorizations" below).
 
 ## The one command
 
 ```bash
-cd /home/claude/pipeline
+cd pipeline
 pip install -r requirements.txt     # requests, pandas, pdfplumber (+pypdf fallback)
 ./run_all.sh                        # live run -> out/
 ./run_all.sh --fixture              # offline self-test on fixtures/ -> out_fixture/  (passes; 30 s)
@@ -31,7 +34,7 @@ Smoke test first: `./run_all.sh --limit 10` (the extra args go to the Virginia s
 
 | Step | Script | Needs | Writes |
 |---|---|---|---|
-| 1 | `va_deq_permits.py` | DEQ list page, DEQ permit PDFs | `va_permits.csv` (one row per registration, 48 columns), `va_generator_rows.csv` (every equipment-table row found, for audit), `va_pdfs/`, `va_text/`, `va_permits_summary.json` |
+| 1 | `va_deq_permits.py` | DEQ list page, DEQ permit PDFs | `va_permits.csv` (one row per registration, 51 columns), `va_generator_rows.csv` (every equipment row counted, with the read it came from, for audit), `va_pdfs/`, `va_text/` (`<reg>.txt` text layer + `<reg>.tables.json` ruled tables), `va_permits_summary.json` |
 | 2 | `tx_permits.py` | TCEQ Title V + NSR pending-application index pages, TCEQ application PDFs | `tx_permits.csv` (one row per Comptroller registration), `tx_unmatched_tceq_packages.csv` (data-center TCEQ packages with no Comptroller row), `tx_index_rows.csv`, `tx_pdfs/`, `tx_text/`, `tx_permits_summary.json` |
 | 3 | `geocode.py` | Nominatim, US Census Geocoder | `geocoded.csv`, `geocode_cache.json`, `geocode_summary.json` |
 | 4 | `merge_to_handover.py` | `registry/seed_sites.json`, `scrapers/to_climate_trace.py` (column lists; embedded fallback) | `seed_sites_v2.json` + `.csv`, `climate_trace/datacenters_emissions_seed.csv` (44 cols), `climate_trace/datacenters_ownership_seed.csv` (19 cols), `handover_summary.json` |
@@ -45,11 +48,21 @@ atomic writes).
 
 Every extracted field has a confidence column (`high|medium|low|none`) and nothing is estimated:
 
-* **Generator count / total_standby_mw (VA)**: sum over equipment-table rows of `count x ekW`.
-  Count comes from "(23)" / "(36 units)" / "Twenty three" / "26 emergency ..." and is cross-checked
-  against the Ref. Nos. range ("1 through 23"): agreement = `high`, one source = `medium`,
-  disagreement or either/or ratings ("2,250 ekW or 2,500 ekW") = `low` with a min-max range.
-  Fire pumps, boilers and tanks are excluded. bhp-only units (no ekW) are not counted.
+* **Generator count / total_standby_mw (VA)**: sum over equipment rows of `count x ekW`, read twice
+  (`permit_text.read_generator_inventory`): a *table read* of pdfplumber's ruled-table cells and an
+  independent *text read* that pairs count statements with kW ratings in document order. The table
+  read is reported when the PDF has ruled tables; the text read otherwise (OCR scans, prose letters,
+  fixtures). Count per row: "(23)" / "Twenty three (23)" / "(36 units)" / "(1,332)" / "34 - MTU" /
+  "26 emergency ...", else the expanded Ref. Nos. ("ENG46 – ENG61", "101-GEN-A1 through 101-GEN-D1"),
+  else 1 for a singular description. Conventions: where a row prints a de-rate, the rating printed
+  first is used; a rating labelled "standby" is used over the other one; for either/or makes the
+  first listed is the central value, and `_min`/`_max` carry the range. Fire pumps, boilers,
+  turbines, cooling towers and tanks are excluded, as are units "being replaced" and units listed
+  twice. bhp-only units are counted, but MW is left empty (never estimated) with a reason.
+  `total_mw_confidence`: `high` only when the table read and the text read give the same count and
+  MW (within 1 %); `medium` when there is one consistent read; `low` for either/or ratings, units with
+  no kW in the text, or inherited/guessed rows. `generator_read` and `generator_crosscheck` say which
+  read was used and what the other read found.
 * **Generator count / MW (TX)**: distinct OP-SUM unit ids with form OP-UA2; kW from "2500KW" in the
   unit description. Packages that list emission groups only (Alamo Mission) or units without kW
   (Compass Red Oak, 390 units) get a count or null plus a reason.
@@ -152,7 +165,9 @@ by coordinate method, and how many rows are `needs_review`.
 `./run_all.sh --fixture` runs every step on `fixtures/` and validates all 14 output files
 (`out_fixture/`). It is byte-deterministic (`retrieved_at` is null in fixture mode). What it proves:
 the 8 Virginia fixtures extract the expected counts/MW (74129: 97 gen-sets, 236.3 MW; 74107: 103,
-298 MW; 74274: 98, 237 MW; 74161: 159, 364-390 MW either/or; 73200 Verizon 2006 layout: 7, 14 MW),
+298 MW; 74274: 98, 237 MW; 74161: 159, 364.25 MW first-listed, 364-390 MW either/or; 73200 Verizon
+2006 layout: 7, 14 MW; fixtures are text only, so there is no table read and MW confidence tops out
+at `medium`),
 the facility (not mailing) address, hours, fuel; the Texas fixtures give the Core Data Form and
 STEERS coordinates, 73 units / 176.5 MW for Microsoft SN, groups-only and garbled cases; TCEQ name
 matching accepts Vantage TX11, Aligned Plano, Nexus Hubbard and rejects Lancium Childress vs IE US
@@ -168,6 +183,10 @@ pipeline/
   run_all.sh  requirements.txt  README.md
   _common.py  permit_text.py
   va_deq_permits.py  tx_permits.py  geocode.py  merge_to_handover.py  validate_outputs.py
+  tests/
+    test_va_extraction.py        runs the VA extractor on the 183 real permit PDFs vs review/va_reread/va_resolved.csv
+    va_extraction_vs_resolved.csv  its per-permit output (status, both figures, confidence, basis)
+    REMAINING_DISAGREEMENTS.md   one line per permit that still differs, with which reading is right
   fixtures/
     provenance.json              where every fixture came from and what is reconstructed
     va_deq_list_page.html        DEQ list table layout (real rows)
@@ -181,6 +200,117 @@ pipeline/
   out_fixture/                   result of ./run_all.sh --fixture
 ```
 
-## Known defect in the first reading (2026-10-21), and the resolved figures
+## Fixed 2026-10-22: Virginia generator inventories
 
-An independent second read of all 183 Virginia permits (review/va_reread/) found the regex extractor low in 98 of 107 disagreements. Dominant cause: the first data row after each equipment-table header is dropped (70 permits). Others: parenthetical model years parsed as unit counts; reference-ID ranges ("ENG46 – ENG61") not expanded; de-rate and alternate-model lines counted as units. The pipeline's 19,186 MW is superseded by the resolved 33,693 MW in data/climate_trace_seed/va_permits_resolved.csv. The extractor has not yet been patched; until it is, treat its Virginia MW output as a first pass to be checked, and use the resolved file.
+An independent second read of all 183 Virginia permits (`review/va_reread/`, figures resolved by hand
+against the text in `va_resolved.csv`) found the regex extractor's generator counts and MW wrong in
+most permits. The extractor has been fixed and tested on all 183 permit PDFs
+(`tests/test_va_extraction.py`, which runs the pipeline's own per-PDF path `extract_from_pdf`; 182
+are permits, and `5.pdf` is an "Access Denied" HTML page that is skipped).
+
+| | agree | minor | disagree | MW null | fleet MW (182 permits) | units |
+|---|---|---|---|---|---|---|
+| before (first reading) | 24 | 22 | 110 | 26 | 19,186.4 (+77,540 from three absurd rows) | 45,910 (incl. counts 30,002 / 6,050 / 2,081) |
+| after (fixed) | **178** | **2** | **0** | **2** | **33,134.4** | **13,972** |
+| resolved (second read) | | | | | 33,692.7 | 13,973 |
+
+agree = count equal and MW within 2 %; minor = MW within 10 % and count within 2 (the rule the second
+read used; the looser "MW within 10 % or count within 2" gives the same numbers after the fix). The
+report's 107 disagree / 29 null split counts the three absurd results (52221: 62,954 MW; 52403:
+9,386 MW; 73860: 5,199 MW) as null; the harness counts them as disagree. Run it with
+`python3 tests/test_va_extraction.py` (7 minutes; `--text-cache DIR` makes reruns take seconds).
+
+**Defects fixed** (each fixed as a pattern, with no registration special-cased):
+* *First data row after a table header dropped* (70 permits). pdfplumber interleaves multi-line cells,
+  so a row's description can continue after its rating, and the old reader only looked backwards from
+  each rating. Two fixes: a table read of the ruled-table cells (`pdf_to_tables`, `rows_from_tables`),
+  and a text read that pairs counts with ratings in document order in both directions
+  (`find_generator_rows`).
+* *Model years, dates, street and phone numbers read as counts*: "(1987)", "(Manufacture Date: 2010)",
+  "6050 Technology Creek Drive", "(804) 698-4000", and ref-range ends ("21 through 59 emergency…",
+  "EG-001 through EG- / 020 engine gen-sets").
+* *Unit counts*: "(N units)" / "(1 unit)" (paired with the rating before or after); "(1,332)" with a
+  thousands comma; "One thousand three hundred and thirty-two"; "34 - MTU"; and spelled counts before
+  makers not on the list ("Twelve Clarke diesel …").
+* *Reference-ID ranges expanded*: "ENG46 – ENG61, ENG67 – ENG110", "ENG113 – ENG 152", "EG113-EG145",
+  "101-GEN-A1 through 101-GEN-D1" (letter ranges), "Gen4101-01,-02,-03,-04,-Z", "DC5EG-A DC5EG-B …",
+  "1 through 1,332", ranges wrapped around the description ("Nos. 1 through … 12 Power Generators").
+  Permits that number units "1-0", "2-1" treat "1-2" as one id; "(Group 3)" labels are not ids.
+* *Ratings*: de-rates ("1,600 ekW – de-rated to 1,500 ekW", "3,000 ekW (de-rated from 3,250)") are
+  one unit at the first-printed rating; "(2,250 ekW standby)" is used over the other rating; either/or
+  makes ("and/or MTU …", "Cummins: … MTU: …", "(each Caterpillar …) … (each Kohler …)") are one unit
+  with a range. Also handled: "685 mkW" (mechanical) is not ekW; "1,620* ekW", "750!kWe", "2000 RW"
+  (OCR), "1000 kilowatts", and units wrapped onto the next line of a cell ("or 2000 / … ekW").
+* *Rows that are not generators*: fire pumps (also "fire 2018 pump" split by an interleaved date),
+  boilers, turbines (8 Solar gas turbines at 74242), cooling towers, fuel tanks, heaters,
+  emission-limit tables ("750 ekW Caterpillar (Ref. Nos. …) lbs/hr"), footnotes quoting a rating,
+  a note about a removed unit (73860), and units "being replaced" (73355).
+* *Duplicate listing* (74262: BYEG1–BYEG120 printed under two permit dates): the same units with the
+  same count and rating are counted once (and a unit id on two rows blocks a `high` count).
+* *Multi-part permits* (73823 Part I / Part II): each equipment-list region is read; regions end at
+  the next numbered condition, and mentions such as "(listed in the Equipment List above)" do not
+  open a new one.
+* *Text layer*: `pdf_to_text` falls back to pypdf when pdfplumber sees no pages (52173, a 96-page scan).
+* *Rows split by a page break*, bhp-only rows, merged capacity cells (52629: one "3,000 ekW (each
+  unit)" cell for two rows, low confidence), and OCR rows with no rating (counted, MW partial, low).
+
+**Confidence is now earned.** `total_mw_confidence = high` only when the table read and the
+independent text read give the same count and MW. On the 183 permits: high 114 (114 agree with the
+resolved figures), medium 59 (59 agree), low 7 (5 agree, 2 minor), none 2 (bhp-only).
+
+**Remaining differences** (`tests/REMAINING_DISAGREEMENTS.md`):
+* 73717 and 73995: the OCR text layer lost a capacity cell (73717 LS1 300 ekW) or a whole row (73995
+  Transitory Engine 5). The resolved figures were read from page images and are right. Together
+  -2.3 MW and -1 unit; both are flagged `low`.
+* 52949 and 52973 (Microsoft AVC01/AVC09) print bhp only. The pipeline counts the 63 and 129 units
+  but leaves MW empty rather than estimate; the resolved 181.5 + 374.5 MW are inferred from sibling
+  permits' identical models. This is 556 of the 558 MW fleet gap.
+
+The fix was tested against the second reader's resolved figures, so the agreement shows that the
+pipeline now reproduces them; it is not a third independent reading. Where the two still differ, use
+the resolved file (`data/climate_trace_seed/va_permits_resolved.csv`).
+
+## Texas from issued authorizations (`tx_fetch.py`, 2026-10-22)
+
+`tx_permits.py` (step 2 above) can only see applications while they are pending; TCEQ drops them from
+its indexes once a permit issues. `tx_fetch.py` works from records that stay public after issuance:
+EPA's Facility Registry Service (ICIS-Air, TCEQ Central Registry RN, EIS and CEDRI ids, stormwater
+coverage, each with a lat/lon), TCEQ Title V public-notice PDFs, and TCEQ air-permit project numbers.
+
+```bash
+python3 tx_fetch.py --fixture --out out_tx    # offline: rebuilds the 2026-10-22 outputs from fixtures/tx_issued/
+python3 tx_fetch.py --out out_tx              # live: FRS, ICIS-Air, TCEQ PDFs, airperm project reports
+python3 tx_fetch.py --out out_tx --psei 2024 --central-registry-coastal   # plus TCEQ emissions inventory and Central Registry file
+```
+
+Inputs: `sites/seed_sites_unlocated.csv` (Comptroller rows) and `sites/tx_site_links.csv` (the curated
+joins: site to FRS ids to TCEQ authorizations to Comptroller rows; edit it to accept a candidate).
+Outputs: `tx_issued_sites.csv` (129 facilities), `BROWSER_LIST.csv` (88 TCEQ Records Online searches),
+`tx_fetch_summary.json`. The fixture run reproduces the files in `data/climate_trace_seed/` byte for
+byte. Untested live: the airperm report parser and the ECHO SIC parameter. Report and counts:
+`data/climate_trace_seed/TEXAS.md`.
+
+## The handover's asset files (`build_handover_assets.py`, 2026-10-22)
+
+`merge_to_handover.py` (step 4) writes Climate TRACE rows from the pipeline's own reading into
+`out/climate_trace/`. The handover's files are built separately, from the reviewed sources only:
+
+```bash
+python3 build_handover_assets.py            # writes data/climate_trace_seed/datacenters_*_seed.csv, the unlocated backlog and assets_summary.json
+```
+
+Sources: `sites/seed_sites.json` (seed rows that duplicate a permit or licence row are dropped, listed
+in `assets_summary.json`), `sites/ireland_sites.json`, the Virginia resolved figures
+(`va_permits_resolved.csv`, coordinates from the 2026-10-21 geocode of each permit's street address,
+used when the match type is rooftop or census), and `tx_issued_sites.csv`. Every generator figure
+carries its basis in `other4`: standby MWe summed from a permit's unit ratings, primary on-site
+generation, or an Irish licence's thermal-input figure. No local file paths reach the outputs (the
+Virginia rows point to DEQ's public list page, where each permit is linked by registration number).
+CI rebuilds these files and fails if they differ from the committed copies.
+
+**Known fragility: addresses.** The 21 October geocode ran on the address the first reading took from
+each permit, which for thirteen permits was the permittee's mailing address (the cover page lists it
+first). `build_handover_assets.py` therefore places a Virginia site only when the geocoded address
+matches the site address resolved by the second reading. The extractor's address picker itself has not
+been changed; the next live run should geocode `site_street` from `va_permits_resolved.csv`.
+

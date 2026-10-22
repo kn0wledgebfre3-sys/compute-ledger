@@ -61,10 +61,6 @@ import html
 import io
 import json
 import re
-
-def _norm_header(h):
-    return re.sub(r"[\s\u00ad\-]+","",str(h)).lower()
-
 import sys
 import time
 from html.parser import HTMLParser
@@ -150,9 +146,9 @@ def parse_list_page(page: str, base_url: str = LIST_URL) -> tuple[list[dict[str,
     for t in tables:
         for ri, row in enumerate(t[:3]):
             cells = [c["text"] for c in row]
-            if all(any(_norm_header(c).startswith(_norm_header(h)) for c in cells) for h in REQUIRED_HEADERS[:2]):
+            if all(any(h.lower() == c.lower() for c in cells) for h in REQUIRED_HEADERS[:2]):
                 target = t[ri + 1:]
-                header_idx = {h: next(i for i, c in enumerate(cells) if _norm_header(c).startswith(_norm_header(h))) for h in REQUIRED_HEADERS if any(_norm_header(c).startswith(_norm_header(h)) for c in cells)}
+                header_idx = {h: next(i for i, c in enumerate(cells) if c.lower() == h.lower()) for h in REQUIRED_HEADERS if any(c.lower() == h.lower() for c in cells)}
                 break
         if target is not None:
             break
@@ -169,7 +165,6 @@ def parse_list_page(page: str, base_url: str = LIST_URL) -> tuple[list[dict[str,
         if len(row) < len(header_idx):
             continue
         rec = {h: row[i]["text"] for h, i in header_idx.items()}
-        rec["Registration No"] = re.sub(r"[^\d]", "", rec.get("Registration No", "").split("-")[0])
         if not re.fullmatch(r"\d{4,6}", rec.get("Registration No", "")):
             continue
         links = [urljoin(base_url, l) for c in row for l in c["links"]]
@@ -260,6 +255,24 @@ def download_pdf(url: str, dest: Path) -> Path:
     return dest
 
 
+def _cache_tables(pdf: Path, dest: Path) -> list[dict[str, Any]]:
+    tables = PT.pdf_to_tables(pdf)
+    C.write_bytes(json.dumps(tables, ensure_ascii=False).encode("utf-8"), dest)
+    return tables
+
+
+def tables_for(reg: str, out_dir: Path, pdf: Path | None = None) -> list[dict[str, Any]] | None:
+    """Ruled tables of the permit (cached next to the text as va_text/<reg>.tables.json). None when
+    neither the cache nor the PDF is available (the extractor then uses the text read alone)."""
+    cached = out_dir / "va_text" / f"{reg}.tables.json"
+    if cached.exists() and (pdf is None or cached.stat().st_mtime >= pdf.stat().st_mtime):
+        return json.loads(cached.read_text(encoding="utf-8"))
+    pdf = pdf or (out_dir / "va_pdfs" / f"{reg}.pdf")
+    if pdf.exists():
+        return _cache_tables(pdf, cached)
+    return None
+
+
 def text_for(reg: str, url: str | None, args, out_dir: Path) -> tuple[str | None, str | None, str]:
     """Return (text, pdf_url_used, status). Live mode downloads and extracts; cached text is reused."""
     text_dir = out_dir / "va_text"
@@ -271,7 +284,10 @@ def text_for(reg: str, url: str | None, args, out_dir: Path) -> tuple[str | None
         for cand in sorted(Path(args.pdf_dir).glob(f"{reg}*.pdf")):
             text = PT.pdf_to_text(cand)
             C.write_bytes(text.encode("utf-8"), cached)
-            return text, f"file://{cand.resolve()}", "manual_dir"
+            _cache_tables(cand, text_dir / f"{reg}.tables.json")
+            # Record the public URL if the list page gave one; never a local path (it would leak into
+            # the handover files). The local file is identified by name in pdf_locator.
+            return text, url, "manual_dir"
     if not url:
         return None, None, "no_url"
     dest = pdf_dir / f"{reg}.pdf"
@@ -284,6 +300,7 @@ def text_for(reg: str, url: str | None, args, out_dir: Path) -> tuple[str | None
         time.sleep(REQUEST_PAUSE)
     text = PT.pdf_to_text(dest)
     C.write_bytes(text.encode("utf-8"), cached)
+    _cache_tables(dest, text_dir / f"{reg}.tables.json")
     return text, url, "downloaded"
 
 
@@ -298,20 +315,48 @@ OUT_COLUMNS = [
     "facility_zip", "facility_county_pdf", "facility_address_raw", "address_confidence", "address_method",
     "generator_count", "generator_count_confidence", "unit_kw_list", "unit_kw_min", "unit_kw_max",
     "total_standby_mw", "total_standby_mw_min", "total_standby_mw_max", "total_mw_confidence",
-    "generator_rows_uncounted", "fuel", "fuel_confidence", "fuel_sulfur_ppm", "fuel_gallons_per_year_limits",
+    "generator_rows_uncounted", "generator_units_without_kw", "generator_read", "generator_crosscheck", "fuel", "fuel_confidence", "fuel_sulfur_ppm", "fuel_gallons_per_year_limits",
     "fuel_gallons_per_year_total", "hours_maint_per_year", "hours_all_purpose_per_year", "hours_combined_per_year",
     "hours_confidence", "extract_reason", "source_url", "list_as_of", "retrieved_at",
 ]
 
 
-def extract_from_text(text: str) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+def extract_from_text(text: str, tables: list[dict[str, Any]] | None = None) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """All fields from one permit. ``tables`` (pdfplumber ruled tables, see PT.pdf_to_tables) feed the
+    table read of the equipment list; the text read always runs and is the cross-check (or the only
+    read for scans, prose permits and the text-only fixtures)."""
     rec: dict[str, Any] = {}
     rec.update(PT.extract_va_cover(text))
-    rows = PT.find_generator_rows(text)
-    rec.update(PT.summarise_generators(rows))
+    inv = PT.read_generator_inventory(text, tables)
+    rec.update(inv.summary)
     rec.update(PT.extract_fuel(text))
     rec.update(PT.extract_hours(text))
-    return rec, PT.genrows_as_dicts(rows)
+    return rec, PT.genrows_as_dicts(inv.rows)
+
+
+CONFIDENCE_FIELDS = ("generator_count_confidence", "total_mw_confidence", "address_confidence", "fuel_confidence", "hours_confidence")
+
+
+def extract_permit_text(text: str, tables: list[dict[str, Any]] | None = None) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Text-quality gate + field extraction for one permit. Used by main() and by
+    extract_from_pdf(); no list page, no network."""
+    q = PT.text_quality(text)
+    if q != "ok":
+        rec = {k: None for k in OUT_COLUMNS}
+        rec["text_quality"] = q
+        rec["extract_reason"] = f"PDF text {q}: needs OCR or manual reading"
+        for k in CONFIDENCE_FIELDS:
+            rec[k] = "none"
+        return rec, []
+    rec, rows = extract_from_text(text, tables)
+    rec["text_quality"] = q
+    return rec, rows
+
+
+def extract_from_pdf(pdf_path: Path) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Per-PDF extraction (the unit tested by tests/test_va_extraction.py on the real permits)."""
+    pdf_path = Path(pdf_path)
+    return extract_permit_text(PT.pdf_to_text(pdf_path), PT.pdf_to_tables(pdf_path))
 
 
 def main() -> None:
@@ -331,10 +376,10 @@ def main() -> None:
     # 1. list page
     if args.fixture:
         page = (FIXTURES / "va_deq_list_page.html").read_text(encoding="utf-8")
-        page_src = str(FIXTURES / "va_deq_list_page.html")
+        page_src = "pipeline/fixtures/va_deq_list_page.html"
     elif args.html_file:
         page = args.html_file.read_text(encoding="utf-8", errors="replace")
-        page_src = str(args.html_file)
+        page_src = Path(args.html_file).name  # file name only: no local paths in outputs
     else:
         f = C.fetch(LIST_URL, expect="html")
         page = f.text()
@@ -399,6 +444,7 @@ def main() -> None:
             "source_url": LIST_URL, "list_as_of": meta["as_of"], "retrieved_at": retrieved_at,
         })
         text = None
+        tables = None  # fixture texts have no PDF behind them: text read only
         status = "no_url"
         if args.fixture:
             fx = FIXTURES / "va_permits" / f"{reg}.txt"
@@ -419,27 +465,29 @@ def main() -> None:
                         (out_dir / "va_text" / f"{reg}.txt").unlink(missing_ok=True)
                         (out_dir / "va_pdfs" / f"{reg}.pdf").unlink(missing_ok=True)
             if status == "manual_dir":
-                locator = "manual_dir"
+                locator = f"manual_dir:{reg}.pdf"
+            if text is not None:
+                src_pdf = None
+                if args.pdf_dir:
+                    src_pdf = next(iter(sorted(Path(args.pdf_dir).glob(f"{reg}*.pdf"))), None)
+                tables = tables_for(reg, out_dir, src_pdf)
         rec["pdf_url"], rec["pdf_locator"], rec["pdf_status"] = url, locator, status
         if text is None:
             rec["text_quality"] = "none"
             rec["extract_reason"] = {
                 "no_url": "no PDF located (no row link, not in known_documents, search found nothing)",
             }.get(status, status)
-            for k in ("generator_count_confidence", "total_mw_confidence", "address_confidence", "fuel_confidence", "hours_confidence"):
+            for k in CONFIDENCE_FIELDS:
                 rec[k] = "none"
             records.append(rec)
             C.log(f"[{i}/{len(regs)}] {reg} {g['facility_name_list'][:40]!r}: {rec['extract_reason']}")
             continue
-        q = PT.text_quality(text)
-        rec["text_quality"] = q
-        if q != "ok":
-            rec["extract_reason"] = f"PDF text {q}: needs OCR or manual reading"
-            for k in ("generator_count_confidence", "total_mw_confidence", "address_confidence", "fuel_confidence", "hours_confidence"):
-                rec[k] = "none"
+        ext, rows_found = extract_permit_text(text, tables)
+        if ext["text_quality"] != "ok":
+            for k in ("text_quality", "extract_reason", *CONFIDENCE_FIELDS):
+                rec[k] = ext[k]
             records.append(rec)
             continue
-        ext, rows_found = extract_from_text(text)
         rec.update({k: v for k, v in ext.items() if k in rec})
         all_regs = (ext.get("registration_nos_pdf_all") or "").split(";")
         if reg in all_regs:
@@ -454,6 +502,10 @@ def main() -> None:
             reasons.append(f"PDF also prints registration number(s) {[r for r in all_regs if r != reg]} (typo in page headers?)")
         if rec["generator_count"] is None:
             reasons.append("no generator rating rows recognised")
+        elif rec["total_standby_mw"] is None:
+            reasons.append("generator units listed with bhp only: no kW rating printed, MW not estimated")
+        elif rec.get("generator_units_without_kw"):
+            reasons.append(f"{rec['generator_units_without_kw']} unit(s) have no kW rating in the text: MW is a partial sum")
         if rec["facility_street"] is None:
             reasons.append("no facility street address recognised")
         rec["extract_reason"] = "; ".join(reasons) or None
@@ -466,8 +518,8 @@ def main() -> None:
 
     df = pd.DataFrame(records, columns=OUT_COLUMNS)
     C.write_csv(df, out_dir / "va_permits.csv")
-    gcols = ["registration_no", "refs", "count", "count_source", "count_confidence", "kw_each", "kw_min", "kw_max",
-             "bhp_each", "maker", "model", "each_flag", "description", "snippet"]
+    gcols = ["registration_no", "read", "section", "refs", "count", "count_source", "count_confidence", "kw_each", "kw_min", "kw_max",
+             "bhp_each", "maker", "model", "each_flag", "note", "description", "snippet"]
     C.write_csv(pd.DataFrame(genrows, columns=gcols), out_dir / "va_generator_rows.csv")
     summary = {
         **C.run_meta(args.fixture, [{"name": "VA DEQ issued air permits for data centers", "url": LIST_URL, "page_source": page_src,

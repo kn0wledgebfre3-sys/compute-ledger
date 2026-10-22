@@ -89,6 +89,6 @@
  },
  "seed_sites.json": {
   "provenance": "COPY",
-  "detail": "Copy of /home/claude/registry/seed_sites.json (56 rows) taken 2026-10-20 so fixture runs do not depend on the registry directory."
+  "detail": "Copy of sites/seed_sites.json (56 rows) taken 2026-10-20 so fixture runs do not depend on the registry directory."
  }
 }

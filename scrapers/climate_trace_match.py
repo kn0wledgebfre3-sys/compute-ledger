@@ -29,11 +29,11 @@ ROOT = os.path.dirname(HERE)
 PLANTS = [
   {"entry":"us-va-chesterfield-dominion-cerc-gas","plant":"Chesterfield","alt":["Chesterfield Power Station","Chesterfield Energy Reliability"],"lat":37.38,"lon":-77.38,"permit_mw":944,"note":"944 MW peaker approved 2025 (SCC PUR-2025-00037); existing Chesterfield station on same site"},
   {"entry":"us-tn-memphis-xai-colossus-turbines","plant":"xAI Colossus","alt":["Colossus","Southwest Memphis","Allen"],"lat":35.07,"lon":-90.13,"permit_mw":247,"note":"on-site turbines; TVA Allen plant is the nearest grid asset"},
-  {"entry":"us-ms-southaven-xai-1.2gw-gas","plant":"xAI Southaven","alt":["Southaven","MZX"],"lat":34.97,"lon":-90.0,"permit_mw":1200,"note":"permitted 2026, may not be in inventory yet"},
+  {"entry":"us-ms-southaven-xai-1.2gw-gas","plant":"xAI Southaven","alt":["Southaven","MZX"],"lat":34.97,"lon":-90.0,"permit_mw":1240,"note":"permitted 2026, may not be in inventory yet"},
   {"entry":"us-la-richland-meta-entergy-gas","plant":"Entergy Richland Parish","alt":["Holly Ridge","Richland","Delhi"],"lat":32.44,"lon":-91.5,"permit_mw":2262,"note":"approved 2025, COD later; may not be in inventory"},
   {"entry":"us-pa-homer-city-gas-campus","plant":"Homer City","alt":["Homer City Generating"],"lat":40.51,"lon":-79.19,"permit_mw":4678,"note":"former coal plant; gas campus permitted 2025"},
   {"entry":"us-wi-mount-pleasant-microsoft-we-energies","plant":"Oak Creek","alt":["Oak Creek Power Plant","Elm Road","Paris"],"lat":42.86,"lon":-87.85,"permit_mw":1100,"note":"existing Oak Creek/Elm Road units; new simple-cycle approved 2025"},
-  {"entry":"us-pa-susquehanna-talen-aws-colocation","plant":"Susquehanna","alt":["Susquehanna Steam Electric"],"lat":41.09,"lon":-76.15,"permit_mw":1920,"note":"existing nuclear under PPA (should show ~0 CO2e)"},
+  {"entry":"us-pa-susquehanna-talen-aws-colocation","plant":"Susquehanna","alt":["Susquehanna Steam Electric"],"lat":41.09,"lon":-76.15,"permit_mw":1920,"note":"existing nuclear under PPA; Climate TRACE lists no CO2e for nuclear, so any match here is a neighbouring fossil asset, not the plant"},
 ]
 
 def hav(lat1,lon1,lat2,lon2):

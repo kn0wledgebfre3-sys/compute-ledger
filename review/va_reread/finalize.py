@@ -1,7 +1,10 @@
+import os as _os
+_HERE = _os.path.dirname(_os.path.abspath(__file__))
+_REPO = _os.path.dirname(_os.path.dirname(_HERE))
 """Stage 4: comparison with pipeline, resolution notes, resolved table."""
 import pandas as pd, re
 from collections import Counter
-OUT = '/home/claude/review/va_reread'
+OUT = _HERE
 rr = pd.read_csv(f'{OUT}/va_reread.csv', dtype={'registration': str})
 cmp = pd.read_csv(f'{OUT}/cmp_raw.csv', dtype={'registration': str, 'registration_no': str})
 rows = pd.read_csv(f'{OUT}/auto_rows.csv', dtype={'registration': str})

@@ -1,6 +1,6 @@
 # Review of the public "Compute Ledger" page, 22 Oct 2026
 
-Reviewer: sceptical methodology reviewer, coalition side. Scope: the page as built (`/home/claude/repo/site/index.html`, compiled 2026-10-21, byte-identical to `/home/claude/registry/ledger.html`). I checked it against the files it renders: `registry/guide.json`, `registry/standard.json`, the static text in `site/build_page.py`, the 117 entries in the six registry files, and the three receipts. I compared all of it with the corrected package (`data/climate_trace_seed/` README, VIRGINIA, TEXAS, CLIMATE_TRACE_SERIES and dedicated_supply_method, plus `brief.html` and `review_2_final.md`). The built page's embedded data matches the current registry files exactly. No web checks were made.
+Reviewer: sceptical methodology reviewer, coalition side. Scope: the page as built (`site/index.html`, compiled 2026-10-21, byte-identical to `the published ledger page`). I checked it against the files it renders: `registry/guide.json`, `registry/standard.json`, the static text in `site/build_page.py`, the 117 entries in the six registry files, and the three receipts. I compared all of it with the corrected package (`data/climate_trace_seed/` README, VIRGINIA, TEXAS, CLIMATE_TRACE_SERIES and dedicated_supply_method, plus `brief.html` and `review_2_final.md`). The built page's embedded data matches the current registry files exactly. No web checks were made.
 
 ## Verdict: fix, then link
 
@@ -519,3 +519,5 @@ Add a bullet: "Texas's environmental regulator lists datacenter air-permit appli
 3. Findings 6–15, the guide prose, one theme at a time.
 4. Findings 29–32, the receipts intro, method and "not published" box. Re-grade the six press-only "high" entries.
 5. Rebuild, then reread the rendered standard and the five headline panels with the most changes: bills, water, fuel, money, chain. Then link.
+
+_Local file paths in this review were replaced with repository-relative paths on 2026-10-22; nothing else was changed._

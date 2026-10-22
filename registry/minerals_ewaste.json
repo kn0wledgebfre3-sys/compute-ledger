@@ -125,7 +125,6 @@
   ],
   "gap": "Regulator record (822 L/s from 2027, conditional on a pending EIA; 1,026 L/s in 2025–2026) and company claim (50% by 2030) are directionally consistent; measured extraction volumes against these limits were not located in the documents fetched. Older sources (2020-2022) flagged.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched SMA SNIFA compliance-program progress report (SQM Salar, Rol F-041-2016, PdC approved by Res. 38/2022 of 29 Aug 2022): confirms 822 L/s from 2027 and the 120 L/s freshwater cap; adds that the 822 L/s step depends on an EIA under evaluation and that the 2025–2026 limit is 1,026 L/s; corrected the approval date from 30 Aug 2022 (press date) to 29 Aug 2022. The CLP 46,000 million total and six-infraction count are not stated in the excerpt and remain via Diario Financiero.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -183,7 +182,6 @@
   ],
   "gap": "No Indonesian ministry (ESDM/KLHK) figures for HPAL tailings, captive coal or concession deforestation were located; the record rests on USGS, CREA/GEM and NGO geospatial analysis.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched USGS MCS 2026 nickel (output and +13% confirmed), CRI 'Nickel Unearthed' (5,331 ha confirmed; IWIP coal plants given as at least five built and twelve new planned, correcting the earlier press-based '11 built, 3 planned'; the 1,456 ha WBN figure is not in the report and is attributed to Mongabay) and the CREA/GEM Jan 2026 report (19.3 GW operating captive coal at July 2025, 15.4 GW nickel). GEM's Boom and Bust 2025 page did not show the 16.6 GW end-2024 figure, which is attributed to Eco-Business.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -216,7 +214,6 @@
   "claim_sources": [],
   "gap": "The only official production figure is a USGS back-calculation from Chinese import data; no government or UN water-quality dataset for Kachin was located.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched USGS MCS 2026 rare earths (Burma 27,000 t 2024 / 22,000 t 2025e with footnote 'Estimated based on reported import data for China'; China 270,000 t; world 380,000/390,000 t; April 2025 controls, October expansion and November one-year suspension) and the Global Witness report page (>300 sites by 2023, +40% since 2021, Momauk 9 to >40 sites, 41,700 t HREO in 2023 vs 19,500 t in 2021, US$1.4 bn trade value, no numeric water values); all figures confirmed.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -298,9 +295,8 @@
   ],
   "gap": "The company-reported 88.1% recycling rate coexists with a regulator-recorded 2021 reliance on trucked water and a reported unit-water figure (153.3 L) that is above the 2010 baseline (140.9 L); whether water figures are externally assured could not be confirmed. 2021 sources are older.",
   "confidence": "medium",
-  "verified_primary": true,
-  "verification_note": "Partial: fetched TSMC 2024 Annual Report p.159 (statutory; confirms Taiwan total water usage 114 to 129 Mm3 and unit water +14.3% vs -2.7% target, 'Unachieved') and the 2025 Sustainability Report water chapter (confirms 88.1%, 318.94 Mm3, 153.3 L vs 140.9 L baseline; names only ISO 14046 product verification and AWS certification, no ISAE 3000/AA1000 assurance of water data; the extracted chart assigns 18.2 Mm3 to Taiwan and 108.9 Mm3 to subsidiaries, which appears inconsistent with the annual report's Taiwan total). The 2021 Water Resources Agency reservoir and curtailment data remain via Taipei Times/CNBC; no WRA primary fetched, so confidence left medium.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Partial: fetched TSMC 2024 Annual Report p.159 (statutory; confirms Taiwan total water usage 114 to 129 Mm3 and unit water +14.3% vs -2.7% target, 'Unachieved') and the 2025 Sustainability Report water chapter (confirms 88.1%, 318.94 Mm3, 153.3 L vs 140.9 L baseline; names only ISO 14046 product verification and AWS certification, no ISAE 3000/AA1000 assurance of water data; the extracted chart assigns 18.2 Mm3 to Taiwan and 108.9 Mm3 to subsidiaries, which appears inconsistent with the annual report's Taiwan total). The 2021 Water Resources Agency reservoir and curtailment data remain via Taipei Times/CNBC; no WRA primary fetched, so confidence left medium. Second pass (2026-10-22): searched (Chinese) for Water Resources Agency, MOEA and Executive Yuan releases on the March 2021 reservoir levels and the May 2021 science-park cuts (15% to 17%, red alert 1 June); a MOEA release (news_id=122805) surfaced in search but moea.gov.tw returns client errors to automated fetch (added to browser_fetch_list.csv, content unconfirmed); wra.gov.tw and ey.gov.tw searches returned only press (TechNews, ETtoday, China Times, LTN/Taipei Times), so the WRA figures remain via Taipei Times/CNBC.",
+  "last_checked": "2026-10-22",
   "verification_status": "partial"
  },
  {
@@ -312,8 +308,14 @@
   "lat": 33.73,
   "lon": -112.07,
   "category": "fab",
-  "record": "As of 24 August 2026, TSMC Arizona's Water Resource Center engineers stated the site uses 4.75 million gallons/day supplied through the City of Phoenix portfolio (mostly reclaimed wastewater with a small groundwater share), under a City of Phoenix industrial pretreatment discharge permit. No Arizona Department of Water Resources withdrawal figure for the site was located.",
+  "record": "The CHIPS Program Office's Draft Environmental Assessment for TSMC Arizona (NIST-CPO/EA-002, 2024-05-29, Table 2-1) puts Phase 1 City of Phoenix water demand at 4.755 million gallons/day with average discharge of 3.8 MGD, rising to 5.70 MGD (Phase 2) and 6.84 MGD (Phase 3), 17.29 MGD in total (revised up from 14.624 MGD on 2024-06-03), and requires the Industrial Reclamation Water Plant to begin operating by June 2028 to comply with TSMC's City of Phoenix wastewater permit. As of 24 August 2026, TSMC Arizona's Water Resource Center engineers stated the site uses 4.75 million gallons/day supplied through the City of Phoenix portfolio (mostly reclaimed wastewater with a small groundwater share), under a City of Phoenix industrial pretreatment discharge permit. No Arizona Department of Water Resources withdrawal figure for the site was located.",
   "record_sources": [
+   {
+    "title": "Draft Environmental Assessment for TSMC Arizona (NIST-CPO/EA-002), Volume 1",
+    "url": "https://nist.gov/document/tsmc-draft-environmental-assessment-may-29-2024-volume-1",
+    "publisher": "U.S. Department of Commerce, NIST CHIPS Program Office",
+    "date": "2024-05-29"
+   },
    {
     "title": "Arizona's chip footprint grows, but TSMC's water demand sparks questions",
     "url": "https://www.azfamily.com/2026/08/24/arizonas-chip-footprint-grows-tsmcs-water-demand-sparks-questions/",
@@ -330,12 +332,11 @@
     "date": "2026-08-24"
    }
   ],
-  "gap": "The 65% (current) and 90% (post-2028) figures are company statements; no regulator-published withdrawal or discharge volume for the site was found, and expansion-phase water demand is not disclosed.",
-  "confidence": "medium",
-  "verified_primary": false,
-  "verification_note": "Searched City of Phoenix council reports, industrial pretreatment permit records and ADWR for TSMC Arizona intake/discharge volumes and the Industrial Reclamation Water Plant; no primary document located (only press and trade reports). The 4.75 MGD and 65%/90% figures remain company statements via AZFamily.",
-  "last_checked": "2026-10-20",
-  "verification_status": "not_found"
+  "gap": "The 65% (current) and 90% (post-2028) figures are company statements to press, while the CHIPS EA records a design target of 95% or greater reuse once the reclamation plant runs; the EA's demand figures are design projections, total demand at full build-out (17.29 MGD) is about 3.6 times today's, and no regulator-published measured withdrawal or discharge volume was found.",
+  "confidence": "high",
+  "verification_note": "Pass 3 (2026-10-22): the NIST CHIPS Program Office Draft EA (2024-05-29, Table 2-1) confirms Phase 1 City water demand of 4.755 MGD, a City of Phoenix wastewater permit, and the June 2028 start for the Industrial Reclamation Water Plant; it adds average discharge (3.8 MGD Phase 1), 17.29 MGD across three phases, and a 95%-or-greater reuse design target (versus the 90% TSMC gave AZFamily). The final EA could not be retrieved (NIST NEPA page not opened), City of Phoenix council packets searched mention TSMC only for federal funding, and no ADWR facility figure exists because supply is through the City of Phoenix.",
+  "last_checked": "2026-10-22",
+  "verification_status": "verified"
  },
  {
   "id": "kr-samsung-fabs-water",
@@ -366,9 +367,8 @@
   ],
   "gap": "Company data only; Pyeongtaek withdrawal rose about 27% YoY in 2022 while the company target is to hold total withdrawal flat at 2021 levels; no regulator-published site withdrawal record found. Data year 2022 (older).",
   "confidence": "medium",
-  "verified_primary": false,
-  "verification_note": "Fetched Samsung Electronics Sustainability Report 2025: it gives no site-level withdrawal for Hwaseong, Giheung or Pyeongtaek, reports DS Korea water reuse of 1.01 Mt (2024) and a 2030 goal of holding Korea withdrawal at the 2021 base-year level; the Independent Assurance Report text was not extractable, so whether water data are assured could not be confirmed. No Ministry of Environment site record located; 2022 figures remain from Samsung's Water Stewardship document.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Fetched Samsung Electronics Sustainability Report 2025: it gives no site-level withdrawal for Hwaseong, Giheung or Pyeongtaek, reports DS Korea water reuse of 1.01 Mt (2024) and a 2030 goal of holding Korea withdrawal at the 2021 base-year level; the Independent Assurance Report text was not extractable, so whether water data are assured could not be confirmed. No Ministry of Environment site record located; 2022 figures remain from Samsung's Water Stewardship document. Second pass (2026-10-22): searched (Korean) for Ministry of Environment / Ministry of Climate, Energy and Environment, K-water and National Assembly audit records of Samsung fab withdrawals and for the Dec 2024 government-Samsung treated-sewage reuse agreement; found only Samsung newsroom items and press (Newspim 11 Sep 2026: planned sewage-effluent reuse 120,000 t/day Hwaseong-Osan and 210,000 t/day Suwon; ~108 million t domestic reuse in 2025 attributed to Samsung's sustainability report, which conflicts in magnitude with the 1.01 Mt (2024) noted above and should be rechecked). Re-fetched the Water Stewardship PDF: site figures confirmed; its '235,000 tonnes' reuse figure carries no per-day/per-year unit. A WAMIS river-water permit search could not be run (search budget exhausted). No regulator site-level withdrawal record located.",
+  "last_checked": "2026-10-22",
   "verification_status": "not_found"
  },
  {
@@ -460,7 +460,6 @@
   ],
   "gap": "Tracked and trade-data flows come from an advocacy organisation's sample-based studies (34% US, 6% EU) and extrapolations; no government dataset reconciling declared exports with tracked flows was located. The US is not a Basel Party. 2016 and 2019 studies are older.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched the Basel Secretariat e-waste amendments FAQ (BC-15/18 at COP-15 2022, A1180 replaced by A1181, new Y49, entry into force 1 Jan 2025, binding on all Parties except those notifying non-acceptance by 1 Jan 2025, PIC for all e-waste) and BAN 'Brokers of Shame' (22 Oct 2025; 10 brokers, 26 months, 10,026 containers, 395,352 t/yr as an extrapolated estimate, 8 of 10 R2V3-certified); confirmed, with non-acceptance wording aligned to the FAQ. The 2016 and 2019 BAN figures come from the original BAN reports already cited and were not re-fetched.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -523,7 +522,6 @@
   "claim_sources": [],
   "gap": "Federal statistics stop at 2018 (older) and there is no federal export-reporting dataset; destination evidence is from NGO tracking and importing-country seizures.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched EPA National Overview: confirms 2.7 million tons of selected consumer electronics generated and about 1 million tons recycled in 2018, data current through calendar 2018, no newer data; the 37% rate is a calculation, not an EPA-published rate. Destination figures come from BAN's original reports and the OEWG-15 presentations already cited.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -537,8 +535,14 @@
   "lat": 5.55,
   "lon": -0.225,
   "category": "ewaste",
-  "record": "The Greater Accra Regional Coordinating Council cleared the Agbogbloshie scrapyard on 1 July 2021 with armed police support; the 20-acre scrapyard sat within more than 80 acres reclaimed, of which about 15 acres were earmarked for the Ablekuma Central Municipal Hospital. By 24 January 2025 about 100 unauthorised structures had been rebuilt on the land by scrap dealers and others. A peer-reviewed study (IJURR) surveyed 350 displaced workers and reports them 'securing new workspaces' elsewhere.",
+  "record": "The Greater Accra Regional Coordinating Council cleared the Agbogbloshie scrapyard on 1 July 2021 with armed police support, displacing structures that hosted about 10,000 scrap dealers; the 20-acre scrapyard sat within more than 80 acres reclaimed, of which about 15 acres were earmarked for the Ablekuma Central Municipal Hospital. In July 2021 the Regional Minister offered the scrap dealers 10 acres at Kofi Kwei (Ga South). The dealers instead bought about 50 acres at Teacher Mante (Eastern Region), and the EPA's Executive Director said they would be 'directed to existing facilities that we have licensed' [press]. Between 19 and 21 January 2025 Daily Graphic reporters counted about 100 unauthorised structures rebuilt on the land by scrap dealers and others. A peer-reviewed study (Owusu Sarpong et al., IJURR, doi:10.1111/1468-2427.70106) draws on surveys of 350 e-waste workers and reports that, despite the upheaval, workers were 'securing new workspaces', forming leadership structures and formalising their association.",
   "record_sources": [
+   {
+    "title": "Behind the curtain of Agbogbloshie's demolition: a victims' perspective beyond revanchism (Owusu Sarpong, Müller-Mahn, Amankwaa, Mensah)",
+    "url": "https://www.ijurr.org/article/behind-the-curtain-of-agbogbloshies-demolition-a-victims-perspective-beyond-revanchism/",
+    "publisher": "International Journal of Urban and Regional Research (doi:10.1111/1468-2427.70106)",
+    "date": "2024"
+   },
    {
     "title": "Agbogbloshie reclaimed land under siege: scrap dealers, onion sellers occupy 80-acre land",
     "url": "https://www.graphic.com.gh/news/general-news/ghana-news-agbogbloshie-reclaimed-land-under-siege-scrap-dealers-onion-sellers-occupy-80-acre-land.html",
@@ -546,10 +550,16 @@
     "date": "2025-01-24"
    },
    {
-    "title": "Behind the curtain of Agbogbloshie's demolition: a victims' perspective beyond revanchism",
-    "url": "https://www.ijurr.org/article/behind-the-curtain-of-agbogbloshies-demolition-a-victims-perspective-beyond-revanchism/",
-    "publisher": "International Journal of Urban and Regional Research",
-    "date": "2024"
+    "title": "Agbogbloshie hosts Agenda 111 hospital",
+    "url": "https://www.graphic.com.gh/news/general-news/agbogbloshie-hosts-agenda-111-hospital.html",
+    "publisher": "Daily Graphic (Regional Minister Henry Quartey site visit)",
+    "date": "2021-08-21"
+   },
+   {
+    "title": "E-waste won't be permitted at scrap dealers' new site at Teacher Mante – EPA",
+    "url": "https://citinewsroom.com/2021/07/e-waste-wont-be-permitted-at-scrap-dealers-new-site-at-teacher-mante-epa/",
+    "publisher": "Citi Newsroom",
+    "date": "2021-07-21"
    }
   ],
   "claim": "Government framed the clearance under the 'Let's Make Accra Work' initiative with a hospital planned on part of the site; onion traders agreed to relocate to Adjen Kotoku.",
@@ -563,10 +573,9 @@
   ],
   "gap": "The site was cleared but no formal replacement recycling facility is documented; informal reoccupation was recorded within four years and no Ghana EPA monitoring data for the dispersed workers' new sites was located.",
   "confidence": "medium",
-  "verified_primary": false,
-  "verification_note": "Searched for Greater Accra Regional Coordinating Council or Ministry of Information releases on the 1 Jul 2021 clearance (acreage, hospital allocation) and for Ghana EPA monitoring; only press located (Daily Graphic, Citi Newsroom). The IJURR study was not re-fetched. Figures remain via Daily Graphic.",
-  "last_checked": "2026-10-20",
-  "verification_status": "not_found"
+  "verification_note": "Second pass: fetched the IJURR article page. Its abstract confirms surveys of 350 e-waste workers and the finding that workers were 'securing new workspaces' (DOI 10.1111/1468-2427.70106; the abstract does not call all 350 'displaced', so the wording is corrected). Re-fetched Daily Graphic (24 Jan 2025): the 80 acres, 20-acre scrapyard, 15 acres for the hospital and the 1 Jul 2021 date are the paper's own statements, the ~100 structures are its reporters' count over 19-21 Jan 2025, and the piece links no government document; former regional minister Henry Quartey is quoted defending the relocation. No GARCC, Ministry of Information, Ghana Assembly or EPA record was located. The web-search budget ran out during this pass, so Hansard and Accra Metropolitan Assembly records could not be searched. Third pass (2026-10-22, follow-up): searched for Greater Accra Regional Coordinating Council releases, Parliament of Ghana Hansard and Ghana EPA records; none was found online. The 80 acres and the ~15 acres for the Ablekuma Central Municipal Hospital trace to Regional Minister Henry Quartey's 20 Aug 2021 site visit (Daily Graphic, 21 Aug 2021). The Ghana News Agency (state-owned; 2 Jul 2021) confirms the 1 Jul 2021 deadline under 'Let's Make Accra Work' and the Adjen Kotoku designation, which dealers refused along with a transport allocation. Citi Newsroom (Jul 2021) reports the Kofi Kwei offer, the Teacher Mante purchase and the EPA Executive Director's statement. Those details are added as press; no EPA monitoring data for Teacher Mante or other new sites was found.",
+  "last_checked": "2026-10-22",
+  "verification_status": "partial"
  },
  {
   "id": "cn-guiyu-industrial-park",
@@ -577,8 +586,14 @@
   "lat": 23.33,
   "lon": 116.36,
   "category": "ewaste",
-  "record": "In December 2015 Chinese state media (Xinhua, ecns) reported that all informal e-scrap processors in Guiyu were required to move into a newly built USD 230 million industrial park by the start of 2016; about 400 large workshops had moved by late November 2015 while roughly 3,000 small businesses had not. A 2021 peer-reviewed study (Int Arch Occup Environ Health 94:911-918) of children sampled in 2014 (222 exposed vs 204 control) found median blood lead of 8.5 ug/dL (IQR 6.6-10.9) in Guiyu vs 6.0 (4.8-7.9) in Haojiang District (P<0.01).",
+  "record": "In December 2015 Chinese state media reported that Guiyu's informal e-scrap processors were required to move into a newly built industrial park: ecns/China News Service (10 Dec 2015), quoting Lin Dingliang, head of Shantou's Chaoyang District, said that 'by November, the town had closed more than 400 workshops, while persuading the over 3,000 businesses to move to the park', with small recyclers given until the end of 2015 to relocate. E-Scrap News (citing Xinhua) instead described a USD 230 million park into which about 400 large workshops had moved while roughly 3,000 small businesses had not; the ecns text gives no park cost. A 2021 peer-reviewed study (Int Arch Occup Environ Health 94:911-918) of children sampled in 2014 (222 exposed vs 204 control) found median blood lead of 8.5 ug/dL (IQR 6.6-10.9) in Guiyu vs 6.0 (4.8-7.9) in Haojiang District (P<0.01).",
   "record_sources": [
+   {
+    "title": "China's trash town bans recycling outside park",
+    "url": "http://www.ecns.cn/2015/12-10/192022.shtml",
+    "publisher": "ecns / China News Service (state media)",
+    "date": "2015-12-10"
+   },
    {
     "title": "China's Guiyu shifts away from crude processing",
     "url": "http://resource-recycling.com/e-scrap/2015/12/17/chinas-guiyu-shifts-away-crude-processing/",
@@ -595,6 +610,12 @@
   "claim": "Local government position (via state media, 2015) was that consolidation into the park would end crude open-air processing.",
   "claim_sources": [
    {
+    "title": "China's trash town bans recycling outside park",
+    "url": "http://www.ecns.cn/2015/12-10/192022.shtml",
+    "publisher": "ecns / China News Service (state media)",
+    "date": "2015-12-10"
+   },
+   {
     "title": "China's Guiyu shifts away from crude processing",
     "url": "http://resource-recycling.com/e-scrap/2015/12/17/chinas-guiyu-shifts-away-crude-processing/",
     "publisher": "E-Scrap News",
@@ -603,9 +624,8 @@
   ],
   "gap": "Sources are older (2014-2015 data; 2021 publication); no post-consolidation government monitoring dataset or tonnage for the park was located.",
   "confidence": "medium",
-  "verified_primary": true,
-  "verification_note": "Partial: fetched the PMC full text of the 2021 study (Int Arch Occup Environ Health 94(5):911–918): confirms 2014 sampling, 222 exposed vs 204 control (the abstract states 224 exposed), median BLL 8.5 (6.6–10.9) vs 6.0 (4.8–7.9) ug/dL, P<0.01. The 2015 relocation figures (USD 230 million park, ~400 workshops moved, ~3,000 small businesses not) were not found in a Xinhua/ecns original or government document and remain via E-Scrap News/BAN, so confidence left medium.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Partial: fetched the PMC full text of the 2021 study (Int Arch Occup Environ Health 94(5):911–918): confirms 2014 sampling, 222 exposed vs 204 control (the abstract states 224 exposed), median BLL 8.5 (6.6–10.9) vs 6.0 (4.8–7.9) ug/dL, P<0.01. Second pass (2026-10-22): traced E-Scrap News's links to the state-media originals; ecns (10 Dec 2015) says more than 400 workshops were closed and over 3,000 businesses were being persuaded to move to the park (deadline end-2015), whereas the earlier record (via E-Scrap News) said ~400 workshops had moved and ~3,000 had not, and ecns gives no USD 230 million cost; the Xinhua original (news.xinhuanet.com/english/2015-12/10/c_134904457.htm) is robots-disallowed and BAN's page errors (Xinhua added to browser_fetch_list.csv). No Shantou/Guiyu government document or post-consolidation monitoring was located; further searching was not possible (search budget exhausted).",
+  "last_checked": "2026-10-22",
   "verification_status": "partial"
  },
  {
@@ -642,7 +662,6 @@
   "claim_sources": [],
   "gap": "Older (2015-2016 data); documented imports contrast with EU WEEE rules prohibiting export of non-functional equipment; no updated port-inspection dataset after the 2025 Basel amendments was located.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched the full PiP report (UNU/BCCC-Africa): confirms 3,622 documents, 201 containers, 2,184 Ro-Ro vehicles, at least 15,600 t/yr non-functional, ~41,500 t/yr in vehicles (69%), 77% EU and 98% EU for vehicle imports. Corrected the earlier press-based reading of ~60,000 t as a 2015–2016 total (the report gives ~60,000 t per year), the fieldwork start (23 Mar 2015, not Jan 2015) and the 15,400 t non-functional figure (not in the report).",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -681,7 +700,6 @@
   "claim_sources": [],
   "gap": "Only NGO mapping and a KAP survey were located (older, 2019-2021); no government monitoring dataset with concentrations for Seelampur was found.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched Toxics Link's own study page (2019): confirms 15 hotspots and names them; corrected the location of Loni (and Behta Hazipur), which are in Ghaziabad, Uttar Pradesh, not Delhi. The 85,000 t Assocham figure does not appear on the study page and is attributed to Down To Earth. No CPCB/DPCC dataset located.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -695,8 +713,44 @@
   "lat": 47.6,
   "lon": -122.3,
   "category": "ewaste",
-  "record": "Amazon's 10-K disclosures: servers' useful life 4 to 5 years from 1 Jan 2022 (depreciation -USD 3.6 bn), 5 to 6 years from 1 Jan 2024 (-USD 3.2 bn), then 'a subset of servers and networking equipment' cut from 6 to 5 years from 1 Jan 2025 citing 'the increased pace of technology development' in AI/ML (depreciation +USD 1.4 bn, net income -USD 1.0 bn, primarily AWS). Alphabet extended servers from 4 to 6 years beginning FY2023 (Q1-2023 depreciation -USD 988 m). Microsoft's 2025 Environmental Data Fact Sheet shows Deloitte & Touche LLP limited assurance on Section 1 (GHG, energy, water, waste and circularity tables) for FY24, with diverted waste of 28,285 t. Google reports 84% of data-center operational waste diverted (2024) and UL 2799 Zero-Waste validation at two data centers and one warehouse. No public filing stating a physical lifespan for GPUs, or an assured GPU resale/refurbishment volume, was found.",
+  "record": "Amazon's SEC filings: servers' useful life 4 to 5 years and networking equipment 5 to 6 years from 1 Jan 2022 (Q1-2022 depreciation -USD 973 m; full year -USD 3.6 bn per Hudson Labs' reading of the FY2022 10-K), servers 5 to 6 years from 1 Jan 2024 (Q1-2024 -USD 897 m, net income +USD 695 m; full year -USD 3.2 bn per Hudson Labs), then 'a subset of our servers and networking equipment' cut from 6 to 5 years from 1 Jan 2025 due to 'the increased pace of technology development, particularly in the area of artificial intelligence and machine learning' (Q1-2025 depreciation +USD 217 m, net income -USD 162 m, 'primarily impacted our AWS segment'; full year +USD 1.4 bn / -USD 1.0 bn per Hudson Labs). Alphabet extended servers from 4 to 6 years and certain network equipment from 5 to 6 years beginning FY2023 (Q1-2023 depreciation -USD 988 m, net income +USD 770 m). Microsoft extended server and network equipment from 4 to 6 years beginning FY2023 (Jul-Sep 2022 operating income +USD 1.1 bn). Meta extended most servers and network assets to 5.5 years from 2025 (Q1-2025 depreciation -USD 826 m). Microsoft's 2025 Environmental Data Fact Sheet shows Deloitte & Touche LLP limited assurance on Section 1 (GHG, energy, water, waste and circularity tables) for FY24, with diverted waste of 28,285 t. Google reports 84% of data-center operational waste diverted (2024) and UL 2799 Zero-Waste validation at two data centers and one warehouse. No public filing stating a physical lifespan for GPUs, or an assured GPU resale/refurbishment volume, was found.",
   "record_sources": [
+   {
+    "title": "Amazon.com Inc. Form 10-Q, quarter ended March 31, 2025 (Note 1, Use of Estimates)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000036/amzn-20250331.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2025-05"
+   },
+   {
+    "title": "Amazon.com Inc. Form 10-Q, quarter ended March 31, 2024 (Note 1, Use of Estimates)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000083/amzn-20240331.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2024-05"
+   },
+   {
+    "title": "Amazon.com Inc. Form 10-Q, quarter ended March 31, 2022 (Note 1, Use of Estimates)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872422000013/amzn-20220331.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2022-04"
+   },
+   {
+    "title": "Alphabet Inc. Form 10-Q, quarter ended March 31, 2023 (Note 1, Change in Accounting Estimate)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204423000045/goog-20230331.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2023-04"
+   },
+   {
+    "title": "Microsoft Corp. Form 10-Q, quarter ended September 30, 2022 (Note 1, Change in Accounting Estimate)",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/000156459022035087/msft-10q_20220930.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2022-10"
+   },
+   {
+    "title": "Meta Platforms Inc. Form 10-Q, quarter ended March 31, 2025 (Note 1, Use of Estimates)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000054/meta-20250331.htm",
+    "publisher": "U.S. SEC EDGAR",
+    "date": "2025-05"
+   },
    {
     "title": "Alphabet FY2025 Environmental Indicators Assurance Letter (EY review)",
     "url": "https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf",
@@ -761,11 +815,10 @@
     "date": "2025"
    }
   ],
-  "gap": "positive example with caveats: Microsoft's waste tables (including 28,285 t diverted) carry Deloitte limited assurance for FY24, but the 90.9% server reuse/recycling metric does not appear in the reviewed fact sheet; Google's component counts sit outside EY's FY2025 review scope (select GHG, energy and water metrics only) and UL 2799 covers site waste only; accounting lives of 5-6 years are estimates, and Amazon's 2025 reversal is the only filing-level signal that AI hardware is treated as shorter-lived.",
+  "gap": "positive example with caveats: Microsoft's waste tables (including 28,285 t diverted) carry Deloitte limited assurance for FY24, but the 90.9% server reuse/recycling metric does not appear in the reviewed fact sheet; Google's component counts sit outside EY's FY2025 review scope (select GHG, energy and water metrics only) and UL 2799 covers site waste only; accounting lives of 5-6 years are estimates, and Amazon's 2025 reversal is the only filing-level signal that AI hardware is treated as shorter-lived (Meta lengthened most server lives to 5.5 years in the same year).",
   "confidence": "medium",
-  "verified_primary": true,
-  "verification_note": "Partial: fetched Microsoft's 2025 Environmental Data Fact Sheet (Deloitte review covers Section 1 only; diverted waste 28,285 t in Table 10 is inside scope; the 90.9% server/component reuse-recycling rate is not in the fact sheet and so is outside the assured scope) and Alphabet's FY2025 EY assurance letter (AT-C 210 review of select GHG, energy and water metrics; no waste or circularity metric in scope). Amazon's FY2024/FY2025 10-K and Q4-2024 8-K text as fetched did not reach the useful-life passages (tool truncation), and Alphabet's 4-to-6-year change was not fetched from a filing; depreciation figures remain via Hudson Labs and Converge Digest, so confidence left medium.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Pass 2 (2026-10-22): SEC 10-Q Note 1 text confirms each useful-life change and its quarterly effect: Amazon Q1-2022 (servers 4 to 5, networking 5 to 6 years; -USD 973 m), Q1-2024 (servers 5 to 6; -USD 897 m), Q1-2025 (subset 6 to 5 citing AI/ML; +USD 217 m, NI -USD 162 m, primarily AWS); Alphabet Q1-2023 (4 to 6 / 5 to 6; -USD 988 m, NI +USD 770 m); Microsoft Q1 FY2023 (4 to 6); Meta Q1-2025 (5.5 years; -USD 826 m). Google's circularity page confirms 84% diversion (2024) and UL 2799 at two data centers and one warehouse. Earlier: Microsoft fact sheet (Deloitte scope; 28,285 t inside, 90.9% outside) and Alphabet FY2025 EY letter (no waste metric in scope) fetched. Not confirmed from a filing: Amazon's full-year effects (-3.6 bn, -3.2 bn, +1.4 bn/-1.0 bn), because the fetched 10-K text truncates before Note 1; these remain via Hudson Labs. Alphabet's Q1-2026 10-Q shows no further change.",
+  "last_checked": "2026-10-22",
   "verification_status": "partial"
  }
 ]

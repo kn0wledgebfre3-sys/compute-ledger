@@ -1,4 +1,4 @@
-"""Shared helpers (copied verbatim from /home/claude/scrapers/_common.py on 2026-10-20 so
+"""Shared helpers (copied verbatim from scrapers/_common.py on 2026-10-20 so
 the pipeline directory is self-contained; keep the two in sync by hand).
 
 Original docstring follows.

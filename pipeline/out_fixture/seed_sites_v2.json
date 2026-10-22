@@ -497,7 +497,7 @@
     "confidence": "medium",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://en.wikipedia.org/wiki/Google_data_centers",
-    "notes": "Existence/status corroborated by operator list https://datacenters.google/locations/. Google list: 'Midlothian, Texas'. Texas Comptroller register lists Google-occupied projects under shell names (Sharka LLC, SDC DFW VIII, etc.)."
+    "notes": "Existence/status corroborated by operator list https://datacenters.google/locations/. Google list: 'Midlothian, Texas'. Texas Comptroller register lists Google-occupied projects under project-LLC names (Sharka LLC, SDC DFW VIII, etc.)."
   },
   {
     "site_id": "usa-google-berkeley-county-moncks-corner-data-center",
@@ -935,7 +935,7 @@
     "ledger_entry_id": "us-tn-memphis-xai-colossus-turbines",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-tn-memphis-xai-colossus-turbines)",
+    "coord_source_url": "registry/ (ledger entry us-tn-memphis-xai-colossus-turbines)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Shelby County Health Dept construction permit (2025-07-02) for 15 Solar SMT-130 gas turbines up to 247 MW (on-site generation, not diesel backup); upheld 2025-12-15. Epoch AI lists Colossus 2 (Memphis) at 946 MW IT, operational."
   },
   {
@@ -960,7 +960,7 @@
     "ledger_entry_id": "us-ms-southaven-xai-1.2gw-gas",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-ms-southaven-xai-1.2gw-gas)",
+    "coord_source_url": "registry/ (ledger entry us-ms-southaven-xai-1.2gw-gas)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Ledger coordinate is near the TN/MS line; it may represent the Southaven permanent power-plant site (MDEQ permit for 41 gas turbines, 1.2 GW, approved ~2026-03-10) rather than the Colossus 2 data halls in Memphis. 69 temporary trailer-mounted turbines under MDEQ retirement schedule to 2027-07-14."
   },
   {
@@ -985,7 +985,7 @@
     "ledger_entry_id": "us-la-richland-meta-entergy-gas",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-la-richland-meta-entergy-gas)",
+    "coord_source_url": "registry/ (ledger entry us-la-richland-meta-entergy-gas)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. LPSC Docket U-37425 settlement (2025-08-20): three 754 MW Entergy CT plants (2,262 MW) for the site. LDEQ minor-source air permit (July 2025, amended 2026-06-06): 31 emergency diesel generators + 44 gas boilers, 96.83 tpy NOx; generator MW not stated. Epoch AI: Meta Hyperion in frontier list."
   },
   {
@@ -1010,7 +1010,7 @@
     "ledger_entry_id": "us-pa-susquehanna-talen-aws-colocation",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-pa-susquehanna-talen-aws-colocation)",
+    "coord_source_url": "registry/ (ledger entry us-pa-susquehanna-talen-aws-colocation)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. FERC (accession 20241101-3061) rejected raising co-located load from 300 MW to 480 MW; Talen FY2025 10-K: PPA up to 1,920 MW through 2042, moving front-of-meter 2026-27. capacity_mw_it = 300 MW existing co-located ISA load (grid-side figure, not IT load)."
   },
   {
@@ -1035,7 +1035,7 @@
     "ledger_entry_id": "us-pa-homer-city-gas-campus",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-pa-homer-city-gas-campus)",
+    "coord_source_url": "registry/ (ledger entry us-pa-homer-city-gas-campus)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. PA DEP Plan Approval 32-00457A (memo signed 2025-11-18): 7 GE 7HA.02 combined-cycle + 10 FT8 MOBILEPAC units = 4,678 MWe on-site gas generation for a data-center campus; power from 2027."
   },
   {
@@ -1060,7 +1060,7 @@
     "ledger_entry_id": "us-wi-mount-pleasant-microsoft-we-energies",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-wi-mount-pleasant-microsoft-we-energies)",
+    "coord_source_url": "registry/ (ledger entry us-wi-mount-pleasant-microsoft-we-energies)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. PSC Wisconsin docket 6630-CE-317 (2025-07-02) approved 1,100 MW Oak Creek gas plant citing data-center load; Microsoft 15-year service contract signed 2026-07-16. Microsoft: closed-loop zero-water-evaporation cooling pilot 2026. Epoch AI/GDELT list 'Fairwater (Mount Pleasant)' at 300 MW current power (CC-BY, not used for capacity column)."
   },
   {
@@ -1085,7 +1085,7 @@
     "ledger_entry_id": "us-az-goodyear-mesa-water-records-vs-claims",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-az-goodyear-mesa-water-records-vs-claims)",
+    "coord_source_url": "registry/ (ledger entry us-az-goodyear-mesa-water-records-vs-claims)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. City of Goodyear amended development agreement (March 2023): discharge cap 500,000 gal/day; all buildings after PHX-12 air-cooled (earlier buildings evaporative). Maricopa County AQD permits (sources.json us-az-maricopa-aqd-records) not fetched."
   },
   {
@@ -1110,7 +1110,7 @@
     "ledger_entry_id": "us-ia-west-des-moines-microsoft-water",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-ia-west-des-moines-microsoft-water)",
+    "coord_source_url": "registry/ (ledger entry us-ia-west-des-moines-microsoft-water)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Iowa DNR draft Title V (2024-11-07), file 77-02-040, 550 SE White Crane Rd & 1475 SE Maffitt Lake Rd; NAICS 518210; 128 diesel emergency engines, ~340.8 MW summed from permit tables (20 units assumed 3,000 kW where text truncated). Ledger coordinate is a centroid for Microsoft's five WDM sites; West Des Moines Water Works reports evaporative-cooling water use."
   },
   {
@@ -1135,7 +1135,7 @@
     "ledger_entry_id": "us-wa-seattle-westin-amazon-heat-reuse",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry us-wa-seattle-westin-amazon-heat-reuse)",
+    "coord_source_url": "registry/ (ledger entry us-wa-seattle-westin-amazon-heat-reuse)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Carrier hotel (~400,000 sq ft, 70% data center); up to 5 MW waste heat to Amazon Denny Triangle campus since Dec 2015. Included as a large urban facility, not hyperscale."
   },
   {
@@ -1160,7 +1160,7 @@
     "ledger_entry_id": "ie-dublin-vantage-dub13-abp-refusal",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry ie-dublin-vantage-dub13-abp-refusal)",
+    "coord_source_url": "registry/ (ledger entry ie-dublin-vantage-dub13-abp-refusal)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. An Bord Pleanala ABP-317446-23 (2025) refused the DUB13 data hall (12,893 sq m, 13 backup generators) for lack of a grid connection agreement; the existing Profile Park campus is treated here as operating. Status of the wider campus not verified this session."
   },
   {
@@ -1185,7 +1185,7 @@
     "ledger_entry_id": "nl-middenmeer-microsoft-water",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry nl-middenmeer-microsoft-water)",
+    "coord_source_url": "registry/ (ledger entry nl-middenmeer-microsoft-water)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. OD NZKG permit for AMS13/14 (2023); drinking-water use 84 million litres (2021) per Hollands Kroon/press; Tweede Kamer motion 2022-10-04. Agriport A7 is a nationally designated hyperscale area."
   },
   {
@@ -1210,7 +1210,7 @@
     "ledger_entry_id": "fi-espoo-kirkkonummi-microsoft-fortum-heat",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry fi-espoo-kirkkonummi-microsoft-fortum-heat)",
+    "coord_source_url": "registry/ (ledger entry fi-espoo-kirkkonummi-microsoft-fortum-heat)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Two sites represented by one ledger coordinate. Fortum heat-pump plants (180 MW district heat) started 2026-05; waste-heat recovery from the data centres phases in from 2027."
   },
   {
@@ -1235,7 +1235,7 @@
     "ledger_entry_id": "in-telangana-aws-future-city",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry in-telangana-aws-future-city)",
+    "coord_source_url": "registry/ (ledger entry in-telangana-aws-future-city)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Foundation stone ~2026-07-15; 300 acres (202 Future City + 98 Chandanvelly); MW not disclosed."
   },
   {
@@ -1260,7 +1260,7 @@
     "ledger_entry_id": "in-gujarat-jamnagar-policy",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry in-gujarat-jamnagar-policy)",
+    "coord_source_url": "registry/ (ledger entry in-gujarat-jamnagar-policy)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Tertiary source (citing Indian Express): 168 MW initial capacity, renewable power, desalinated seawater for cooling. Treat as unverified."
   },
   {
@@ -1285,7 +1285,7 @@
     "ledger_entry_id": "jp-softbank-tomakomai",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry jp-softbank-tomakomai)",
+    "coord_source_url": "registry/ (ledger entry jp-softbank-tomakomai)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. SoftBank: 700,000 m2 site, >300 MW receiving capacity, opens FY2026, liquid cooling, 100% Hokkaido renewables (operator claim). OCCTO FY2025 demand assumption counts Hokkaido data-centre load but does not name the site."
   },
   {
@@ -1310,7 +1310,7 @@
     "ledger_entry_id": "br-eldorado-scala-ai-city",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry br-eldorado-scala-ai-city)",
+    "coord_source_url": "registry/ (ledger entry br-eldorado-scala-ai-city)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. MME Portaria SNTEP 2.942 (2025-05-09) recognised 525 kV access; company: 4.75 GW at full build, phase 1 ~50-54 MW IT; closed-loop cooling with initial charge only."
   },
   {
@@ -1335,7 +1335,7 @@
     "ledger_entry_id": "br-pecem-casadosventos-bytedance",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry br-pecem-casadosventos-bytedance)",
+    "coord_source_url": "registry/ (ledger entry br-pecem-casadosventos-bytedance)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. ONS connection approved 2025-05-30 (300 MW initial, up to 900 MW); Semace licences contested by MPF/DPU ACP 0080626-66.2026.4.05.8100 (2026-09-10). Closed-loop air-cooled chillers, 18-30 m3/day water."
   },
   {
@@ -1360,7 +1360,7 @@
     "ledger_entry_id": "ae-abudhabi-uae-us-ai-campus-5gw",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry ae-abudhabi-uae-us-ai-campus-5gw)",
+    "coord_source_url": "registry/ (ledger entry ae-abudhabi-uae-us-ai-campus-5gw)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. US Dept of Commerce release (2025-05-15): 5 GW campus; Stargate UAE first 200 MW targeted 2026. Site coordinate approximate; precise parcel not published."
   },
   {
@@ -1385,7 +1385,7 @@
     "ledger_entry_id": "ke-olkaria-ecocloud-geothermal",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry ke-olkaria-ecocloud-geothermal)",
+    "coord_source_url": "registry/ (ledger entry ke-olkaria-ecocloud-geothermal)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Ground broken 2023-09-01: phase 1 24 MW IT (8 x 3 MW halls), 70 MW total draw, geothermal PPA with KenGen, air-cooled chilled water, target PUE <=1.25."
   },
   {
@@ -1410,7 +1410,7 @@
     "ledger_entry_id": "au-nsw-sydney-dc-water",
     "confidence": "low",
     "last_checked": "2026-10-20",
-    "coord_source_url": "/home/claude/registry (ledger entry au-nsw-sydney-dc-water)",
+    "coord_source_url": "registry/ (ledger entry au-nsw-sydney-dc-water)",
     "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. NSW Planning Portal SSD-80814238 approved 2026-10-01; 34.3 MW. Ledger coordinate is for the Sydney/Macquarie Park cluster, not parcel-verified."
   },
   {
@@ -1667,7 +1667,7 @@
     "confidence": "high",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://nominatim.openstreetmap.org/",
-    "notes": "VA DEQ registration 73200; list: Equinix, LLC - DC 14, Prince William County, latest permit 2007-10-18 (Article 6 - mNSR) | PDF permittee: Verizon Business; approved 2006-10-19 | facility address (permit): 7400 Infantry Ridge Road, Manassas, VA 20109 [high] | 7.0 gen-sets, 14.0 MW standby summed from per-unit ekW ratings (range 14.0-14.0; confidence high); units: 3 x 2000 kW Caterpillar 3516B; 4 x 2000 kW Caterpillar 3516B | fuel: diesel",
+    "notes": "VA DEQ registration 73200; list: Equinix, LLC - DC 14, Prince William County, latest permit 2007-10-18 (Article 6 - mNSR) | PDF permittee: Verizon Business; approved 2006-10-19 | facility address (permit): 7400 Infantry Ridge Road, Manassas, VA 20109 [high] | 7.0 gen-sets, 14.0 MW standby summed from per-unit ekW ratings (range 14.0-14.0; confidence medium); units: 3 x 2000 kW Caterpillar 3516B; 4 x 2000 kW Caterpillar 3516B | fuel: diesel",
     "backlog_id": "va-deq-73200",
     "registration_id": "DEQ registration 73200",
     "address": "7400 Infantry Ridge Road, Manassas, VA 20109",
@@ -1700,7 +1700,7 @@
     "confidence": "high",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://nominatim.openstreetmap.org/",
-    "notes": "VA DEQ registration 73743; list: Zayo Group, LLC, Loudoun County, latest permit 2025-08-04 (Article 6 - mNSR) | PDF permittee: zColo, LLC; approved 2022-06-01 | facility address (permit): 21630 and 21631 Red Rum Drive, Ashburn, VA 20147 [high] | 41.0 gen-sets, 106.75 MW standby summed from per-unit ekW ratings (range 106.75-106.75; confidence low); units: 26 x 3000 kW Caterpillar 3516E; 1 x 750 kW Caterpillar C18; 14 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500;2366;91, maintenance/testing 100;22, combined 1274 | fuel: ULSD (ultra-low sulfur diesel) | registration check: match_with_other_numbers_printed | extraction: PDF also prints registration number(s) ['74743'] (typo in page headers?)",
+    "notes": "VA DEQ registration 73743; list: Zayo Group, LLC, Loudoun County, latest permit 2025-08-04 (Article 6 - mNSR) | PDF permittee: zColo, LLC; approved 2022-06-01 | facility address (permit): 21630 and 21631 Red Rum Drive, Ashburn, VA 20147 [high] | 41.0 gen-sets, 106.75 MW standby summed from per-unit ekW ratings (range 106.75-106.75; confidence medium); units: 26 x 3000 kW Caterpillar 3516E; 1 x 750 kW Caterpillar C18; 14 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500;2366;91, maintenance/testing 100;22, combined 1274 | fuel: ULSD (ultra-low sulfur diesel) | registration check: match_with_other_numbers_printed | extraction: PDF also prints registration number(s) ['74743'] (typo in page headers?)",
     "backlog_id": "va-deq-73743",
     "registration_id": "DEQ registration 73743",
     "address": "21630 and 21631 Red Rum Drive, Ashburn, VA 20147",
@@ -1733,7 +1733,7 @@
     "confidence": "medium",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://geocoding.geo.census.gov/",
-    "notes": "VA DEQ registration 74081; list: Amazon Data Services, Inc. IAD-73 IAD-74 IAD-602 IAD-193 IAD-194, Prince William County, latest permit 2024-07-08 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2024-07-08 | facility address (permit): 7060, 7070, and 7080 Wellington Rd and, 8300 and 8400 Buckeye Timber Drive, Manassas, VA 20109 [high] | 52.0 gen-sets, 134.75 MW standby summed from per-unit ekW ratings (range 134.75-134.75; confidence high); units: 9 x 2500 kW Caterpillar 3516C; 40 x 2750 kW Caterpillar 3516E; 3 x 750 kW Caterpillar C18 | hours/yr limits: all purposes 500, maintenance/testing 35 | fuel: ULSD (ultra-low sulfur diesel) | coordinates: Census street-interpolated match (TIGER); replaces Nominatim street-level hit",
+    "notes": "VA DEQ registration 74081; list: Amazon Data Services, Inc. IAD-73 IAD-74 IAD-602 IAD-193 IAD-194, Prince William County, latest permit 2024-07-08 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2024-07-08 | facility address (permit): 7060, 7070, and 7080 Wellington Rd and, 8300 and 8400 Buckeye Timber Drive, Manassas, VA 20109 [high] | 52.0 gen-sets, 134.75 MW standby summed from per-unit ekW ratings (range 134.75-134.75; confidence medium); units: 9 x 2500 kW Caterpillar 3516C; 40 x 2750 kW Caterpillar 3516E; 3 x 750 kW Caterpillar C18 | hours/yr limits: all purposes 500, maintenance/testing 35 | fuel: ULSD (ultra-low sulfur diesel) | coordinates: Census street-interpolated match (TIGER); replaces Nominatim street-level hit",
     "backlog_id": "va-deq-74081",
     "registration_id": "DEQ registration 74081",
     "address": "7060, 7070, and 7080 Wellington Rd and, 8300 and 8400 Buckeye Timber Drive, Manassas, VA 20109",
@@ -1766,7 +1766,7 @@
     "confidence": "low",
     "last_checked": "2026-10-20",
     "coord_source_url": null,
-    "notes": "VA DEQ registration 74107; list: Cloud HQ, Prince William County, latest permit 2021-07-26 (Article 6 - mNSR) | PDF permittee: Abteen Ventures LLC; approved 2020-08-24, amended 2021-07-26 | facility address (permit): MCC1 – 10880 Airman Avenue, MCC2 – 10100 Harry J. Parrish Boulevard, MCC6 – 10901 Airman Avenue, Manassas, VA 20110 [high] | 103.0 gen-sets, 298.0 MW standby summed from per-unit ekW ratings (range 298.0-298.0; confidence high); units: 36 x 3000 kW Caterpillar C175-16; 2 x 1750 kW Caterpillar 3512C; 1 x 1500 kW Cummins QSK50-DQGAF; 28 x 2750 kW Cummins QSK78-DQLF; 36 x 3000 kW Caterpillar C175-16 | hours/yr limits: all purposes 500, maintenance/testing 20 | fuel: diesel | coordinates: Nominatim: no result; Census: No_Match",
+    "notes": "VA DEQ registration 74107; list: Cloud HQ, Prince William County, latest permit 2021-07-26 (Article 6 - mNSR) | PDF permittee: Abteen Ventures LLC; approved 2020-08-24, amended 2021-07-26 | facility address (permit): MCC1 – 10880 Airman Avenue, MCC2 – 10100 Harry J. Parrish Boulevard, MCC6 – 10901 Airman Avenue, Manassas, VA 20110 [high] | 103.0 gen-sets, 298.0 MW standby summed from per-unit ekW ratings (range 298.0-298.0; confidence medium); units: 36 x 3000 kW Caterpillar C175-16; 2 x 1750 kW Caterpillar 3512C; 1 x 1500 kW Cummins QSK50-DQGAF; 28 x 2750 kW Cummins QSK78-DQLF; 36 x 3000 kW Caterpillar C175-16 | hours/yr limits: all purposes 500, maintenance/testing 20 | fuel: diesel | coordinates: Nominatim: no result; Census: No_Match",
     "backlog_id": "va-deq-74107",
     "registration_id": "DEQ registration 74107",
     "address": "MCC1 – 10880 Airman Avenue, MCC2 – 10100 Harry J. Parrish Boulevard, MCC6 – 10901 Airman Avenue, Manassas, VA 20110",
@@ -1799,7 +1799,7 @@
     "confidence": "high",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://nominatim.openstreetmap.org/",
-    "notes": "VA DEQ registration 74129; list: Amazon Data Services, Inc. IAD-100 IAD-101 IAD-102 IAD-103, Prince William County, latest permit 2021-06-28 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2018-02-21, amended 2021-06-28 | facility address (permit): 10321, 10301, 10281, and 10261 Tanner Way, Manassas, VA 20110 [high] | 97.0 gen-sets, 236.3 MW standby summed from per-unit ekW ratings (range 236.3-236.3; confidence high); units: 23 x 2500 kW Caterpillar 3516C-HD; 23 x 2500 kW Caterpillar 3516C-HD; 3 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 23 x 2500 kW Caterpillar 3516C-HD; 2 x 2500 kW Caterpillar 3516C-HD; 1 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 18 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 1 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 100;26 | fuel: ULSD (ultra-low sulfur diesel)",
+    "notes": "VA DEQ registration 74129; list: Amazon Data Services, Inc. IAD-100 IAD-101 IAD-102 IAD-103, Prince William County, latest permit 2021-06-28 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2018-02-21, amended 2021-06-28 | facility address (permit): 10321, 10301, 10281, and 10261 Tanner Way, Manassas, VA 20110 [high] | 97.0 gen-sets, 236.3 MW standby summed from per-unit ekW ratings (range 236.3-236.3; confidence medium); units: 23 x 2500 kW Caterpillar 3516C-HD; 23 x 2500 kW Caterpillar 3516C-HD; 3 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 23 x 2500 kW Caterpillar 3516C-HD; 2 x 2500 kW Caterpillar 3516C-HD; 1 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 18 x 2500 kW Caterpillar 3516C-HD; 1 x 600 kW Caterpillar C18; 1 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 100;26 | fuel: ULSD (ultra-low sulfur diesel)",
     "backlog_id": "va-deq-74129",
     "registration_id": "DEQ registration 74129",
     "address": "10321, 10301, 10281, and 10261 Tanner Way, Manassas, VA 20110",
@@ -1822,7 +1822,7 @@
     "status": "permitted",
     "capacity_mw_it": null,
     "capacity_source": "permit",
-    "generator_mw_permitted": 377.375,
+    "generator_mw_permitted": 364.25,
     "cooling": "unknown",
     "first_year": null,
     "source_url": "https://deq.virginia.gov/home/showpublisheddocument/26026/638634507154830000",
@@ -1832,7 +1832,7 @@
     "confidence": "high",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://geocoding.geo.census.gov/",
-    "notes": "VA DEQ registration 74161; list: QTS Investment Properties Manassas LLC, Prince William County, latest permit 2024-10-01 (Article 6 - mNSR) | PDF permittee: QTS Investment Properties, LLC; approved 2024-10-01 | facility address (permit): 9400, 9420, 9480, and 9540 Godwin Drive;, 10680 University Blvd; and, 9301 Freedom Center Blvd, Manassas, VA 20110 [high] | 159.0 gen-sets, 377.375 MW standby summed from per-unit ekW ratings (range 364.25-390.5; confidence low); units: 1 x 1250 kW Caterpillar C32; 20 x 2250 kW MTU 16V4000G83L; 32 x 2500 kW MTU 20V4000G64S; 1 x 1750 kW MTU 12V4000G24S; 105 x 2250-2500 kW MTU 16V4000G84S | hours/yr limits: all purposes 500, maintenance/testing 30 | fuel: diesel",
+    "notes": "VA DEQ registration 74161; list: QTS Investment Properties Manassas LLC, Prince William County, latest permit 2024-10-01 (Article 6 - mNSR) | PDF permittee: QTS Investment Properties, LLC; approved 2024-10-01 | facility address (permit): 9400, 9420, 9480, and 9540 Godwin Drive;, 10680 University Blvd; and, 9301 Freedom Center Blvd, Manassas, VA 20110 [high] | 159.0 gen-sets, 364.25 MW standby summed from per-unit ekW ratings (range 364.25-390.5; confidence low); units: 1 x 1250 kW Caterpillar C32; 20 x 2250 kW MTU 16V4000G83L; 32 x 2500 kW MTU 20V4000G64S; 1 x 1750 kW MTU 12V4000G24S; 105 x 2250 (2250-2500) kW MTU 16V4000G84S | hours/yr limits: all purposes 500, maintenance/testing 30 | fuel: diesel",
     "backlog_id": "va-deq-74161",
     "registration_id": "DEQ registration 74161",
     "address": "9400, 9420, 9480, and 9540 Godwin Drive;, 10680 University Blvd; and, 9301 Freedom Center Blvd, Manassas, VA 20110",
@@ -1865,7 +1865,7 @@
     "confidence": "high",
     "last_checked": "2026-10-20",
     "coord_source_url": "https://nominatim.openstreetmap.org/",
-    "notes": "VA DEQ registration 74171; list: Amazon Data Services (IAD-130 and IAD-131), Prince William County, latest permit 2023-01-27 (Article 6 - mNSR) | PDF permittee: Amazon Data Services; approved 2023-01-27 | facility address (permit): IAD-130 and IAD-131, 9040 and 9020 Freedom Center Blvd., Manassas, VA 20110 [high] | 49.0 gen-sets, 121.5 MW standby summed from per-unit ekW ratings (range 121.5-121.5; confidence high); units: 8 x 2500 kW Caterpillar 3516C-HD; 36 x 2500 kW Caterpillar 3516C-HD; 3 x 2500 kW Caterpillar 3516C-HD; 2 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 32 | fuel: ULSD (ultra-low sulfur diesel)",
+    "notes": "VA DEQ registration 74171; list: Amazon Data Services (IAD-130 and IAD-131), Prince William County, latest permit 2023-01-27 (Article 6 - mNSR) | PDF permittee: Amazon Data Services; approved 2023-01-27 | facility address (permit): IAD-130 and IAD-131, 9040 and 9020 Freedom Center Blvd., Manassas, VA 20110 [high] | 49.0 gen-sets, 121.5 MW standby summed from per-unit ekW ratings (range 121.5-121.5; confidence medium); units: 8 x 2500 kW Caterpillar 3516C-HD; 36 x 2500 kW Caterpillar 3516C-HD; 3 x 2500 kW Caterpillar 3516C-HD; 2 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 32 | fuel: ULSD (ultra-low sulfur diesel)",
     "backlog_id": "va-deq-74171",
     "registration_id": "DEQ registration 74171",
     "address": "IAD-130 and IAD-131, 9040 and 9020 Freedom Center Blvd., Manassas, VA 20110",
@@ -1898,7 +1898,7 @@
     "confidence": "low",
     "last_checked": "2026-10-20",
     "coord_source_url": null,
-    "notes": "VA DEQ registration 74274; list: Amazon Data Services Inc IAD-124/125/126/127, Loudoun County, latest permit 2023-12-27 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2023-12-27 | facility address (permit): 24214, 24224, 24234, and 24244 Quail Ridge Lane, Aldie, VA 20105 [high] | 98.0 gen-sets, 237.0 MW standby summed from per-unit ekW ratings (range 237.0-237.0; confidence high); units: 92 x 2500 kW Cummins QSK60-G26; 4 x 750 kW Cummins QST30-G5; 2 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 32 | fuel: ULSD (ultra-low sulfur diesel) | coordinates: Nominatim: no result; Census: Tie",
+    "notes": "VA DEQ registration 74274; list: Amazon Data Services Inc IAD-124/125/126/127, Loudoun County, latest permit 2023-12-27 (Article 6 - mNSR) | PDF permittee: Amazon Data Services, Inc.; approved 2023-12-27 | facility address (permit): 24214, 24224, 24234, and 24244 Quail Ridge Lane, Aldie, VA 20105 [high] | 98.0 gen-sets, 237.0 MW standby summed from per-unit ekW ratings (range 237.0-237.0; confidence medium); units: 92 x 2500 kW Cummins QSK60-G26; 4 x 750 kW Cummins QST30-G5; 2 x 2000 kW Caterpillar 3516C | hours/yr limits: all purposes 500, maintenance/testing 32 | fuel: ULSD (ultra-low sulfur diesel) | coordinates: Nominatim: no result; Census: Tie",
     "backlog_id": "va-deq-74274",
     "registration_id": "DEQ registration 74274",
     "address": "24214, 24224, 24234, and 24244 Quail Ridge Lane, Aldie, VA 20105",

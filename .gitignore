@@ -2,5 +2,11 @@ __pycache__/
 *.pyc
 /tmp/
 
-# raw source PDFs: large, re-downloadable by the scrapers
-pipeline/out/tx_pdfs/
+# live-run working folder (PDF text caches, local paths); reviewed outputs live in data/climate_trace_seed/
+pipeline/out/
+pipeline/out_tx/
+pipeline/pdfs_va/
+# the handover zip is built for attaching to email, not versioned
+*.zip
+.DS_Store
+.venv/

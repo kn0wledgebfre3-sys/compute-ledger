@@ -66,7 +66,7 @@ SITES = [
  {"source_id":"ledger-dc-us-wi-mount-pleasant-microsoft","source_name":"Microsoft Mount Pleasant, Wisconsin (We Energies gas build)",
   "iso3":"USA","lat":42.72,"lon":-87.89,"subregion":"RFCW",
   "signal":"contracted","mw":1100,"mw_src":"PSC Wisconsin docket 6630-CE-317: up to 1,100 MW simple-cycle gas, $1.205B, for large-load growth; https://apps.psc.wi.gov/",
-  "alpha":0.0,"ef_dedicated_lb":1135.0,"ded_note":"System plant, not site-dedicated: PSC-approved 1,100 MW of simple-cycle gas for We Energies' system with Microsoft load as the stated driver. Site-level alpha=0 (RFCW grid factor, which is already gas/coal-heavy); INCREMENTAL attribution at alpha=1 with AP-42 EF reported in other7. See dedicated_supply.json alpha_note.",
+  "alpha":0.0,"ef_dedicated_lb":1135.0,"ded_note":"System plant, not site-dedicated: PSC-approved 1,100 MW of simple-cycle gas for We Energies' system, found 'necessary to satisfy the significant probable future requirements of one customer, the Very Large Customer' (the Microsoft Mount Pleasant data center), PSC final decision 2025-07-02. Site-level alpha=0 (RFCW grid factor, which is already gas/coal-heavy); INCREMENTAL attribution at alpha=1 with AP-42 EF reported in other7. See dedicated_supply.json alpha_note.",
   "claim":"Microsoft: closed-loop water pilot; 100% renewable matching via PPAs/certificates.",
   "ledger":"us-wi-mount-pleasant-microsoft-we-energies"},
 ]

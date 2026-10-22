@@ -94,7 +94,6 @@
   "claim_sources": [],
   "gap": "Regulator documents demand share and imposes generation obligations but publishes no consumer network-cost figure; final decision text read from a law-firm-hosted copy.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched CRU/202504 on consult.cru.ie (21%, 30.5 TWh, ~30% by 2030, ~50% Dublin/Meath confirmed; 7.1 TWh is data centre plus new technology load) and the CRU/2025236 decision paper (12 Dec 2025; Matheson-hosted copy, cru.ie original not located): 10 MVA dispatchable tier, 6-year glide path and one-year capacity contracts confirmed; corrected the scope of the 80% renewables requirement, which applies from the 1 MVA de-minimis level, not only to >=10 MVA sites. See also ie-cru-leu-connection-policy-2025 (same CRU decision).",
   "last_checked": "2026-10-22",
   "verification_status": "verified"
@@ -189,7 +188,6 @@
   ],
   "gap": "Complaints are acknowledged as persistent but the dBA standard does not address the tonal/low-frequency noise complained of; no measured dataset is public.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Re-fetched Loudoun County's Noise & Air Quality page: persistent/tonal complaints, 55 dBA residential limit, the verbatim no-tonal/low-frequency-policy sentence, pre- and post-construction noise studies, Va. Code 15.2-2209.5 sound profile at 100 MW, spring/summer 2027 amendments and 'historically ... cooperative' wording all confirmed; no complaint or enforcement counts are published.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -203,8 +201,26 @@
   "lat": 52.33,
   "lon": 5.54,
   "category": "land_biodiversity",
-  "record": "The 166 ha site included ~80 ha owned by the State (Rijksvastgoedbedrijf). The Eerste Kamer adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale datacenters; in the 22 Feb 2022 interpellation it was recorded that the plan reused only ~15% of residual heat and that the municipal permit would not be revoked. Minister De Jonge's letter of 10 June 2022 (Kamerstuk 26 643 nr. 862) transmitted TNO's assessment of the municipality's plan against the Aug 2021 sale conditions (maximum solar, residual-heat reuse); NOS reported the same day the State would not sell because conditions were not met.",
+  "record": "The 166 ha Meta site (figure given in the Senate by Senator Koffeman and by NOS) included land of which the State owned 'a large part' (Council of State, 2023); NOS put the State share at about 80 ha [press]. The Eerste Kamer adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale datacenters. In the 22 Feb 2022 interpellation Senator Koffeman (PvdD) stated that only about 15% of residual heat could be used, and the minister said the State still held the land as a private-law party but would not undo the municipal permit. Minister De Jonge's letter of 10 June 2022 (Kamerstuk 26 643 nr. 862) transmitted TNO's assessment of the municipality's plan against the Aug 2021 sale conditions. The same day the Rijksvastgoedbedrijf wrote to Zeewolde that it could not sell the land on the current assessment. TNO found the design energy-efficient for now, with intelligent cooling and no drinking water used for cooling, but roofs, facades and surrounding land not maximally used for solar, rainwater use unclear and the residual-heat plan too undeveloped to assess. On 20 Sep 2023 the Council of State annulled the Trekkersveld IV zoning plan (ECLI:NL:RVS:2023:3550), noting that neither the municipality nor the initiator owned the land and that there was no certainty the State would sell.",
   "record_sources": [
+   {
+    "title": "Brief Rijksvastgoedbedrijf aan college van B&W Zeewolde over verkoop gronden datacenter (toetsing TNO)",
+    "url": "https://www.eerstekamer.nl/overig/20220613/brief_rijksvastgoedbedrijf_van_10/f=y.pdf",
+    "publisher": "Rijksvastgoedbedrijf (via Eerste Kamer)",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Kabinet beperkt mogelijkheid tot vestiging hyperscale datacentra",
+    "url": "https://www.rijksoverheid.nl/actueel/nieuws/2022/06/10/kabinet-beperkt-mogelijkheid-tot-vestiging-hyperscale-datacentra",
+    "publisher": "Rijksoverheid",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Uitspraak 202201810/1/R1 (ECLI:NL:RVS:2023:3550), bestemmingsplan Bedrijventerrein Trekkersveld IV, Zeewolde",
+    "url": "https://www.raadvanstate.nl/uitspraken/@139351/202201810-1-r1/",
+    "publisher": "Raad van State, Afdeling bestuursrechtspraak",
+    "date": "2023-09-20"
+   },
    {
     "title": "Interpellatie grootschalige datacentra",
     "url": "https://www.eerstekamer.nl/nieuws/20220222/interpellatie_grootschalige",
@@ -233,10 +249,9 @@
     "date": "2022-06-10"
    }
   ],
-  "gap": "Parliamentary record and ministerial letter document land conditions and a ~15% heat-reuse figure; project did not proceed. Older sources (2022).",
+  "gap": "Parliamentary, ministerial and Rijksvastgoedbedrijf records document the sale conditions, TNO's mixed findings and the refusal to sell; the ~15% heat-reuse figure is a senator's statement, and the State's ~80 ha share is press-sourced (the Council of State says only 'a large part'); project did not proceed. Older sources (2022-2023).",
   "confidence": "medium",
-  "verified_primary": true,
-  "verification_note": "Partial: fetched Kamerstuk 26 643 nr. 862 (10 Jun 2022; confirms the August 2021 conditions on solar, cooling and residual-heat reuse and that TNO assessed the municipal plan, but the letter states no conclusion, no sale decision and no hectares) and the Eerste Kamer interpellation page (confirms the Dec 2021 Koffeman motion, 166 ha, ~15% residual-heat reuse and that the minister would not undo the municipal permit). The ~80 ha State share and the non-sale decision were not found in these documents and remain via NOS; the TNO annex was not fetched, so confidence left medium. See also nl-zeewolde-meta-cancelled (same Zeewolde case).",
+  "verification_note": "Second pass: fetched the Rijksvastgoedbedrijf letter to Zeewolde of 10 Jun 2022 (Eerste Kamer copy), the Rijksoverheid release of the same day and the minister's 13 Jun 2022 letter to the Senate, which confirm the non-sale decision and TNO's mixed findings on solar, rainwater, cooling and residual heat; the Council of State ruling of 20 Sep 2023 (ECLI:NL:RVS:2023:3550) confirms that the State owned 'a large part' of the land but gives no hectares. The ~80 ha State share is still only in NOS (none of the RVB letter, the 13 Jun letter, the motion, the interpellation record or the ruling states it). Correction: the ~15% residual-heat figure was stated by Senator Koffeman in the interpellation, not recorded as a finding, and the 166 ha is also his figure. See also nl-zeewolde-meta-cancelled (same Zeewolde case).",
   "last_checked": "2026-10-22",
   "verification_status": "partial"
  },
@@ -268,7 +283,6 @@
   "claim_sources": [],
   "gap": "Court upheld the approval and required any future high-voltage supply to be evaluated separately including cumulative impacts with the data center; built-area and investment figures rest on press reporting.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched the judgment text (Rol R N° 539-2025, 31 Mar 2026; mirror on Diario Constitucional): confirms 10.9 ha, rejection of the splitting claim and the art. 10(b) / cumulative-impact requirement for future HV lines; added case number, judgment date, RCA and SEA resolution numbers; corrected '30-year design life' to the judgment's 'at least 30 years' for Stage 1 on medium-voltage supply. The 21,350 m2 and US$205 million figures are not in the judgment excerpt and remain via Emol.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -376,7 +390,6 @@
   "claim_sources": [],
   "gap": "Audit is procedural; it does not report jobs promised or incentive value for datacenter agreements.",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Re-fetched SAO Report 26-009 (11 Dec 2025): Comptroller, Galena Park ISD and Northwest ISD rated low risk, Governor's Office medium with recommendations on performance-bond verification and due-diligence reviews, two executed agreements, no datacenter-specific job or dollar figures; confirmed.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -464,7 +477,7 @@
   "lat": 1.49,
   "lon": 103.74,
   "category": "labor",
-  "record": "A Digital Ministry written parliamentary reply (reported 15 Oct 2026) states 27 datacenter projects were approved since the Feb 2025 Data Centre Task Force (16 Johor, 10 Selangor, 1 Negeri Sembilan), an RM225.97 billion pipeline, 4,053 projected jobs including 3,523 high-skilled (about 150 jobs per project), with 89.21% of high-skilled roles expected to go to Malaysians and a 30% local-content requirement monitored by MIDA every six months. Earlier, Minister Gobind Singh Deo told the Dewan Rakyat (12 Nov 2024) that RM141.72 billion of digital investment was approved Jan-Oct 2024 with 41,078 jobs across the whole digital economy, not datacenters specifically.",
+  "record": "A Digital Ministry written parliamentary reply (reported 15 Oct 2026, to Datuk Dr Ahmad Yunus Hairi, Kuala Langat) states 27 datacenter projects were approved since the Feb 2025 Data Centre Task Force (16 Johor, 10 Selangor, 1 Negeri Sembilan; 1 operational, 26 under construction; Berita Harian dates the approvals to July 2026), an RM225.97 billion pipeline, 4,053 projected jobs including 3,523 high-skilled (about 150 jobs per project), with 89.21% of high-skilled roles expected to go to Malaysians and a 30% local-content requirement monitored by MIDA through six-monthly implementation reports. Earlier, Minister Gobind Singh Deo told the Dewan Rakyat (12 Nov 2024) that RM141.72 billion of digital investment was approved Jan-Oct 2024 with 41,078 jobs across the whole digital economy, not datacenters specifically.",
   "record_sources": [
    {
     "title": "Twenty-seven approved data centres projected to create 4,053 jobs, including 3,523 skilled roles (written parliamentary reply)",
@@ -477,6 +490,12 @@
     "url": "https://www.mida.gov.my/mida-news/rm141-7b-worth-of-digital-investments-approved-in-2024-41078-jobs-created-and-10-data-centres-operating-in-johor-says-gobind/",
     "publisher": "MIDA (reproducing Bernama report of Dewan Rakyat statement)",
     "date": "2024-11-12"
+   },
+   {
+    "title": "27 data centre projects worth RM225.97bil approved under task force, says Digital Ministry",
+    "url": "https://www.thestar.com.my/news/nation/2026/10/15/27-data-centre-projects-worth-rm22597bil-approved-under-task-force-says-digital-ministry",
+    "publisher": "The Star (reporting written reply to Datuk Dr Ahmad Yunus Hairi, Kuala Langat)",
+    "date": "2026-10-15"
    }
   ],
   "claim": "Government states 41,078 digital-economy jobs created in 2024; datacenter-specific jobs are 4,053 across 27 projects.",
@@ -490,9 +509,8 @@
   ],
   "gap": "Headline digital-economy job figure (41,078) is an order of magnitude larger than the datacenter-specific projection (4,053 for RM226 bn).",
   "confidence": "medium",
-  "verified_primary": false,
-  "verification_note": "Searched parlimen.gov.my and Digital Ministry/MIDA releases (English and Malay) for the October 2026 written reply (27 DCTF projects, RM225.97 bn, 4,053 jobs, 89.21%, 30% local content); only press located (The Vibes, The Star, Bernama, Berita Harian, which dates the 27 approvals to July 2026). The written reply text was not fetched.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Searched parlimen.gov.my and Digital Ministry/MIDA releases (English and Malay) for the October 2026 written reply (27 DCTF projects, RM225.97 bn, 4,053 jobs, 89.21%, 30% local content); only press located (The Vibes, The Star, Bernama, Berita Harian, which dates the 27 approvals to July 2026). The written reply text was not fetched. Second pass (2026-10-22): parlimen.gov.my written-question pages are robots-disallowed (added to browser_fetch_list.csv); searched repositori.parlimen.gov.my, digital.gov.my and Malay terms (pertanyaan bukan lisan, Ahmad Yunus Hairi, DCTF) and checked whether the ministry posts DR answers as PETRA does; found only The Star (names the asker and adds 1 operational/26 under construction), Luminews and Berita Harian (robots-disallowed), none with the reply text.",
+  "last_checked": "2026-10-22",
   "verification_status": "not_found"
  },
  {
@@ -541,13 +559,25 @@
   "lat": 51.69,
   "lon": -0.23,
   "category": "labor",
-  "record": "Hertsmere's planning committee granted outline permission on 23 Jan 2025 for up to two million sq ft on 85 acres (~34.4 ha); the council's record cites 500 construction jobs, 200 permanent jobs, 10% biodiversity net gain, a financial contribution to local skills and GBP 2m for bus-route upgrades.",
+  "record": "Hertsmere's planning committee granted outline permission (application 24/1152/OUTEI, DC01 UK Limited, all matters reserved) on 23 Jan 2025 for a phased data centre of up to 187,000 sqm GEA (about two million sq ft) on 85 acres (~34.4 ha) of Green Belt land east of South Mimms Services; the council's release cites 500 construction jobs, 200 permanent jobs, 10% biodiversity net gain, 54% of the site kept as open space, a 'significant financial contribution' to local skills (no amount) and GBP 2m for bus-route upgrades. A reserved-matters application for Phase 1a enabling works (26/1187/REM) was lodged pursuant to the outline permission in 2026.",
   "record_sources": [
    {
     "title": "Data centre in Hertsmere given outline permission by planning committee",
     "url": "https://www.hertsmere.gov.uk/news/data-centre-in-hertsmere-given-outline-permission-by-planning-committee",
     "publisher": "Hertsmere Borough Council",
-    "date": "2025-01-23"
+    "date": "2025-01-24"
+   },
+   {
+    "title": "Town and Country Planning Act 1990 notice: 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://publicnoticeportal.uk/notice/planning/675af07e878a9fe215ae87e1",
+    "publisher": "Hertsmere Borough Council via Public Notice Portal",
+    "date": "2024-12-11"
+   },
+   {
+    "title": "Land East of South Mimms Services (reserved matters 26/1187/REM pursuant to 24/1152/OUTEI)",
+    "url": "https://www.cpreherts.org.uk/resources/land-east-of-south-mimms-services-st-albans-road-south-mimms-2/",
+    "publisher": "CPRE Hertfordshire",
+    "date": "2026-10-05"
    }
   ],
   "claim": "Applicant claims 10,900 indirect jobs in addition to 200 permanent on-site jobs, as recorded in the council's announcement.",
@@ -556,15 +586,14 @@
     "title": "Data centre in Hertsmere given outline permission by planning committee",
     "url": "https://www.hertsmere.gov.uk/news/data-centre-in-hertsmere-given-outline-permission-by-planning-committee",
     "publisher": "Hertsmere Borough Council",
-    "date": "2025-01-23"
+    "date": "2025-01-24"
    }
   ],
-  "gap": "Permanent on-site jobs (200) are ~2% of the 'indirect' figure (10,900) cited alongside them; no planning condition secures the job numbers.",
+  "gap": "Permanent on-site jobs (200) are ~2% of the 'indirect' figure (10,900) cited alongside them; the council release does not say whether any job number, skills contribution or bus contribution is secured by condition or Section 106, and the committee report and decision notice that would show this could not be opened.",
   "confidence": "medium",
-  "verified_primary": false,
-  "verification_note": "Re-fetched Hertsmere's news release (dated 24 Jan 2025): confirms 23 Jan 2025 committee approval, two million sq ft, 85 acres, 500 construction / 200 permanent jobs, 10,900 indirect jobs from the applicant's economic projections, 10% BNG and GBP 2m bus upgrades. Searched for the committee report, decision notice and Section 106 agreement; none located, so the statement that no condition secures job numbers is unverified.",
-  "last_checked": "2026-10-20",
-  "verification_status": "not_found"
+  "verification_note": "Second pass: re-fetched Hertsmere's release (dated 24 Jan 2025) confirming every record figure; identified the application as 24/1152/OUTEI (public notice: up to 187,000 sqm GEA, received 9 Sep 2024) and located the committee report (hertsmere.moderngov.co.uk document s67144, agenda item mgAi.aspx?ID=41794), but moderngov and the Idox portal are robots-blocked and the Internet Archive copy is blocked, so conditions and S106 heads of terms were not read (both URLs added to the browser fetch list). The earlier gap statement that no condition secures job numbers was unverified and is now worded as not shown. CPRE Hertfordshire (Apr 2026) says permission was granted in February 2025, presumably the decision-notice date, not confirmed.",
+  "last_checked": "2026-10-22",
+  "verification_status": "partial"
  },
  {
   "id": "cl-alto-jahuel-terranova-sea",
@@ -633,7 +662,7 @@
   "gap": "Reporting compliance is ~36% and heat reuse ~1.8%, against widespread operator renewable-matching claims; land take is not a reported metric.",
   "confidence": "high",
   "last_checked": "2026-10-22",
-  "verification_note": "See also eu-eed-datacentre-reporting-2024-period (same first EED reporting period: 776 sites is the July 2025 technical report, 770 the September 2026 Commission report)."
+  "verification_note": "See also eu-eed-datacentre-reporting-2024-period (same first EED reporting period: the July 2025 technical report counts 770 sites, about 36% of those in scope; 776 is the Commission dashboard figure as reported by Data Center Dynamics)."
  },
  {
   "id": "se-stockholm-exergi-heat",
@@ -694,7 +723,6 @@
   "claim_sources": [],
   "gap": "Positive example: municipally owned heat network with published cumulative MWh and tCO2; annual MWh and capacity figures are not published by the council or SEAI (SEAI gives only a 30-year lifetime estimate).",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Re-fetched SEAI case study: ~6,000 MWh to date, 1,098 tCO2 as of June 2024, ~1,500 tCO2/yr, 100% Amazon datacenter heat, County Hall and TU Dublin served, Heat Works fully council-owned; confirmed, with the 270,000 MWh lifetime estimate added.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
@@ -844,7 +872,6 @@
   ],
   "gap": "The death toll rose from the company's initial 18 to 21 in the police record; police treat the case as a criminal investigation into suspected SOP violations, but no Kemnaker, ILO or Komnas HAM inspection findings are public. Older source (2023-24).",
   "confidence": "high",
-  "verified_primary": true,
   "verification_note": "Fetched Indonesian National Police article (inp.polri.go.id, 4 Jan 2024): records 21 deaths and an upgraded investigation for suspected SOP violations; resolves the earlier 18-vs-21 discrepancy (18 was IMIP's initial count, per Jakarta Post) in favour of the police figure. The police item gives no nationality split or injury count, so those remain IMIP figures via the Jakarta Post; Kemnaker and Komnas HAM findings were searched for (Indonesian) and not located.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"

@@ -2,9 +2,9 @@
 
 Session date: 2026-10-20. Tools: WebSearch and WebFetch only (shell network blocked). Outputs:
 
-- `/home/claude/registry/seed_sites.csv` and `/home/claude/registry/seed_sites.json`: **56 located sites** (every row has a coordinate and a source URL).
-- `/home/claude/registry/seed_sites_unlocated.csv`: **333 register-named sites/records without an open coordinate** (Virginia DEQ air-permit registrations, Texas Comptroller registrations, Irish EPA licences, TCEQ/NDEP/SC/NC permit records, Singapore IMDA/EDB awards). This is the geocoding backlog.
-- Build script (all values embedded, reproducible): `/tmp/claude-0/-home-claude/bd7e6ebd-b0e6-53fb-80f0-fee6cd3e5e1b/scratchpad/build_seed.py`.
+- `sites/seed_sites.csv` and `sites/seed_sites.json`: **56 located sites** (every row has a coordinate and a source URL).
+- `sites/seed_sites_unlocated.csv`: **333 register-named sites/records without an open coordinate** (Virginia DEQ air-permit registrations, Texas Comptroller registrations, Irish EPA licences, TCEQ/NDEP/SC/NC permit records, Singapore IMDA/EDB awards). This is the geocoding backlog.
+- Build script (all values embedded, reproducible): `sites/build/build_seed.py` (writes to `sites/`; set `SITES_OUT` to write elsewhere).
 
 The target was 200-400 sites. **56 is what could be located to the standard "every row needs a source URL and a coordinate, no invented coordinates"** under this session's network constraints (below). The 333-row backlog is the larger asset: it is register-grade and only lacks coordinates.
 
@@ -47,7 +47,7 @@ TCEQ "reports/applications/<project>-ac.pdf" packages include the Core Data Form
 Other surfaced TCEQ packages were not data centers (Kuraray, BASF, Conduit Edge) or were PDF portfolios whose attachments WebFetch cannot open (six-digit NSR project numbers). CyrusOne SAT2-4 had blank coordinate fields and went to the backlog.
 
 ### 2c. Sites carried from the Global AI compute ledger (20 rows, confidence low)
-Rows whose coordinates are the ledger entry's 2-decimal `lat`/`lon` from `/home/claude/registry/{north_america,europe,asia_pacific,latam_mena_africa}.json`. These were **not re-derived or verified this session**; precision is about +/-0.5 km and in two cases the coordinate may sit on an associated power site rather than the data halls (xAI Southaven; Microsoft WDM cluster centroid). `source_url` is the most official record cited by the ledger entry (LPSC minutes, PA DEP plan approval, PSC Wisconsin docket, An Bord Pleanala order, MME portaria, MPF filing, NSW Planning Portal, Iowa DNR draft Title V, MDEQ agreed order) and `source_type`/`licence` follow that document; where the ledger's best source is press, `source_type=ledger`, `licence=ledger`. `ledger_entry_id` is filled on every such row and on the Google rows that overlap ledger subjects (The Dalles, Hamina, Storey County, Cerrillos, Canelones).
+Rows whose coordinates are the ledger entry's 2-decimal `lat`/`lon` from `registry/{north_america,europe,asia_pacific,latam_mena_africa}.json`. These were **not re-derived or verified this session**; precision is about +/-0.5 km and in two cases the coordinate may sit on an associated power site rather than the data halls (xAI Southaven; Microsoft WDM cluster centroid). `source_url` is the most official record cited by the ledger entry (LPSC minutes, PA DEP plan approval, PSC Wisconsin docket, An Bord Pleanala order, MME portaria, MPF filing, NSW Planning Portal, Iowa DNR draft Title V, MDEQ agreed order) and `source_type`/`licence` follow that document; where the ledger's best source is press, `source_type=ledger`, `licence=ledger`. `ledger_entry_id` is filled on every such row and on the Google rows that overlap ledger subjects (The Dalles, Hamina, Storey County, Cerrillos, Canelones).
 Ledger subjects that are policies, clusters, portfolios or cancelled projects (Digital Gateway voided rezoning, Zeewolde, Aragon four sites, Cape Town four sites, Humain 211 plots, Stargate Argentina with no site, Johor, Batam, Queretaro, Lagos, Teraco) were not turned into rows because no single site coordinate exists.
 
 ### 2d. Schema notes

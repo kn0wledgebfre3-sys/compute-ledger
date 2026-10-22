@@ -7,7 +7,7 @@
     {
       "name": "VA DEQ issued air permits for data centers",
       "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
-      "page_source": "/Users/az/Desktop/environment/repo/pipeline/fixtures/va_deq_list_page.html",
+      "page_source": "pipeline/fixtures/va_deq_list_page.html",
       "list_as_of": "2025-11-17",
       "list_rows": 19,
       "rows_with_links": 7
@@ -17,7 +17,7 @@
   "with_pdf_text": 8,
   "with_generator_mw": 8,
   "with_street_address": 8,
-  "total_standby_mw_sum": 1525.7,
+  "total_standby_mw_sum": 1512.5,
   "by_locator": {
     "none": 8,
     "page_link": 6,
@@ -25,8 +25,8 @@
   },
   "by_mw_confidence": {
     "none": 8,
-    "high": 6,
-    "low": 2
+    "medium": 7,
+    "low": 1
   },
   "by_address_confidence": {
     "none": 8,

@@ -2,7 +2,7 @@
 
 Scope: Singapore, Malaysia (Johor), Indonesia (Batam), India, Japan, South Korea, Taiwan, China, Australia. Research date 2026-10-19. Sources are government, regulator, grid-operator, statistical/planning portals, state-media reports of official statements, and established institutional research (ISEAS). Where only a news report of an official statement was reachable (not the underlying document), this is flagged. No figures were estimated; all numbers carry a URL. Vietnam, Thailand and the Philippines were not researched within the tool budget and are listed under Gaps.
 
-Companion data file: `/home/claude/registry/asia_pacific.json` (14 entries).
+Companion data file: `registry/asia_pacific.json` (14 entries).
 
 ---
 

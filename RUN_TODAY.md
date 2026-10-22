@@ -1,4 +1,6 @@
-# Run sheet: 21 October 2026
+# Run sheet: 21 October 2026 (historical)
+
+> Kept as the record of the 21 October run. Do not repeat step 5: the handover's asset files are now built from the reviewed data by `pipeline/build_handover_assets.py`, and Virginia's figures are the resolved second reading (`data/climate_trace_seed/VIRGINIA.md`).
 
 One zip to download: **compute-ledger-repo.zip**. Everything is inside it, including the handover package. Budget: about two hours, most of it waiting.
 

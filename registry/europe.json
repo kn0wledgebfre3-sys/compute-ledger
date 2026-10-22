@@ -65,7 +65,8 @@
   "gap": "Policy requires on-site dispatchable capacity equal to import capacity; fuel type (gas vs storage) is not prescribed, so the fuel footprint outcome is not yet documented.",
   "confidence": "medium",
   "last_checked": "2026-10-22",
-  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: sources are a law-firm-hosted copy and the proposed decision; CRU’s own copy of the final decision was not retrieved. See also ie-cru-leu-policy (same CRU decision)."
+  "verification_note": "Same decision as ie-cru-leu-policy, read there from a law firm's copy of CRU/2025236 (the CRU's own copy was not located): the 10 MVA dispatchable tier, the 80% additional-renewables requirement from 1 MVA and the 6-year glide path are confirmed. The 1 to <10 MVA autoproduction rule, the 'islanded' gas statement and the 31 March 2026 constraint-map date were not re-checked, so confidence stays medium.",
+  "verification_status": "partial"
  },
  {
   "id": "ie-dublin-vantage-dub13-abp-refusal",
@@ -212,7 +213,6 @@
   "gap": "positive example (from a siting-control perspective): the draft national rule did not apply to Zeewolde, whose procedures had started, but the state did not sell the required land and the 200 MW project was cancelled; record is 2022 and no later reversal was found.",
   "confidence": "high",
   "last_checked": "2026-10-22",
-  "verified_primary": true,
   "verification_note": "Rijksoverheid release (2022-06-10), the 2023 draft decree (>10 ha, >=70 MW; 16 Feb 2022 cut-off) and the Eerste Kamer motion dossier confirm the rule and the land-sale position; the exemption covers two specific areas rather than whole municipalities as previously stated, the rule expressly did not cover Zeewolde, and the confirmed Senate motion is 35925 XIV H of 21 Dec 2021 (a March 2022 motion was not found); Meta's 200 MW figure remains press-sourced. See also nl-zeewolde-meta-land (same Zeewolde case).",
   "verification_status": "verified"
  },
@@ -247,13 +247,18 @@
     "url": "https://datacenterdynamics.com/en/news/drought-stricken-holland-discovers-microsoft-data-center-slurped-84m-liters-of-drinking-water-last-year",
     "publisher": "Data Center Dynamics",
     "date": "2022-08-16"
+   },
+   {
+    "title": "Microsoft datacenter sustainability fact sheet: Netherlands (West Europe), reporting period Jan-Dec 2022",
+    "url": "https://datacenters.microsoft.com/globe/pdfs/sustainability/factsheets/Netherlands%20(West%20Europe).pdf",
+    "publisher": "Microsoft",
+    "date": "2023-03"
    }
   ],
   "gap": "The 2021 volume Microsoft reported to the municipality (84 million litres [press]; who metered it is not documented) is 4.2 to 7 times the figure given to residents the same year; Microsoft's own net figure is still 2.4 to 4 times it; the 75,000 m3 component was described three different ways across statements; an earlier estimate above 100,000 m3 existed and had been denied by the municipality; the municipal document carrying the 84 million litres is itself not online, so every volume rests on press reports of documents.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Dutch) for Hollands Kroon council information on the 84 million litres and for the OD NZKG omgevingsvergunning for AMS13/14; results were press only (DCD, Aquatech, Dutch IT Channel, NH Nieuws) and no municipal letter or permit decision was retrieved, so the 2021 volumes and permit specifications remain press-sourced. Worked into a full receipt (41 dated rows, 43 sources; parliamentary papers, permits, the Council of State ruling and the provincial strategy fetched directly; the municipal letter with the 84 million litres was not reachable, so volumes stay [press]). Generator count corrected: 2 x 0.5 MW per the 2020 municipal note, not 2 x 1 MW.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Searched (Dutch) for Hollands Kroon council information on the 84 million litres and for the OD NZKG omgevingsvergunning for AMS13/14; results were press only (DCD, Aquatech, Dutch IT Channel, NH Nieuws) and no municipal letter or permit decision was retrieved, so the 2021 volumes and permit specifications remain press-sourced. Worked into a full receipt (41 dated rows, 43 sources; parliamentary papers, permits, the Council of State ruling and the provincial strategy fetched directly; the municipal letter with the 84 million litres was not reachable, so volumes stay [press]). Generator count corrected: 2 x 0.5 MW per the 2020 municipal note, not 2 x 1 MW. Second pass (2026-10-22): tried the Hollands Kroon raadsinformatie portals (raadsinformatie/notubiz hosts unreachable), the municipal Wob page (live, but says the 1,575 datacenter documents are available only on request), the bigwobber.nl mirror of the 2021 Wob release (robots-blocked; added to the browser fetch list), the Internet Archive (blocked for these tools), Microsoft's local.microsoft.com posts of Apr 2022 and its Oct 2025 Netherlands brochure (no volumes), and NH Nieuws (30 Jun 2021: the municipality took the Wob documents offline at Microsoft's request). None carries the 84 million litres, the 12-20 million litres or the >100,000 m3 estimate, so volumes stay [press]. Microsoft's Netherlands (West Europe) fact sheet (published Mar 2023) confirms the claim line's WUE of 0.08 L/kWh and PUE 1.158 for 2022.",
   "verification_status": "not_found",
   "receipt": "middenmeer_microsoft_water"
  },
@@ -291,9 +296,10 @@
    }
   ],
   "gap": "positive example: plants built and operating; the 40% waste-heat share remains a forward expectation because data-centre heat recovery begins in 2027, and no delivered-MWh figure is yet published.",
-  "confidence": "medium",
+  "confidence": "low",
   "last_checked": "2026-10-22",
-  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: sole record source is the operator’s press release."
+  "verification_note": "Every figure is from Fortum's own release, which this ledger counts as a claim. Searched for a regulator, permit or state-aid record of the plants: a Finnish Government energy-aid release (valtioneuvosto.fi/-/1410877) may cover them but could not be opened. Kept as a low-confidence positive example until a record is found.",
+  "verification_status": "not_found"
  },
  {
   "id": "fi-hamina-google-heat-seawater",
@@ -373,9 +379,8 @@
   ],
   "gap": "Agency count (about 4) and industry count (7) of heat-reusing data centres differ; 2024-2025 actual consumption figures also differ across sources (1.2 vs 2.6 vs 3 TWh).",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "ENS AF25 background note (ens.dk/media/7603) confirms 6.0/26.8/35.9 TWh for 2030/2040/2050, and Dansk Fjernvarme's response (ens.dk/media/7620, 2025-10-14) confirms ~2.6 TWh/7% for 2024 and that AF25's ~1.2 TWh for 2025 is 'formentlig i den lave ende'; the ENS count of ~4 of ~50 heat-reusing data centres was not found in any ENS document (a Folketing annex checked was an unrelated cost-benefit order), so the agency-vs-industry comparison remains press-sourced.",
+  "last_checked": "2026-10-22",
+  "verification_note": "ENS AF25 background note (ens.dk/media/7603) confirms 6.0/26.8/35.9 TWh for 2030/2040/2050, and Dansk Fjernvarme's response (ens.dk/media/7620, 2025-10-14) confirms ~2.6 TWh/7% for 2024 and that AF25's ~1.2 TWh for 2025 is 'formentlig i den lave ende'; the ENS count of ~4 of ~50 heat-reusing data centres was not found in any ENS document (a Folketing annex checked was an unrelated cost-benefit order), so the agency-vs-industry comparison remains press-sourced. Second pass (2026-10-22): both Ingenioeren articles of 17 Aug 2026 attribute the ~4-of-~50 figure only to 'en opgoerelse fra Energistyrelsen' (no title, date or dataset). Searched ens.dk (KF22 data-centre note media/4610, the 2023 consultation chapter media/4857, the 2018 COWI thematic analysis media/4559: none gives a count of heat-reusing data centres), Folketing KEF questions and annexes (including bilag 314 of 2024-25, the draft cost-benefit order) and Retsinformation (BEK nr. 1167 of 2 Oct 2025, which requires data centres above 1 MW to use surplus heat unless a cost-benefit analysis shows it infeasible, but gives no counts). The ENS count is still press-sourced.",
   "verification_status": "partial"
  },
  {
@@ -387,8 +392,26 @@
   "lat": 68.44,
   "lon": 17.43,
   "category": "power",
-  "record": "Commentary citing Statnett figures (5 May 2026): data centres north of Svartisen hold 334 MW of reserved capacity, second only to Melkoeya (350 MW); the largest is Aker's facility outside Narvik. Salten-and-north has 1,150 MW of new consumption with reserved capacity and about 1,100 MW queued; NO4 reservations total 2,375 MW against current demand of about 1,500 MW. Statnett's 11 Nov 2025 capacity-management presentation confirms continuing data-centre demand growth and notes Green Mountain connected at 110 MW total.",
+  "record": "Statnett's release of 22 Apr 2026, which put new reservations for consumption above 5 MW north of Svartisen on hold, gives 1,150 MW of reserved new consumption and about 1,100 MW queued from Salten northwards, against current consumption there of about 1,500 MW. Its 15 Jun 2026 letter to NVE gives a peak load of 1,550 MW and says reservations for Melkøya (Equinor) and a Narvik data centre (Aaktik Digital AS) together add 580 MW. South of Svartisen, Statnett's 12 Mar 2026 Helgeland dialogue slides show about 1,023 MW reserved (data centres about 23 MW, 2%) and a queue of about 1,626 MW, of which data centres are about 706 MW (43%). A commentary citing Statnett figures (Teknisk Ukeblad, 5 May 2026) states that data centres north of Svartisen hold 334 MW of reserved capacity, second only to Melkøya (350 MW), with Aker's facility outside Narvik the largest, and that NO4 reservations total 2,375 MW [press]. Statnett's 11 Nov 2025 capacity-management presentation confirms continuing data-centre demand growth and notes Green Mountain connected at 110 MW total.",
   "record_sources": [
+   {
+    "title": "Setter reservasjon av nettkapasitet for fremtidig industriforbruk nord for Svartisen på hold",
+    "url": "https://www.statnett.no/om-statnett/nyheter-og-pressemeldinger/nyhetsarkiv-2026/setter-reservasjon-av-nettkapasitet-for-fremtidig-industriforbruk-nord-for-svartisen-pa-hold/",
+    "publisher": "Statnett",
+    "date": "2026-04-22"
+   },
+   {
+    "title": "Svarbrev til NVE om utredninger av forsyningssikkerhet i Nord-Norge",
+    "url": "https://www.statnett.no/globalassets/for-aktorer-i-kraftsystemet/nyheter-for-aktorer-i-kraftbransjen/svarbrev-nve-om-utredninger-av-forsyningssikkerhet-i-nord-norge-15.06.2026.pdf",
+    "publisher": "Statnett",
+    "date": "2026-06-15"
+   },
+   {
+    "title": "Presentasjoner fra dialogmøte KVU Helgeland–Sverige",
+    "url": "https://www.statnett.no/globalassets/her-er-vare-prosjekter/region-nord/kvu-helgeland-sverige/presentasjoner-fra-dialogmote-kvu-helgeland-sverige-12.mars-2026.pdf",
+    "publisher": "Statnett",
+    "date": "2026-03-12"
+   },
    {
     "title": "Utfyllende svar på brev om tilknytningsplikt nord for Svartisen (svarbrev til RME)",
     "url": "https://www.statnett.no/globalassets/for-aktorer-i-kraftsystemet/nyheter-for-aktorer-i-kraftbransjen/svarbrev-rme---tilknytningsplikt-nord-for-svartisen-15.06.2026.pdf",
@@ -416,11 +439,10 @@
   ],
   "claim": "none found",
   "claim_sources": [],
-  "gap": "No Statnett primary document with a national GW figure for data-centre requests was located; the 334 MW figure is reported second-hand from Statnett data.",
-  "confidence": "low",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Statnett's 2026-06-15 letter to RME on the connection obligation north of Svartisen confirms ~1,150 MW of reserved new consumption (and ~1,000 MW reserved on Helgeland), and a 2023 ministerial answer confirms 350 MW reserved for Hammerfest LNG (Melkøya); the 334 MW data-centre reservation, the ~1,100 MW queue and the NO4 totals (2,375 MW vs ~1,500 MW) were not found in the Statnett documents retrieved.",
+  "gap": "No Statnett document located gives the 334 MW data-centre reservation north of Svartisen or a 2,375 MW NO4 total; Statnett's ~1,500 MW (1,550 MW peak) is consumption from Salten northwards, not NO4-wide demand. On Helgeland, data centres are 43% of the queued capacity but 2% of reserved capacity.",
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Second pass: fetched Statnett's 22 Apr 2026 release (1,150 MW reserved, ~1,100 MW queued, ~1,500 MW current consumption from Salten northwards), its 15 Jun 2026 letter to NVE (peak load 1,550 MW; Melkøya plus Aaktik Digital's Narvik data centre add 580 MW, not split) and the 12 Mar 2026 KVU Helgeland slides (Helgeland reserved ~1,023 MW, data centres ~23 MW; queue ~1,626 MW, data centres ~706 MW). Correction: the record previously set the 2,375 MW NO4 total against 'current demand of about 1,500 MW', but Statnett's ~1,500 MW is the Salten-and-north figure. The 334 MW data-centre reservation and the 2,375 MW NO4 total were found in none of these, the 15 Jun 2026 RME letter, Stortinget Dok. 8:6 S (2026-27; ~12 GW reserved or queued for data centres nationally, per Statnett) or the 10 Jun 2026 ministry speech, so both stay [press].",
   "verification_status": "partial"
  },
  {
@@ -470,7 +492,6 @@
   "gap": "Statutory numeric heat-reuse targets exist, but no public aggregate from the national register showing compliance with the 1 July 2026 threshold was located.",
   "confidence": "high",
   "last_checked": "2026-10-20",
-  "verified_primary": true,
   "verification_note": "EnEfG § 11 statute text (gesetze.legal mirror; the gesetze-im-internet.de request was not approved) confirms every PUE, reuse-share and renewable threshold and date previously taken from the TUV summary; Bundesrat Drs. 388/26 (2026-07-10) shows an amending bill was still in draft, and its enactment status by October 2026 was not checked.",
   "verification_status": "verified"
  },
@@ -544,9 +565,8 @@
   "claim_sources": [],
   "gap": "Utilities publish pipeline counts and per-site requests but no metered actual data-centre water consumption; Thames Water annual-report figure could not be retrieved directly.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Affinity Water written evidence DCU0083 (UK Parliament) re-fetched and confirms ~125 data centres, 35 l/s, 21 Ml/d (~147,000 people) and 6.90/7.68 Ml/d; Thames Water's '108 hyper or large data centres' and 1.68 million homes figures were not found in the visible part of its 2024-25 Annual Performance Report and remain press-sourced; the 2022 GLA note was not re-fetched.",
+  "last_checked": "2026-10-22",
+  "verification_note": "Affinity Water written evidence DCU0083 (UK Parliament) re-fetched and confirms ~125 data centres, 35 l/s, 21 Ml/d (~147,000 people) and 6.90/7.68 Ml/d; Thames Water's '108 hyper or large data centres' and 1.68 million homes figures were not found in the visible part of its 2024-25 Annual Performance Report and remain press-sourced; the 2022 GLA note was not re-fetched. Second pass (2026-10-22): read the Thames Water Utilities Holdings annual report 2024-25 and 2025-26, the TWUF 2024-25 report and the 2024-25 Annual Performance Report in full as far as text extraction allows (TWUHL 2024-25 extracts only to about page 28; the APR to page 53). No passage mentions data centres, so the '108 hyper or large' count, the 'carefully managed' wording and the 1.68 million homes figure were not found; the TWUHL report has been added to the browser fetch list. Searched UK Parliament committee evidence for a Thames Water submission or Cathryn Ross testimony: found only EFRA correspondence of 20 Aug 2025 (no data-centre text on its landing page) and an EAC session of 17 Dec 2025 in which a student witness cited a Thames estimate of 4-19 Ml/d (not used). Utility Week's 1.68 million figure has no stated venue or date. Both Thames figures stay press-sourced.",
   "verification_status": "partial"
  },
  {
@@ -601,8 +621,26 @@
   "lat": 41.65,
   "lon": -0.89,
   "category": "water",
-  "record": "Regional press citing official filings (27-28 Aug 2025): the Aragon government's PIGA approval for Amazon's expansions was published in the Boletin Oficial de Aragon on 25 Aug 2025; the five largest projects (Amazon x4 and Blackstone Calatorao) total over 2,000 MW and nearly 16,000 GWh/yr average consumption versus about 10,000 GWh consumed by all of Aragon in the prior year; Amazon's four centres are documented at about 1 million m3/yr of water (equivalent to a population of about 9,000); regional access requests rose from 3,000 MW to 7,400 MW over five months; ten bottlenecked grid nodes total 2,380 MW. Amazon received environmental clearance for its largest Aragon centre in July 2026.",
+  "record": "Orden FOM/1040/2025 (BOA nº 163, 25 Aug 2025) publishes the Aragon government's agreement of 22 Aug 2025 giving partial definitive approval to Amazon Data Services Spain's PIGA covering five site areas: Villanueva de Gállego 1 and 2, Huesca (Walqa 2), El Burgo de Ebro (Espartal III) and Zaragoza-La Cartuja (Acampo del Marqués, about 143 ha). The order states no MW, GWh or water volumes, sets no energy or water limits, and says the PIGA procedure continues pending INAGA procedures. Orden VFL/654/2026 (BOA nº 85, 7 May 2026) approved phase-1 building projects at Villanueva de Gállego 1 and 2 and Walqa plus two 132/20 kV substations, excluded El Burgo de Ebro's phase 1 for unmet environmental requirements, and records diesel back-up thermal input of 342 MWt (Walqa), 327 MWt (VDG1) and 1,169 MWt (VDG2). INAGA's 6 Oct 2025 declaration for Walqa's water supply covers a 9 km raw-water pipeline from the Valdabra reservoir and three proposed wells with the hydrogeological study pending, and gives no annual volume. Press figures: elDiario.es (28 Aug 2025) gives over 2,000 MW and nearly 16,000 GWh/yr for the five largest projects (AWS plus Blackstone Calatorao, whose initial approval was published the same day) against about 10,000 GWh consumed by all of Aragon, and about 1 million m3/yr of water for Amazon's centres, without naming a source; the regional energy director said access requests rose from 3,000 MW to 7,400 MW in five months; ten Aragon nodes on Red Eléctrica's list total 2,380 MW. Merca2 (16 Jul 2026) reports INAGA approval for the La Cartuja centre with an industrial-water cap of 204,697 m3/yr, about 3,280 GWh/yr and back-up generation above 1,373 MW thermal [press].",
   "record_sources": [
+   {
+    "title": "ORDEN FOM/1040/2025, de 22 de agosto, por la que se da publicidad al acuerdo de 22 de agosto de 2025 del Gobierno de Aragón (aprobación definitiva parcial del PIGA 'Ampliación/Expansión Región AWS Aragón'), BOA nº 163",
+    "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1408863980707",
+    "publisher": "Boletín Oficial de Aragón (Departamento de Fomento, Vivienda, Logística y Cohesión Territorial)",
+    "date": "2025-08-25"
+   },
+   {
+    "title": "ORDEN VFL/654/2026, de 5 de mayo, por la que se da publicidad al acuerdo de 4 de mayo de 2026 del Gobierno de Aragón (aprobación definitiva parcial, fase 1 VDG1, VDG2, Walqa y subestaciones), BOA nº 85",
+    "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1446464010404",
+    "publisher": "Boletín Oficial de Aragón",
+    "date": "2026-05-07"
+   },
+   {
+    "title": "RESOLUCIÓN de 6 de octubre de 2025, del INAGA, declaración de impacto ambiental de las infraestructuras exteriores de agua del centro de datos WQA (Huesca), BOA nº 215",
+    "url": "https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1419118381010&type=pdf",
+    "publisher": "Boletín Oficial de Aragón (Instituto Aragonés de Gestión Ambiental)",
+    "date": "2025-11-06"
+   },
    {
     "title": "La explosion de los centros de datos en Aragon: entre la opacidad, el choque institucional y el riesgo de colapso",
     "url": "https://www.eldiario.es/aragon/politica/explosion-centros-datos-aragon-opacidad-choque-institucional-riesgo-colapso_1_12559021.html",
@@ -625,12 +663,11 @@
     "date": "2025-08-28"
    }
   ],
-  "gap": "Approved projects' stated consumption (about 16 TWh/yr) is roughly 1.6x Aragon's total current consumption; the BOA resolution and any Ebro basin (CHE) water concession were not retrieved directly.",
+  "gap": "The approval orders and INAGA declaration retrieved state no annual water or electricity volumes and set no limits; the ~1 million m3/yr, >2,000 MW and ~16,000 GWh/yr totals (about 1.6x Aragon's consumption) are unattributed press figures; no CHE water concession was found.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
-  "verified_primary": false,
-  "verification_note": "Searched (Spanish) for the BOA final approval; aragon.es PIGA pages for 'Expansión de la Región AWS en Aragón' list only the initial approval (Orden FOM/1517/2024, BOA 241, 2024-12-13) and 2025 line-project orders, with no 2025-08-25 final-approval BOA and none of the MW, GWh, water or access-request figures; no CHE water concession was found, so the figures remain sourced to elDiario.es.",
-  "verification_status": "not_found"
+  "last_checked": "2026-10-22",
+  "verification_note": "Second pass: fetched Orden FOM/1040/2025 (BOA 25 Aug 2025), Orden VFL/654/2026 (BOA 7 May 2026) and INAGA's DIA of 6 Oct 2025 for Walqa water infrastructure (BOA 6 Nov 2025). They confirm the 25 Aug 2025 publication but show it was a partial definitive approval of five AWS site areas, not four expansions, and contain none of the MW, GWh, water or access-request figures. Correction: the record previously said these figures came from press 'citing official filings'; elDiario.es gives no source for the MW, GWh or water totals, and the access-request figure is an official's statement. The July 2026 La Cartuja environmental approval was found only via Merca2; no CHE concession was located. Two BOA notices of May-June 2026 returned by search were unrelated biomethane projects.",
+  "verification_status": "partial"
  },
  {
   "id": "fr-idf-rte-datacentre-connections-2025",
@@ -685,21 +722,26 @@
   "gap": "Terna's figure (about 44 GW, May 2025) is a queue of connection requests, not committed load; no Terna figure for connected or under-construction data-centre capacity was located.",
   "confidence": "high",
   "last_checked": "2026-10-20",
-  "verified_primary": true,
   "verification_note": "Terna's own presentation (2025-06-09, data as of May 2025) gives about 44 GW of data-centre connection requests (26.25 GW in Lombardy); the record previously rested only on Reuters figures via QualEnergia (42 GW March 2025, nearly 50 GW June 2025), which are retained as press figures.",
   "verification_status": "verified"
  },
  {
   "id": "eu-eed-datacentre-reporting-2024-period",
   "country": "European Union",
-  "region": "EU-27 (18 member states reported)",
+  "region": "EU-27 (21 member states reported per the July 2025 technical report)",
   "site_or_subject": "Energy Efficiency Directive data-centre reporting database: first technical assessment",
   "operator": "All operators",
   "lat": 50.85,
   "lon": 4.35,
   "category": "power",
-  "record": "The Commission's first technical report (July 2025, 2024 reporting period) under Delegated Regulation (EU) 2024/1364 covers 776 data centres in 18 member states reporting 6.4 GW installed IT power demand, 16.7 TWh energy consumption and a weighted average PUE of 1.36; Germany has the most reporting sites and the highest installed IT power. About 36% of obligated operators reported; Czechia reported none and Ireland about 1 in 6 of expected facilities. Renewable Energy Factor claims rely about 70% on guarantees of origin, 29% on PPAs and under 0.5% on on-site generation. A public dashboard exists; a report on the 2025 period is under preparation; the Commission proposed a common rating scheme on 21 Sept 2026 with minimum performance standards planned for Q2 2027.",
+  "record": "The Commission's first technical report (EY, Borderstep and AIT for DG ENER, July 2025) on the 2024 reporting period under Delegated Regulation (EU) 2024/1364 covers 770 reporting data centres, about 36% of estimated EU data centres; six member states had no reported data and five had fewer than three. Germany reported the most sites (335 of an estimated 456), followed by France (133) and the Netherlands (85); Czechia reported none of an estimated 50 and Ireland 18 of an estimated 123 (15%). The report gives per-site means rather than EU totals: renewable energy about 16.8 GWh, of which guarantees of origin about 12.5 GWh, PPAs about 5.3 GWh (median 0; the report flags a possible unit misinterpretation) and on-site generation about 0.04 GWh, roughly 70% / 30% / 0.2% of the three components (derived). WUE could be computed for 458 sites and a non-zero ERF for only 67. The Commission's public dashboard (aggregated 2023 and 2024 data) is reported to show 776 data centres in 18 countries, 6.4 GW installed IT power demand, 16.7 TWh and a weighted average PUE of 1.36, with Germany the largest hub [press]. A report on the 2025 period is under preparation; the Commission proposed a common rating scheme on 21 Sept 2026 with minimum performance standards planned for Q2 2027.",
   "record_sources": [
+   {
+    "title": "Assessment of the energy performance and sustainability of data centres in EU - First technical report (PDF, doi:10.2833/3168794)",
+    "url": "https://op.europa.eu/o/opportal-service/download-handler?identifier=83be4c3e-5c79-11f0-a9d0-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=",
+    "publisher": "European Commission DG ENER (EY, Borderstep Institute, AIT) via Publications Office of the EU",
+    "date": "2025-07"
+   },
    {
     "title": "Energy performance of data centres (EED)",
     "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive/energy-performance-data-centres_en",
@@ -734,11 +776,10 @@
     "date": "2025-07-31"
    }
   ],
-  "gap": "The first reporting period covered about 36% of obligated operators, so its 16.7 TWh is a partial total and not comparable with any national full-year figure; aggregate water (WUE) and heat-reuse (ERF) values were not published in the text sources retrieved.",
+  "gap": "The first reporting period covered about 36% of EU data centres, so any totals are partial and not comparable with national full-year figures; the technical report states no EU totals for installed IT power or energy, so the 776-site, 6.4 GW and 16.7 TWh figures rest on press reading of the Commission dashboard, which could not be opened; WUE and ERF appear only by size band or site count (non-zero ERF for 67 sites), not as EU aggregates in the report.",
   "confidence": "medium",
   "last_checked": "2026-10-22",
-  "verified_primary": false,
-  "verification_note": "DG ENER page confirms the 21 Sept 2026 rating-scheme proposal, the Q2 2027 minimum-performance-standards timeline, the public dashboard and that the 2025-period report is in preparation, but gives no aggregate figures; the Publications Office page returned only title metadata and no report PDF was found, so 776 sites, 6.4 GW, 16.7 TWh, PUE 1.36, ~36% reporting and the GO/PPA shares were not confirmed from the report text. See also eu-eed-dc-reporting-2026 (same first EED reporting period: 776 sites is the July 2025 technical report, 770 the September 2026 Commission report).",
+  "verification_note": "Second pass: fetched the July 2025 technical report PDF through the Publications Office download handler (doi:10.2833/3168794). It confirms 770 reporting sites (36%), six member states with no data, Czechia 0 of 50, Ireland 18 of 123, Germany 335, and per-site renewable means that give about 70/30/0.2% GO/PPA/on-site (derived). It contains no 776, 18-country, 6.4 GW or 16.7 TWh figure, and 1.36 appears only as an unlabelled chart value. The earlier record attributed 776 sites in 18 member states, 6.4 GW, 16.7 TWh and PUE 1.36 to this report; those are DCD's figures (17 Apr 2026) from the Commission dashboard (link.europa.eu/q7x39t), a Qlik app the tools cannot render, now on the browser fetch list. Correction to the earlier cross-reference: the July 2025 report itself counts 770 sites, not 776; 776 is the dashboard count as reported by DCD. See also eu-eed-dc-reporting-2026.",
   "verification_status": "partial"
  }
 ]

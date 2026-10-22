@@ -1,8 +1,8 @@
 # Virginia DEQ data-center air permits: independent second read
 
-**Scope.** 183 PDFs in `pipeline/pdfs_va/` (one per registration), re-read with a method that shares no code with the pipeline. The pipeline's regex code was not opened; its output (`pipeline/out/va_permits.csv`) was consulted only after my own figures were fixed and written to `decisions.csv`.
+**Scope.** 183 files in `pipeline/pdfs_va/` (182 permits and `5.pdf`, an 'Access Denied' page), re-read with a method that shares no code with the pipeline. The pipeline's regex code was not opened; its output (`pipeline/out/va_permits.csv`) was consulted only after my own figures were fixed and written to `decisions.csv`.
 
-**Headline.** Resolved fleet: **13,973 generator units / 33,693 MW standby** across 181 readable registrations (177 high-confidence, 5 medium, 2 unreadable). The pipeline's figures agree with the text in only 24 permits; it is wrong (mostly low) in 129 and null in 29. Its summed MW over the 153 permits where it reported a number is 19,186 MW against 30,867 MW for the same permits on re-read.
+**Headline.** Resolved fleet: **13,973 generator units / 33,693 MW standby** across 182 readable registrations (177 high-confidence, 5 medium; registration 74331 has no PDF, and row '5' is an 'Access Denied' page). The pipeline's figures agree with the text in only 24 permits; it is wrong (mostly low) in 129 and null in 29. Its summed MW over the 153 permits where it reported a number is 19,186 MW against 30,867 MW for the same permits on re-read.
 
 ## 1. Method
 
@@ -11,7 +11,7 @@
    - *Table reader*: finds equipment-list tables by header (Description + Rated Capacity/Size), carries the header across page breaks, infers columns on headerless continuation tables, and reads per row: unit count (parenthetical digits > number-word phrase > "N -"/"(N units)" > reference-ID ranges such as `ENG46 – ENG61, ENG67 – ENG110`, `101-GEN-A1 through 101-GEN-D1`), kW/ekW/kWe, bhp, MMBtu/hr, emergency vs non-emergency, fuel. Boilers, fire pumps, chillers, cooling towers and tanks are excluded.
    - *Prose reader*: isolates the equipment-list section of the running text and pairs count tokens with capacity tokens in document order, independent of table geometry.
    - Classification per permit: `both-agree` (89), `both-disagree` (46), `prose` only (45), `table` only (1), `unreadable` (2).
-3. **Manual read of every permit.** A digest (both readers' rows + the section text) was produced per permit (`digest/<reg>.txt`) and read by eye for all 183, with hand re-summation. Where OCR text was ambiguous the page was rasterised and viewed (52629, 73717, 73995). Decisions and a one-line basis per permit are in `decisions.csv` (94 permits needed an explicit decision; the other 89 are both-agree permits whose rows were scanned and accepted).
+3. **Manual read of every permit.** A digest (both readers' rows + the section text) was produced per permit (`digest/<reg>.txt`) and read by eye for all 183, with hand re-summation. Where OCR text was ambiguous the page was rasterised and viewed (52629, 73717, 73995). Decisions and a one-line basis per permit are in `decisions.csv` (99 rows; the remaining permits are both-agree permits whose rows were scanned and accepted).
 4. **Conventions.** kW/1000 = MW electrical; bhp used only when no kW is printed (none in the final figures; see 52949/52973 below); MMBtu/hr never converted. Rated/nameplate ekW is used where a de-rate is also printed (the de-rated alternative is noted in the basis). Transitory/temporary gen-sets listed in the permit are counted but also reported separately (`count_excl_transitory`, `mw_excl_transitory`). Units listed as "exempt from permitting" but present in the equipment list are counted (noted). Units the permit says are being removed or replaced are not counted.
 5. **Comparison** (`finalize.py`): agree = count equal and MW within 2 %; minor = MW within 10 % or count off by 1–2; otherwise disagree; nulls flagged. Every disagree/minor was resolved against the permit text with a one-line note.
 
@@ -24,7 +24,7 @@
 | disagree | 107 | 11,437.2 | 23,097.3 |
 | pipeline-null | 29 | — | 2,825.8 |
 | yours-null | 2 | — | — |
-| **total** | **184** | **19,186.4** (153 non-null) | **33,692.7** (181) |
+| **total** | **184** | **19,186.4** (153 non-null) | **33,692.7** (182) |
 
 (184 rows because the pipeline list contains 74331, Westfax 4-5A, whose download failed and which has no PDF; the PDF directory contains `5.pdf`, a 479-byte "Access Denied" HTML page that is not a permit.)
 
@@ -68,7 +68,7 @@
 7. *Duplicate listing double-counted* (74262: BYEG1–120 listed twice; footnote says 120 total).
 8. *kW mis-assigned across rows* (74052, 74216 — same count, 81 MW vs 335 MW).
 
-**My own automated readers (all caught in the manual pass; recorded so the next reader knows):**
+**The second reader's own automated readers (all caught in the manual pass; recorded so the next reader knows):**
 1. Number-word alternation matched prefixes ("Nine" inside "Nineteen", "One" in "One hundred thirty two") — fixed in code before the manual pass.
 2. "(1,332)" with a thousands comma read as 1 by both readers (74341) — a both-agree result that was wrong; both-agree is not proof.
 3. "(N units)" suffix style (74085, 74107) read as 1 per row by both readers.
@@ -82,11 +82,13 @@
 - 5 permits (1,011 MW) are **medium**: 52949 and 52973 (Microsoft AVC01/AVC09) print bhp only — the ekW was taken from identical engine/generator models in sibling Microsoft permits (3,000 and 500 ekW; a pure bhp×0.746 conversion would add ~40 MW); 74161 (103 units are "MTU 2,250 and/or CAT 2,500 ekW" — 362–388 MW); 74284 (Volvo units carry two ratings, 625 vs 560 ekW); 11541 (fair-quality 2008 scan).
 - Convention sensitivity, not reading error, is the main residual uncertainty: alternates with different kW (51232 −25 MW, 53259 −62 MW, 74161 +26 MW), standby vs prime rating (74197, 2,250 standby used; +16 MW at 2,500), fan parasitic load (74321, 689 vs 672 MW), de-rates (≈ −8 MW across ten permits), transitory units (−106 MW), natural-gas engine gen-sets counted at 74172 and 80941 (80.6 MW; flagged in `fuel`), and 8 Solar gas turbines at 74242 (132 MWe) deliberately excluded. Taken together the fleet figure sits in a band of roughly **33.4–33.9 GW**, with 33.69 GW as the stated-rating central value.
 - Not counted anywhere: 74331 (Westfax 4-5A, no PDF) and the non-permit file `5.pdf`.
-- Metadata columns (permittee, facility name, site address, dates, hour/fuel limits) were extracted heuristically and spot-checked, not read twice; `site_same_as_mailing` flags the 39 permits where the chosen site street also appears in the cover-letter mailing block. Hour/fuel limit columns are context snippets, not parsed limits.
+- Metadata columns (permittee, facility name, site address, dates, hour/fuel limits) were extracted heuristically and spot-checked, not read twice; `site_same_as_mailing` flags the 30 permits where the chosen site street also appears in the cover-letter mailing block. Hour/fuel limit columns are context snippets, not parsed limits.
 
 ## 7. Files
 
-- `va_reread.csv` — one row per registration: my figures, confidence, basis, both automated readers' figures, method, metadata, limits.
+- `va_reread.csv` — one row per registration: the second reader's figures, confidence, basis, both automated readers' figures, method, metadata, limits.
 - `va_comparison.csv` — registration, pipeline vs re-read, status, resolved figures, one-line resolution note.
 - `va_resolved.csv` — final per-registration figures (replaces the pipeline's count/MW columns) with confidence and basis.
-- `decisions.csv` — the 94 hand decisions with basis; `digest/` — per-permit reading digests; `raw/` — cached text/tables; `reread.py`, `assemble.py`, `finalize.py` — the independent code.
+- `decisions.csv` — the 99 hand decisions with basis; `digest/` — per-permit reading digests; `raw/` — cached text/tables; `reread.py`, `assemble.py`, `finalize.py` — the independent code.
+
+Errata (2026-10-22): the headline and total row said 181 readable registrations, the method and file list said 94 hand decisions (with 89 both-agree), and the metadata note said 39 permits share site and mailing street; the files hold 182 registrations with resolved figures, 99 decision rows and 30 such permits. Corrected above; no generator figure changed.

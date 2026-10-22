@@ -1,3 +1,6 @@
+import os as _os
+_HERE = _os.path.dirname(_os.path.abspath(__file__))
+_REPO = _os.path.dirname(_os.path.dirname(_HERE))
 """Stage 2: independent re-read of VA DEQ datacenter permits.
 
 Two independent methods per permit:
@@ -9,8 +12,8 @@ No code or regexes shared with the pipeline (written blind to it).
 import json, os, re, glob, csv, sys
 from collections import OrderedDict
 
-RAW = "/home/claude/review/va_reread/raw"
-OUT = "/home/claude/review/va_reread"
+RAW = _os.path.join(_HERE, "raw")
+OUT = _HERE
 
 WORDNUM = {
     'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,'ten':10,

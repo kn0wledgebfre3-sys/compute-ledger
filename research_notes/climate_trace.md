@@ -2,7 +2,7 @@
 
 Last checked: 2026-10-20. Method: WebSearch + WebFetch only (shell network blocked). Direct fetches of `api.climatetrace.org`, `github.com/climatetracecoalition/*`, `zenodo.org/records/19952746`, the BigQuery guide PDF and `climatetrace.org/sectors` were intermittently blocked by the session proxy; what was and was not confirmed is stated per section and summarised at the end.
 
-Machine-readable companion: `/home/claude/registry/climate_trace_schema.json`.
+Machine-readable companion: `sites/climate_trace_schema.json`.
 
 ---
 

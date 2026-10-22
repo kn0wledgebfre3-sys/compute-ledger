@@ -497,7 +497,7 @@
   "confidence": "medium",
   "last_checked": "2026-10-20",
   "coord_source_url": "https://en.wikipedia.org/wiki/Google_data_centers",
-  "notes": "Existence/status corroborated by operator list https://datacenters.google/locations/. Google list: 'Midlothian, Texas'. Texas Comptroller register lists Google-occupied projects under shell names (Sharka LLC, SDC DFW VIII, etc.)."
+  "notes": "Existence/status corroborated by operator list https://datacenters.google/locations/. Google list: 'Midlothian, Texas'. Texas Comptroller register lists Google-occupied projects under project-LLC names (Sharka LLC, SDC DFW VIII, etc.)."
  },
  {
   "site_id": "usa-google-berkeley-county-moncks-corner-data-center",
@@ -921,7 +921,7 @@
   "ledger_entry_id": "us-tn-memphis-xai-colossus-turbines",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-tn-memphis-xai-colossus-turbines)",
+  "coord_source_url": "registry/ (ledger entry us-tn-memphis-xai-colossus-turbines)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Shelby County Health Dept construction permit (2025-07-02) for 15 Solar SMT-130 gas turbines up to 247 MW (on-site generation, not diesel backup); upheld 2025-12-15. Epoch AI lists Colossus 2 (Memphis) at 946 MW IT, operational."
  },
  {
@@ -946,7 +946,7 @@
   "ledger_entry_id": "us-ms-southaven-xai-1.2gw-gas",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-ms-southaven-xai-1.2gw-gas)",
+  "coord_source_url": "registry/ (ledger entry us-ms-southaven-xai-1.2gw-gas)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Ledger coordinate is near the TN/MS line; it may represent the Southaven permanent power-plant site (MDEQ permit for 41 gas turbines, 1.2 GW, approved ~2026-03-10) rather than the Colossus 2 data halls in Memphis. 69 temporary trailer-mounted turbines under MDEQ retirement schedule to 2027-07-14."
  },
  {
@@ -971,7 +971,7 @@
   "ledger_entry_id": "us-la-richland-meta-entergy-gas",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-la-richland-meta-entergy-gas)",
+  "coord_source_url": "registry/ (ledger entry us-la-richland-meta-entergy-gas)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. LPSC Docket U-37425 settlement (2025-08-20): three 754 MW Entergy CT plants (2,262 MW) for the site. LDEQ minor-source air permit (July 2025, amended 2026-06-06): 31 emergency diesel generators + 44 gas boilers, 96.83 tpy NOx; generator MW not stated. Epoch AI: Meta Hyperion in frontier list."
  },
  {
@@ -996,7 +996,7 @@
   "ledger_entry_id": "us-pa-susquehanna-talen-aws-colocation",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-pa-susquehanna-talen-aws-colocation)",
+  "coord_source_url": "registry/ (ledger entry us-pa-susquehanna-talen-aws-colocation)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. FERC (accession 20241101-3061) rejected raising co-located load from 300 MW to 480 MW; Talen FY2025 10-K: PPA up to 1,920 MW through 2042, moving front-of-meter 2026-27. capacity_mw_it = 300 MW existing co-located ISA load (grid-side figure, not IT load)."
  },
  {
@@ -1021,7 +1021,7 @@
   "ledger_entry_id": "us-pa-homer-city-gas-campus",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-pa-homer-city-gas-campus)",
+  "coord_source_url": "registry/ (ledger entry us-pa-homer-city-gas-campus)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. PA DEP Plan Approval 32-00457A (memo signed 2025-11-18): 7 GE 7HA.02 combined-cycle + 10 FT8 MOBILEPAC units = 4,678 MWe on-site gas generation for a data-center campus; power from 2027."
  },
  {
@@ -1046,7 +1046,7 @@
   "ledger_entry_id": "us-wi-mount-pleasant-microsoft-we-energies",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-wi-mount-pleasant-microsoft-we-energies)",
+  "coord_source_url": "registry/ (ledger entry us-wi-mount-pleasant-microsoft-we-energies)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. PSC Wisconsin docket 6630-CE-317 (2025-07-02) approved 1,100 MW Oak Creek gas plant citing data-center load; Microsoft 15-year service contract signed 2026-07-16. Microsoft: closed-loop zero-water-evaporation cooling pilot 2026. Epoch AI/GDELT list 'Fairwater (Mount Pleasant)' at 300 MW current power (CC-BY, not used for capacity column)."
  },
  {
@@ -1071,7 +1071,7 @@
   "ledger_entry_id": "us-az-goodyear-mesa-water-records-vs-claims",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-az-goodyear-mesa-water-records-vs-claims)",
+  "coord_source_url": "registry/ (ledger entry us-az-goodyear-mesa-water-records-vs-claims)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. City of Goodyear amended development agreement (March 2023): discharge cap 500,000 gal/day; all buildings after PHX-12 air-cooled (earlier buildings evaporative). Maricopa County AQD permits (sources.json us-az-maricopa-aqd-records) not fetched."
  },
  {
@@ -1096,7 +1096,7 @@
   "ledger_entry_id": "us-ia-west-des-moines-microsoft-water",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-ia-west-des-moines-microsoft-water)",
+  "coord_source_url": "registry/ (ledger entry us-ia-west-des-moines-microsoft-water)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Iowa DNR draft Title V (2024-11-07), file 77-02-040, 550 SE White Crane Rd & 1475 SE Maffitt Lake Rd; NAICS 518210; 128 diesel emergency engines, ~340.8 MW summed from permit tables (20 units assumed 3,000 kW where text truncated). Ledger coordinate is a centroid for Microsoft's five WDM sites; West Des Moines Water Works reports evaporative-cooling water use."
  },
  {
@@ -1121,7 +1121,7 @@
   "ledger_entry_id": "us-wa-seattle-westin-amazon-heat-reuse",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry us-wa-seattle-westin-amazon-heat-reuse)",
+  "coord_source_url": "registry/ (ledger entry us-wa-seattle-westin-amazon-heat-reuse)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Carrier hotel (~400,000 sq ft, 70% data center); up to 5 MW waste heat to Amazon Denny Triangle campus since Dec 2015. Included as a large urban facility, not hyperscale."
  },
  {
@@ -1146,7 +1146,7 @@
   "ledger_entry_id": "ie-dublin-vantage-dub13-abp-refusal",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry ie-dublin-vantage-dub13-abp-refusal)",
+  "coord_source_url": "registry/ (ledger entry ie-dublin-vantage-dub13-abp-refusal)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. An Bord Pleanala ABP-317446-23 (2025) refused the DUB13 data hall (12,893 sq m, 13 backup generators) for lack of a grid connection agreement; the existing Profile Park campus is treated here as operating. Status of the wider campus not verified this session."
  },
  {
@@ -1171,7 +1171,7 @@
   "ledger_entry_id": "nl-middenmeer-microsoft-water",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry nl-middenmeer-microsoft-water)",
+  "coord_source_url": "registry/ (ledger entry nl-middenmeer-microsoft-water)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. OD NZKG permit for AMS13/14 (2023); drinking-water use 84 million litres (2021) per Hollands Kroon/press; Tweede Kamer motion 2022-10-04. Agriport A7 is a nationally designated hyperscale area."
  },
  {
@@ -1196,7 +1196,7 @@
   "ledger_entry_id": "fi-espoo-kirkkonummi-microsoft-fortum-heat",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry fi-espoo-kirkkonummi-microsoft-fortum-heat)",
+  "coord_source_url": "registry/ (ledger entry fi-espoo-kirkkonummi-microsoft-fortum-heat)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Two sites represented by one ledger coordinate. Fortum heat-pump plants (180 MW district heat) started 2026-05; waste-heat recovery from the data centres phases in from 2027."
  },
  {
@@ -1221,7 +1221,7 @@
   "ledger_entry_id": "in-telangana-aws-future-city",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry in-telangana-aws-future-city)",
+  "coord_source_url": "registry/ (ledger entry in-telangana-aws-future-city)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Foundation stone ~2026-07-15; 300 acres (202 Future City + 98 Chandanvelly); MW not disclosed."
  },
  {
@@ -1246,7 +1246,7 @@
   "ledger_entry_id": "in-gujarat-jamnagar-policy",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry in-gujarat-jamnagar-policy)",
+  "coord_source_url": "registry/ (ledger entry in-gujarat-jamnagar-policy)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Tertiary source (citing Indian Express): 168 MW initial capacity, renewable power, desalinated seawater for cooling. Treat as unverified."
  },
  {
@@ -1271,7 +1271,7 @@
   "ledger_entry_id": "jp-softbank-tomakomai",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry jp-softbank-tomakomai)",
+  "coord_source_url": "registry/ (ledger entry jp-softbank-tomakomai)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. SoftBank: 700,000 m2 site, >300 MW receiving capacity, opens FY2026, liquid cooling, 100% Hokkaido renewables (operator claim). OCCTO FY2025 demand assumption counts Hokkaido data-centre load but does not name the site."
  },
  {
@@ -1296,7 +1296,7 @@
   "ledger_entry_id": "br-eldorado-scala-ai-city",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry br-eldorado-scala-ai-city)",
+  "coord_source_url": "registry/ (ledger entry br-eldorado-scala-ai-city)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. MME Portaria SNTEP 2.942 (2025-05-09) recognised 525 kV access; company: 4.75 GW at full build, phase 1 ~50-54 MW IT; closed-loop cooling with initial charge only."
  },
  {
@@ -1321,7 +1321,7 @@
   "ledger_entry_id": "br-pecem-casadosventos-bytedance",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry br-pecem-casadosventos-bytedance)",
+  "coord_source_url": "registry/ (ledger entry br-pecem-casadosventos-bytedance)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. ONS connection approved 2025-05-30 (300 MW initial, up to 900 MW); Semace licences contested by MPF/DPU ACP 0080626-66.2026.4.05.8100 (2026-09-10). Closed-loop air-cooled chillers, 18-30 m3/day water."
  },
  {
@@ -1346,7 +1346,7 @@
   "ledger_entry_id": "ae-abudhabi-uae-us-ai-campus-5gw",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry ae-abudhabi-uae-us-ai-campus-5gw)",
+  "coord_source_url": "registry/ (ledger entry ae-abudhabi-uae-us-ai-campus-5gw)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. US Dept of Commerce release (2025-05-15): 5 GW campus; Stargate UAE first 200 MW targeted 2026. Site coordinate approximate; precise parcel not published."
  },
  {
@@ -1371,7 +1371,7 @@
   "ledger_entry_id": "ke-olkaria-ecocloud-geothermal",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry ke-olkaria-ecocloud-geothermal)",
+  "coord_source_url": "registry/ (ledger entry ke-olkaria-ecocloud-geothermal)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. Ground broken 2023-09-01: phase 1 24 MW IT (8 x 3 MW halls), 70 MW total draw, geothermal PPA with KenGen, air-cooled chilled water, target PUE <=1.25."
  },
  {
@@ -1396,7 +1396,7 @@
   "ledger_entry_id": "au-nsw-sydney-dc-water",
   "confidence": "low",
   "last_checked": "2026-10-20",
-  "coord_source_url": "/home/claude/registry (ledger entry au-nsw-sydney-dc-water)",
+  "coord_source_url": "registry/ (ledger entry au-nsw-sydney-dc-water)",
   "notes": "Coordinates are the ledger entry's 2-decimal lat/lon (approx. +/-0.5 km), not re-derived this session. NSW Planning Portal SSD-80814238 approved 2026-10-01; 34.3 MW. Ledger coordinate is for the Sydney/Macquarie Park cluster, not parcel-verified."
  }
 ]
