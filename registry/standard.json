@@ -1,7 +1,7 @@
 {
  "title": "A datacenter the world can live with",
- "intro": "Every requirement below is already met by a real site or written into a real rule somewhere in this ledger, with the document that proves it. Nothing here is a wish. The standard is the sum of practices that exist today, assembled in one place so that any site can be measured as a distance from it rather than judged as a sin. Where a requirement is met by a rule rather than a site, the rule is cited; where the record shows the practice but not yet the measured result, that is said.",
- "how_to_read": "Each requirement names what to ask for, what counts as proof, and which entry in the ledger shows it being done. 'Proof' always means a document someone outside the operator produced or assured.",
+ "intro": "Every requirement below is drawn from a practice or a rule that exists somewhere in this ledger, with the document that shows it. Eight are met somewhere by a site or a binding rule; three are met only in part; one, assured hardware reuse, is not yet met anywhere in the record. The standard is the sum of practices that exist today, assembled in one place so that any site can be measured as a distance from it. Where a requirement is met by a rule rather than a site, the rule is cited; where the record shows the practice but not yet the measured result, that is said; where a proof rests on a press report of the document, the entry is marked.",
+ "how_to_read": "Each requirement names what to ask for, what counts as proof, and which entries in the ledger show it being done. 'Proof' means a document someone outside the operator produced or assured; an entry listed under a requirement that rests on press reports or company statements is marked 'partly verified' or 'primary not found'.",
  "requirements": [
   {
    "key": "disclose",
@@ -13,7 +13,7 @@
     "de-enefg-datacentre-obligations",
     "us-or-the-dalles-google-water-records"
    ],
-   "note": "The EU register exists and Germany's law mandates reporting; only 36% of in-scope EU sites reported in the first period. The Dalles settlement binds one operator at one site to annual disclosure. The rule is written; the practice is not yet general."
+   "note": "The EU register exists, but per-site data sit behind an operator login and only an aggregate report is public; only 36% of in-scope sites reported in the first period. Germany's law requires reporting to a national register. At The Dalles, a settlement between the city and a newspaper released ten years of Google's annual water use and commits the city to disclose future annual figures on request ([press]; the settlement text was not read). The rule is written; public site-level disclosure is not yet practice anywhere in the ledger."
   },
   {
    "key": "water",
@@ -25,9 +25,9 @@
     "cl-cerrillos-google-water",
     "fi-hamina-google-heat-seawater",
     "nl-amsterdam-vestigingsbeleid-cap",
-    "br-pecem-casadosventos-bytedance"
+    "nl-middenmeer-microsoft-water"
    ],
-   "note": "Uruguay's redesign cut stated operational water from 7,600 to 48 m³ a day. Hamina cools with seawater. Amsterdam prohibits groundwater extraction. Noord-Holland's water company now connects datacenters for office use only. These are permits and policies, not promises."
+   "note": "Uruguay's redesign states 48 m³ a day for one air-cooled building, against 7,600 m³ a day of potable water in the original two-building design (revised EIA, as reported in press). Amsterdam's siting policy prohibits groundwater extraction. Noord-Holland's provincial strategy records that its water company in practice now connects datacenters for office use only. Google states that Hamina cools with seawater. In Chile an environmental tribunal partly annulled the approval of a groundwater-cooled design in a restricted aquifer; Google has announced an air-cooled redesign that is not yet filed."
   },
   {
    "key": "heat",
@@ -37,16 +37,15 @@
    "proven_by": [
     "se-stockholm-exergi-heat",
     "ie-tallaght-heatworks",
-    "fi-espoo-kirkkonummi-microsoft-fortum-heat",
     "dk-bek1167-surplus-heat",
     "de-enefg-datacentre-obligations"
    ],
-   "note": "Stockholm's half-municipal utility reports 117 GWh of recovered heat in its statutory accounts. Tallaght's council-owned network publishes cumulative MWh and tonnes. Denmark now requires every datacenter above 1 MW to analyse and use surplus heat unless infeasible; Germany sets 10% reuse rising to 20%. Across the EU the first reporting period found 1.8% of heat reused, so the gap between the rule and the practice is the distance to close."
+   "note": "Stockholm's half-municipal utility reports, in its statutory accounts, 117 GWh of heat recovered in 2023 from Stockholm Data Parks and other Öppen Fjärrvärme sources combined. SEAI publishes cumulative MWh and tonnes for Tallaght's council-owned network. Denmark requires datacenters above 1 MW that are built or substantially renovated to analyse surplus heat and use it unless infeasible; Germany sets 10% reuse for sites commissioned from July 2026, rising to 20%. Across the EU, the sites that reported in the first period (about 36% of those in scope) reused about 1.8% of their heat, so the gap between the rule and the practice is the distance to close."
   },
   {
    "key": "supply",
    "title": "Firm, additional, clean supply, or bring your own",
-   "ask": "Electricity from a contracted clean source that would not otherwise have been built (geothermal, hydro allocation, existing nuclear restructured to pay grid charges), or the obligation to bring dispatchable supply before connecting. Annual renewable certificates do not meet this.",
+   "ask": "Electricity from a contracted firm clean source named in a regulator-approved agreement, preferably one that would not otherwise have been built (geothermal, a hydro allocation), or the obligation to bring dispatchable supply before connecting. Existing nuclear contracted front-of-meter, so that the load pays grid charges, is firm and clean but not additional. Annual renewable certificates do not meet this.",
    "proof": "A regulator-approved tariff or supply agreement naming the resource; a connection policy that requires it.",
    "proven_by": [
     "us-nv-google-nv-energy-clean-transition-tariff",
@@ -56,7 +55,7 @@
     "ie-cru-leu-connection-policy-2025",
     "za-teraco-solar-wheeling-diesel"
    ],
-   "note": "Nevada's regulator approved firm geothermal for a datacenter under a tariff stated not to shift cost to other customers. Ireland requires new sites to bring dispatchable capacity equal to their import and to source 80% from new Irish renewables. Quebec allocates hydro and scores projects on heat recovery. What none of these yet has on the public record is hourly matching verified by a third party; that is the next bar."
+   "note": "Québec allocates hydro to datacenters by ministerial authorisation and scores projects on heat recovery; its proposed datacenter tariff awaits the Régie. Ireland requires new sites of 10 MVA or more to bring dispatchable capacity equal to their import, and all sites above 1 MVA to source 80% of annual demand from additional Irish renewables over six years. Amazon contracts up to 1,920 MW from the existing Susquehanna nuclear plant, restructured after FERC's rejection so that the load pays grid charges; it is firm and clean but not additional. In Nevada, Google and NV Energy filed a 115 MW geothermal supply agreement under a tariff stated not to shift costs to other customers; the approval and the 115 MW are confirmed only through press. Kenya's EcoCloud geothermal tariff and Teraco's wheeled solar rest on press and company statements. None of these has hourly matching verified by a third party on the public record; that is the next bar."
   },
   {
    "key": "no_gas",
@@ -64,11 +63,9 @@
    "ask": "The interconnection and utility filings show the load is served without a new gas plant built for it. On-site generators are permitted before they run, sized and listed in the air permit.",
    "proof": "The grid operator's queue and the utility commission's order; the air permit with generator count and capacity.",
    "proven_by": [
-    "ie-dublin-vantage-dub13-abp-refusal",
-    "ie-cru-leu-connection-policy-2025",
-    "nl-haarlemmermeer-tennet-goodman-ruling"
+    "ie-dublin-vantage-dub13-abp-refusal"
    ],
-   "note": "Ireland's planning board refused a site because on-site gas could become its primary supply; its regulator states islanded gas datacenters are inconsistent with national policy. A Dutch court upheld the grid operator's right to pause connections rather than overbuild. The counter-examples in the ledger (a 944 MW peaker in Virginia, turbines run for a year before permitting in Memphis, 4,678 MW of gas in Pennsylvania) are what this requirement is measured against."
+   "note": "Ireland's planning board refused a datacenter, among other reasons because without a grid agreement on-site gas could become its primary supply, contrary to the government's statement that 'islanded' datacenters are not in line with national policy. The counter-examples in the ledger (a 944 MW peaker approved in Virginia, turbines run in Memphis for about a year before the first permit, 4,678 MW of gas permitted but not yet built in Pennsylvania) are what this requirement is measured against. Ireland's connection policy requires new sites to bring dispatchable on-site capacity without prescribing the fuel, so it is listed under supply, not here."
   },
   {
    "key": "cost",
@@ -76,13 +73,12 @@
    "ask": "Large loads pay for the transmission and generation built to serve them, with a minimum-take obligation and a long contract, so that residential bills do not carry the cost.",
    "proof": "A utility commission order setting the tariff; an auditor's or market monitor's finding of the bill effect.",
    "proven_by": [
+    "us-va-chesterfield-dominion-cerc-gas",
     "us-oh-aep-ohio-data-center-tariff",
     "ca-on-bill-40-data-centre-playbook",
-    "ca-qc-hydro-quebec-data-centre-tariff-allocation",
-    "us-pjm-imm-capacity",
-    "us-va-jlarc-rates"
+    "ca-qc-hydro-quebec-data-centre-tariff-allocation"
    ],
-   "note": "Ohio requires loads above 25 MW to pay for 85% of subscribed capacity for up to 12 years. Ontario wrote cost responsibility into statute. The PJM market monitor's $16.6 billion and Virginia's auditor's $14–37 a month are the measure of what happens without such rules."
+   "note": "Virginia's regulator, in its November 2025 Chesterfield order, created a large-load class (above 25 MW) with 14-year contracts and minimum demand charges of 85%, 85% and 60%. Ohio's regulator approved a datacenter tariff in July 2025; press reports of the order give loads above 25 MW paying for at least 85% of subscribed capacity for up to 12 years (the order text was not retrieved). Ontario's Bill 40 lets regulations restrict large-load connections, and a proposed framework would put new datacenters in a separate rate class; Hydro-Québec has proposed a datacenter tariff that awaits the Régie. The PJM market monitor's counterfactual estimate ($16.6 billion of capacity-auction revenue across two auctions attributable to datacenter load) and Virginia's legislative auditor's projection ($14–37 a month on a typical residential bill by 2040 under unconstrained demand) are estimates of what is at stake without such rules."
   },
   {
    "key": "land",
@@ -94,7 +90,7 @@
     "nl-zeewolde-meta-cancelled",
     "nl-amsterdam-vestigingsbeleid-cap"
    ],
-   "note": "England's Secretary of State imposed an enforceable 135% biodiversity net gain condition. The Netherlands confined hyperscale siting to two named areas by decree and the state refused to sell the Zeewolde land. Monitoring data from the English site does not exist yet because it is not built; the condition is the proof, the result is pending."
+   "note": "England's Secretary of State imposed an enforceable 135% biodiversity net gain condition. The Netherlands confined new hyperscale datacenters to two named areas by national rule (draft approved June 2022; in force 1 January 2024, Stb. 2023, 492). That rule did not apply to Zeewolde, whose zoning plan was already adopted; there the state declined to sell the land the project needed, and Meta cancelled the campus in July 2022. Monitoring data from the English site does not exist yet because it is not built; the condition is the proof, the result is pending."
   },
   {
    "key": "noise",
@@ -105,7 +101,7 @@
     "us-az-chandler-ord5033",
     "us-va-loudoun-noise"
    ],
-   "note": "Chandler, Arizona wrote the studies into its ordinance. No city has yet published the results, and no ordinance in the ledger addresses tonal noise, which is what residents actually complain about. This requirement is half-proven."
+   "note": "Chandler, Arizona wrote baseline, post-construction and five annual third-party studies into its ordinance; no city-published results were found. Loudoun County reports that complaints often involve tonal noise, and states that it has no rule specific to tonal or low-frequency noise; amendments are anticipated in 2027. This requirement is met in part."
   },
   {
    "key": "money",
@@ -114,11 +110,9 @@
    "proof": "The incentive agreement; the auditor's evaluation.",
    "proven_by": [
     "us-ga-doaa-exemption-correction",
-    "us-va-jlarc-sales-tax",
-    "in-up-dc-policy-2026",
-    "br-redata-renuncia"
+    "us-va-jlarc-sales-tax"
    ],
-   "note": "Georgia and Virginia at least evaluate their exemptions by law, which is how Georgia's 70% overcount came to light. No programme in the ledger ties the money to a jobs floor with a clawback. This requirement is proven only in its first half: the audit exists; the condition does not."
+   "note": "Georgia and Virginia evaluate their exemptions by statute. Georgia's evaluation attributes 30% of datacenter activity to the exemption; its audit office first summarised job figures for all datacenter activity, then reissued them at 30% with no stated reason. No programme in the ledger ties the money to a jobs floor with a clawback: Uttar Pradesh's 2026 policy and Brazil's Redata regime set none. This requirement is met only in its first half: the evaluation exists; the condition does not."
   },
   {
    "key": "hardware",
@@ -130,7 +124,7 @@
     "us-hyperscaler-server-lifespan-circularity",
     "cd-cobalt-usgs-share"
    ],
-   "note": "Microsoft publishes a 90.9% reuse rate and a method for it; the assurance scope covers waste tonnage, not that rate. No company in the ledger has an assured hardware reuse figure, and statutory conflict-minerals filings do not cover cobalt, nickel or rare earths. This is the least-met requirement in the standard."
+   "note": "Microsoft publishes a 90.9% reuse-and-recycling rate for cloud servers and components, with a method; its third-party review covers waste tonnage, not that rate. Companies state accounting lives for servers (five to six years) in their filings; none states a physical life for GPUs. No company in the ledger has an assured hardware reuse figure, and statutory conflict-minerals filings do not cover cobalt, nickel or rare earths. No site or rule in the ledger meets this requirement yet."
   },
   {
    "key": "forecast",
@@ -140,10 +134,9 @@
    "proven_by": [
     "au-aemo-2026-esoo-dc-forecast",
     "es-ree-demand-capacity-map-2026",
-    "fr-idf-rte-datacentre-connections-2025",
-    "ie-national-cso-share-2025"
+    "fr-idf-rte-datacentre-connections-2025"
    ],
-   "note": "Australia's AEMO publishes a project-reconciled forecast showing 67 GW in development, 27% connection utilisation and a 36% cancellation rate. Spain's grid operator maps granted and requested access by type. Ireland's statistics office meters the share. Texas, by contrast, publishes no file of its 445 GW queue."
+   "note": "Australia's AEMO publishes a project-reconciled forecast showing 67 GW in development, 27% connection utilisation and a 36% cancellation rate. RTE publishes, for the Paris region, connected datacenter capacity separately from capacity in the connection process and under study. Spain's grid operator publishes granted demand access by type and how much of it is in service. Texas, by contrast, publishes no file of its large-load queue (about 474 GW of requests in June 2026, per ERCOT testimony)."
   },
   {
    "key": "upstream",
@@ -152,11 +145,10 @@
    "proof": "The mining or water regulator's data, not the company's report.",
    "proven_by": [
     "cl-copper-cochilco-seawater",
-    "cl-lithium-atacama-sqm-sma",
-    "tw-tsmc-hsinchu-2021-drought"
+    "cl-lithium-atacama-sqm-sma"
    ],
-   "note": "Chile's copper regulator records inland water use falling in absolute terms as desalination grows to two thirds of supply by 2034. That is one mineral in one country; the same figure does not exist for nickel in Indonesia or rare earths in Myanmar."
+   "note": "Chile's copper commission records inland water use by copper mining falling from 12.0 to 10.8 m³/s between 2023 and 2024, and projects 7.6 m³/s by 2034 as desalination grows to about two thirds of supply. Chile's environmental regulator has capped SQM's brine and freshwater extraction at the Salar de Atacama under a compliance programme. That is two minerals in one country; there is no equivalent regulator figure for nickel in Indonesia or rare earths in Myanmar, and TSMC's own reports show its unit water use above its 2010 baseline."
   }
  ],
- "closing": "Twelve requirements. Each is met somewhere. None is met everywhere, and three (noise results, jobs clawbacks, assured hardware reuse) are met only in part anywhere. A site that meets all twelve does not exist yet, and nothing in the record says it cannot."
+ "closing": "Twelve requirements. Eight are met somewhere; three (site-level disclosure, noise results, jobs clawbacks) only in part; one (assured hardware reuse) nowhere yet. None is met everywhere. A site that meets all twelve does not exist yet."
 }

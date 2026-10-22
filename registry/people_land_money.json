@@ -69,7 +69,7 @@
  {
   "id": "ie-cru-leu-policy",
   "country": "Ireland",
-  "region": "National (97% of datacenters in Dublin)",
+  "region": "National",
   "site_or_subject": "CRU Large Energy Users connection policy for datacenters",
   "operator": "Commission for Regulation of Utilities (CRU); EirGrid/ESB Networks",
   "lat": 53.35,
@@ -95,8 +95,8 @@
   "gap": "Regulator documents demand share and imposes generation obligations but publishes no consumer network-cost figure; final decision text read from a law-firm-hosted copy.",
   "confidence": "high",
   "verified_primary": true,
-  "verification_note": "Fetched CRU/202504 on consult.cru.ie (21%, 30.5 TWh, ~30% by 2030, ~50% Dublin/Meath confirmed; 7.1 TWh is data centre plus new technology load) and the CRU/2025236 decision paper (12 Dec 2025; Matheson-hosted copy, cru.ie original not located): 10 MVA dispatchable tier, 6-year glide path and one-year capacity contracts confirmed; corrected the scope of the 80% renewables requirement, which applies from the 1 MVA de-minimis level, not only to >=10 MVA sites.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Fetched CRU/202504 on consult.cru.ie (21%, 30.5 TWh, ~30% by 2030, ~50% Dublin/Meath confirmed; 7.1 TWh is data centre plus new technology load) and the CRU/2025236 decision paper (12 Dec 2025; Matheson-hosted copy, cru.ie original not located): 10 MVA dispatchable tier, 6-year glide path and one-year capacity contracts confirmed; corrected the scope of the 80% renewables requirement, which applies from the 1 MVA de-minimis level, not only to >=10 MVA sites. See also ie-cru-leu-connection-policy-2025 (same CRU decision).",
+  "last_checked": "2026-10-22",
   "verification_status": "verified"
  },
  {
@@ -121,7 +121,8 @@
   "claim_sources": [],
   "gap": "Market operator quantifies load and project attrition but not cost to consumers.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-22",
+  "verification_note": "See also au-aemo-2026-esoo-dc-forecast (same AEMO 2026 ESOO)."
  },
  {
   "id": "us-az-chandler-ord5033",
@@ -202,7 +203,7 @@
   "lat": 52.33,
   "lon": 5.54,
   "category": "land_biodiversity",
-  "record": "The 166 ha site included ~80 ha owned by the State (Rijksvastgoedbedrijf). The Eerste Kamer adopted a motion in Dec 2021 that the State may not sell land for large-scale datacenters; in the 22 Feb 2022 interpellation it was recorded that the plan reused only ~15% of residual heat and that the municipal permit would not be revoked. Minister De Jonge's letter of 10 June 2022 (Kamerstuk 26 643 nr. 862) transmitted TNO's assessment of the municipality's plan against the Aug 2021 sale conditions (maximum solar, residual-heat reuse); NOS reported the same day the State would not sell because conditions were not met.",
+  "record": "The 166 ha site included ~80 ha owned by the State (Rijksvastgoedbedrijf). The Eerste Kamer adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale datacenters; in the 22 Feb 2022 interpellation it was recorded that the plan reused only ~15% of residual heat and that the municipal permit would not be revoked. Minister De Jonge's letter of 10 June 2022 (Kamerstuk 26 643 nr. 862) transmitted TNO's assessment of the municipality's plan against the Aug 2021 sale conditions (maximum solar, residual-heat reuse); NOS reported the same day the State would not sell because conditions were not met.",
   "record_sources": [
    {
     "title": "Interpellatie grootschalige datacentra",
@@ -235,8 +236,8 @@
   "gap": "Parliamentary record and ministerial letter document land conditions and a ~15% heat-reuse figure; project did not proceed. Older sources (2022).",
   "confidence": "medium",
   "verified_primary": true,
-  "verification_note": "Partial: fetched Kamerstuk 26 643 nr. 862 (10 Jun 2022; confirms the August 2021 conditions on solar, cooling and residual-heat reuse and that TNO assessed the municipal plan, but the letter states no conclusion, no sale decision and no hectares) and the Eerste Kamer interpellation page (confirms the Dec 2021 Koffeman motion, 166 ha, ~15% residual-heat reuse and that the minister would not undo the municipal permit). The ~80 ha State share and the non-sale decision were not found in these documents and remain via NOS; the TNO annex was not fetched, so confidence left medium.",
-  "last_checked": "2026-10-20",
+  "verification_note": "Partial: fetched Kamerstuk 26 643 nr. 862 (10 Jun 2022; confirms the August 2021 conditions on solar, cooling and residual-heat reuse and that TNO assessed the municipal plan, but the letter states no conclusion, no sale decision and no hectares) and the Eerste Kamer interpellation page (confirms the Dec 2021 Koffeman motion, 166 ha, ~15% residual-heat reuse and that the minister would not undo the municipal permit). The ~80 ha State share and the non-sale decision were not found in these documents and remain via NOS; the TNO annex was not fetched, so confidence left medium. See also nl-zeewolde-meta-cancelled (same Zeewolde case).",
+  "last_checked": "2026-10-22",
   "verification_status": "partial"
  },
  {
@@ -631,7 +632,8 @@
   ],
   "gap": "Reporting compliance is ~36% and heat reuse ~1.8%, against widespread operator renewable-matching claims; land take is not a reported metric.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-22",
+  "verification_note": "See also eu-eed-datacentre-reporting-2024-period (same first EED reporting period: 776 sites is the July 2025 technical report, 770 the September 2026 Commission report)."
  },
  {
   "id": "se-stockholm-exergi-heat",
@@ -693,7 +695,7 @@
   "gap": "Positive example: municipally owned heat network with published cumulative MWh and tCO2; annual MWh and capacity figures are not published by the council or SEAI (SEAI gives only a 30-year lifetime estimate).",
   "confidence": "high",
   "verified_primary": true,
-  "verification_note": "Re-fetched SEAI case study: ~6,000 MWh to date, 1,098 tCO2 as of June 2024, ~1,500 tCO2/yr, 100% Amazon datacenter heat, County Hall and TU Dublin served, Heat Works fully council-owned; confirmed, with the 270,000 MWh lifetime estimate added. Circularity figures are not inside any third-party assurance scope: SEAI's page describes no independent verification, and no Amazon assured disclosure covers them.",
+  "verification_note": "Re-fetched SEAI case study: ~6,000 MWh to date, 1,098 tCO2 as of June 2024, ~1,500 tCO2/yr, 100% Amazon datacenter heat, County Hall and TU Dublin served, Heat Works fully council-owned; confirmed, with the 270,000 MWh lifetime estimate added.",
   "last_checked": "2026-10-20",
   "verification_status": "verified"
  },

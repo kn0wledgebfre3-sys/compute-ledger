@@ -1,6 +1,6 @@
 # Climate TRACE handover: datacenters as a facility type
 
-Prepared 2026-10-21 by the Compute Ledger. Data CC BY 4.0. Everything here traces to a public record or to a file in this folder. The package was reviewed hostilely twice before sending; both reviews are included unedited (review_of_this_handover.md, review_2_final.md) with the changes made in response.
+Prepared 2026-10-21 by the Compute Ledger. Data CC BY 4.0. Everything here traces to a public record or to a file in this folder. The package was reviewed hostilely three times before sending: the handover (review_of_this_handover.md), the final package and brief (review_2_final.md), and the public ledger page (review_3_ledger_page.md). All three are included unedited; every finding was applied or is stated as a caveat.
 
 | File | What it is |
 |---|---|

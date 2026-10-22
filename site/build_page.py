@@ -74,7 +74,7 @@ for e in entries:
     seen.add(e["id"])
 
 countries = sorted({e["country"] for e in entries})
-n_sources = sum(len(e["record_sources"]) + len(e.get("claim_sources") or []) for e in entries)
+n_sources = sum(sum(1 for x in (e["record_sources"] + (e.get("claim_sources") or [])) if not x.get("self")) for e in entries)
 n_verified = sum(1 for e in entries if e.get("verification_status") == "verified")
 today = datetime.date.today().isoformat()
 
@@ -286,7 +286,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
       <div><b>__N_DATASETS__</b><span>open datasets</span></div>
     </div>
   </div>
-  <p class="lede">What permits, grid filings, court records, statistical offices, budgets and trade data say about where AI compute draws its power, burns its fuel, takes its water, uses its land, spends public money, employs people, and sends its hardware. Each entry lays the public record beside what the operator or government says in public. Nothing here is an opinion; every number links to the document it came from. Good cases are entries too.</p>
+  <p class="lede">What permits, grid filings, court records, statistical offices, budgets and trade data say about where AI compute draws its power, burns its fuel, takes its water, uses its land, spends public money, employs people, and sends its hardware. Each entry lays the public record beside what the operator or government says in public, links every figure to the document it came from, and marks figures confirmed only through press reports of the document. The theme introductions and the standard are the ledger's own summaries of those entries. Good cases are entries too.</p>
 </header>
 
 <section class="guide" id="guide">
@@ -319,7 +319,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
 
 <div id="receipts-wrap" hidden>
 <h2 id="receipts">Receipts</h2>
-<p class="prose">A receipt is one case worked all the way down: the claim, the dated record, and the gap, every figure tied to a page of a document. These are the entries that cannot be waved away.</p>
+<p class="prose">A receipt is one case worked all the way down: the claim, the dated record and the gap, each figure tied to the document it came from, with [press] marking figures confirmed only through news reports of the document and [arithmetic] marking figures computed from two documented ones.</p>
 <div id="receipts-list"></div>
 </div>
 
@@ -332,8 +332,9 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     <li>Texas's grid operator publishes no file of its large-load queue. The totals appear only as numbers printed in monthly reports and board slides, with no breakdown by county or project.</li>
     <li>Great Britain's system operator stated in a freedom-of-information response that it does not keep a register of demand connections. The nearest public list covers only applicants who agreed to be listed.</li>
     <li>The EU's datacenter reporting database is behind an operator login. Only an aggregate report is public; there is no per-site data.</li>
+    <li>Texas's environmental regulator lists datacenter air-permit applications only while they are pending. Once a permit is issued the application leaves the public index, so no public register links a Texas datacenter to its permitted generation.</li>
   </ul>
-  <p style="font-size:16px;margin-top:8px">Scripts that pull the queues of PJM, MISO, SPP and NYISO, US federal plant and fuel data, and the Texas and British figures exist and pass offline tests. Live numbers from them will appear here once they have been run outside the build environment.</p>
+  <p style="font-size:16px;margin-top:8px">Scripts that pull the queues of PJM, MISO, SPP and NYISO, US federal plant and fuel data, and the British figures exist and pass offline tests; their live numbers will appear here once run. The Virginia DEQ permit extraction (all permits on the statewide list, read twice) and a run of Texas's permit indexes were completed on 21 October 2026; the Virginia figures are in the Virginia generator entry.</p>
 </div>
 <div id="srcs"></div>
 
@@ -341,8 +342,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
 <div class="method prose" style="max-width:none">
   <div><h3>What counts as a record</h3><p>A document produced by a regulator, court, grid operator, statistical office, auditor, UN body, customs authority, or a legally bound corporate filing. A company's sustainability report is a claim, not a record, unless a figure is third-party assured and the assurance statement is public.</p></div>
   <div><h3>What a gap means</h3><p>A one-line statement of where the record and the claim differ, written without adjectives. "None documented" means the record and the claim agree or no claim was found. "Positive example" means the record shows a practice worth copying.</p></div>
-  <div><h3>Confidence and verification</h3><p>High means the primary document was read directly. Medium means the figure comes from a press report of the document. Low means the figure is second-hand or older. A second pass went back to the original file for every medium and low entry. "Verified against primary" means the original confirmed the figures; "partly verified" means it confirmed some and not a key figure; "primary not found" means the note says what was searched and what was missing. Mirrors of the actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as primary; company press releases do not.</p></div>
-  <div><h3>What is excluded</h3><p>Estimates, modelled footprints, advocacy press releases cited on their own, and anything without a URL to the underlying document. Where only an estimate exists, the entry says so.</p></div>
+  <div><h3>Confidence and verification</h3><p>High means the figures were read in the primary document or a mirror of it. Medium means at least one key figure comes from a press report of the document. Low means the figure is second-hand, from a company statement, or older. A second pass went back to the original document for every medium and low entry and for some high ones; an entry with no verification tag was not re-checked in that pass. 'Verified against primary' means the original confirmed the figures; 'partly verified' means it confirmed some but not a key figure; 'primary not found' means the note says what was searched and what was missing. Mirrors of the actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as primary; company press releases and law-firm summaries do not. Figures the ledger produced itself from public documents (the Virginia permit extraction) link to the extraction files, which link to each document.</p></div>
+  <div><h3>What is excluded</h3><p>Estimates the ledger would have to make itself, modelled footprints, advocacy press releases cited on their own, and anything without a URL to the underlying document. Estimates published by a public body or the cited author (a market monitor's counterfactual, an auditor's projection, a grid operator's forecast, a tracking study's extrapolation) are included and labelled as estimates.</p></div>
   <div><h3>Corrections</h3><p>Anyone with contributor access can submit a correction on an entry with a source. The correct response to an entry is a newer document, not a rebuttal. Entries change when the record changes, and every entry carries a last-checked date.</p></div>
   <div><h3>Scope</h3><p>Datacenters, the grids and water systems they sit on, the public money and land they use, and both ends of the hardware chain: the mines and fabs upstream, the recyclers and dumps downstream. Labor appears where a court or ministry has recorded it.</p></div>
 </div>
@@ -534,10 +535,10 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     document.getElementById('standard-wrap').hidden=false;
     document.getElementById('std-intro').textContent=ST.intro;
     document.getElementById('std-closing').textContent=ST.closing;
-    const HALF=new Set(['noise','money','hardware']);
+    const STATUS={disclose:'part',noise:'part',money:'part',hardware:'none'};
     document.getElementById('std-list').innerHTML=ST.requirements.map((r,i)=>`<div class="req" id="std-${esc(r.key)}">
       <div class="n">${String(i+1).padStart(2,'0')}</div>
-      <div><h3>${esc(r.title)}<span class="status ${HALF.has(r.key)?'half':'met'}">${HALF.has(r.key)?'met in part':'met somewhere'}</span></h3>
+      <div><h3>${esc(r.title)}<span class="status ${(STATUS[r.key]||'met')==='met'?'met':'half'}">${({met:'met somewhere',part:'met in part',none:'not yet met'})[STATUS[r.key]||'met']}</span></h3>
         <div class="ask">${esc(r.ask)}</div>
         <div class="proof"><b>Proof:</b> ${esc(r.proof)}</div>
         <div class="note">${esc(r.note)}</div>

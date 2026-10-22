@@ -38,7 +38,7 @@
     "date": "2025"
    }
   ],
-  "gap": "Utility cites ~40 GW of contracted data center capacity, while the regulator's approval order declines to quantify the data center share of the need the plant serves.",
+  "gap": "Dominion reported about 40 GW of datacenter capacity 'in various stages of contracting' (December 2024, company statement via DCD); the SCC's approval order calls datacenter development 'not an insignificant contributing factor' but gives no datacenter MW for the need the plant serves.",
   "confidence": "high",
   "last_checked": "2026-10-19"
  },
@@ -51,13 +51,20 @@
   "lat": 39.04,
   "lon": -77.49,
   "category": "fuel",
-  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days. On 2026-10-21 all 183 permits on DEQ's statewide datacenter air-permit list were read twice by independent methods and the disagreements resolved against the permit text: 182 sites, 13,973 permitted standby generator units, 33,693 MW (177 sites high confidence; median site 129 MW; largest 1,331 MW; per-unit 1.5-3.7 MW).",
+  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days. On 2026-10-21 the Compute Ledger opened the permits on DEQ's statewide list of issued datacenter air permits and read each a second time by an independent method, resolving every disagreement against the permit text: 182 sites, 13,973 permitted standby generator units, 33,693 MW (band about 33.4–33.9 GW; 177 sites high confidence; median site 129 MW; largest 1,331 MW; site-average unit size 0.4–3.7 MW, median 2.5 MW; 2,913 units permitted for non-emergency use). This supersedes the PEC-based tallies above. Permitted is not built: many permits cover phases not yet constructed.",
   "record_sources": [
    {
-    "title": "Virginia DEQ issued air permits for data centers (statewide list) and permit PDFs, extracted by the Compute Ledger pipeline",
-    "url": "https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/pipeline",
-    "publisher": "Virginia DEQ via Compute Ledger",
+    "title": "Issued Air Permits for Data Centers (statewide list, with each permit PDF)",
+    "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+    "publisher": "Virginia DEQ",
     "date": "2026-10-21"
+   },
+   {
+    "title": "Compute Ledger: Virginia DEQ datacenter permits, resolved second reading (va_permits_resolved.csv; method in VIRGINIA_REREAD_REPORT.md)",
+    "url": "https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/climate_trace_seed/va_permits_resolved.csv",
+    "publisher": "Compute Ledger",
+    "date": "2026-10-21",
+    "self": true
    },
    {
     "title": "DEQ Guidance Memo APG-578: Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages",
@@ -93,11 +100,11 @@
     "date": "2025-12-17"
    }
   ],
-  "gap": "Generator counts in the public record previously came from third-party tallies; a full extraction of the DEQ list, read twice, gives a consolidated figure of about 33.7 GW permitted standby across 182 sites, of the same order as the roughly 40 GW Dominion reports as contracted.",
+  "gap": "DEQ publishes the permits but no consolidated total. The ledger's two-reading extraction gives about 33.7 GW of permitted standby across 182 sites. Standby is sized to design load with redundancy, so this implies roughly 28–33 GW of design load under N+1 and about 17 GW under 2N. Dominion reported about 40 GW of datacenter capacity 'in various stages of contracting' as of December 2024: one utility's pipeline, set against a statewide permit list. The two figures are of the same order.",
   "confidence": "high",
-  "last_checked": "2026-10-21",
+  "last_checked": "2026-10-22",
   "verified_primary": true,
-  "verification_note": "DEQ memo APG-578 (Town Hall PDF) confirms the 14-calendar-day planned-outage provision but is dated 2025-10-01, not 2025-09-30 as in press; JLARC report page and summary confirm <4% of regional NOx and ~5,050 MW; generator counts remain third-party (PEC) tallies, not DEQ figures.",
+  "verification_note": "DEQ memo APG-578 (Town Hall PDF) confirms the 14-calendar-day planned-outage provision but is dated 2025-10-01, not 2025-09-30 as in press; JLARC report page and summary confirm <4% of regional NOx and ~5,050 MW. The ~9,000 generator count is a press-reported PEC tally, superseded by the 2026-10-21 extraction (13,973 units). The extraction is the ledger's own reading of the DEQ permits and is documented in the re-read files; it is not covered by this check.",
   "verification_status": "verified"
  },
  {
@@ -134,8 +141,9 @@
    }
   ],
   "gap": "none documented; project status after one developer's withdrawal remains unresolved in the record.",
-  "confidence": "high",
-  "last_checked": "2026-10-19"
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: record sources are press reports (WTOP, InsideNoVa) of the court rulings."
  },
  {
   "id": "us-tx-ercot-large-load-queue-audit",
@@ -146,7 +154,7 @@
   "lat": 30.27,
   "lon": -97.74,
   "category": "grid_policy",
-  "record": "ERCOT testimony to the Texas Senate (2026-07-29) reports ~474 GW of large loads seeking interconnection as of June 2026, ~90% data centers, >1,800 projects, more than five times record peak; ~205 GW preliminarily eligible for Batch Zero. On 2026-08-03 Gov. Abbott directed PUCT/ERCOT to audit all queued data centers (power, water/cooling, ownership, tax breaks) and ERCOT paused Batch Zero; at the 2026-08-20 PUCT meeting ERCOT said 17 loads (~6.6 GW) had passed stability assessment but none were approved to energize, with an audit report targeted for 2026-12-10. An ERCOT briefing in early 2026 put actually connected large load at ~7.5 GW. SB 6 (2025) sets a 75 MW threshold, fee, duplicate-request and backup-generation disclosure, and emergency curtailment.",
+  "record": "ERCOT testimony to the Texas Senate (2026-07-29) reports ~474 GW of large loads seeking interconnection as of June 2026, ~90% data centers, >1,800 projects, more than five times record peak; ~205 GW preliminarily eligible for Batch Zero. On 2026-08-03 Gov. Abbott directed PUCT/ERCOT to audit all queued data centers (power, water/cooling, ownership, tax breaks) and ERCOT paused Batch Zero; at the 2026-08-20 PUCT meeting ERCOT said 17 loads (~6.6 GW) had passed stability assessment but none were approved to energize, with an audit report targeted for 2026-12-10. An ERCOT briefing in early 2026 put actually connected large load at ~7.5 GW [press: BIC Magazine]. SB 6 (2025) sets a 75 MW threshold, fee, duplicate-request and backup-generation disclosure, and emergency curtailment.",
   "record_sources": [
    {
     "title": "ERCOT Senate July 29 Panel 1: Assessing the Grid",
@@ -182,7 +190,7 @@
     "date": "2026-08-03"
    }
   ],
-  "gap": "Queue requests (~474 GW) exceed connected large load (~7.5 GW) by roughly 60x; the regulator itself describes the queue as partly speculative and the audit is pending.",
+  "gap": "Queue requests (~474 GW) exceed connected large load (~7.5 GW, press-reported) by roughly 60x; ERCOT found ~205 GW preliminarily eligible for its first batch, none of it approved to energize as of August 2026, and the audit is pending.",
   "confidence": "high",
   "last_checked": "2026-10-19"
  },
@@ -302,7 +310,7 @@
   "lat": 32.5,
   "lon": -91.68,
   "category": "power",
-  "record": "LPSC minutes (Docket U-37425, 2025-08-20) record a 4–1 vote accepting a settlement authorizing generation and transmission for Meta's Holly Ridge data center with 'numerous protective conditions.' As reported from Entergy filings: three 754 MW combustion-turbine plants (2,262 MW), $3.2B for plants and ~$5B total including a 500-kV line; 15-year contract with Laidley LLC with minimum bills intended to cover 100% of generator cost; Meta to pay for 1,500 MW of solar/solar+storage. LDEQ issued a minor-source air permit (July 2025, amended 2026-06-06) for 31 emergency diesel generators and 44 gas boilers at 96.83 tpy NOx and 98.94 tpy CO, just under the 100 tpy major-source threshold; Entergy's turbines are permitted separately.",
+  "record": "LPSC minutes (Docket U-37425, 2025-08-20) record a 4–1 vote accepting a settlement authorizing generation and transmission for Meta's Holly Ridge data center with 'numerous protective conditions.' As reported from Entergy filings [press: S&P Global]: three 754 MW combustion-turbine plants (2,262 MW), $3.2B for plants and ~$5B total including a 500-kV line; 15-year contract with Laidley LLC with minimum bills intended to cover 100% of generator cost; Meta to pay for 1,500 MW of solar/solar+storage. LDEQ issued a minor-source air permit (July 2025, amended 2026-06-06) for 31 emergency diesel generators and 44 gas boilers at 96.83 tpy NOx and 98.94 tpy CO, just under the 100 tpy major-source threshold; Entergy's turbines are permitted separately.",
   "record_sources": [
    {
     "title": "LPSC Business & Executive Session Minutes, August 20, 2025",
@@ -332,7 +340,7 @@
     "date": "2025-12-19"
    }
   ],
-  "gap": "Operator emphasizes water restoration and clean energy projects; the regulator-approved supply for the site is 2,262 MW of new gas capacity, with site air permit emissions set just below the major-source threshold.",
+  "gap": "Operator emphasizes water restoration and clean energy projects; the regulator-approved supply for the site is 2,262 MW of new gas capacity (as reported from Entergy filings), with site air permit emissions set just below the major-source threshold.",
   "confidence": "high",
   "last_checked": "2026-10-19"
  },
@@ -554,7 +562,7 @@
     "date": "2025-05-29"
    }
   ],
-  "gap": "Operator's public claims focus on water (closed-loop pilot); the regulator-approved supply additions are ~1,228 MW of new gas capacity plus a proposed $1.8B gas plant purchase.",
+  "gap": "We Energies cited 'energy-intensive data centers' for 1,100 MW of simple-cycle gas at Oak Creek, approved by the PSC in docket 6630-CE-317; the PSC case page does not name Microsoft, and the Paris unit, the Microsoft contract terms and the Red Oak Ridge purchase are press-sourced. Microsoft's public claims for the site concern water.",
   "confidence": "medium",
   "last_checked": "2026-10-20",
   "verified_primary": false,
@@ -607,10 +615,10 @@
    }
   ],
   "gap": "Records became public only through a settlement thirteen months after the city sued the requester; the city's figures and Google's site-level figures differ by metric and none reconciles them; the replenishment claim has no measured volume behind it in the record (the watermaster described testing as ongoing).",
-  "confidence": "high",
-  "last_checked": "2026-10-20",
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
   "receipt": "the_dalles_google_water",
-  "verification_note": " Worked into a full receipt (28 dated rows, 40 sources); three registry statements corrected from it: smelter right only partly transferred, 2024 share is 'about a third' with no city total stated, and the 'adequate' statement was joint."
+  "verification_note": "Worked into a full receipt (28 dated rows, 40 sources); three registry statements corrected from it: smelter right only partly transferred, 2024 share is 'about a third' with no city total stated, and the 'adequate' statement was joint. Confidence lowered from high to medium on 2026-10-22 after review: record sources are press reports of the city records and settlement (see the receipt, which marks each [press])."
  },
  {
   "id": "us-az-goodyear-mesa-water-records-vs-claims",

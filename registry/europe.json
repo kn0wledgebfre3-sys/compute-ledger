@@ -2,7 +2,7 @@
  {
   "id": "ie-national-cso-share-2025",
   "country": "Ireland",
-  "region": "National (97% of sites in Dublin region)",
+  "region": "National",
   "site_or_subject": "Data centre share of metered electricity consumption, 2025",
   "operator": "All operators (ESB Networks meter data)",
   "lat": 53.35,
@@ -23,18 +23,11 @@
     "date": "2026-07-07"
    }
   ],
-  "claim": "none found (no single operator claim applies to the national figure); CRU notes 97% of Irish data centres are located in Dublin.",
-  "claim_sources": [
-   {
-    "title": "Large Energy Users Connection Policy Decision (CRU/2025236) summary",
-    "url": "https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf",
-    "publisher": "Matheson LLP summarising CRU",
-    "date": "2026-02"
-   }
-  ],
-  "gap": "none documented; the 23% figure is an official metered share and is the highest documented national share in Europe.",
+  "claim": "none found (no single operator claim applies to the national figure).",
+  "claim_sources": [],
+  "gap": "none documented; the 23% figure is an official metered share.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-22"
  },
  {
   "id": "ie-cru-leu-connection-policy-2025",
@@ -70,8 +63,9 @@
    }
   ],
   "gap": "Policy requires on-site dispatchable capacity equal to import capacity; fuel type (gas vs storage) is not prescribed, so the fuel footprint outcome is not yet documented.",
-  "confidence": "high",
-  "last_checked": "2026-10-19"
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: sources are a law-firm-hosted copy and the proposed decision; CRU’s own copy of the final decision was not retrieved. See also ie-cru-leu-policy (same CRU decision)."
  },
  {
   "id": "ie-dublin-vantage-dub13-abp-refusal",
@@ -123,7 +117,7 @@
   ],
   "claim": "none found",
   "claim_sources": [],
-  "gap": "positive example: municipal cap tightened rather than lifted; water use remains a small documented share of supply.",
+  "gap": "positive example: the first revision (draft, December 2023) removes the growth allowance, and the policy prohibits groundwater extraction and requires residual-heat use; whether the revision has been formally adopted was not confirmed. Water use remains a small documented share of supply.",
   "confidence": "high",
   "last_checked": "2026-10-19"
  },
@@ -173,7 +167,7 @@
   "lat": 52.33,
   "lon": 5.54,
   "category": "moratorium",
-  "record": "[older: 2022] On 10 June 2022 the cabinet approved a draft decree barring municipalities from permitting new hyperscale data centres except in two areas: the former Eemsmond part of Het Hogeland and the Agriport A7/B1 sites in Hollands Kroon; the draft decree (2023 text, Barro art. 2.15.1) defines hyperscale as more than 10 ha and 70 MW or more, and exempts applications made on or before the 16 Feb 2022 voorbereidingsbesluit. The cabinet said the rule did not apply to Zeewolde, where the zoning plan had already been adopted, but that the Rijksvastgoedbedrijf could not sell the state land to the municipality, citing a TNO assessment that some conditions were not met. The Eerste Kamer had adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale data centres. Meta's planned campus (five data halls, 200 MW at full build) was cancelled by July 2022; press also reports a March 2022 Senate motion to halt site works.",
+  "record": "[older: 2022] On 10 June 2022 the cabinet approved a draft decree (in force 1 January 2024, Stb. 2023, 492, per the Middenmeer receipt) barring municipalities from permitting new hyperscale data centres except in two areas: the former Eemsmond part of Het Hogeland and the Agriport A7/B1 sites in Hollands Kroon; the draft decree (2023 text, Barro art. 2.15.1) defines hyperscale as more than 10 ha and 70 MW or more, and exempts applications made on or before the 16 Feb 2022 voorbereidingsbesluit. The cabinet said the rule did not apply to Zeewolde, where the zoning plan had already been adopted, but that the Rijksvastgoedbedrijf could not sell the state land to the municipality, citing a TNO assessment that some conditions were not met. The Eerste Kamer had adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale data centres. Meta's planned campus (five data halls, 200 MW at full build) was cancelled by July 2022; press also reports a March 2022 Senate motion to halt site works.",
   "record_sources": [
    {
     "title": "Kabinet beperkt mogelijkheid tot vestiging hyperscale datacentra",
@@ -217,9 +211,9 @@
   ],
   "gap": "positive example (from a siting-control perspective): the draft national rule did not apply to Zeewolde, whose procedures had started, but the state did not sell the required land and the 200 MW project was cancelled; record is 2022 and no later reversal was found.",
   "confidence": "high",
-  "last_checked": "2026-10-20",
+  "last_checked": "2026-10-22",
   "verified_primary": true,
-  "verification_note": "Rijksoverheid release (2022-06-10), the 2023 draft decree (>10 ha, >=70 MW; 16 Feb 2022 cut-off) and the Eerste Kamer motion dossier confirm the rule and the land-sale position; the exemption covers two specific areas rather than whole municipalities as previously stated, the rule expressly did not cover Zeewolde, and the confirmed Senate motion is 35925 XIV H of 21 Dec 2021 (a March 2022 motion was not found); Meta's 200 MW figure remains press-sourced.",
+  "verification_note": "Rijksoverheid release (2022-06-10), the 2023 draft decree (>10 ha, >=70 MW; 16 Feb 2022 cut-off) and the Eerste Kamer motion dossier confirm the rule and the land-sale position; the exemption covers two specific areas rather than whole municipalities as previously stated, the rule expressly did not cover Zeewolde, and the confirmed Senate motion is 35925 XIV H of 21 Dec 2021 (a March 2022 motion was not found); Meta's 200 MW figure remains press-sourced. See also nl-zeewolde-meta-land (same Zeewolde case).",
   "verification_status": "verified"
  },
  {
@@ -255,7 +249,7 @@
     "date": "2022-08-16"
    }
   ],
-  "gap": "The 2021 metered figure is 4.2 to 7 times the figure given to residents the same year; Microsoft's own net figure is still 2.4 to 4 times it; the 75,000 m3 component was described three different ways across statements; an earlier estimate above 100,000 m3 existed and had been denied by the municipality; the municipal document carrying the 84 million litres is itself not online, so every volume rests on press reports of documents.",
+  "gap": "The 2021 volume Microsoft reported to the municipality (84 million litres [press]; who metered it is not documented) is 4.2 to 7 times the figure given to residents the same year; Microsoft's own net figure is still 2.4 to 4 times it; the 75,000 m3 component was described three different ways across statements; an earlier estimate above 100,000 m3 existed and had been denied by the municipality; the municipal document carrying the 84 million litres is itself not online, so every volume rests on press reports of documents.",
   "confidence": "medium",
   "last_checked": "2026-10-20",
   "verified_primary": false,
@@ -297,8 +291,9 @@
    }
   ],
   "gap": "positive example: plants built and operating; the 40% waste-heat share remains a forward expectation because data-centre heat recovery begins in 2027, and no delivered-MWh figure is yet published.",
-  "confidence": "high",
-  "last_checked": "2026-10-19"
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: sole record source is the operator’s press release."
  },
  {
   "id": "fi-hamina-google-heat-seawater",
@@ -739,11 +734,11 @@
     "date": "2025-07-31"
    }
   ],
-  "gap": "EU-reported total (16.7 TWh) is only about 2.2x Ireland's CSO-metered 7.66 TWh, indicating substantial under-reporting (about 36% compliance); aggregate water (WUE) and heat-reuse (ERF) values were not published in the text sources retrieved.",
+  "gap": "The first reporting period covered about 36% of obligated operators, so its 16.7 TWh is a partial total and not comparable with any national full-year figure; aggregate water (WUE) and heat-reuse (ERF) values were not published in the text sources retrieved.",
   "confidence": "medium",
-  "last_checked": "2026-10-20",
+  "last_checked": "2026-10-22",
   "verified_primary": false,
-  "verification_note": "DG ENER page confirms the 21 Sept 2026 rating-scheme proposal, the Q2 2027 minimum-performance-standards timeline, the public dashboard and that the 2025-period report is in preparation, but gives no aggregate figures; the Publications Office page returned only title metadata and no report PDF was found, so 776 sites, 6.4 GW, 16.7 TWh, PUE 1.36, ~36% reporting and the GO/PPA shares were not confirmed from the report text.",
+  "verification_note": "DG ENER page confirms the 21 Sept 2026 rating-scheme proposal, the Q2 2027 minimum-performance-standards timeline, the public dashboard and that the 2025-period report is in preparation, but gives no aggregate figures; the Publications Office page returned only title metadata and no report PDF was found, so 776 sites, 6.4 GW, 16.7 TWh, PUE 1.36, ~36% reporting and the GO/PPA shares were not confirmed from the report text. See also eu-eed-dc-reporting-2026 (same first EED reporting period: 776 sites is the July 2025 technical report, 770 the September 2026 Commission report).",
   "verification_status": "partial"
  }
 ]

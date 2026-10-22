@@ -88,7 +88,7 @@
   "lat": 1.49,
   "lon": 103.74,
   "category": "power",
-  "record": "TNB's 2025 AGM materials state 5.9 GW of maximum demand was secured from 38 data-centre projects as of December 2024, of which 18 projects totalling 1.9 GW were 'already in the system' (commissioned under the Green Lane Pathway in 2024); a further ~1.3 GW (5 projects) was targeted by end-2025 and 'the remaining 2.7GW expected to come onstream in 2026'. ISEAS, citing a TNB report, records actual data-centre load utilisation of 405 MW (~3% of supply) in December 2024 and renewables at 8.3% of TNB output in 2023.",
+  "record": "TNB's 2025 AGM materials state 5.9 GW of maximum demand was secured from 38 data-centre projects as of December 2024, of which 18 projects totalling 1.9 GW were 'already in the system' (commissioned under the Green Lane Pathway in 2024); a further ~1.3 GW (5 projects) was targeted by end-2025 and 'the remaining 2.7GW expected to come onstream in 2026'. ISEAS, citing a TNB report, records actual data-centre load utilisation of 405 MW [press: ISEAS citing TNB] (~3% of supply) in December 2024 and renewables at 8.3% of TNB output in 2023.",
   "record_sources": [
    {
     "title": "AGM Presentation 2025 Appendix B",
@@ -621,7 +621,8 @@
   "claim_sources": [],
   "gap": "positive example: the grid operator publishes a dedicated, project-reconciled data-centre forecast; the 67 GW pipeline versus ~27% connection utilisation and a 36% cancellation rate indicates announced capacity substantially exceeds realised load.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-22",
+  "verification_note": "See also au-aemo-esoo-2026 (same AEMO 2026 ESOO)."
  },
  {
   "id": "au-nsw-sydney-dc-water",

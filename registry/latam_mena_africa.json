@@ -146,8 +146,9 @@
    }
   ],
   "gap": "Positive example: court-ordered disclosure followed by a redesign cutting stated operational water from 7,600 to 48 m³/day; no MW figure for the site is on the public record.",
-  "confidence": "high",
-  "last_checked": "2026-10-19"
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: record sources are press reports of the court orders and revised EIA."
  },
  {
   "id": "br-ons-grid-connection-pipeline",
@@ -459,8 +460,9 @@
    }
   ],
   "gap": "None documented; the Authority's consultation document itself was not retrieved.",
-  "confidence": "high",
-  "last_checked": "2026-10-19"
+  "confidence": "medium",
+  "last_checked": "2026-10-22",
+  "verification_note": "Confidence lowered from high to medium on 2026-10-22 after review: record sources are press reports (CTech, DCD); the Authority consultation document was not retrieved."
  },
  {
   "id": "za-teraco-solar-wheeling-diesel",
