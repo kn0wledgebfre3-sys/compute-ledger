@@ -211,7 +211,7 @@
   "site_or_cluster": "Alberta large loads >=75 MW under AESO interim cap and draft bring-your-own-generation rules",
   "country": "Canada",
   "operator": "AESO (multiple data center proponents)",
-  "supply_type": "system_fossil_dc_driven",
+  "supply_type": "bring_your_own",
   "resource": "AESO interim limit of 1,200 MW of large-load connections through 2028 (2025-06-04); draft BYOG bridging pool (~1.6 GW, interruptible) limited to gas-fired generation, 'renewables and hybrid facilities are not eligible for now'",
   "share_of_load": null,
   "mw": 1200,
@@ -222,14 +222,14 @@
   "alpha_note": "alpha=1 on a gas EF for any site admitted through the BYOG bridging pool (the pool is formally gas-only), alpha=0 for sites inside the 1,200 MW interim grid allocation; assign per site once AESO publishes the admitted list",
   "confidence": "medium",
   "last_checked": "2026-10-20",
-  "review_note": "Customer reported but unconfirmed; category requires a named load. Reclassified after review."
+  "review_note": "Connection policy requiring on-site supply, not a plant; restored to bring_your_own after final review."
  },
  {
   "ledger_entry_id": "ca-ab-aeso-large-load-byog-greenlight",
   "site_or_cluster": "Greenlight Electricity Centre, Sturgeon County near Gibbons (Alberta), serving an unnamed data center customer",
   "country": "Canada",
   "operator": "Pembina Pipeline / Kineticor / Morgan Stanley Infrastructure (customer reported as Meta, unconfirmed)",
-  "supply_type": "system_fossil_dc_driven",
+  "supply_type": "dedicated_fossil_unnamed_load",
   "resource": "natural gas combined cycle 932 MW (2 x Siemens SGT6-8000H, stage 1 of 1,864 MW approved), ~150 MMcf/d gas, COD 2H 2030, long-term tolling to a data center customer",
   "share_of_load": null,
   "mw": 932,
@@ -240,7 +240,7 @@
   "alpha_note": "alpha=1 with a CCGT EF for the tolling customer's load once the customer and site are identified; until then hold as an unassigned dedicated-fossil resource",
   "confidence": "medium",
   "last_checked": "2026-10-20",
-  "review_note": "Customer reported but unconfirmed; category requires a named load. Reclassified after review."
+  "review_note": "Merchant CCGT with a tolling contract to an unnamed datacenter customer (AUC-approved); not a utility system plant and the load is not named. Own category after final review."
  },
  {
   "ledger_entry_id": "ca-qc-hydro-quebec-data-centre-tariff-allocation",

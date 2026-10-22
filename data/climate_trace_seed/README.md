@@ -1,17 +1,16 @@
 # Climate TRACE handover: datacenters as a facility type
 
-Prepared 2026-10-21 by the Compute Ledger. Data CC BY 4.0. Everything here traces to a public record.
+Prepared 2026-10-21 by the Compute Ledger. Data CC BY 4.0. Everything here traces to a public record or to a file in this folder. The package was reviewed hostilely twice before sending; both reviews are included unedited (review_of_this_handover.md, review_2_final.md) with the changes made in response.
 
 | File | What it is |
 |---|---|
-| `datacenters_emissions_seed.csv` | Sites in your v5.11.0 asset-emissions column order. Emissions fields empty by design; `other1`-`other10` carry permit MW, cooling, status, source URL, operator claim, ledger gap. |
-| `datacenters_ownership_seed.csv` | Same sites, your 19-column ownership file. |
-| `ireland_sites.csv` / `.json` | 40 Irish sites from EPA licences, EU ETS permits and planning appeals; 22 located, mostly from grid references in EPA documents; 16 operating sites with permitted standby MW (licence cap and sum-of-units both carried). |
-| `ireland_regional_check.md` | The metered national total (CSO, 7,663 GWh, 2025) as the test per-site estimates must pass, worked as a table of bounds across redundancy assumptions; the earlier single-factor conclusion is withdrawn and the revision is marked. |
-| `dedicated_supply.csv` / `.json` | 43 sites or clusters: how their electricity is actually supplied; 30 rows on a regulator, court, grid-operator or statutory document, 13 on press or operator statements and flagged. Six rows reclassified after review (`review_note`). |
-| `dedicated_supply_method.md` | Categories and the alpha rule. |
-| `attribution_method.md` | The method, written for your reviewers. Your facility Scope 2 approach plus one field: documented dedicated supply. Five worked rows were drafted and withdrawn after review (see below) because they set load equal to supply MW. |
-| `review_of_this_handover.md` | An independent hostile review of the package as first drafted, unedited. Changes made in response: Ireland check rewritten as bounds; six supply rows reclassified; worked rows withdrawn; brief rewritten. |
-| `datacenters_register_backlog_unlocated.csv` | 325 register-identified sites (Virginia DEQ air permits, Texas Comptroller) awaiting permit extraction. A pipeline for this exists and has been tested on real permits. |
+| `datacenters_emissions_seed.csv`, `datacenters_ownership_seed.csv` | 96 sites in your v5.11.0 asset column order (78 with coordinates, 28 with permit MW). Emissions fields empty by design. |
+| `VIRGINIA.md`, `va_permits_resolved.csv`, `va_reread_comparison.csv`, `va_reread_decisions.csv`, `VIRGINIA_REREAD_REPORT.md` | All 183 Virginia DEQ datacenter air permits, read twice by independent methods, every disagreement resolved against the text: 182 sites, 13,973 units, 33,693 MW permitted standby. `va_permits.csv` and `va_generator_rows.csv` are the superseded first reading, kept for the record. |
+| `TEXAS.md`, `tx_permits.csv`, `tx_index_rows.csv`, `tx_unmatched_tceq_packages.csv` | 153 Comptroller-registered Texas sites against TCEQ's pending-application indexes: 17 verified matches, 12 with coordinates, and a finding that issued permits leave the public index. |
+| `ireland_sites.csv`/`.json`, `ireland_regional_check.md` | 40 Irish sites from EPA licences, ETS permits and planning appeals, 22 located from grid references in the documents; the national metered total as a table of utilisation bounds across redundancy assumptions. |
+| `dedicated_supply.csv`/`.json`, `dedicated_supply_method.md` | 43 sites or clusters: how electricity actually arrives per the record, with the operator's claim beside it. 30 rows document-grade, 13 press-only and flagged. |
+| `CLIMATE_TRACE_SERIES.md`, `climate_trace_matches.csv`, `climate_trace_matched_plants_monthly.csv`, `virginia_nearest_generation.csv`, `climate_trace_top_assets.csv` | Your 5.11.0 USA estimates (pulled 21 Oct 2026, Jan 2025 to Jul 2026) matched to the plants our dockets name, with your confidence; monthly series; and for 126 Virginia permit sites the nearest asset in your inventory. |
+| `attribution_method.md` | The method for your reviewers: your facility Scope 2 pattern plus one field, documented dedicated supply. |
+| `datacenters_register_backlog_unlocated.csv` | Register-identified sites awaiting extraction (now superseded for Virginia). |
 
-Full repository, method, sources and the ledger of 117 entries across 40 countries available on request.
+Repository with pipeline, registry of 117 entries in 40 countries, three receipts and method: https://github.com/kn0wledgebfre3-sys/compute-ledger

@@ -41,41 +41,61 @@ ol,ul{padding-left:20px} li{margin-bottom:6px}
 <p>You estimate what power plants emit. A datacenter has no chimney; its footprint is the plant that serves it, and which plant that is sits in utility dockets, air permits and licence applications. The Compute Ledger has been collecting those documents, site by site, in 40 countries. This page is what they give you, with the limits stated.</p>
 
 <h2>Ireland: a site list with permit-grade coordinates, and the test any estimate must pass</h2>
-<p>Ireland is the only country whose statistics office meters datacenter electricity nationally: <strong>7,663 GWh in 2025, 23% of metered consumption</strong> (CSO). Nobody keeps a site register, so we built one from EPA industrial-emissions licences, EU ETS permits and planning appeals: <strong>40 sites, 22 located</strong>, most of them from grid references inside the EPA documents themselves (per-stack coordinates in licence attachments, site-centre points on application forms, main-entrance references on older permits). Sixteen operating sites carry permitted standby generation: 3,830 MW thermal by licence cap, 4,279 by sum of units.</p>
+<p>Ireland is the one country we know of whose statistics office publishes a metered national datacenter electricity figure: <strong>7,663 GWh in 2025, 23% of metered consumption</strong> (CSO). Nobody keeps a site register, so we built one from EPA industrial-emissions licences, EU ETS permits and planning appeals: <strong>40 sites, 22 located</strong>, most of them from grid references inside the EPA documents themselves (per-stack coordinates in licence attachments, site-centre points on application forms, main-entrance references on older permits). Sixteen operating sites carry permitted standby generation: 3,830 MW thermal by licence cap, 4,279 by sum of units.</p>
 <p>Generators are sized to carry a site's full design load, so permitted standby bounds load from above once the redundancy design is known. That design is the uncertain factor. Under N+1 the metered total bounds utilisation of permitted capacity at roughly 0.54–0.71 and plausibly puts it at 0.3–0.5; under 2N it imposes no bound. The one site with a published meter (Microsoft DUB14/15, 111.9 GWh in 2024, campus ramping) reads 0.12–0.23 depending on how its gas and diesel layers are counted.</p>
 <div class="rev">What this gives a datacenter subsector: a located site list in a metered country, a permit-derived capacity ceiling per site, and a national total that any set of per-site estimates must sum to. What it does not give: a utilisation factor. The redundancy design has to be read from the licence operational reports, which is the next step.</div>
+
+<h2>Virginia: the permits, extracted</h2>
+<p>Virginia DEQ publishes a list of every issued datacenter air permit. On 21 October we opened all 183 permit PDFs and extracted the standby generator inventory from each, then read every permit a second time with an independent method and resolved the disagreements by hand: <strong>182 sites, 13,973 permitted standby generator units, 33,693 MW</strong>, 177 sites at high confidence, median site 129 MW, largest 1,331 MW; 180 with a site address in the resolved file, 126 geocoded. Site-average unit size runs 0.4 to 3.7 MW, median 2.5, with most units at 2 to 3 MW. The first automated reading had given 19,186 MW; the second reading found it low in 98 of 107 disagreements, traced most of the gap to one parser bug (the first row after each table header dropped) and the rest to six smaller patterns, and resolved every case against the permit text. The comparison, the resolutions and the error patterns are in the package.</p>
+<p>Dominion reported about 40 GW of datacenter capacity “in various stages of contracting” as of December 2024. Standby is sized to full design load with redundancy, so 33.7 GW permitted implies a design load of roughly 28–33 GW under N+1 and about half that under 2N; permitted is not built, and the 40 GW is one utility’s pipeline while the permits cover the state. The two figures are of the same order. That is the Ireland check in the one region where you would pilot: a public ceiling per site, from a document, that any estimate has to respect, and that was itself checked twice.</p>
+
+<h2>Your plants, our dockets</h2>
+<p>We matched your 5.11.0 asset-level estimates (USA, monthly, pulled 21 October 2026, summed over 2025) against the generators the ledger’s regulatory records name. Matched by name, within 5 km:</p>
+<div class="tabwrap"><table>
+<thead><tr><th>Your asset</th><th>Your 2025 estimate</th><th>Your confidence</th><th>What the record ties it to</th></tr></thead>
+<tbody>
+<tr><td>Chesterfield, Virginia</td><td class="n">922,444 tCO2e</td><td class="n">high</td><td>SCC order PUR-2025-00037 approving a 944 MW gas peaker here, citing datacenter load as a contributing factor; COD 2029</td></tr>
+<tr><td>Elm Road Generating Station, Wisconsin</td><td class="n">6,952,400 tCO2e</td><td class="n">high</td><td>PSC docket 6630-CE-317 approving 1,100 MW of new simple-cycle gas at this site, data-center load the stated driver; Microsoft’s 15-year contract is press-sourced</td></tr>
+<tr><td>TVA Southaven Combined Cycle, Mississippi</td><td class="n">2,173,970 tCO2e</td><td class="n">high</td><td>4 km from xAI's 41-turbine, 1.2 GW permitted plant (MDEQ, 2026); not yet in your inventory</td></tr>
+<tr><td>TVA Allen, Tennessee</td><td class="n">1,376,900 tCO2e</td><td class="n">medium</td><td>1.3 km from xAI Colossus, which ran its own turbines for a year before its 247 MW permit (Shelby County, 2025)</td></tr>
+<tr><td>Homer City, Pennsylvania</td><td class="n">0 tCO2e</td><td class="n">low</td><td>The coal plant is demolished and the 4,678 MW gas campus (PA DEP plan approval, 2025) is not yet built, so zero is expected. Your series will show it arrive.</td></tr>
+</tbody></table></div>
+<p>Your monthly series for these plants, January 2025 to July 2026, is in the package. Chesterfield drops to near zero in October and November 2025 and returns in December, a pattern consistent with a seasonal outage; whatever its cause, it is the baseline against which a new peaker’s arrival would be visible in your own data.</p>
+<p class="sub" style="margin-top:8px">Full match table with distances, method and your per-asset series in the package (climate_trace_matches.csv). One further row (Richland Parish, not yet built) has no asset, and the Susquehanna nuclear campus correctly has no CO2e match; the nearest gas asset is listed so the non-match is visible. Your per-asset confidence ratings are carried through from the export.</p>
+<p>A second file lists, for each of the 126 Virginia permit sites that have both a resolved standby MW and a geocoded address, the nearest asset in your inventory within 15 km (96 found), with its 2025 estimate, fuel and your confidence. That is context for siting, not attribution: a datacenter’s electricity comes from the grid, not from the plant next door.</p>
 
 <h2>How supply is documented when you read the dockets</h2>
 <p>For 43 sites and clusters in the ledger we recorded how electricity actually arrives: 30 rows rest on a regulator, court, grid-operator or statutory document, 13 on press or operator statements and flagged as such.</p>
 <div class="bar">
   <div style="flex:19;background:var(--grid)">grid only 19</div>
-  <div style="flex:5;background:var(--sys)">system gas 5</div>
-  <div style="flex:3;background:var(--fossil)">gas 3</div>
+  <div style="flex:3;background:var(--sys)">system gas 3</div>
+  <div style="flex:4;background:var(--fossil)">gas 4</div>
   <div style="flex:5;background:var(--clean)">clean firm 5</div>
   <div style="flex:4;background:var(--cert)">certs 4</div>
-  <div style="flex:7;background:var(--other)">other 7</div>
+  <div style="flex:8;background:var(--other)">other 8</div>
 </div>
-<div class="legend"><span style="--c:var(--grid)">no documented arrangement beyond the grid</span><span style="--c:var(--sys)">utility system gas plant with datacenter load as the stated driver</span><span style="--c:var(--fossil)">gas plant built or certified for a named load</span><span style="--c:var(--clean)">geothermal, hydro allocation, nuclear PPA</span><span style="--c:var(--cert)">renewable claim rests on certificates only</span><span style="--c:var(--other)">wheeled, bring-your-own, mixed, unpermitted</span></div>
-<p style="margin-top:14px">Three documented cases of gas built or certified for a named load (Meta Hyperion, Louisiana; Homer City, Pennsylvania; xAI Southaven, Mississippi), five more where a utility's system gas plant was approved with datacenter growth as the stated reason, and five documented clean-firm arrangements. Each row carries the document and the operator's statement about the same supply. This is the field, call it α, that your facility Scope 2 approach would need for datacenters and that no satellite produces.</p>
+<div class="legend"><span style="--c:var(--grid)">no documented arrangement beyond the grid</span><span style="--c:var(--sys)">utility system gas plant with datacenter load as the stated driver</span><span style="--c:var(--fossil)">gas plant built or certified for a datacenter load (3 named, 1 unnamed)</span><span style="--c:var(--clean)">geothermal, hydro allocation, nuclear PPA</span><span style="--c:var(--cert)">renewable claim rests on certificates only</span><span style="--c:var(--other)">wheeled, bring-your-own, mixed, unpermitted</span></div>
+<p style="margin-top:14px">Three documented cases of gas built or certified for a named load (Meta Hyperion, Louisiana; Homer City, Pennsylvania; xAI Southaven, Mississippi), one merchant gas plant contracted to an unnamed datacenter customer, three utility system gas plants approved with datacenter growth as the stated reason, and five clean-firm arrangements, of which two rest on a regulator’s or filing’s document (Susquehanna, Hydro-Québec) and three on press or company statements. Each row carries its document, its confidence and the operator’s statement about the same supply. This is the field, call it α, that your facility Scope 2 approach would need for datacenters and that no satellite produces.</p>
 
 <h2>Method, in one paragraph</h2>
 <p>Site emissions = load × [α · EF<sub>dedicated</sub> + (1 − α) · EF<sub>grid</sub>], reported as a range with a confidence rating. That is your 5.11.0 facility Scope 2 pattern with one added field. Load must come from a signal independent of the supply document (permit generator MW, interconnection MW, register IT load, footprint), never from the supply MW itself; dedicated supply counts only from the year it is physically in service; the result is Scope 2, non-additive to your power-sector rows. We drafted five worked rows and withdrew them after review because they broke the first of those rules. The method note and the review are both in the package.</p>
 
 <h2>What's in the handover</h2>
 <ol>
-  <li>96 sites in your v5.11.0 emissions and ownership column order, 78 with coordinates, 28 with permit-derived capacity, with source URL, cooling, status, operator claim and ledger gap in the <code>other</code> slots. Emissions fields empty by design.</li>
+  <li>96 sites in your v5.11.0 emissions and ownership column order (one duplicate noted), 78 with coordinates, 28 with permit-derived capacity, with source URL, cooling, status, operator claim and ledger gap in the <code>other</code> slots. Emissions fields empty by design.</li>
   <li>Ireland: the 40-site list, the coordinate method, and the metered check as a table of bounds across redundancy assumptions.</li>
   <li>The dedicated-supply column, 43 rows, each with its document and confidence.</li>
   <li>The method note.</li>
-  <li>A register backlog of 325 sites (Virginia DEQ air permits, Texas Comptroller) with a tested extraction pipeline; eight Virginia permits opened so far.</li>
-  <li>An independent hostile review of this handover, unedited, with what we changed in response.</li>
+  <li>Virginia: all 183 permits read twice by independent methods, 182 sites with resolved generator totals (33.7 GW), the comparison and every resolution, and the pipeline that produced the first reading with its defect documented.</li>
+  <li>Texas: 153 Comptroller-registered sites run against TCEQ’s pending-application indexes; 17 verified matches, 12 with coordinates. Issued permits leave the public index, which is itself a finding.</li>
+  <li>Two independent hostile reviews of this handover, unedited, with what we changed in response to each.</li>
 </ol>
 
 <div class="ask">
 <h2 style="margin-top:0">The ask</h2>
 <p>Gavin said on Lawfare in April that your database holds the world's datacenters and a hyperscaler dataset is coming. If it is still being assembled, we would like to contribute the permit-derived capacity and dedicated-supply fields, under CC BY 4.0, and keep them current. If it already covers this, tell us what it lacks and the ledger will fill that instead.</p>
-<p>A bounded first step: Northern Virginia, where the DEQ publishes every datacenter air permit. We extract the permits; you do the estimate; the method gets tested where every input is public.</p>
+<p>The Virginia permits are extracted, read twice, and in the package. The first step we propose is yours: estimate those 182 sites as ranges, with the permit MW as the ceiling, and see whether the sum respects what PJM and Dominion report. We will keep the permits current and extend the same extraction to Singapore, Johor and Amsterdam next.</p>
 </div>
 
-<p class="foot">Compute Ledger · 117 entries in 40 countries, 397 linked documents, 3 cases worked to receipt standard · data CC BY 4.0, code MIT · every figure on this page traces to a file in the attached package.</p>
+<p class="foot">Compute Ledger · 117 entries in 40 countries, 397 linked documents, 3 cases worked to receipt standard · data CC BY 4.0, code MIT · every figure on this page traces to a file in the attached package, and each file to its public document.</p>
 </div>

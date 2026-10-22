@@ -1,0 +1,115 @@
+plant,source_id,month,tco2e,mwh,capacity_mw,source_type,emissions_confidence,activity_confidence
+Chesterfield,25449267,2025-01,113000.0,262000.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-02,109000.0,252700.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-03,55970.0,129800.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-04,79980.0,185400.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-05,101400.0,235100.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-06,103100.0,238900.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-07,97100.0,225100.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-08,100600.0,233100.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-09,53330.0,123600.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-10,1349.0,3127.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-11,3715.0,8610.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2025-12,103900.0,240800.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-01,128100.0,296800.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-02,103800.0,240600.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-03,78600.0,182200.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-04,43040.0,99750.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-05,90110.0,208900.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-06,95690.0,221800.0,446.6,"gas, coal",high,high
+Chesterfield,25449267,2026-07,94530.0,219100.0,446.6,"gas, coal",high,high
+Elm Road Generating Station,25449413,2025-01,749900.0,841200.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-02,663300.0,744600.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-03,626100.0,699500.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-04,482800.0,541700.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-05,417400.0,470300.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-06,678900.0,760900.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-07,619400.0,695900.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-08,676000.0,758900.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-09,504900.0,561800.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-10,228300.0,251700.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-11,574200.0,640100.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2025-12,731200.0,820300.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-01,647500.0,728200.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-02,627700.0,702600.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-03,522300.0,589300.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-04,544100.0,612200.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-05,707900.0,793400.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-06,684600.0,766000.0,1402.6,coal,high,high
+Elm Road Generating Station,25449413,2026-07,593700.0,665900.0,1402.6,coal,medium,high
+Allen,713191,2025-01,131100.0,358700.0,1791.7,"gas, oil, coal",medium,medium
+Allen,713191,2025-02,117200.0,320700.0,1791.7,"gas, oil, coal",medium,medium
+Allen,713191,2025-03,121500.0,332400.0,1791.7,"gas, oil, coal",medium,medium
+Allen,713191,2025-04,110100.0,301200.0,1791.7,"gas, oil, coal",medium,medium
+Allen,713191,2025-05,109300.0,302900.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-06,106200.0,294300.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-07,114900.0,318500.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-08,112500.0,311700.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-09,107800.0,298500.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-10,109800.0,304000.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-11,110900.0,307000.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2025-12,125600.0,347700.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2026-01,128900.0,356800.0,1409.3,"gas, oil, coal",medium,medium
+Allen,713191,2026-02,114900.0,318700.0,1290.1,"gas, oil, coal",medium,medium
+Allen,713191,2026-03,119100.0,330300.0,1290.1,"gas, oil, coal",medium,medium
+Allen,713191,2026-04,107900.0,299300.0,1290.1,"gas, oil, coal",medium,medium
+Allen,713191,2026-05,109200.0,302800.0,1290.1,"gas, oil, coal",medium,medium
+Allen,713191,2026-06,106100.0,294200.0,1290.1,"gas, oil, coal",medium,medium
+Allen,713191,2026-07,117200.0,320500.0,1290.1,"gas, oil, coal",medium,medium
+TVA Southaven Combined Cycle,25456608,2025-01,220400.0,543500.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-02,201500.0,496900.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-03,221500.0,546300.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-04,189600.0,467600.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-05,42070.0,103800.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-06,195000.0,480900.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-07,215300.0,531000.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-08,214700.0,529400.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-09,169500.0,418100.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-10,206200.0,508500.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-11,109900.0,271100.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2025-12,188300.0,464300.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-01,202300.0,499000.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-02,168100.0,414700.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-03,198200.0,488700.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-04,148200.0,365400.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-05,188100.0,463900.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-06,203000.0,500700.0,903.9,gas,high,high
+TVA Southaven Combined Cycle,25456608,2026-07,174400.0,430200.0,903.9,gas,high,high
+Homer City Generating Station,25449149,2025-01,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-02,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-03,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-04,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-05,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-06,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-07,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-08,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-09,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-10,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-11,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2025-12,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-01,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-02,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-03,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-04,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-05,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-06,0.0,0.0,0.0,coal,low,high
+Homer City Generating Station,25449149,2026-07,0.0,0.0,0.0,coal,low,high
+Moxie Freedom Generation Plant,25457064,2025-01,116300.0,336200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-02,104000.0,300500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-03,107800.0,311500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-04,97640.0,282200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-05,98780.0,285500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-06,95950.0,277400.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-07,103800.0,300200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-08,101600.0,293800.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-09,97310.0,281300.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-10,99100.0,286500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-11,100100.0,289200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2025-12,113300.0,327600.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-01,116300.0,336200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-02,104000.0,300500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-03,107800.0,311500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-04,97640.0,282200.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-05,98780.0,285500.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-06,95950.0,277400.0,1105.0,gas,medium,medium
+Moxie Freedom Generation Plant,25457064,2026-07,103800.0,300200.0,1105.0,gas,medium,medium

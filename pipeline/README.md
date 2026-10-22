@@ -180,3 +180,7 @@ pipeline/
     seed_sites.json              copy of registry/seed_sites.json (v1, 56 rows)
   out_fixture/                   result of ./run_all.sh --fixture
 ```
+
+## Known defect in the first reading (2026-10-21), and the resolved figures
+
+An independent second read of all 183 Virginia permits (review/va_reread/) found the regex extractor low in 98 of 107 disagreements. Dominant cause: the first data row after each equipment-table header is dropped (70 permits). Others: parenthetical model years parsed as unit counts; reference-ID ranges ("ENG46 – ENG61") not expanded; de-rate and alternate-model lines counted as units. The pipeline's 19,186 MW is superseded by the resolved 33,693 MW in data/climate_trace_seed/va_permits_resolved.csv. The extractor has not yet been patched; until it is, treat its Virginia MW output as a first pass to be checked, and use the resolved file.

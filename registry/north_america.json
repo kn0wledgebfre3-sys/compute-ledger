@@ -51,8 +51,14 @@
   "lat": 39.04,
   "lon": -77.49,
   "category": "fuel",
-  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days.",
+  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days. On 2026-10-21 all 183 permits on DEQ's statewide datacenter air-permit list were read twice by independent methods and the disagreements resolved against the permit text: 182 sites, 13,973 permitted standby generator units, 33,693 MW (177 sites high confidence; median site 129 MW; largest 1,331 MW; per-unit 1.5-3.7 MW).",
   "record_sources": [
+   {
+    "title": "Virginia DEQ issued air permits for data centers (statewide list) and permit PDFs, extracted by the Compute Ledger pipeline",
+    "url": "https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/pipeline",
+    "publisher": "Virginia DEQ via Compute Ledger",
+    "date": "2026-10-21"
+   },
    {
     "title": "DEQ Guidance Memo APG-578: Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages",
     "url": "https://townhall.virginia.gov/l/GetFile.cfm?File=C:\\TownHall\\docroot\\GuidanceDocs_Proposed\\440\\GDoc_DEQ_8407_20251003.pdf",
@@ -87,9 +93,9 @@
     "date": "2025-12-17"
    }
   ],
-  "gap": "Generator counts in the public record come from third-party tallies of DEQ permits; no consolidated DEQ figure for total permitted backup MW was located.",
+  "gap": "Generator counts in the public record previously came from third-party tallies; a full extraction of the DEQ list, read twice, gives a consolidated figure of about 33.7 GW permitted standby across 182 sites, of the same order as the roughly 40 GW Dominion reports as contracted.",
   "confidence": "high",
-  "last_checked": "2026-10-20",
+  "last_checked": "2026-10-21",
   "verified_primary": true,
   "verification_note": "DEQ memo APG-578 (Town Hall PDF) confirms the 14-calendar-day planned-outage provision but is dated 2025-10-01, not 2025-09-30 as in press; JLARC report page and summary confirm <4% of regional NOx and ~5,050 MW; generator counts remain third-party (PEC) tallies, not DEQ figures.",
   "verification_status": "verified"

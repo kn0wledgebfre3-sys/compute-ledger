@@ -63,3 +63,8 @@ Dedicated fossil capacity with a regulator or permit document behind it (α = 1 
 - The Southaven 1.2 GW permit and the Wisconsin Paris/Red Oak Ridge terms were not retrieved from the regulator; figures are press-sourced inside otherwise documented rows.
 - No row has an hourly-matching record. Every α above 0 is a capacity-and-contract judgement, not a metered share.
 - `mw` mixes plant MW, contracted MW, connected MW and metered load; the `resource` string says which. Do not sum the column.
+
+
+## Revision after two hostile reviews (2026-10-21)
+
+Categories now: {'system_fossil_dc_driven': 3, 'grid_only': 19, 'on_site_fossil_unpermitted': 1, 'dedicated_fossil': 3, 'mixed': 2, 'dedicated_clean_firm': 5, 'bring_your_own': 2, 'dedicated_fossil_unnamed_load': 1, 'certificates_only': 4, 'wheeled_renewable': 3}. Added `system_fossil_dc_driven` (a utility system plant approved with datacenter load as the stated driver; alpha=0 at site level) and `dedicated_fossil_unnamed_load` (a merchant plant contracted to a datacenter customer the record does not name). Six rows were reclassified because the category rested on press or inference under this note's own strictness rule; each carries a `review_note`. Of the five `dedicated_clean_firm` rows, two rest on a regulator or filing (Susquehanna, Hydro-Québec) and three on press or company statements (Nevada, EcoCloud, Microsoft/G42 Olkaria) and are confidence low; the honest count of documented clean-firm supply is two.
