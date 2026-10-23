@@ -53,7 +53,7 @@
   ]
  },
  "benchmarking": {
-  "rows": 218,
+  "rows": 263,
   "jurisdictions": {
    "New York City": [
     "2023",
@@ -87,6 +87,12 @@
    "Cambridge MA": [
     "2023",
     "2024"
+   ],
+   "Boston, MA": [
+    "2023 (BERDO reporting year as labelled by the City; calendar year of usage not stated on the layer)"
+   ],
+   "Kansas City, MO": [
+    "2023 (submission_year)"
    ]
   },
   "largest_kwh": [
@@ -119,6 +125,13 @@
     103964027.7
    ],
    [
+    "Boston, MA",
+    "2023 (BERDO reporting year as labelled by the City; calendar year of usage not stated on the layer)",
+    "200 clarendon st, Boston, MA 02116",
+    "Office",
+    90192603.3
+   ],
+   [
     "New York City",
     "2023",
     "60 Hudson Street",
@@ -138,13 +151,6 @@
     "2001 6TH AVE",
     "Data Center (largestpropertyusetype=Data Center)",
     77368680.0
-   ],
-   [
-    "Seattle",
-    "2025",
-    "2001 6TH AVE",
-    "Data Center (largestpropertyusetype=Data Center)",
-    73461520.0
    ]
   ]
  },

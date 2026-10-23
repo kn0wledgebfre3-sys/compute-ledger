@@ -71,3 +71,91 @@ Compiled 2026-10-23. Output table: `benchmarking_datacenters.csv` (218 building-
 - **Austin (ECAD)**: only 2013-2016 "ECAD Commercial Reported Data" datasets found on data.gov; recent years not located.
 - **Pittsburgh**: only compliance pages found; no disclosure dataset located.
 - **Kansas City, St Louis, Orlando**: not checked (tool budget exhausted).
+
+
+# Second pass (Boston, Kansas City; downloads needed)
+
+# Benchmarking portals, pass 2 — route notes (2026-10-23)
+
+Method: WebFetch/WebSearch only (shell has no internet). Every URL below was requested exactly as written.
+Observed fetcher behaviour (affects reproducibility): (a) requests over ~250 characters appear to be truncated at the query string; (b) the fetcher caches by path and ignores the query string for ~15 min, so a second query to the same `/query` or `.json` path returned the first response. Where a route is marked "query endpoint returned the HTML form", that is most likely this cache effect, not a server refusal; re-run the exact URL from a clean client.
+
+## Boston, MA — BERDO  (ROWS: 33)
+- Route that worked: ArcGIS Online feature service behind the City's "BERDO Reporting 2023 (Static)" web app.
+  - Service: https://services.arcgis.com/sFnw0xNflSi8J0uh/ArcGIS/rest/services/berdo_static_2023/FeatureServer/0
+  - Item metadata (boston.maps.arcgis.com search): id 3e2cf950eadb4811a90e7601a86b67c1, created 2023-11-28, snippet "BERDO reporting data for 2023 (static) used in the Building Energy Reporting web application for 2023".
+  - Query used: https://services.arcgis.com/sFnw0xNflSi8J0uh/ArcGIS/rest/services/berdo_static_2023/FeatureServer/0/query?where=All_Property_Types%20LIKE%20%27%25Data%20Center%25%27&outFields=*&returnGeometry=false&f=json  -> 33 features.
+- Fields: BERDO_ID, Tax_Parcel_ID, Property_Owner_Name, Building_Address, Building_Address_City, Building_Address_Zip_Code, Reported_Gross_Floor_Area__Sq_F, Largest_Property_Type, All_Property_Types, Site_EUI__Energy_Use_Intensity_ (kBtu/ft2), Energy_Star_Score, Total_Site_Energy_Usage__kBtu_, Natural_Gas_Usage__kBtu_, Electricity_Usage__kBtu_, Renewable_System_Electricity_Us, District_Hot_Water_Usage__kBtu_, District_Chilled_Water_Usage__k, District_Steam_Usage__kBtu_, Fuel_Oil_* , Propane, Diesel, Kerosene, Water_Usage_Intensity__Gallons_, Compliance_Status, BERDO_Report_Status, Estimated_Total_GHG_Emissions__ (kgCO2e), Notes. No property-name field (owner name used).
+- Units: electricity is published in kBtu, not kWh.
+- Threshold (dataset page): non-residential >= 20,000 sq ft; residential >= 15 units. Data Center is a reportable Portfolio Manager type; 9 rows have Largest_Property_Type = Data Center (all Verizon/New England Tel & Tel central offices), the rest list Data Center among All_Property_Types.
+- Year: service is labelled "2023"; calendar year of usage not stated on the layer. (Boston's file naming on data.boston.gov labels by reporting year; e.g. the "2020 Reported Energy and Water Metrics" file is named berdo-disclosure-for-calendar-year-2019.xlsx.)
+- Latest two years are NOT on any feature service found: the 2025 and 2026 disclosures exist only as XLSX ("download needed"):
+  - 2026 Reported Energy and Water Metrics: https://data.boston.gov/dataset/b09a8b71-274b-4365-9ce6-49b8b44602ef/resource/c6edf41e-eb53-45a4-9c52-837b865bf19f/download/2026-berdo-data-disclosure-9.30.26.xlsx
+  - 2025 Reported Energy and Water Metrics: https://data.boston.gov/dataset/b09a8b71-274b-4365-9ce6-49b8b44602ef/resource/911db0b1-437f-43ba-86bb-860cc1cd9319/download/2025-reported-energy-and-water-metrics.xlsx
+  - 2024 Reported Energy and Water Metrics: https://data.boston.gov/dataset/b09a8b71-274b-4365-9ce6-49b8b44602ef/resource/87521565-7f15-4b8d-a225-ac4df9e3f309/download/2024-reported-energy-and-water-metrics-1.xlsx
+  - 2024 Detailed Data Dictionary: https://data.boston.gov/dataset/b09a8b71-274b-4365-9ce6-49b8b44602ef/resource/33c4897d-59e7-4c23-9f96-4d2fbe4e8b7c/download/2024-detailed-data-dictionary.xlsx
+- Blocked: data.boston.gov/api/3/action/* (package_search, datastore_search) -> robots_disallowed. The dataset HTML page (https://data.boston.gov/dataset/b09a8b71-274b-4365-9ce6-49b8b44602ef) IS readable. Resource page shows no "Data API" button, so datastore status is unknown.
+- Other services on the same AGOL org (listed, not queried): berdo_static_data_23_reporting_map (2022 static, published 2023-07-06; query returned the HTML form, see fetcher note), BERDO_Reporting_2021 (CY2020 data), BERDO2020_dissolve_final2 (CY2019), BERDO_2024_Mapped_DRAFT_02272026_Export (compliance flags only, no energy fields).
+- 1 Summer St: not among the 33 Data-Center-tagged rows.
+
+## Kansas City, MO  (ROWS: 12; 2 with metrics, 10 exempt/no-submittal)
+- Route: Socrata. Catalog: https://data.kcmo.org/api/views/metadata/v1?search=energy lists
+  - p92b-cm6v "2023 Kansas City Energy and Water Consumption Benchmarking for Community Buildings" (dataUpdatedAt 2025-04-01)
+  - 8ygr-6znk "2023 Kansas City Energy and Water Consumption Benchmarking for City Buildings" (no Data Center rows in first 3; not filtered — cache note above)
+- Query: https://data.kcmo.org/resource/p92b-cm6v.json?primary_type=Data%20Center&$limit=100  -> 12 records (also confirmed via https://data.kcmo.org/resource/p92b-cm6v.csv?primary_type=Data%20Center&$limit=100 and https://data.kcmo.org/api/id/p92b-cm6v.json?primary_type=Data%20Center&$limit=100).
+- Fields: benchmarking_id, building_address, building_city, building_state, building_zip, building_name, primary_type, gross_floor_area, submission_status_7, x_coordinate, y_coordinate, owner_company, compliance_required, submission_year, energy_star_score, weather_normalized_site_eui, direct_ghg_emissions_metric, indirect_ghg_emissions_metric, weather_normalized_source, indoor_water_use_all_water, outdoor_water_use_all_water, water_use_all_water_sources.
+- No electricity, gas or site-energy columns are published -> electricity_kwh = "not found" for every KC row. Threshold 50,000 sq ft (kcmo.gov). Latest year found: submission_year 2023. Data Center is a reportable type.
+- Note: 8 of 12 Data Center rows are AT&T/Bank of America/others marked "exempt" or "noSubmittal".
+
+## California statewide (CEC AB 802)  — download needed
+- CEC program page (readable): https://www.energy.ca.gov/programs-and-topics/programs/building-energy-benchmarking-program
+  - Threshold: disclosable buildings > 50,000 sq ft GFA; commercial since 2018, multifamily (>=17 utility accounts) since 2019. Latest disclosure: 2025.
+  - Files (format not stated on page; previous pass found xlsx): 2025 https://www.energy.ca.gov/media/13355 ; 2024 https://www.energy.ca.gov/media/12019 ; 2023 https://www.energy.ca.gov/media/10811 ; 2022 https://www.energy.ca.gov/media/8751 ; 2021 https://www.energy.ca.gov/media/7213 ; 2020 https://www.energy.ca.gov/media/6032 ; 2019 https://www.energy.ca.gov/media/4639 ; 2018 https://www.energy.ca.gov/media/4640
+  - Tableau dashboard (interactive, not fetchable as data): https://tableau.cnra.ca.gov/t/CNRA_CEC_PUBLIC/views/EnergyEfficiencyBenchmarkingDashboard/BenchmarkingDashboard
+- data.ca.gov CKAN API: robots_disallowed. No CSV twin found. The public-disclosure subpage returned client_error. Page says nothing about data centers.
+
+## Ontario EWRB — download needed
+- data.ontario.ca API: robots_disallowed. Mirror host data2.ontario.ca: dataset HTML page readable, API path returned client_error.
+- Dataset page: https://data2.ontario.ca/dataset/energy-and-water-usage-of-large-buildings-in-ontario  (also on open.canada.ca: https://open.canada.ca/data/en/dataset/0eab2faf-6186-4a5b-8de1-b15872943c24)
+  - Threshold: buildings > 100,000 sq ft. Years published: 2018–2022 (calendar years). Latest: 2022 English XLSX, 1.6 MiB, updated 2024-02-07. All resources are XLSX (EN/FR per year + data dictionary). Resource ids seen in search: e7292ae5-90b9-4c6c-bd7b-75f4fab48142, 980458c7-81df-4ffe-8543-71907583cc87, 74c0e959-9683-4263-ba24-d047acfef681, 5a352124-2c08-497d-ab44-b819942c3652, 61fed2e6-155e-48ab-b92f-e75c956a68d4, 5e273fb6-445f-4d50-bdb8-9c36e995b23f, bda9443d-dd2b-427f-b239-03820fa2ca3d, 065a6821-229e-4bbf-b78e-a2f63d4fd4d9 (year-to-id mapping not readable from the page; resource page pattern https://data2.ontario.ca/dataset/energy-and-water-usage-of-large-buildings-in-ontario/resource/<id>).
+  - Property types follow Portfolio Manager categories (page text), so Data Center is reportable; not verified in data.
+  - Toronto target addresses (151 Front St W, 905 King St W, 45 Parliament St, 20 Pullman Ct) not checked — no machine-readable route.
+
+## Denver, CO — Energize Denver — token required
+- Public FeatureServer metadata is readable: https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/2025_Master_Data_Set/FeatureServer (table 0 "2025_Master_Data_Set").
+- Fields: Building_ID, Compliance_Status, Property_Name, Street, Zipcode, Year_Built, Master_Property_Type, Primary_Property_Type_EPA_Calculated, Master_Sq_Ft, Reporting_Year, Energy_Star_Score, Site_Energy_Use__kBtu_, Site_EUI__kBtu_sq_ft_, Electricity_Use_Grid_Purchase_and_Onsite__KWh_, Electricity_Use___Grid_Purchase__KWh_, Electricity_Use_Onsite_Renewable__kWh_, Natural_Gas_Use__kBtu_, District_Steam_Use__kBtu_, District_Chilled_Water_Use__kBtu_, Total_GHG_Emissions__Metric_Tons_Co2e_, Baseline_EUI, target EUIs, MAI fields.
+- Query https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/2025_Master_Data_Set/FeatureServer/0/query?where=Primary_Property_Type_EPA_Calculated%3D%27Data%20Center%27%20OR%20Master_Property_Type%3D%27Data%20Center%27&outFields=*&f=json&resultRecordCount=100  -> error 499 "Token Required".
+- denvergov.org/opendata search: robots_disallowed. No CSV found. 910 15th St / 1500 Champa St not checked.
+
+## Portland, OR — download needed (public layer has no kWh)
+- Public ArcGIS Server layers (metadata readable):
+  - https://www.portlandmaps.com/arcgis/rest/services/Public/BPS_ReadOnly/MapServer/48 "Commercial Building Energy Performance Reporting Records" (current year)
+  - https://www.portlandmaps.com/arcgis/rest/services/Public/BPS_ReadOnly/MapServer/64 "... Reporting Archive" (has reporting_year)
+  - Fields: Property_Name, Site_Address, Site_Zip, Year_Built, Floor_Area__sf_, property_type, ENERGY_STAR_Score, Site_EUI__kBtu_sf_, site_eui_weather, Source_EUI__kBtu_sf_, source_eui_weather, electric_generated, emissions (MtCO2e), Verified, generalizedUseType, property_notes. NO electricity/gas consumption fields.
+  - Every /query request (several encodings, MapServer and FeatureServer paths) returned the HTML query form — see fetcher note; re-run from a clean client: .../MapServer/64/query?where=property_type%3D%27Data%20Center%27&outFields=*&returnGeometry=false&f=json
+- Threshold: 20,000 sq ft report; City publishes metrics for >= 50,000 sq ft. Latest: 2025 results posted.
+- Spreadsheets (Excel): 2025 https://www.portland.gov/bps/climate-action/energy-reporting/documents/2025-energy-performance-information-individual/download ; 2024 https://www.portland.gov/bps/climate-action/energy-reporting/documents/2024-energy-performance-information-individual/download ; 2023 https://www.portland.gov/bps/climate-action/energy-reporting/documents/2023-energy-performance-information-individual/download
+- Pittock Block (921 SW Washington St) not checked.
+
+## Minneapolis, MN — PDF only / no open-data layer found
+- opendata.minneapolismn.gov search API (api/search/v1 and hub api/v3/datasets?q=benchmarking) returned no Minneapolis benchmarking dataset. data.minneapolismn.gov catalog API: client_error.
+- City publishes PDFs: 2023 private buildings https://www.minneapolismn.gov/media/-www-content-assets/documents/2023-Energy-Benchmarking-Report-private-building-data.pdf ; 2023 public buildings https://www.minneapolismn.gov/media/-www-content-assets/documents/2023-Energy-Benchmarking-Report-public-building-data.pdf  (download needed).
+- Minnesota statewide program map: https://map.benchmarkingmn.org/ (JS app; no data endpoint visible in HTML). 511 11th Ave S not checked.
+
+## Pittsburgh, PA — no building-level disclosure found
+- data.wprdc.org API: robots_disallowed. Only WPRDC energy dataset surfaced via data.gov harvest: "Municipal Building Energy Usage" 2009-2014 (139 municipal buildings), CSV https://data.wprdc.org/dataset/7b8896c5-867d-428d-a2e3-bdb732655846/resource/90e87a5c-0cdd-4534-ab84-0cc523b110f5/download/municpal-building-energy-use-2009-2014.csv — not the benchmarking ordinance disclosure. Ordinance pages at pittsburghpa.gov found; no public dataset link found.
+
+## St. Louis, MO — no public dataset found
+- Office of Building Performance page (https://www.stlouis-mo.gov/government/departments/public-safety/building/building-performance/index.cfm): threshold 50,000 sq ft; no data/map/download links on page.
+
+## Salt Lake City, UT — no public dataset found
+- Elevate Buildings page (https://www.slc.gov/sustainability/elevate-buildings/): links only to a guide PDF, the Portfolio Manager data-request (2025 data) and a Building-ID lookup (https://buildingbenchmark.slc.gov/). No disclosure dataset/map found.
+
+## Statewide programs
+- Colorado (energyoffice.colorado.gov/bpc): covered buildings >= 50,000 sq ft; 2026 reporting window Jul 1–Nov 1; no public building-level data linked. (Denver data is the only Colorado building-level source found; token-gated.)
+- Maryland (MDE BEPS): search surfaced only guidance PDFs; no statewide building-level dataset found. "2024 Energy Benchmarking All Sites" on data.gov is Montgomery County (already covered in pass 1).
+- Washington State (Commerce Clean Buildings): search surfaced guides and legislation only; no statewide building-level dataset found (Seattle city dataset already covered).
+- New Jersey (njcleanenergy.com/benchmarking): page lists no public dataset, threshold or years; no building-level disclosure found.
+
+## Not reached this pass (budget)
+Atlanta, Austin, Orlando, Los Angeles EBEWE, San Jose, Boston 1 Summer St specifically, Toronto addresses specifically.

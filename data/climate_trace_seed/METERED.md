@@ -1,6 +1,6 @@
 # Metered load and actual generator use: what regulators and public utilities hold
 
-Added 2026-10-23. Everything below is a figure a regulator or a public utility published; the ledger converts units and does nothing else. Files: `ireland_aer_metered.csv`, `va_nei_generator_emissions.csv`, `benchmarking_datacenters.csv`, `public_power_loads.csv`, `metered_summary.json`. Built by `pipeline/build_metered.py` from the transcriptions in `sites/metered/`, which carry the document URL on every row.
+Added 2026-10-23. Everything below is a figure a regulator or a public utility published; the ledger converts units and does nothing else. Files: `ireland_aer_metered.csv`, `va_nei_generator_emissions.csv`, `benchmarking_datacenters.csv`, `public_power_loads.csv`, `va_datacenter_class_demand.csv`, `metered_summary.json`. Built by `pipeline/build_metered.py` from the transcriptions in `sites/metered/`, which carry the document URL on every row.
 
 ## Ireland: eleven licensed installations, metered, two years
 
@@ -53,7 +53,7 @@ Germany's datacenter register (EnEfG §13 and §14, published 14 August 2026) sh
 
 ## City benchmarking laws: metered electricity for urban datacenters
 
-Cities with building energy-disclosure ordinances publish each large building's metered energy by address, with its ENERGY STAR property type; "Data Center" is one type. `benchmarking_datacenters.csv` holds 218 building-years from eight portals (New York City Local Law 84, San Francisco, Seattle, Chicago, Washington DC, Philadelphia, Cambridge MA, Montgomery County MD), each row with the query that returned it. Largest, in kWh as published:
+Cities with building energy-disclosure ordinances publish each large building's metered energy by address, with its ENERGY STAR property type; "Data Center" is one type. `benchmarking_datacenters.csv` holds 263 building-years from ten portals (New York City Local Law 84, San Francisco, Seattle, Chicago, Washington DC, Philadelphia, Boston, Cambridge MA, Montgomery County MD, Kansas City), each row with the query that returned it. Largest, in kWh as published:
 
 | Building | City | Type as filed | Electricity 2023 | Electricity 2024 | 2025 |
 |---|---|---|---|---|---|
@@ -64,4 +64,19 @@ Cities with building energy-disclosure ordinances publish each large building's 
 | 375 Pearl Street | New York | Office, whole building | 39.7 GWh | 41.3 GWh | |
 | 365 Main Street | San Francisco | Data Center | 30.6 GWh | 29.0 GWh | 28.6 GWh |
 
-Two rows (200 Paul Avenue 2024 and 60 Hudson Street 2023) were re-read directly from the portals and matched. Traps: most rows typed "Data Center" in New York and Philadelphia are telephone central offices; the carrier hotels (111 8th, 375 Pearl, 85 10th, 325 Hudson) are typed Office and report the whole building; Chicago and Philadelphia publish kBtu only, left unconverted; 350 East Cermak (Chicago) reports 1,114 million kBtu of electricity for 2022 and is absent from the 2023 file; New York's 2024 row for 60 Hudson carries the address "56 Hudson Street". No jurisdiction was found to exempt datacenters, but California's statewide disclosure (which would cover Santa Clara) is an xlsx download not read here, and Boston, Ontario, Denver, Portland, San Jose and Minneapolis need a browser or a download; Los Angeles publishes compliance status only.
+Two rows (200 Paul Avenue 2024 and 60 Hudson Street 2023) were re-read directly from the portals and matched. Traps: most rows typed "Data Center" in New York and Philadelphia are telephone central offices; the carrier hotels (111 8th, 375 Pearl, 85 10th, 325 Hudson) are typed Office and report the whole building; Chicago and Philadelphia publish kBtu only, left unconverted; 350 East Cermak (Chicago) reports 1,114 million kBtu of electricity for 2022 and is absent from the 2023 file; New York's 2024 row for 60 Hudson carries the address "56 Hudson Street". Boston's 2023 layer publishes kBtu and its nine rows typed Data Center are telephone exchanges (6 Bowdoin Square 26.9 million kBtu); Kansas City publishes EUI and emissions without kWh. No jurisdiction was found to exempt datacenters, but California's statewide disclosure (which would cover Santa Clara), Ontario's register (Toronto), Boston's 2025 and 2026 files and Portland's are xlsx downloads that need a browser (listed in `review/BROWSER_FETCH_LIST.csv`); Denver's feature service requires a token; Los Angeles publishes compliance status only; Pittsburgh, St Louis, Salt Lake City, Colorado, Maryland, Washington State and New Jersey have no building-level public file yet.
+
+## Virginia: the demand the utilities file
+
+No SCC or PJM filing read gives Virginia datacenter energy in GWh; what the utilities file is demand. `va_datacenter_class_demand.csv` holds 62 figures with their documents. The ones that matter for the pilot:
+
+| Source | Figure |
+|---|---|
+| Dominion, 20-year datacenter forecast to PJM, 29 Sep 2026 | Billing demand 2,767 MW (2022), 3,183 (2023), 3,636 (2024), 4,237 MW (2025), 4,838 forecast (2026); "55 discreet data center companies connected"; "Approximately 500 data center metered accounts"; "Data center billing peak load as of August 2026 is 4.8 GW"; "Approximately 54GW of capacity under contract (ELOA, CLOA, ESA)" |
+| Dominion, letter to PJM, 6 Jan 2026 | "a 2025 coincident peak of 4 GW"; 47 GW under contract (9.8 ESA, 7.1 CLOA, 30.1 ELOA) |
+| Dominion, 2025 IRP update to the SCC (PUR-2025-00184) | 47,045 MW contracted at end-July 2025; 15 campus connections (977 MW) in 2024, 8 (561 MW) in 2025 |
+| Dominion interrogatory answers quoted in PEC testimony, PUR-2025-00058 | 51 datacenter customers, 3,583 MW combined demand in 2024; load factor 92 to 93%; datacenters sit in classes GS-3 and GS-4, so no class line is datacenters alone |
+| NOVEC, PJM submission, 29 Sep 2026 | 75% of energy sales (Aug 2025 to Jul 2026); 88 buildings, about 1,750 MW; coincident peak 1,384 MW in 2025 |
+| Dominion 10-K for 2025 (company statement) | datacenters 28% of Virginia Power's electricity sales in 2025, 26% in 2024 |
+
+Against the permits: about 5.6 GW drew power in 2025 (Dominion billing demand plus NOVEC coincident peak; Rappahannock reports no historical datacenter load), 33.7 GW is permitted as standby, and 47 to 54 GW is under contract. Not read: the SCC's final orders in PUR-2025-00058 and PUR-2024-00184 (the site refuses automated reading), PJM's DOM-zone adjustment tables (xlsx), and FERC Form 1 page 304, which would give GS-4 MWh.

@@ -38,9 +38,9 @@
     "date": "2025"
    }
   ],
-  "gap": "Dominion reported about 40 GW of datacenter capacity 'in various stages of contracting' (December 2024, company statement via DCD); the SCC's approval order calls datacenter development 'not an insignificant contributing factor' but gives no datacenter MW for the need the plant serves.",
+  "gap": "Dominion reported about 40 GW of datacenter capacity 'in various stages of contracting' (December 2024, company statement via DCD); its 2025 IRP update later filed 47,045 MW under contract at end-July 2025 and its September 2026 PJM submission 'approximately 54GW'. The SCC's approval order calls datacenter development 'not an insignificant contributing factor' but gives no datacenter MW for the need the plant serves.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "us-va-loudoun-diesel-backup-generators",
@@ -100,9 +100,9 @@
     "date": "2025-12-17"
    }
   ],
-  "gap": "DEQ publishes the permits but no consolidated total. The ledger's two-reading extraction gives about 33.7 GW of permitted standby across 182 permits. Standby is sized to design load with redundancy, so this implies roughly 28–33 GW of design load under N+1 and about 17 GW under 2N. Dominion reported about 40 GW of datacenter capacity 'in various stages of contracting' as of December 2024: one utility's pipeline, set against a statewide permit list. The two figures are of the same order.",
+  "gap": "DEQ publishes the permits but no consolidated total. The ledger's two-reading extraction gives about 33.7 GW of permitted standby across 182 permits. Standby is sized to design load with redundancy, so this implies roughly 28–33 GW of design load under N+1 and about 17 GW under 2N. What the utilities filed as actually drawing power in 2025 is about 5.6 GW (Dominion 4,237 MW billing demand, NOVEC 1,384 MW coincident peak), with 47 to 54 GW under contract: the permits describe what is planned (see us-va-dominion-datacenter-demand-filed-2026).",
   "confidence": "high",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "DEQ memo APG-578 (Town Hall PDF) confirms the 14-calendar-day planned-outage provision but is dated 2025-10-01, not 2025-09-30 as in press; JLARC report page and summary confirm <4% of regional NOx and ~5,050 MW. The ~9,000 generator count is a press-reported PEC tally, superseded by the 2026-10-21 extraction (13,973 units). The extraction is the ledger's own reading of the DEQ permits and is documented in the re-read files; it is not covered by this check.",
   "verification_status": "verified"
  },
@@ -1356,13 +1356,13 @@
  {
   "id": "us-city-benchmarking-datacenter-metered-electricity",
   "country": "United States",
-  "region": "New York, San Francisco, Seattle, Chicago, Washington DC, Philadelphia",
+  "region": "New York, San Francisco, Seattle, Chicago, Washington DC, Philadelphia, Boston",
   "site_or_subject": "Metered annual electricity of urban datacenters under building energy-disclosure laws",
   "operator": "Google (111 8th Avenue), Digital Realty (200 Paul Avenue), 60 Hudson Street and 2001 6th Avenue carrier hotels, and others",
   "lat": 40.74,
   "lon": -74.0,
   "category": "power",
-  "record": "City benchmarking ordinances publish each large building's metered energy by address with its property type. New York's Local Law 84 data give 60 Hudson Street (typed Data Center) 87.2 GWh of grid electricity in 2023 and 85.5 GWh in 2024, and 111 8th Avenue (typed Office, whole building, with a datacenter sub-use of about 530,000 to 615,000 sq ft) 148.1 GWh in 2023 and 130.8 GWh in 2024. San Francisco's disclosure gives 200 Paul Avenue (Digital Realty) 112.4 GWh in 2023, 111.4 in 2024 and 104.0 in 2025. Seattle's gives the Westin Building Exchange 77.4 GWh in 2024 and 73.5 in 2025. Chicago's gives 350 East Cermak 1,114 million kBtu of electricity for 2022 (kBtu only; absent in 2023). In all, 218 building-years from eight portals are in the handover file, each with its query.",
+  "record": "City benchmarking ordinances publish each large building's metered energy by address with its property type. New York's Local Law 84 data give 60 Hudson Street (typed Data Center) 87.2 GWh of grid electricity in 2023 and 85.5 GWh in 2024, and 111 8th Avenue (typed Office, whole building, with a datacenter sub-use of about 530,000 to 615,000 sq ft) 148.1 GWh in 2023 and 130.8 GWh in 2024. San Francisco's disclosure gives 200 Paul Avenue (Digital Realty) 112.4 GWh in 2023, 111.4 in 2024 and 104.0 in 2025. Seattle's gives the Westin Building Exchange 77.4 GWh in 2024 and 73.5 in 2025. Chicago's gives 350 East Cermak 1,114 million kBtu of electricity for 2022 (kBtu only; absent in 2023). In all, 263 building-years from ten portals (adding Boston, in kBtu, and Kansas City, EUI only) are in the handover file, each with its query.",
   "record_sources": [
    {
     "title": "Energy and Water Data Disclosure for Local Law 84 (dataset 5zyy-y8am), rows for 60 Hudson Street",
@@ -1395,6 +1395,75 @@
   "confidence": "high",
   "verification_status": "verified",
   "verification_note": "The New York and San Francisco rows named here were re-read from the portals on 2026-10-23 and match; New York's electricity field is confirmed kWh by its kBtu companion field (ratio 3.412). Other rows carry their query URL in data/climate_trace_seed/benchmarking_datacenters.csv.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-va-dominion-datacenter-demand-filed-2026",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Virginia datacenter demand as filed by the utilities: Dominion's and NOVEC's PJM load-forecast submissions, Dominion's IRP update and biennial review",
+  "operator": "Dominion Energy Virginia; Northern Virginia Electric Cooperative",
+  "lat": 38.9,
+  "lon": -77.4,
+  "category": "power",
+  "record": "Dominion's 20-year datacenter forecast filed with PJM's Load Analysis Subcommittee on 29 September 2026 gives datacenter billing demand of 2,767 MW (2022), 3,183 (2023), 3,636 (2024), 4,237 MW (2025), 4,838 forecast for 2026; '55 discreet data center companies connected'; 'Approximately 500 data center metered accounts'; 'Data center billing peak load as of August 2026 is 4.8 GW'; 'Approximately 54GW of capacity under contract (ELOA, CLOA, ESA)'. Its 6 January 2026 letter to PJM gives 'a 2025 coincident peak of 4 GW' and 47 GW under contract (9.8 ESA, 7.1 CLOA, 30.1 ELOA); its 2025 IRP update to the SCC (PUR-2025-00184) gives 47,045 MW contracted at end-July 2025 and 15 campus connections (977 MW) in 2024, 8 (561 MW) in 2025. In the biennial review (PUR-2025-00058) Dominion's interrogatory answers, quoted in PEC testimony, give 51 datacenter customers with 3,583 MW combined demand in 2024, and a 92 to 93% load factor. NOVEC's PJM submission of the same date: datacenters were 75% of its energy sales (August 2025 to July 2026), 88 buildings, about 1,750 MW, coincident peak 1,384 MW in 2025. No filing read gives annual datacenter energy in GWh; Dominion's 10-K states datacenters were 28% of Virginia Power's electricity sales in 2025 and 26% in 2024 (company statement).",
+  "record_sources": [
+   {
+    "title": "Dominion Energy LSE 20-Year Data Center Forecast (PJM Load Analysis Subcommittee, item 5a-i)",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+    "publisher": "Dominion Energy Virginia, filed with PJM",
+    "date": "2026-09-29"
+   },
+   {
+    "title": "Dominion documentation for the PJM load forecast (letter, Director Data Center Practice)",
+    "url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/dominion-documentation.pdf",
+    "publisher": "Dominion Energy Virginia, filed with PJM",
+    "date": "2026-01-06"
+   },
+   {
+    "title": "Virginia Electric and Power Company's 2025 Update to the 2024 Integrated Resource Plan (PUR-2025-00184)",
+    "url": "https://cdn-dominionenergy-prd-001.azureedge.net/-/media/content/about/our-company/irp/pdfs/2025-integrated-resource-plan-update.pdf",
+    "publisher": "Dominion Energy Virginia, filed with the SCC",
+    "date": "2025-10"
+   },
+   {
+    "title": "Prefiled direct testimony of Gregory Abbott for Piedmont Environmental Council, PUR-2025-00058 (quoting Dominion's Blackwell testimony and interrogatory responses)",
+    "url": "https://www.pecva.org/wp-content/uploads/PUR-2025-00058-PEC-Direct-Testimony-7.16.25.pdf",
+    "publisher": "Piedmont Environmental Council, filed with the SCC",
+    "date": "2025-07-16"
+   },
+   {
+    "title": "NOVEC Large Load Adjustment Request (PJM Load Analysis Subcommittee, item 5b)",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
+    "publisher": "Northern Virginia Electric Cooperative, filed with PJM",
+    "date": "2026-09-29"
+   },
+   {
+    "title": "Dominion Energy, Inc. Form 10-K for 2025, Item 1",
+    "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+    "publisher": "US SEC EDGAR",
+    "date": "2026-02"
+   }
+  ],
+  "claim": "Dominion's 10-K: datacenters were 28% of Virginia Power's electricity sales in 2025 (26% in 2024). Dominion's IRP stakeholder page: about 85% of its 20-year load-forecast growth is datacenters.",
+  "claim_sources": [
+   {
+    "title": "Dominion Energy, Inc. Form 10-K for 2025, Item 1",
+    "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
+    "publisher": "US SEC EDGAR",
+    "date": "2026-02"
+   },
+   {
+    "title": "How much of the load forecast increase from 2024 to 2025 is for data centers?",
+    "url": "https://devirp.dominionenergy.com/stakeholder-questions-and-answers/How-much-of-the-load-forecast-increase-from-2024-to-2025-is-for-data-centers",
+    "publisher": "Dominion Energy Virginia IRP site",
+    "date": "2025"
+   }
+  ],
+  "gap": "Actual datacenter demand filed by the two main Virginia utilities was about 5.6 GW in 2025 (Dominion 4,237 MW billing demand, 4 GW coincident; NOVEC 1,384 MW coincident) against 33.7 GW of permitted standby generation in DEQ's permits and 47 to 54 GW under contract: the permits and the contracts describe what is planned, the filed demand what is drawing power. No filing gives the energy in GWh; the 10-K's 28% share is a company statement with no GWh beside it.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "The 29 September 2026 Dominion and NOVEC PJM submissions were read directly on 2026-10-23 and the figures quoted match; the other documents are quoted in data/climate_trace_seed/va_datacenter_class_demand.csv with their URLs. The SCC's final orders in PUR-2025-00058 and PUR-2024-00184 refused automated reading and were not read.",
   "last_checked": "2026-10-23"
  }
 ]

@@ -31,3 +31,8 @@ va_permits_resolved.csv (final per-registration figures, confidence, basis); va_
 ## Addendum, 2026-10-23: what the generators emitted
 
 EPA's 2023 National Emissions Inventory lists 27 Virginia datacenter facilities with 393 tons of NOx, 21 of them matched to a registration number in this list; it reports emissions only, not hours or fuel. The file is `va_nei_generator_emissions.csv` and the reading is in `METERED.md`. Converting tons to hours needs each permit's per-unit NOx rate, which the permits state and the extractor does not yet read (roadmap).
+
+
+## Addendum, 2026-10-23: what the utilities file as actual demand
+
+Dominion's 20-year datacenter forecast to PJM (29 September 2026): billing demand 2,767 MW (2022), 3,183 (2023), 3,636 (2024), 4,237 MW (2025), 4,838 forecast (2026); 55 companies connected, about 500 metered accounts, billing peak 4.8 GW as of August 2026, about 54 GW under contract. Its January 2026 letter to PJM: 2025 coincident peak 4 GW, 47 GW under contract. NOVEC (same date): 75% of energy sales from datacenters, 88 buildings, about 1,750 MW, coincident peak 1,384 MW in 2025. So about 5.6 GW drew power in 2025 against 33.7 GW permitted standby. No filing gives GWh; Dominion's 10-K states 28% of Virginia Power sales in 2025 (company statement). The 40 GW 'in various stages of contracting' above (December 2024) is superseded by the filed 47,045 MW (July 2025) and 'approximately 54GW' (August 2026). File: `va_datacenter_class_demand.csv`; entry `us-va-dominion-datacenter-demand-filed-2026`.

@@ -2,7 +2,7 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**124 entries · 38 countries and territories, plus EU-wide and global entries · 422 distinct linked documents · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, two years, from the regulator** (as of 2026-10-23)
+**125 entries · 38 countries and territories, plus EU-wide and global entries · 429 distinct linked documents · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, two years, from the regulator** (as of 2026-10-23)
 
 Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/ and the Climate TRACE brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html. The handover package is in `data/climate_trace_seed/`.
 
