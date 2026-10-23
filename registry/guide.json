@@ -10,6 +10,10 @@
   ],
   "ask": [
    [
+    "What does the site actually draw?",
+    "Almost nowhere is this public. Ireland is the exception: every EPA-licensed datacentre files an annual report with its metered electricity in gigajoules, and the eleven licensed installations account for just over half of the national metered total. Two US public utilities state the cluster figure (Grant County PUD: 280 average MW, 37% of county load; Silicon Valley Power: 60% of sales). Ask the regulator for the annual report, and a public utility for its large-load class."
+   ],
+   [
     "Who pays for the connection?",
     "Ask the utility commission docket whether large-load customers carry their own transmission and generation costs, or whether they are socialised. Virginia's regulator (in its November 2025 Chesterfield order), Ohio's and Wisconsin's have adopted minimum-demand or long-term contract terms for large loads; Ontario has legislated connection restrictions and proposed a separate rate class. Most places in the ledger have not."
    ],
@@ -23,11 +27,15 @@
    ]
   ],
   "headline": [
+   "ie-epa-aer-metered-2025",
    "us-pjm-imm-capacity",
-   "us-va-jlarc-rates",
-   "ie-national-cso-share-2025"
+   "us-va-jlarc-rates"
   ],
   "all": [
+   "ie-epa-aer-metered-2025",
+   "us-wa-grant-pud-datacenter-load-2025",
+   "us-ca-santa-clara-svp-datacenter-share-2025",
+   "us-city-benchmarking-datacenter-metered-electricity",
    "us-pjm-imm-capacity",
    "us-va-jlarc-rates",
    "ie-national-cso-share-2025",
@@ -112,6 +120,10 @@
    [
     "Is the renewable claim hourly?",
     "Annual matching means buying certificates equal to annual use. Hourly matching means the clean power was there when the load was. Ask which, and whether a third party checked it."
+   ],
+   [
+    "How much do the standby generators actually run?",
+    "Permits cap hours; the regulator's emissions inventory records what was emitted. EPA's 2023 inventory lists 27 Virginia datacenter facilities and 393 tons of NOx; Ireland's annual reports give the fuel burned, which at most Amazon sites equals about an hour of the permitted fleet a year, and at Equinix DB5 equals ten months of running as the primary supply on gas while the grid connection was late."
    ]
   ],
   "headline": [
@@ -120,6 +132,8 @@
    "ie-dublin-vantage-dub13-abp-refusal"
   ],
   "all": [
+   "ie-equinix-db5-prime-power-gas-2024",
+   "us-va-nei-2023-datacenter-generator-emissions",
    "us-va-chesterfield-dominion-cerc-gas",
    "us-tn-memphis-xai-colossus-turbines",
    "us-ms-southaven-xai-1.2gw-gas",

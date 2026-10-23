@@ -103,3 +103,8 @@ What the check supports: under N+1 designs, utilisation of permitted standby cap
 3. EPA Geoportal IE-facilities download (needs a browser) or the LEAP API behind `leap.epa.ie`.
 4. Annual Environmental Reports on leap.epa.ie for every P-number above: each gives total energy used (GJ), the only metered per-site figure available, and the direct test of step 4 of the regional check.
 5. ETS verified emissions table (EU Transaction Log / EPA) for the 27 data-centre permits: tCO2 from backup generators per installation per year.
+
+
+## Addendum, 2026-10-23: the AER figures now exist for eleven sites
+
+The procedure above allocated the national metered total across sites as a bound. The EPA's Annual Environmental Reports have since been read for the eleven licensed installations (nine Amazon, Microsoft DUB14/15, Equinix DB5): for 2025 they report 4,109 GWh of metered electricity, 53.6% of the CSO total, and for 2024 3,585 GWh, 51.4%. Those per-site figures replace the allocation for the eleven; the remaining 46 to 49% of the national total belongs to the 29 sites that hold GHG permits or planning permissions only. See `METERED.md` and `ireland_aer_metered.csv`.

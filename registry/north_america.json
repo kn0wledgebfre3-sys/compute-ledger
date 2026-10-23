@@ -260,13 +260,25 @@
   "lat": 35.05,
   "lon": -90.14,
   "category": "fuel",
-  "record": "A 2024-08-26 SELC letter to the Shelby County Health Department documented at least 18 turbines (~100 MW) operating without permits under a claimed 364-day 'nonroad' exemption. SCHD issued a construction permit on 2025-07-02 for 15 Solar SMT-130 turbines (up to 247 MW) with rolling 12-month caps of 87 t NOx, 94 t CO, 85 t VOC, 73 t PM and ~14 t HAPs; SELC stated up to 35 turbines (421 MW) had run unpermitted. The Memphis-Shelby County Air Pollution Control Board upheld the permit 6–1 on 2025-12-15. EPA's final NSPS rule signed 2026-01-09 states turbines 'mounted on a vehicle (or trailer) for portability' are 'still considered stationary.'",
+  "record": "A 2024-08-26 SELC letter to the Shelby County Health Department documented at least 18 turbines (~100 MW) operating without permits under a claimed 364-day 'nonroad' exemption. SCHD issued a construction permit on 2025-07-02 for 15 Solar SMT-130 turbines (up to 247 MW) with rolling 12-month caps of 87 t NOx, 94 t CO, 85 t VOC, 73 t PM and ~14 t HAPs; SELC stated up to 35 turbines (421 MW) had run unpermitted. The Memphis-Shelby County Air Pollution Control Board upheld the permit 6–1 on 2025-12-15. EPA's final NSPS rule signed 2026-01-09 states turbines 'mounted on a vehicle (or trailer) for portability' are 'still considered stationary.' TVA's board memo of 7 October 2024 (approving 150 MW of firm power to CTC Property LLC, 'an xAI subsidiary') states that 'xAI was already operating at over 50 MW with a combination of limited MLGW power and xAI gas turbines' by August 2024; MLGW's update of 5 May 2025 gives 8 MW from a pre-existing substation and 142 MW from a newly constructed one, 300 MW requested in total, and 260 MW to 1.1 GW for the Tulane Road site.",
   "record_sources": [
    {
     "title": "Letter to SCHD re xAI operating without permits",
     "url": "https://interactive.localmemphis.com/pdfs/2024-08-26-Letter-to-SCHD-re-xAI-operating-without-permits.pdf",
     "publisher": "SELC (filed with Shelby County Health Department)",
     "date": "2024-08-26"
+   },
+   {
+    "title": "Greater than 100 MW firm power arrangement with CTC Property LLC (xAI): resolution and memo",
+    "url": "https://tva-azr-eastus-cdn-ep-tvawcm-prd.azureedge.net/cdn-tvawcma/docs/default-source/about-tva/board-of-directors/november--7-2024/resolutions/reading-room-11072024g-grtr-100mw-ctc-xai-reso-memo.pdf?sfvrsn=55653613_1",
+    "publisher": "Tennessee Valley Authority, Board of Directors",
+    "date": "2024-11-07"
+   },
+   {
+    "title": "xAI Update, 5 May 2025",
+    "url": "https://www.mlgw.com/images/content/files/pdf/new/5-5-25%20xAI%20Update.pdf",
+    "publisher": "Memphis Light, Gas and Water",
+    "date": "2025-05-05"
    },
    {
     "title": "xAI gets permits for 15 natural gas generators at Memphis data center",
@@ -304,7 +316,8 @@
   ],
   "gap": "Roughly a year of on-site gas generation (100–421 MW per filings) preceded the first permit; the local regulator and EPA's later rule text differ on whether trailer-mounted turbines were exempt.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23",
+  "verification_note": "TVA memo read directly on 2026-10-23; the 'over 50 MW' sentence is quoted verbatim."
  },
  {
   "id": "us-ms-southaven-xai-1.2gw-gas",
@@ -1243,5 +1256,145 @@
   "last_checked": "2026-10-22",
   "verification_note": "Pass 2 (2026-10-22): the CONAGUA PDF linked by the TRF article is DR_2203 (the earlier pass tried DR_2202, a different aquifer code); it opened and confirms aquifer 2203 Valle de San Juan del Río with a deficit of 56,892,701 m³/yr and no availability for new concessions, so the TRF '56.8 billion litres' is a truncation of ~56.9 billion litres per year. Not confirmed from primary: Microsoft's 25 million L/yr concession and its 24% share (no REPDA title found), that the Colón site draws on aquifer 2203, and the CFE/CENACE grid figures (MEXDC, CloudHQ 200 MW, 800 MW); the shared web-search budget ran out before REPDA and DOF searches could be repeated. Pass 3 (2026-10-22): SinEmbargo (2026-10-12) cites REPDA title 855979 (Microsoft México, 25,000 m³/yr, October 2023, Galeras, Colón, aquifer Valle de San Juan del Río), which matches the TRF 25 million L/yr; the REPDA search form itself could not be queried, so the title remains press-cited, and the 24% share is still TRF-only. SinEmbargo also confirms MEXDC's 202 of 279 MW (72%). A CFE nota informativa (2026-10-14) was read and added (13.8 kV dedicated circuits; 74 interruptions Jan–Sep 2026), but no CFE, CENACE or SENER document for the 800 MW transmission program or CloudHQ's 200 MW was found.",
   "verification_status": "partial"
+ },
+ {
+  "id": "us-wa-grant-pud-datacenter-load-2025",
+  "country": "United States",
+  "region": "Washington (Grant County)",
+  "site_or_subject": "Datacenter share of a public utility district's metered load, 2025",
+  "operator": "Eight datacenter operators served by Grant County PUD (Quincy and vicinity)",
+  "lat": 47.23,
+  "lon": -119.85,
+  "category": "power",
+  "record": "Grant County PUD, a public utility district, states: 'In 2025, Grant PUD's 8 data center operators accounted for approximately 280 average megawatts (aMW) of electrical load'; total average system load was about 757 aMW, 'meaning data centers represented about 37% of overall county load.' About 800 MW of large-load requests sit in its queue (not stated to be datacenters).",
+  "record_sources": [
+   {
+    "title": "Data center FAQs",
+    "url": "https://www.grantpud.org/blog/data-center-faqs",
+    "publisher": "Grant County Public Utility District",
+    "date": "2026-08-28"
+   }
+  ],
+  "claim": "none found; operators are not named.",
+  "claim_sources": [],
+  "gap": "A metered annual figure for a cluster, published by the utility itself; the operators behind the 280 aMW are not named, and per-site figures would need a Public Records Act request.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Page read directly on 2026-10-23; sentences quoted verbatim.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ca-santa-clara-svp-datacenter-share-2025",
+  "country": "United States",
+  "region": "California (Santa Clara)",
+  "site_or_subject": "Datacenter share of Silicon Valley Power's sales and peak, 2025",
+  "operator": "55 datacenters served by Silicon Valley Power (City of Santa Clara)",
+  "lat": 37.37,
+  "lon": -121.96,
+  "category": "power",
+  "record": "The city utility's director told the NCPA annual conference (25 September 2025) that '60%' of SVP's 'Power Use and Sales are from Data Centers', that it serves '55 Data Centers', the 'largest data center cluster on West Coast', with 'Peak Demand' of '714 MW', and that growth is 'driven by data centers, request to add 500+ MW load (growing from 700 MW)'; most new datacenters request 50 to 99 MW.",
+  "record_sources": [
+   {
+    "title": "AI Data Center Power Supply and Impacts (Nico Procos, Electric Utility Director, Silicon Valley Power)",
+    "url": "https://www.ncpa.com/wp-content/uploads/2025/09/Nico-Procos-Presentation-NCPA-2025-Annual-Conference.pdf",
+    "publisher": "Northern California Power Agency annual conference",
+    "date": "2025-09-25"
+   },
+   {
+    "title": "SVP 101",
+    "url": "https://www.siliconvalleypower.com/home/showpublisheddocument/85748/638702110758000000",
+    "publisher": "Silicon Valley Power",
+    "date": "2024"
+   }
+  ],
+  "claim": "none found at site level.",
+  "claim_sources": [],
+  "gap": "A municipal utility whose sales are mostly datacenters states the share and the peak but not the sites; per-customer figures would need a California Public Records Act request.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Presentation read directly on 2026-10-23; figures quoted from the slides.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-va-nei-2023-datacenter-generator-emissions",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "What the permitted standby generators actually emitted: EPA National Emissions Inventory 2023, Virginia datacenter facilities",
+  "operator": "27 facilities (Amazon, Microsoft, CyrusOne, Digital Realty/DuPont Fabros, Vantage, Equinix, Cyxtera, CoreSite, QTS, Cloud HQ, Sentinel and others)",
+  "lat": 39.03,
+  "lon": -77.47,
+  "category": "fuel",
+  "record": "EPA's 2023 National Emissions Inventory, queried through Envirofacts, lists 23 Virginia facilities under NAICS 518210 with NOx emissions, and four more datacenter facilities under other codes: 27 facilities, 393 tons of NOx in 2023. Largest: Amazon IAD-132/133, Manassas, 77.6 t; DuPont Fabros Ashburn Corporate Center 47.7 t; CyrusOne Shaw Road 31.7 t; Microsoft East Coast Data Center, Boydton, 28.8 t (20.8 t in 2020); CyrusOne Kincora 27.1 t. The inventory reports facility-wide annual tons per pollutant only: no hours, no fuel, no per-unit split. Twenty-one of the 27 carry a DEQ registration number in the ledger's permit list (several embedded in the NEI facility name). Most of the 182 permitted facilities, including every permit issued from 2024 on, do not appear.",
+  "record_sources": [
+   {
+    "title": "NEI 2023 facility summaries, Virginia, NAICS 518210, NOx (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/VA/naics_code/equals/518210/pollutant_code/equals/NOX/1:500/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-23"
+   },
+   {
+    "title": "NEI 2023 facility summary, Amazon Data Services IAD 50/60/71/78/79/80 (EIS 21518811), all criteria pollutants",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/eis_facility_id/equals/21518811/pollutant_type/equals/CAP/1:200/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-23"
+   },
+   {
+    "title": "Envirofacts Data Service API",
+    "url": "https://www.epa.gov/enviro/envirofacts-data-service-api",
+    "publisher": "US EPA",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found at site level.",
+  "claim_sources": [],
+  "gap": "The inventory gives emissions, not hours; converting needs each permit's NOx rate per unit, which the permits state and the ledger's extractor does not yet read. Which facilities must report, and why most permitted sites are absent, was not established from the regulation text.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "The NAICS query and the Amazon facility record were run directly on 2026-10-23 and match the transcription in data/climate_trace_seed/va_nei_generator_emissions.csv; the other facility records carry their own endpoint URLs.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-city-benchmarking-datacenter-metered-electricity",
+  "country": "United States",
+  "region": "New York, San Francisco, Seattle, Chicago, Washington DC, Philadelphia",
+  "site_or_subject": "Metered annual electricity of urban datacenters under building energy-disclosure laws",
+  "operator": "Google (111 8th Avenue), Digital Realty (200 Paul Avenue), 60 Hudson Street and 2001 6th Avenue carrier hotels, and others",
+  "lat": 40.74,
+  "lon": -74.0,
+  "category": "power",
+  "record": "City benchmarking ordinances publish each large building's metered energy by address with its property type. New York's Local Law 84 data give 60 Hudson Street (typed Data Center) 87.2 GWh of grid electricity in 2023 and 85.5 GWh in 2024, and 111 8th Avenue (typed Office, whole building, with a datacenter sub-use of about 530,000 to 615,000 sq ft) 148.1 GWh in 2023 and 130.8 GWh in 2024. San Francisco's disclosure gives 200 Paul Avenue (Digital Realty) 112.4 GWh in 2023, 111.4 in 2024 and 104.0 in 2025. Seattle's gives the Westin Building Exchange 77.4 GWh in 2024 and 73.5 in 2025. Chicago's gives 350 East Cermak 1,114 million kBtu of electricity for 2022 (kBtu only; absent in 2023). In all, 218 building-years from eight portals are in the handover file, each with its query.",
+  "record_sources": [
+   {
+    "title": "Energy and Water Data Disclosure for Local Law 84 (dataset 5zyy-y8am), rows for 60 Hudson Street",
+    "url": "https://data.cityofnewyork.us/resource/5zyy-y8am.csv?address_1=60%20Hudson%20Street",
+    "publisher": "NYC Open Data",
+    "date": "2026"
+   },
+   {
+    "title": "Existing Commercial Buildings Energy Performance Ordinance Report (dataset 96ck-qcfe), Data Center rows",
+    "url": "https://data.sf.gov/resource/96ck-qcfe.csv?category=Data%20Center&$limit=100",
+    "publisher": "DataSF",
+    "date": "2026"
+   },
+   {
+    "title": "Building Energy Benchmarking (dataset teqw-tu6e)",
+    "url": "https://data.seattle.gov/dataset/Building-Energy-Benchmarking/teqw-tu6e",
+    "publisher": "City of Seattle Open Data",
+    "date": "2026"
+   },
+   {
+    "title": "Chicago Energy Benchmarking (dataset xq83-jr8c)",
+    "url": "https://data.cityofchicago.org/Environment-Sustainable-Development/Chicago-Energy-Benchmarking/xq83-jr8c",
+    "publisher": "City of Chicago Data Portal",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found at building level.",
+  "claim_sources": [],
+  "gap": "Metered, annual and public, but only where a city has a disclosure law and only for the building as filed: carrier hotels in mixed buildings report the whole building, and most rows typed Data Center are telephone exchanges. California's statewide disclosure, which would cover Santa Clara, was not read.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "The New York and San Francisco rows named here were re-read from the portals on 2026-10-23 and match; New York's electricity field is confirmed kWh by its kBtu companion field (ratio 3.412). Other rows carry their query URL in data/climate_trace_seed/benchmarking_datacenters.csv.",
+  "last_checked": "2026-10-23"
  }
 ]

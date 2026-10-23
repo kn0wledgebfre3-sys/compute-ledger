@@ -41,3 +41,7 @@ jobs:
           for f in datacenters_emissions_seed.csv datacenters_ownership_seed.csv datacenters_register_backlog_unlocated.csv assets_summary.json; do
             cmp /tmp/assets/$f ../data/climate_trace_seed/$f || exit 1
           done
+          python3 build_metered.py --out /tmp/metered > /dev/null
+          for f in ireland_aer_metered.csv va_nei_generator_emissions.csv benchmarking_datacenters.csv metered_summary.json; do
+            cmp /tmp/metered/$f ../data/climate_trace_seed/$f || exit 1
+          done

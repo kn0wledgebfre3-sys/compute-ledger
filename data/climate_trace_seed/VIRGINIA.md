@@ -26,3 +26,8 @@ The 21 October run geocoded the address the first reading took from each permit 
 ## Files
 
 va_permits_resolved.csv (final per-registration figures, confidence, basis); va_reread_comparison.csv (both readings and the resolution per registration); va_reread_decisions.csv (the 99 hand decisions); VIRGINIA_REREAD_REPORT.md (method, error patterns, the three nulled permits, the ten spot-checks); va_permits.csv and va_generator_rows.csv (the pipeline's first, defective reading, kept for the record); va_extraction_vs_resolved.csv (the fixed pipeline against the resolved figures); va_geocodes.csv (every geocode with the address it was given); virginia_nearest_generation.csv (Climate TRACE context: for each located permit site, the nearest asset in Climate TRACE's inventory).
+
+
+## Addendum, 2026-10-23: what the generators emitted
+
+EPA's 2023 National Emissions Inventory lists 27 Virginia datacenter facilities with 393 tons of NOx, 21 of them matched to a registration number in this list; it reports emissions only, not hours or fuel. The file is `va_nei_generator_emissions.csv` and the reading is in `METERED.md`. Converting tons to hours needs each permit's per-unit NOx rate, which the permits state and the extractor does not yet read (roadmap).
