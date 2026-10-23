@@ -469,7 +469,8 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     const box=document.getElementById('cf-'+id); if(!box) return;
     if(!box.hidden){box.hidden=true;return;}
     if(!db||canWrite===false){
-      box.innerHTML=`<div class="msg">${db?'Corrections need contributor access to this page. Ask the owner, or send the document another way.':'Corrections are kept in this page\'s shared store, which needs a signed-in viewer. Open the page signed in to submit one.'}</div>`;
+      const gh='https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new?title='+encodeURIComponent('Correction: '+id)+'&body='+encodeURIComponent('Entry: '+id+'\nWhat is wrong (record, claim, gap line, source link, or a newer document):\nDocument URL:\nWhat the document says (figures and dates, no adjectives):\n');
+      box.innerHTML=`<div class="msg">Send the correction as a public GitHub issue, with the document's URL: <a href="${gh}" target="_blank" rel="noopener">open a correction for this entry</a>. Corrections are reviewed into the registry by hand.</div>`;
       box.hidden=false;return;}
     box.innerHTML=`<label>What is wrong<select id="cf-field-${esc(id)}"><option value="record">The record</option><option value="claim">The claim</option><option value="gap">The gap line</option><option value="source">A source link</option><option value="newer">A newer document supersedes this</option></select></label>
       <label>Document URL<input id="cf-url-${esc(id)}" type="url" placeholder="https://" required></label>
@@ -594,6 +595,15 @@ page = (page.replace("__TODAY__", today)
             .replace("__DATA__", j({"entries": entries, "sources": sources, "guide": guide, "receipts": receipts, "standard": standard})))
 
 open(OUT, "w").write(page)
+# GitHub Pages serves docs/: the ledger at the site root and the brief beside it
+DOCS = os.path.join(ROOT, "docs")
+os.makedirs(DOCS, exist_ok=True)
+_SKELETON = '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+open(os.path.join(DOCS, "index.html"), "w").write(_SKELETON + page)
+_brief = os.path.join(ROOT, "site", "brief.html")
+if os.path.exists(_brief):
+    open(os.path.join(DOCS, "brief.html"), "w").write(_SKELETON + open(_brief, encoding="utf-8").read())
+open(os.path.join(DOCS, ".nojekyll"), "w").close()
 print(f"wrote {OUT}: {len(entries)} entries ({n_verified} verified against primary), {len(countries)} countries and territories (+ EU-wide and global), {n_sources} distinct linked docs, {len(sources)} datasets, {len(guide)} themes, {len(receipts)} receipts")
 if problems:
     print("PROBLEMS:"); [print(" -", p) for p in problems]

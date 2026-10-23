@@ -4,7 +4,7 @@ A public ledger of what records say about the physical, social and economic foot
 
 **118 entries · 38 countries and territories, plus EU-wide and global entries · 404 distinct linked documents · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records** (as of 2026-10-22)
 
-Live page: the Compute Ledger brief and ledger are published as artifacts; the Climate TRACE handover package is in `data/climate_trace_seed/`.
+Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/ and the Climate TRACE brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html. The handover package is in `data/climate_trace_seed/`.
 
 The ledger is built on one rule: a company's statement is a claim, and a document from a regulator, court, grid operator, statistical office, auditor or customs authority is a record. The ledger shows both and states the gap in one line without adjectives.
 
@@ -19,6 +19,7 @@ The ledger is built on one rule: a company's statement is a claim, and a documen
 | `scrapers/` | Scripts that pull structured public files (US grid queues, federal plant data, UK register, Climate TRACE) so numbers come from a file, not from anyone's reading. See its README. |
 | `research_notes/` | The working notes behind each region's entries, with the gaps that were found. |
 | `site/` | `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`. |
+| `docs/` | The built ledger page (`index.html`) and the brief (`brief.html`), copied there by `site/build_page.py` so GitHub Pages can serve them. Do not edit by hand. |
 | `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the method, and the hostile review). Monthly scraper runs land in dated subfolders. |
 | `documents/` | Browser-downloaded copies of public records whose hosts refuse automated access (the Wisconsin PSC final decisions for Oak Creek and Paris), with their original URLs. |
 | `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
@@ -56,7 +57,7 @@ The correct response to an entry is a newer document, not a rebuttal.
 2. For a new entry, use the schema above. No entry merges without a URL to a record. Company press releases are claims, not records. Mirrors of an actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as the document.
 3. Validation runs on every PR: the registry must parse, ids must be unique, every entry needs a record URL, and the page must build.
 
-Corrections submitted on the published page go to its shared store and are reviewed into the registry by hand.
+Corrections sent from the page open a GitHub issue with the entry's id; they are reviewed into the registry by hand.
 
 ## Running the scrapers
 
