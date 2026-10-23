@@ -314,3 +314,13 @@ first). `build_handover_assets.py` therefore places a Virginia site only when th
 matches the site address resolved by the second reading. The extractor's address picker itself has not
 been changed; the next live run should geocode `site_street` from `va_permits_resolved.csv`.
 
+
+## The measurements table (`build_measurements.py`, `validate_measurements.py`, 2026-10-23)
+
+Every figure the ledger holds, one row each, in `data/climate_trace_seed/measurements.csv`, with the sites they belong to in `site_register.csv` and the utilities and registers in `entity_register.csv`. Columns: a content-hashed `measurement_id`; `subject_type` (site, entity or entry) and `subject_id`; the ledger `entry_id` the figure appears in; `metric`, `unit` and `basis` from `measurement_vocab.json`; `value` and `value_high` in the published unit; `value_canonical` in one unit per dimension (MWh, MW, MWth, t, m3, m3/day, ha, h) through `units.py`; `value_as_published`, the figure exactly as it is written in the text it was taken from (the document's line or cell, or for figures from the registry the entry's own sentence), plus `qualifier` (lower_bound, upper_bound, approximate) read from the words around it; the period; `side` (record or claim); the source URL, title, publisher and date; the `feed` file it came from; how it was extracted; whether it has had a second reading.
+
+Feeds: the figures in the registry entries' text (`sites/measurements_from_registry/rows_*.csv`, each checked to occur verbatim in its entry), the Irish annual environmental reports, EPA's emissions inventory, the benchmarking portals, the utility filings (`sites/metered/filed_figures_curated.csv`, each checked against its quoted line), the Virginia permits, the Texas facilities and the Irish and seed site lists.
+
+The site register joins everything: Virginia sites are `usa-va-deq-<registration>`, Texas `usa-tx-<facility_key>`, Irish and seed sites keep their list ids, benchmarking buildings are `usa-bench-<city>-<address>` with a `kind` (datacenter, telecom_exchange, mixed_building_with_datacenter), and NEI facilities not matched to a permit are `usa-va-nei-<EIS id>`. `ct_source_id` gives the row in Climate TRACE's seed file, `backlog_id` the row in the unlocated backlog.
+
+`validate_measurements.py` checks the vocabulary, that each unit fits its metric's dimension, the canonical conversions, the periods, that subjects and entries exist, and, for registry figures, verbatim presence and source membership. CI rebuilds the table and fails if it differs from the committed file.

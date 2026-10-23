@@ -159,6 +159,24 @@ def build_benchmarking():
     return {"rows": len(rows), "jurisdictions": {k: sorted(v) for k, v in by_j.items()}, "largest_kwh": top}
 
 
+def copy_filed():
+    """Public-utility figures and Virginia filed demand: copied from the transcriptions as published.
+    One row is withheld from the Virginia file: the 5,075 MW 2027 'Demand' figure, which the source table
+    does not label as datacenter demand."""
+    pp = list(csv.DictReader(open(SRC / "public_power_transcribed.csv", encoding="utf-8")))
+    with open(OUT / "public_power_loads.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(pp[0].keys()))
+        w.writeheader()
+        w.writerows(pp)
+    va = [r for r in csv.DictReader(open(SRC / "va_class_transcribed.csv", encoding="utf-8"))
+          if not ("5,075" in r["figure"] and "2027" in r["period"])]
+    with open(OUT / "va_datacenter_class_demand.csv", "w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(va[0].keys()))
+        w.writeheader()
+        w.writerows(va)
+    return {"public_power_rows": len(pp), "virginia_filed_rows": len(va)}
+
+
 def main():
     global OUT
     ap = argparse.ArgumentParser()
@@ -170,7 +188,8 @@ def main():
     ie, ie_summ = build_ireland()
     va_summ = build_virginia()
     bm_summ = build_benchmarking()
-    json.dump({"ireland_aer": ie_summ, "virginia_nei": va_summ, "benchmarking": bm_summ,
+    filed = copy_filed()
+    json.dump({"ireland_aer": ie_summ, "virginia_nei": va_summ, "benchmarking": bm_summ, "filed_and_utility": filed,
                "method": "Unit conversions only: 1 GJ = 1/3.6 MWh; average MW = MWh / hours in the reporting period. Fuel figures are thermal energy burned, not electricity generated. 'fuel_as_hours_at_full_fleet_thermal_rating' = fuel GJ / 3.6 / permitted fleet MWth; it is the number of hours the whole permitted fleet would take to burn that fuel at full rating, a scale for how little the generators ran, not a count of actual hours."},
               open(OUT / "metered_summary.json", "w"), indent=1)
     print(json.dumps({"ireland_aer": ie_summ, "virginia_nei": va_summ, "benchmarking": bm_summ}, indent=1))

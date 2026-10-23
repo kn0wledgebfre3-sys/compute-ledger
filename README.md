@@ -2,7 +2,7 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**125 entries · 38 countries and territories, plus EU-wide and global entries · 429 distinct linked documents · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, two years, from the regulator** (as of 2026-10-23)
+**150 entries · 42 countries and territories, plus EU-wide and global entries · 550 distinct linked documents · 2,416 figures in one validated table · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, two years, from the regulator** (as of 2026-10-23)
 
 Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/ and the Climate TRACE brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html. The handover package is in `data/climate_trace_seed/`.
 
@@ -22,6 +22,8 @@ The ledger is built on one rule: a company's statement is a claim, and a documen
 | `docs/` | The built ledger page (`index.html`) and the brief (`brief.html`), copied there by `site/build_page.py` so GitHub Pages can serve them. Do not edit by hand. |
 | `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the metered figures from regulators and public utilities, the method, and the hostile reviews). Monthly scraper runs land in dated subfolders. |
 | `documents/` | Browser-downloaded copies of public records whose hosts refuse automated access (the Wisconsin PSC final decisions for Oak Creek and Paris), with their original URLs. |
+| `CONTRIBUTING.md`, `JURISDICTION_TEMPLATE.md` | How a figure enters the ledger, the two-reading rule, id and correction rules; the checklist for adding a country or state. |
+| `ci_local.sh` | Runs the same checks as CI before you push. |
 | `ROADMAP.md` | What is open in the package, the legs of the chain not yet traced (refiners, fabs, chips in motion, metered site power, the paper layer of certificates and offsets), the record each would rest on, and the three-week schedule after the Climate TRACE emails. |
 | `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
 
@@ -46,7 +48,7 @@ The ledger is built on one rule: a company's statement is a claim, and a documen
 }
 ```
 
-Categories: `power fuel water heat_reuse moratorium grid_policy minerals fab ewaste land_biodiversity community public_money labor circularity`.
+Categories: `power fuel water heat_reuse moratorium grid_policy minerals fab ewaste land_biodiversity community public_money labor circularity accounting`.
 
 Confidence: **high** means the primary document was read directly; **medium** means the figure comes from a press report of the document; **low** means second-hand or older. A second pass re-checked every medium and low entry against its original; the result is in `verification_status`.
 

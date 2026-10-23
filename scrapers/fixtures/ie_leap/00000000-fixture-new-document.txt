@@ -1,0 +1,23 @@
+Annual Environmental Report
+Licence Number: P1170-01
+Company Name: Amazon Data Services Ireland Limited
+2025
+Table 3 Energy Used
+Energy Used Quantity (GJ) % Increase/ decrease on previous year
+Electricity 1,586,892.15 +47.84%
+Heavy Fuel Oil - -
+Light Fuel Oil 60.20 -79.14%
+Natural Gas - -
+Coal / Solid Fuel - -
+Peat - -
+Renewable Biomass 1,629.28 -55.64%
+Renewable Energy Generated On-site N/A N/A
+Total Energy Used 1,588,581.64 +47.45%
+Table 5 Water Used
+Source of Water Used Quantity (m3/year) % Increase / decrease on previous year
+Groundwater - -
+Surface Water - -
+Public Supply 1,132.66 -87%
+Recycled Water - -
+Rainwater - -
+Total Water Used 1,132.66 -87%

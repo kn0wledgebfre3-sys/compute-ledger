@@ -1,0 +1,59 @@
+{
+ "_about": "Pages the ledger watches because they have no API. Each run compares what the page lists now with data/watch/<name>.json and reports what is new. mode links: hrefs matching pattern (and keywords if given); mode sentences: sentences containing a keyword and a digit (a changed figure shows as a new sentence); mode probe: whether a URL built from a template for a year exists.",
+ "pages": [
+  {
+   "name": "va_deq_datacenter_permits",
+   "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+   "mode": "links",
+   "pattern": "showpublisheddocument/\\d+",
+   "keywords": [],
+   "action": "New or replaced permit documents on DEQ's datacenter list: download by browser, run pipeline/run_all.sh with --pdf-dir, read twice, add to va_permits_resolved.csv."
+  },
+  {
+   "name": "pjm_las_materials",
+   "url": "https://www.pjm.com/committees-and-groups/subcommittees/las",
+   "mode": "links",
+   "pattern": "[^\"' ]+\\.(?:pdf|ashx|xlsx)",
+   "keywords": [
+    "dominion",
+    "novec",
+    "rappahannock",
+    "odec",
+    "large-load",
+    "data-center",
+    "datacenter",
+    "load-forecast"
+   ],
+   "action": "New load-forecast submissions: read Dominion, NOVEC and co-op datacenter figures into sites/metered/va_class_transcribed.csv and map them in filed_figures_curated.csv."
+  },
+  {
+   "name": "grant_pud_datacenter_faq",
+   "url": "https://www.grantpud.org/blog/data-center-faqs",
+   "mode": "sentences",
+   "keywords": [
+    "data center"
+   ],
+   "action": "A changed datacenter sentence: update us-wa-grant-pud-datacenter-load-2025 and public_power_transcribed.csv."
+  },
+  {
+   "name": "srp_datacenter_facts",
+   "url": "https://www.srpnet.com/about/data-center-facts",
+   "mode": "sentences",
+   "keywords": [
+    "data center"
+   ],
+   "action": "A changed datacenter sentence: update public_power_transcribed.csv."
+  },
+  {
+   "name": "cso_datacentre_release",
+   "url": "https://www.cso.ie/en/releasesandpublications/ep/p-dcmec/datacentresmeteredelectricityconsumption{year}/",
+   "mode": "probe",
+   "years": [
+    2026,
+    2027,
+    2028
+   ],
+   "action": "A new CSO annual release: update ie-national-cso-share-2025 (new entry for the year) and the Irish share in METERED.md."
+  }
+ ]
+}

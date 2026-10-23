@@ -1,0 +1,21 @@
+entity_id,name,kind,country,notes
+us-utility-dominion-va,Dominion Energy Virginia (Virginia Electric and Power Company),investor-owned utility,USA,PJM DOM zone; files with the Virginia SCC and PJM
+us-utility-novec,Northern Virginia Electric Cooperative,electric cooperative,USA,PJM DOM zone
+us-utility-rec,Rappahannock Electric Cooperative,electric cooperative,USA,PJM DOM zone
+us-utility-odec,Old Dominion Electric Cooperative,generation and transmission cooperative,USA,PJM
+us-utility-mlgw,"Memphis Light, Gas and Water",municipal utility,USA,buys from TVA
+us-federal-tva,Tennessee Valley Authority,federal power authority,USA,subject to FOIA
+us-utility-svp,Silicon Valley Power (City of Santa Clara),municipal utility,USA,
+us-utility-grant-pud,Grant County Public Utility District,public utility district,USA,Washington
+us-utility-chelan-pud,Chelan County Public Utility District,public utility district,USA,Washington
+us-utility-srp,Salt River Project,political subdivision (public power),USA,Arizona
+us-utility-cps,CPS Energy,municipal utility,USA,San Antonio
+us-utility-nwcpud,Northern Wasco County People's Utility District,people's utility district,USA,Oregon
+de-rzreg,German datacenter register (Rechenzentrumsregister) under the EnEfG,register,DEU,published 14 Aug 2026
+co-microsoft,Microsoft Corporation,company,USA,fiscal year ends 30 June
+co-alphabet,Alphabet Inc. (Google),company,USA,
+co-amazon,"Amazon.com, Inc.",company,USA,
+co-meta,"Meta Platforms, Inc.",company,USA,
+co-oracle,Oracle Corporation,company,USA,fiscal year ends 31 May
+co-equinix,"Equinix, Inc.",company,USA,
+co-digital-realty,Digital Realty Trust,company,USA,

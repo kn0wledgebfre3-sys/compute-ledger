@@ -20,7 +20,7 @@ SOURCES_FILE = os.path.join(HERE, "sources.json")
 
 REQUIRED = ["id", "country", "site_or_subject", "category", "record", "record_sources", "gap", "confidence"]
 CATS = ["power", "fuel", "water", "heat_reuse", "moratorium", "grid_policy", "minerals", "fab", "ewaste",
-        "land_biodiversity", "community", "public_money", "labor", "circularity"]
+        "land_biodiversity", "community", "public_money", "labor", "circularity", "accounting"]
 
 entries, problems = [], []
 for f in ENTRY_FILES:
@@ -93,7 +93,7 @@ page = r"""<title>Compute Ledger</title>
   --accent:#1C6B5F; --accent-ink:#FFFFFF;
   --c-power:#B2481F; --c-fuel:#7A3B2E; --c-water:#1F6CA8; --c-heat:#2E8B57; --c-morat:#6B5B95;
   --c-grid:#8A6D1F; --c-min:#5C4A3A; --c-fab:#3F5B7A; --c-ew:#8C2D4F;
-  --c-land:#4E7A2E; --c-comm:#9A4F9E; --c-money:#A3761A; --c-labor:#B04A5A; --c-circ:#1F7A74;
+  --c-land:#4E7A2E; --c-comm:#9A4F9E; --c-money:#A3761A; --c-labor:#B04A5A; --c-circ:#1F7A74; --c-acct:#4A5A8C;
   --ok:#2E8B57; --warn:#B2481F;
   --display:"Archivo","Helvetica Neue",Arial,sans-serif;
   --body:"Source Serif 4",Georgia,"Times New Roman",serif;
@@ -104,14 +104,14 @@ page = r"""<title>Compute Ledger</title>
   --accent:#4FB3A3; --accent-ink:#0E1513;
   --c-power:#E07A4E; --c-fuel:#C9735F; --c-water:#5FA5E0; --c-heat:#5BC58A; --c-morat:#A292D6;
   --c-grid:#D0A94C; --c-min:#B8977C; --c-fab:#7FA0C6; --c-ew:#D66A90;
-  --c-land:#8FC45E; --c-comm:#CF8FD3; --c-money:#D9AE4C; --c-labor:#E08090; --c-circ:#58BDB6;
+  --c-land:#8FC45E; --c-comm:#CF8FD3; --c-money:#D9AE4C; --c-labor:#E08090; --c-circ:#58BDB6; --c-acct:#9AA8D8;
   --ok:#5BC58A; --warn:#E07A4E; color-scheme:dark } }
 :root[data-theme="dark"]{
   --paper:#121816; --paper-2:#1A2320; --paper-3:#22302B; --ink:#E6ECE8; --ink-2:#A3B0AB; --rule:#2E3B36;
   --accent:#4FB3A3; --accent-ink:#0E1513;
   --c-power:#E07A4E; --c-fuel:#C9735F; --c-water:#5FA5E0; --c-heat:#5BC58A; --c-morat:#A292D6;
   --c-grid:#D0A94C; --c-min:#B8977C; --c-fab:#7FA0C6; --c-ew:#D66A90;
-  --c-land:#8FC45E; --c-comm:#CF8FD3; --c-money:#D9AE4C; --c-labor:#E08090; --c-circ:#58BDB6;
+  --c-land:#8FC45E; --c-comm:#CF8FD3; --c-money:#D9AE4C; --c-labor:#E08090; --c-circ:#58BDB6; --c-acct:#9AA8D8;
   --ok:#5BC58A; --warn:#E07A4E; color-scheme:dark }
 
 *{box-sizing:border-box}
@@ -357,7 +357,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
   const D = JSON.parse(document.getElementById('data').textContent);
   const E = D.entries, S = D.sources, G = D.guide, R = D.receipts;
   const byId = Object.fromEntries(E.map(e=>[e.id,e]));
-  const CAT = {power:['Power','--c-power'],fuel:['Fuel','--c-fuel'],water:['Water','--c-water'],heat_reuse:['Heat reuse','--c-heat'],moratorium:['Moratorium','--c-morat'],grid_policy:['Grid policy','--c-grid'],minerals:['Minerals','--c-min'],fab:['Fabrication','--c-fab'],ewaste:['E-waste','--c-ew'],land_biodiversity:['Land & biodiversity','--c-land'],community:['Community','--c-comm'],public_money:['Public money','--c-money'],labor:['Labor','--c-labor'],circularity:['Circularity','--c-circ']};
+  const CAT = {power:['Power','--c-power'],fuel:['Fuel','--c-fuel'],water:['Water','--c-water'],heat_reuse:['Heat reuse','--c-heat'],moratorium:['Moratorium','--c-morat'],grid_policy:['Grid policy','--c-grid'],minerals:['Minerals','--c-min'],fab:['Fabrication','--c-fab'],ewaste:['E-waste','--c-ew'],land_biodiversity:['Land & biodiversity','--c-land'],community:['Community','--c-comm'],public_money:['Public money','--c-money'],labor:['Labor','--c-labor'],circularity:['Circularity','--c-circ'],accounting:['Carbon accounting','--c-acct']};
   const REG = {north_america:'North America',europe:'Europe',asia_pacific:'Asia-Pacific',latam_mena_africa:'Latin America, Middle East, Africa',minerals_ewaste:'Supply chain',people_land_money:'People, land, money'};
   const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const state = {q:'',region:'',cats:new Set(),ids:null,theme:null,v:''};

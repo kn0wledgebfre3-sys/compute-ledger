@@ -1,4 +1,14 @@
 {
+  "benchmarking/96ck-qcfe.json": {
+    "detail": "Three 200 Paul Ave rows read on 2026-10-23 (2023 is a year the ledger has not transcribed, so the fixture exercises the 'new' path); keys follow the dataset's field names; fields not read are omitted.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://data.sf.gov/resource/96ck-qcfe.csv?category=Data%20Center&$limit=100"
+  },
+  "benchmarking/Boston_MA.json": {
+    "detail": "The 6 Bowdoin Sq feature as read on 2026-10-23, reduced to the attributes the parser uses.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://services.arcgis.com/sFnw0xNflSi8J0uh/ArcGIS/rest/services/berdo_static_2023/FeatureServer/0/query"
+  },
   "eia/august_generator2026_SYNTHETIC.xlsx": {
     "detail": "Sheet names (Operating/Planned/Retired/Canceled or Postponed), 1 title row, header row and trailing note row follow gridstatus/eia.py (skiprows=1, skipfooter=1); column names from gridstatus eia_constants.py with the '(MW)' suffixes it strips restored. Values invented.",
     "provenance": "SYNTHETIC",
@@ -34,10 +44,25 @@
     "provenance": "REAL-VERBATIM",
     "source": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf"
   },
+  "ie_leap/00000000-fixture-new-document.txt": {
+    "detail": "Lines quoted from the report's cover, Table 3 (p.15) and Table 5 (p.17) as read on 2026-10-23; stands in for the text a PDF extractor returns.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://leap.epa.ie/docs/d30f01fa-7b3c-4f1d-b37d-be8909ba4629.pdf (P1170-01 AER 2025)"
+  },
+  "ie_leap/P1170-01_7c16b775-a4ce-4414-bd47-4a08b151fb0e.json": {
+    "detail": "The two real document ids and URLs for P1170-01 are real; the third record is a placeholder that stands for a newly filed report. Record keys other than url are not confirmed against a live response.",
+    "provenance": "SYNTHETIC (shape)",
+    "source": "LEAP Open Data API Document/listbylicenceidfiltered"
+  },
   "miso/miso_getprojects_sample.json": {
     "detail": "Values from gridstatus docs tables (latest build: J4182..R5062; 0.13.0 build: E002, E291, G001). Raw key names from gridstatus/miso.py. applicationStatus/queueDate for the J/S/R rows were hidden in the docs and are null here. Exact JSON value types (string vs number) not observed.",
     "provenance": "REAL-VIA-GRIDSTATUS",
     "source": "https://www.misoenergy.org/api/giqueue/getprojects (WebFetch got a client error; not seen directly)"
+  },
+  "nei/VA_2023.csv": {
+    "detail": "Rows 1-6 are the live response for EIS 21518811 (filterable PM and condensable rows omitted). Row 7 carries only the fields the NAICS query returned (site, address, city, county, emissions); the other cells are left blank rather than filled in.",
+    "provenance": "REAL (partial)",
+    "source": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/eis_facility_id/equals/21518811/pollutant_type/equals/CAP/1:200/CSV and the Virginia NAICS 518210 NOx query, retrieved 2026-10-23"
   },
   "neso/ea_register_SYNTHETIC.xlsx": {
     "detail": "Only 'Project Name' (column A) and 'Technology Type' (column F) with value 'Transmission Connected Demand' are verified (NESO FOI/25/174 response, 2025-12-18). All other headers are deliberately labelled UNSEEN. Values invented.",
@@ -63,5 +88,15 @@
     "detail": "Title line + 27-column header + first 12 data rows + first 4 Thermal (Gas/CTG) rows, file dated 10/19/2026. Field values copied one by one; CSV quoting style of the real file not observed.",
     "provenance": "REAL-VERBATIM",
     "source": "https://opsportal.spp.org/Studies/GenerateSummaryCSV"
+  },
+  "watch/grant_pud_datacenter_faq.html": {
+    "detail": "Two sentences as quoted on 2026-10-23; tests sentence extraction.",
+    "provenance": "REAL sentences, assembled layout",
+    "source": "https://www.grantpud.org/blog/data-center-faqs"
+  },
+  "watch/va_deq_datacenter_permits.html": {
+    "detail": "Two invented rows with showpublisheddocument links; tests link extraction and the new-item path only.",
+    "provenance": "SYNTHETIC",
+    "source": "layout of the DEQ datacenter permit list"
   }
 }

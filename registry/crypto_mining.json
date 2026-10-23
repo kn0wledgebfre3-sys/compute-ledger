@@ -1,0 +1,590 @@
+[
+ {
+  "id": "us-tx-puct-sb1929-crypto-registration",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "Registration of virtual currency mining facilities as large flexible loads (SB 1929, PURA §39.360; 16 TAC §25.114)",
+  "operator": "Public Utility Commission of Texas (PUCT)",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "SB 1929 (88th Legislature, effective September 1, 2023) added PURA 'Sec. 39.360. LARGE FLEXIBLE LOAD REGISTRATION', requiring operators of virtual currency mining facilities taking retail service in the ERCOT region to register when 'the facility requires a total load of more than 75 megawatts' and 'the facility load is interruptible', including location and anticipated demand over five years (Senate bill analysis). The PUCT implemented it in Project No. 56962 as 16 TAC §25.114 (proposed in the Texas Register of 13 September 2024; order adopting signed November 2024). The rule applies where total load exceeds 75 MW and the 'interruptible load equals 10 percent or more of the actual or anticipated annual peak demand'; facilities already in service had to 'register no later than February 1, 2025'. The adoption order states registration information 'will be collected via an internal-facing online tool that will not be accessible to the public.' The PUCT's virtual currency mining web page describes the requirement and lists no registered facilities.",
+  "record_sources": [
+   {
+    "title": "88(R) SB 1929 bill analysis (enrolled)",
+    "url": "https://capitol.texas.gov/tlodocs/88R/analysis/html/SB01929F.htm",
+    "publisher": "Texas Legislature",
+    "date": "2023"
+   },
+   {
+    "title": "Texas Register, Proposed Rules, 16 TAC §25.114 Registration of Virtual Currency Mining Facilities (Project No. 56962)",
+    "url": "https://www.sos.state.tx.us/texreg/archive/September132024/Proposed Rules/16.ECONOMIC REGULATION.html",
+    "publisher": "Texas Secretary of State / PUCT",
+    "date": "2024-09-13"
+   },
+   {
+    "title": "Order Adopting New 16 TAC §25.114, Project No. 56962, Item 17",
+    "url": "https://interchange.puc.texas.gov/Documents/56962_17_1444154.PDF",
+    "publisher": "Public Utility Commission of Texas",
+    "date": "2024-11"
+   },
+   {
+    "title": "Virtual Currency Mining Facility registration page",
+    "url": "https://www.puc.texas.gov/industry/electric/business/vcm",
+    "publisher": "Public Utility Commission of Texas",
+    "date": "undated (read 2026-10-23)"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No public list, count or MW total of registered virtual currency mining facilities was found; the adoption order says registrations are held in a non-public tool.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Rule text, threshold and deadline verified in PUCT order and Texas Register; count and list of registered facilities not found. Signing day of the order not legible in fetched text. Bill text page (SB01929F billtext) rendered without operative text; statute quoted from the bill analysis.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-tx-ercot-large-load-crypto",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "ERCOT large-load interconnection: approved and observed large-load MW, and the 2026 pause on energizing data centers and virtual currency mining facilities",
+  "operator": "Electric Reliability Council of Texas (ERCOT)",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "ERCOT's Large Load Interconnection Status Update (6 Sept 2024) reports 'Of the total 5,496 MW Approved to Energize' (4,421 MW standalone, 1,075 MW co-located), an observed 'nonsimultaneous peak consumption of 3,282 MW' and a 'simultaneous peak consumption of 2,815 MW'; it splits load by zone and standalone/co-located, not by crypto mining. ERCOT's 20 Aug 2026 presentation to the PUCT open meeting states that on 3 Aug 2026 ERCOT issued a Market Notice and 'Paused approvals to energize data centers or virtual currency mining facilities' of 75 MW or greater, following the Governor's directive for 'a comprehensive verification and audit', and that ERCOT 'will request information from data center and crypto facilities that have requested 25 MW or more'; a Batch Zero Eligibility Verification Report is due 10 December 2026. ERCOT's Batch Zero Update to its Board (14-15 Sept 2026) lists '204 projects (66.4 GW)' conditionally included as base load and '158 projects (127.9 GW)' as studied load, with no crypto breakout. Texas RE (Nov 2025) states 'Data centers and crypto mining facilities account for over 80 percent of the interconnection requests'. EIA (3 Oct 2024) reported ERCOT large flexible load (LFL: crypto mining, data centers, some industrial) approvals of 5,479 MW and that 'LFL customers have consumed about 65% of their total approved capacity.' ERCOT's Dec 2022 CEO update lists 'Operational co-located resources with LFLs: 2,996 MW'.",
+  "record_sources": [
+   {
+    "title": "Large Load Interconnection Status Update",
+    "url": "https://ercot.com/files/docs/2024/09/05/LLI%20Queue%20Status%20Update%20-%202024-9-6.pdf",
+    "publisher": "ERCOT Large Load Integration Team",
+    "date": "2024-09-06"
+   },
+   {
+    "title": "ERCOT Updates: PUC Open Meeting (Batch Zero Verification and Audit)",
+    "url": "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+    "publisher": "ERCOT",
+    "date": "2026-08-20"
+   },
+   {
+    "title": "Item 14: Batch Zero Update, Board of Directors Meeting",
+    "url": "https://www.ercot.com/files/docs/2026/09/11/14-Batch-Zero-Update.pdf",
+    "publisher": "ERCOT",
+    "date": "2026-09-14"
+   },
+   {
+    "title": "Large Load Update (newsletter, November 2025)",
+    "url": "https://texasre.org/pages/newsletters/november2025/largeloadupdate",
+    "publisher": "Texas Reliability Entity",
+    "date": "2025-11"
+   },
+   {
+    "title": "Data centers and cryptocurrency mining in Texas drive strong power demand growth",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=63344",
+    "publisher": "U.S. Energy Information Administration",
+    "date": "2024-10-03"
+   },
+   {
+    "title": "CEO Update, Board of Directors Meeting",
+    "url": "https://www.ercot.com/files/docs/2022/12/13/5%20CEO%20Update.pdf",
+    "publisher": "ERCOT",
+    "date": "2022-12-20"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No ERCOT or PUCT document found that separates crypto-mining MW (registered, operating, queued or curtailed) from other large loads.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "All quoted figures are from ERCOT, Texas RE and EIA documents; none isolates crypto mining. The '17 large loads (6,608 MW total peak demand over 5 years)' line in the 20 Aug 2026 ERCOT presentation was read as covering data centers and crypto facilities but its slide context was not confirmed. ERCOT LFL curtailment MW during peaks not found.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-tx-riot-power-curtailment-credits",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "Power curtailment credits from demand response (Riot Platforms, Rockdale and Corsicana, Texas; Kentucky)",
+  "operator": "Riot Platforms, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "Riot's FY2025 Form 10-K Consolidated Statements of Operations ($ in thousands) reports 'Power curtailment credits | -56,729 | -33,685 | -71,215' for 2025, 2024 and 2023. The 10-K states Riot 'voluntarily participate[s] in load response programs operated by ERCOT and MISO' and 'In exchange for powering down our systems during times of high electricity demand, we receive benefits associated with the difference between our contractual cost of power and the price at which such power is sold on the ERCOT and MISO markets.'",
+  "record_sources": [
+   {
+    "title": "Riot Platforms, Inc. Form 10-K FY2025, Consolidated Statements of Operations (XBRL R4)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/R4.htm",
+    "publisher": "Riot Platforms, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Riot Platforms, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/riot-20251231x10k.htm",
+    "publisher": "Riot Platforms, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Riot's full-year 2025 results release: power curtailment credits 'are credited against our power invoices as a result of temporarily pausing our operations' 'to participate in ERCOT's Demand Response Service Programs', and FY2025 saw 'a 68% increase in power credits received in FY 2025 compared to power credits received in FY 2024.'",
+  "claim_sources": [
+   {
+    "title": "Riot Platforms Reports Full Year 2025 Financial Results and Strategic Highlights",
+    "url": "https://seekingalpha.com/pr/20420415",
+    "publisher": "Riot Platforms, Inc. (press release via Seeking Alpha)",
+    "date": "2026-03"
+   }
+  ],
+  "gap": "No ERCOT-published total of demand-response or curtailment payments to cryptocurrency miners was found; the figures are one company's filed amounts.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Amounts read from the XBRL R4 page of the 10-K (filed). The 10-K narrative mentions ERCOT and MISO programs, so the credits may include MISO (Kentucky); the release attributes them to ERCOT's Demand Response Service Programs. Main 10-K HTML was truncated by the fetch tool at about 100k characters. Riot's statement of operations row re-read directly on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ny-greenidge-title-v-denial",
+  "country": "United States",
+  "region": "New York",
+  "site_or_subject": "Greenidge Generation station (Town of Torrey, Yates County; the 'Dresden facility'): Title V air permit renewal",
+  "operator": "Greenidge Generation LLC (Greenidge Generation Holdings Inc.)",
+  "lat": null,
+  "lon": null,
+  "category": "fuel",
+  "record": "DEC staff denied the Clean Air Act Title V renewal 'By letter dated June 30, 2022' for a facility 'with a generating capacity of approximately 107 megawatts (MW)'. On November 14, 2024 the Supreme Court, Yates County (Hon. Vincent M. DiNolfo) 'directed that the matter be returned to the Department for further proceedings'; Greenidge filed a notice of appeal to the Appellate Division, Fourth Department on December 16, 2024, and on February 24, 2025 'the Fourth Department denied Greenidge's motion for a stay of the Supreme Court Order'. DEC Region 7's Interim Decision of March 31, 2025 remanded the matter for an adjudicatory hearing. DEC's statement of November 8, 2025 announced an agreement to reduce the facility's 'currently permitted greenhouse gas emissions by 44%' ('a decrease of more than 282,000 tons of carbon dioxide equivalents annually') and actual emissions 'by at least 25%', with a permit modification application to go to public comment. Greenidge's FY2025 10-K states the plant has 'approximately 106 megawatt (“MW”) of nameplate capacity' fired on natural gas, that the facility 'had the capacity to consume approximately 60 MW of electricity' for mining (NYISO approval for 64 MW behind-the-meter), that on 'November 7, 2025, Greenidge Generation entered into a Stipulation of Settlement' with NYSDEC, and that a draft Title V permit is expected in 2026.",
+  "record_sources": [
+   {
+    "title": "Interim Decision of the Regional Director, Greenidge Generation LLC, DEC Permit ID 8-57360-0004/00017",
+    "url": "https://dec.ny.gov/sites/default/files/2025-04/greenidgeid.pdf",
+    "publisher": "New York State Department of Environmental Conservation",
+    "date": "2025-03-31"
+   },
+   {
+    "title": "DEC Statement Regarding The Greenidge Agreement",
+    "url": "https://dec.ny.gov/news/press-releases/2025/11/dec-statement-regarding-the-greenidge-agreement",
+    "publisher": "New York State Department of Environmental Conservation",
+    "date": "2025-11-08"
+   },
+   {
+    "title": "Greenidge Generation Holdings Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1844971/000184497126000011/gree-20251231.htm",
+    "publisher": "Greenidge Generation Holdings Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Greenidge FY2025 10-K: 'We are actively pursuing the conversion of certain existing assets, including the New York Facility' (to AI/HPC datacenter use).",
+  "claim_sources": [
+   {
+    "title": "Greenidge Generation Holdings Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1844971/000184497126000011/gree-20251231.htm",
+    "publisher": "Greenidge Generation Holdings Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "A final renewed Title V permit and an Appellate Division decision on the merits of Greenidge's appeal were not found.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Denial date, court actions and 2025 agreement verified in DEC documents; the June 30, 2022 denial letter and the Yates County order themselves were not fetched. DEC gives ~107 MW generating capacity; the 10-K gives ~106 MW nameplate. Facility location 'Torrey' is from the 10-K as read; DEC calls it the 'Dresden facility'. DEC's 8 November 2025 statement re-read directly on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ny-pow-mining-moratorium-ch628-2022",
+  "country": "United States",
+  "region": "New York",
+  "site_or_subject": "Moratorium on air permits for carbon-fuel power plants supplying behind-the-meter power to cryptocurrency mining (ECL §19-0331; Chapter 628 of the Laws of 2022)",
+  "operator": "New York State Legislature; New York State Department of Environmental Conservation",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "Bill A7389C (passed Assembly 26 April 2022; passed Senate 2 June 2022, substituted for S6486D) adds ECL §19-0331, 'MORATORIUM ON AIR PERMIT ISSUANCE AND RENEWAL': 'FOR THE PERIOD COMMENCING ON THE EFFECTIVE DATE OF THIS SECTION AND ENDING TWO YEARS AFTER SUCH DATE' the department 'SHALL NOT APPROVE A NEW APPLICATION FOR OR ISSUE A NEW PERMIT' for 'AN ELECTRIC GENERATING FACILITY THAT UTILIZES A CARBON-BASED FUEL AND THAT PROVIDES, IN WHOLE OR IN PART,' 'BEHIND-THE-METER ELECTRIC ENERGY CONSUMED OR UTILIZED BY CRYPTOCURRENCY MINING OPERATIONS', and shall not approve renewals that would 'INCREASE' the electric energy so used; DEC must issue a final generic environmental impact statement 'no later than one year after the effective date of this act.' DEC's April 2024 final GEIS scope cites 'Chapter 628 of the Laws of 2022' and states 'This law also established a two-year moratorium on the issuance of certain permits to certain cryptocurrency mining operations.' DEC's Environmental Notice Bulletin of 28 May 2025 announced a draft GEIS on 'cryptocurrency mining operations that use proof-of-work authentication methods', with comments accepted 'until September 25, 2025'.",
+  "record_sources": [
+   {
+    "title": "Assembly Bill A7389C (2021-2022 session), ECL §19-0331 moratorium",
+    "url": "https://www.nysenate.gov/legislation/bills/2021/a7389/amendment/c",
+    "publisher": "New York State Senate (legislation site)",
+    "date": "2022-03-18"
+   },
+   {
+    "title": "Assembly Bill A7389 actions list",
+    "url": "https://nysenate.gov/legislation/bills/2021/A7389",
+    "publisher": "New York State Senate (legislation site)",
+    "date": "2022-06-02"
+   },
+   {
+    "title": "Senate Bill S6486D",
+    "url": "https://www.nysenate.gov/legislation/bills/2021/S6486",
+    "publisher": "New York State Senate",
+    "date": "2022-06-02"
+   },
+   {
+    "title": "Final Scope, Generic Environmental Impact Statement for cryptocurrency mining operations (proof-of-work)",
+    "url": "https://www.dec.ny.gov/sites/default/files/2024-04/cryptogeisfinalpublicscope.pdf",
+    "publisher": "New York State Department of Environmental Conservation",
+    "date": "2024-04"
+   },
+   {
+    "title": "ENB statewide notice of availability of draft GEIS and public comment period",
+    "url": "https://dec.ny.gov/news/environmental-notice-bulletin/2025-05-28/public-notice/statewide-notice-of-availability-of-draft-geis-and-public-comment-period",
+    "publisher": "New York State Department of Environmental Conservation",
+    "date": "2025-05-28"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The signing date, the moratorium's expiry or extension, and a final GEIS were not found in fetched records; the nysenate.gov pages list no 'signed' action.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Statute text read from the A7389C bill page (text partly truncated by the fetch tool); enactment as Chapter 628 of 2022 established from DEC documents. The draft GEIS was announced; a final GEIS was not found. Whether the two-year moratorium has lapsed or been extended was not confirmed from a record.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-eia-862-crypto-survey-blocked",
+  "country": "United States",
+  "region": "Federal",
+  "site_or_subject": "EIA Form EIA-862, Cryptocurrency Mining Facilities Report (2024 emergency survey)",
+  "operator": "U.S. Energy Information Administration (EIA)",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "On February 23, 2024 the U.S. District Court for the Western District of Texas, Waco Division (No. 6:24-cv-00099-ADA; Texas Blockchain Council and Riot Platforms, Inc. v. Department of Energy, EIA, OMB et al.) issued a temporary restraining order: the defendants are 'restrained from requiring Plaintiffs or their members to respond to the Survey', 'restrained from collecting data required by the Survey', and 'shall sequester and not share any such data that Defendants have already received from Survey respondents.' The order found the 30-minute burden estimate 'extremely inaccurate, if not grossly misleading.' EIA Administrator Joseph DeCarolis's supplemental declaration (executed February 27, 2024) states 'Effective immediately, EIA is discontinuing (that is, formally withdrawing and ceasing)' the emergency collection, and that if EIA proposes a similar collection it 'will publish a notice in the Federal Register'. EIA's February 1, 2024 analysis page carries the notice: 'EIA has discontinued the emergency collection of data for Form EIA-862, Cryptocurrency Mining Operations Survey.'",
+  "record_sources": [
+   {
+    "title": "Temporary Restraining Order, Texas Blockchain Council et al. v. DOE et al., No. 6:24-cv-00099-ADA (W.D. Tex., Waco Div.)",
+    "url": "https://s3.documentcloud.org/documents/24440902/cryptoenergytro.pdf",
+    "publisher": "U.S. District Court for the Western District of Texas (copy hosted on DocumentCloud)",
+    "date": "2024-02-23"
+   },
+   {
+    "title": "Supplemental Declaration of Joseph DeCarolis (ECF No. 24-1), Case No. 6:24-cv-99",
+    "url": "https://archive.nclalegal.org/wp-content/uploads/2024/03/ECF-No.-24-1-Supp.-Decl.-DeCarolis-03.01.2024.pdf",
+    "publisher": "U.S. District Court for the Western District of Texas (copy hosted by NCLA)",
+    "date": "2024-02-27"
+   },
+   {
+    "title": "Tracking electricity consumption from U.S. cryptocurrency mining operations",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=61364",
+    "publisher": "U.S. Energy Information Administration",
+    "date": "2024-02-01"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The March 1, 2024 settlement text and any later EIA-862 Federal Register notice or final disposition of the case were not fetched.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "TRO, EIA declaration and EIA notice verified. The term that EIA would destroy data already received comes from a press report (APPA, 4 March 2024: 'EIA has agree to destroy any information that it has already received in response to the EIA-862 Emergency Survey'), not from the settlement document.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-eia-crypto-electricity-share-estimate",
+  "country": "United States",
+  "region": "Federal",
+  "site_or_subject": "EIA estimate of U.S. cryptocurrency-mining electricity use",
+  "operator": "U.S. Energy Information Administration (EIA)",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "EIA's Today in Energy (February 1, 2024) states annual electricity use from cryptocurrency mining 'probably represents from 0.6% to 2.3% of U.S. electricity consumption', and estimates electricity use from Bitcoin mining based in the United States to 'range from 25 TWh to 91 TWh', and 'We have identified a total of 137 facilities to date.' EIA's Today in Energy of October 3, 2024 forecasts ERCOT large flexible load (data centers and crypto mining) consumption that 'will total 54 billion kilowatthours (kWh) in 2025, up almost 60% from expected demand in 2024', about '10% of total forecast electricity consumption on the ERCOT grid next year.'",
+  "record_sources": [
+   {
+    "title": "Tracking electricity consumption from U.S. cryptocurrency mining operations",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=61364",
+    "publisher": "U.S. Energy Information Administration",
+    "date": "2024-02-01"
+   },
+   {
+    "title": "Data centers and cryptocurrency mining in Texas drive strong power demand growth",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=63344",
+    "publisher": "U.S. Energy Information Administration",
+    "date": "2024-10-03"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No survey-based EIA figure for mining electricity use was found after the EIA-862 emergency collection was discontinued.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Figures are EIA estimates (ranges and forecasts), not measured consumption. The ERCOT LFL forecast covers data centers and crypto mining together. EIA's 1 February 2024 page re-read directly on 2026-10-23; the 25 to 91 TWh range is for Bitcoin mining, the 0.6% to 2.3% share for cryptocurrency mining.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-listed-miners-capacity-10k",
+  "country": "United States",
+  "region": "Multiple (TX, GA, TN, MS, WY, OH, NE, KY, ND, OK, AL, NC, NY; plus Canada)",
+  "site_or_subject": "Operating, developed and contracted capacity of listed bitcoin miners as stated in their latest 10-K filings",
+  "operator": "Riot Platforms; MARA Holdings; CleanSpark; Core Scientific; Cipher Digital (Cipher Mining); TeraWulf; IREN; Hut 8",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "As filed: Riot (FY2025): Rockdale, Texas 'with 700 megawatts (\"MW\") of developed capacity'; Corsicana (Navarro County) 'currently has 400 MW of developed capacity', expected 'approximately one gigawatt' at completion; Kentucky 'approximately 137 MW'. MARA (FY2025): summary table 'Total | 1,315 | 1,861 | 66.4' (operational MW, total MW, EH/s); 'approximately 1.9 gigawatts (“GW”) of total capacity'. CleanSpark (FY ended 30 Sept 2025): 'total contracted power capacity of approximately 1,027 megawatts' (Georgia ~620 MW, Tennessee 234 MW, Mississippi ~63 MW, Wyoming ~110 MW). Core Scientific (FY2025): ten data centers, 'approximately 1.4 gigawatts (“GW”) of gross utility power capacity' and 'approximately 920 megawatts (“MW”) of total leasable customer power capacity'. Cipher (FY2025): 'we currently operate approximately 207 MW of power at one bitcoin mining data center in Texas' (Odessa); portfolio of 4.2 GW. TeraWulf (FY2025): Lake Mariner 'operated 245 MW of legacy bitcoin mining capacity'. IREN (FY ended 30 June 2026): bitcoin mining 'representing approximately 380MW of data center capacity'; FY2025 10-K: 'approximately 810MW of operating data center capacity'. Hut 8 (FY2025): '1,020 megawatts (\"MW\") of energy capacity under management across 15 sites'. None of the fetched 10-K text states annual electricity consumed in MWh.",
+  "record_sources": [
+   {
+    "title": "Riot Platforms, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/riot-20251231x10k.htm",
+    "publisher": "Riot Platforms, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "MARA Holdings, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000007/mara-20251231.htm",
+    "publisher": "MARA Holdings, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "CleanSpark, Inc. Form 10-K for fiscal year ended September 30, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/827876/000119312525297510/clsk-20250930.htm",
+    "publisher": "CleanSpark, Inc. (SEC EDGAR)",
+    "date": "2025"
+   },
+   {
+    "title": "Core Scientific, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+    "publisher": "Core Scientific, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Cipher Digital Inc. (formerly Cipher Mining) Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+    "publisher": "Cipher Digital Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "TeraWulf Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+    "publisher": "TeraWulf Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
+    "publisher": "IREN Ltd (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+    "publisher": "IREN Ltd (SEC EDGAR)",
+    "date": "2025"
+   },
+   {
+    "title": "Hut 8 Corp. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm",
+    "publisher": "Hut 8 Corp. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "IREN FY2025 10-K: 'We are a leading owner and operator of next-generation data centers powered by 100% renewable energy'; the same filing states RECs were purchased 'in respect of 100% of our energy consumption through to June 30, 2025 at our Childress site.'",
+  "claim_sources": [
+   {
+    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+    "publisher": "IREN Ltd (SEC EDGAR)",
+    "date": "2025"
+   }
+  ],
+  "gap": "No fetched 10-K text states electricity consumed (MWh) by mining; capacity terms differ by company (operational, developed, contracted, under management).",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Figures are company figures as filed (basis 'filed'). The fetch tool read about the first 100k characters of each 10-K HTML; later sections (MD&A, notes) were not read for most filings, so an MWh figure in those sections cannot be excluded. Bitdeer (Rockdale) files on Form 20-F and was not covered.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-crypto-to-ai-conversions-10k",
+  "country": "United States",
+  "region": "Multiple (TX, NY, plus Canada)",
+  "site_or_subject": "Conversion of bitcoin-mining sites and power to AI/HPC hosting, as filed",
+  "operator": "Core Scientific; TeraWulf; Cipher Digital; Hut 8; IREN; Riot Platforms; CleanSpark; MARA",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "As filed: Core Scientific: 'total leased customer power capacity under the relationship with CoreWeave increased to approximately 590 MW' (including a June 2024 'contract with CoreWeave for 200 MW' and '16 MW of infrastructure at our Austin, Texas facility'); 'CoreWeave, currently accounts for 100% of our Colocation segment revenue.' TeraWulf: 'Under the Akela Fluidstack Leases, we will provide 378 MW of critical IT load at the Lake Mariner Data Campus', with 'credit support provided by Google, which supports Fluidstack's payment and performance obligations'; Abernathy, Texas HPC campus 'designed for 168 MW critical IT load' (50.1% JV). Cipher: 15-year lease with Amazon Web Services 'to deliver approximately 300 gross MW' at Black Pearl near Wink, Texas; Barber Lake (near Colorado City, Texas) 300 MW gross, of which '244 MW of gross capacity will be allocated to Fluidstack', and 'Google LLC (“Google”) has agreed to backstop certain obligations of Fluidstack'. Hut 8: 'a 15-year, 245 MW IT lease at our River Bend campus valued at $7.0 billion over the base term', 'Fluidstack is expected to serve as tenant and Google is expected to provide a financial backstop'. IREN (FY2026): 'our operating AI Cloud Services capacity represented approximately 40MW'; it 'commenced decommissioning Bitcoin mining hardware', targeting substantial completion by 31 December 2026. Riot: AMD lease 'to initially provide 25 MW of critical IT load capacity at the Rockdale Facility' with 'expansion options for up to an additional 75 MW'. CleanSpark: 'long-term power agreements totaling 285 megawatts to support a new data center campus' in Austin County, Texas. MARA: Starwood joint platform 'expected to provide more than 1 GW of initial IT capacity'.",
+  "record_sources": [
+   {
+    "title": "Core Scientific, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
+    "publisher": "Core Scientific, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "TeraWulf Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm",
+    "publisher": "TeraWulf Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Cipher Digital Inc. (formerly Cipher Mining) Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm",
+    "publisher": "Cipher Digital Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Hut 8 Corp. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm",
+    "publisher": "Hut 8 Corp. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm",
+    "publisher": "IREN Ltd (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
+    "publisher": "IREN Ltd (SEC EDGAR)",
+    "date": "2025"
+   },
+   {
+    "title": "Riot Platforms, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/riot-20251231x10k.htm",
+    "publisher": "Riot Platforms, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "CleanSpark, Inc. Form 10-K for fiscal year ended September 30, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/827876/000119312525297510/clsk-20250930.htm",
+    "publisher": "CleanSpark, Inc. (SEC EDGAR)",
+    "date": "2025"
+   },
+   {
+    "title": "MARA Holdings, Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000007/mara-20251231.htm",
+    "publisher": "MARA Holdings, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Riot full-year 2025 release: 'By unlocking our large, nearly two-gigawatt power portfolio for high-demand data center infrastructure'.",
+  "claim_sources": [
+   {
+    "title": "Riot Platforms Reports Full Year 2025 Financial Results and Strategic Highlights",
+    "url": "https://seekingalpha.com/pr/20420415",
+    "publisher": "Riot Platforms, Inc. (press release via Seeking Alpha)",
+    "date": "2026-03"
+   }
+  ],
+  "gap": "Filings state contracted MW for AI tenants but not the MW of mining load removed at each site or any change to the sites' grid interconnection.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Contract MW verified in 10-K text. Not found in fetched text: CoreWeave contract term/value and site allocation; Core Scientific-CoreWeave merger termination; Google backstop dollar amounts; Hut 8 River Bend state; IREN-Microsoft contract (FY2026 10-K mentions Microsoft Azure only as a competitor). Hut 8's lease passage re-read directly on 2026-10-23: the tenant and Google's backstop are described as expected.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "no-crypto-mining-datacentre-ban-proposal",
+  "country": "Norway",
+  "region": "Norway",
+  "site_or_subject": "Proposed temporary prohibition on new data centres mainly engaged in cryptocurrency mining",
+  "operator": "Norwegian Ministry of Digitalisation and Public Governance; Storting energy and environment committee",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "The Ministry of Digitalisation and Public Governance (7 October 2025) announced a data-centre strategy including 'the investigation of a temporary prohibition on the establishment of data centres' 'that mainly engage in energy-intensive cryptocurrency mining.' The Storting energy and environment committee's recommendation Innst. 280 S (2024-2025), dated 6 May 2025, on representative proposal Dok. 8:112 S (which asked to 'utrede et permanent forbud mot utvinning av kryptovaluta i Norge' - investigate a permanent ban on crypto mining) recommended '- vedtas ikke.' (not adopted); it cites the minister's answer of 19 August 2024 that of data-centre electricity use 'omtrent en tredjedel av dette går til produksjon av kryptovaluta' (roughly one third goes to cryptocurrency production) and refers to 'regjeringens pågående arbeid med å forby kryptoutvinning' (the government's ongoing work to ban crypto mining).",
+  "record_sources": [
+   {
+    "title": "The Government introduces clear objectives for a sustainable and socioeconomically beneficial data centre industry",
+    "url": "https://www.regjeringen.no/en/whats-new/the-government-introduces-clear-objectives-for-a-sustainable-and-socioeconomically-beneficial-data-centre-industry-highlighting-security-requirements-for-data-centres/id3113430",
+    "publisher": "Norwegian Ministry of Digitalisation and Public Governance (regjeringen.no)",
+    "date": "2025-10-07"
+   },
+   {
+    "title": "Innst. 280 S (2024–2025), Innstilling fra energi- og miljøkomiteen om representantforslag om å få kontroll over datasenterindustrien (Dok. 8:112 S)",
+    "url": "https://stortinget.no/no/Saker-og-publikasjoner/Publikasjoner/Innstillinger/Stortinget/2024-2025/inns-202425-280s/?all=true",
+    "publisher": "Stortinget, energi- og miljøkomiteen",
+    "date": "2025-05-06"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No adopted regulation, consultation paper or electricity-tax decision on crypto mining was fetched; the Meld. St. 4 (2026-2027) chapter page returned an error.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Government announcement and Storting committee document verified. Committee text also describes total data-centre use doubling from about 0.8 to 1.6 TWh (2022-2024) per the minister; that sentence was summarised by the fetch tool, not captured verbatim. Electricity-tax treatment of crypto mining not verified.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ru-mining-regional-ban-decree-1869",
+  "country": "Russia",
+  "region": "Russia (listed regions and territories)",
+  "site_or_subject": "Regional bans on digital-currency mining (Government Decree No. 1869 of 23 Dec 2024, amended by No. 936 of 25 July 2026)",
+  "operator": "Government of the Russian Federation",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "Government Decree No. 1468 of 1 November 2024 (as amended by No. 341 of 21 March 2025) sets the 'ПРАВИЛА УСТАНОВЛЕНИЯ ЗАПРЕТА НА ОСУЩЕСТВЛЕНИЕ МАЙНИНГА ЦИФРОВОЙ ВАЛЮТЫ' (rules for establishing a ban on digital-currency mining), under which a Government decision lists the regions or territories and the period. Decree No. 936 of 25 July 2026 amends Decree No. 1869 of 23 December 2024 by adding '14. Город Москва.' (Moscow), '15. Московская область.' (Moscow Oblast) and, as item 16, eight municipal okrugs and the urban okrug of Lgov in Kursk Oblast, with the ban applying 'с 15 августа 2026 г. по 31 декабря 2032 г.' (15 August 2026 to 31 December 2032).",
+  "record_sources": [
+   {
+    "title": "Постановление Правительства РФ от 25.07.2026 № 936 (amending Decree No. 1869 of 23.12.2024)",
+    "url": "https://base.spinform.ru/show_doc.fwx?rgn=176935",
+    "publisher": "Government of the Russian Federation (text via base.spinform.ru legal database)",
+    "date": "2026-07-25"
+   },
+   {
+    "title": "Постановление Правительства РФ от 01.11.2024 N 1468 (ред. от 21.03.2025), Rules for establishing a ban on digital-currency mining",
+    "url": "https://www.consultant.ru/document/cons_doc_LAW_489553/045dd79b9b6456ac861c1a8142871687561860ff/",
+    "publisher": "Government of the Russian Federation (text via ConsultantPlus)",
+    "date": "2024-11-01"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The original region list and periods in Decree No. 1869 (including any seasonal bans) were not read from a full-text or official source.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Decree texts read via legal databases (base.spinform.ru, ConsultantPlus), not the official portal publication.pravo.gov.ru, which was not located. Items 1-13 of the annex (the December 2024 list) not read; press reports describe 10 full-ban regions to 2031 and seasonal restrictions in others (not verified).",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "py-ande-crypto-intensive-tariff",
+  "country": "Paraguay",
+  "region": "Paraguay",
+  "site_or_subject": "ANDE tariff group covering cryptoasset mining (Grupo de Consumo Intensivo Especial, Pliego de Tarifas N° 21)",
+  "operator": "Administración Nacional de Electricidad (ANDE)",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "ANDE Resolución P/Nº 47191 (Asunción, 5 December 2022) created the special intensive-consumption group, covering activities 'incluyendo minería de criptoactivos, blockchain, token y data centers' and supplies 'cuyo factor de carga mensual sea igual o superior al 80% (ochenta por ciento), 2 (dos) veces', with tariffs in US dollars, e.g. 220 kV: 'Potencia reservada en punta de carga USD/kW mes 4,64' and 'Energía en punta de carga USD/kWh 0,03277'; 66 kV: USD 6.38/kW-month and 'USD/kWh 0,03421'; 23 kV supplies capped at 'Potencia reservada máxima en punta de carga: 6.000 kW' (substation) and 2,000 kW (line). Resolución P/Nº 47885 (14 June 2023) modified items 4.11.5 and 4.12.8 ('GRUPO DE CONSUMO INTENSIVO ESPECIAL') of Tariff Schedule No. 21, including the load-factor test 'factor de carga mensual superior o igual al 80%'.",
+  "record_sources": [
+   {
+    "title": "Resolución P/Nº 47191, Grupo de Consumo Intensivo Especial",
+    "url": "https://www.ande.gov.py/docs\\tarifas\\10 RP47191 Grupo de Consumo Intensivo Especial.pdf",
+    "publisher": "Administración Nacional de Electricidad (ANDE)",
+    "date": "2022-12-05"
+   },
+   {
+    "title": "Resolución P/Nº 47885, Modifica Num. 4.11.5 y 4.12.8, Pliego de Tarifas N° 21",
+    "url": "https://www.ande.gov.py/docs\\tarifas\\14- RP47885 Modifica Num. 4.11.5. y 4.12.8. Pliego de Tarifas N 21.pdf",
+    "publisher": "Administración Nacional de Electricidad (ANDE)",
+    "date": "2023-06-14"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "ANDE's 2024 tariff increase for crypto miners (press-reported) and any total MW or energy supplied to miners were not found in a fetched ANDE document.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Tariff values read from ANDE resolution PDFs; later resolutions (P/N° 47708/2023 and any 2024 change) not read, so the 2022 values may be superseded.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "kz-digital-mining-electricity-demand",
+  "country": "Kazakhstan",
+  "region": "Kazakhstan",
+  "site_or_subject": "Digital mining and national electricity consumption; digital-mining licensing law",
+  "operator": "KOREM (electricity and capacity market operator); Ministry of Energy",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "KOREM's news item of 14 February 2022 reports the Minister (name not given) stating that electricity consumption, which grew by an average of 2% annually before 2021, 'rose 6.1% last year, driven mainly by digital mining activity', and that 'legal amendments' and 'inspections of illegal mining operations' were under way. The Law 'On digital assets in the Republic of Kazakhstan' (adilet.zan.kz, Z2300000193) was located but its text could not be read.",
+  "record_sources": [
+   {
+    "title": "Kazakhstan's Energy Minister Discusses Crypto-Mining and Its Impact on the Power System",
+    "url": "https://korem.kz/en/news/novosti/3635",
+    "publisher": "KOREM (Kazakhstan Operator of Electric Energy and Capacity Market)",
+    "date": "2022-02-14"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No official count of licensed miners, electricity quota for miners or mining MW was read; the digital-assets law text was not retrievable.",
+  "confidence": "low",
+  "verification_status": "partial",
+  "verification_note": "Only a 2022 market-operator news item was read. adilet.zan.kz (https://adilet.zan.kz/eng/docs/Z2300000193) returned a JavaScript-only shell twice.",
+  "last_checked": "2026-10-23"
+ }
+]

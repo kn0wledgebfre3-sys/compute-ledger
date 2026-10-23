@@ -154,5 +154,9 @@
    ]
   ]
  },
+ "filed_and_utility": {
+  "public_power_rows": 25,
+  "virginia_filed_rows": 62
+ },
  "method": "Unit conversions only: 1 GJ = 1/3.6 MWh; average MW = MWh / hours in the reporting period. Fuel figures are thermal energy burned, not electricity generated. 'fuel_as_hours_at_full_fleet_thermal_rating' = fuel GJ / 3.6 / permitted fleet MWth; it is the number of hours the whole permitted fleet would take to burn that fuel at full rating, a scale for how little the generators ran, not a count of actual hours."
 }

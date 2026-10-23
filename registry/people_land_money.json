@@ -32,7 +32,7 @@
   "lat": 40.0,
   "lon": -76.0,
   "category": "community",
-  "record": "The IMM (1 Oct 2025) estimated that including 11,993 MW of datacenter load added $7,271,197,971 (82.1%) to 2026/2027 Base Residual Auction revenues of $16,124,370,889, and $9,332,103,858 to the 2025/2026 auction, a combined $16,603,301,829 across the two auctions. Total PJM capacity charges rose from $2,834 million (2024) to $10,616 million (2025), +262.3%.",
+  "record": "The IMM (1 Oct 2025) estimated that including 11,993 MW of datacenter load added $7,271,197,971 (82.1%) to 2026/2027 Base Residual Auction revenues of $16,124,370,889, and $9,332,103,858 to the 2025/2026 auction, a combined $16,603,301,829 across the two auctions. In the market monitor's 2025 State of the Market report, the capacity component of the total cost of wholesale power rose from $2,834 million (2024) to $10,616 million (2025), +274.6%; per MWh of load it rose from $3.61 to $13.09 (+262.3%), from 6.5% to 15.8% of the total.",
   "record_sources": [
    {
     "title": "IMM Analysis of the 2026/2027 RPM Base Residual Auction Part A",
@@ -64,7 +64,7 @@
   ],
   "gap": "The $16.6 bn figure is a scenario counterfactual estimate by the market monitor, not an audited bill impact; PJM's own report does not quantify a datacenter share.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ie-cru-leu-policy",
@@ -418,24 +418,24 @@
     "date": "2025"
    },
    {
-    "title": "Parecer do relator Cid Gomes sobre PL 278/2026 (Redata)",
+    "title": "Parecer do relator Cid Gomes sobre PL 278/2026 (Redata); the document is undated, the copy was uploaded in September 2026",
     "url": "https://static.poder360.com.br/uploads/2026/09/Parecer-Cid-Gomes-Redata-Senado-1-se-2026.pdf",
     "publisher": "Senado Federal (copy hosted by Poder360)",
-    "date": "2026-09"
+    "date": ""
    }
   ],
   "claim": "Rapporteur's parecer states the regime reduces initial project investment by 'até 30%' and that the 2% R&D obligation would yield 'centenas de milhões de reais' per year for universities.",
   "claim_sources": [
    {
-    "title": "Parecer Cid Gomes (PL 278/2026)",
+    "title": "Parecer Cid Gomes (PL 278/2026); the document is undated, the copy was uploaded in September 2026",
     "url": "https://static.poder360.com.br/uploads/2026/09/Parecer-Cid-Gomes-Redata-Senado-1-se-2026.pdf",
     "publisher": "Senado Federal (via Poder360)",
-    "date": "2026-09"
+    "date": ""
    }
   ],
   "gap": "Official cost is quantified (R$7.25 bn over 2026-28) but no government job or investment-volume commitment is attached to it.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "in-up-dc-policy-2026",
@@ -477,7 +477,7 @@
   "lat": 1.49,
   "lon": 103.74,
   "category": "labor",
-  "record": "A Digital Ministry written parliamentary reply (reported 15 Oct 2026, to Datuk Dr Ahmad Yunus Hairi, Kuala Langat) states 27 datacenter projects were approved since the Feb 2025 Data Centre Task Force (16 Johor, 10 Selangor, 1 Negeri Sembilan; 1 operational, 26 under construction; Berita Harian dates the approvals to July 2026), an RM225.97 billion pipeline, 4,053 projected jobs including 3,523 high-skilled (about 150 jobs per project), with 89.21% of high-skilled roles expected to go to Malaysians and a 30% local-content requirement monitored by MIDA through six-monthly implementation reports. Earlier, Minister Gobind Singh Deo told the Dewan Rakyat (12 Nov 2024) that RM141.72 billion of digital investment was approved Jan-Oct 2024 with 41,078 jobs across the whole digital economy, not datacenters specifically.",
+  "record": "A Digital Ministry written parliamentary reply (reported 15 Oct 2026, to Datuk Dr Ahmad Yunus Hairi, Kuala Langat) states 27 datacenter projects were approved since the Feb 2025 Data Centre Task Force (16 Johor, 10 Selangor, 1 Negeri Sembilan; 1 operational, 26 under construction; Berita Harian dates the approvals to July 2026), an RM225.97 billion pipeline, 4,053 projected jobs including 3,523 high-skilled, with 89.21% of high-skilled roles expected to go to Malaysians and a requirement of at least 30% local content monitored by MIDA through six-monthly implementation reports. Earlier, Minister Gobind Singh Deo told the Dewan Rakyat (12 Nov 2024) that RM141.72 billion of digital investment was approved Jan-Oct 2024 with 41,078 jobs across the whole digital economy, not datacenters specifically.",
   "record_sources": [
    {
     "title": "Twenty-seven approved data centres projected to create 4,053 jobs, including 3,523 skilled roles (written parliamentary reply)",
@@ -505,12 +505,18 @@
     "url": "https://www.mida.gov.my/mida-news/rm141-7b-worth-of-digital-investments-approved-in-2024-41078-jobs-created-and-10-data-centres-operating-in-johor-says-gobind/",
     "publisher": "MIDA",
     "date": "2024-11-12"
+   },
+   {
+    "title": "Twenty-seven approved data centres projected to create 4,053 jobs, including 3,523 skilled roles",
+    "url": "https://www.thevibes.com/articles/news/128358/twenty-seven-approved-data-centres-projected-to-create-4053-jobs-including-3523-skilled-roles",
+    "publisher": "The Vibes (reporting a Digital Ministry written reply)",
+    "date": "2026-10-15"
    }
   ],
   "gap": "Headline digital-economy job figure (41,078) is an order of magnitude larger than the datacenter-specific projection (4,053 for RM226 bn).",
   "confidence": "medium",
   "verification_note": "Searched parlimen.gov.my and Digital Ministry/MIDA releases (English and Malay) for the October 2026 written reply (27 DCTF projects, RM225.97 bn, 4,053 jobs, 89.21%, 30% local content); only press located (The Vibes, The Star, Bernama, Berita Harian, which dates the 27 approvals to July 2026). The written reply text was not fetched. Second pass (2026-10-22): parlimen.gov.my written-question pages are robots-disallowed (added to browser_fetch_list.csv); searched repositori.parlimen.gov.my, digital.gov.my and Malay terms (pertanyaan bukan lisan, Ahmad Yunus Hairi, DCTF) and checked whether the ministry posts DR answers as PETRA does; found only The Star (names the asker and adds 1 operational/26 under construction), Luminews and Berita Harian (robots-disallowed), none with the reply text.",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_status": "not_found"
  },
  {
@@ -693,7 +699,7 @@
   ],
   "gap": "Positive example: half-municipally-owned utility publishes delivered recovered heat (117 GWh in 2023) in its statutory annual report; figure combines datacenters with other Öppen Fjärrvärme sources and is not separately assured.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ie-tallaght-heatworks",
@@ -773,7 +779,7 @@
   "lat": 47.64,
   "lon": -122.13,
   "category": "circularity",
-  "record": "Microsoft's 2025 Environmental Sustainability Report states '90.9% reuse and recycling of cloud hardware servers and components' (FY24, against a 90% by 2025 goal). The April 2025 circularity white paper defines the rate as (reuse kg + recycle kg x recycling efficiency) / total kg, cites >3.2 million components reused in FY24, and mentions no independent verification. Deloitte & Touche LLP's limited-assurance review (AT-C 210, dated 29 May 2025; FY25 review dated 9 July 2026) covers Section 1 of the Environmental Data Fact Sheet, which contains operational waste tonnages and packaging recyclability but no cloud-hardware reuse/recycle percentage.",
+  "record": "Microsoft's April 2025 circularity white paper defines its cloud-hardware reuse-and-recycling rate as (reuse kg + recycle kg x recycling efficiency) / total kg and mentions no independent verification. Deloitte & Touche LLP's limited-assurance review (AT-C 210, dated 29 May 2025; FY25 review dated 9 July 2026) covers Section 1 of the Environmental Data Fact Sheet, which contains operational waste tonnages and packaging recyclability but no cloud-hardware reuse/recycle percentage.",
   "record_sources": [
    {
     "title": "2025 Microsoft Environmental Data Fact Sheet (incl. Deloitte review report)",
@@ -788,7 +794,7 @@
     "date": "2026-07-09"
    }
   ],
-  "claim": "Microsoft reports 90.9% reuse and recycling of cloud hardware servers and components in FY24, exceeding its 2025 target a year early.",
+  "claim": "Microsoft reports 90.9% reuse and recycling of cloud hardware servers and components in FY24, against a goal of 90% by 2025, and more than 3.2 million components reused in FY24.",
   "claim_sources": [
    {
     "title": "2025 Microsoft Environmental Sustainability Report",
@@ -805,7 +811,7 @@
   ],
   "gap": "The 90.9% hardware circularity figure is self-reported; the named third-party review scope covers waste tonnages but does not list the hardware reuse/recycle rate.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "ke-meta-sama-keca-2024",

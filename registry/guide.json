@@ -100,6 +100,49 @@
   ]
  },
  {
+  "key": "paper",
+  "title": "What the certificates do",
+  "color": "--c-acct",
+  "blurb": "Every large operator reports its electricity emissions twice. The gap between the two numbers is what certificates and contracts account for.",
+  "why": [
+   "A company's Scope 2 emissions can be counted two ways. Location-based uses the average emissions of the grids its datacenters draw from. Market-based subtracts what the company claims through renewable certificates, power purchase agreements and supplier contracts. The rules (the GHG Protocol's 2015 Scope 2 Guidance) require both numbers, and most headlines, '100% renewable' claims and many targets use the market-based one.",
+   "The ledger lays the two numbers side by side from each company's own assured reports. For 2024 or 2025, the market-based figure is between 71% and 99.98% below the location-based one across the seven operators read so far. The rules on which certificates count are being revised; the revision is not final."
+  ],
+  "ask": [
+   [
+    "Which number is this?",
+    "When a company reports its emissions, ask whether Scope 2 is location-based or market-based, and for the other one. Both are in the assured data tables of every company in this section."
+   ],
+   [
+    "What is the 100% made of?",
+    "Annual matching lets a certificate from a sunny afternoon cover a windless night, and a certificate from another region cover local use. Ask for the share bought as unbundled certificates, the share from PPAs, and any hourly figure. Equinix states 47% of its 2024 coverage came from unbundled certificates; of the seven, only Google's documents read here give an hourly carbon-free share."
+   ],
+   [
+    "Which number do the raters use?",
+    "Sustainalytics collects location-based Scope 2 by default; CDP collects both; MSCI's published methodologies do not say which. The SBTi's new standard sets target ambition on the location-based inventory from February 2027."
+   ]
+  ],
+  "headline": [
+   "microsoft-scope2-two-numbers",
+   "meta-scope2-two-numbers",
+   "ghg-protocol-scope2-revision"
+  ],
+  "all": [
+   "microsoft-scope2-two-numbers",
+   "alphabet-google-scope2-two-numbers",
+   "amazon-scope2-two-numbers",
+   "meta-scope2-two-numbers",
+   "oracle-scope2-two-numbers",
+   "equinix-scope2-two-numbers",
+   "digital-realty-scope2-two-numbers",
+   "ghg-protocol-scope2-revision",
+   "scope2-disclosure-rules-esrs-issb-sb253",
+   "sbti-netzero-scope2",
+   "raters-scope2-inputs-msci-sustainalytics-cdp",
+   "carbon-credit-registries-beneficiaries"
+  ]
+ },
+ {
   "key": "fuel",
   "title": "What actually burns",
   "color": "--c-fuel",
@@ -152,6 +195,50 @@
    "us-nv-google-nv-energy-clean-transition-tariff",
    "us-pa-susquehanna-talen-aws-colocation",
    "ke-olkaria-ecocloud-geothermal"
+  ]
+ },
+ {
+  "key": "crypto",
+  "title": "Crypto mining",
+  "color": "--c-morat",
+  "blurb": "The same grids, queues and gas permits as datacenters, and increasingly the same sites under a new tenant.",
+  "why": [
+   "Cryptocurrency mining draws power continuously and can stop on request, so grid operators treat it as large flexible load. In Texas it sits in the same interconnection queue as datacenters, and since 3 August 2026 both are paused at 75 MW and above pending the Governor's audit. Mining companies report their sites, MW and curtailment payments in SEC filings; few other records exist.",
+   "Many mining sites are now being leased to AI tenants, so the power that was built for mining is being re-let. The ledger records each conversion as filed: the MW leased, the tenant, and any guarantor."
+  ],
+  "ask": [
+   [
+    "Where is the register?",
+    "Texas law requires mining sites over 75 MW to register with the PUCT, but the adoption order says registrations go into a tool 'that will not be accessible to the public'. Ask for the count and MW under the Public Information Act."
+   ],
+   [
+    "Who is paid to stop?",
+    "Riot's statement of operations shows $56.7 million of power curtailment credits in 2025 ($71.2 million in 2023). Ask ERCOT for the total paid to all mining loads."
+   ],
+   [
+    "What happened to the federal survey?",
+    "EIA's 2024 emergency survey of mining electricity was stopped by a temporary restraining order and withdrawn; EIA's last estimate is 0.6% to 2.3% of US electricity."
+   ]
+  ],
+  "headline": [
+   "us-eia-862-crypto-survey-blocked",
+   "us-tx-riot-power-curtailment-credits",
+   "us-sec-crypto-to-ai-conversions-10k"
+  ],
+  "all": [
+   "us-tx-puct-sb1929-crypto-registration",
+   "us-tx-ercot-large-load-crypto",
+   "us-tx-riot-power-curtailment-credits",
+   "us-ny-greenidge-title-v-denial",
+   "us-ny-pow-mining-moratorium-ch628-2022",
+   "us-eia-862-crypto-survey-blocked",
+   "us-eia-crypto-electricity-share-estimate",
+   "us-sec-listed-miners-capacity-10k",
+   "us-sec-crypto-to-ai-conversions-10k",
+   "no-crypto-mining-datacentre-ban-proposal",
+   "ru-mining-regional-ban-decree-1869",
+   "py-ande-crypto-intensive-tariff",
+   "kz-digital-mining-electricity-demand"
   ]
  },
  {

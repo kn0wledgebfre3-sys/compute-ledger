@@ -1,0 +1,170 @@
+{
+ "_about": "Benchmarking portals the ledger pulls. Field names from sites/metered/benchmarking_notes.md (inspected 2026-10-23). type_filter selects datacenter rows; known_addresses catches datacenters filed under another type (carrier hotels typed Office). elec_unit is the unit of elec as published.",
+ "socrata": [
+  {
+   "jurisdiction": "New York City",
+   "domain": "data.cityofnewyork.us",
+   "dataset": "5zyy-y8am",
+   "type": "primary_property_type",
+   "year": "report_year",
+   "name": "property_name",
+   "address": "address_1",
+   "elec": "electricity_use_grid_purchase_1",
+   "elec_unit": "kWh",
+   "gfa": "property_gfa_self_reported",
+   "eui": "site_eui_kbtu_ft",
+   "star": "energy_star_score",
+   "type_filter": "primary_property_type='Data Center'",
+   "known_addresses": [
+    "111 8th Avenue",
+    "375 Pearl Street",
+    "85 10th Avenue",
+    "325 Hudson Street",
+    "60 Hudson Street",
+    "56 Hudson Street",
+    "32 Avenue of the Americas"
+   ]
+  },
+  {
+   "jurisdiction": "Seattle",
+   "domain": "cos-data.seattle.gov",
+   "dataset": "teqw-tu6e",
+   "type": "epapropertytype",
+   "year": "datayear",
+   "name": "buildingname",
+   "address": "address",
+   "elec": "electricity_kwh",
+   "elec_unit": "kWh",
+   "gfa": "propertygfatotal",
+   "eui": "siteeui_kbtu_sf",
+   "star": "energystarscore",
+   "type_filter": "epapropertytype='Data Center' OR largestpropertyusetype='Data Center'",
+   "known_addresses": [
+    "2001 6TH AVE"
+   ]
+  },
+  {
+   "jurisdiction": "San Francisco",
+   "domain": "data.sfgov.org",
+   "dataset": "96ck-qcfe",
+   "type": "category",
+   "year": "benchmark_year",
+   "name": "building_name",
+   "address": "building_address",
+   "elec": "electricity_use_grid_purchase",
+   "elec_unit": "kWh",
+   "gfa": "floor_area",
+   "eui": "site_eui",
+   "star": "energy_star_score",
+   "type_filter": "category='Data Center'",
+   "known_addresses": []
+  },
+  {
+   "jurisdiction": "Chicago",
+   "domain": "data.cityofchicago.org",
+   "dataset": "xq83-jr8c",
+   "type": "primary_property_type",
+   "year": "data_year",
+   "name": "property_name",
+   "address": "address",
+   "elec": "electricity_use_kbtu",
+   "elec_unit": "kBtu",
+   "gfa": "gross_floor_area_buildings_sq_ft",
+   "eui": "site_eui_kbtu_sq_ft",
+   "star": "energy_star_score",
+   "type_filter": "primary_property_type='Data Center'",
+   "known_addresses": [
+    "350 E Cermak Rd",
+    "600 S Federal St",
+    "427 S LaSalle St",
+    "840 S Canal St"
+   ]
+  },
+  {
+   "jurisdiction": "Cambridge MA",
+   "domain": "data.cambridgema.gov",
+   "dataset": "72g6-j7aq",
+   "type": "primary_property_type_self_selected",
+   "year": "data_year",
+   "name": "owner",
+   "address": "address",
+   "elec": "electricity_use_grid_purchase_kwh",
+   "elec_unit": "kWh",
+   "gfa": "property_gfa_self_reported_ft2",
+   "eui": "site_eui_kbtu_ft2",
+   "star": "energy_star_score",
+   "type_filter": "primary_property_type_self_selected='Data Center'",
+   "known_addresses": []
+  },
+  {
+   "jurisdiction": "Montgomery County MD",
+   "domain": "data.montgomerycountymd.gov",
+   "dataset": "g6nn-rgwc",
+   "type": "primary_property_type_self",
+   "year": "reporting_year_start_date",
+   "name": "building_name",
+   "address": "address",
+   "elec": "electricity_kwh",
+   "elec_unit": "kWh",
+   "gfa": "reported_property_gross_floor",
+   "eui": "site_eui",
+   "star": "energy_star_score",
+   "type_filter": "upper(primary_property_type_self) like '%DATA CENTER%'",
+   "known_addresses": [],
+   "note": "reporting_year_start_date may be the first reporting year, not the data year"
+  }
+ ],
+ "arcgis": [
+  {
+   "jurisdiction": "Washington DC",
+   "layer": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Energy_WebMercator/FeatureServer/45",
+   "where": "PRIMARYPROPERTYTYPE_SELFSELECT='Data Center' OR PRIMARYPROPERTYTYPE_EPACALC='Data Center'",
+   "year": "REPORTINGYEAR",
+   "name": "PROPERTYNAME",
+   "address": "ADDRESSOFRECORD",
+   "type": "PRIMARYPROPERTYTYPE_SELFSELECT",
+   "elec": "ELECTRICITYUSE_GRID_KWH",
+   "elec_unit": "kWh",
+   "gfa": "REPORTEDBUILDINGGROSSFLOORAREA",
+   "eui": "SITEEUI_KBTU_FT",
+   "star": "ENERGYSTARSCORE",
+   "note": "REPORTINGYEAR semantics unconfirmed"
+  },
+  {
+   "jurisdiction": "Boston, MA",
+   "layer": "https://services.arcgis.com/sFnw0xNflSi8J0uh/ArcGIS/rest/services/berdo_static_2023/FeatureServer/0",
+   "where": "All_Property_Types LIKE '%Data Center%'",
+   "year": "",
+   "fixed_year": "2023",
+   "name": "Property_Owner_Name",
+   "address": "Building_Address",
+   "type": "Largest_Property_Type",
+   "elec": "Electricity_Usage__kBtu_",
+   "elec_unit": "kBtu",
+   "gfa": "Reported_Gross_Floor_Area__Sq_F",
+   "eui": "",
+   "star": "",
+   "note": "static 2023 layer; later years are xlsx downloads"
+  },
+  {
+   "jurisdiction": "Philadelphia",
+   "layer": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/properties_reported_{year}/FeatureServer/0",
+   "years": [
+    2023,
+    2024,
+    2025
+   ],
+   "where": "primary_prop_type_epa_calc='Data Center'",
+   "year": "data_year",
+   "name": "property_name",
+   "address": "street_address",
+   "type": "primary_prop_type_epa_calc",
+   "elec": "electric_use_kbtu",
+   "elec_unit": "kBtu",
+   "gfa": "total_floor_area_bld_pk_ft2",
+   "eui": "site_eui_kbtuft2",
+   "star": "energy_star_score",
+   "note": "one layer per year; the services path is from the notes and not yet run live"
+  }
+ ]
+}

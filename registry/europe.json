@@ -271,7 +271,7 @@
   "lat": 60.22,
   "lon": 24.66,
   "category": "heat_reuse",
-  "record": "Fortum press release (6 May 2026): heat production started at Kolabacken and Hepokorpi; 72 water-to-water heat pumps providing up to 180 MW of district heat, 40 air-to-water heat pumps, 200 MW of electric boilers, 20,000 m3 / 800 MWh thermal storage; about EUR 225 million investment with NextGenerationEU and Finnish state support; about 250,000 heat users; waste-heat recovery from the data centres starts in phases in 2027.",
+  "record": "Fortum press release (6 May 2026): heat production started at Kolabacken and Hepokorpi; investment with NextGenerationEU and Finnish state support; waste-heat recovery from the data centres starts in phases in 2027.",
   "record_sources": [
    {
     "title": "Fortum has started heat production at two large data centre sites in Finland",
@@ -280,7 +280,7 @@
     "date": "2026-05-06"
    }
   ],
-  "claim": "At the March 2022 announcement, the City of Espoo, Fortum and Microsoft stated the data centres' waste heat would cover about 40% of the heat demand of 250,000 district-heat users in Espoo, Kauniainen and Kirkkonummi and cut district-heat CO2 by about 400,000 t/yr; Fortum in May 2026 restated 'approximately 40 per cent' of the area's ~2 TWh/yr demand once fully implemented.",
+  "claim": "At the March 2022 announcement, the City of Espoo, Fortum and Microsoft stated the data centres' waste heat would cover about 40% of the heat demand of 250,000 district-heat users in Espoo, Kauniainen and Kirkkonummi and cut district-heat CO2 by about 400,000 t/yr; Fortum in May 2026 restated 'approximately 40 per cent' of the area's ~2 TWh/yr demand once fully implemented. Fortum's press release (6 May 2026) states: 72 water-to-water heat pumps providing up to 180 MW of district heat, 40 air-to-water heat pumps, 200 MW of electric boilers, 20,000 m3 / 800 MWh thermal storage; about EUR 225 million investment with NextGenerationEU and Finnish state support; about 250,000 heat users.",
   "claim_sources": [
    {
     "title": "Microsoft and Fortum collaborate in Espoo: planned data centre region will produce zero-emission heat",
@@ -297,7 +297,7 @@
   ],
   "gap": "positive example: plants built and operating; the 40% waste-heat share remains a forward expectation because data-centre heat recovery begins in 2027, and no delivered-MWh figure is yet published.",
   "confidence": "low",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Every figure is from Fortum's own release, which this ledger counts as a claim. Searched for a regulator, permit or state-aid record of the plants: a Finnish Government energy-aid release (valtioneuvosto.fi/-/1410877) may cover them but could not be opened. Kept as a low-confidence positive example until a record is found.",
   "verification_status": "not_found"
  },
@@ -310,7 +310,7 @@
   "lat": 60.57,
   "lon": 27.2,
   "category": "heat_reuse",
-  "record": "Business Finland (20 May 2024) recorded a EUR 1 billion Hamina expansion with recovered heat estimated to cover about 80% of Hamina's district-heating needs, contributing by late 2025. Haminan Energia's owner CapMan Infra (18 May 2026) states the heat-recovery pump plant supplied first heat in Q4 2025, was inaugurated 12 May 2026, and once fully operational will cover about 70-75% of Hamina's district-heating energy, roughly the heating of 2,000 apartments. Google states the site uses seawater to cool its servers.",
+  "record": "Business Finland (20 May 2024) recorded a Hamina expansion with recovered heat contributing by late 2025. Haminan Energia's owner CapMan Infra (18 May 2026) states the heat-recovery pump plant supplied first heat in Q4 2025 and was inaugurated 12 May 2026.",
   "record_sources": [
    {
     "title": "Google announced an expansion of its Hamina data center and a new heat recovery project",
@@ -325,18 +325,30 @@
     "date": "2026-05-18"
    }
   ],
-  "claim": "Google stated heat from the data centre will supply 80% of the district heating network's requirements and that the facility uses seawater cooling.",
+  "claim": "Google stated heat from the data centre will supply 80% of the district heating network's requirements and that the facility uses seawater cooling. Google's announcement, as recorded by Business Finland (20 May 2024), gives a EUR 1 billion Hamina expansion with recovered heat estimated to cover about 80% of Hamina's district-heating needs. Haminan Energia's owner CapMan Infra (18 May 2026) says the plant, once fully operational, will cover about 70-75% of Hamina's district-heating energy, roughly the heating of 2,000 apartments.",
   "claim_sources": [
    {
     "title": "Google launches heat recovery project at data center in Hamina, Finland",
     "url": "https://datacenterdynamics.com/en/news/google-launches-heat-recovery-project-at-data-center-in-hamina-finland",
     "publisher": "Data Center Dynamics",
     "date": "2024-05-21"
+   },
+   {
+    "title": "Google announced an expansion of its Hamina data center and a new heat recovery project",
+    "url": "https://businessfinland.fi/en/News/news/2024/google-announced-an-expansion-of-its-hamina-data-center",
+    "publisher": "Business Finland (state agency)",
+    "date": "2024-05-20"
+   },
+   {
+    "title": "CapMan Infra's portfolio company Haminan Energia advances local energy transition through a new heat recovery facility",
+    "url": "https://capman.com/stories/capman-infras-portfolio-company-haminan-energia-new-heat-recovery-facility/",
+    "publisher": "CapMan",
+    "date": "2026-05-18"
    }
   ],
   "gap": "positive example: plant delivered on the announced timeline; the owner's stated coverage (70-75%) is slightly below Google's announced 80%.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "dk-national-heat-reuse-and-forecast",
@@ -816,6 +828,12 @@
     "url": "https://leap.epa.ie/docs/632e86ac-f221-47b6-b9c2-a5765cb06d09.pdf",
     "publisher": "Environmental Protection Agency (Ireland), LEAP",
     "date": "2025"
+   },
+   {
+    "title": "Annual Environmental Report 2025, licence P1168-01 (Equinix DB5), Table 3 and Table 5",
+    "url": "https://leap.epa.ie/docs/6adb806d-c61a-429a-b6ea-b66400d8ddbe.pdf",
+    "publisher": "Environmental Protection Agency (Ireland), LEAP",
+    "date": "2026-04"
    },
    {
     "title": "LEAP Open Data API (licence profile and document list by register number)",

@@ -45,7 +45,7 @@
   "lat": 1.35,
   "lon": 103.8,
   "category": "grid_policy",
-  "record": "IMDA's roadmap states 'We aim for all DCs to operate at Power Usage Effectiveness (PUE) of 1.3 or lower' with no deadline. The Tropical DC Standard SS 697:2023 provides a methodology to raise operating temperatures to 26°C and above, citing cooling-energy savings of 2-5% per 1°C; IMDA reports GovTech moved supply air from 24°C to 26°C with up to 40% savings on in-hall cooling fans, BDx a 7% cooling-energy cut, and Digital Realty a 2-3% total-energy cut across two 4.5 MW halls.",
+  "record": "IMDA's roadmap states 'We aim for all DCs to operate at Power Usage Effectiveness (PUE) of 1.3 or lower' with no deadline. The Tropical DC Standard SS 697:2023 provides a methodology to raise operating temperatures to 26°C and above, citing cooling-energy savings of 2-5% per 1°C; IMDA reports GovTech moved supply air from 24°C to 26°C.",
   "record_sources": [
    {
     "title": "About the Green Data Centre Roadmap",
@@ -66,7 +66,7 @@
     "date": "2023-06"
    }
   ],
-  "claim": "Operator savings figures (GovTech, BDx, Digital Realty, Ready Server) are self-reported and republished by IMDA.",
+  "claim": "Operator savings figures (GovTech, BDx, Digital Realty, Ready Server) are self-reported and republished by IMDA. As republished by IMDA, GovTech reports up to 40% savings on in-hall cooling fans after moving supply air from 24°C to 26°C, BDx reports a 7% cooling-energy cut, and Digital Realty a 2-3% total-energy cut across two 4.5 MW halls.",
   "claim_sources": [
    {
     "title": "Tropical DC Standard",
@@ -75,9 +75,9 @@
     "date": "2025-09-23"
    }
   ],
-  "gap": "positive example: a published tropical-climate operating standard with documented adopter results; the PUE <=1.3 target has no compliance deadline and no national PUE attainment data is published.",
+  "gap": "positive example: a published tropical-climate operating standard with adopter results reported by the operators; the PUE <=1.3 target has no compliance deadline and no national PUE attainment data is published.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "my-tnb-esa-5-9gw",
@@ -88,14 +88,8 @@
   "lat": 1.49,
   "lon": 103.74,
   "category": "power",
-  "record": "TNB's 2025 AGM materials state 5.9 GW of maximum demand was secured from 38 data-centre projects as of December 2024, of which 18 projects totalling 1.9 GW were 'already in the system' (commissioned under the Green Lane Pathway in 2024); a further ~1.3 GW (5 projects) was targeted by end-2025 and 'the remaining 2.7GW expected to come onstream in 2026'. ISEAS, citing a TNB report, records actual data-centre load utilisation of 405 MW [press: ISEAS citing TNB] (~3% of supply) in December 2024 and renewables at 8.3% of TNB output in 2023.",
+  "record": "ISEAS, citing a TNB report, records actual data-centre load utilisation of 405 MW [press: ISEAS citing TNB] (~3% of supply) in December 2024 and renewables at 8.3% of TNB output in 2023.",
   "record_sources": [
-   {
-    "title": "AGM Presentation 2025 Appendix B",
-    "url": "https://www.tnb.com.my/assets/energy_watch/AGM_Presentation_2025_Appendix_B.pdf",
-    "publisher": "Tenaga Nasional Berhad",
-    "date": "2025"
-   },
    {
     "title": "ISEAS Perspective 2025/43: Data Centres, Energy Demand and Sustainability: Can Malaysia Strike the Right Balance?",
     "url": "https://www.iseas.edu.sg/articles-commentaries/iseas-perspective/2025-43-data-centres-energy-demand-and-sustainability-can-malaysia-strike-the-right-balance-by-sara-loo/",
@@ -103,7 +97,7 @@
     "date": "2025"
    }
   ],
-  "claim": "TNB says it targets 5,000 MW of data-centre supply by 2035; Green Lane Pathway is stated to cut connection time from 36-48 months to 12 months.",
+  "claim": "TNB says it targets 5,000 MW of data-centre supply by 2035; Green Lane Pathway is stated to cut connection time from 36-48 months to 12 months. TNB's 2025 AGM materials state 5.9 GW of maximum demand was secured from 38 data-centre projects as of December 2024, of which 18 projects totalling 1.9 GW were 'already in the system' (commissioned under the Green Lane Pathway in 2024); a further ~1.3 GW (5 projects) was targeted by end-2025 and 'the remaining 2.7GW expected to come onstream in 2026'.",
   "claim_sources": [
    {
     "title": "TNB eyes 5,000MW by 2035 to support Malaysia's data centre expansion",
@@ -116,11 +110,17 @@
     "url": "https://www.iseas.edu.sg/articles-commentaries/iseas-perspective/2025-43-data-centres-energy-demand-and-sustainability-can-malaysia-strike-the-right-balance-by-sara-loo/",
     "publisher": "ISEAS-Yusof Ishak Institute",
     "date": "2025"
+   },
+   {
+    "title": "AGM Presentation 2025 Appendix B",
+    "url": "https://www.tnb.com.my/assets/energy_watch/AGM_Presentation_2025_Appendix_B.pdf",
+    "publisher": "Tenaga Nasional Berhad",
+    "date": "2025"
    }
   ],
-  "gap": "Contracted maximum demand (5.9 GW) is roughly 14x the recorded actual load (405 MW) as of Dec 2024; renewables were 8.3% of TNB output in 2023, so near-term data-centre load is predominantly fossil-supplied.",
+  "gap": "Contracted maximum demand as stated by TNB (5.9 GW) is roughly 14x the recorded actual load (405 MW) as of Dec 2024; renewables were 8.3% of TNB output in 2023, so near-term data-centre load is predominantly fossil-supplied.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "my-johor-dcdcc-rejections",
@@ -281,7 +281,7 @@
   "lat": 1.12,
   "lon": 104.1,
   "category": "fuel",
-  "record": "A 24 Sep 2022 joint review by BP Batam, the Energy and Mineral Resources Ministry, BPKP and PLN Batam (Antara) stated that 11 data centres, once realised, 'will require 500 MW', with planned reservoir solar of >=40 MW (Tembesi) and 720 MW (Duriangkang) and a long-term Sumatra-Batam interconnection of 2,000-3,000 MW; BP Batam's own liaison-office release (13 Oct 2022) quotes official Irfan Syakir that when the 11 planned Nongsa data centres are built 'we would need another 500 MW' and that floating solar is planned on the Duriangkang and Tembesi dams. On 16 Jul 2026 PLN Batam and Dalle Energy Batam signed an electricity sales and purchase agreement (PJBTL) for PLTGU Batam 3 and Batam 4 (2 x 150 MW gas/steam combined cycle); per the Batam city government release, city secretary Firmansyah cited investment promotion including the Nongsa Digital Park data-centre area, and PLN Batam listed data centres among Batam's growth sectors.",
+  "record": "A 24 Sep 2022 joint review by BP Batam, the Energy and Mineral Resources Ministry, BPKP and PLN Batam (Antara) stated that 11 data centres, once realised, 'will require 500 MW', with planned reservoir solar of >=40 MW (Tembesi) and 720 MW (Duriangkang) and a long-term Sumatra-Batam interconnection of 2,000-3,000 MW; BP Batam's own liaison-office release (13 Oct 2022) quotes official Irfan Syakir that when the 11 planned Nongsa data centres are built 'we would need another 500 MW' and that floating solar is planned on the Duriangkang and Tembesi dams. On 16 Jul 2026 PLN Batam and Dalle Energy Batam signed an electricity sales and purchase agreement (PJBTL) for PLTGU Batam 3 and Batam 4 (gas/steam combined cycle); per the Batam city government release, city secretary Firmansyah cited investment promotion including the Nongsa Digital Park data-centre area, and PLN Batam listed data centres among Batam's growth sectors.",
   "record_sources": [
    {
     "title": "Renewable Energy Sought After By Jakarta, BP Batam Prepares Floating Solar Power Plant (BP Batam liaison office; Irfan Syakir: 11 Nongsa data centres would need another 500 MW)",
@@ -308,11 +308,18 @@
     "date": "2026-07-17"
    }
   ],
-  "claim": "none found (no operator PUE, water or renewable claims located in official sources)",
-  "claim_sources": [],
+  "claim": "none found (no operator PUE, water or renewable claims located in official sources). The Batam city government release (16 Jul 2026) gives PLTGU Batam 3 and Batam 4, under the PLN Batam–Dalle Energy Batam PJBTL, as 2 x 150 MW gas/steam combined cycle.",
+  "claim_sources": [
+   {
+    "title": "Batam Gandeng Dalle Energy, Proyek PLTGU 300 MW Dukung Pertumbuhan Industri Batam",
+    "url": "https://mediacenter.batam.go.id/2026/07/16/batam-gandeng-dalle-energy-proyek-pltgu-300-mw-dukung-pertumbuhan-industri-batam/",
+    "publisher": "Pemerintah Kota Batam Media Center",
+    "date": "2026-07-16"
+   }
+  ],
   "gap": "The 2026 capacity addition linked to data-centre growth is gas-fired; no official 2024-2026 status for the 2022 reservoir-solar MW plans or any data-centre water record was found. Antara (25 Sep 2026) reports a BP Batam mapping of ~1.47 GW (IT) of data-centre demand, far above the 2022 500 MW figure, not confirmed from a BP Batam document. 2022 sources are older than preferred window.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Partial (2026-10-22): BP Batam's liaison-office release (penghubung.bpbatam.go.id, 13 Oct 2022) confirms 11 data centres needing another 500 MW and Duriangkang/Tembesi floating solar (no MW given); Batam city Media Center (16 Jul 2026) confirms the PLN Batam-Dalle Energy PJBTL for PLTGU Batam 3 and 4, 2 x 150 MW. Not confirmed from a primary: the 40/720 MW reservoir-solar figures, the 2,000-3,000 MW interconnection and BPKP participation; BP Batam's own 2022 joint-review release (bpbatam.go.id) returns client errors and the Wayback Machine is blocked to the fetcher (added to browser_fetch_list.csv). The record's 'major driver' wording was softened to match the city release.",
   "verification_status": "partial"
  },
@@ -370,7 +377,7 @@
   "lat": 17.1,
   "lon": 78.4,
   "category": "power",
-  "record": "Foundation stone laid 15 Jul 2026 at Bharat Future City near Hyderabad for an AWS data centre (Amazon India release, same date, quoting CM A. Revanth Reddy and IT Minister D. Sridhar Babu); Amazon's release gives no site investment, acreage, building count or MW, stating only that AWS plans over US$21bn of cloud/AI infrastructure investment in India in 2026-2030. Press reports the overall Telangana AWS investment at ~Rs 60,000 crore (the commitment announced at WEF Davos in Jan 2025) and allotments of 202 acres in Future City and 98 acres in Chandanvelly, with the first phase to be completed in 24 months; no specific power or water supply commitments were reported.",
+  "record": "Foundation stone laid 15 Jul 2026 at Bharat Future City near Hyderabad for an AWS data centre (Amazon India release, same date, quoting CM A. Revanth Reddy and IT Minister D. Sridhar Babu); Amazon's release gives no site investment, acreage, building count or MW. Press reports the overall Telangana AWS investment at ~Rs 60,000 crore (the commitment announced at WEF Davos in Jan 2025) and allotments of 202 acres in Future City and 98 acres in Chandanvelly, with the first phase to be completed in 24 months; no specific power or water supply commitments were reported.",
   "record_sources": [
    {
     "title": "AWS data centre Hyderabad: foundation stone at Bharat Future City (Amazon India newsroom)",
@@ -397,7 +404,7 @@
     "date": "2026-07"
    }
   ],
-  "claim": "Telangana IT Minister D. Sridhar Babu called it 'a strong endorsement of our vision to make the state India's AI and cloud capital' and cited 'abundant clean energy' as a state strength.",
+  "claim": "Telangana IT Minister D. Sridhar Babu called it 'a strong endorsement of our vision to make the state India's AI and cloud capital' and cited 'abundant clean energy' as a state strength. Amazon's release (15 Jul 2026) states that AWS plans over US$21bn of cloud/AI infrastructure investment in India in 2026-2030.",
   "claim_sources": [
    {
     "title": "AWS data centre Hyderabad (Amazon India newsroom; Sridhar Babu statement)",
@@ -414,7 +421,7 @@
   ],
   "gap": "State claim of 'abundant clean energy' is not accompanied by any published MW, power-source or groundwater (CGWA NOC) record for the site; the Rs 60,000 crore, 300-acre and 24-month first-phase figures appear only in press and broadcaster reports, not in the operator release or a located government order.",
   "confidence": "low",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Partial (2026-10-22): Amazon India's 15 Jul 2026 release confirms the date, Bharat Future City location and Sridhar Babu's 'abundant clean energy' statement, but gives no Rs 60,000 crore, acreage, phase or MW figure (only US$21bn India-wide 2026-2030); Rs 60,000 crore traced to the Jan 2025 Davos commitment (AIR News); 202+98 acres and 24-month phase only in Deccan Chronicle. Telangana GOIR G.O. portal (search form, not fetchable) and TGIIC/I&PR searched without result; GOIR added to browser_fetch_list.csv.",
   "verification_status": "partial"
  },
@@ -496,7 +503,7 @@
   "lat": 42.63,
   "lon": 141.6,
   "category": "power",
-  "record": "METI's 7 Nov 2023 adoption notice selected SoftBank Corp.'s Tomakomai, Hokkaido project for the FY2023 Data Center Regional Base Development Subsidy (infrastructure and facilities; amount, MW and energy conditions not stated); SoftBank's same-day release targets a first 50 MW-scale phase in FY2026 with power from Hokkaido Electric and SB Power. OCCTO's demand assumptions count peak-demand additions from new and expanded data centres and semiconductor plants separately in seven supply areas including Hokkaido: the FY2025 assumption (2025-01-22) gave 7.15 GW nationally by FY2034 (data centres 6.16 GW; 44.0 of 51.4 billion kWh), and the FY2026 assumption (2026-01-21) raised this to 7.62 GW by FY2035 (data centres 6.61 GW; 49.4 of 56.8 billion kWh), stating Hokkaido's peak demand rises mainly because of these additions (Hokkaido FY2035 peak 4.60 GW summer / 5.37 GW winter) without a numeric Hokkaido breakdown in the text.",
+  "record": "METI's 7 Nov 2023 adoption notice selected SoftBank Corp.'s Tomakomai, Hokkaido project for the FY2023 Data Center Regional Base Development Subsidy (infrastructure and facilities; amount, MW and energy conditions not stated). OCCTO's demand assumptions count peak-demand additions from new and expanded data centres and semiconductor plants separately in seven supply areas including Hokkaido: the FY2025 assumption (2025-01-22) gave 7.15 GW nationally by FY2034 (data centres 6.16 GW; 44.0 of 51.4 billion kWh), and the FY2026 assumption (2026-01-21) raised this to 7.62 GW by FY2035 (data centres 6.61 GW; 49.4 of 56.8 billion kWh), stating Hokkaido's peak demand rises mainly because of these additions (Hokkaido FY2035 peak 4.60 GW summer / 5.37 GW winter) without a numeric Hokkaido breakdown in the text.",
   "record_sources": [
    {
     "title": "令和5年度「データセンター地方拠点整備事業費補助金」の採択結果について (SoftBank Corp., 北海道苫小牧市)",
@@ -517,18 +524,24 @@
     "date": "2025-01-22"
    }
   ],
-  "claim": "SoftBank states the Tomakomai site (700,000 m2) will expand to receiving capacity of over 300 MW, will use 100% Hokkaido renewable energy ('北海道内の再生可能エネルギーを100%利用する'), opens FY2026, and that the cool climate and inexpensive industrial water support liquid cooling.",
+  "claim": "SoftBank's 7 Nov 2023 release says it and IDC Frontier aim to open a first 50 MW-scale data centre in FY2026 with the METI subsidy, supplied with power by Hokkaido Electric and SB Power. SoftBank states the Tomakomai site (700,000 m2) will expand to receiving capacity of over 300 MW, will use 100% Hokkaido renewable energy ('北海道内の再生可能エネルギーを100%利用する'), opens FY2026, and that the cool climate and inexpensive industrial water support liquid cooling.",
   "claim_sources": [
    {
     "title": "北海道苫小牧データセンター",
     "url": "https://www.softbank.jp/business/service/platform/datacenter/tomakomai",
     "publisher": "SoftBank Corp.",
     "date": "2026"
+   },
+   {
+    "title": "Release of 7 November 2023 on the Tomakomai data centre (METI subsidy adoption)",
+    "url": "https://www.softbank.jp/corp/news/press/sbkk/2023/20231107_01/",
+    "publisher": "SoftBank Corp.",
+    "date": "2023-11-07"
    }
   ],
   "gap": "The 100% renewable and >300 MW figures are operator claims (SoftBank's March 2023 slide to an MIC expert meeting gave 'max 300 MW' around 2029 and 'renewable energy use' without a 100% figure); METI's subsidy notice and OCCTO's assumptions give no site MW or renewable condition, and no Hokkaido Electric connection record or renewable supply contract was found in public sources.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Partial (2026-10-22): METI's adoption notice confirms the Tomakomai project and subsidy selection (no MW/RE terms); OCCTO FY2026 assumption (2026-01-21) updates the national data-centre peak addition to 6.61 GW by FY2035 and names Hokkaido among areas driven by these additions, with no site figure. Hokkaido Electric press releases and grid-connection records were searched (Japanese) without result; SoftBank's >300 MW and 100% Hokkaido renewable statements remain operator-only, and its 2023 MIC slide did not say 100%.",
   "verification_status": "partial"
  },
@@ -541,7 +554,7 @@
   "lat": 37.57,
   "lon": 126.98,
   "category": "grid_policy",
-  "record": "MOTIE's March 2023 plan to ease capital-area data-centre concentration counted 147 data centres with 1,762 MW of demand (Dec 2022) and projected 732 facilities with 49,397 MW of new demand by 2029, 58.2% (28,733 MW) in the capital area, where only 40 of 601 applications (6.7%) could be supplied on schedule versus 64 of 131 (48.9%) elsewhere. Asia Economy reports that the 11th Basic Plan for Electricity Supply and Demand projects data-centre consumption of 30 TWh and peak demand of 6.2 GW by 2038, and that KEPCO reported 117 applications totalling 7,343 MW as of Aug 2023, of which 76 (4,718 MW) could be supplied. Data released by Rep. Kim Seong-won from MOTIE/KEPCO show 290 data-centre supply applications from Aug 2024 to Jun 2025, 195 (67%) in the Seoul metropolitan area requesting ~20 GW; of cases reaching MOTIE review, 4 of 19 metro applications passed (21%) versus 10 of 14 non-metro (71%). The assessment (introduced Aug 2024) covers facilities of 10 MW or more and is reviewed by the Power Policy Deliberation Committee; MOTIE's Aug 2024 release names supply headroom (25 points) and difficulty of securing headroom (20 points) among its items, while press reports the overall split as technical 60, non-technical 20, policy 20 points; 72.9% of private data centres were in the metro area.",
+  "record": "MOTIE's March 2023 plan to ease capital-area data-centre concentration counted 147 data centres with 1,762 MW of demand (Dec 2022) and projected 732 facilities with 49,397 MW of new demand by 2029, 58.2% (28,733 MW) in the capital area, where only 40 of 601 applications (6.7%) could be supplied on schedule versus 64 of 131 (48.9%) elsewhere. Asia Economy reports that the 11th Basic Plan for Electricity Supply and Demand projects data-centre consumption of 30 TWh and peak demand of 6.2 GW by 2038, and that KEPCO reported 117 applications totalling 7,343 MW as of Aug 2023, of which 76 (4,718 MW) could be supplied [press]. Data released by Rep. Kim Seong-won from MOTIE/KEPCO show 290 data-centre supply applications from Aug 2024 to Jun 2025, 195 (67%) in the Seoul metropolitan area requesting ~20 GW; of cases reaching MOTIE review, 4 of 19 metro applications passed (21%) versus 10 of 14 non-metro (71%). The assessment (introduced Aug 2024) covers facilities of 10 MW or more and is reviewed by the Power Policy Deliberation Committee; MOTIE's Aug 2024 release names supply headroom (25 points) and difficulty of securing headroom (20 points) among its items, while press reports the overall split as technical 60, non-technical 20, policy 20 points. MOTIE's March 2023 plan states that 60% of data-centre sites and 70% of data-centre power demand are in the capital area.",
   "record_sources": [
    {
     "title": "데이터센터 수도권 집중 완화 방안 (Measures to ease capital-area concentration of data centres)",
@@ -580,7 +593,7 @@
     "date": "2024-07"
    }
   ],
-  "claim": "MOTIE (Choi Sung-jun) says the assessment aims 'to ensure stable power supply and to induce the establishment of large-scale power demand facilities in local areas'; the Korea Data Center Association calls it a de facto 'Data Center Prohibition Act'.",
+  "claim": "MOTIE (Choi Sung-jun) says the assessment aims 'to ensure stable power supply and to induce the establishment of large-scale power demand facilities in local areas'; the Korea Data Center Association calls it a de facto 'Data Center Prohibition Act'. The Korea Data Center Association says 72.9% of private and 41.2% of public data centres were in the Seoul–Incheon–Gyeonggi area as of 2023 [press].",
   "claim_sources": [
    {
     "title": "Evaluation from Establishment to Employment and Finance... 'Virtually a Ban Law'",
@@ -591,7 +604,7 @@
   ],
   "gap": "Government and industry characterise the same pass rates differently (regional dispersion vs. de facto ban); the outcome of the 162 metro applications not reaching MOTIE review is not published, and MOTIE's primary notice was not fetched.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Partial (2026-10-22): MOTIE documents on motir.go.kr confirm the March 2023 capital-area concentration figures (147 DCs/1,762 MW; 732 facilities/49,397 MW by 2029; 40 of 601 metro applications suppliable) and, in a 12 Aug 2024 explanatory release, the 10 MW threshold, Power Policy Deliberation Committee review and 25-/20-point grid items, but not the 60/20/20 split or a pass threshold. The 11th Basic Plan's Strategic Environmental Assessment (Jul 2024) and MOTIE's 2025-02-21 release give no data-centre TWh/GW figure, so 30 TWh/6.2 GW remains attributed to the plan only by Asia Economy; KEPCO's 117/7,343 MW and Rep. Kim Seong-won's 290/195/~20 GW and pass rates were not found in a KEPCO, MOTIE or Assembly document (Korean searches).",
   "verification_status": "partial"
  },
@@ -604,7 +617,7 @@
   "lat": 25.03,
   "lon": 121.56,
   "category": "grid_policy",
-  "record": "Taipower stopped accepting supply applications for data centres of 5 MW or more north of Taoyuan; chairman Tseng Wen-sheng stated publicly on 9 Aug 2024 that the area 'no longer' approves such supply, and a Taipower press release of 10 Aug 2024 (as reported by Commercial Times) gave 2023 northern consumption of 93.1 billion kWh against 75.0 billion kWh generated (Business Next attributes the same comparison to spokesperson Tsai Chih-meng citing Executive Yuan data; other reports date the start to Aug or Sep 2023). In Nov 2025 the MOEA Energy Administration amended rules under Energy Management Act Art. 16 requiring new or expanded data centres of 5 MW or more to adopt best available technology and submit energy-use plans, with PUE caps of 1.3 (hyperscale) and 1.4 (colocation). In July 2026 Tseng said Taipower would support local AI data-centre zones near northern power plants after grid/substation assessment, and MOEA Minister Kung Ming-hsin told the Legislative Yuan economic committee that 5 MW+ AI data centres could be sited north of Taoyuan conditionally, within roughly 2 km of the Datan and Hsieh-ho plants; Taoyuan plans an AI computing centre near the Datan gas plant. Economic Daily (Apr 2026) reports data-centre/AI capacity expected to reach ~1 GW by 2030.",
+  "record": "Taipower stopped accepting supply applications for data centres of 5 MW or more north of Taoyuan; chairman Tseng Wen-sheng stated publicly on 9 Aug 2024 that the area 'no longer' approves such supply, and a Taipower press release of 10 Aug 2024 (as reported by Commercial Times) gave 2023 northern consumption of 93.1 billion kWh against 75.0 billion kWh generated (Business Next attributes the same comparison to spokesperson Tsai Chih-meng citing Executive Yuan data; other reports date the start to Aug or Sep 2023). In Nov 2025 the MOEA Energy Administration amended three subsidiary rules under the Energy Management Act (published 3 Nov, effective 5 Nov 2025) requiring new or expanded data centres of 5 MW or more to adopt best available technology and submit energy-use plans, with PUE caps of 1.3 (hyperscale) and 1.4 (colocation) [press]. In July 2026 Tseng said Taipower would support local AI data-centre zones near northern power plants after grid/substation assessment, and MOEA Minister Kung Ming-hsin told the Legislative Yuan economic committee that 5 MW+ AI data centres could be sited north of Taoyuan conditionally, within roughly 2 km of the Datan and Hsieh-ho plants; Taoyuan plans an AI computing centre near the Datan gas plant. Economic Daily (Apr 2026) reports data-centre/AI capacity expected to reach ~1 GW by 2030.",
   "record_sources": [
    {
     "title": "台電暫停受理桃園以北5MW以上資料中心用電申請",
@@ -635,6 +648,12 @@
     "url": "https://udn.com/news/story/7238/9652344",
     "publisher": "Economic Daily News / UDN",
     "date": "2026-07-27"
+   },
+   {
+    "title": "Data centres of 5 MW or more must adopt best available technology; PUE caps (Economic Daily News)",
+    "url": "https://udn.com/news/story/7238/9117833",
+    "publisher": "United Daily News",
+    "date": "2025-11-05"
    }
   ],
   "claim": "Taipower says it encourages data centres to locate in central and southern Taiwan where surplus and renewable supply is greater; MOEA says new data centres should be near power plants where possible.",
@@ -648,7 +667,7 @@
   ],
   "gap": "Taipower's first public statement of the suspension is dated 9-10 Aug 2024, but reports dating its start to Aug/Sep 2023 are unreconciled; no Taipower primary notice, application counts or MW totals for refused applications are public, and the July 2026 conditional easing (~2 km from Datan/Hsieh-ho) is known only from press accounts of a Legislative Yuan session.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Searched (Chinese) for a Taipower or MOEA notice and Legislative Yuan replies on the 5 MW suspension; only press was found (UDN, TechNews, Storm, Business Next), so the start date and the 93 vs 75 billion kWh figures remain unconfirmed; July 2026 UDN headlines describe the northern 5 MW restriction as being lifted for AI data-centre zones, also not confirmed from a primary notice. Second pass (2026-10-22): Commercial Times (10 Aug 2024) says the 93.1 vs 75.0 billion kWh figures came from a Taipower press release that day, but taipower.com.tw and the MOEA news archive (NewsList history) return client errors to automated fetch (both added to browser_fetch_list.csv); MOEA's 10 Aug 2024 response was found only as a Facebook post embedded in TechNews; searched LY gazette/committee terms (立法院公報, 龔明鑫 2公里) and Energy Administration Art. 16 notices, finding only press (UDN, LTN, Yahoo/TechNews).",
   "verification_status": "not_found"
  },

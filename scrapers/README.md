@@ -188,3 +188,17 @@ Read the `method` column: `name` means the asset name shared a token with the le
 means only proximity matched, which can pick up a neighbouring plant (the fixture run shows this for
 Memphis). Treat `nearest` matches as leads, not confirmations. New plants may not appear until they
 have operated for a reporting period.
+
+## Weekly pulls and page watch (added 2026-10-23)
+
+`.github/workflows/weekly-pulls.yml` runs every Monday and opens a pull request when anything is new. Nothing it finds enters the ledger's tables directly: each item is a first reading for a person to check against its document (CONTRIBUTING.md, two-reading rule), after which the person edits the transcription in `sites/metered/` and CI rebuilds everything.
+
+| Script | Source | Config | What it reports |
+|---|---|---|---|
+| `pull_nei.py` | EPA National Emissions Inventory facility summaries (Envirofacts DMAP), NAICS 518210, 16 states, every released NEI year | in the script | facilities and pollutant totals new to `sites/metered/va_nei_transcribed.csv` or changed |
+| `pull_ie_aer.py` | Ireland's EPA LEAP Open Data API | `config/ie_leap_licences.json` | annual environmental reports not yet read, with a first reading of Table 3 and Table 5; licence profiles found by operator name and not yet listed |
+| `pull_benchmarking.py` | city benchmarking portals (Socrata and ArcGIS) | `config/benchmarking_portals.json` | Data Center rows (and known datacenter addresses filed as Office) new to `sites/metered/benchmarking_transcribed.csv` or changed |
+| `watch_pages.py` | pages with no API: DEQ's datacenter permit list, PJM's load-analysis materials, Grant County PUD and SRP datacenter pages, the CSO's annual release | `config/watch_pages.json`, state in `data/watch/` | new links, changed sentences with figures, a new year's release |
+| `pull_report.py` | the dated folder | | `SUMMARY.md` for the pull request; deletes the folder when nothing is new |
+
+All four have `--fixture` modes that CI runs on every push; fixture provenance is in `fixtures/provenance.json` (real values in assembled layouts are labelled as such, synthetic files as synthetic). None has been run live from this sandbox, which has no route to these hosts; the first live run is the first Monday after the push, or any time from the Actions tab (Run workflow). One-time setting: Settings > Actions > General > Workflow permissions > "Allow GitHub Actions to create and approve pull requests".

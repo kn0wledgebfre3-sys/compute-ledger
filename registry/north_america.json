@@ -51,7 +51,7 @@
   "lat": 39.04,
   "lon": -77.49,
   "category": "fuel",
-  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. Press accounts citing PEC tallies of DEQ permits count ~9,000 data center generators statewide (~4,700 in Loudoun, ~8,000 Tier II). JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days. On 2026-10-21 the Compute Ledger opened the permits on DEQ's statewide list of issued datacenter air permits and read each a second time by an independent method, resolving every disagreement against the permit text: 182 permits, 13,973 permitted standby generator units, 33,693 MW (band about 33.4–33.9 GW; 177 permits high confidence; median permit 129 MW; largest 1,331 MW; site-average unit size 0.4–3.7 MW, median 2.5 MW; 2,913 units permitted for non-emergency use). This supersedes the PEC-based tallies above. Permitted is not built: many permits cover phases not yet constructed.",
+  "record": "A proposed DEQ guidance memo, APG-578 'Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages' (dated 2025-10-01), would treat a utility planned outage noticed fourteen calendar days or less in advance as an event in which permitted emergency generators may run; the memo does not mention data centers or give generator counts or MW. The Piedmont Environmental Council's tally of DEQ permits (November 2025) counted 'nearly 9,000' datacenter generators statewide and 4,700 in eastern Loudoun; PEC's Julie Bolthouse told Inside Climate News that around 8,000 are Tier II [press]. JLARC (2024-12-09) found backup generators are <4% of regional NOx and that Virginia data center power use was ~5,050 MW. VPM reported that a summer 2025 substation fire put Loudoun data centers on diesel for 4–5 days. On 2026-10-21 the Compute Ledger opened the permits on DEQ's statewide list of issued datacenter air permits and read each a second time by an independent method, resolving every disagreement against the permit text: 182 permits, 13,973 permitted standby generator units, 33,693 MW (band about 33.4–33.9 GW; 177 permits high confidence; median permit 129 MW; largest 1,331 MW; site-average unit size 0.4–3.7 MW, median 2.5 MW; 2,913 units permitted for non-emergency use). This supersedes the PEC-based tallies above. Permitted is not built: many permits cover phases not yet constructed.",
   "record_sources": [
    {
     "title": "Issued Air Permits for Data Centers (statewide list, with each permit PDF)",
@@ -65,6 +65,12 @@
     "publisher": "Compute Ledger",
     "date": "2026-10-21",
     "self": true
+   },
+   {
+    "title": "Proposed Increase to Data Center Diesel Generator Use (Julie Bolthouse)",
+    "url": "https://www.pecva.org/work/energy-work/proposed-increase-to-data-center-diesel-generator-use/",
+    "publisher": "Piedmont Environmental Council",
+    "date": "2025-11-19"
    },
    {
     "title": "DEQ Guidance Memo APG-578: Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages",
@@ -166,7 +172,7 @@
   "lat": 30.27,
   "lon": -97.74,
   "category": "grid_policy",
-  "record": "ERCOT testimony to the Texas Senate (2026-07-29) reports ~474 GW of large loads seeking interconnection as of June 2026, ~90% data centers, >1,800 projects, more than five times record peak; ~205 GW preliminarily eligible for Batch Zero. On 2026-08-03 Gov. Abbott directed PUCT/ERCOT to audit all queued data centers (power, water/cooling, ownership, tax breaks) and ERCOT paused Batch Zero; at the 2026-08-20 PUCT meeting ERCOT said 17 loads (~6.6 GW) had passed stability assessment but none were approved to energize, with an audit report targeted for 2026-12-10. An ERCOT briefing in early 2026 put actually connected large load at ~7.5 GW [press: BIC Magazine]. SB 6 (2025) sets a 75 MW threshold, fee, duplicate-request and backup-generation disclosure, and emergency curtailment.",
+  "record": "ERCOT testimony to the Texas Senate (2026-07-29) reports ~474 GW of large loads seeking interconnection as of June 2026, ~90% data centers, >1,800 projects, more than five times record peak; ~205 GW preliminarily eligible for Batch Zero. On 2026-08-03 Gov. Abbott directed PUCT/ERCOT to audit all queued data centers (power, water/cooling, ownership, tax breaks) and ERCOT paused Batch Zero; at the 2026-08-20 PUCT meeting ERCOT said 17 loads (~6.6 GW) had passed stability assessment but none were approved to energize, with an audit report targeted for 2026-12-10. An ERCOT briefing in early 2026 put actually connected large load at ~7.5 GW [press: BIC Magazine]. SB 6 (2025) directs the PUCT to set a large-load threshold of 75 MW unless it finds a lower one necessary, and sets a fee, duplicate-request and backup-generation disclosure, and emergency curtailment.",
   "record_sources": [
    {
     "title": "ERCOT Senate July 29 Panel 1: Assessing the Grid",
@@ -191,6 +197,12 @@
     "url": "https://www.bicmagazine.com/industry/powergen/texas-grid-sees-233-gw-data-center-requests-much-real/",
     "publisher": "BIC Magazine",
     "date": "2026-03-06"
+   },
+   {
+    "title": "S.B. No. 6, 89th Texas Legislature (enrolled text)",
+    "url": "https://capitol.texas.gov/tlodocs/89R/billtext/pdf/SB00006F.pdf",
+    "publisher": "Texas Legislature",
+    "date": "2025-05-29"
    }
   ],
   "claim": "Gov. Abbott: 'Simply put, Texans must come first.' Data Center Coalition said a careful review could separate responsible from irresponsible developers.",
@@ -204,7 +216,7 @@
   ],
   "gap": "Queue requests (~474 GW) exceed connected large load (~7.5 GW, press-reported) by roughly 60x; ERCOT found ~205 GW preliminarily eligible for its first batch, none of it approved to energize as of August 2026, and the audit is pending.",
   "confidence": "high",
-  "last_checked": "2026-10-19"
+  "last_checked": "2026-10-23"
  },
  {
   "id": "us-tx-tceq-datacenter-permit-pause",
@@ -260,13 +272,19 @@
   "lat": 35.05,
   "lon": -90.14,
   "category": "fuel",
-  "record": "A 2024-08-26 SELC letter to the Shelby County Health Department documented at least 18 turbines (~100 MW) operating without permits under a claimed 364-day 'nonroad' exemption. SCHD issued a construction permit on 2025-07-02 for 15 Solar SMT-130 turbines (up to 247 MW) with rolling 12-month caps of 87 t NOx, 94 t CO, 85 t VOC, 73 t PM and ~14 t HAPs; SELC stated up to 35 turbines (421 MW) had run unpermitted. The Memphis-Shelby County Air Pollution Control Board upheld the permit 6–1 on 2025-12-15. EPA's final NSPS rule signed 2026-01-09 states turbines 'mounted on a vehicle (or trailer) for portability' are 'still considered stationary.' TVA's board memo of 7 October 2024 (approving 150 MW of firm power to CTC Property LLC, 'an xAI subsidiary') states that 'xAI was already operating at over 50 MW with a combination of limited MLGW power and xAI gas turbines' by August 2024; MLGW's update of 5 May 2025 gives 8 MW from a pre-existing substation and 142 MW from a newly constructed one, 300 MW requested in total, and 260 MW to 1.1 GW for the Tulane Road site.",
+  "record": "A 2024-08-26 SELC letter to the Shelby County Health Department documented at least 18 turbines (~100 MW) operating without permits under a claimed 364-day 'nonroad' exemption. SCHD issued a construction permit on 2025-07-02 for 15 Solar SMT-130 turbines (up to 247 MW) with rolling 12-month caps of 87 t NOx, 94 t CO, 85 t VOC, 73 t PM and ~14 t HAPs; SELC stated that aerial images showed 35 turbines at the site in March 2025; TechCrunch put their combined capacity at up to 421 MW [press]. The Memphis-Shelby County Air Pollution Control Board upheld the permit 6–1 on 2025-12-15. EPA's final NSPS rule signed 2026-01-09 states turbines 'mounted on a vehicle (or trailer) for portability' are 'still considered stationary.' TVA's board memo of 7 October 2024 (approving 150 MW of firm power to CTC Property LLC, 'an xAI subsidiary') states that 'xAI was already operating at over 50 MW with a combination of limited MLGW power and xAI gas turbines' by August 2024; MLGW's update of 5 May 2025 gives 8 MW from a pre-existing substation and 142 MW from a newly constructed one, 300 MW requested in total, and 260 MW to 1.1 GW for the Tulane Road site.",
   "record_sources": [
    {
     "title": "Letter to SCHD re xAI operating without permits",
     "url": "https://interactive.localmemphis.com/pdfs/2024-08-26-Letter-to-SCHD-re-xAI-operating-without-permits.pdf",
     "publisher": "SELC (filed with Shelby County Health Department)",
     "date": "2024-08-26"
+   },
+   {
+    "title": "Elon Musk's xAI threatened with lawsuit over air pollution from Memphis data center",
+    "url": "https://www.selc.org/press-release/elon-musks-xai-threatened-with-lawsuit-over-air-pollution-from-memphis-data-center/",
+    "publisher": "Southern Environmental Law Center",
+    "date": "2025-06-17"
    },
    {
     "title": "Greater than 100 MW firm power arrangement with CTC Property LLC (xAI): resolution and memo",
@@ -314,7 +332,7 @@
     "date": "2025-12-19"
    }
   ],
-  "gap": "Roughly a year of on-site gas generation (100–421 MW per filings) preceded the first permit; the local regulator and EPA's later rule text differ on whether trailer-mounted turbines were exempt.",
+  "gap": "Roughly a year of on-site gas generation (about 100 MW in SELC's August 2024 letter; 35 turbines by March 2025 per SELC; up to 421 MW per press) preceded the first permit; the local regulator and EPA's later rule text differ on whether trailer-mounted turbines were exempt.",
   "confidence": "high",
   "last_checked": "2026-10-23",
   "verification_note": "TVA memo read directly on 2026-10-23; the 'over 50 MW' sentence is quoted verbatim."
@@ -328,7 +346,7 @@
   "lat": 34.99,
   "lon": -90.0,
   "category": "fuel",
-  "record": "The Mississippi Environmental Quality Permit Board approved on 2026-03-10, and MDEQ issued on 2026-03-11, PSD Air Construction Permit 0680-00119 to MZX Tech LLC (2875 Stanton Road, Southaven; the former Duke Energy Southaven site) for 41 natural gas turbines totaling about 1,240 MW: 17 Solar Titan 130 (16.48 MW each), 16 Solar Titan 350 (35 MW each) and 8 ProEnergy PE6000 (50 MW each), all with SCR and oxidation catalysts; the permit sets no operating-hours cap and contains no condition on removing temporary turbines. NAACP and local groups (SELC counsel) petitioned for an evidentiary hearing on 2026-04-09. Separately, 69 trailer-mounted temporary turbines operated by MZX Tech (18 in Aug 2025, 46 by May 2026) are subject to an MDEQ retirement schedule: retirements from 2026-08-18, most by April 2027, 13 units allowed past the original 12-month limit, last units off by 2027-07-14.",
+  "record": "The Mississippi Environmental Quality Permit Board approved on 2026-03-10, and MDEQ issued on 2026-03-11, PSD Air Construction Permit 0680-00119 to MZX Tech LLC (2875 Stanton Road, Southaven; the former Duke Energy Southaven site) for 41 natural gas turbines totaling about 1,240 MW: 17 Solar Titan 130 (16.48 MW each), 16 Solar Titan 350 (35 MW each) and 8 ProEnergy PE6000 (50 MW each), all with SCR and oxidation catalysts; the permit sets no operating-hours cap and contains no condition on removing temporary turbines. NAACP and local groups (SELC counsel) petitioned for an evidentiary hearing on 2026-04-09. Separately, 69 trailer-mounted temporary turbines operated by MZX Tech (the agreed order's Appendix A dates the first 18 units to August 2025; MDEQ told Mississippi Today the count had reached 46 by May 2026 [press]) are subject to an MDEQ retirement schedule: retirements from 2026-08-18, most by April 2027, 13 units allowed past the original 12-month limit, last units off by 2027-07-14.",
   "record_sources": [
    {
     "title": "PSD Air Construction Permit No. 0680-00119, MZX Tech LLC, 2875 Stanton Road, Southaven (AI 12592)",
@@ -384,7 +402,7 @@
   ],
   "gap": "Operator says mobile turbines are being removed rapidly; the state schedule allows some temporary units to run until July 2027.",
   "confidence": "high",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "MDEQ PSD Air Construction Permit 0680-00119 (issued 2026-03-11, enSearch AI 12592) confirms 41 gas turbines: 17 x 16.48 MW + 16 x 35 MW + 8 x 50 MW = about 1,240 MW, at 2875 Stanton Road (site history lists Duke Energy Southaven); the MDEQ-MZX Tech Agreed Order confirms the 69-unit temporary-turbine retirement schedule (last units 2027-07-14). The earlier 1.2 GW press figure is consistent; the permit has no condition on retiring temporary turbines.",
   "verification_status": "verified"
  },
@@ -590,7 +608,7 @@
   "lat": 40.51,
   "lon": -79.2,
   "category": "fuel",
-  "record": "PA DEP Plan Approval 32-00457A to Homer City Generation LP (technical review memo signed 2025-11-18; application received 2025-04-04) covers seven GE Vernova 7HA.02 combined-cycle turbines and ten Mitsubishi Power FT8 MOBILEPAC simple-cycle units totaling 4,678 MWe, with 12-month rolling limits of 141.04 tpy NOx per combined-cycle unit and 13.30 tpy per simple-cycle unit; the memo states potential GHG emissions exceed 25,000 t/yr without giving a total. Press reported the approval came 157 days after application versus a projected 285 and describes the 3,200-acre former 1,884 MW coal site as a ~$10B campus with first turbine deliveries in 2026 and power from 2027, fed from the Texas Eastern pipeline with a $5M state grant for the lateral; a FERC filing shows Knighthead Capital at ~75% ownership.",
+  "record": "PA DEP Plan Approval 32-00457A to Homer City Generation LP (technical review memo signed 2025-11-18; application received 2025-04-04) covers seven GE Vernova 7HA.02 combined-cycle turbines and ten Mitsubishi Power FT8 MOBILEPAC simple-cycle units totaling 4,678 MWe, with 12-month rolling limits of 141.04 tpy NOx per combined-cycle unit and 13.30 tpy per simple-cycle unit; the memo states potential GHG emissions exceed 25,000 t/yr without giving a total. Press reported the approval came 157 days after application versus a projected 285 and describes the 3,200-acre former 1,884 MW coal site as a ~$10B campus with first turbine deliveries in 2026 and power from 2027, fed from the Texas Eastern pipeline with a $5M state grant toward the interconnection; Utility Dive, citing a FERC filing, reported Knighthead Capital owned about 75% of Homer City Holdings as of mid-September.",
   "record_sources": [
    {
     "title": "Technical Review Memo, Plan Approval 32-00457A, Homer City Generation LP (signed 2025-11-18)",
@@ -605,10 +623,10 @@
     "date": "2025-11-19"
    },
    {
-    "title": "Homer City coal plant site to host 4.5-GW gas-fired data center campus",
+    "title": "Largest US gas-fired power plant planned for data centers in Pennsylvania",
     "url": "https://www.utilitydive.com/news/homer-city-gas-fired-power-station-data-center-firstenergy/744332/",
     "publisher": "Utility Dive",
-    "date": "2025"
+    "date": "2025-04-03"
    }
   ],
   "claim": "Developer: gas turbines will cut emissions up to 65% (or ~60% per MWh) versus the former coal plant; >10,000 construction jobs and ~1,000 permanent positions.",
@@ -622,7 +640,7 @@
   ],
   "gap": "Developer's emissions comparison is relative to the retired coal plant; DEP's review memo sets per-unit annual limits but gives no facility-wide CO2e total, and no water source is specified in the retrieved documents.",
   "confidence": "high",
-  "last_checked": "2026-10-20",
+  "last_checked": "2026-10-23",
   "verification_note": "PA DEP technical review memo for Plan Approval 32-00457A (signed 2025-11-18) lists 7 GE 7HA.02 combined-cycle and 10 Mitsubishi FT8 simple-cycle units totaling 4,678 MWe, where press had 4.4–4.5 GW and seven turbines; it records the application as received 2025-04-04, which does not reconcile with the press '157 days' figure.",
   "verification_status": "verified"
  },
@@ -635,7 +653,7 @@
   "lat": 42.72,
   "lon": -87.89,
   "category": "power",
-  "record": "PSC Wisconsin final decisions dated 2025-07-02 approved, subject to conditions, a 1,100 MW simple-cycle gas plant (five GE 7FA.05 combustion turbines, about $1.205B excl. AFUDC) at the South Oak Creek Facility, 'directly west of the existing Oak Creek Power Plant and Elm Road Generating Station' (docket 6630-CE-317), and a 128 MW, seven-engine RICE plant in Paris, Kenosha County ($279.6M excl. AFUDC; docket 6630-CE-316). In both, finding of fact 6 reads: 'The proposed project is necessary to satisfy the significant probable future requirements of one customer, the Very Large Customer.' The decisions record that We Energies gave the purpose as 'primarily to serve a significant new load source in the Interstate 94 (I-94) corridor', identified in rebuttal as the data center Microsoft is developing in Mount Pleasant (Phase 1 announced at 450 MW), and that it intends to serve 'the data center under the Very Large Customer tariff'. The Commission found that evidence 'persuasive that the new load will be realized', wrote that 'when the entirety of a forecasted new load rests on the actions of a single customer, the risk is greater', and ordered the utility to notify it within 30 days if the Very Large Customer's load forecast significantly decreases. A separate 2 Bcf LNG storage facility at Oak Creek ($456.3M excl. AFUDC, docket 6630-CG-140) received a final decision on 2025-09-09, and a $186M 33-mile pipeline is press-reported. The PSC's 2026-05-21 final decision on We Energies' Very Large Customer and Bespoke Resources tariffs (docket 6630-TE-113; Microsoft an intervenor) required a 15-year initial term, made the VLC tariff mandatory for loads of 100 MW or more, and allowed Bespoke Resources outside MISO Local Resource Zone 2 (eastern Wisconsin and Michigan's UP). Microsoft's 15-year service contract for Mount Pleasant, signed as-is on 2026-07-16, still requires supply plants to be in eastern Wisconsin or Michigan's UP; We Energies says the PSC order governs [press]. We Energies is also seeking to buy Invenergy's proposed Red Oak Ridge gas plant (docket 9837-CE-100, up to 1,186 MW) for $1.8B, with Microsoft already contracted for its output [press]. The U.S. Department of Energy (Office of Energy Dominance Financing) completed its environmental review on 2026-08-31 for a proposed Title XVII federal loan guarantee to Wisconsin Electric Power Company covering the Oak Creek Combustion Turbine Project: five 220 MW combustion turbines (about 1,100 MW) on a 16-acre parcel within the existing Oak Creek Generating Site, approved by the PSC in July 2025; the letter itself states no purpose.",
+  "record": "PSC Wisconsin final decisions dated 2025-07-02 approved, subject to conditions, a 1,100 MW simple-cycle gas plant (five GE 7FA.05 combustion turbines, about $1.205B excl. AFUDC) at the South Oak Creek Facility, 'directly west of the existing Oak Creek Power Plant and Elm Road Generating Station' (docket 6630-CE-317), and a 128 MW, seven-engine RICE plant in Paris, Kenosha County ($279.6M excl. AFUDC; docket 6630-CE-316). In both, finding of fact 6 reads: 'The proposed project is necessary to satisfy the significant probable future requirements of one customer, the Very Large Customer.' The decisions record that We Energies gave the purpose as 'primarily to serve a significant new load source in the Interstate 94 (I-94) corridor', identified in rebuttal as the data center Microsoft is developing in Mount Pleasant (Phase 1 announced at 450 MW), and that it intends to serve 'the data center under the Very Large Customer tariff'. The Commission found that evidence 'persuasive that the new load will be realized', wrote that 'when the entirety of a forecasted new load rests on the actions of a single customer, the risk is greater', and ordered the utility to notify it within 30 days if the Very Large Customer's load forecast significantly decreases. A separate 2 Bcf LNG storage facility at Oak Creek ($456.3M excl. AFUDC, docket 6630-CG-140) received a final decision on 2025-09-09, and a 33-mile gas transmission pipeline to supply the Oak Creek and Paris plants (Rochester Lateral, docket 6630-CG-139; the applicant estimated $210,942,310 for Route A or $217,093,529 for Route B) received a PSC final decision on 2025-12-02. The PSC's 2026-05-21 final decision on We Energies' Very Large Customer and Bespoke Resources tariffs (docket 6630-TE-113; Microsoft an intervenor) required a 15-year initial term, made the VLC tariff mandatory for loads of 100 MW or more, and allowed Bespoke Resources outside MISO Local Resource Zone 2 (eastern Wisconsin and Michigan's UP). Microsoft's 15-year service contract for Mount Pleasant, signed as-is on 2026-07-16, still requires supply plants to be in eastern Wisconsin or Michigan's UP; We Energies says the PSC order governs [press]. We Energies is also seeking to buy Invenergy's proposed Red Oak Ridge gas plant (docket 9837-CE-100, up to 1,186 MW per the PSC case page) for $1.8B, with Microsoft already contracted for its output [press, for the price and the contract]. The U.S. Department of Energy (Office of Energy Dominance Financing) completed its environmental review on 2026-08-31 for a proposed Title XVII federal loan guarantee to Wisconsin Electric Power Company covering the Oak Creek Combustion Turbine Project: five 220 MW combustion turbines (about 1,100 MW) on a 16-acre parcel within the existing Oak Creek Generating Site, approved by the PSC in July 2025; the letter itself states no purpose.",
   "record_sources": [
    {
     "title": "Final Decision, docket 6630-CE-317 (South Oak Creek Combustion Turbine Project)",
@@ -680,6 +698,18 @@
     "date": "2025-09-09"
    },
    {
+    "title": "Rochester Lateral Project (docket 6630-CG-139) case page",
+    "url": "https://psc.wi.gov/Pages/CommissionActions/CasePages/RochesterLateral.aspx",
+    "publisher": "Public Service Commission of Wisconsin",
+    "date": "2025-12-02"
+   },
+   {
+    "title": "Red Oak Ridge Energy Center Project (docket 9837-CE-100) case page",
+    "url": "https://psc.wi.gov/Pages/CommissionActions/CasePages/RedOakRidge.aspx",
+    "publisher": "Public Service Commission of Wisconsin",
+    "date": "2026"
+   },
+   {
     "title": "PSC press release: We Energies Very Large Customer tariff, Docket 6630-TE-113 (preliminary decision)",
     "url": "https://psc.wi.gov/Documents/PressReleases/04.24.2026PressRelease.PDF",
     "publisher": "Public Service Commission of Wisconsin",
@@ -721,7 +751,7 @@
   ],
   "gap": "The regulator approved 1,228 MW of new gas (Oak Creek and Paris) as necessary for the future requirements of one customer, the data center Microsoft is building in Mount Pleasant; Microsoft's public claims for the site concern water. The signed contract's terms and the Red Oak Ridge purchase are press-sourced.",
   "confidence": "high",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Pass 2 (2026-10-22): PSC final decision of 2026-05-21 in docket 6630-TE-113 (read as Attachment A to PSCW's FERC comments, ER26-3265) confirms the 15-year initial term, the 100 MW threshold, Microsoft as intervenor and Finding 24 allowing Bespoke Resources outside MISO LRZ 2. This corrects the earlier record, which said the PSC struck a provision in Microsoft's contract: the PSC changed the tariff; the location language is in the contract, which Wisconsin Watch reports Microsoft signed unchanged. PSC case pages confirm Paris (6630-CE-316, 128 MW, final decision 2025-07-02) and LNG ($456.3M, 6630-CG-140, final decision 2025-09-09) as separate dockets. The Oak Creek and Paris final-decision PDFs (ERF 552626, 552621) still fail to load, so whether they cite data centers or Microsoft is unconfirmed; the pipeline, contract signing and $1.8B Red Oak Ridge figures remain press-sourced. An ATC FERC transmittal (2026-07) names 'a Microsoft data center campus, in Racine County'. Pass 3 (2026-10-22): the 6630-CE-317 final decision (ERF 552626) still fails (every apps.psc.wi.gov ERF URL returns a client error) and no mirror was found. The PSC's own Environmental Assessment for 6630-CE-317 (Dec 2024, PSC REF#531153, copy hosted by WPR) gives the project's purpose as meeting 'considerable load obligations for the 2026 timeframe ... when significant new load in the applicant's service territory is expected' plus coal retirements, and in the text read names neither data centers nor Microsoft; the Microsoft link appears only in press and advocacy accounts of the 2025-05-22 vote. Pass 4 (2026-10-22): read DOE's 2026-08-31 environmental-review completion letter for a proposed federal loan guarantee to WEPCO; it confirms five 220 MW CTs at the existing Oak Creek Generating Site and the PSC's July 2025 approval, and names neither data centers nor Microsoft. The PSC final decision PDF still could not be retrieved. Pass 5 (2026-10-22): both PSC final decisions (PSC REF# 552626 and 552621, dated 2 July 2025) were downloaded from the PSC's ERF in a browser and read. Finding of fact 6 in each ties the project to 'one customer, the Very Large Customer'; the need discussion names Microsoft's Mount Pleasant data center; order condition 6 requires notice within 30 days if that customer's load forecast significantly decreases. This supersedes the earlier statement that the regulator's documents name neither data centers nor Microsoft, which held only for the environmental assessment. The contract signing and the Red Oak Ridge purchase remain press-sourced and are marked.",
   "verification_status": "verified"
  },
@@ -734,7 +764,7 @@
   "lat": 45.6,
   "lon": -121.18,
   "category": "water",
-  "record": "The city sued the reporter who requested Google's water records (Wasco County Circuit Court 21CV42306, filed 2021-10-29, Google covering the city's costs) and settled on 2022-12-14, releasing ten years of annual use and agreeing to future disclosure [press]. City records as reported: 104.3 million gallons in 2012, 355.1 million in 2021 (29% of city consumption), 383.9 million in 2023 and 434.4 million in 2024 (about one third). The 2021 agreement ($28.5 million, approved 5-0 on 2021-11-08) transferred smelter groundwater rights to the city; the city now states only part of those rights transferred. Google's own site-level figures use different metrics (274.5 million gallons consumed in 2021; 461.1 million withdrawn in 2024) and no document reconciles them with the city's.",
+  "record": "The city sued the reporter who requested Google's water records (Wasco County Circuit Court 21CV42306, filed 2021-10-29, Google covering the city's costs) and settled on 2022-12-14, releasing ten years of annual use and agreeing to future disclosure [press]. City records as reported: 104.3 million gallons in 2012, 355.1 million in 2021 (29% of city consumption), 383.9 million in 2023 and 434.4 million in 2024 (about one third). The 2021 agreement (approved 5-0 on 2021-11-08; Google to spend $28.5 million on city water infrastructure [press]) transferred smelter groundwater rights to the city; the city now states only part of those rights transferred. Google's own site-level figures use different metrics (see claim) and no document reconciles them with the city's.",
   "record_sources": [
    {
     "title": "Oregon city drops fight to keep Google water use private",
@@ -755,7 +785,7 @@
     "date": "2026-01-19"
    }
   ],
-  "claim": "Google says it has offset its water use through watershed investments, that the 2021 agreement is adequate for future needs (a joint Google/city statement), that its local use equals '1.8 golf courses', that the aquifer storage system it transferred in October 2025 gives the community 100 million more gallons a year, and that it is not behind the federal land-transfer bill.",
+  "claim": "Google says it has offset its water use through watershed investments, that the 2021 agreement is adequate for future needs (a joint Google/city statement), that its local use equals '1.8 golf courses', that the aquifer storage system it transferred in October 2025 gives the community 100 million more gallons a year, and that it is not behind the federal land-transfer bill. Google's site-level disclosures, as reported, put The Dalles at 274.5 million gallons consumed in 2021 and 461.1 million gallons withdrawn in 2024 [press].",
   "claim_sources": [
    {
     "title": "As Google's water demands grow, The Dalles aims to pull more from Mount Hood forest",
@@ -768,11 +798,23 @@
     "url": "https://waterwatch.org/googles-water-use-is-soaring-in-the-dalles-records-show-with-two-more-data-centers-to-come",
     "publisher": "WaterWatch of Oregon",
     "date": "2022-12"
+   },
+   {
+    "title": "Google datacenters use 'a quarter of all water' in one US city",
+    "url": "https://www.theregister.com/2022/12/19/google_datacenters_dalles/",
+    "publisher": "The Register",
+    "date": "2022-12-19"
+   },
+   {
+    "title": "OPINION: Questioning how much water AI is actually using",
+    "url": "https://columbiainsight.org/?p=27944",
+    "publisher": "Columbia Insight (opinion column)",
+    "date": "2026-06-18"
    }
   ],
   "gap": "Records became public only through a settlement thirteen months after the city sued the requester; the city's figures and Google's site-level figures differ by metric and none reconciles them; the replenishment claim has no measured volume behind it in the record (the watermaster described testing as ongoing).",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "receipt": "the_dalles_google_water",
   "verification_note": "Worked into a full receipt (28 dated rows, 40 sources); three registry statements corrected from it: smelter right only partly transferred, 2024 share is 'about a third' with no city total stated, and the 'adequate' statement was joint. Confidence lowered from high to medium on 2026-10-22 after review: record sources are press reports of the city records and settlement (see the receipt, which marks each [press]). Status: partly verified. The receipt's primary documents (2021-11-08 council minutes and packet, the settlement and dismissal filing, the 2024 water master plan) confirm the agreement and the settlement; the annual water-use figures are confirmed only through press reports of the released records.",
   "verification_status": "partial"
@@ -906,7 +948,7 @@
   "lat": 41.57,
   "lon": -93.71,
   "category": "water",
-  "record": "West Des Moines Water Works (WDMWW) reports that Microsoft, which owns all operating data centers in the city (six campuses), uses 2–7% of the water WDMWW pumps each month; annual use was 68.58 million gallons in 2024 (2.6% of 2,601 MG pumped) and 62.34 million gallons in 2025 (2.4% of 2,549 MG), and several of the sites use evaporative cooling. Business Record reported 48,751,325 gallons for January–September 2025 from a WDMWW spokesperson. Iowa DNR requires a water-use permit above 25,000 gal/day.",
+  "record": "West Des Moines Water Works (WDMWW) reports that Microsoft, which owns all operating data centers in the city (six campuses), uses 2–7% of the water WDMWW pumps each month; annual use was 68.58 million gallons in 2024 (2.6% of 2,601 MG pumped) and 62.34 million gallons in 2025 (2.4% of 2,549 MG), and several of the sites use evaporative cooling. Business Record reported 48,751,325 gallons for January–September 2025 from a WDMWW spokesperson. Iowa DNR requires a water-use permit above 25,000 gal/day [press].",
   "record_sources": [
    {
     "title": "Data Centers and Water Usage",
@@ -938,7 +980,7 @@
   ],
   "gap": "Utility describes the existing West Des Moines sites as evaporatively cooled while the operator's claims concern newer closed-loop designs and a global 'water positive' target.",
   "confidence": "high",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "WDMWW's 'Data Centers and Water Usage' page confirms the 2–7% monthly share, evaporative cooling and annual Microsoft use (68.58 MG in 2024, 62.34 MG in 2025, 2.4% of pumpage); its fact sheet says Microsoft owns six campuses, correcting the earlier 'five sites' (Business Record). The 48,751,325-gallon January–September 2025 figure is not itself on the WDMWW pages but is consistent with the 62.34 MG full-year total.",
   "verification_status": "verified"
  },
@@ -1002,7 +1044,7 @@
   "lat": 53.8,
   "lon": -113.2,
   "category": "fuel",
-  "record": "AESO's interim approach (rolled out 2025-06-04) limited large-load (≥75 MW) connections to 1,200 MW through 2028; by September 2025 AESO reported 33 data center proposals (~20.7 GW) of which 15 (~4.8 GW) were judged viable. Draft June 2026 'bring your own generation' rules would add a ~1.6 GW interruptible bridging pool limited to gas-fired generation ('renewables and hybrid facilities are not eligible for now'). AUC Decision 30261-D02-2026 (2026-06-25; reasons for the approval granted in Decision 30261-D01-2026) approved Greenlight as a 1,864 MW two-phase combined-cycle plant (four Siemens SGT6-8000H gas turbines and four steam turbines) about 8.5 km east of Gibbons, describing it as intended in part 'to supply data centres', with ~538,000 m³/yr of water from Sturgeon County and Pembina holding a 50% interest; Pembina took FID on 2026-07-02 on the first 932 MW (2× Siemens SGT6-8000H), C$4.6B gross including financing costs, Sturgeon County, ~150 MMcf/d gas, COD second half 2030, long-term tolling to an unnamed data center customer.",
+  "record": "AESO's interim approach (rolled out 2025-06-04) limited large-load (≥75 MW) connections to 1,200 MW through 2028; by September 2025 AESO reported 33 data center proposals (~20.7 GW) of which 15 (~4.8 GW) were judged viable. Draft June 2026 'bring your own generation' rules would add a ~1.6 GW interruptible bridging pool limited to gas-fired generation ('renewables and hybrid facilities are not eligible for now'). AUC Decision 30261-D02-2026 (2026-06-25; reasons for the approval granted in Decision 30261-D01-2026) approved Greenlight as a 1,864 MW two-phase combined-cycle plant (four Siemens SGT6-8000H gas turbines and four steam turbines) about 8.5 km east of Gibbons, describing it as intended in part 'to supply data centres', with ~538,000 m³/yr of water from Sturgeon County and Pembina holding a 50% interest; Pembina took FID on 2026-07-02 on the first phase, Sturgeon County, COD second half 2030, long-term tolling to an unnamed data center customer.",
   "record_sources": [
    {
     "title": "Decision 30261-D02-2026: Greenlight Electricity Centre GP Ltd., Greenlight Electricity Centre (reasons for decision)",
@@ -1047,18 +1089,24 @@
     "date": "2026-07"
    }
   ],
-  "claim": "AESO CEO: connecting all large loads seeking access would impair reliability. Pembina CEO: dedicated contracted gas-to-power is 'a promising new growth platform' that will drive new natural gas demand. The Logic reported the Greenlight customer is Meta, which Meta has not publicly confirmed.",
+  "claim": "AESO CEO: connecting all large loads seeking access would impair reliability. Pembina CEO: dedicated contracted gas-to-power is 'a promising new growth platform' that will drive new natural gas demand. Pembina's FID release (2026-07-02) gives the first 932 MW (2× Siemens SGT6-8000H), C$4.6B gross including financing costs, and ~150 MMcf/d gas. The Logic reported the Greenlight customer is Meta, which Meta has not publicly confirmed.",
   "claim_sources": [
    {
     "title": "Alberta's bring-your-own-generation large load plan",
     "url": "https://thelogic.co/news/alberta-byog-large-load-plan/",
     "publisher": "The Logic",
     "date": "2026-06-24"
+   },
+   {
+    "title": "Pembina Pipeline announces positive final investment decision on the Greenlight Electricity Centre",
+    "url": "https://mms.businesswire.com/media/20260701575540/en/2844087/1/July_2%2C_2026_Press_Release_vF.pdf?download=1",
+    "publisher": "Pembina Pipeline (Business Wire)",
+    "date": "2026-07-02"
    }
   ],
-  "gap": "Grid operator's bridging program for data centers is formally gas-only; the data center customer of the approved 932 MW plant is not publicly identified in the record.",
+  "gap": "Grid operator's bridging program for data centers is formally gas-only; the data center customer of the approved plant's first 932 MW (Pembina's figure) is not publicly identified in the record.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Pass 2 (2026-10-22): AUC Decision 30261-D02-2026 PDF read: confirms 1,864 MW, two phases, 4 x SGT6-8000H plus 4 steam turbines, site 8.5 km east of Gibbons, Pembina 50% interest, intended in part to supply data centres, 538,000 m³/yr water; it gives no per-stage MW, so 932 MW and C$4.6B rest on Pembina's release. AESO engagement page confirms the 1,200 MW interim limit and lists the 'Proposed BYOG Process' (2026-06-26) and 'Data Centre Update' (2025-09-26) PDFs, which download as files the fetch tool could not read, so the ~1.6 GW gas-only bridging pool and the 33-proposal/20.7 GW/15-viable figures remain press-sourced (queued for browser fetch).",
   "verification_status": "partial"
  },
@@ -1197,7 +1245,7 @@
   "lat": 20.78,
   "lon": -100.05,
   "category": "water",
-  "record": "CONAGUA data cited by the Thomson Reuters Foundation (2024-09-06) show Microsoft acquired an existing concession of 25 million litres/yr in Colón, equal to 24% of the municipality's public-use allocation (SinEmbargo, citing REPDA, identifies it as title 855979 held by Microsoft México for 25,000 m³/yr, registered October 2023, at Parque Industrial Vesta, Galeras), in the Valle de San Juan del Río aquifer (CONAGUA code 2203), whose 2024 CONAGUA availability update shows recharge of 277.9 hm³/yr against 334.8 hm³/yr of registered extraction (REPDA, cut-off 2022-12-30), a deficit of 56,892,701 m³/yr (~56.9 billion litres) and 'no availability of groundwater to grant new concessions'; CONAGUA says it has granted no new concessions and the state development secretary said he had no data on water allocated to the ~20 data centers. On grid: MEXDC reports Querétaro holds 72% of Mexico's 279 MW installed (May 2026); CFE's transmission program adds up to 800 MW; CloudHQ's 900 MW campus secured its first 200 MW with CFE/CENACE; a former CRE chair said some facilities waited up to two years for connection. CFE (nota informativa, 2026-10-14) says data centers in Colón run on dedicated 13.8 kV circuits and records 74 service interruptions in Colón in January–September 2026, 9 of them scheduled.",
+  "record": "CONAGUA data cited by the Thomson Reuters Foundation (2024-09-06) show Microsoft acquired an existing concession of 25 million litres/yr in Colón, equal to 24% of the municipality's public-use allocation (SinEmbargo, citing REPDA, identifies it as title 855979 held by Microsoft México for 25,000 m³/yr, registered October 2023, at Parque Industrial Vesta, Galeras), in the Valle de San Juan del Río aquifer (CONAGUA code 2203), whose 2024 CONAGUA availability update shows recharge of 277.9 hm³/yr against 334.8 hm³/yr of registered extraction (REPDA, cut-off 2022-12-30), a deficit of 56,892,701 m³/yr (~56.9 billion litres) and 'no availability of groundwater to grant new concessions'; CONAGUA says it has granted no new concessions and the state development secretary said he had no data on water allocated to the ~20 data centers. On grid: MEXDC reports Querétaro holds 72% of Mexico's 279 MW installed (May 2026); CFE's transmission program adds up to 800 MW; CloudHQ's planned campus secured its first 200 MW with CFE and CENACE [press]; a former CRE chair said some facilities waited up to two years for connection. CFE (nota informativa, 2026-10-14) says data centers in Colón run on dedicated 13.8 kV circuits and records 74 service interruptions in Colón in January–September 2026, 9 of them scheduled.",
   "record_sources": [
    {
     "title": "Actualización de la Disponibilidad de Agua en el Acuífero Valle de San Juan del Río (2203), estado de Querétaro",
@@ -1236,7 +1284,7 @@
     "date": "2026-10-12"
    }
   ],
-  "claim": "Microsoft: Querétaro data centers consume water 'less than 5% of the year.' AWS: air-cooled design 'will not require the ongoing use of cooling water in operations.' Google: working with suppliers to reduce water use (no figures). Governor Kuri denies data centers cause an energy deficit, attributing delays to transmission/distribution infrastructure.",
+  "claim": "Microsoft: Querétaro data centers consume water 'less than 5% of the year.' AWS: air-cooled design 'will not require the ongoing use of cooling water in operations.' Google: working with suppliers to reduce water use (no figures). Governor Kuri denies data centers cause an energy deficit, attributing delays to transmission/distribution infrastructure. CloudHQ plans up to 900 MW (about US$4.8 bn) at full build-out [press].",
   "claim_sources": [
    {
     "title": "Thirsty data centres spring up in water-poor Mexican town",
@@ -1249,11 +1297,17 @@
     "url": "https://www.xataka.com.mx/robotica-e-ia/hay-centros-datos-queretaro-que-llevan-dos-anos-esperando-algo-basico-poder-conectarse-a-red-electrica",
     "publisher": "Xataka México",
     "date": "2026-09-09"
+   },
+   {
+    "title": "La CFE fortalece el suministro eléctrico para el auge de centros de datos en Querétaro",
+    "url": "https://www.datacenterdynamics.com/es/noticias/la-cfe-fortalece-el-suministro-el%C3%A9ctrico-para-el-auge-de-centros-de-datos-en-quer%C3%A9taro/",
+    "publisher": "Data Center Dynamics (es)",
+    "date": "2026-01-13"
    }
   ],
   "gap": "Operators describe low or zero cooling-water designs; the only public withdrawal figure is one concession, and the state reports no aggregate allocation data for the cluster.",
   "confidence": "medium",
-  "last_checked": "2026-10-22",
+  "last_checked": "2026-10-23",
   "verification_note": "Pass 2 (2026-10-22): the CONAGUA PDF linked by the TRF article is DR_2203 (the earlier pass tried DR_2202, a different aquifer code); it opened and confirms aquifer 2203 Valle de San Juan del Río with a deficit of 56,892,701 m³/yr and no availability for new concessions, so the TRF '56.8 billion litres' is a truncation of ~56.9 billion litres per year. Not confirmed from primary: Microsoft's 25 million L/yr concession and its 24% share (no REPDA title found), that the Colón site draws on aquifer 2203, and the CFE/CENACE grid figures (MEXDC, CloudHQ 200 MW, 800 MW); the shared web-search budget ran out before REPDA and DOF searches could be repeated. Pass 3 (2026-10-22): SinEmbargo (2026-10-12) cites REPDA title 855979 (Microsoft México, 25,000 m³/yr, October 2023, Galeras, Colón, aquifer Valle de San Juan del Río), which matches the TRF 25 million L/yr; the REPDA search form itself could not be queried, so the title remains press-cited, and the 24% share is still TRF-only. SinEmbargo also confirms MEXDC's 202 of 279 MW (72%). A CFE nota informativa (2026-10-14) was read and added (13.8 kV dedicated circuits; 74 interruptions Jan–Sep 2026), but no CFE, CENACE or SENER document for the 800 MW transmission program or CloudHQ's 200 MW was found.",
   "verification_status": "partial"
  },
@@ -1324,7 +1378,7 @@
   "lat": 39.03,
   "lon": -77.47,
   "category": "fuel",
-  "record": "EPA's 2023 National Emissions Inventory, queried through Envirofacts, lists 23 Virginia facilities under NAICS 518210 with NOx emissions, and four more datacenter facilities under other codes: 27 facilities, 393 tons of NOx in 2023. Largest: Amazon IAD-132/133, Manassas, 77.6 t; DuPont Fabros Ashburn Corporate Center 47.7 t; CyrusOne Shaw Road 31.7 t; Microsoft East Coast Data Center, Boydton, 28.8 t (20.8 t in 2020); CyrusOne Kincora 27.1 t. The inventory reports facility-wide annual tons per pollutant only: no hours, no fuel, no per-unit split. Twenty-one of the 27 carry a DEQ registration number in the ledger's permit list (several embedded in the NEI facility name). Most of the 182 permitted facilities, including every permit issued from 2024 on, do not appear.",
+  "record": "EPA's 2023 National Emissions Inventory, queried through Envirofacts, lists 23 Virginia facilities under NAICS 518210 with NOx emissions, and four more datacenter facilities under other codes: 27 facilities, 393 tons of NOx in 2023. Largest: Amazon IAD-132/133, Manassas, 77.6 t; DuPont Fabros Ashburn Corporate Center 47.7 t; CyrusOne Shaw Road 31.7 t; Microsoft East Coast Data Center, Boydton, 28.8 t (20.8 t in the 2020 NEI); CyrusOne Kincora 27.1 t. The inventory reports facility-wide annual tons per pollutant only: no hours, no fuel, no per-unit split. Twenty-one of the 27 carry a DEQ registration number in the ledger's permit list (several embedded in the NEI facility name). Most of the 182 facilities on DEQ's datacenter permit list, including every permit issued from 2024 on, do not appear.",
   "record_sources": [
    {
     "title": "NEI 2023 facility summaries, Virginia, NAICS 518210, NOx (Envirofacts DMAP)",
@@ -1339,10 +1393,22 @@
     "date": "2026-10-23"
    },
    {
+    "title": "NEI 2020 facility summary, Microsoft Corporation - East Coast Data Center (EIS 17626111)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/eis_facility_id/equals/17626111/pollutant_type/equals/CAP/1:200/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-23"
+   },
+   {
     "title": "Envirofacts Data Service API",
     "url": "https://www.epa.gov/enviro/envirofacts-data-service-api",
     "publisher": "US EPA",
     "date": "2026"
+   },
+   {
+    "title": "Issued air permits for data centers",
+    "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+    "publisher": "Virginia Department of Environmental Quality",
+    "date": "2026-10-21"
    }
   ],
   "claim": "none found at site level.",
@@ -1406,7 +1472,7 @@
   "lat": 38.9,
   "lon": -77.4,
   "category": "power",
-  "record": "Dominion's 20-year datacenter forecast filed with PJM's Load Analysis Subcommittee on 29 September 2026 gives datacenter billing demand of 2,767 MW (2022), 3,183 (2023), 3,636 (2024), 4,237 MW (2025), 4,838 forecast for 2026; '55 discreet data center companies connected'; 'Approximately 500 data center metered accounts'; 'Data center billing peak load as of August 2026 is 4.8 GW'; 'Approximately 54GW of capacity under contract (ELOA, CLOA, ESA)'. Its 6 January 2026 letter to PJM gives 'a 2025 coincident peak of 4 GW' and 47 GW under contract (9.8 ESA, 7.1 CLOA, 30.1 ELOA); its 2025 IRP update to the SCC (PUR-2025-00184) gives 47,045 MW contracted at end-July 2025 and 15 campus connections (977 MW) in 2024, 8 (561 MW) in 2025. In the biennial review (PUR-2025-00058) Dominion's interrogatory answers, quoted in PEC testimony, give 51 datacenter customers with 3,583 MW combined demand in 2024, and a 92 to 93% load factor. NOVEC's PJM submission of the same date: datacenters were 75% of its energy sales (August 2025 to July 2026), 88 buildings, about 1,750 MW, coincident peak 1,384 MW in 2025. No filing read gives annual datacenter energy in GWh; Dominion's 10-K states datacenters were 28% of Virginia Power's electricity sales in 2025 and 26% in 2024 (company statement).",
+  "record": "Dominion's 20-year datacenter forecast filed with PJM's Load Analysis Subcommittee on 29 September 2026 gives datacenter billing demand of 2,767 MW (2022), 3,183 (2023), 3,636 (2024), 4,237 MW (2025), 4,838 forecast for 2026; '55 discreet data center companies connected'; 'Approximately 500 data center metered accounts'; 'Data center billing peak load as of August 2026 is 4.8 GW'; 'Approximately 54GW of capacity under contract (ELOA, CLOA, ESA)'. Its 6 January 2026 letter to PJM gives 'a 2025 coincident peak of 4 GW' and 47 GW under contract (9.8 ESA, 7.1 CLOA, 30.1 ELOA); its 2025 IRP update to the SCC (PUR-2025-00184) gives 47,045 MW contracted at end-July 2025 (16,913 MW under firm contracts through executed ESAs or CLOAs, and 30,132 MW still being studied at the ELOA stage) and 15 campus connections (977 MW) in 2024, 8 (561 MW) in 2025. In the biennial review (PUR-2025-00058) Dominion's interrogatory answers, quoted in PEC testimony, give 51 datacenter customers with 3,583 MW combined demand in 2024, and a 92 to 93% load factor. NOVEC's PJM submission of the same date: datacenters were 75% of its energy sales (August 2025 to July 2026), 88 buildings, about 1,750 MW, coincident peak 1,384 MW in 2025. No filing read gives annual datacenter energy in GWh.",
   "record_sources": [
    {
     "title": "Dominion Energy LSE 20-Year Data Center Forecast (PJM Load Analysis Subcommittee, item 5a-i)",
@@ -1437,12 +1503,6 @@
     "url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5b---novec.pdf",
     "publisher": "Northern Virginia Electric Cooperative, filed with PJM",
     "date": "2026-09-29"
-   },
-   {
-    "title": "Dominion Energy, Inc. Form 10-K for 2025, Item 1",
-    "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526063120/d-20251231.htm",
-    "publisher": "US SEC EDGAR",
-    "date": "2026-02"
    }
   ],
   "claim": "Dominion's 10-K: datacenters were 28% of Virginia Power's electricity sales in 2025 (26% in 2024). Dominion's IRP stakeholder page: about 85% of its 20-year load-forecast growth is datacenters.",

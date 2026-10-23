@@ -1,0 +1,56 @@
+{
+ "_about": "Licences whose Annual Environmental Reports the ledger reads. GUIDs from the LEAP Open Data API (sites/metered/ireland_aer_notes.md). A reviewed licence keeps its AERs under the replaced -01 GUID, so both are listed. search_terms are used to find licences not yet listed.",
+ "api_base": "https://data.epa.ie/leap/api/v1",
+ "licences": {
+  "P1170-01": [
+   "7c16b775-a4ce-4414-bd47-4a08b151fb0e"
+  ],
+  "P1171-01": [
+   "1e877ac9-2ef5-429c-ba36-3fb97e8ab82f"
+  ],
+  "P1172-01": [
+   "90c9996d-35b3-4493-b219-e5a8553654c0"
+  ],
+  "P1173-01": [
+   "ad7f1139-4faf-4214-933f-896c128d7656"
+  ],
+  "P1177-01": [
+   "4a651a23-4b4b-4165-a2dd-f95fab22e6fe"
+  ],
+  "P1181-01": [
+   "f4b11d36-f066-4ce6-8590-6a7b9b44233c",
+   "c7e72b7d-25e2-4c1b-aee8-d93231192de4"
+  ],
+  "P1182-01": [
+   "58bf4842-5b97-43cd-8bc4-e1cdd5b3278d"
+  ],
+  "P1184-01": [
+   "795fae8d-59a0-4f01-b2f4-c5ccf35c0e79"
+  ],
+  "P1186-01": [
+   "6b561918-9d96-4826-aa76-2adeb9342b12",
+   "db1ef714-1f26-40a7-ac33-0a5a6e56b340"
+  ],
+  "P1187-01": [
+   "981477df-4508-47ea-aa73-de913da42807"
+  ],
+  "P1168-01": [
+   "1a296728-03f9-4ad6-8a08-852704311cc1"
+  ]
+ },
+ "search_terms": [
+  "Amazon Data Services",
+  "Microsoft Ireland",
+  "Equinix",
+  "Google Ireland",
+  "Runways Information",
+  "Vantage Data Centers",
+  "EdgeConneX",
+  "K2 Strategic",
+  "CyrusOne",
+  "Digital Netherlands",
+  "Echelon",
+  "Data Centre",
+  "Data Center"
+ ]
+}
