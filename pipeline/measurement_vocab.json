@@ -364,6 +364,41 @@
   "EFLOPS": {
    "dimension": "compute",
    "factor": null
+  },
+  "tHM": {
+   "dimension": "mass",
+   "factor": 1,
+   "note": "metric tonnes of initial heavy metal (MTHM) in nuclear fuel"
+  },
+  "klb_U3O8e": {
+   "dimension": "mass",
+   "factor": 0.45359237,
+   "note": "thousand pounds of U3O8 equivalent; the canonical value is tonnes of U3O8 equivalent, not contained uranium (about 0.848 of it)"
+  },
+  "Mgal/yr": {
+   "dimension": "volume_rate",
+   "factor": 10.3709912,
+   "note": "million US gallons per year (3,785.41178 m3 / 365 days)"
+  },
+  "MMBtu/h": {
+   "dimension": "thermal_power",
+   "factor": 0.29307107,
+   "note": "million British thermal units per hour (boiler heat input)"
+  },
+  "cfs": {
+   "dimension": "volume_rate",
+   "factor": 2446.57555,
+   "note": "cubic feet per second"
+  },
+  "acre_ft/yr": {
+   "dimension": "volume_rate",
+   "factor": 3.3794023,
+   "note": "acre-feet per year (1,233.48184 m3 / 365 days)"
+  },
+  "MMBtu/d": {
+   "dimension": "thermal_power",
+   "factor": 0.0122112946,
+   "note": "million British thermal units per day, a rate of gas supply or transport"
   }
  },
  "metrics": {
@@ -438,7 +473,12 @@
   "emissions_scope3": "mass: Scope 3 emissions (say which categories in metric_detail)",
   "certificates_used": "energy or share: electricity claimed through certificates (unbundled RECs, GOs, I-RECs) or PPAs, in MWh or as a share of consumption; say which instrument in metric_detail",
   "carbon_credits": "mass: carbon credits or removals contracted, retired or claimed; say which in metric_detail",
-  "cfe_share": "share: hourly carbon-free energy share or similar matching metric; say the method in metric_detail"
+  "cfe_share": "share: hourly carbon-free energy share or similar matching metric; say the method in metric_detail",
+  "trade_value": "money: value of goods crossing a border in a period, by product code and partner, from customs statistics",
+  "trade_quantity": "count or mass: quantity of goods crossing a border in a period, by product code and partner, from customs statistics",
+  "spent_fuel_stored": "mass or count: spent nuclear fuel held at a site (pool and dry storage) as of a date; metric_detail says assemblies or initial heavy metal and names the inventory",
+  "uranium_purchased": "mass: uranium purchased or delivered, in U3O8 equivalent; metric_detail gives origin, buyer group and delivery year",
+  "electricity_by_sourcing_method": "energy or share: electricity a company attributes to a sourcing method other than a certificate or PPA in its renewable matching or market-based accounting (on-site generation, renewable content of the grid mix, or no instrument); the method in metric_detail"
  },
  "bases": {
   "metered": "a meter reading reported to or by a regulator, statistics office or public utility",
@@ -459,5 +499,24 @@
   "standard_or_methodology": "a figure stated in a standard-setter's, rater's or methodology document about its own rules",
   "registry_record": "a record in a public registry (certificates, credits, retirements)",
   "legislative_document": "a bill, rapporteur's opinion or committee report (not enacted law)"
+ },
+ "relations": {
+  "_about": "Edges of the chain the ledger traces, mine to datacenter to end of life (sites/chain/edges.csv). Each edge reads 'from <relation> to' and needs a document.",
+  "mines_for": "a mine or mining company supplies ore or concentrate to a smelter or refiner",
+  "refines_for": "a smelter or refiner supplies metal to a component maker, chipmaker or the filer of a conflict-minerals report",
+  "fabricates_for": "a foundry makes chips for a chip designer or buyer",
+  "supplies_memory_to": "a memory maker supplies memory to a chip or system maker",
+  "assembles_for": "an assembler or contract manufacturer builds boards, systems or servers for a buyer",
+  "ships_to": "goods move from one country or port to another (customs statistics)",
+  "supplies_power_to": "a plant, utility or grid supplies electricity to a site or cluster",
+  "contracts_power_from": "a site operator holds a contract (PPA, tariff, offtake) for a plant's output",
+  "supplies_water_to": "a utility or source supplies water to a site",
+  "supplies_fuel_to": "a pipeline or supplier delivers fuel to a site's generation",
+  "hosts_compute_for": "a site operator runs computing for a tenant",
+  "leases_site_to": "a site owner leases the site or capacity to a tenant",
+  "receives_end_of_life_from": "a recycler or refurbisher takes hardware retired from a site or company",
+  "owns": "one entity owns a site or another entity",
+  "operates": "an entity operates a site",
+  "packages_for": "an assembly, test and packaging house (OSAT), or a packaging joint venture, packages and tests chips for a chip designer"
  }
 }

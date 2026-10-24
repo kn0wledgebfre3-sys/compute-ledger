@@ -1,0 +1,659 @@
+[
+ {
+  "id": "us-sec-form-sd-nvda-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners named in NVIDIA's conflict minerals report, calendar 2025",
+  "operator": "NVIDIA Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds NVIDIA's Form SD for the reporting period January 1, 2025 to December 31, 2025, signed May 15, 2026, which files the Conflict Minerals Report as Exhibit 1.01. No independent private sector audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "NVIDIA Corporation Form SD (reporting period January 1, 2025 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000043/a2026formsd.htm",
+    "publisher": "NVIDIA Corporation, filed on SEC EDGAR",
+    "date": "2026-05-15"
+   }
+  ],
+  "claim": "NVIDIA reports '246 processing facilities in our supply chain' that sourced 3TG for products in the period, of which '206 have been validated by the RMAP' as compliant, including '31 smelters and refiners' identified by the RMI 'as sourcing from the Covered Countries'. Exhibit A lists smelters and refiners by metal, name and location (38 tantalum and 37 tungsten rows read; no RMI smelter ids printed). On cobalt and mica: 'In 2025, NVIDIA continued investigating cobalt and mica sourcing using its third-party software to survey suppliers.' The report does not state whether it was subject to an independent private sector audit.",
+  "claim_sources": [
+   {
+    "title": "NVIDIA Conflict Minerals Report, calendar 2025 (Exhibit 1.01), OTC Markets copy of the EDGAR filing received 05/15/2026",
+    "url": "https://www.otcmarkets.com/filing/html?id=19453851&guid=RhW-keXhzjOPGch",
+    "publisher": "NVIDIA Corporation (hosted by OTC Markets)",
+    "date": "2026-05-15"
+   }
+  ],
+  "gap": "Per-metal totals are not printed. The Exhibit 1.01 file was not found on sec.gov by search; it was read from OTC Markets' copy of the filing (header 'Received: 05/15/2026 16:26:33'), whose page shows no accession number. The smelter list prints no RMI ids.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Form SD read on sec.gov; Exhibit 1.01 read from the OTC Markets copy through WebFetch (a model's extraction). Three figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-intc-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners named in Intel's conflict minerals report, calendar 2025",
+  "operator": "Intel Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "Intel filed Form SD, signed May 19, 2026, for the reporting period January 1 to December 31, 2025, with Exhibit 1.01, under EDGAR accession 0000050863-26-000132 (the accession appears in the intc.com address; the sec.gov copy was not found by search). No independent private sector audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Intel Corporation Form SD (reporting period January 1 to December 31, 2025), accession 0000050863-26-000132, intc.com copy",
+    "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000132/a05192026formsd.htm",
+    "publisher": "Intel Corporation",
+    "date": "2026-05-19"
+   }
+  ],
+  "claim": "Intel reports that 'The Surveyed Suppliers identified 215 operational smelter and refiner facilities'; that '96% of the 215' are conformant to or participating in a responsible mineral assurance program; and that it knows or has reason to believe conflict minerals 'processed by at least 31 of these' may come from the Covered Countries, adding that 'All 31' are conformant to a responsible mineral assurance program. Table 2 lists facilities by metal, name and country (32 tantalum and 34 tungsten rows read; no RMI ids); a single asterisk marks those conformant as of April 1, 2026. On cobalt: 'Cobalt has been identified as a mineral of concern', with a separate survey using RMI's Extended Minerals Reporting Template. Mica is not mentioned. The report does not state whether it was subject to an independent private sector audit.",
+  "claim_sources": [
+   {
+    "title": "Intel Conflict Minerals Report, year ended December 31, 2025 (Exhibit 1.01, accession 0000050863-26-000132), intc.com copy",
+    "url": "https://www.intc.com/filings-reports/all-sec-filings/content/0000050863-26-000132/a05192026formsdex101.htm",
+    "publisher": "Intel Corporation",
+    "date": "2026-05-19"
+   }
+  ],
+  "gap": "Per-metal totals are not printed. The Form SD and exhibit were read on intc.com, not on sec.gov. First reading says two refiners became non-conformant between January and April 2026 (not quoted).",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Exhibit read on intc.com through WebFetch; three of four figures' phrases and six sampled Table 2 rows re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-amd-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners named in AMD's conflict minerals report, calendar 2025",
+  "operator": "Advanced Micro Devices, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR lists AMD's Form SD for calendar 2025 (formsd-amd2025.htm, accession 0000002488-26-000103); the report is dated May 28, 2026. No independent private sector audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Advanced Micro Devices Form SD for calendar 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000002488/000000248826000103/formsd-amd2025.htm",
+    "publisher": "Advanced Micro Devices, Inc., filed on SEC EDGAR",
+    "date": "2026-05-28"
+   }
+  ],
+  "claim": "AMD reports '16 of 219 smelters and refiners are known to source from the Covered Countries', 'all of which are conformant to third-party audit standards', and that 'In the 2025 reporting year, 95% of the smelters and refiners reported to be in our supply chain participated' in RMAP. Its list gives metal, smelter name and location (33 tantalum and 36 tungsten rows by the reader's count; no RMI ids). On cobalt: its view of the supply chain has 'developed beyond 3TG to include cobalt'. Mica is not mentioned. The report does not state whether it was subject to an independent private sector audit.",
+  "claim_sources": [
+   {
+    "title": "AMD Conflict Minerals Report, calendar 2025 (Exhibit 1.01, accession 0000002488-26-000103), ir.amd.com copy",
+    "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000103/fy2025cmr.htm",
+    "publisher": "Advanced Micro Devices, Inc.",
+    "date": "2026-05-28"
+   }
+  ],
+  "gap": "Per-metal totals not printed. The exhibit was read on ir.amd.com; the Form SD wrapper URL on sec.gov came from search but was not fetched.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Exhibit read on ir.amd.com through WebFetch; three figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-mu-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners named in Micron's conflict minerals report, calendar 2025",
+  "operator": "Micron Technology, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Micron's Form SD, signed May 20, 2026, for the reporting period January 1 to December 31, 2025, and its Exhibit 1.01. No independent private sector audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Micron Technology Form SD (reporting period January 1 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000008/formsdcy2025.htm",
+    "publisher": "Micron Technology, Inc., filed on SEC EDGAR",
+    "date": "2026-05-20"
+   },
+   {
+    "title": "Micron Technology Conflict Minerals Report, calendar year ended December 31, 2025 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000008/exhibit101conflictminerals.htm",
+    "publisher": "Micron Technology, Inc., filed on SEC EDGAR",
+    "date": "2026-05-20"
+   }
+  ],
+  "claim": "Micron reports 'we identified a total of 191 smelters and refiners', 'of which 163 were validated as Conformant and one was listed as Active with RMI', and states 'we had reason to believe that at least some sourcing was from the DRC and adjoining countries' without giving a count. Appendix A lists metal, smelter or refinery name and location (no RMI ids). Cobalt and mica are not mentioned. The report does not state that it was subject to an independent private sector audit.",
+  "claim_sources": [
+   {
+    "title": "Micron Technology Conflict Minerals Report, calendar year ended December 31, 2025 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000008/exhibit101conflictminerals.htm",
+    "publisher": "Micron Technology, Inc., filed on SEC EDGAR",
+    "date": "2026-05-20"
+   }
+  ],
+  "gap": "No count of smelters sourcing from the DRC region; no per-metal totals.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Exhibit read on sec.gov through WebFetch; phrases re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-dell-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Dell Technologies' conflict minerals report, calendar 2025",
+  "operator": "Dell Technologies Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Dell Technologies' Form SD for January 1 to December 31, 2025, which refers to the Conflict Minerals Report as Exhibit 1.01; the exhibit file was not found on sec.gov by search. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Dell Technologies Form SD (reporting period January 1 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001571996/000157199626000024/delltechnologiesconflictmi.htm",
+    "publisher": "Dell Technologies Inc., filed on SEC EDGAR",
+    "date": "2026"
+   }
+  ],
+  "claim": "Dell reports '245 unique 3TG smelter or refiner facilities were identified', '219 smelters and refiners reported in Dell's supply chain as conformant' as of December 31, 2025 (a footnote counts LBMA and RJC equivalents), and that '31 were known to be sourcing from the DRC or an adjoining country', all of which are 'designated as' Third-Party Audit Conformant; it adds that it 'found no reason to conclude that any smelter or refiner' financed or benefited armed groups. No smelter list is printed (Appendix A lists countries). Cobalt and mica are not mentioned. No audit report is attached.",
+  "claim_sources": [
+   {
+    "title": "Dell Technologies Conflict Minerals Report, calendar 2025 (Exhibit 1.01), company-hosted PDF",
+    "url": "https://www.delltechnologies.com/asset/en-rs/solutions/business-solutions/legal-pricing/dell-technologies-conflictminerals-report.pdf",
+    "publisher": "Dell Technologies Inc.",
+    "date": "2026-05-29"
+   }
+  ],
+  "gap": "Exhibit read from Dell's website PDF (signed May 29, 2026), not EDGAR.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Form SD read on sec.gov; company-hosted exhibit read through WebFetch; figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-hpe-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Hewlett Packard Enterprise's Form SD, reporting year 2025",
+  "operator": "Hewlett Packard Enterprise Company",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds HPE's Form SD signed May 28, 2026. Its body covers the 'reporting year January 1, 2025, to December 31, 2025', while its cover page reads 'for the reporting period from January 1 to December 31, 2024'. No audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Hewlett Packard Enterprise Form SD (reporting year January 1, 2025, to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001645590/000164559026000048/a2025formsd.htm",
+    "publisher": "Hewlett Packard Enterprise Company, filed on SEC EDGAR",
+    "date": "2026-05-28"
+   }
+  ],
+  "claim": "HPE's Form SD states it engaged suppliers 'identifying 241 operational 3TG facilities that may process the necessary conflict minerals' and that 'some of the necessary conflict minerals from 3TG facilities originated or may have originated in the Covered Countries'. It gives no RMAP conformance count. Cobalt and mica are not mentioned.",
+  "claim_sources": [
+   {
+    "title": "Hewlett Packard Enterprise Form SD (reporting year January 1, 2025, to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001645590/000164559026000048/a2025formsd.htm",
+    "publisher": "Hewlett Packard Enterprise Company, filed on SEC EDGAR",
+    "date": "2026-05-28"
+   }
+  ],
+  "gap": "Exhibit 1.01 (the full report) was not read: the Form SD points to www.hpe.com/info/conflictminerals, which on 2026-10-23 linked only the calendar 2024 report. No smelter list, per-metal counts or conformance share read.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Form SD body read on sec.gov through WebFetch; phrases re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-smci-cy2024",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Super Micro Computer's conflict minerals report (calendar 2024, latest read)",
+  "operator": "Super Micro Computer, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Supermicro's Exhibit 1.01 for the Calendar Year Ended December 31, 2024, which states 'This Report has not been subject to an independent private sector audit.' Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim. A press aggregator reports a Form SD for January 1 to December 31, 2025 filed May 29, 2026; it was not found on EDGAR by search.",
+  "record_sources": [
+   {
+    "title": "Super Micro Computer Conflict Minerals Report for the Calendar Year Ended December 31, 2024 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536525000015/ry2024ex101draftlegalcomme.htm",
+    "publisher": "Super Micro Computer, Inc., filed on SEC EDGAR",
+    "date": "2025"
+   },
+   {
+    "title": "Quantisnow item: SEC Form SD filed by Super Micro Computer, Inc.",
+    "url": "https://qnow.quantisnow.com/insight/sec-form-sd-filed-by-super-micro-computer-inc-6578945",
+    "publisher": "Quantisnow (press aggregator)",
+    "date": "2026-05-29"
+   }
+  ],
+  "claim": "For calendar 2024 Supermicro reports '338 known smelters and refiners as potential sources of 3TG minerals', of which '237 have been verified by the RMI to be conformant with the RMAP assessment protocols'. Table 1 gives gold 168 (97 conformant or active), tantalum 37 (36), tin 87 (73), tungsten 46 (37). It states 'it is likely that the country of origin for some of the 3TG contained in our products are Covered Countries.' Voluntarily, it asked suppliers to 'indicate whether cobalt or mica is present in parts provided to us,' and reports 'Of these EMRTs, 125 indicated sourcing of cobalt and/or mica from 93 known cobalt smelters and 22 known mica smelters.' Appendix I lists name, country and metal (no RMI ids).",
+  "claim_sources": [
+   {
+    "title": "Super Micro Computer Conflict Minerals Report for the Calendar Year Ended December 31, 2024 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1375365/000137536525000015/ry2024ex101draftlegalcomme.htm",
+    "publisher": "Super Micro Computer, Inc., filed on SEC EDGAR",
+    "date": "2025"
+   }
+  ],
+  "gap": "Calendar 2025 report not read. Quantisnow is a press aggregator: the 2025 filing's existence is a press_report, not a record.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Calendar 2024 exhibit read on sec.gov through WebFetch; figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-csco-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Cisco's conflict minerals report, calendar 2025",
+  "operator": "Cisco Systems, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "No Cisco Form SD for calendar 2025 was found on sec.gov by search (searches returned 2019 to 2025 filings). The company-hosted Form SD is dated May 22, 2026 and states 'an independent private sector audit of the report presented herein has not been conducted'. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Cisco Systems Form SD and Conflict Minerals Report, reporting period January 1 to December 31, 2025 (company-hosted PDF)",
+    "url": "https://www.cisco.com/c/dam/en_us/about/citizenship/environment/docs/conflict-minerals-report.pdf",
+    "publisher": "Cisco Systems, Inc.",
+    "date": "2026-05-22"
+   }
+  ],
+  "claim": "Cisco reports it 'identified 302 unique SORs', of which '206 are conformant with the applicable RMAP standard'. Table 1 gives gold 156, tantalum 34, tin 70 and tungsten 42 SORs, 215 conformant or active in total, and a 96 % share of 'Low-risk SORs'. It gives no count of SORs sourcing from the Covered Countries; Addendum A lists countries of origin, including the Democratic Republic of the Congo for tantalum, tin and tungsten. Cobalt and mica are not mentioned. No smelter names are printed.",
+  "claim_sources": [
+   {
+    "title": "Cisco Systems Form SD and Conflict Minerals Report, reporting period January 1 to December 31, 2025 (company-hosted PDF)",
+    "url": "https://www.cisco.com/c/dam/en_us/about/citizenship/environment/docs/conflict-minerals-report.pdf",
+    "publisher": "Cisco Systems, Inc.",
+    "date": "2026-05-22"
+   }
+  ],
+  "gap": "Read from cisco.com, not EDGAR.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Company-hosted PDF read through WebFetch; figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-msft-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners named in Microsoft's conflict minerals report, calendar 2025",
+  "operator": "Microsoft Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Microsoft's Form SD, signed May 28, 2026, for the reporting period January 1 to December 31, 2025, and its Exhibit 1.01. No audit report is attached. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Microsoft Corporation Form SD (reporting period January 1 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526245474/d102558dsd.htm",
+    "publisher": "Microsoft Corporation, filed on SEC EDGAR",
+    "date": "2026-05-28"
+   },
+   {
+    "title": "Microsoft Conflict Minerals Report, January 1, 2025-December 31, 2025 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526245474/d102558dex101.htm",
+    "publisher": "Microsoft Corporation, filed on SEC EDGAR",
+    "date": "2026-05-28"
+   }
+  ],
+  "claim": "Microsoft reports '266 Eligible SORs identified' in Microsoft Devices' supply chain; 'Out of 266 Eligible SORs, 226 (84.9%) were participating in a third-party audit program' (Conformant or Active); and '31 SORs sourced from Covered Countries, of which 31 (100%) were Conformant.' Appendix A lists smelter name and country by metal (40 tantalum and 39 tungsten rows by the reader's count; no RMI ids). On cobalt: 'Since 2019, we have required suppliers to report on their use of cobalt'; it lists a wider set of minerals 'which includes copper, cobalt, mica, graphite, lithium, and nickel.' No independent private sector audit is mentioned.",
+  "claim_sources": [
+   {
+    "title": "Microsoft Conflict Minerals Report, January 1, 2025-December 31, 2025 (Exhibit 1.01 to Form SD)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000789019/000119312526245474/d102558dex101.htm",
+    "publisher": "Microsoft Corporation, filed on SEC EDGAR",
+    "date": "2026-05-28"
+   }
+  ],
+  "gap": "Per-metal totals not printed.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Exhibit read on sec.gov through WebFetch; phrases re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-goog-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Alphabet's conflict minerals report, calendar 2025",
+  "operator": "Alphabet Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Alphabet's Form SD for January 1 to December 31, 2025, which attaches the report as Exhibit 1.01 (exhibit file not found on sec.gov by search) and says it is 'publicly available online at https://abc.xyz/investor/esg/alphabets-conflict-minerals'. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Alphabet Inc. Form SD (reporting period January 1 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001652044/000165204426000055/googformsd-2025.htm",
+    "publisher": "Alphabet Inc., filed on SEC EDGAR",
+    "date": "2026"
+   }
+  ],
+  "claim": "Alphabet reports 'our suppliers identified 292 unique smelters': tin 71, tungsten 49, tantalum 34, gold 138 (table 'Total number of smelters'). '209 are considered' conformant and 7 active on RMI's website; with smelters not sourcing from the Covered Countries the total reaches '290 (99%)'. It states 'we have reason to believe that a portion of the 3TG used in our products originated from the Covered Countries'. It mentions the 'artisanal cobalt and copper mining sector'; mica is not mentioned. It conducted 'Supplier Responsibility audits with independent third parties'; no audit report on the conflict minerals report is attached. No smelter list is printed.",
+  "claim_sources": [
+   {
+    "title": "Alphabet Inc. Conflict Minerals Report for the year ended December 31, 2025 (company-hosted PDF)",
+    "url": "https://sustainability.google/files/675ac4645de755478f0f9407777b8ad7bc10f2a9/2025-conflict-minerals-report.pdf",
+    "publisher": "Alphabet Inc.",
+    "date": "2026"
+   }
+  ],
+  "gap": "No count of smelters sourcing from the Covered Countries. Report read from sustainability.google, not EDGAR.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Form SD read on sec.gov; company-hosted report read through WebFetch; figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-amzn-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Amazon's conflict minerals report, calendar 2025",
+  "operator": "Amazon.com, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "SEC EDGAR holds Amazon's Form SD for January 1 to December 31, 2025, which attaches the report as Exhibit 1.01 (exhibit file not found on sec.gov by search) and says it is 'available at www.amazon.com/ir'. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Amazon.com, Inc. Form SD (reporting period January 1 to December 31, 2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001018724/000110465926068254/tm2615281d1_sd.htm",
+    "publisher": "Amazon.com, Inc., filed on SEC EDGAR",
+    "date": "2026"
+   }
+  ],
+  "claim": "Amazon's report covers 'Amazon electronic devices, fashion and apparel, and other consumer products'. It prints no total count of smelters or refiners and no RMAP conformance count. Suppliers were asked to certify that they 'did not source these minerals from the Democratic Republic of the Congo or an adjoining country', used recycled or scrap sources, or 'sourced these minerals from a smelter or refiner that complies with a responsible mineral sourcing validation program'. Annex A lists mineral, smelter or refiner name and country (no RMI ids); the report says Amazon cannot validate the list's accuracy. Cobalt and mica are not mentioned. No audit report is attached.",
+  "claim_sources": [
+   {
+    "title": "Amazon.com, Inc. 2025 Conflict Minerals Report (company-hosted PDF)",
+    "url": "https://s2.q4cdn.com/299287126/files/doc_downloads/2026/05/2025-Conflict-Minerals-Report.pdf",
+    "publisher": "Amazon.com, Inc.",
+    "date": "2026"
+   }
+  ],
+  "gap": "No figures printed for the questions asked; the reader's rough count of Annex A rows (about 364) is not a filer figure and is not recorded.",
+  "confidence": "low",
+  "verification_status": "partial",
+  "verification_note": "Form SD read on sec.gov; company-hosted report read through WebFetch, once in full and once for context.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-sec-form-sd-meta-cy2025",
+  "country": "United States",
+  "region": "",
+  "site_or_subject": "Smelters and refiners in Meta's conflict minerals report, calendar 2025",
+  "operator": "Meta Platforms, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "minerals",
+  "record": "No Meta Form SD for calendar 2025 was found on sec.gov by search. The company-hosted Form SD is signed May 22, 2026 and states 'an independent private sector audit of this CMR has not been conducted'. Under the ledger's rules a Form SD conflict minerals report is a company statement unless an independent private sector audit report is attached; none is attached here, so every figure below is a claim.",
+  "record_sources": [
+   {
+    "title": "Meta Platforms, Inc. Form SD and Conflict Minerals Report, Reporting Period January 1 to December 31, 2025 (company-hosted)",
+    "url": "https://sustainability.atmeta.com/asset/2026-conflict-minerals-report/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2026-05-22"
+   }
+  ],
+  "claim": "Meta reports 'we identified 221 smelters and refiners that provide necessary conflict minerals'; 'Of the 221 smelters and refiners reported by Suppliers, 205 are conformant with the RMAP' (3 active and 13 neither, per first reading). It believes '175 smelters and refiners either did not source conflict minerals that originated from a Covered Country' or met the other conditions in that sentence, and 'The remaining 46 smelters and refiners either did source or may have sourced conflict minerals that originated from a Covered Country.' Cobalt and mica are not mentioned. Addendum A lists countries of origin only.",
+  "claim_sources": [
+   {
+    "title": "Meta Platforms, Inc. Form SD and Conflict Minerals Report, Reporting Period January 1 to December 31, 2025 (company-hosted)",
+    "url": "https://sustainability.atmeta.com/asset/2026-conflict-minerals-report/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2026-05-22"
+   }
+  ],
+  "gap": "Read from sustainability.atmeta.com, not EDGAR. No smelter names printed.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Company-hosted Form SD read through WebFetch; figures re-read and confirmed on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "nvidia-10k-fy2026-foundry-memory-assembly-suppliers",
+  "country": "United States",
+  "region": "Multiple (Taiwan, South Korea, United States)",
+  "site_or_subject": "Nvidia's foundry, memory and assembly suppliers and its customer concentration, as filed (10-K, fiscal year 2026)",
+  "operator": "NVIDIA Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). No regulator, customs or auditor document naming Nvidia's foundries or memory suppliers was read in this pass. The audited segment note, where customer concentration is also reported, was not reached: the fetched text of the filing ends inside Item 1A (risk factors), so MD&A, the purchase-obligation tables and the audited notes were not read.",
+  "record_sources": [
+   {
+    "title": "NVIDIA Corporation Form 10-K for the fiscal year ended January 25, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "publisher": "NVIDIA Corporation (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Nvidia's 10-K for the fiscal year ended January 25, 2026 names TSMC and Samsung Electronics as foundries used 'to produce our semiconductor wafers'; states 'We purchase memory from SK Hynix Inc., Micron Technology, Inc., and Samsung'; says it uses 'CoWoS technology for semiconductor packaging' without naming the packager; and names Hon Hai Precision Industry, Wistron and Fabrinet among contract manufacturers that 'perform assembly, testing and packaging of our final products'. In fiscal year 2026 'sales to one direct customer represented 22% of total revenue' and 'sales to another direct customer represented 14% of total revenue', primarily in the Compute & Networking segment; neither customer is named.",
+  "claim_sources": [
+   {
+    "title": "NVIDIA Corporation Form 10-K for the fiscal year ended January 25, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "publisher": "NVIDIA Corporation (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "The 10-K names suppliers but gives no volumes, shares or amounts by supplier, names no fab site that makes Nvidia's wafers, and does not name the two direct customers. Purchase-obligation amounts were not read.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Supplier sentences read three times in the 10-K text on 2026-10-23; the 22% and 14% sentence re-read and confirmed. The fetched text of the filing ends inside Item 1A (risk factors), so MD&A, the purchase-obligation tables and the audited notes were not read.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "tsmc-20f-2025-customer-concentration-and-fabs",
+  "country": "Taiwan",
+  "region": "Multiple (Taiwan, United States, Japan, Germany, China)",
+  "site_or_subject": "TSMC customer concentration and fab list, as filed (Form 20-F for 2025)",
+  "operator": "Taiwan Semiconductor Manufacturing Company Limited (TSMC)",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). The audited notes of the 20-F were not reached (the fetched text is truncated in the middle). No regulator document giving TSMC's customers was looked for in this pass.",
+  "record_sources": [
+   {
+    "title": "Taiwan Semiconductor Manufacturing Company Limited Form 20-F for the fiscal year ended December 31, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+    "publisher": "TSMC (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "TSMC's 20-F for 2025 states that its largest customer accounted for 19% of net revenue in 2025 (22% in 2024, 25% in 2023), its second largest for 17% (12%, 11%), and its ten largest for about 78% (76%, 70%). No customer is named in the fetched text. 'Our annual capacity (in 12-inch equivalent wafers) exceeded 17 million wafers' in 2025, and TSMC operates nine 300mm wafer fabs and seven advanced backend fabs. It lists Fab 12 in Hsinchu Science Park (40 nm), Fab 14 (16 nm), Fab 18 (3 nm) and Fab 22 (2 nm, from 2025) in the Southern Taiwan Science Park, Fab 15 in Central Taiwan Science Park (7 nm), Fab 16 in Nanjing (16 nm), Fab 21 in Arizona (5 nm, from 2024) and Fab 23 in Kumamoto (28 nm). TSMC Arizona owns about 4,775,885 square meters of land; JASM 476,290 square meters in Kumamoto; ESMC 513,557 square meters in Dresden; TSMC Nanjing holds land use rights of 453,403 square meters.",
+  "claim_sources": [
+   {
+    "title": "Taiwan Semiconductor Manufacturing Company Limited Form 20-F for the fiscal year ended December 31, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/tsm-20251231.htm",
+    "publisher": "TSMC (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "The 20-F does not name customers or say which customer's products each fab makes. Nvidia's, AMD's, Broadcom's and Intel's 10-Ks name TSMC as a foundry but not a fab, so no filing read here links a buyer to a TSMC fab site. No CoWoS capacity figure was found.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Concentration sentences, capacity sentence, fab location sentences, fab table rows (12, 14, 15) and land areas re-read in the 20-F text on 2026-10-23. The text extraction shows a space before some commas (e.g. '2023 , 2024'); quoted lines keep that spacing. The Fab 18 and Fab 22 table rows and the ESMC land figure were read once.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "amd-10k-2025-foundry-and-atmp-suppliers",
+  "country": "United States",
+  "region": "Multiple (Taiwan, United States, China, Malaysia)",
+  "site_or_subject": "AMD's wafer foundries and assembly, test, mark and packaging (ATMP) suppliers, as filed (10-K, fiscal year 2025)",
+  "operator": "Advanced Micro Devices, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). The fetched text of the filing ends inside Item 1A (risk factors), so MD&A, the purchase-obligation tables and the audited notes were not read.",
+  "record_sources": [
+   {
+    "title": "Advanced Micro Devices, Inc. Form 10-K for the fiscal year ended December 27, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+    "publisher": "Advanced Micro Devices, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "AMD's 10-K for the fiscal year ended December 27, 2025 states that it uses TSMC 'for the production of wafers', relies 'primarily on GLOBALFOUNDRIES Inc. (GF) for wafers for microprocessor and GPU products' at older nodes, and is party to a wafer supply agreement under which GF provides 'a minimum annual capacity allocation' with pricing set through 2026. For programmable logic devices it uses TSMC, UMC and Samsung Electronics. ATMP is done through two joint ventures with Tongfu Microelectronics and by SPIL and KYEC. In October 2025 AMD sold the ZT data center infrastructure manufacturing business to Sanmina. The 10-K refers to an industry-wide memory shortage but names no memory supplier.",
+  "claim_sources": [
+   {
+    "title": "Advanced Micro Devices, Inc. Form 10-K for the fiscal year ended December 27, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm",
+    "publisher": "Advanced Micro Devices, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "No amount for the GF agreement or other purchase commitments, no customer percentages, no memory or HBM supplier and no fab site were found in the fetched text. The fetched text does not say whether Sanmina builds AMD's rack-scale systems.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Supplier sentences read twice on 2026-10-23. The fetched text of the filing ends inside Item 1A (risk factors), so MD&A, the purchase-obligation tables and the audited notes were not read.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "broadcom-10k-fy2025-foundry-and-own-fabs",
+  "country": "United States",
+  "region": "Multiple (Taiwan, United States, Singapore)",
+  "site_or_subject": "Broadcom's dependence on TSMC, its assembly and test contract manufacturers and its own fabs, as filed (10-K, fiscal year 2025)",
+  "operator": "Broadcom Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). No regulator document was read in this pass.",
+  "record_sources": [
+   {
+    "title": "Broadcom Inc. Form 10-K for the fiscal year ended November 2, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+    "publisher": "Broadcom Inc. (SEC EDGAR)",
+    "date": "2025"
+   }
+  ],
+  "claim": "Broadcom's 10-K for the fiscal year ended November 2, 2025 states: 'During fiscal year 2025, approximately 95% of the wafers manufactured by our CMs were produced by TSMC.' Its contract manufacturers for assembly and test include TSMC, Advanced Semiconductor Engineering, Foxconn Technology Group, Amkor Technology and Siliconware Precision Industries. Broadcom's own facilities in Fort Collins, Colorado, Singapore and Breinigsville, Pennsylvania make products on its proprietary processes; Fort Collins and Breinigsville are the sole sources for its FBAR filters and Breinigsville for the InP-based wafers in its fiber optics products. Sales to distributors were 48% of net revenue, and sales to the top five end customers approximately 40%, in fiscal year 2025; the customers are not named.",
+  "claim_sources": [
+   {
+    "title": "Broadcom Inc. Form 10-K for the fiscal year ended November 2, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm",
+    "publisher": "Broadcom Inc. (SEC EDGAR)",
+    "date": "2025"
+   }
+  ],
+  "gap": "Broadcom does not name its top end customers or give TSMC purchase amounts in the fetched text. No capacity or output is given for its own fabs.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "All figures and facility sentences re-read in the 10-K text on 2026-10-23.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "intel-10k-2025-fabs-and-tsmc-tiles",
+  "country": "United States",
+  "region": "Multiple (United States, Ireland, Israel)",
+  "site_or_subject": "Intel's production fabs and its use of TSMC, as filed (10-K, fiscal year 2025)",
+  "operator": "Intel Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). The fetched text of the filing ends inside Item 1A (risk factors), so MD&A, the purchase-obligation tables and the audited notes were not read; Intel's customers over 10% of revenue are given in Note 3, which was not reached.",
+  "record_sources": [
+   {
+    "title": "Intel Corporation Form 10-K for the fiscal year ended December 27, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm",
+    "publisher": "Intel Corporation (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Intel's 10-K for the fiscal year ended December 27, 2025 states that its key production fabs in 2025 were in Oregon (ramping Intel 18A), Arizona (Intel 7 and ramping Intel 18A), Ireland (Intel 4 and Intel 3) and Israel (Intel 7), and its key assembly and test facilities in China, New Mexico, Vietnam and Malaysia. It slowed construction of its Ohio fab and discontinued planned expansions in Germany and Poland. It uses TSMC 'for various tiles or an entire product' and expects 'to continue to use TSMC and other third-party foundry suppliers for various key tiles'. Intel Foundry has few external customers to date.",
+  "claim_sources": [
+   {
+    "title": "Intel Corporation Form 10-K for the fiscal year ended December 27, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm",
+    "publisher": "Intel Corporation (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "No share of wafers made externally and no named external foundry customer were found. Named customers and their revenue shares (Note 3) were not read.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Fab and TSMC sentences re-read on 2026-10-23. Note 3 not reached.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "server-makers-10k-suppliers-smci-dell",
+  "country": "United States",
+  "region": "Multiple (United States, Taiwan, Netherlands, Malaysia)",
+  "site_or_subject": "What Super Micro Computer's and Dell's 10-Ks say about their chip suppliers, assemblers and customers",
+  "operator": "Super Micro Computer, Inc.; Dell Technologies Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). Both companies' fetched 10-K text ends in Item 1A; the audited notes on concentrations were not read.",
+  "record_sources": [
+   {
+    "title": "Super Micro Computer, Inc. Form 10-K for the fiscal year ended June 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm",
+    "publisher": "Super Micro Computer, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Dell Technologies Inc. Form 10-K for the fiscal year ended January 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+    "publisher": "Dell Technologies Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Supermicro's 10-K for the fiscal year ended June 30, 2026: 'One supplier accounted for a significant portion of our total purchases in fiscal year 2026 of 63.1%' (not named); purchases from the related parties Ablecom and Compuware were 2.1% of cost of sales in fiscal year 2026 (Ablecom coordinates chassis manufacturing; Compuware makes subassemblies, particularly power supplies); one customer accounted for 10% or more of net sales in fiscal year 2026; systems are mostly made in San Jose, with assembly and test also in Taiwan, the Netherlands and Malaysia. Dell's 10-K for the fiscal year ended January 30, 2026 says it owns manufacturing facilities in the United States, Malaysia, China, Brazil, India, Poland and Ireland, that 'significant portions of our products are assembled by contract manufacturers, primarily in locations in Asia', and that its AI solutions have been bought primarily by a small number of larger customers and cloud service providers. Neither filing names a GPU, CPU or memory supplier or a customer in the fetched text.",
+  "claim_sources": [
+   {
+    "title": "Super Micro Computer, Inc. Form 10-K for the fiscal year ended June 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm",
+    "publisher": "Super Micro Computer, Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Dell Technologies Inc. Form 10-K for the fiscal year ended January 30, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000008/dell-20260130.htm",
+    "publisher": "Dell Technologies Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "Neither server maker names its GPU supplier, its contract manufacturers (Dell) or its large customers in the fetched text, so no fab-to-buyer or assembly-to-buyer edge can be drawn from them.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Supermicro figures re-read on 2026-10-23. Dell read once. Audited notes not reached for either.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "micron-10k-fy2026-customers-and-fabs",
+  "country": "United States",
+  "region": "Multiple (Taiwan, Singapore, Japan, United States, Malaysia, China, India)",
+  "site_or_subject": "Micron's customer concentration and fab locations, as filed (10-K, fiscal year 2026)",
+  "operator": "Micron Technology, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "fab",
+  "record": "The filing is held on SEC EDGAR, which records who filed it and when; the supplier and customer statements in it are the company's own (claim). The direct funding agreements with the U.S. Department of Commerce referred to in the 10-K were not read.",
+  "record_sources": [
+   {
+    "title": "Micron Technology, Inc. Form 10-K for the fiscal year ended September 3, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm",
+    "publisher": "Micron Technology, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "claim": "Micron's 10-K for the fiscal year ended September 3, 2026 states that 'approximately one-half of our total revenue was from our top ten customers' in each of the last three years, with no customer named; that it manufactures in its own facilities in Taiwan, Singapore, Japan, the United States, Malaysia, China and India; that a majority of its 2026 DRAM output came from its Taiwan fabs; and that it has funding agreements for the construction of fab facilities in Idaho and New York and to expand and modernize its fab in Virginia. HBM is supplied to unnamed data center customers.",
+  "claim_sources": [
+   {
+    "title": "Micron Technology, Inc. Form 10-K for the fiscal year ended September 3, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm",
+    "publisher": "Micron Technology, Inc. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "Micron names no customer, including no HBM customer, in the fetched text, so its supply link to Nvidia is stated only by Nvidia's 10-K. No fab-level output or capacity figure was found.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "All quoted sentences re-read on 2026-10-23. The audited 'Certain Concentrations' note was not reached.",
+  "last_checked": "2026-10-23"
+ }
+]

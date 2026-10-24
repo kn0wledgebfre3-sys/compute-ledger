@@ -53,7 +53,7 @@
   "lat": null,
   "lon": null,
   "category": "accounting",
-  "record": "Alphabet's FY2025 schedule, reviewed by Ernst & Young LLP at limited assurance, reports Scope 2 location-based emissions of 15,148,700 tCO2e and market-based emissions of 2,815,000 tCO2e for 2025, a difference of 12,333,700 t. For 2024, the values originally published in Google's 2025 Environmental Report are 11,283,200 tCO2e location-based and 3,059,100 tCO2e market-based, a difference of 8,224,100 t. These 2024 values come from a secondary tabulation. The FY2024 EY assurance letter could not be retrieved. Google reports a global hourly carbon-free energy share of 66% for 2024; a press report gives about 65% for 2025.",
+  "record": "Alphabet's FY2025 schedule, reviewed by Ernst & Young LLP at limited assurance, reports Scope 2 location-based emissions of 15,148,700 tCO2e and market-based emissions of 2,815,000 tCO2e for 2025, a difference of 12,333,700 t. For 2024, the values originally published in Google's 2025 Environmental Report are 11,283,200 tCO2e location-based and 3,059,100 tCO2e market-based, a difference of 8,224,100 t. These 2024 values come from a secondary tabulation. The FY2024 EY assurance letter could not be retrieved. Google reports a global hourly carbon-free energy share of 66% for 2024; a press report gives about 65% for 2025. The same EY-reviewed schedules give 43,586,600 MWh of electricity consumption in 2025, attributed to 'PPAs and other renewable energy agreements' (32,986,300 MWh), on-site generation (24,800 MWh) and renewable electricity in the grid (10,575,500 MWh). The energy-consumption schedule classes 7,282,000 MWh of purchased electricity as from non-renewable sources.",
   "record_sources": [
    {
     "title": "Alphabet's 2026 (FY2025) Environmental Indicators Assurance Letter (EY Independent Accountants' Review Report and Schedules of Select Environmental Metrics)",
@@ -92,7 +92,7 @@
   "gap": "Market-based Scope 2 is 81.4% below location-based in 2025. The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'. Google's hourly carbon-free share (66% in 2024) is the only hourly figure in the seven operators' documents read here.",
   "confidence": "medium",
   "verification_status": "partial",
-  "verification_note": "The 2025 figures were read from the EY-reviewed schedule. The 2026 report's data tables (pp.69-109) were beyond the WebFetch text limit. The 2024 primary documents (the 2025 report and the FY2024 assurance letter on www.gstatic.com) were refused by robots.txt. Google says market-based Scope 2 fell 3% in 2025, while the published 2024 value implies an 8% fall, so 2024 may have been restated; this was not verified. The 2025 hourly CFE share was not read from a primary source. The 2025 schedule figures were re-read directly in EY's assurance letter on 2026-10-23; the 2024 figures rest on a secondary tabulation.",
+  "verification_note": "The 2025 figures were read from the EY-reviewed schedule. The 2026 report's data tables (pp.69-109) were beyond the WebFetch text limit. The 2024 primary documents (the 2025 report and the FY2024 assurance letter on www.gstatic.com) were refused by robots.txt. Google says market-based Scope 2 fell 3% in 2025, while the published 2024 value implies an 8% fall, so 2024 may have been restated; this was not verified. The 2025 hourly CFE share was not read from a primary source. The 2025 schedule figures were re-read directly in EY's assurance letter on 2026-10-23; the 2024 figures rest on a secondary tabulation. The 2025 electricity split was read in the Appendix A schedules of EY's report and re-read on 2026-10-23 (see scope2-renewable-claims-by-instrument).",
   "last_checked": "2026-10-23"
  },
  {
@@ -640,7 +640,7 @@
   "lat": null,
   "lon": null,
   "category": "accounting",
-  "record": "Verra: the Verra Registry v2 release notes (October 2020) list \"Beneficial owner\", retirement reason and retirement reason details as public retirement fields, but state \"These are optional fields and do not display publicly, if the account holder chooses to keep them private.\" Isometric: its registry user guide requires the retiring party to \"Select a beneficiary for the credit retirement\", and a public retirement record (ret_1JZX5YDJA1S0SQYZ, 11 July 2025) displays \"Beneficiary: BlackRock, Inc.\", retired by Supercritical, with the note \"1,500 tonnes of carbon dioxide removal retired by Supercritical on behalf of BlackRock, Inc\". Puro.earth: retirement pages on registry.puro.earth were reached but returned no record fields to the fetch tool (client-side rendering), so whether a beneficiary is displayed was not determined. Gold Standard: the Impact Registry page (updated 10 July 2026) does not describe beneficiary fields; a March 2024 trade-press report states Gold Standard would require \"data on the entity and purpose of retirement\". No registry record naming Microsoft, Alphabet/Google, Amazon or Meta as a retirement beneficiary was found in this check, so no registry figures are given. Company statements: Microsoft's \"Updating our Carbon Removal Portfolio\" (January 2026) lists contracts \"totaling more than 78 million metric tonnes\" signed since June 2023, active through 20 January 2026, and names no registry. Frontier's progress page (last updated October 2026) lists 1,835,427 tons contracted, $679M contracted and 87,482 tons delivered, and names no buyers or registries.",
+  "record": "Verra: the Verra Registry v2 release notes (October 2020) list \"Beneficial owner\", retirement reason and retirement reason details as public retirement fields, but state \"These are optional fields and do not display publicly, if the account holder chooses to keep them private.\" Isometric: its registry user guide requires the retiring party to \"Select a beneficiary for the credit retirement\", and a public retirement record (ret_1JZX5YDJA1S0SQYZ, 11 July 2025) displays \"Beneficiary: BlackRock, Inc.\", retired by Supercritical, with the note \"1,500 tonnes of carbon dioxide removal retired by Supercritical on behalf of BlackRock, Inc\". Puro.earth: retirement pages on registry.puro.earth were reached but returned no record fields to the fetch tool (client-side rendering). A retirement statement page on puro.earth does display a beneficiary: 26 tCO2e retired by Supercritical Tech Ltd 'on behalf of GSPV Limited' (beneficiary type 'End consumer'), transaction completed 2023-07-19. Gold Standard: the Impact Registry page (updated 10 July 2026) does not describe beneficiary fields; a March 2024 trade-press report states Gold Standard would require \"data on the entity and purpose of retirement\". No registry record naming Microsoft, Alphabet/Google, Amazon or Meta as a retirement beneficiary was found in this check, so no registry figures are given. Company statements: Microsoft's \"Updating our Carbon Removal Portfolio\" (January 2026) lists contracts \"totaling more than 78 million metric tonnes\" signed since June 2023, active through 20 January 2026, and names no registry. Frontier's progress page (last updated October 2026) lists 1,835,427 tons contracted, $679M contracted and 87,482 tons delivered, and names no buyers or registries.",
   "record_sources": [
    {
     "title": "Verra Registry v2 Release Notes, October 2020",
@@ -683,6 +683,12 @@
     "url": "https://carbon-pulse.com/270033",
     "publisher": "Carbon Pulse",
     "date": "2024-03-19"
+   },
+   {
+    "title": "Puro.earth Retirement Statement d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "url": "https://puro.earth/retirement-statement/d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "publisher": "Puro.earth",
+    "date": "2023-07-19"
    }
   ],
   "claim": "Microsoft: carbon removal contracts \"totaling more than 78 million metric tonnes\" since June 2023 (company statement, January 2026). Frontier: \"Tons contracted\" 1,835,427; \"Dollars contracted\" $679M; \"Tons delivered\" 87,482 (company statement, October 2026).",
@@ -703,7 +709,211 @@
   "gap": "Microsoft's and Frontier's removal volumes are contracted amounts stated by the buyers; no registry retirement naming Microsoft, Alphabet, Amazon or Meta as beneficiary was found in this check.",
   "confidence": "medium",
   "verification_status": "partial",
-  "verification_note": "Registry search interfaces (Verra, Gold Standard, Puro) render client-side and could not be queried by beneficiary with the tools available; web searches for big-tech beneficiary records in Puro and Isometric returned none. A trade-press headline ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', qcintel.com) appeared in search results but was not fetched or checked against a registry, and is not used. Microsoft's January 2026 document gives three active-contract subtotals (21,303,984; 45,308,761; 11,673,048 t) that are contracted, not retired, volumes.",
+  "verification_note": "Registry search interfaces (Verra, Gold Standard, Puro) render client-side and could not be queried by beneficiary with the tools available; web searches for big-tech beneficiary records in Puro and Isometric returned none. A trade-press headline ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', qcintel.com) appeared in search results but was not fetched or checked against a registry, and is not used. Microsoft's January 2026 document gives three active-contract subtotals (21,303,984; 45,308,761; 11,673,048 t) that are contracted, not retired, volumes. A further check on 2026-10-23 (see carbon-credits-retired-by-company-disclosures) used the project IDs that Microsoft and Meta disclose under California AB 1305. Verra's registry returned an application shell, ACR's data on ICE GreenTrace requires a login, and Isometric's Vaulted Deep project page shows aggregate retirements only. Again no record naming the companies was found.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "scope2-renewable-claims-by-instrument",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Electricity behind the renewable claims of Microsoft, Alphabet (Google), Amazon, Meta, Oracle, Equinix and Digital Realty, by instrument: unbundled certificates, PPAs, on-site generation, green tariffs and supplier contracts, grid or residual (2024, 2025)",
+  "operator": "Microsoft; Alphabet (Google); Amazon; Meta; Oracle; Equinix; Digital Realty",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Alphabet is the only one of the seven whose split of electricity by instrument is covered by an assurance statement. Its FY2025 schedules, reviewed by Ernst & Young LLP at limited assurance (report dated 22 June 2026), give 43,586,600 MWh of electricity consumption in 2025. The schedule of electricity from renewable sources attributes all of it to 'PPAs and other renewable energy agreements' (32,986,300 MWh), on-site generation (24,800 MWh) and renewable electricity in the grid (10,575,500 MWh). The PPA line 'represents the portion of total renewable electricity allocated necessary to maintain the 100% renewable electricity match'. The methodology says such agreements may include PPAs, tax equity investments, PPA-linked RECs/GO agreements and utility renewable energy tariffs, so the line is not split further. The energy-consumption schedule in the same review classes 36,194,000 MWh of purchased electricity as from renewable sources and 7,282,000 MWh as from non-renewable sources.",
+  "record_sources": [
+   {
+    "title": "Alphabet's 2026 (FY2025) Environmental Indicators Assurance Letter (EY Independent Accountants' Review Report and Schedules of Select Environmental Metrics)",
+    "url": "https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf",
+    "publisher": "Alphabet Inc. / Ernst & Young LLP",
+    "date": "2026-06-22"
+   }
+  ],
+  "claim": "Equinix reports 96% renewable coverage in 2024: unbundled EACs 47%, utility-supplied EACs 38% and PPAs 11% (2023: 46%, 40%, 10%). Digital Realty's 2024 chart shows '18% EACs', '13% PPAs', '6% Green Tariffs', '19% Retail renewable supply' and '16% Customer-Sourced Renewables'. For 2025 it states 'Only 11% of our renewable energy in 2025 came from unbundled EACs.' Google states that GCs bought on the marketplace accounted for 19% of its 2025 market-based Scope 2 reductions and long-term clean energy agreements for 81%. Microsoft's FY25 data fact sheet reports 34,534,392 MWh of 'total matched renewable electricity' against 37,026,353 MWh consumed. That total excludes spot EACs, which were 'discontinued in February 2025'. The FY24 total of 29,829,540 MWh included them, and the FY24 'Percentage of direct renewable electricity' was 78. Meta's data index reports 100% of 2024 electricity matched by renewable sources and '>99%' of electricity from the grid, with no split by instrument. Amazon's renewable energy methodology (July 2026) names off-site renewable energy contracts, on-site rooftop solar, site energy contracts and green tariffs, retired RECs and 'Renewable Energy in the Grid', but gives no quantity for any of them. Oracle reports 8,707,819 MWh of renewable electricity use in FY2026, all instruments combined.",
+  "claim_sources": [
+   {
+    "title": "Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable)",
+    "url": "https://media.greenweb.org/uploads/ds_sustainability_data_en.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2025-04"
+   },
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   },
+   {
+    "title": "Digital Realty 2025 Impact Report (calendar year 2025)",
+    "url": "https://investor.digitalrealty.com/static-files/8e2cfc9f-e0a7-4ee0-a7a6-c6a2ea182fa5",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2026-05"
+   },
+   {
+    "title": "Google 2026 Environmental Report",
+    "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+    "publisher": "Google",
+    "date": "2026-06"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "2025 Environmental Sustainability Report Data Fact Sheet (FY24)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-05-29"
+   },
+   {
+    "title": "Meta 2025 Environmental Data Index (2024 data)",
+    "url": "https://sustainability.atmeta.com/asset/2025-environmental-data-index/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025"
+   },
+   {
+    "title": "Amazon Renewable Energy Methodology",
+    "url": "https://sustainability.aboutamazon.com/amazon-renewable-energy-methodology",
+    "publisher": "Amazon",
+    "date": "2026-07"
+   },
+   {
+    "title": "Oracle Environmental and Social Impact FY26 Datasheet (October 2026, Version one)",
+    "url": "https://www.oracle.com/a/ocom/docs/social-impact-datasheet.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2026-10"
+   }
+  ],
+  "gap": "Microsoft, Amazon, Meta and Oracle publish no MWh or percentage split of their renewable claim by instrument. Equinix and Digital Realty publish percentage shares. Alphabet publishes an assured MWh split that puts PPAs, PPA-linked certificates and utility tariffs in one line and gives marketplace certificates only as a share of Scope 2 reductions. In the shares published, unbundled certificates were 47% of Equinix's 2024 electricity and 11% of Digital Realty's 2025 renewable energy. Alphabet's two 2025 schedules count 10,575,500 MWh of grid renewable content toward its 100% match and also class 7,282,000 MWh of purchased electricity as non-renewable.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Alphabet's split was read in EY's review report (Appendix A schedules) and re-read on 2026-10-23. The other figures are company statements already transcribed in sites/paper/company_figures.csv from the documents listed. Not reached: Alphabet's 2025 CDP response (www.gstatic.com, robots_disallowed); Oracle's 2026 CDP response (oracle.com/africa/a/ocom/docs/cdp-climate-change-questionnaire.pdf; extracted text, 97,672 characters, ends at question 4.1.2.7 and 7.30.14 is not reached); Equinix's 2025 Sustainability Report (Adobe asset host, robots_disallowed); the 2024 RE100 annual disclosure report (theclimategroup.org, client error). Not found by search: CDP responses for Microsoft and Amazon, or a Meta CDP response later than the asset titled '2023 Meta CDP Climate Change Response' (not read). Digital Realty's 2025 instrument chart (p.12) extracts as scrambled labels and percentages, so the 2025 pairings were not recorded, and its appendix (pp.91-92) was beyond the extracted text. Google's 2026 report text extracted only to about p.47.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "carbon-credits-retired-by-company-disclosures",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Carbon credits and removals applied, retired or contracted by Microsoft, Alphabet (Google), Amazon, Meta, Oracle, Equinix and Digital Realty: company project disclosures (California AB 1305 / VCMDA) and the registry records behind them",
+  "operator": "Microsoft; Alphabet (Google); Amazon; Meta; Oracle; Equinix; Digital Realty",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "No registry record naming any of the seven companies, or a named subsidiary, as retiring account or beneficiary was found. Verra says 'All VCU issuance and retirement records are publicly available on the Verra Registry', but registry.verra.org returned only an application shell with no record text. ACR's public reports page links to ICE GreenTrace, whose Credits page returned an application shell and asks users to log in or register to download data. Puro: pages under registry.puro.earth/retirements returned no record fields. A retirement statement on puro.earth does display beneficiary fields: 26 tCO2e retired by Supercritical Tech Ltd 'on behalf of GSPV Limited', transaction completed 2023-07-19. No statement naming the seven was found through search. Isometric: Vaulted Deep selected Isometric as registry for its Microsoft offtake of 'up to 4.9 million tonnes of carbon removal through to 2038' (17 July 2025). The registry page for Vaulted Deep's Great Plains project shows 74,920 credits issued and 17,582.544 retired, but no individual retirements or beneficiaries. EY's review report for Meta's 2024 schedule lists 50,000 tCO2e of carbon credits (VCS).",
+  "record_sources": [
+   {
+    "title": "Verified Carbon Units (VCUs)",
+    "url": "https://verra.org/programs/verified-carbon-standard/verified-carbon-units-vcus/",
+    "publisher": "Verra",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "Verra Registry (home; application shell)",
+    "url": "https://registry.verra.org/",
+    "publisher": "Verra",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "ACR Registry Public Reports",
+    "url": "https://acrcarbon.org/acr-registry/public-reports/",
+    "publisher": "ACR",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "ACR on ICE GreenTrace: Credits",
+    "url": "https://greentrace.ice.com/acr/credits",
+    "publisher": "ACR / ICE",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "Puro Registry retirement page (no fields rendered)",
+    "url": "https://registry.puro.earth/retirements/3bcfd1a4-268d-4cbd-a085-12d2d970ef99",
+    "publisher": "Puro.earth",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "Puro.earth Retirement Statement d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "url": "https://puro.earth/retirement-statement/d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "publisher": "Puro.earth",
+    "date": "2023-07-19"
+   },
+   {
+    "title": "Vaulted Deep selects Isometric for Microsoft offtake agreement",
+    "url": "https://isometric.com/writing-articles/vaulted-deep-selects-isometric-for-microsoft-offtake-agreement",
+    "publisher": "Isometric",
+    "date": "2025-07-17"
+   },
+   {
+    "title": "Isometric Registry project prj_1HHYZFVGW1S044ZY (Vaulted Deep, Great Plains)",
+    "url": "https://registry.isometric.com/project/prj_1HHYZFVGW1S044ZY",
+    "publisher": "Isometric",
+    "date": "accessed 2026-10-23"
+   },
+   {
+    "title": "Independent Accountants' Review Report, year ended December 31, 2024 (EY)",
+    "url": "https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/",
+    "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
+    "date": "2025-08-27"
+   }
+  ],
+  "claim": "Microsoft's California AB 1305 report (published January 2025) lists 16 vintage rows of carbon removal credits for its FY23 carbon credit applications, with a total of 605,354 t ('Total 605,354'). The projects are IFM projects registered with CARB and ACR or CAR, an ACR IFM project (ACR574), TIST Kenya (VCS 005 (737)) and Delta Blue Carbon-1 (VCS 2250). The report defines the quantity as purchased volume and gives no retirement dates. Microsoft states it 'discontinued our program of purchasing spot EACs and carbon removal credits from existing projects'; its FY25 fact sheet and report give no FY25 retirement volume. Meta's disclosure under California's Voluntary Carbon Market Disclosures Act (as of 19 December 2024) states 'We supported the removal of 368,050 tons of CO2' for residual Scope 1 and 2 emissions in 2020-2023. It lists 11 projects (VCS993, VCS737, VCS899, ACR114, VCS1468, VCS596, VCS597, CAR1282, CAR1333, ACR282 / CAFR523, GS3039), three of them 'purchased but not yet applied', with no per-project quantities. Meta's 2025 Sustainability Report describes contracts for 676,000 nature-based removal credits from EFM through 2035 and 1.3 million from BTG Pactual Timberland Investment Group. Oracle's AB 1305 disclosure (December 2025) states 'As of 12/31/25 Oracle does not market, sell, purchase, or use voluntary carbon offsets.' Amazon states 'we do not count carbon credits toward our decarbonization targets' (14 February 2025). Digital Realty reports '1,979 MTCO2e carbon offsets retired' for 2024.",
+  "claim_sources": [
+   {
+    "title": "California AB 1305 report",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/California-AB-1305-Regulation.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-01"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report: Responsibly building the AI future",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07"
+   },
+   {
+    "title": "California Voluntary Carbon Market Disclosures Act: Meta 2024 Disclosure",
+    "url": "https://sustainability.atmeta.com/asset/california-voluntary-carbon-market-disclosures-act-meta-2024-disclosure",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2024-12-19"
+   },
+   {
+    "title": "Meta 2025 Sustainability Report",
+    "url": "https://sustainability.atmeta.com/asset/2025-sustainability-report/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025"
+   },
+   {
+    "title": "CA AB 1305 Disclosure (fiscal year 2025, Version 1)",
+    "url": "https://oracle.com/a/ocom/docs/ca-ab-1305-disclosure.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2025-12"
+   },
+   {
+    "title": "How Amazon approaches carbon credits",
+    "url": "https://aboutamazon.com/news/sustainability/amazon-carbon-credit-decarbonization-sustainability",
+    "publisher": "Amazon",
+    "date": "2025-02-14"
+   },
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   }
+  ],
+  "gap": "The companies' disclosures name registries and project IDs but give no retirement serial numbers, dates or beneficiary names, and the registries' public interfaces could not be queried by beneficiary with the tools available. As a result, none of the disclosed volumes (Microsoft 605,354 t for FY23; Meta 368,050 t for 2020-2023 and 50,000 t for 2024) was matched to a registry retirement record. No AB 1305 disclosure or registry record was found for Alphabet, Amazon, Equinix or Digital Realty.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Company disclosures were read in the primary documents, and the quoted totals were re-read on 2026-10-23. Registry attempts on 2026-10-23: Verra (application shell), ACR/ICE GreenTrace (shell; login required to download), Puro (registry.puro.earth retirement pages render no fields; puro.earth retirement statements render but none naming the seven was surfaced by search), Isometric (project page shows aggregate retirements only), CarbonPlan OffsetsDB (updates paused; carbonplan.org/transactions client error). Climate Action Reserve's and Gold Standard's registries were not reached: no search result gave a URL for a CAR retirement report or a Gold Standard retirement record. A Quantum Commodity Intelligence item from registry data ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', 9 December 2025) is behind a login; its figure is not used. Microsoft's AB 1305 table quantities are purchased vintage volumes, not retirements. The Deloitte review it cites covers Section 1 of the 2024 fact sheet, not this report.",
   "last_checked": "2026-10-23"
  }
 ]

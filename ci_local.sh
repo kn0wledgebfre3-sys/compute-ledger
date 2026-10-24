@@ -19,4 +19,6 @@ for f in ireland_aer_metered.csv va_nei_generator_emissions.csv benchmarking_dat
 python3 build_measurements.py --out "$T/meas" > /dev/null
 for f in measurements.csv site_register.csv entity_register.csv measurements_summary.json; do cmp "$T/meas/$f" ../data/climate_trace_seed/$f; done
 python3 validate_measurements.py | tail -1
+python3 build_chain.py --out "$T/chain" | tail -1
+for f in edges.csv summary.json; do cmp "$T/chain/$f" ../data/chain/$f; done
 echo "all checks passed"

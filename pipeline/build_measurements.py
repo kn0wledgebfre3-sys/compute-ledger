@@ -85,14 +85,14 @@ EXTRA_SITES = [
 ]
 
 
-QUAL = [("lower_bound", r"\b(at least|more than|over|above|exceeds?|greater than|minimum of|no less than)\b|[>≥]|\+\s*$"),
+QUAL = [("lower_bound", r"\b(at least|more than|over|above|exceeds?|exceeded|greater than|minimum of|no less than)\b|[>≥]|\+\s*$"),
         ("upper_bound", r"\b(up to|at most|maximum|max\.?|no more than|not more than|below|under|less than|capped at)\b|[<≤]"),
         ("approximate", r"\b(about|approximately|approx\.?|around|nearly|almost|roughly|some|circa|c\.)\b|~|≈")]
 
 
 PREFIX_QUAL = [("upper_bound", r"(no more than|not more than|not above|not to exceed|no greater than)\s*$"),
                ("lower_bound", r"(no less than|not less than|not below)\s*$"),
-               ("lower_bound", r"(at least|more than|over|above|exceeding|greater than|minimum of|[>≥])\s*$"),
+               ("lower_bound", r"(at least|more than|over|above|exceeding|exceeded|greater than|minimum of|[>≥])\s*$"),
                ("upper_bound", r"(up to|at most|maximum of|below|under|less than|capped at|[<≤])\s*$"),
                ("approximate", r"(about|approximately|approx\.|around|nearly|almost|roughly|some|circa|[~≈])\s*$")]
 DURATION = re.compile(r"\b(years?|months?|weeks?|days?|hours?)\b", re.I)
@@ -306,6 +306,47 @@ def feed_nei(T: Table, sites: dict):
               notes=r["how_matched"], published_text=r["tons_per_year"])
 
 
+
+def feed_generator_hours(T: Table, sites: dict):
+    """Minimum full-load-equivalent hours per generator from the inventory's NOx and the permits' NOx limits.
+    The arithmetic is redone here from the transcribed unit rates and checked against the reviewed table."""
+    lbhr = {}
+    for u in read_csv(MET / "va_permit_unit_rates.csv"):
+        if u["nox_rate_unit"] != "lb/hr":
+            T.problems.append(f"va_permit_unit_rates: {u['registration']} {u['unit_group']}: rate unit {u['nox_rate_unit']} not converted")
+            continue
+        lbhr[u["registration"]] = lbhr.get(u["registration"], 0.0) + float(u["unit_count"]) * float(u["nox_rate_each"])
+    nei = {(r["registration"], r["year"]): r for r in read_csv(MET / "va_nei_transcribed.csv") if r["pollutant"] == "NOX"}
+    for h in read_csv(MET / "va_generator_hours.csv"):
+        if h["include"] != "yes":
+            continue
+        reg, yr = h["registration"], h["year"]
+        n = nei.get((reg, yr))
+        if not n:
+            T.problems.append(f"va_generator_hours: no inventory row for {reg} {yr}")
+            continue
+        total = lbhr.get(reg, 0.0)
+        hours = float(n["tons_per_year"]) * 2000 / total if total else 0.0
+        if abs(hours - float(h["min_full_load_equivalent_hours"])) > 0.01 or abs(total - float(h["sum_nox_lb_per_hour_all_units"])) > 0.01:
+            T.problems.append(f"va_generator_hours: {reg} {yr} recomputes to {hours:.2f} h from {total:.2f} lb/hr, table says {h['min_full_load_equivalent_hours']}")
+            continue
+        weak = re.search(r"NOT con|fragment only|not matched", n["how_matched"])
+        subject = f"usa-va-deq-{reg}" if (not weak and f"usa-va-deq-{reg}" in sites) else f"usa-va-nei-{n['eis_facility_id_or_deq_id']}"
+        ps, pe = year_period(yr)
+        common = dict(feed="sites/metered/va_generator_hours.csv", subject_type="site", subject_id=subject, entry_id=FEED_ENTRY["nei"],
+                      period_start=ps, period_end=pe, basis="derived", source_url=n["document_or_endpoint_url"],
+                      source_title=f"{n['inventory_source']} facility summary, EIS {n['eis_facility_id_or_deq_id']}, with Virginia DEQ permit {reg}",
+                      source_publisher="US EPA Envirofacts; Virginia DEQ", extraction="pipeline_and_second_reading", second_read="yes",
+                      notes=f"Match: {h['match_quality']}. {h['caveats']}")
+        hv = f"{hours:.1f}"
+        T.add(metric="generator_hours", metric_detail=("minimum full-load-equivalent hours per generator: inventory NOx (short tons) x 2,000 / "
+                      f"sum of the permit's NOx limits for all {reg} units ({total:,.1f} lb/hr); permitted hours per unit: {h['permitted_hours_per_unit']}"),
+              value=float(hv), unit="h", value_as_published=f"at least {hv} hours", published_text=None, **common)
+        if h["share_of_facility_nox_limit"] and h["facility_nox_limit_tpy"]:
+            sh = f"{float(h['share_of_facility_nox_limit']) * 100:.1f}"
+            T.add(metric="share_other", metric_detail=f"inventory NOx as a share of the permit's facility-wide NOx limit ({h['facility_nox_limit_tpy']} tons/yr)",
+                  value=float(sh), unit="pct", value_as_published=f"{sh}%", published_text=None, **common)
+
 def bench_site_id(r: dict) -> str:
     addr = r["address"]
     if r["jurisdiction"] == "New York City" and re.match(r"56 Hudson", addr):
@@ -382,6 +423,10 @@ def feed_paper(T: Table):
     if p.exists():
         for r in read_csv(p):
             ent = COMPANY_ENTITY[r["company"]]
+            fy = re.fullmatch(r"(FY|CY)(\d{4})", r["fiscal_year"] or "")
+            if fy and r["period_end"] and r["period_end"][:4] != fy.group(2):
+                # every fiscal year in this file is named for the year it ends in (Microsoft July-June, Oracle June-May)
+                T.problems.append(f"company_figures: {r['company']} {r['fiscal_year']} has period {r['period_start']}..{r['period_end']}")
             T.add(feed="sites/paper/company_figures.csv", subject_type="entity", subject_id=ent, entry_id=r["entry_id"],
                   metric=r["metric"], metric_detail=r["metric_detail"], value=r["value"], unit=r["unit"],
                   value_as_published=r["value_as_published"], period_start=r["period_start"], period_end=r["period_end"],
@@ -589,6 +634,7 @@ def main():
     feed_registry(T, entries)
     feed_aer(T)
     feed_nei(T, sites)
+    feed_generator_hours(T, sites)
     feed_bench(T, sites)
     feed_filed(T)
     feed_paper(T)

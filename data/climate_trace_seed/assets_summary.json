@@ -1,29 +1,29 @@
 {
  "built": "2026-10-22",
  "schema": "Climate TRACE v5.11.0 asset emissions and ownership columns",
- "located_sites": 282,
- "with_generator_capacity": 121,
+ "located_sites": 305,
+ "with_generator_capacity": 144,
  "with_generator_capacity_by_basis": {
   "primary on-site generation": 3,
-  "standby MWe (permit)": 105,
+  "standby MWe (permit)": 128,
   "Irish licence or GHG permit (mostly MWth input)": 13
  },
- "virginia_located_standby_mw": 15711.7,
+ "virginia_located_standby_mw": 18949.8,
  "with_ledger_entry": 25,
  "countries": 18,
  "by_source": {
   "seed_list": 49,
   "ireland": 22,
   "ireland_unlocated": 18,
-  "virginia_unlocated": 81,
-  "virginia": 102,
+  "virginia_unlocated": 58,
+  "virginia": 125,
   "texas": 109,
   "texas_unlocated": 20,
   "texas_comptroller_unmatched": 97,
   "other_registers_unlocated": 5
  },
  "by_country": {
-  "USA": 236,
+  "USA": 259,
   "IRL": 22,
   "NLD": 3,
   "CHL": 2,
@@ -42,7 +42,7 @@
   "KEN": 1,
   "AUS": 1
  },
- "backlog_unlocated_rows": 221,
+ "backlog_unlocated_rows": 198,
  "seed_rows_dropped_as_duplicates": [
   {
    "seed_site_id": "irl-google-dublin-grange-castle-data-center",

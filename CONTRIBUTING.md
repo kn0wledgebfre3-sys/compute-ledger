@@ -29,12 +29,12 @@ Each row uses the controlled vocabulary in `pipeline/measurement_vocab.json`: a 
 
 ## The two-reading rule
 
-A figure extracted by a script, or transcribed once by hand, is a first reading. Before it is published as a record it is read a second time against the document by a different method or a different person, and every disagreement is resolved against the text. This is the rule that found the Virginia parser bug (19,186 MW first reading, 33,693 MW resolved). In the measurements table, `second_read` says whether it has been done for that figure. The weekly pulls produce first readings only.
+A figure extracted by a script, or transcribed once by hand, is a first reading. Before it is published as a record it is read a second time against the document by a different method or a different person, and every disagreement is resolved against the text. The second reading checks what the figure is attached to as well as the figure: which site, which unit, which company, and whether a figure for several plants or sites has been put on one. This is the rule that found the Virginia parser bug (19,186 MW first reading, 33,693 MW resolved). In the measurements table, `second_read` says whether it has been done for that figure. The weekly pulls produce first readings only.
 
 ## Rules
 
 - A record needs a URL to the document. A press report of a document is medium confidence and says so.
-- A company's statement is a claim, wherever it was published; a regulator's, court's, grid operator's, statistics office's, auditor's or customs authority's document is a record. A public utility's own published figure has basis `utility_published`.
+- A company's statement is a claim, wherever it was published, including SEC filings' narrative; a regulator's, court's, grid operator's, statistics office's, auditor's, registry's or customs authority's document is a record. A company figure that an independent auditor's assurance statement covers is a record with basis `assured_disclosure`, because the auditor's statement is the record; give the level (limited or reasonable) in notes. A public utility's own published figure has basis `utility_published`.
 - Quote at most a short phrase; paraphrase the rest.
 - No adjectives in `gap`. No accusations anywhere. If a company responded in good faith, that response is part of the record.
 - Never remove an entry. If a record is superseded, add the newer document and update the entry; the older figure stays in the measurements table with its period.

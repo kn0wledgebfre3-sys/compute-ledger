@@ -19,7 +19,8 @@ Claim and gap slots (other6, other7) are copied from the current registry entry 
 
 Coordinate rule. Document coordinates (EPA licence grid references, TCEQ Core Data Forms and permits)
 and EPA FRS points are used as given. A Virginia geocode (va_geocodes.csv, run on 2026-10-21 on the
-first reading's address) is used only when (a) the geocoder matched the street address (rooftop,
+first reading's address; va_geocodes_2026-10-23.csv, a second run of the US Census single-address
+geocoder on the permits' site addresses) is used only when (a) the geocoder matched the street address (rooftop,
 census_exact, census_non_exact) and (b) the address it geocoded is the permit's site address as resolved
 by the second reading, not the permittee's mailing address. Other sites go to the backlog with their
 resolved MW and the reason.
@@ -273,12 +274,14 @@ def main() -> None:
     # 3: Virginia, resolved figures
     geo = {r["registration"]: r for r in read_csv(PKG / "virginia_nearest_generation.csv")}
     gq = {r["row_key"].replace("va-deq-", ""): r for r in read_csv(PKG / "va_geocodes.csv")}
+    # second run, 2026-10-23: US Census single-address geocoder on the permits' site addresses
+    gq2 = {r["row_key"].replace("va-deq-", ""): r for r in read_csv(PKG / "va_geocodes_2026-10-23.csv")}
 
-    def same_address(reg_no: str, r: dict) -> tuple[bool, str]:
+    def same_address(reg_no: str, r: dict, src: dict | None = None) -> tuple[bool, str]:
         """The geocoder ran on the first reading's address, which was sometimes the permittee's mailing
         address. Accept the point only if its query (house number and first street word) appears in the
         site address that the second reading resolved."""
-        q = gq.get(reg_no)
+        q = (src if src is not None else gq).get(reg_no)
         if not q:
             return False, "no geocode record"
         norm = lambda x: re.sub(r"[^a-z0-9 ]", " ", (x or "").lower()).split()
@@ -299,7 +302,16 @@ def main() -> None:
         g = geo.get(reg_no)
         county = (r["site_county"] or "").replace(", VA", "")
         addr_ok, addr_why = same_address(reg_no, r)
-        if g and g["geocode_quality"] in VA_GEOCODE_OK and addr_ok:
+        if not (g and g["geocode_quality"] in VA_GEOCODE_OK and addr_ok):
+            # a usable point from either geocode run whose query is the resolved site address
+            for src in (gq, gq2):
+                q = src.get(reg_no)
+                if q and q["lat"] and q["match_quality"] in VA_GEOCODE_OK | {"census_interpolated"} \
+                        and q["confidence"] in ("high", "medium") and same_address(reg_no, r, src)[0]:
+                    g = {"lat": q["lat"], "lon": q["lon"], "geocode_quality": q["match_quality"]}
+                    addr_ok, addr_why = True, ""
+                    break
+        if g and g["geocode_quality"] in VA_GEOCODE_OK | {"census_interpolated"} and addr_ok:
             located.append({
                 "site_id": f"usa-va-deq-{reg_no}-{slug(name0, 50)}", "name": f"{name0} (VA DEQ reg. {reg_no})",
                 "operator": op or permittee, "parent_company": parent, "country": "USA", "admin_region": "Virginia",
@@ -307,7 +319,7 @@ def main() -> None:
                 "generator_mw_permitted": mw or None, "capacity_source": None, "cooling": "unknown",
                 "gen_basis": (f"permit, MWe standby: sum of unit ratings, {int(float(r['generator_count']))} units (Virginia DEQ registration {reg_no}; figures resolved by two independent readings, {r['resolved_confidence']} confidence)" if mw else ""),
                 "source_url": VA_LIST_URL, "licence": "public_record", "ledger_entry_id": None,
-                "confidence": "medium" if g["geocode_quality"] in ("rooftop", "census_exact") else "low",
+                "confidence": "medium" if g["geocode_quality"] in ("rooftop", "census_exact", "census_interpolated") else "low",
             })
             counts["virginia"] += 1
         else:

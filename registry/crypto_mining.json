@@ -147,7 +147,7 @@
   "lat": null,
   "lon": null,
   "category": "fuel",
-  "record": "DEC staff denied the Clean Air Act Title V renewal 'By letter dated June 30, 2022' for a facility 'with a generating capacity of approximately 107 megawatts (MW)'. On November 14, 2024 the Supreme Court, Yates County (Hon. Vincent M. DiNolfo) 'directed that the matter be returned to the Department for further proceedings'; Greenidge filed a notice of appeal to the Appellate Division, Fourth Department on December 16, 2024, and on February 24, 2025 'the Fourth Department denied Greenidge's motion for a stay of the Supreme Court Order'. DEC Region 7's Interim Decision of March 31, 2025 remanded the matter for an adjudicatory hearing. DEC's statement of November 8, 2025 announced an agreement to reduce the facility's 'currently permitted greenhouse gas emissions by 44%' ('a decrease of more than 282,000 tons of carbon dioxide equivalents annually') and actual emissions 'by at least 25%', with a permit modification application to go to public comment. Greenidge's FY2025 10-K states the plant has 'approximately 106 megawatt (“MW”) of nameplate capacity' fired on natural gas, that the facility 'had the capacity to consume approximately 60 MW of electricity' for mining (NYISO approval for 64 MW behind-the-meter), that on 'November 7, 2025, Greenidge Generation entered into a Stipulation of Settlement' with NYSDEC, and that a draft Title V permit is expected in 2026.",
+  "record": "DEC staff denied the Clean Air Act Title V renewal 'By letter dated June 30, 2022' for a facility 'with a generating capacity of approximately 107 megawatts (MW)'. On November 14, 2024 the Supreme Court, Yates County (Hon. Vincent M. DiNolfo) 'directed that the matter be returned to the Department for further proceedings'; Greenidge filed a notice of appeal to the Appellate Division, Fourth Department on December 16, 2024, and on February 24, 2025 'the Fourth Department denied Greenidge's motion for a stay of the Supreme Court Order'. DEC Region 7's Interim Decision of March 31, 2025 remanded the matter for an adjudicatory hearing. DEC's statement of November 8, 2025 announced an agreement to reduce the facility's 'currently permitted greenhouse gas emissions by 44%' ('a decrease of more than 282,000 tons of carbon dioxide equivalents annually') and actual emissions 'by at least 25%', with a permit modification application to go to public comment.",
   "record_sources": [
    {
     "title": "Interim Decision of the Regional Director, Greenidge Generation LLC, DEC Permit ID 8-57360-0004/00017",
@@ -160,15 +160,9 @@
     "url": "https://dec.ny.gov/news/press-releases/2025/11/dec-statement-regarding-the-greenidge-agreement",
     "publisher": "New York State Department of Environmental Conservation",
     "date": "2025-11-08"
-   },
-   {
-    "title": "Greenidge Generation Holdings Inc. Form 10-K for fiscal year 2025",
-    "url": "https://www.sec.gov/Archives/edgar/data/1844971/000184497126000011/gree-20251231.htm",
-    "publisher": "Greenidge Generation Holdings Inc. (SEC EDGAR)",
-    "date": "2026"
    }
   ],
-  "claim": "Greenidge FY2025 10-K: 'We are actively pursuing the conversion of certain existing assets, including the New York Facility' (to AI/HPC datacenter use).",
+  "claim": "Greenidge's FY2025 10-K states the plant has 'approximately 106 megawatt (“MW”) of nameplate capacity' fired on natural gas, that the facility 'had the capacity to consume approximately 60 MW of electricity' for mining (NYISO approval for 64 MW behind-the-meter), that on 'November 7, 2025, Greenidge Generation entered into a Stipulation of Settlement' with NYSDEC, and that a draft Title V permit is expected in 2026. Greenidge FY2025 10-K: 'We are actively pursuing the conversion of certain existing assets, including the New York Facility' (to AI/HPC datacenter use).",
   "claim_sources": [
    {
     "title": "Greenidge Generation Holdings Inc. Form 10-K for fiscal year 2025",
@@ -312,8 +306,17 @@
   "lat": null,
   "lon": null,
   "category": "power",
-  "record": "As filed: Riot (FY2025): Rockdale, Texas 'with 700 megawatts (\"MW\") of developed capacity'; Corsicana (Navarro County) 'currently has 400 MW of developed capacity', expected 'approximately one gigawatt' at completion; Kentucky 'approximately 137 MW'. MARA (FY2025): summary table 'Total | 1,315 | 1,861 | 66.4' (operational MW, total MW, EH/s); 'approximately 1.9 gigawatts (“GW”) of total capacity'. CleanSpark (FY ended 30 Sept 2025): 'total contracted power capacity of approximately 1,027 megawatts' (Georgia ~620 MW, Tennessee 234 MW, Mississippi ~63 MW, Wyoming ~110 MW). Core Scientific (FY2025): ten data centers, 'approximately 1.4 gigawatts (“GW”) of gross utility power capacity' and 'approximately 920 megawatts (“MW”) of total leasable customer power capacity'. Cipher (FY2025): 'we currently operate approximately 207 MW of power at one bitcoin mining data center in Texas' (Odessa); portfolio of 4.2 GW. TeraWulf (FY2025): Lake Mariner 'operated 245 MW of legacy bitcoin mining capacity'. IREN (FY ended 30 June 2026): bitcoin mining 'representing approximately 380MW of data center capacity'; FY2025 10-K: 'approximately 810MW of operating data center capacity'. Hut 8 (FY2025): '1,020 megawatts (\"MW\") of energy capacity under management across 15 sites'. None of the fetched 10-K text states annual electricity consumed in MWh.",
+  "record": "No regulator, grid-operator or utility document stating the load of these sites was found. Texas requires virtual currency mining facilities above 75 MW in ERCOT to register with the PUCT, but the adoption order states registration information 'will be collected via an internal-facing online tool that will not be accessible to the public.' The site capacities in the claim are therefore the companies' own statements in SEC filings.",
   "record_sources": [
+   {
+    "title": "Order Adopting New 16 TAC §25.114, Project No. 56962, Item 17",
+    "url": "https://interchange.puc.texas.gov/Documents/56962_17_1444154.PDF",
+    "publisher": "Public Utility Commission of Texas",
+    "date": "2024-11"
+   }
+  ],
+  "claim": "As filed with the SEC, the companies' own statements: Riot (FY2025): Rockdale, Texas 'with 700 megawatts (\"MW\") of developed capacity'; Corsicana (Navarro County) 'currently has 400 MW of developed capacity', expected 'approximately one gigawatt' at completion; Kentucky 'approximately 137 MW'. MARA (FY2025): summary table 'Total | 1,315 | 1,861 | 66.4' (operational MW, total MW, EH/s); 'approximately 1.9 gigawatts (“GW”) of total capacity'. CleanSpark (FY ended 30 Sept 2025): 'total contracted power capacity of approximately 1,027 megawatts' (Georgia ~620 MW, Tennessee 234 MW, Mississippi ~63 MW, Wyoming ~110 MW). Core Scientific (FY2025): ten data centers, 'approximately 1.4 gigawatts (“GW”) of gross utility power capacity' and 'approximately 920 megawatts (“MW”) of total leasable customer power capacity'. Cipher (FY2025): 'we currently operate approximately 207 MW of power at one bitcoin mining data center in Texas' (Odessa); portfolio of 4.2 GW. TeraWulf (FY2025): Lake Mariner 'operated 245 MW of legacy bitcoin mining capacity'. IREN (FY ended 30 June 2026): bitcoin mining 'representing approximately 380MW of data center capacity'; FY2025 10-K: 'approximately 810MW of operating data center capacity'. Hut 8 (FY2025): '1,020 megawatts (\"MW\") of energy capacity under management across 15 sites'. None of the fetched 10-K text states annual electricity consumed in MWh. Bitdeer's April 2026 production and operations update (Form 6-K, Exhibit 99.1, 12 May 2026) gives '(MW) Capacity' by site: online, Rockdale, TX 563 MW (planned usage 'Crypto to Colocation / AI Cloud', 'In active evaluation of AI transition'); Knoxville, TN 37 MW (phase 1) and 49 MW (phase 2) 'Crypto to AI Cloud'; Wenatchee, WA 13 MW, where 'Dismantling of the crypto mining datacenter started in March 2026'; Molde, Norway 84 MW; Tydal, Norway 50 MW (phase 1) and 175 MW (phase 2) 'Crypto to Colocation'; Gedu, Bhutan 100 MW; Jigmeling, Bhutan 500 MW; Oromia Region, Ethiopia 50 MW; Massillon, OH 121 MW; 'Online Electrical Subtotal: | | 1,744'. Pipeline: Massillon '74 / 26' MW, Clarington, OH 570 MW ('570 MW of power under contract with a local utility', planned usage Colocation), Rockdale 179 MW, Fox Creek, Alberta 101 MW ('fully licensed and permitted for the construction of an on-site natural gas power plant'); 'Pipeline Electrical Subtotal: | | 1,259.5'; 'Total Global Electrical Capacity: | | 3,003.5'. The FY2025 Form 20-F states 'We have initiated the conversion of several of our existing mining datacenter sites, including facilities in Tydal' and in 'Knoxville, Tennessee and Wenatchee, Washington, into AI datacenters', and reports a November 2025 fire affecting 'approximately 26 MW of capacity at our Massillon, Ohio site'. The September 2026 update (19 October 2026) refers to the 'existing 563 MW Rockdale facility'. Druk Holding and Investments (DHI), Bhutan's state holding company, announced on 3 May 2023 a fund with Bitdeer for digital-asset mining in Bhutan with 'an estimated size of up to US$500 million' (no MW stated). Bitfarms' FY2025 Form 10-K tabulates power capacity as of 27 March 2026 (MW; current energized, secured growth, secured gross data center subtotal, identified additional, total pipeline): '| Panther Creek | Pennsylvania | 60 | * | 350 | 350 | 150 | 500 |'; Sharon, Pennsylvania 30 MW energized and 80 MW under an ESA; Moses Lake, Washington 18 MW; Scrubgrass, Pennsylvania 63 MW energized and 1,363 MW identified additional; Sherbrooke, Québec 96 MW; Baie-Comeau 22 MW; other Québec sites (Cowansville, Saint-Hyacinthe, Magog, Farnham) 52 MW. Capacity marked '*' 'is not under an ESA'. 'We hold 350 MW of contracted firm power under an ESA with PPL (50 MW expected by end of 2026, 300 MW by end of 2027)' at Panther Creek. The company says it expects 'Bitcoin Mining to wind down progressively as HPC data center construction begins', that 'Moses Lake is our first HPC data center development project', that 'we have not yet entered into any HPC data center lease agreements', and that it anticipates 'initial data center revenue generation to begin in 2027.' Operations at Paso Pe, Paraguay are held for sale and Rio Cuarto, Argentina has been abandoned. IREN FY2025 10-K: 'We are a leading owner and operator of next-generation data centers powered by 100% renewable energy'; the same filing states RECs were purchased 'in respect of 100% of our energy consumption through to June 30, 2025 at our Childress site.'",
+  "claim_sources": [
    {
     "title": "Riot Platforms, Inc. Form 10-K for fiscal year 2025",
     "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926022322/riot-20251231x10k.htm",
@@ -367,18 +370,39 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926019392/hut-20251231x10k.htm",
     "publisher": "Hut 8 Corp. (SEC EDGAR)",
     "date": "2026"
-   }
-  ],
-  "claim": "IREN FY2025 10-K: 'We are a leading owner and operator of next-generation data centers powered by 100% renewable energy'; the same filing states RECs were purchased 'in respect of 100% of our energy consumption through to June 30, 2025 at our Childress site.'",
-  "claim_sources": [
+   },
    {
-    "title": "IREN Ltd Form 10-K for fiscal year ended June 30, 2025",
-    "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm",
-    "publisher": "IREN Ltd (SEC EDGAR)",
-    "date": "2025"
+    "title": "Bitdeer Announces April 2026 Production and Operations Update (Form 6-K, Exhibit 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026054748/ea028888001ex99-1.htm",
+    "publisher": "Bitdeer Technologies Group (SEC EDGAR)",
+    "date": "2026-05-12"
+   },
+   {
+    "title": "Bitdeer Technologies Group Form 20-F for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026049770/ea0282628-20f_bitdeer.htm",
+    "publisher": "Bitdeer Technologies Group (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Bitdeer Announces September 2026 Production and Operations Update (Form 6-K, Exhibit 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026110703/ea030767901ex99-1.htm",
+    "publisher": "Bitdeer Technologies Group (SEC EDGAR)",
+    "date": "2026-10-19"
+   },
+   {
+    "title": "DHI and Bitdeer Collaboration",
+    "url": "https://dhi.bt/newsroom/newsupdate/DHI%20and%20Bitdeer%20Collaboration",
+    "publisher": "Druk Holding and Investments (DHI)",
+    "date": "2023-05-03"
+   },
+   {
+    "title": "Bitfarms Ltd. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001812477/000121390026037514/ea0282809-10k_bitfarms.htm",
+    "publisher": "Bitfarms Ltd. (SEC EDGAR)",
+    "date": "2026"
    }
   ],
-  "gap": "No fetched 10-K text states electricity consumed (MWh) by mining; capacity terms differ by company (operational, developed, contracted, under management).",
+  "gap": "No fetched 10-K text states electricity consumed (MWh) by mining; capacity terms differ by company (operational, developed, contracted, under management). No regulator, grid-operator or utility record of the load at any Bitdeer or Bitfarms site was found, including Bitfarms' energy service agreement with PPL.",
   "confidence": "high",
   "verification_status": "partial",
   "verification_note": "Figures are company figures as filed (basis 'filed'). The fetch tool read about the first 100k characters of each 10-K HTML; later sections (MD&A, notes) were not read for most filings, so an MWh figure in those sections cannot be excluded. Bitdeer (Rockdale) files on Form 20-F and was not covered.",
@@ -393,8 +417,17 @@
   "lat": null,
   "lon": null,
   "category": "power",
-  "record": "As filed: Core Scientific: 'total leased customer power capacity under the relationship with CoreWeave increased to approximately 590 MW' (including a June 2024 'contract with CoreWeave for 200 MW' and '16 MW of infrastructure at our Austin, Texas facility'); 'CoreWeave, currently accounts for 100% of our Colocation segment revenue.' TeraWulf: 'Under the Akela Fluidstack Leases, we will provide 378 MW of critical IT load at the Lake Mariner Data Campus', with 'credit support provided by Google, which supports Fluidstack's payment and performance obligations'; Abernathy, Texas HPC campus 'designed for 168 MW critical IT load' (50.1% JV). Cipher: 15-year lease with Amazon Web Services 'to deliver approximately 300 gross MW' at Black Pearl near Wink, Texas; Barber Lake (near Colorado City, Texas) 300 MW gross, of which '244 MW of gross capacity will be allocated to Fluidstack', and 'Google LLC (“Google”) has agreed to backstop certain obligations of Fluidstack'. Hut 8: 'a 15-year, 245 MW IT lease at our River Bend campus valued at $7.0 billion over the base term', 'Fluidstack is expected to serve as tenant and Google is expected to provide a financial backstop'. IREN (FY2026): 'our operating AI Cloud Services capacity represented approximately 40MW'; it 'commenced decommissioning Bitcoin mining hardware', targeting substantial completion by 31 December 2026. Riot: AMD lease 'to initially provide 25 MW of critical IT load capacity at the Rockdale Facility' with 'expansion options for up to an additional 75 MW'. CleanSpark: 'long-term power agreements totaling 285 megawatts to support a new data center campus' in Austin County, Texas. MARA: Starwood joint platform 'expected to provide more than 1 GW of initial IT capacity'.",
+  "record": "The one regulator-side document found for a converted site is the City of Denton's council agenda of 19 November 2024, item 'F. ID 24-1876', an ordinance 'authorizing the City Manager to execute Amendment number four (4) to the Power Purchase Agreement' with Core Scientific Inc. (see us-tx-denton-core-scientific-ppa-amendment). No ERCOT document naming a converted site or its approved MW was found; ERCOT's large-load reports do not name sites.",
   "record_sources": [
+   {
+    "title": "City Council special called meeting, 19 November 2024, agenda item F. ID 24-1876",
+    "url": "https://denton-tx.granicusideas.com/meetings/3953-city-council-on-2024-11-19-2-00-pm-special-called/agenda_items/6737d735442538e94f004662-f-id-24-1876-consider-adoption-of-an-ordinance-of",
+    "publisher": "City of Denton",
+    "date": "2024-11-19"
+   }
+  ],
+  "claim": "As filed with the SEC, the companies' own statements: Core Scientific: 'total leased customer power capacity under the relationship with CoreWeave increased to approximately 590 MW' (including a June 2024 'contract with CoreWeave for 200 MW' and '16 MW of infrastructure at our Austin, Texas facility'); 'CoreWeave, currently accounts for 100% of our Colocation segment revenue.' TeraWulf: 'Under the Akela Fluidstack Leases, we will provide 378 MW of critical IT load at the Lake Mariner Data Campus', with 'credit support provided by Google, which supports Fluidstack's payment and performance obligations'; Abernathy, Texas HPC campus 'designed for 168 MW critical IT load' (50.1% JV). Cipher: 15-year lease with Amazon Web Services 'to deliver approximately 300 gross MW' at Black Pearl near Wink, Texas; Barber Lake (near Colorado City, Texas) 300 MW gross, of which '244 MW of gross capacity will be allocated to Fluidstack', and 'Google LLC (“Google”) has agreed to backstop certain obligations of Fluidstack'. Hut 8: 'a 15-year, 245 MW IT lease at our River Bend campus valued at $7.0 billion over the base term', 'Fluidstack is expected to serve as tenant and Google is expected to provide a financial backstop'. IREN (FY2026): 'our operating AI Cloud Services capacity represented approximately 40MW'; it 'commenced decommissioning Bitcoin mining hardware', targeting substantial completion by 31 December 2026. Riot: AMD lease 'to initially provide 25 MW of critical IT load capacity at the Rockdale Facility' with 'expansion options for up to an additional 75 MW'. CleanSpark: 'long-term power agreements totaling 285 megawatts to support a new data center campus' in Austin County, Texas. MARA: Starwood joint platform 'expected to provide more than 1 GW of initial IT capacity'. Galaxy's FY2025 10-K: ERCOT 'has approved over 1.6 gigawatts (“GW”) of gross power capacity at our Helios campus', after 'we received ERCOT approval for an additional 830 MW' in January 2026; the campus is 'located in the panhandle region of West Texas'; 'we are currently in the process of converting the infrastructure at our Helios mining campus'; the campus is leased 'for CoreWeave under a 15-year lease agreement' (April 2025), and Phase II and III leases raise CoreWeave's contracted capacity 'to 526 MW of critical IT load by 2028'. Applied Digital's 10-K for the fiscal year ended 31 May 2026: 'We operate hosting sites in Jamestown, North Dakota (a 106 MW facility)' and 'Ellendale, North Dakota (a 180 MW facility)', serving a single crypto-mining customer; it expects the blockchain segment 'to represent a declining share of our business as we scale our HPC operations.' Polaris Forge 1 is leased to CoreWeave: '| Polaris Forge 1 | CoreWeave | 400 MW | 15 years | ~$11.0B | 2H25–1H27 |'; 'Our first HPC data center at the campus, with approximately 100 MW of critical IT load, became operational in October 2025.' Riot full-year 2025 release: 'By unlocking our large, nearly two-gigawatt power portfolio for high-demand data center infrastructure'.",
+  "claim_sources": [
    {
     "title": "Core Scientific, Inc. Form 10-K for fiscal year 2025",
     "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm",
@@ -448,18 +481,27 @@
     "url": "https://www.sec.gov/Archives/edgar/data/1507605/000150760526000007/mara-20251231.htm",
     "publisher": "MARA Holdings, Inc. (SEC EDGAR)",
     "date": "2026"
-   }
-  ],
-  "claim": "Riot full-year 2025 release: 'By unlocking our large, nearly two-gigawatt power portfolio for high-demand data center infrastructure'.",
-  "claim_sources": [
+   },
    {
     "title": "Riot Platforms Reports Full Year 2025 Financial Results and Strategic Highlights",
     "url": "https://seekingalpha.com/pr/20420415",
     "publisher": "Riot Platforms, Inc. (press release via Seeking Alpha)",
     "date": "2026-03"
+   },
+   {
+    "title": "Galaxy Digital Inc. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000016/glxy-20251231.htm",
+    "publisher": "Galaxy Digital Inc. (SEC EDGAR)",
+    "date": "2026"
+   },
+   {
+    "title": "Applied Digital Corp. Form 10-K for fiscal year ended May 31, 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000048/apld-20260531.htm",
+    "publisher": "Applied Digital Corp. (SEC EDGAR)",
+    "date": "2026"
    }
   ],
-  "gap": "Filings state contracted MW for AI tenants but not the MW of mining load removed at each site or any change to the sites' grid interconnection.",
+  "gap": "Filings state contracted MW for AI tenants but not the MW of mining load removed at each site or any change to the sites' grid interconnection. The conversions are known from the companies' filings only.",
   "confidence": "high",
   "verification_status": "partial",
   "verification_note": "Contract MW verified in 10-K text. Not found in fetched text: CoreWeave contract term/value and site allocation; Core Scientific-CoreWeave merger termination; Google backstop dollar amounts; Hut 8 River Bend state; IREN-Microsoft contract (FY2026 10-K mentions Microsoft Azure only as a competitor). Hut 8's lease passage re-read directly on 2026-10-23: the tenant and Google's backstop are described as expected.",
@@ -538,7 +580,7 @@
   "lat": null,
   "lon": null,
   "category": "grid_policy",
-  "record": "ANDE Resolución P/Nº 47191 (Asunción, 5 December 2022) created the special intensive-consumption group, covering activities 'incluyendo minería de criptoactivos, blockchain, token y data centers' and supplies 'cuyo factor de carga mensual sea igual o superior al 80% (ochenta por ciento), 2 (dos) veces', with tariffs in US dollars, e.g. 220 kV: 'Potencia reservada en punta de carga USD/kW mes 4,64' and 'Energía en punta de carga USD/kWh 0,03277'; 66 kV: USD 6.38/kW-month and 'USD/kWh 0,03421'; 23 kV supplies capped at 'Potencia reservada máxima en punta de carga: 6.000 kW' (substation) and 2,000 kW (line). Resolución P/Nº 47885 (14 June 2023) modified items 4.11.5 and 4.12.8 ('GRUPO DE CONSUMO INTENSIVO ESPECIAL') of Tariff Schedule No. 21, including the load-factor test 'factor de carga mensual superior o igual al 80%'.",
+  "record": "ANDE Resolución P/Nº 47191 (Asunción, 5 December 2022) created the special intensive-consumption group, covering activities 'incluyendo minería de criptoactivos, blockchain, token y data centers' and supplies 'cuyo factor de carga mensual sea igual o superior al 80% (ochenta por ciento), 2 (dos) veces', with tariffs in US dollars, e.g. 220 kV: 'Potencia reservada en punta de carga USD/kW mes 4,64' and 'Energía en punta de carga USD/kWh 0,03277'; 66 kV: USD 6.38/kW-month and 'USD/kWh 0,03421'; 23 kV supplies capped at 'Potencia reservada máxima en punta de carga: 6.000 kW' (substation) and 2,000 kW (line). Resolución P/Nº 47885 (14 June 2023) modified items 4.11.5 and 4.12.8 ('GRUPO DE CONSUMO INTENSIVO ESPECIAL') of Tariff Schedule No. 21, including the load-factor test 'factor de carga mensual superior o igual al 80%'. Resolución P/Nº 49238 (Asunción, 26 de junio de 2024) approves 'la actualización de las Tarifas de Energía Eléctrica' for supplies of the Grupo de Consumo Intensivo Especial at 220 kV, 66 kV and 23 kV, replacing the tariffs of Article 2 of P/Nº 47191: 220 kV 'Potencia reservada en punta de carga USD/kW mes 5,27' and 'Energía en punta de carga USD/kWh 0,03725'; 66 kV 'USD/kW mes 7,02' and 'USD/kWh 0,03765'. The 2024 resolution does not mention crypto assets; the group's definition including 'minería de criptoactivos' is in P/Nº 47191.",
   "record_sources": [
    {
     "title": "Resolución P/Nº 47191, Grupo de Consumo Intensivo Especial",
@@ -551,14 +593,20 @@
     "url": "https://www.ande.gov.py/docs\\tarifas\\14- RP47885 Modifica Num. 4.11.5. y 4.12.8. Pliego de Tarifas N 21.pdf",
     "publisher": "Administración Nacional de Electricidad (ANDE)",
     "date": "2023-06-14"
+   },
+   {
+    "title": "Resolución P/Nº 49238, Actualización de las Tarifas de Energía Eléctrica, Grupo de Consumo Intensivo Especial",
+    "url": "https://www.ande.gov.py/docs\\tarifas\\RP49238 Actualizacion de las Tarifas de Energia Electrica GCIE-2024.pdf",
+    "publisher": "Administración Nacional de Electricidad (ANDE)",
+    "date": "2024-06-26"
    }
   ],
   "claim": "none found",
   "claim_sources": [],
-  "gap": "ANDE's 2024 tariff increase for crypto miners (press-reported) and any total MW or energy supplied to miners were not found in a fetched ANDE document.",
+  "gap": "Total MW or energy supplied to the group, its number of crypto-mining customers, and the effective date of the June 2024 tariffs were not found in a fetched ANDE document.",
   "confidence": "medium",
   "verification_status": "partial",
-  "verification_note": "Tariff values read from ANDE resolution PDFs; later resolutions (P/N° 47708/2023 and any 2024 change) not read, so the 2022 values may be superseded.",
+  "verification_note": "Tariff values read from ANDE resolution PDFs, including P/Nº 49238 of 26 June 2024 (read twice). The annex of P/Nº 49238 at ande.gov.py was refused (robots_disallowed) and not read. P/Nº 47708/2023 not read. ABC Color (30 June 2024) reported the 2024 update as an increase of 'Entre 9% y 16%' (press, not used as a figure).",
   "last_checked": "2026-10-23"
  },
  {
@@ -585,6 +633,267 @@
   "confidence": "low",
   "verification_status": "partial",
   "verification_note": "Only a 2022 market-operator news item was read. adilet.zan.kz (https://adilet.zan.kz/eng/docs/Z2300000193) returned a JavaScript-only shell twice.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-pa-scrubgrass-title-v-permit",
+  "country": "United States",
+  "region": "Pennsylvania",
+  "site_or_subject": "Scrubgrass Generating Plant (Scrubgrass Township, Venango County; Kennerdell, PA): Title V operating permit 61-00181 for the waste-coal plant at a bitcoin-mining site",
+  "operator": "Scrubgrass Reclamation Co LP (permittee); site listed by Bitfarms Ltd.",
+  "lat": null,
+  "lon": null,
+  "category": "fuel",
+  "record": "Pennsylvania DEP Title V/State Operating Permit No. 61-00181 for 'SCRUBGRASS GENERATING PLT/VENANGO', permittee 'SCRUBGRASS RECLAMATION CO LP', 2151 Lisbon Rd, Kennerdell, Scrubgrass Township, Venango County, covers two circulating fluidized bed boilers (Sources 031 and 032) each rated '600.000 MMBTU/HR', burning waste coal/bituminous coal and #2 oil, and a 12 MMBtu/hr auxiliary boiler on #2 oil limited to 876 hours a year. The permit text as fetched does not mention cryptocurrency or data centers.",
+  "record_sources": [
+   {
+    "title": "Title V/State Operating Permit No. 61-00181, Scrubgrass Generating Plant (Venango County)",
+    "url": "https://files.dep.state.pa.us/air/AirQuality/AQPortalFiles/Permits/PermitDocuments/1381566[61-00181]_Issued_v1.pdf",
+    "publisher": "Pennsylvania Department of Environmental Protection",
+    "date": "undated in fetched text"
+   }
+  ],
+  "claim": "Bitfarms' FY2025 10-K: Scrubgrass is 'currently being used for Bitcoin Mining', with 63 MW energized (not under an ESA) and 1,363 MW identified additional; it describes the site as a waste-to-energy facility using coal refuse, and says its Pennsylvania energy facilities 'are required to maintain permits administered by the Pennsylvania Department of Environmental Protection.'",
+  "claim_sources": [
+   {
+    "title": "Bitfarms Ltd. Form 10-K for fiscal year 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001812477/000121390026037514/ea0282809-10k_bitfarms.htm",
+    "publisher": "Bitfarms Ltd. (SEC EDGAR)",
+    "date": "2026"
+   }
+  ],
+  "gap": "The permit's issue, effective and expiry dates could not be read reliably (cover-page dates June 30, 2023, April 4, 2022 and July 9, 2018 appear without clear labels). No DEP or EPA document linking the plant's output to the mining load, and no MW rating of the plant, were found. Panther Creek's permit was not searched.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Permit PDF fetched once; boiler ratings read; layout garbled for dates. Company link between plant and mining from the 10-K.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-tx-denton-core-scientific-ppa-amendment",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "Core Scientific Denton data center: City of Denton power purchase agreement and lease amendments enabling HPC hosting (November 2024)",
+  "operator": "City of Denton (Denton Municipal Electric); Core Scientific, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "The Denton City Council's special called meeting of 19 November 2024 listed item 'F. ID 24-1876', an ordinance 'authorizing the City Manager to execute Amendment number four (4) to the Power Purchase Agreement' with Core Scientific Inc. The agenda page as fetched shows no MW figure, summary or vote; its attached information sheet and ordinance were not reproduced.",
+  "record_sources": [
+   {
+    "title": "City Council special called meeting, 19 November 2024, agenda item F. ID 24-1876",
+    "url": "https://denton-tx.granicusideas.com/meetings/3953-city-council-on-2024-11-19-2-00-pm-special-called/agenda_items/6737d735442538e94f004662-f-id-24-1876-consider-adoption-of-an-ordinance-of",
+    "publisher": "City of Denton",
+    "date": "2024-11-19"
+   }
+  ],
+  "claim": "Core Scientific's Form 8-K exhibit (25 November 2024): 'Core Scientific Announces Approval of Lease Amendments with the City of Denton to Enable High-Performance Computing Expansion'; 'The Denton City Council's approval increases the leased land to approximately 78 acres and the Company's access to power to 394 MW'; 'The approval came during the Council's November 19 meeting.'",
+  "claim_sources": [
+   {
+    "title": "Core Scientific Announces Approval of Lease Amendments with the City of Denton to Enable High-Performance Computing Expansion (Form 8-K, Exhibit 99.1)",
+    "url": "https://investors.corescientific.com/sec-filings/all-sec-filings/content/0001628280-24-049126/core_scientificxannouncesx.htm",
+    "publisher": "Core Scientific, Inc. (SEC filing via investors.corescientific.com)",
+    "date": "2024-11-25"
+   }
+  ],
+  "gap": "The amendment text, any MW stated in it, the council vote, and the related Public Utilities Board item of 18 November 2024 (PUB24-246, seen in search results) were not read. No record splits the 394 MW between mining and CoreWeave hosting.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Agenda caption read on the City's meeting portal; MW and acreage are Core Scientific's statements.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ky-psc-kentucky-power-ebon-contract-denied",
+  "country": "United States",
+  "region": "Kentucky",
+  "site_or_subject": "Kentucky Power Company special contract with Ebon International, LLC for a cryptocurrency mining facility in Louisa, Kentucky (PSC Case No. 2022-00387)",
+  "operator": "Kentucky Public Service Commission; Kentucky Power Company; Ebon International, LLC",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "The Kentucky PSC's order in Case No. 2022-00387 (docket file dated 28 August 2023) concerns a contract for 'a cryptocurrency mining facility in Louisa, Kentucky, located on real property leased to Ebon'. It states 'Ebon’s estimated load is 100 MW during the first two years of the contract and 250 MW thereafter', 'The Contract term was set at ten years' and 'Ebon’s discount period is five years out of a ten-year contract' (discount level confidential). Applying the economic development criteria of Administrative Order 327, the Commission weighed Kentucky Power's generating capacity, reliance on market purchases and the risk of higher costs to other customers, and ordered: 'Kentucky Power’s proposed Contract with Ebon is denied.'",
+  "record_sources": [
+   {
+    "title": "Order, Case No. 2022-00387 (Kentucky Power Company special contract with Ebon International, LLC)",
+    "url": "https://psc.ky.gov/PSCSCF/2022%20cases/2022-00387/20230828_PSC_ORDER.pdf",
+    "publisher": "Kentucky Public Service Commission",
+    "date": "2023-08-28"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "No later order in the case and no record of whether the Louisa facility was built or served under another tariff were found.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Order fetched twice; quoted figures confirmed. The entered date is not shown in the fetched text; the date is from the docket file name.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ny-plattsburgh-crypto-mining-moratorium-2018",
+  "country": "United States",
+  "region": "New York",
+  "site_or_subject": "City of Plattsburgh moratorium on commercial cryptocurrency mining applications (Local Law P-3 of 2018) and mining rules (Local Law P-6 of 2018)",
+  "operator": "Common Council, City of Plattsburgh",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "Minutes of the Common Council's regular meeting of 21 February 2019 state that 'Local Law P-3 of 2018, which was adopted on March 15, 2018' imposed an 'eighteen (18) month moratorium on all applications' for commercial cryptocurrency mining, which 'may be terminated earlier than eighteen (18) months'; Local Law P-6 of 2018 (adopted 25 October 2018) set zoning, fire-suppression, heat-control, noise and nuisance rules for commercial cryptocurrency mining. A resolution stating 'the Moratorium is hereby terminated, effective the date this resolution is approved' was taken from the table and tabled again. The minutes refer to a Public Service Commission order of 19 March 2018 (Rider A) for high density load customers.",
+  "record_sources": [
+   {
+    "title": "Minutes, Regular Meeting of the Common Council, February 21, 2019",
+    "url": "https://www.cityofplattsburgh-ny.gov/sites/cityofplattsburgh.com/files/meeting-documents/Minutes%202-21-2019.pdf",
+    "publisher": "City of Plattsburgh",
+    "date": "2019-02-21"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The texts of Local Laws P-3 and P-6 of 2018, the PSC's 19 March 2018 order, and the date the moratorium ended were not fetched; the PSC order was found only through press reports. The minutes give no MW figures.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Minutes read once; local-law dates and terms are as stated in the minutes.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ca-mb-hydro-crypto-connection-pause",
+  "country": "Canada",
+  "region": "Manitoba",
+  "site_or_subject": "Ministerial directives to Manitoba Hydro suspending electric service requests for cryptocurrency operations (2022 and 2024)",
+  "operator": "Government of Manitoba; Manitoba Hydro-Electric Board",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "A directive of 16 November 2022 by Minister Cameron Friesen under section 13(1) of The Crown Corporations Governance and Accountability Act (Order in Council 402/2022) requires the Manitoba Hydro-Electric Board to 'suspend processing of requests for electric service' from persons intending to engage in cryptocurrency operations, for previously received and new requests, 'until April 30, 2024'. A directive by Minister Adrien Sala effective 10 April 2024 continues the suspension 'until April 30, 2026'. Neither directive gives a MW threshold, a number of requests or MW requested; both refer to unprecedented demand for electricity.",
+  "record_sources": [
+   {
+    "title": "Directive to the Manitoba Hydro-Electric Board respecting cryptocurrency operations",
+    "url": "https://www.gov.mb.ca/asset_library/en/proactive/20222023/directive-mb-hydro-crypto-11-16-22.pdf",
+    "publisher": "Government of Manitoba",
+    "date": "2022-11-16"
+   },
+   {
+    "title": "Directive to the Manitoba Hydro-Electric Board respecting cryptocurrency operations (continuation)",
+    "url": "https://manitoba.ca/asset_library/en/proactive/20242025/directive-hydro-cryptocurrency-operations.pdf",
+    "publisher": "Government of Manitoba",
+    "date": "2024-04-10"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Whether the suspension was extended or replaced after 30 April 2026, and the number and MW of suspended requests, were not found. Manitoba Hydro's own news pages on the 2022 and 2024 directives appeared in search results but were not opened.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Both directive PDFs fetched and read once; no numeric load figures in them.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ca-bc-hydro-crypto-connection-pause-2022",
+  "country": "Canada",
+  "region": "British Columbia",
+  "site_or_subject": "BC Hydro 18-month suspension of electricity-connection requests from cryptocurrency mining (December 2022)",
+  "operator": "Government of British Columbia; BC Hydro",
+  "lat": null,
+  "lon": null,
+  "category": "moratorium",
+  "record": "The BC government's release of 21 December 2022, 'Province hits pause on electrical connections for cryptocurrency mining', states BC Hydro will 'suspend electricity-connection requests from cryptocurrency mining operations for 18 months' and 'Currently, 21 projects are requesting a total of 1,403 megawatts that will be temporarily suspended', equivalent to the energy for 'approximately 570,000 homes'.",
+  "record_sources": [
+   {
+    "title": "Province hits pause on electrical connections for cryptocurrency mining",
+    "url": "https://news.gov.bc.ca/releases/2022EMLI0067-001928",
+    "publisher": "Government of British Columbia (BC Gov News)",
+    "date": "2022-12-21"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Any later legislation or regulation extending or making the pause permanent, and BC Hydro's figure for connected mining load, were not fetched.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Release fetched twice; quoted figures confirmed.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "ca-qc-hydro-quebec-blockchain-rate-2026",
+  "country": "Canada",
+  "region": "Quebec",
+  "site_or_subject": "Hydro-Québec proposed adjustment of the rate for cryptographic use applied to blockchains (2026)",
+  "operator": "Hydro-Québec; Régie de l'énergie",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "Hydro-Québec's release of 19 February 2026 states for blockchain customers 'Total consumption of around 115 MW entirely subject to the new rate'; 'The revised rate would average 19.5¢/kWh and is expected to take effect in the second half of 2026,' 'subject to approval by the Régie de l’énergie'; 'A three-year transitional rate will be available to current customers'. The data-centre rate in the same release is covered by entry ca-qc-hydro-quebec-data-centre-tariff-allocation.",
+  "record_sources": [
+   {
+    "title": "Hydro-Québec proposing to the Régie de l'énergie a new rate for large data centres (and an adjustment of the rate for cryptographic use applied to blockchains)",
+    "url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-proposing-regie-energie-new-rate-large-data-centres-adjustment-rate-cryptographic-use-applied-blockchains.html",
+    "publisher": "Hydro-Québec",
+    "date": "2026-02-19"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The Régie de l'énergie docket and any decision on the blockchain rate, the number of blockchain customers, and the MW allocated to blockchain use under earlier Régie decisions were not fetched.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Hydro-Québec (public utility) release fetched twice; Régie documents not read.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "my-tnb-crypto-electricity-theft",
+  "country": "Malaysia",
+  "region": "Malaysia",
+  "site_or_subject": "Electricity theft for bitcoin mining on the TNB network, 2020 to August 2025",
+  "operator": "Ministry of Energy Transition and Water Transformation (PETRA); Tenaga Nasional Berhad (TNB)",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "As reported by Malay Mail (19 November 2025), the Energy Transition and Water Transformation Ministry, in a written reply to Kota Melaka MP Khoo Poay Tiong, stated that '13,827 premises were uncovered between 2020 and August 2025 for illegally using power to mine bitcoin' and that losses from illegal electricity use for bitcoin mining 'amounted to RM4.57 billion'. The report gives no MW or kWh figure.",
+  "record_sources": [
+   {
+    "title": "Malay Mail report of the Energy Transition and Water Transformation Ministry's written reply on electricity theft for bitcoin mining",
+    "url": "https://malaymail.com/news/malaysia/2025/11/19/electricity-theft-for-bitcoin-mining-costs-tnb-rm457b-13827-premises-uncovered/198908",
+    "publisher": "Malay Mail (press report of a ministry written reply)",
+    "date": "2025-11-19"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The ministry's written reply itself (Dewan Rakyat) and a TNB statement were not fetched; no MW or kWh of stolen electricity was found.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Press report of a ministry reply (basis press_report); article fetched twice and quotes confirmed.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "et-eep-crypto-mining-phase-out",
+  "country": "Ethiopia",
+  "region": "Ethiopia",
+  "site_or_subject": "Ethiopian Electric Power (EEP) power sales to cryptocurrency miners and the decision to sign no new mining contracts (2025)",
+  "operator": "Ethiopian Electric Power (EEP)",
+  "lat": null,
+  "lon": null,
+  "category": "grid_policy",
+  "record": "As reported by The Reporter (9 August 2025) from EEP's annual performance review of 7 August 2025: 'Over twenty-one firms—nineteen of them foreign-owned—have since signed power purchase agreements with EEP'; the sales earned EEP 'USD 220 million last fiscal year'; miners 'pay USD 3.14 cents per kilowatt-hour in foreign currency'; CEO Asheber Balcha said 'There will be no new contracts in the field of data mining,' and that EEP was not interested in continuing existing ones. The article cites the Ethiopian Energy Outlook 2025 as saying mining 'is on track to consume a third of Ethiopia’s total power output this year.'",
+  "record_sources": [
+   {
+    "title": "EEP to Phase out Crypto Mining as Grid Strain Concerns Mount",
+    "url": "https://www.thereporterethiopia.com/46389/",
+    "publisher": "The Reporter (Ethiopia) (press report of EEP statements)",
+    "date": "2025-08-09"
+   }
+  ],
+  "claim": "Bitdeer's April 2026 update lists '| 9) | Oromia Region, Ethiopia | 50 | Online | Crypto |'.",
+  "claim_sources": [
+   {
+    "title": "Bitdeer Announces April 2026 Production and Operations Update (Form 6-K, Exhibit 99.1)",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001899123/000121390026054748/ea028888001ex99-1.htm",
+    "publisher": "Bitdeer Technologies Group (SEC EDGAR)",
+    "date": "2026-05-12"
+   }
+  ],
+  "gap": "No EEP document (annual report, tariff notice or list of mining contracts) giving MW contracted to miners was fetched; the Ethiopian Energy Outlook 2025 was not fetched.",
+  "confidence": "low",
+  "verification_status": "partial",
+  "verification_note": "Press report of EEP statements (basis press_report); article fetched twice and quotes confirmed.",
   "last_checked": "2026-10-23"
  }
 ]

@@ -1413,11 +1413,11 @@
   ],
   "claim": "none found at site level.",
   "claim_sources": [],
-  "gap": "The inventory gives emissions, not hours; converting needs each permit's NOx rate per unit, which the permits state and the ledger's extractor does not yet read. Which facilities must report, and why most permitted sites are absent, was not established from the regulation text.",
+  "gap": "The inventory gives emissions, not hours. Set against each permit's NOx limit per engine (the ledger's arithmetic, sites/metered/va_generator_hours.csv), the 2023 inventory implies at least 0.3 to 13 full-load hours per generator at 17 of the 20 facilities matched to a permit, against per-engine limits that are mostly 500 hours a year; three are higher: 21 hours (Cyxtera DC2-DC4), 34 hours (Cyxtera DC5/DC6, read against a 2003 permit) and 124 hours (CyrusOne Northern Virginia, 74109). These are minimums: engines tested at part load emit less per hour than the permit's limit. Which facilities must report, and why most permitted sites are absent, was not established from the regulation text.",
   "confidence": "high",
   "verification_status": "verified",
   "verification_note": "The NAICS query and the Amazon facility record were run directly on 2026-10-23 and match the transcription in data/climate_trace_seed/va_nei_generator_emissions.csv; the other facility records carry their own endpoint URLs.",
-  "last_checked": "2026-10-23"
+  "last_checked": "2026-10-24"
  },
  {
   "id": "us-city-benchmarking-datacenter-metered-electricity",
@@ -1525,5 +1525,63 @@
   "verification_status": "verified",
   "verification_note": "The 29 September 2026 Dominion and NOVEC PJM submissions were read directly on 2026-10-23 and the figures quoted match; the other documents are quoted in data/climate_trace_seed/va_datacenter_class_demand.csv with their URLs. The SCC's final orders in PUR-2025-00058 and PUR-2024-00184 refused automated reading and were not read.",
   "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-va-loudoun-water-reclaimed-datacenters",
+  "country": "United States",
+  "region": "Virginia (Loudoun County)",
+  "site_or_subject": "Loudoun Water reclaimed and potable water supply to Loudoun County data centers",
+  "operator": "Loudoun Water (supplier); data-center customers not named",
+  "lat": null,
+  "lon": null,
+  "category": "water",
+  "record": "Loudoun Water's reclaimed water program page states that in 2010 it built the first pipelines of its reclaimed water distribution system 'to supply irrigation and industrial cooling water to Loudoun County’s rapidly growing data center industry', and that in 2025 it 'delivered more than 750 million gallons of reclaimed water to customers' (all reclaimed-water customers; the page gives no data-center share). Loudoun County's data-center water page, citing Loudoun Water, puts the same 2025 deliveries at more than 750 million gallons to roughly 40 customers, and states: 'On an average day, data centers in Loudoun account for 9% of total potable water use.' Neither page names a data-center customer or gives a per-site volume.",
+  "record_sources": [
+   {
+    "title": "Reclaimed Water Program",
+    "url": "https://www.loudounwater.org/commercial-customers/reclaimed-water-program",
+    "publisher": "Loudoun Water",
+    "date": "2026"
+   },
+   {
+    "title": "Data Centers: Water Considerations",
+    "url": "https://www.loudoun.gov/6402/Data-Centers-Water-Considerations",
+    "publisher": "Loudoun County, Virginia",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found (no data-center operator statement on its Loudoun Water supply was located in this pass).",
+  "claim_sources": [],
+  "gap": "Loudoun Water gives a reclaimed-water total for all customers and no data-center or per-customer volume; the county's 9% potable share carries no source or year; no supply agreement between Loudoun Water and a named data-center operator was located.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Both pages fetched and read on 2026-10-24; the quoted phrases were re-read the same day. The figures are aggregate, not site-level.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "us-wi-mount-pleasant-microsoft-racine-water",
+  "country": "United States",
+  "region": "Wisconsin (Racine County)",
+  "site_or_subject": "Microsoft data center, Mount Pleasant: water supply from the Racine Water Utility",
+  "operator": "Microsoft; Racine Water Utility; Village of Mount Pleasant",
+  "lat": null,
+  "lon": null,
+  "category": "water",
+  "record": "[press] The Wisconsin Examiner (2025-09-17) reports, from records the City of Racine released after a public-records request and a lawsuit, that water for Microsoft's Mount Pleasant data center is provided by the Racine Water Utility under an agreement with the Village of Mount Pleasant, with projected use in the first phase of a peak of 234,000 gallons per day or 2.8 million gallons per year, and in later phases of 702,000 gallons per day or 8.4 million gallons per year.",
+  "record_sources": [
+   {
+    "title": "Racine releases records showing Microsoft data center would use 8 million gallons of water per year",
+    "url": "https://wisconsinexaminer.com/2025/09/17/racine-releases-records-showing-microsoft-data-center-would-use-8-million-gallons-of-water-per-year/",
+    "publisher": "Wisconsin Examiner",
+    "date": "2025-09-17"
+   }
+  ],
+  "claim": "none located in this pass; Microsoft's cooling-design statements for the site are in us-wi-mount-pleasant-microsoft-we-energies.",
+  "claim_sources": [],
+  "gap": "The released records were not located online, so the figures rest on the press report. As reported, the per-day and per-year figures do not reconcile (234,000 gallons a day over 365 days is about 85 million gallons), and the article does not say which is peak and which is expected use. No Racine Water Utility, Village or Wisconsin PSC document on the supply agreement was located.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Article fetched on 2026-10-24 and re-read the same day for the quoted phrases; primary City of Racine records not fetched.",
+  "last_checked": "2026-10-24"
  }
 ]

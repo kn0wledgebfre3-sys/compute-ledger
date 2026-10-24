@@ -54,6 +54,16 @@
     2028
    ],
    "action": "A new CSO annual release: update ie-national-cso-share-2025 (new entry for the year) and the Irish share in METERED.md."
+  },
+  {
+   "name": "ghg_protocol_consultations",
+   "url": "https://ghgprotocol.org/public-consultations",
+   "mode": "sentences",
+   "keywords": [
+    "scope 2",
+    "consultation"
+   ],
+   "action": "A new or changed consultation sentence: if a Scope 2 window opens, record it in review/INTAKE.csv (in-ghg-protocol) and update ghg-protocol-scope2-revision in registry/paper_layer.json."
   }
  ]
 }

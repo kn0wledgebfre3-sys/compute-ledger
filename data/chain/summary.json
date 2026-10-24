@@ -1,0 +1,27 @@
+{
+ "edges": 207,
+ "by_leg": {
+  "mine_to_refiner": 0,
+  "refiner_to_maker": 139,
+  "fab_to_buyer": 8,
+  "memory_to_maker": 3,
+  "packaging_to_maker": 8,
+  "assembly_to_buyer": 3,
+  "chips_across_borders": 0,
+  "power_to_site": 9,
+  "fuel_to_site": 9,
+  "water_to_site": 21,
+  "site_to_tenant": 5,
+  "ownership": 2,
+  "hardware_to_end_of_life": 0
+ },
+ "by_side": {
+  "claim": 178,
+  "record": 29
+ },
+ "legs_without_edges": [
+  "mine_to_refiner",
+  "chips_across_borders",
+  "hardware_to_end_of_life"
+ ]
+}

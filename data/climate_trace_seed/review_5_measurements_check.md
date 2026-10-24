@@ -61,3 +61,30 @@ The ledger's founding rule is that a company's statement is a claim and a regula
 Two further adjustments were made on review. Microsoft's diverted waste (28,285 t, FY24) sits inside Deloitte & Touche's limited assurance of the fact sheet's Section 1, so, as in the reporting layer, it stays in the record with basis `assured_disclosure`. And the same rule moved company sentences that carried no listed figure: Teraco's announcements about its solar plant and its chief executive's remark on diesel spend, TSMC engineers' statement about the site's water supply, Google's statement on seawater cooling (already in the claim), and EcoCloud's capacity, tariff and PUE figures, known only through press reports. Checking the EcoCloud entry also corrected a status sentence: DCD's May 2026 report mentions EcoCloud's 2023 groundbreaking but gives no later status, and the entry now says that and cites it.
 
 After the move, no row with basis `company_statement` sits on the record side of the table.
+
+## A second check, the same evening: figures added on 23 October
+
+The same kind of reviewer checked 30 figures drawn at random from those added later on 23 October (nuclear plants and deals, crypto-mining sites and records, companies' renewable-electricity and carbon-credit disclosures) and all 14 links in the new chain table (`sites/chain/edges.csv`). Files: `review/measurements_check_2026-10-23b/`.
+
+**Result.** 29 of 30 figures were found as stated, with every value, conversion and qualifier correct; 11 of 14 links were found, 2 differed, and 1 document (the Wisconsin decision viewer) did not load for the reviewer. The pattern: the numbers were right, but four of them were attached to the wrong thing, and the second reading had checked the value, not the subject.
+
+**Corrections.**
+- Google's "up to 500 MW" agreement with Kairos covers a fleet and does not name Hermes 2; it was recorded against the Hermes 2 site. It is now recorded against the entry, and the Hermes 2 link in the chain is TVA's power purchase agreement for up to 50 MW (press report), not Google's.
+- Meta's 2,176 MW purchase is from Perry and Davis-Besse only; the link to Beaver Valley now rests on the 433 MW of uprates across all three plants, with the note that the release does not break out Beaver Valley's share. Figures for more than one plant (2,176 MW, 433 MW, 2,609 MW) are now recorded against the entry, not one plant.
+- Beaver Valley's 2,900 MWt is Unit 1's licence; the row now says so.
+- Meta's ">99%" is the share of electricity physically from the grid, not a renewable-matching method; it is now a plain share with that description.
+- Core Scientific's lease link no longer names all ten of its sites as leased to CoreWeave.
+- Equinix's nuclear pre-orders and letters of intent are now planned capacity, like Switch's non-binding agreement with Oklo, and the 500 MWe pre-order names Stellaria.
+- Dates the documents give are now in the period fields (CleanSpark's count as of 30 September 2025; the Massillon fire in November 2025), companies are named on multi-company rows (Bitdeer, CleanSpark), Knoxville's two phases are labelled, and DOE's spent-fuel inventory has basis `official_statistic` rather than `inventory`.
+
+**Settled.** The reviewer asked whether a company figure covered by an auditor's assurance is a record or a claim, since the code and `CONTRIBUTING.md` read differently. It is a record with basis `assured_disclosure`, because the auditor's statement is the record; `CONTRIBUTING.md` now says so, and says that the second reading checks what a figure is attached to as well as the figure.
+
+**Left.** The British Columbia ministry's count of 21 mining projects keeps basis `official_statistic` (a government aggregate). The Wisconsin link stands on the decision cited in the ledger entry, which was read when the entry was written.
+
+## A third check, 24 October: the chip legs
+
+A third reviewer checked 15 figures drawn at random from the conflict-minerals reports and the chip makers' filings, and 16 chain links (smelter to company; foundry, memory, packaging and assembly to buyer). Files: `review/measurements_check_2026-10-24/`.
+
+**Result.** All 31 were found in their documents, and every smelter link named the right metal and country in the right company's list. As in the second check, the faults were in labels and parties, not numbers.
+
+**Corrections.** TSMC's capacity is now recorded as written, "exceeded 17 million wafers", with qualifier `lower_bound`, and the builder now reads "exceeded" as a lower bound. The packager for AMD is the two joint ventures it holds with Tongfu, now an entity of its own, with AMD and Tongfu each linked to it as owners (the chain's first ownership links). Broadcom's "Foxconn Technology Group" keeps its link to Hon Hai's group, with a note that the filing does not say which entity does the work. Links taken from annual filings now carry the fiscal year as their period. AMD's 219 is recorded as the denominator of its covered-countries sentence, Dell's 219 as a count on 31 December 2025, and Super Micro is named on its purchase-share row. Notes that called a re-opening with the same tool a "re-read" now say it is not a second reading. Two Japanese smelters that may be one company under two names are flagged until the RMI list resolves them.

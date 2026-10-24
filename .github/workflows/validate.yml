@@ -5,7 +5,8 @@ name: Validate registry and receipts
 # match their schema, the page must build, every builder must reproduce its
 # committed output, and every figure in the measurements table must pass
 # pipeline/validate_measurements.py (vocabulary, units, periods, sources, and
-# for registry figures, verbatim presence in the entry's text). A correction that breaks any of
+# for registry figures, verbatim presence in the entry's text), and every edge of the chain must pass
+# pipeline/build_chain.py (relations, registers, a document and its quoted phrase). A correction that breaks any of
 # this does not merge.
 
 on: [push, pull_request]
@@ -56,3 +57,9 @@ jobs:
             cmp /tmp/meas/$f ../data/climate_trace_seed/$f || { echo "$f is stale: run python3 pipeline/build_measurements.py and commit"; exit 1; }
           done
           python3 validate_measurements.py
+      - name: Chain edges validate and rebuild identically
+        run: |
+          python3 -I pipeline/build_chain.py --out /tmp/chain
+          for f in edges.csv summary.json; do
+            cmp /tmp/chain/$f data/chain/$f || { echo "data/chain/$f is stale: run python3 pipeline/build_chain.py and commit"; exit 1; }
+          done

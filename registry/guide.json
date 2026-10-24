@@ -96,7 +96,9 @@
    "us-az-tsmc-phoenix-water",
    "kr-samsung-fabs-water",
    "cl-copper-cochilco-seawater",
-   "cl-lithium-atacama-sqm-sma"
+   "cl-lithium-atacama-sqm-sma",
+   "us-va-loudoun-water-reclaimed-datacenters",
+   "us-wi-mount-pleasant-microsoft-racine-water"
   ]
  },
  {
@@ -106,7 +108,7 @@
   "blurb": "Every large operator reports its electricity emissions twice. The gap between the two numbers is what certificates and contracts account for.",
   "why": [
    "A company's Scope 2 emissions can be counted two ways. Location-based uses the average emissions of the grids its datacenters draw from. Market-based subtracts what the company claims through renewable certificates, power purchase agreements and supplier contracts. The rules (the GHG Protocol's 2015 Scope 2 Guidance) require both numbers, and most headlines, '100% renewable' claims and many targets use the market-based one.",
-   "The ledger lays the two numbers side by side from each company's own assured reports. For 2024 or 2025, the market-based figure is between 71% and 99.98% below the location-based one across the seven operators read so far. The rules on which certificates count are being revised; the revision is not final."
+   "The ledger lays the two numbers side by side from each company's own reports, with the third-party assurance statement where one was read. For 2024 or 2025, the market-based figure is between 71% and 99.98% below the location-based one across the seven operators read so far. The rules on which certificates count are being revised; the revision is not final."
   ],
   "ask": [
    [
@@ -139,7 +141,9 @@
    "scope2-disclosure-rules-esrs-issb-sb253",
    "sbti-netzero-scope2",
    "raters-scope2-inputs-msci-sustainalytics-cdp",
-   "carbon-credit-registries-beneficiaries"
+   "carbon-credit-registries-beneficiaries",
+   "scope2-renewable-claims-by-instrument",
+   "carbon-credits-retired-by-company-disclosures"
   ]
  },
  {
@@ -238,7 +242,63 @@
    "no-crypto-mining-datacentre-ban-proposal",
    "ru-mining-regional-ban-decree-1869",
    "py-ande-crypto-intensive-tariff",
-   "kz-digital-mining-electricity-demand"
+   "kz-digital-mining-electricity-demand",
+   "us-pa-scrubgrass-title-v-permit",
+   "us-tx-denton-core-scientific-ppa-amendment",
+   "us-ky-psc-kentucky-power-ebon-contract-denied",
+   "us-ny-plattsburgh-crypto-mining-moratorium-2018",
+   "ca-mb-hydro-crypto-connection-pause",
+   "ca-bc-hydro-crypto-connection-pause-2022",
+   "ca-qc-hydro-quebec-blockchain-rate-2026",
+   "my-tnb-crypto-electricity-theft",
+   "et-eep-crypto-mining-phase-out"
+  ]
+ },
+ {
+  "key": "nuclear",
+  "title": "Nuclear supply",
+  "color": "--c-power",
+  "blurb": "The nuclear plants behind datacenter operators' clean-power deals, with what the regulator records about each: licence, water, spent fuel, and where the uranium comes from.",
+  "why": [
+   "Datacenter operators have signed deals for the output of existing nuclear plants, for restarts of closed ones, and for reactors not yet licensed. A deal is announced by the companies; whether a plant may run, how much river water it may take, and how much spent fuel sits on its site are recorded by the Nuclear Regulatory Commission, river basin commissions and the Department of Energy. The ledger lays each deal beside those records.",
+   "The same scrutiny as gas and diesel: the claim is the company's, the record is the regulator's, and where a record does not exist yet the ledger says so. Uranium origin is published only as a national total, so no deal can be matched to the country its fuel comes from."
+  ],
+  "ask": [
+   [
+    "Is the plant licensed to run for the length of the deal?",
+    "Compare the deal's term with the licence expiry on the NRC's reactor page. Duane Arnold's licence under review ends in 2034; Google's deal runs 25 years."
+   ],
+   [
+    "How much water will it take?",
+    "For a restart, ask the river basin commission or state for the approved withdrawal and consumptive use. Crane's approval allows up to 21.0 million gallons a day of consumptive use, against 19.2 when the unit last ran."
+   ],
+   [
+    "Where is the fuel from, and where does the spent fuel go?",
+    "EIA publishes uranium purchases by origin country for all US owners together; ask the operator for its own. DOE's inventory gives spent fuel stored per site."
+   ]
+  ],
+  "headline": [
+   "us-pa-crane-tmi1-microsoft-restart",
+   "us-ia-duane-arnold-google-restart",
+   "us-eia-umar-2025-uranium-origin"
+  ],
+  "all": [
+   "us-pa-crane-tmi1-microsoft-restart",
+   "us-ia-duane-arnold-google-restart",
+   "us-il-clinton-meta-ppa",
+   "us-oh-pa-vistra-meta-ppas",
+   "us-meta-terrapower-natrium-units",
+   "us-oh-pike-oklo-meta",
+   "us-tn-kairos-hermes2-google-tva",
+   "us-wa-cascade-xenergy-amazon",
+   "us-va-north-anna-smr-amazon-dominion",
+   "us-google-elementl-three-sites",
+   "us-switch-oklo-master-power-agreement",
+   "eu-us-equinix-advanced-nuclear-preagreements",
+   "fi-loviisa-fortum-google-ppa",
+   "us-pjm-constellation-google-uprates-890mw",
+   "us-eia-umar-2025-uranium-origin",
+   "us-nuclear-deal-plants-spent-fuel"
   ]
  },
  {
@@ -482,7 +542,26 @@
    "us-az-tsmc-phoenix-water",
    "kr-samsung-fabs-water",
    "id-morowali-itss-2023",
-   "ke-meta-sama-keca-2024"
+   "ke-meta-sama-keca-2024",
+   "us-sec-form-sd-nvda-cy2025",
+   "us-sec-form-sd-intc-cy2025",
+   "us-sec-form-sd-amd-cy2025",
+   "us-sec-form-sd-mu-cy2025",
+   "us-sec-form-sd-dell-cy2025",
+   "us-sec-form-sd-hpe-cy2025",
+   "us-sec-form-sd-smci-cy2024",
+   "us-sec-form-sd-csco-cy2025",
+   "us-sec-form-sd-msft-cy2025",
+   "us-sec-form-sd-goog-cy2025",
+   "us-sec-form-sd-amzn-cy2025",
+   "us-sec-form-sd-meta-cy2025",
+   "nvidia-10k-fy2026-foundry-memory-assembly-suppliers",
+   "tsmc-20f-2025-customer-concentration-and-fabs",
+   "amd-10k-2025-foundry-and-atmp-suppliers",
+   "broadcom-10k-fy2025-foundry-and-own-fabs",
+   "intel-10k-2025-fabs-and-tsmc-tiles",
+   "server-makers-10k-suppliers-smci-dell",
+   "micron-10k-fy2026-customers-and-fabs"
   ]
  }
 ]

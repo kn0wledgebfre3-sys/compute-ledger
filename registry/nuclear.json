@@ -1,0 +1,702 @@
+[
+ {
+  "id": "us-pa-crane-tmi1-microsoft-restart",
+  "country": "United States",
+  "region": "Pennsylvania",
+  "site_or_subject": "Crane Clean Energy Center (Three Mile Island Unit 1) restart for Microsoft",
+  "operator": "Constellation Energy Generation, LLC / Microsoft",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC reactor page (docket 05000289): the unit ceased operations on 2019-09-26 and is in SAFSTOR; the name change to the Christopher M. Crane Clean Energy Center was approved by Amendment No. 306 (2025-05-13); the request to revise the operating licence and technical specifications was submitted 2025-07-31 and accepted 2025-09-04; the NRC issued a draft EA and draft FONSI on 2026-06-03 and the final EA and FONSI on 2026-09-18, concluding no EIS was needed; requests for additional information were still open on the page read 2026-10-23, and restart had not been authorised. NRC letter ML26266A106 (2026-09-24) gives notice of the final EA. Water: the Susquehanna River Basin Commission approved on 2026-06-04 (Docket No. 20221203) surface water withdrawal of up to 73.200 mgd (peak day) and consumptive use of up to 21.000 mgd (peak day). The SRBC fact sheet gives the earlier approvals: power generation (Docket No. 20110610) 122.8 mgd withdrawal and 19.2 mgd consumptive use; decommissioning 44 mgd and 6 mgd. Grid: FERC on 2026-06-01 granted a waiver allowing 760 MW of capacity interconnection rights to move from the Eddystone units (press report, WNN; FERC order not fetched). WNN (2026-09-28) reports a USD 1 billion DOE loan to Constellation closed in 2025. Spent fuel: see us-nuclear-deal-plants-spent-fuel.",
+  "record_sources": [
+   {
+    "title": "Three Mile Island Nuclear Station, Unit 1 / Christopher M. Crane Clean Energy Center (reactor page, docket 05000289)",
+    "url": "https://www.nrc.gov/info-finder/reactors/tmi1.html",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "undated (read 2026-10-23)"
+   },
+   {
+    "title": "Conclusion of Section 106 consultation and notice of availability of the final environmental assessment (Crane), ML26266A106",
+    "url": "https://www.nrc.gov/docs/ML2626/ML26266A106.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-24"
+   },
+   {
+    "title": "Susquehanna River Basin Commission, Actions Taken at the June 4, 2026 Meeting (FR Doc. 2026-11967)",
+    "url": "https://public-inspection.federalregister.gov/2026-11967.pdf",
+    "publisher": "Susquehanna River Basin Commission / Federal Register",
+    "date": "2026-06-11"
+   },
+   {
+    "title": "Crane Clean Energy Center (CCEC) fact sheet",
+    "url": "https://www.srbc.gov/regulatory/public-participation/docs/crane-clean-energy-center-fact-sheet.pdf",
+    "publisher": "Susquehanna River Basin Commission",
+    "date": "undated (read 2026-10-23)"
+   },
+   {
+    "title": "NRC and FERC boosts for Crane Clean Energy Center project (press report of FERC order, eLibrary accession 20260601-3068)",
+    "url": "https://world-nuclear-news.org/articles/ferc-waiver-clears-way-for-crane-clean-nuclear-interconnection",
+    "publisher": "World Nuclear News",
+    "date": "2026-06-08"
+   },
+   {
+    "title": "NRC completes environmental review of Crane restart",
+    "url": "https://www.world-nuclear-news.org/articles/nrc-completes-environmental-review-of-crane-restart",
+    "publisher": "World Nuclear News",
+    "date": "2026-09-28"
+   }
+  ],
+  "claim": "Constellation (2024-09-20): the restart will 'add approximately 835 megawatts of carbon-free energy to the grid' under a 20-year power purchase agreement with Microsoft, with the plant 'expected to be online in 2028'. Constellation later said it is on track to return power in 2027 (as reported by WNN, 2026-09-28).",
+  "claim_sources": [
+   {
+    "title": "Constellation to Launch Crane Clean Energy Center Restoring Jobs and Carbon Free Power to The Grid",
+    "url": "https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html",
+    "publisher": "Constellation Energy",
+    "date": "2024-09-20"
+   },
+   {
+    "title": "NRC completes environmental review of Crane restart",
+    "url": "https://www.world-nuclear-news.org/articles/nrc-completes-environmental-review-of-crane-restart",
+    "publisher": "World Nuclear News",
+    "date": "2026-09-28"
+   }
+  ],
+  "gap": "The NRC has completed the environmental review but has not yet authorised operation; the 835 MW is a company figure. The approved consumptive use for restart (21.000 mgd) exceeds the earlier power-generation approval (19.2 mgd) while the approved withdrawal (73.200 mgd) is below it (122.8 mgd). The final EA document itself was not located in this session, so its water and fuel figures are not recorded here. Plant-level uranium origin is not public; see us-eia-umar-2025-uranium-origin for national origin shares.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "NRC reactor page, NRC letter and SRBC Federal Register notice and fact sheet fetched and read; FERC waiver and DOE loan known through WNN press reports only; final EA text not located.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-ia-duane-arnold-google-restart",
+  "country": "United States",
+  "region": "Iowa",
+  "site_or_subject": "Duane Arnold Energy Center restart for Google",
+  "operator": "NextEra Energy Duane Arnold, LLC / Google",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC reactor page (docket 05000331, updated 2026-09-14): shut down 2020-08-10 after derecho damage, fuel removed 2020-10-12, SAFSTOR; licence expires 21 February 2034 (NRC page). Restart actions: exemption request filed 2025-01-23; request to revise the operating licence and technical specifications submitted 2025-11-20, accepted 2025-12-15; licence transfer consolidating ownership approved by NRC order 2026-03-30; environmental report 2025-11-10; draft EA and draft FONSI issued 2026-07-30 (comments to 2026-09-02); final EA projected for fall 2026. The draft EA (DOE/EA-2324) states the plant is licensed to operate at 1,912 megawatts-thermal (MWt) and would be reauthorised through 21 February 2034, the end of the current licence term; Cedar River withdrawals were approximately 5,887 million gallons per year (Mgy) under normal operation, fell to 2,846 Mgy in 2020 and 96.4 Mgy in 2021, with none recorded from August 2022 through December 2024; the cooling towers are to be replaced with new mechanical draft towers. Spent fuel: see us-nuclear-deal-plants-spent-fuel.",
+  "record_sources": [
+   {
+    "title": "Duane Arnold Energy Center (reactor page, docket 05000331)",
+    "url": "https://www.nrc.gov/info-finder/reactors/duan",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-14"
+   },
+   {
+    "title": "Draft Environmental Assessment and Draft Finding of No Significant Impact for the Duane Arnold Energy Center Reauthorization of Power Operations Project (DOE/EA-2324), ML26159A001",
+    "url": "https://www.nrc.gov/docs/ML2615/ML26159A001.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-07-30"
+   }
+  ],
+  "claim": "NextEra (2025-10-27): Google will buy power from the 615-MW plant under a 25-year agreement; the plant is expected online 'by the first quarter of 2029'; NextEra agreed to buy the co-owners' combined 30% interest.",
+  "claim_sources": [
+   {
+    "title": "NextEra Energy and Google announce new collaboration (news release)",
+    "url": "https://investor.nexteraenergy.com/news-and-events/news-releases/2025/10-27-2025-203948689",
+    "publisher": "NextEra Energy",
+    "date": "2025-10-27"
+   }
+  ],
+  "gap": "The NRC has not issued a licensing decision; the operating term under review ends in February 2034, while the PPA is 25 years, so the PPA term assumes a later licence renewal. Restart would return Cedar River withdrawals from 96.4 Mgy (2021) toward the pre-shutdown 5,887 Mgy; the draft EA read in this session does not give a post-restart consumptive-use figure. Plant-level uranium origin is not public; see us-eia-umar-2025-uranium-origin for national origin shares.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "NRC reactor page and NRC draft EA fetched; water figures read twice (second reading at a different offset of the document).",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-il-clinton-meta-ppa",
+  "country": "United States",
+  "region": "Illinois",
+  "site_or_subject": "Clinton Clean Energy Center PPA with Meta",
+  "operator": "Constellation Energy Generation, LLC / Meta",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC issued Renewed Facility Operating License No. NPF-62 for Clinton Unit 1 (docket 50-461) on 2025-12-16 (Federal Register, FR Doc. 2025-23462; the notice as read does not state the new expiry); NRC's licence-renewal page lists the decision on that date. The final supplemental EIS, NUREG-1437 Supplement 63 (August 2025), states the reactor's maximum core power was raised in 2002 to 3,473 MWt, spent fuel is stored at an onsite ISFSI, and cooling uses Clinton Lake, a 4,895 ac lake. Supplement 63's current withdrawal and consumption figures (Section 3.5, Table 3-9) lie beyond the part of the PDF the fetch tool returns (text ends in Chapter 2). NRC's 1982 Final Environmental Statement (NUREG-0854), from the applicant's data, gives a circulating water flow of 1370 cfs and a service water flow of 98 cfs for one unit at full load, and average forced evaporation from Lake Clinton during normal operation of Unit 1 of 7600 acre-ft per year; these are pre-operation figures.",
+  "record_sources": [
+   {
+    "title": "Clinton Power Station, Unit 1 - License Renewal Application (review status page)",
+    "url": "https://www.nrc.gov/licensing-applications/power-reactor-licensing/clinton-power-station-unit-1-license-renewal-application",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "undated (read 2026-10-23)"
+   },
+   {
+    "title": "NUREG-1437, Supplement 63, GEIS for License Renewal of Nuclear Plants: Clinton Power Station, Unit 1, Final Report (ML25212A224)",
+    "url": "https://www.nrc.gov/docs/ML2521/ML25212A224.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-08"
+   },
+   {
+    "title": "Constellation Energy Generation, LLC; Clinton Power Station, Unit 1; License Renewal and Record of Decision (FR Doc. 2025-23462)",
+    "url": "https://public-inspection.federalregister.gov/2025-23462.pdf",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2025-12"
+   },
+   {
+    "title": "Final Environmental Statement related to the operation of Clinton Power Station, Unit No. 1 (NUREG-0854), ML20053E674",
+    "url": "https://www.nrc.gov/docs/ML2005/ML20053E674.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "1982-05"
+   }
+  ],
+  "claim": "Constellation (2025-06-03): a 20-year power purchase agreement with Meta for the plant's 1,121 megawatts beginning June 2027, adding 30 megawatts from uprates; the deal supports relicensing after the Illinois zero emission credit support ends in mid-2027.",
+  "claim_sources": [
+   {
+    "title": "Constellation, Meta Sign 20-Year Deal for Clean, Reliable Nuclear Energy in Illinois",
+    "url": "https://www.constellationenergy.com/newsroom/2025/constellation-meta-sign-20-year-deal-for-clean-reliable-nuclear-energy-in-illinois.html",
+    "publisher": "Constellation Energy",
+    "date": "2025-06-03"
+   }
+  ],
+  "gap": "Current water use not recorded: the only figures read are 1982 pre-operation projections, which may differ from operation since 1987. Per-site spent fuel inventory for Clinton not obtained (see us-nuclear-deal-plants-spent-fuel). Plant-level uranium origin is not public; see us-eia-umar-2025-uranium-origin for national origin shares.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "NRC licence-renewal page, Federal Register renewal notice, Supplement 63 and 1982 FES fetched; FES water figures read twice; Supplement 63 water table not reachable.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-oh-pa-vistra-meta-ppas",
+  "country": "United States",
+  "region": "Ohio; Pennsylvania",
+  "site_or_subject": "Vistra nuclear PPAs and uprates for Meta (Perry, Davis-Besse, Beaver Valley)",
+  "operator": "Vistra / Meta",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC reactor pages (read 2026-10-23): Perry Unit 1 (docket 05000440; Perry, OH) licensed at 3,758 MWt; Davis-Besse (docket 05000346; Oak Harbor, OH) licensed at 2,817 MWt, renewed licence issued 2015-12-08, expiring April 2037; Beaver Valley Unit 1 (docket 05000334; Shippingport, PA) licensed at 2,900 MWt, renewed 2009-11-05, expiring January 2036; Beaver Valley Unit 2 (docket 05000412) licensed at 2,900 MWt, renewed 2009-11-05, expiring May 2047. The NRC issued Renewed Facility Operating License No. NPF-58 for Perry on 2025-07-07 (Federal Register, 2025-07-10; the notice as read does not state the new expiry), while the Perry reactor page still lists the original expiry of November 2026. NRC's list of expected power uprate applications (updated 2026-09-08) shows Vistra Operating Company, LLC extended power uprate submittals planned for Perry 1 (Q3 2029), Beaver Valley 2 (Q3 2030), Beaver Valley 1 (Q3 2031) and Davis Besse (Q3 2032); NRC's pending-uprate page (updated 2026-09-15) states 'There are no power uprate applications currently under review.'",
+  "record_sources": [
+   {
+    "title": "Perry Nuclear Power Plant, Unit 1 (reactor page, docket 05000440)",
+    "url": "https://www.nrc.gov/info-finder/reactors/perr1",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-14"
+   },
+   {
+    "title": "Vistra Operations Company, LLC; Perry Nuclear Power Plant, Unit 1; License Renewal and Record of Decision (FR Doc. 2025-12782)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-10/html/2025-12782.htm",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2025-07-10"
+   },
+   {
+    "title": "Davis-Besse Nuclear Power Station, Unit 1 (reactor page, docket 05000346)",
+    "url": "https://www.nrc.gov/info-finder/reactors/davi",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-08-27"
+   },
+   {
+    "title": "Beaver Valley Power Station, Unit 1 (reactor page, docket 05000334)",
+    "url": "https://www.nrc.gov/info-finder/reactors/bv1",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-14"
+   },
+   {
+    "title": "Beaver Valley Power Station, Unit 2 (reactor page, docket 05000412)",
+    "url": "https://www.nrc.gov/info-finder/reactors/bv2",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-08-11"
+   },
+   {
+    "title": "Expected Applications for Power Uprates (Tables 1 and 2)",
+    "url": "https://www.nrc.gov/facilities-safety/operating-reactors/operating-reactor-licensing/power-uprates/status-of-power-uprate-applications/expected-applications-for-power-uprates",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-08"
+   },
+   {
+    "title": "Pending Applications for Power Uprates",
+    "url": "https://www.nrc.gov/licensing-applications/operating-reactor-licensing/power-uprates/status-power-uprate-applications/pending-applications-power-uprates",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   }
+  ],
+  "claim": "Vistra (2026-01-09): 20-year PPAs; Meta is purchasing 2,176 MW of nuclear energy and capacity from Perry and Davis-Besse and 433 MW from uprates at Perry, Davis-Besse and Beaver Valley, beginning late 2026, with the full 2,609 MW online by 2034. Vistra states Beaver Valley Unit 1 is licensed through 2036, Davis-Besse through 2037, Perry through 2046 and Beaver Valley Unit 2 through 2047, and that the PPAs support subsequent licence renewal.",
+  "claim_sources": [
+   {
+    "title": "Vistra and Meta Announce Agreements to Support Nuclear Plants in PJM and Add New Nuclear Generation to the Grid",
+    "url": "https://investor.vistracorp.com/2026-01-09-Vistra-and-Meta-Announce-Agreements-to-Support-Nuclear-Plants-in-PJM-and-Add-New-Nuclear-Generation-to-the-Grid",
+    "publisher": "Vistra Corp.",
+    "date": "2026-01-09"
+   }
+  ],
+  "gap": "The uprate energy Meta is buying depends on four extended power uprate applications that NRC lists as planned for submission from Q3 2029 to Q3 2032, none yet filed; Vistra's target of full output by 2034 leaves about two years after the last planned submittal. The 20-year PPAs run past the current licence ends for Beaver Valley 1 (January 2036) and Davis-Besse (April 2037). Vistra's 'Perry is licensed through 2046' matches the July 2025 renewal, but the NRC reactor page read has not been updated. Water and per-site spent fuel not recorded. Plant-level uranium origin is not public; see us-eia-umar-2025-uranium-origin for national origin shares.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "NRC reactor pages, Federal Register renewal notice and NRC uprate lists fetched; uprate list read twice.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-meta-terrapower-natrium-units",
+  "country": "United States",
+  "region": "not stated",
+  "site_or_subject": "Meta funding for two TerraPower Natrium units",
+  "operator": "TerraPower / Meta",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC announced on 2026-03-09 that it issued construction permit CPAR-1 to US SFR Owner, LLC, a wholly owned TerraPower subsidiary, for the Kemmerer Power Station, Unit 1 in Kemmerer, Wyoming (Commission Order CLI-26-5). NRC's advanced reactor pre-application list (updated 2025-12-05) lists 'TerraPower, LLC' and 'TerraPower, LLC and GE Hitachi'. No NRC document read names the two Meta-funded Natrium units or a site for them.",
+  "record_sources": [
+   {
+    "title": "NRC Issues Construction Permit to US SFR Owner (Kemmerer Power Station, Unit 1, CPAR-1)",
+    "url": "https://www.nrc.gov/node/2156776",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-03-09"
+   },
+   {
+    "title": "Advanced reactors: pre-application activities (list of developers)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-12-05"
+   }
+  ],
+  "claim": "As reported by ANS (2026-01-12): Meta's agreement funds two new Natrium units (a 345-MW sodium fast reactor design); the deal accounts for 2.8 GW of generation capacity with 1.2 GW of built-in storage; Meta's January 2026 agreements together could see it financing up to 6.6 GW of new and existing energy by 2035.",
+  "claim_sources": [
+   {
+    "title": "Meta strikes deals with Vistra, Oklo, TerraPower",
+    "url": "https://www.ans.org/news/2026-01-12/article-7666/meta-strikes-deals-with-vistra-oklo-terrapower/",
+    "publisher": "American Nuclear Society (Nuclear Newswire)",
+    "date": "2026-01-12"
+   }
+  ],
+  "gap": "The Meta-funded units have no licence application or named site in the NRC records read; the Kemmerer permit covers a different, first unit. Claim figures are known through a press report only. No fuel supply record was read in this session.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC Kemmerer permit announcement and pre-application list fetched; claim via ANS press report.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-oh-pike-oklo-meta",
+  "country": "United States",
+  "region": "Ohio",
+  "site_or_subject": "Oklo facility in Pike County, Ohio, for Meta",
+  "operator": "Oklo / Meta",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC's Oklo Aurora pre-application page (updated 2026-09-15) describes liquid metal-cooled, metal-fueled fast reactors with a maximum power level of 75 MWe and names one site, the Aurora-INL powerhouse; it lists a readiness assessment for Phase 1 of a combined license application, topical reports under review and an NRC observation of Oklo's DOE authorization activities, and no docketed application. NRC denied Oklo's earlier Aurora combined license application for the Idaho National Laboratory (docket 52-049) without prejudice by letter of 2022-01-06 (Federal Register, 2022-01-11). Neither NRC page mentions an Ohio or Pike County site.",
+  "record_sources": [
+   {
+    "title": "Oklo Aurora Powerhouse (pre-application activities)",
+    "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   },
+   {
+    "title": "Oklo Power LLC; Oklo Aurora Combined License Application, Idaho National Laboratory; denial (FR Doc. 2022-00339, docket 52-049)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2022-01-11/html/2022-00339.htm",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2022-01-11"
+   }
+  ],
+  "claim": "As reported by ANS (2026-01-12): Oklo's new facility in Pike County, Ohio, is targeted online as early as 2030 and will provide up to 1.2 GW directly into the PJM market.",
+  "claim_sources": [
+   {
+    "title": "Meta strikes deals with Vistra, Oklo, TerraPower",
+    "url": "https://www.ans.org/news/2026-01-12/article-7666/meta-strikes-deals-with-vistra-oklo-terrapower/",
+    "publisher": "American Nuclear Society (Nuclear Newswire)",
+    "date": "2026-01-12"
+   }
+  ],
+  "gap": "No NRC record of a Pike County facility in the pages read; the project is in no licensing step at NRC. At the 75 MWe per-reactor maximum on NRC's page, the reported up to 1.2 GW corresponds to 16 reactors (ledger arithmetic). Claim known through a press report only.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC Oklo page and Federal Register denial notice fetched; claim via ANS press report.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-tn-kairos-hermes2-google-tva",
+  "country": "United States",
+  "region": "Tennessee",
+  "site_or_subject": "Kairos Power Hermes 2 and Google master agreement; TVA PPA",
+  "operator": "Kairos Power / Google / Tennessee Valley Authority",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC (Federal Register, 2024-11-29): Construction Permits CPTR-7 and CPTR-8 for the two units of the Hermes 2 test reactor facility in Oak Ridge, Tennessee, were issued on 2024-11-21. No operating licence application record was read.",
+  "record_sources": [
+   {
+    "title": "Kairos Power LLC; Hermes 2 test reactor facility; issuance of Construction Permits CPTR-7 and CPTR-8 (FR Doc. 2024-28025)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2024-11-29/html/2024-28025.htm",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2024-11-29"
+   }
+  ],
+  "claim": "Google (2024-10-14): the agreement will enable up to 500 MW of new carbon-free power, with Kairos's first SMR online by 2030 and further deployments through 2035. As reported by ANS (2025-08-19): a Kairos-TVA PPA will supply up to 50 MW from Hermes 2 to the TVA grid. Kairos (2024-11-20) describes the site as the Heritage Center Industrial Park in Oak Ridge.",
+  "claim_sources": [
+   {
+    "title": "New nuclear clean energy agreement with Kairos Power",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/google-kairos-power-nuclear-energy-agreement/",
+    "publisher": "Google",
+    "date": "2024-10-14"
+   },
+   {
+    "title": "A new collaboration among Kairos, TVA, and Google",
+    "url": "https://www.ans.org/news/2025-08-19/article-7291/a-new-collaboration-among-kairos-tva-and-google/",
+    "publisher": "American Nuclear Society (Nuclear Newswire)",
+    "date": "2025-08-19"
+   },
+   {
+    "title": "Nuclear Regulatory Commission Approves Construction Permits for Hermes 2 Demonstration Plant",
+    "url": "https://www.kairospower.com/updates/nuclear-regulatory-commission-approves-construction-permits-for-hermes-2-demonstration-plant",
+    "publisher": "Kairos Power",
+    "date": "2024-11-20"
+   }
+  ],
+  "gap": "Construction permits are not operating licences. The TVA PPA figure is known through a press report; TVA's own release was not fetched. No water or fuel supply record read.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Federal Register notice and Google post fetched; TVA PPA via press report.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-wa-cascade-xenergy-amazon",
+  "country": "United States",
+  "region": "Washington",
+  "site_or_subject": "Cascade Advanced Energy Facility (X-energy Xe-100) funded by Amazon",
+  "operator": "Energy Northwest / X-energy / Amazon",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC's Energy Northwest pre-application page (updated 2025-12-02): pre-application activities for a possible 10 CFR Part 50 construction permit application for up to 12 Xe-100 small modular reactor (SMR) units on the Department of Energy's Hanford Reservation adjacent to Columbia Generating Station, Benton County; no filing date given; a quality assurance topical report and two white papers on historical information were under review. NRC's Xe-100 page (updated 2025-03-19): 'Each reactor will generate 200MWt and approximately 80MWe'; the standard four-pack plant generates approximately 320MWe. No construction permit application for this project appears as docketed in the NRC pages read.",
+  "record_sources": [
+   {
+    "title": "Energy Northwest (pre-application activities)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/energy-northwest",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-12-02"
+   },
+   {
+    "title": "Xe-100 (pre-application activities)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities/xe-100",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-03-19"
+   }
+  ],
+  "claim": "As reported by Utility Dive (2025-10-16) from Amazon's release: the facility near Richland will have an initial capacity of 320 MW with the option to expand to 12 units with a capacity of 960 MW, built by Energy Northwest with Amazon funding; construction expected at the end of the decade.",
+  "claim_sources": [
+   {
+    "title": "Amazon-backed Washington nuclear facility (Cascade) to deploy 12 small modular reactors (press report quoting Amazon's release)",
+    "url": "https://www.utilitydive.com/news/washington-nuclear-facility-smrs-cascade-amazon-modular/802967/",
+    "publisher": "Utility Dive",
+    "date": "2025-10-16"
+   }
+  ],
+  "gap": "The project is in NRC pre-application; no construction permit application has been filed according to the pages read. Claim known through a press report of Amazon's release; Carnegie (2026-06-02) also lists an Amazon-X-energy-KHNP-Doosan partnership (August 2025) with no site. No water or fuel record.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC Energy Northwest and Xe-100 pre-application pages fetched; Xe-100 figures read twice; claim via press report.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-va-north-anna-smr-amazon-dominion",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "SMR feasibility at North Anna Power Station (Dominion-Amazon MOU)",
+  "operator": "Dominion Energy Virginia / Amazon",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC issued a combined license for North Anna Unit 3, an ESBWR, on 2017-06-02, for a unit within the existing North Anna Power Station site in Louisa County, Virginia; the applicants were Virginia Electric and Power Company, doing business as Dominion Virginia Power, and Old Dominion Electric Power Company (ODEC) (NRC COL page, updated 2026-09-03). The page shows no later SMR-related action. Dominion does not appear on NRC's advanced reactor pre-application list (updated 2025-12-05).",
+  "record_sources": [
+   {
+    "title": "Issued Combined Licenses for North Anna, Unit 3",
+    "url": "https://www.nrc.gov/reactors/new-reactors/large-lwr/col/north-anna",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-03"
+   },
+   {
+    "title": "Advanced reactors: pre-application activities (list of developers)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-12-05"
+   }
+  ],
+  "claim": "Dominion (2024-10-16): Dominion Energy Virginia and Amazon entered a Memorandum of Understanding to evaluate the feasibility of developing an SMR at the North Anna Power Station in Louisa County; the release gives no MW figure and states the RFP is not a commitment to build.",
+  "claim_sources": [
+   {
+    "title": "Dominion Energy and Amazon to explore advancement of Small Modular Reactor (SMR) nuclear development in Virginia",
+    "url": "https://investors.dominionenergy.com/news/press-release-details/2024/Dominion-Energy-and-Amazon-to-explore-advancement-of-Small-Modular-Reactor-SMR-nuclear-development-in-Virginia/default.aspx",
+    "publisher": "Dominion Energy",
+    "date": "2024-10-16"
+   }
+  ],
+  "gap": "The existing combined license is for a large ESBWR unit, not an SMR; no SMR application or pre-application by Dominion appears in the NRC pages read. The MOU gives no capacity.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC COL page and pre-application list fetched; the absence of an SMR record is a finding from those two pages only.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-google-elementl-three-sites",
+  "country": "United States",
+  "region": "not stated",
+  "site_or_subject": "Google-Elementl advanced nuclear site development (three sites)",
+  "operator": "Elementl Power / Google",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "Elementl does not appear on NRC's advanced reactor pre-application list (updated 2025-12-05). No NRC record was found for the three unnamed sites.",
+  "record_sources": [
+   {
+    "title": "Advanced reactors: pre-application activities (list of developers)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-12-05"
+   }
+  ],
+  "claim": "Google (2025-05-07): Google will help Elementl prepare three potential sites in the U.S., each aiming for at least 600 MW of capacity, with Google holding an option for commercial off-take.",
+  "claim_sources": [
+   {
+    "title": "Google and Elementl: nuclear energy site development",
+    "url": "https://blog.google/feed/google-and-elementl-nuclear-energy-site-development/",
+    "publisher": "Google",
+    "date": "2025-05-07"
+   }
+  ],
+  "gap": "No licensing record: the developer is not on NRC's pre-application list and the sites are unnamed, so nothing in the record can be checked against the claim.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC pre-application list fetched; the record is an absence.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-switch-oklo-master-power-agreement",
+  "country": "United States",
+  "region": "not stated",
+  "site_or_subject": "Switch-Oklo non-binding Master Power Agreement",
+  "operator": "Oklo / Switch",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC's Oklo Aurora pre-application page (updated 2026-09-15) describes liquid metal-cooled, metal-fueled fast reactors with a maximum power level of 75 MWe and names one site, the Aurora-INL powerhouse; it lists a readiness assessment for Phase 1 of a combined license application, topical reports under review and an NRC observation of Oklo's DOE authorization activities, and no docketed application. NRC denied Oklo's earlier Aurora combined license application for the Idaho National Laboratory (docket 52-049) without prejudice by letter of 2022-01-06 (Federal Register, 2022-01-11). Neither NRC page names a site linked to Switch.",
+  "record_sources": [
+   {
+    "title": "Oklo Aurora Powerhouse (pre-application activities)",
+    "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   },
+   {
+    "title": "Oklo Power LLC; Oklo Aurora Combined License Application, Idaho National Laboratory; denial (FR Doc. 2022-00339, docket 52-049)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2022-01-11/html/2022-00339.htm",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2022-01-11"
+   }
+  ],
+  "claim": "Switch (2024-12-18): a non-binding Master Power Agreement to deploy 12 gigawatts of Oklo Aurora powerhouse projects through 2044.",
+  "claim_sources": [
+   {
+    "title": "Oklo and Switch (announcement of non-binding Master Power Agreement)",
+    "url": "https://www.switch.com/oklo-and-switc",
+    "publisher": "Switch",
+    "date": "2024-12-18"
+   }
+  ],
+  "gap": "Non-binding framework; Oklo has no docketed application at NRC according to the pages read, and no Switch-linked site. At the 75 MWe per-reactor maximum on NRC's page, 12 gigawatts corresponds to 160 reactors (ledger arithmetic).",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC Oklo page and Federal Register denial notice fetched.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "eu-us-equinix-advanced-nuclear-preagreements",
+  "country": "United States; Netherlands; France",
+  "region": "multiple",
+  "site_or_subject": "Equinix advanced-nuclear pre-agreements (Oklo, Radiant, ULC-Energy/Rolls-Royce SMR, Stellaria)",
+  "operator": "Equinix",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC's advanced reactor pre-application list (updated 2025-12-05) lists 'Oklo Inc.', 'Radiant Industries, Inc' and 'Rolls-Royce SMR Limited', and does not list Stellaria or ULC-Energy. NRC's Oklo Aurora pre-application page (updated 2026-09-15) describes liquid metal-cooled, metal-fueled fast reactors with a maximum power level of 75 MWe and names one site, the Aurora-INL powerhouse; it lists a readiness assessment for Phase 1 of a combined license application, topical reports under review and an NRC observation of Oklo's DOE authorization activities, and no docketed application. NRC denied Oklo's earlier Aurora combined license application for the Idaho National Laboratory (docket 52-049) without prejudice by letter of 2022-01-06 (Federal Register, 2022-01-11). The Dutch and French regulators' records for the ULC-Energy and Stellaria projects were not searched.",
+  "record_sources": [
+   {
+    "title": "Advanced reactors: pre-application activities (list of developers)",
+    "url": "https://ww2.nrc.gov/reactors/new-reactors/advanced/who-were-working-with/pre-application-activities",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-12-05"
+   },
+   {
+    "title": "Oklo Aurora Powerhouse (pre-application activities)",
+    "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/who-were-working-with/pre-application-activities/oklo-aurora-powerhouse",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   },
+   {
+    "title": "Oklo Power LLC; Oklo Aurora Combined License Application, Idaho National Laboratory; denial (FR Doc. 2022-00339, docket 52-049)",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2022-01-11/html/2022-00339.htm",
+    "publisher": "US Nuclear Regulatory Commission / Federal Register",
+    "date": "2022-01-11"
+   }
+  ],
+  "claim": "Equinix (2025-08-14): a Letter of Intent with ULC-Energy for a PPA of up to 250 MWe in the Netherlands (Rolls-Royce SMR); an earlier agreement to procure 500MW from Oklo; a preorder for 20 of Radiant's Kaleidos microreactors; a pre-order power agreement for 500 MWe with Stellaria for European data centres.",
+  "claim_sources": [
+   {
+    "title": "Equinix and ULC-Energy Collaborate to Support Sustainable AI Data Center Growth in the Netherlands with Clean Nuclear Power",
+    "url": "https://newsroom.equinix.com/2025-08-14-Equinix-and-ULC-Energy-Collaborate-to-Support-Sustainable-AI-Data-Center-Growth-in-the-Netherlands-with-Clean-Nuclear-Power",
+    "publisher": "Equinix",
+    "date": "2025-08-14"
+   }
+  ],
+  "gap": "Letters of intent and pre-orders; the three US-linked vendors are in NRC pre-application only, and no European licence record was read.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC pre-application list and Oklo page fetched; European regulators not searched.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "fi-loviisa-fortum-google-ppa",
+  "country": "Finland",
+  "region": "Loviisa",
+  "site_or_subject": "Loviisa nuclear power plant life-extension PPA with Google",
+  "operator": "Fortum / Google",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "The Finnish Government's page on its licence decision for Loviisa (valtioneuvosto.fi, 'Fortum granted licence to operate Loviisa power plant units until end of 2050') did not load on 2026-10-23 (client_error). As reported by WNN (2023-01-26): Fortum applied in March 2022 to operate both units until the end of 2050; STUK's safety assessment found Fortum 'has the required capabilities, procedures, competence and resources' for continued operation; the licences then in force expired at the end of 2027 and 2030 (press report of STUK's assessment).",
+  "record_sources": [
+   {
+    "title": "Regulator endorses continued operation of Loviisa plant (press report of STUK's safety assessment)",
+    "url": "https://world-nuclear-news.org/articles/regulator-endorses-continued-operation-of-loviisa",
+    "publisher": "World Nuclear News",
+    "date": "2023-01-26"
+   }
+  ],
+  "claim": "Fortum (2026-09-09): a 22-year life extension Power Purchase Agreement contracting for up to 50% of Loviisa's capacity, starting 2028 at lower volume and reaching 50% in 2030-2049; two reactors of 507 MWe each producing approximately 8 terawatt-hours of electricity annually; operation to the end of the operating licences in 2050; the plant is close to Google's data centre in Hamina.",
+  "claim_sources": [
+   {
+    "title": "Inside information: Fortum and Google partner to drive sustainable growth for Finland, sign nuclear power purchase agreement",
+    "url": "https://www.fortum.com/media/2026/09/inside-information-fortum-and-google-partner-drive-sustainable-growth-finland-sign-nuclear-power-purchase-agreement",
+    "publisher": "Fortum",
+    "date": "2026-09-09"
+   }
+  ],
+  "gap": "The government licence decision itself was not read (page failed to load); the record here is a press report of the regulator's safety assessment. The PPA runs to 2049 and Fortum states licences to 2050. Spent fuel, seawater cooling and fuel origin not recorded.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Government page failed to load; WNN press report of STUK's assessment fetched.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-pjm-constellation-google-uprates-890mw",
+  "country": "United States",
+  "region": "Illinois; Pennsylvania; New Jersey",
+  "site_or_subject": "Constellation uprates and fleet supply for Google in PJM",
+  "operator": "Constellation Energy / Google",
+  "lat": null,
+  "lon": null,
+  "category": "power",
+  "record": "NRC's list of expected power uprate applications (updated 2026-09-08) shows 12 planned submittals by 'Constellation Energy Generation, LLC' from Q4 2026 to Q4 2030 (5 extended power uprates, 7 measurement uncertainty recapture), each with the plant shown as 'Proprietary' (count by the ledger, read twice). NRC's pending-uprate page (updated 2026-09-15) states 'There are no power uprate applications currently under review'; NRC's approved-uprate list (updated 2026-09-15) shows no approval after 2021.",
+  "record_sources": [
+   {
+    "title": "Expected Applications for Power Uprates (Tables 1 and 2)",
+    "url": "https://www.nrc.gov/facilities-safety/operating-reactors/operating-reactor-licensing/power-uprates/status-of-power-uprate-applications/expected-applications-for-power-uprates",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-08"
+   },
+   {
+    "title": "Pending Applications for Power Uprates",
+    "url": "https://www.nrc.gov/licensing-applications/operating-reactor-licensing/power-uprates/status-power-uprate-applications/pending-applications-power-uprates",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   },
+   {
+    "title": "Approved Applications for Power Uprates",
+    "url": "https://www.nrc.gov/licensing-applications/operating-reactor-licensing/power-uprates/status-power-uprate-applications/approved-applications-power-uprates",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2026-09-15"
+   }
+  ],
+  "claim": "Google (2026-10-06): a 20-year power purchase agreement to bring 890 megawatts (MW) of new nuclear capacity onto the PJM grid from uprates at 11 Constellation-owned nuclear units at six sites in Illinois, Pennsylvania and New Jersey, first uprate by 2028; Constellation investment of more than $4.3 billion; plus a 15-year energy supply agreement for an additional 2,700 MWs from Constellation's PJM fleet.",
+  "claim_sources": [
+   {
+    "title": "Google and Constellation Announce Landmark Agreement to Bring 890 MW of New Nuclear Capacity to PJM Grid as Part of Long-Term Power Deal",
+    "url": "https://www.googlecloudpresscorner.com/2026-10-06-Google-and-Constellation-Announce-Landmark-Agreement-to-Bring-890-MW-of-New-Nuclear-Capacity-to-PJM-Grid-as-Part-of-Long-Term-Power-Deal",
+    "publisher": "Google Cloud press corner",
+    "date": "2026-10-06"
+   }
+  ],
+  "gap": "None of the uprates in the agreement had been filed with NRC on the pages read; NRC withholds the plant names of Constellation's planned submittals, so the units in the agreement cannot be matched to them. The 2,700 MW supply comes from existing plants already supplying PJM.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "NRC uprate pages fetched; expected list read twice; plant names withheld by NRC.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-eia-umar-2025-uranium-origin",
+  "country": "United States",
+  "region": "national",
+  "site_or_subject": "Origin of uranium bought by US reactor owners and operators (2025)",
+  "operator": "All owners and operators of US civilian nuclear power reactors",
+  "lat": null,
+  "lon": null,
+  "category": "fuel",
+  "record": "EIA Uranium Marketing Annual Report, Table 3 (Form EIA-858; re-released 2026-08-13), thousand pounds U3O8 equivalent, delivery year 2025: Canada 15,207; Kazakhstan 13,331; Australia 7,077; United States 3,376; Uzbekistan 3,258; Namibia 1,652; Ukraine 1,056; Total Foreign 43,495; Total Purchases 46,871. Russia's 2025 cell is W ('Data withheld to avoid disclosure of individual company data'); Russia was 2,031 in 2024. EIA's summary: Canada was 'the top source at 32% of total deliveries' and US-origin uranium was 7% of total deliveries in 2025.",
+  "record_sources": [
+   {
+    "title": "Uranium Marketing Annual Report, Table 3: Uranium purchased by owners and operators of U.S. civilian nuclear power reactors by origin country and delivery year, 2021-2025",
+    "url": "https://www.eia.gov/uranium/marketing/table3.php",
+    "publisher": "US Energy Information Administration",
+    "date": "2026-08-13"
+   },
+   {
+    "title": "Uranium Marketing Annual Report (with data for 2025), summary page",
+    "url": "https://www.eia.gov/uranium/marketing/index.php",
+    "publisher": "US Energy Information Administration",
+    "date": "2026-08-13"
+   }
+  ],
+  "claim": "none found: no operator in the deals above states the origin of the fuel for a named plant in the documents read.",
+  "claim_sources": [],
+  "gap": "Plant-level origin is not public: EIA publishes origin only as a national aggregate and withholds cells that could reveal a company's data. The figures apply to all US reactor owners together, so no deal in this theme can be matched to a country of origin. Enrichment (SWU) origin is reported separately by EIA and not recorded here.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Table 3 fetched and read twice; summary page fetched once.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "us-nuclear-deal-plants-spent-fuel",
+  "country": "United States",
+  "region": "multiple",
+  "site_or_subject": "Spent fuel at nuclear plants in datacenter deals",
+  "operator": "Plant licensees (Constellation, NextEra, Talen, Vistra)",
+  "lat": null,
+  "lon": null,
+  "category": "fuel",
+  "record": "DOE/PNNL inventory PNNL-33938 Rev. 1.1 (December 2024), Table 2.8, through 2022-12-31: Three Mile Island 1 (Crane): 1,663 assemblies, 786.49 metric tons initial uranium, 46 spent fuel casks loaded and 1,663 assemblies loaded (plus 1 GTCC waste cask); Duane Arnold: 3,648 assemblies, 662.64 metric tons initial uranium, 60 casks, 3,648 assemblies loaded. For both plants the assemblies loaded into casks equal the assemblies discharged. NRC's ISFSI map lists Susquehanna, Three Mile Island, Clinton and Duane Arnold among reactor sites with ISFSIs and counts 56 reactor sites operating general-licensed ISFSIs in 34 states. NRC Supplement 63 states Clinton stores spent fuel at an onsite ISFSI. The DOE GC-859 summary pages give national totals only (data through 2022).",
+  "record_sources": [
+   {
+    "title": "Spent Nuclear Fuel and Reprocessing Waste Inventory, PNNL-33938 Rev. 1.1 (Table 2.8)",
+    "url": "https://curie.pnnl.gov/system/files/SNF%20and%20Rep%20Waste%20Inventory%20PNNL%2033938%20Rev.%201.1_0.pdf",
+    "publisher": "Pacific Northwest National Laboratory for the US Department of Energy",
+    "date": "2024-12"
+   },
+   {
+    "title": "U.S. Independent Spent Fuel Storage Installations (map)",
+    "url": "https://www.nrc.gov/waste/spent-fuel-storage/map-fuel-storage-facilities.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "undated (read 2026-10-23)"
+   },
+   {
+    "title": "NUREG-1437, Supplement 63, GEIS for License Renewal of Nuclear Plants: Clinton Power Station, Unit 1, Final Report (ML25212A224)",
+    "url": "https://www.nrc.gov/docs/ML2521/ML25212A224.pdf",
+    "publisher": "US Nuclear Regulatory Commission",
+    "date": "2025-08"
+   },
+   {
+    "title": "Spent Nuclear Fuel Report, GC-859 Nuclear Fuel Data Survey (Summary 3, Assembly Storage Location)",
+    "url": "https://gc859.pnnl.gov/summary/table3",
+    "publisher": "US Department of Energy / PNNL",
+    "date": "undated, data through 2022 (read 2026-10-23)"
+   }
+  ],
+  "claim": "none found in the company documents read.",
+  "claim_sources": [],
+  "gap": "Per-site inventories for operating plants (Susquehanna, Clinton, Perry, Davis-Besse, Beaver Valley, North Anna, Loviisa) were not obtained. PNNL-33938 Table B.1 holds them, but the fetch tool's text of the PDF is 76,642 characters and ends at page 39 inside Table 2.15; reads at offsets 45,000, 66,000 and 150,000 confirmed Appendix B is outside it. The GC-859 site offers no per-site table, and the Pennsylvania emergency-management site sheet for Susquehanna (May 2026) gives no spent fuel figures. Restarting Crane and Duane Arnold would add new discharges to the inventories recorded here.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Table 2.8 read twice; operating-plant inventories not reached.",
+  "last_checked": "2026-10-23"
+ }
+]
