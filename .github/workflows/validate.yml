@@ -1,0 +1,82 @@
+name: Validate registry and receipts
+
+# Every push and pull request: the registry must parse, every entry must have a
+# record source URL, ids must be unique, guide ids must exist, receipts must
+# match their schema, the page must build, every builder must reproduce its
+# committed output, and every figure in the measurements table must pass
+# pipeline/validate_measurements.py (vocabulary, units, periods, sources, and
+# for registry figures, verbatim presence in the entry's text), and every edge of the chain must pass
+# pipeline/build_chain.py (relations, registers, a document and its quoted phrase). A correction that breaks any of
+# this does not merge.
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build page (validates registry, guide and receipts)
+        run: python3 -I site/build_page.py
+      - name: Fail on schema problems
+        run: python3 -I site/build_page.py 2>&1 | grep -q "PROBLEMS" && exit 1 || true
+      - name: Published pages match the build
+        run: |
+          python3 -I site/build_page.py > /dev/null
+          git diff --exit-code -- docs/ site/index.html || { echo 'docs/ is stale: run python3 site/build_page.py and commit'; exit 1; }
+      - name: Scraper fixture tests
+        run: |
+          cd scrapers && pip install -r requirements.txt
+          for s in ercot_large_load pjm_queue miso_spp_nyiso_queues eia_860_923 neso_demand climate_trace_match pull_nei pull_ie_aer pull_benchmarking watch_pages; do
+            python3 $s.py --fixture --out /tmp/out || exit 1
+          done
+          python3 cross_check.py --fixture --out /tmp/out
+      - name: Pipeline fixture tests (Virginia and Texas)
+        run: |
+          cd pipeline && pip install -r requirements.txt
+          ./run_all.sh --fixture
+          python3 tx_fetch.py --fixture --out /tmp/tx
+          cmp /tmp/tx/tx_issued_sites.csv ../data/climate_trace_seed/tx_issued_sites.csv
+          cmp /tmp/tx/BROWSER_LIST.csv ../data/climate_trace_seed/tx_browser_list.csv
+          python3 build_handover_assets.py --out /tmp/assets
+          for f in datacenters_emissions_seed.csv datacenters_ownership_seed.csv datacenters_register_backlog_unlocated.csv assets_summary.json; do
+            cmp /tmp/assets/$f ../data/climate_trace_seed/$f || exit 1
+          done
+          python3 build_metered.py --out /tmp/metered > /dev/null
+          for f in ireland_aer_metered.csv va_nei_generator_emissions.csv benchmarking_datacenters.csv public_power_loads.csv va_datacenter_class_demand.csv metered_summary.json; do
+            cmp /tmp/metered/$f ../data/climate_trace_seed/$f || exit 1
+          done
+      - name: Measurements table rebuilds identically and validates
+        run: |
+          cd pipeline
+          python3 build_measurements.py --out /tmp/meas > /dev/null
+          for f in measurements.csv site_register.csv site_id_aliases.csv entity_register.csv measurements_summary.json; do
+            cmp /tmp/meas/$f ../data/climate_trace_seed/$f || { echo "$f is stale: run python3 pipeline/build_measurements.py and commit"; exit 1; }
+          done
+          python3 validate_measurements.py
+      - name: Chain edges validate and rebuild identically
+        run: |
+          python3 -I pipeline/build_chain.py --out /tmp/chain
+          for f in edges.csv summary.json; do
+            cmp /tmp/chain/$f data/chain/$f || { echo "data/chain/$f is stale: run python3 pipeline/build_chain.py and commit"; exit 1; }
+          done
+      - name: Checks register and findings rebuild identically
+        run: |
+          python3 -I pipeline/build_checks.py --out /tmp/checks > /dev/null
+          for f in checks.csv findings.csv checks_summary.json; do
+            cmp /tmp/checks/$f data/climate_trace_seed/$f || { echo "$f is stale: run python3 pipeline/build_checks.py and commit"; exit 1; }
+          done
+      - name: Site pages rebuild identically
+        run: |
+          python3 -I site/build_sites.py --out /tmp/sites > /dev/null
+          diff -rq /tmp/sites docs/sites || { echo "docs/sites is stale: run python3 site/build_sites.py and commit"; exit 1; }
+      - name: Citation files agree on the version
+        run: |
+          v1=$(sed -n 's/^version: "\(.*\)"$/\1/p' CITATION.cff); v2=$(python3 -c 'import json;print(json.load(open(".zenodo.json"))["version"])')
+          [ "$v1" = "$v2" ] || { echo "CITATION.cff version $v1 differs from .zenodo.json $v2"; exit 1; }
+      - name: No local file paths in published files
+        run: |
+          if git grep -nIE '/home/[a-z]+/(repo|registry|deliver)|/tmp/[a-z]+-[0-9]+/|/root/\.[a-z]+/|/Users/[a-z]+/' -- . ':!ci_local.sh' ':!.github'; then echo "remove local file paths"; exit 1; fi

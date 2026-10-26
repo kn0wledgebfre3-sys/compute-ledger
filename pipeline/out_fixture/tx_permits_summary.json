@@ -1,0 +1,44 @@
+{
+  "mode": "fixture",
+  "fixture_warning": "FIXTURE RUN: numbers come from the small sample files in fixtures/, not the full source. They test parsing only and must not be quoted as real totals.",
+  "format_inspected": "2026-10-20",
+  "retrieved_at": null,
+  "sources": [
+    {
+      "name": "Texas Comptroller data center lists (via registry/seed_sites_unlocated.csv)",
+      "url": "https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php"
+    },
+    {
+      "name": "TCEQ titlev pending index",
+      "url": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/titlev-pending-permits.html",
+      "rows": 7,
+      "data_updated": "2026-09-16"
+    },
+    {
+      "name": "TCEQ nsr pending index",
+      "url": "https://www.tceq.texas.gov/assets/public/permitting/air/reports/applications/nsr-pending-permits.html",
+      "rows": 6,
+      "data_updated": "2026-08-28"
+    }
+  ],
+  "rows": 153,
+  "matched": 15,
+  "with_coordinates": 7,
+  "with_generator_count": 7,
+  "with_generator_mw": 5,
+  "by_match_method": {
+    "none": 138,
+    "known_documents": 10,
+    "nsr_index": 2,
+    "titlev_index_unverified": 1,
+    "nsr_index_weak_area": 1,
+    "titlev_index": 1
+  },
+  "by_coord_source": {
+    "none": 146,
+    "core_data_form_decimal": 5,
+    "steers_decimal": 2
+  },
+  "unmatched_datacenter_packages": 3,
+  "unmatched_packages_with_coordinates": 1
+}

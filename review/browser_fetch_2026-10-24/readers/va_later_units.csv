@@ -1,0 +1,46 @@
+registration,permit_date,ref,count,rating_as_written,rating_kw,fuel,emergency_or_not,nox_limit_as_written,page
+52629,2019-06-27,EG01-EG54,54,"Fifty-four (54) Cummins QSK95-G11; 4,352 bhp, 3,000 ekW (each unit)",3000,ultra-low sulfur diesel,emergency,55.4 lb/hr; 0.257 lb/gal (each unit); 99.0 tpy all units combined,PDF p4 (permit p2); NOx PDF p8 (permit p6)
+52629,2019-06-27,EG57-EG92,36,Thirty-six (36) Cummins QSK95-G11 with SCR; rating cell blank (same model as EG01-EG54),3000,ultra-low sulfur diesel,emergency,"5.5 lb/hr; 0.078 lb/gal (each unit, with SCR)",PDF p4; NOx PDF p8
+52629,2019-06-27,EG55-EG56,2,"Two (2) Cummins or equal QST30-G5 NR2; 1,482 bhp, 1,000 ekW (each unit)",1000,ultra-low sulfur diesel,emergency,16.8 lb/hr; 0.297 lb/gal (each unit),PDF p4; NOx PDF p8
+71804,2016-11-09,1-5,5,"Five (5) Cummins 900DQFAD; 900 ekW, 1,482 bhp (each unit)",900,diesel (S15),emergency,19.60 lbs/hr (each); 9.30 tpy Ref 1-8 combined,PDF p4 (permit p2); NOx PDF p7 (permit p5)
+71804,2016-11-09,6-8,3,"Three (3) Cummins 1,365DQGAB; 1,365 ekW, 2,200 bhp (each unit)",1365,diesel (S15),emergency,29.37 lbs/hr (each),PDF p4; NOx PDF p7
+73200,2007-10-18,EGU1-EGU7,7,"not restated in the amendment (2006 permit: CAT 3516B, 2848 bhp or 2000 ekW, each)",2000,diesel,emergency,no limit on amended page; Cond 14 test factor 41.2 lbs/hr at 100% load,PDF p3 (amended permit p6)
+73240,2024-09-20,G13,1,"One (1) Caterpillar 3516C; 2,937 bhp, 2,000 kW",2000,diesel,emergency,38.85 lbs/hr,PDF p5 (permit p2); NOx PDF p13
+73240,2024-09-20,G1-G6,6,"Six (6) Caterpillar 3516B; 2,885 bhp, 2,000 kW (each)",2000,diesel,emergency,41.2 lbs/hr (each),PDF p5; NOx PDF p12
+73240,2024-09-20,"G7-G9, G11-G12",5,"Five (5) Caterpillar 3516C; 2,937 bhp, 2,000 kW (each)",2000,diesel,emergency,40.0 lbs/hr (each),PDF p5; NOx PDF p13
+73370,2017-08-23,EG-1A..EG-9B (ACC10),18,"Caterpillar 3516C Diesel Engine Generator; 3273 bhp, 2250 ekW (Prime Rated Capacity), one row per unit",2250,diesel (ULSD),emergency,5.1 lbs/hr with SCR (0.0292 lb/gallon); 7.3 lbs/hr without SCR (0.136 lb/gallon) (each unit); 12.4 tons/yr combined,PDF p4-p5 (permit p2-p3); NOx PDF p10 (permit p8)
+73643,2011-10-13,"(none: letter, no equipment list)",,,,,,,PDF p1-p2
+73670,2025-03-14,"Gen2.5-1..Gen2.5-18 (Bldgs G2,H,J,K)",18,"Caterpillar 3516C-HD; 2,500 ekW, (3,633 bhp), Output, each",2500,diesel (ULSD),emergency,48.1 lbs/hr,PDF p15-p17; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Gen2.5-20..Gen2.5-22 (Bldg J),3,"Cummins DQKAN; 2,500 ekW, (3,640 bhp), Output, each",2500,diesel (ULSD),emergency,48.1 lbs/hr,PDF p17; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,"Gen 1-44 (G2 15, K 18, J 3, H 8)",44,"Caterpillar 3516C; 2,000 ekW, (2,937 bhp), Output, each",2000,diesel (ULSD),emergency,38.86 lbs/hr,PDF p11-p15; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Gen 46-54 (Bldg J),9,"Cummins DQKAE; 2,000 ekW, (2,922 bhp), Output, each",2000,diesel (ULSD),emergency,38.86 lbs/hr,PDF p14; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,PBB 6 (Bldg G2),1,"Caterpillar C9 ATAAC; 300 ekW, (480 bhp)",300,diesel (ULSD),emergency,4.47 lbs/hr,PDF p12; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,"PBB 7-9 (Bldgs K, J, H)",3,"Caterpillar C18 DITA; 600 ekW, (900 bhp)",600,diesel (ULSD),emergency,11.58 lbs/hr,PDF p13-p15; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,"Building G1 (14 units, G1-110-B..G1-150-R)",14,"Fourteen (14) Caterpillar 3516C; 2,000 ekW, (2,937 bhp), Output, each",2000,diesel (ULSD),emergency,38.86 lbs/hr (Building G1 engines),PDF p10-p11; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,G1-Base EG (G-PBB1),1,"Caterpillar C18 DITA; 600 ekW, (900 bhp)",600,diesel (ULSD),emergency,no separate row; Building G1 engines row (38.86) does not exclude it,PDF p11; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Building A (A110-EG1..A150-EG3),12,"Cummins 2000DQKAB; 2,000 ekW, (2,919 bhp), Output, each",2000,diesel (ULSD),emergency,38.61 lbs/hr,PDF p6-p7; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,A Base EG (A105),1,"Cummins 275DQHAA; 275 ekW, (470 bhp)",275,diesel (ULSD),emergency,7.83 lbs/hr,PDF p7; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Building B (B110-EG1..B140-EG3R),12,"Cummins 2000DQKAB; 2,000 ekW, (2,919 bhp), Output, each",2000,diesel (ULSD),emergency,38.61 lbs/hr,PDF p7-p8; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,B Base EG (B105),1,Cummins 500DFEK; 500 ekW (732 bhp) Output,500,diesel (ULSD),emergency,7.83 lbs/hr,PDF p8; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Building D (D110-EG1..D140-B),9,"Cummins 2000DQKAB; 2,000 ekW, (2,919 bhp), Output, each",2000,diesel (ULSD),emergency,38.61 lbs/hr,PDF p8; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,D Base EG (D105),1,"Cummins 350DFEG; 350 ekW, (520 bhp) Output",350,diesel (ULSD),emergency,4.99 lbs/hr,PDF p8; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,Building F (F130-EG1..F160-EG3),9,"Cummins Model 2000DQKAB; 2,000 ekW, (2,919 bhp), Output, each",2000,diesel (ULSD),emergency,38.61 lbs/hr,PDF p9-p10; NOx PDF p20-p21 (Cond 11)
+73670,2025-03-14,F Base EG (F105),1,"Cummins Model 350DFEG; 350 ekW, (520 bhp) Output",350,diesel (ULSD),emergency,4.99 lbs/hr,PDF p10; NOx PDF p20-p21 (Cond 11)
+73717,2019-05-29,"EG5, EG6, EG7",3,"Three (3) Cummins model DQKAN DCC, engine QSK60-G#(TBD); 3,202 bhp, 2,250 ekW (each unit), Standby",2250,diesel (S15),emergency,"42.36 lb/hr (each); 31.77 tpy all operations, 6.35 tpy MCRT",PDF p4 (permit p2); NOx PDF p8 (permit p6)
+73977,2013-08-19,G-1,1,"not restated in the amendment (2012 permit: CAT C32, 1,000 kW)",1000,diesel,emergency (not restated),Cond 13 calculation factor 19.24 lb/hr*; 11.7 tons/yr G-1..G-4,PDF p4 (amended permit p6)
+73977,2013-08-19,G-2..G-4,3,"not restated in the amendment (2012 permit: CAT C175-16, 3,000 kW each)",3000,diesel,emergency (not restated),"Cond 13 calculation factors 9.14 lb/hr* with SCR, 60.08 lb/hr* without SCR",PDF p4
+74079,2021-04-28,13 through 17,5,"Five (5) Caterpillar 3516E; 3,000 ekW, 4,393 bhp",3000,diesel,emergency,58.11 lb/hr (each),PDF p4 (permit p2); NOx PDF p11
+74079,2021-04-28,10 through 12,3,"Three (3) Cummins 2500DQKAN; 2,500 ekW, 3,585 bhp (Derated to 2,000 ekW, 2,854 bhp)",2500,diesel,emergency,36.56 lb/hr (each),PDF p5 (permit p3); NOx PDF p11
+74079,2021-04-28,"1, 3, 4, 5, 6, 7, 9 (SCR)",7,"Caterpillar 3516A; 2304 bhp, 1750 ekW (each unit)",1750,diesel,emergency,"7.0 lbs/hr* (with urea injection), 2.3 tons/yr (each)",PDF p5; NOx PDF p11
+74079,2021-04-28,"2, 8",2,"Caterpillar 3516A; 2304 bhp, 1750 ekW (each unit)",1750,diesel,emergency,"70.4 lbs/hr, 7.0 tons/yr (each)",PDF p5; NOx PDF p11
+74156,2018-11-08,"A-1-a,b,c,d, A-2-e,f,g,i, B-1-a,b,c,d,i, B-2-e,f,g,h,n",18,"Eighteen (18) MTU 20V4000 DS3000; 4,680 bhp, 3,000 ekW (each unit), Standby",3000,diesel,emergency,66.96 lb/hr (each); 98.67 tpy all 24 combined; 22.50 tpy MCRT,PDF p4 (permit p2); NOx PDF p9 (permit p7)
+74156,2018-11-08,"A-1-j, A-2-k, A-2-m, B-1-j, B-2-k, B-2-m",6,"Six (6) MTU 16V4000 DS2000; 3,058 bhp, 2,000 ekW (each unit)",2000,diesel,emergency,42.74 lb/hr (each),PDF p4; NOx PDF p9
+74190,2020-07-16,EG-POD 11-17,7,"Caterpillar C175-16; 3,000 ekW, 4,423 bhp",3000,diesel (ULSD),emergency,58.51 lb/hr (each),PDF p2-p3; NOx PDF p9
+74190,2020-07-16,EG-POD 1-3,3,"Caterpillar 3516C; 2,000 ekW, 2,937 bhp",2000,diesel (ULSD),emergency,38.85 lb/hr (each),PDF p3; NOx PDF p8
+74190,2020-07-16,EG-POD 4,1,"Caterpillar 3516C; 2,500 ekW, 3,634 bhp",2500,diesel (ULSD),emergency,48.06 lb/hr,PDF p3; NOx PDF p9
+74190,2020-07-16,EG-POD 5,1,"Caterpillar 3516C; 2,000 ekW, 2,937 bhp",2000,diesel (ULSD),emergency,38.85 lb/hr without SCR; 5.83 lb/hr with SCR,PDF p3; NOx PDF p9
+74190,2020-07-16,EG-POD 6-10,5,"Caterpillar C175-16; 3,000 ekW, 4,423 bhp",3000,diesel (ULSD),emergency,58.51 lb/hr without SCR; 8.78 lb/hr with SCR (each),PDF p3; NOx PDF p9
+74265,2026-08-13,EG-81 through EG-121,41,"(41) MTU Model 16V4000G84S; 2,250 ekW, 3,357 bhp (each); SCR",2250,diesel,emergency,3.70 lbs/hr controlled; 44.33 lbs/hr uncontrolled (each),PDF p5 (permit p3); NOx PDF p11 (permit p9)
+74265,2026-08-13,EG-01 through EG-40,40,"(40) MTU Model 16V4000G84S; 2,250 ekW, 3,357 bhp (each)",2250,diesel,emergency,44.33 lbs/hr (each),PDF p5; NOx PDF p11
+74265,2026-08-13,EG-41 through EG-55,15,"(15) MTU Model 16V4000G84S; 2,250 ekW, 3,357 bhp (each)",2250,diesel,emergency,44.33 lbs/hr (each),PDF p5; NOx PDF p11
+74265,2026-08-13,EG-56 through EG-80,25,"(25) MTU Model 16V4000G84S; 2,250 ekW, 3,357 bhp (each); SCR",2250,diesel,emergency,3.70 lbs/hr controlled; 44.33 lbs/hr uncontrolled (each),PDF p5; NOx PDF p11

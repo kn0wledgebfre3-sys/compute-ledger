@@ -1,0 +1,418 @@
+[
+ {
+  "entry_id": "global-gem-2024-ewaste",
+  "registry_file": "minerals_ewaste.json",
+  "documents_read": [
+   "GEM_2024_EN_11_NOV-web.pdf (pp. 1, 7-8, 12-18, 28-34, 40-42, 54, 58, 108, 120; full text searched)"
+  ],
+  "findings": "The PDF is the report the entry cites (same file name as its source URL); its cover reads 'Edition 2: November 2024' and a corrigendum (pp. 7-8) lists changes to legislation counts, metal figures, Colombia and South Africa, none touching the entry's figures. Confirmed: 62 billion kg in 2022, 7.8 kg per capita, 13.8 billion kg (22.3 per cent) documented as formally collected and recycled (pp. 12, 30; annex table p. 120); Europe 42.8 per cent and Africa 'below 1 per cent' (p. 14; chart 0.7%); 82 billion kg and 20 per cent in 2030 under business as usual (p. 18); small IT 5 billion kg and 22 per cent (p. 14); USD 91 billion of metals (p. 16). Transboundary: 5.1 billion kg, 3.3 billion kg (65 per cent) uncontrolled (pp. 17, 40-41), and 'the remaining 1.86 billion kg (35 per cent of total transboundary movements)' as controlled (p. 42): 1.86 and 35% are as printed, so the ledger's 1.86 is right; the report's own figures do not add exactly. The year is 2022 in the executive summary (p. 17) but 2019 in chapter 4 and Figure 16 (pp. 40-41). Small-IT generation appears as 5, 4.9 and 4.6 billion kg (pp. 14, 29, 30). Servers sit in UNU-key 0307 'Professional IT Equipment' within large equipment (p. 108). Record re-anchored with pages; one 65% row added; transboundary and small-IT row notes updated.",
+  "new_record": "GEM 2024 (ITU/UNITAR; launched 20 March 2024; the PDF read is 'Edition 2: November 2024', whose corrigendum (pp. 7-8) does not touch these figures) records 62 billion kg of e-waste generated in 2022 (7.8 kg/capita), of which 13.8 billion kg (22.3%) was documented as formally collected and recycled (pp. 12, 30); Europe 42.8%, Africa under 1% (p. 14); projection 82 billion kg by 2030 with the rate falling to 20% under business as usual (p. 18). Small IT and telecommunication equipment totaled about 5 billion kg in 2022 with only 22% documented as formally collected and recycled (p. 14). 5.1 billion kg crossed borders, 3.3 billion kg (65%) of it as uncontrolled movements from high-income to middle- and low-income countries and the remaining 1.86 billion kg (35%) as controlled movements (pp. 17, 40-42). Metals value in 2022 e-waste: USD 91 billion (p. 16). Servers are counted within 'professional IT equipment' under large equipment, not as a separate category (p. 108).",
+  "new_claim": null,
+  "new_gap": "The report dates the 5.1 billion kg transboundary figure to 2022 in its executive summary (p. 17) and to 2019 in chapter 4 and Figure 16 (pp. 40-41), which adapt the Global Transboundary E-waste Flows Monitor 2022; its 1.86 billion kg remainder differs from 5.1 minus 3.3 billion kg (1.8). Small-IT generation is given as 5 (pp. 14, 29), 4.9 (Figure 4, p. 29) and 4.6 billion kg (p. 30). No server-specific figure exists.",
+  "set": {
+   "verification_status": "verified",
+   "confidence": "high"
+  },
+  "add_record_sources": [],
+  "add_claim_sources": [],
+  "rows_add": [
+   {
+    "entry_id": "global-gem-2024-ewaste",
+    "side": "record",
+    "metric": "share_other",
+    "metric_detail": "uncontrolled transboundary movements (high-income to middle- and low-income countries) as share of total transboundary e-waste movements",
+    "value_as_published": "65%",
+    "unit_as_published": "pct",
+    "value": "65",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "official_statistic",
+    "source_url": "https://ewastemonitor.info/wp-content/uploads/2024/12/GEM_2024_EN_11_NOV-web.pdf",
+    "notes": "pp. 17, 40-41; year differs within the report: executive summary (p. 17) says 2022; chapter 4 (pp. 40-41) and Figure 16 say 2019, adapted from the Global Transboundary E-waste Flows Monitor 2022; period left blank"
+   }
+  ],
+  "rows_edit": [
+   {
+    "match": {
+     "value_as_published": "about 5 billion kg",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "pp. 14 and 29 (text); Figure 4 (p. 29) gives 4.9 and the category figure on p. 30 gives 4.6 billion kg"
+    },
+    "why": "pages now read; the three published values are located"
+   },
+   {
+    "match": {
+     "value_as_published": "5.1 billion kg",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "pp. 17, 40-41; year differs within the report: executive summary (p. 17) says 2022; chapter 4 (pp. 40-41) and Figure 16 say 2019, adapted from the Global Transboundary E-waste Flows Monitor 2022; period left blank"
+    },
+    "why": "report read: the year ambiguity is in the report itself, now located by page"
+   },
+   {
+    "match": {
+     "value_as_published": "3.3 billion kg",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "uncontrolled and undocumented movements (65%); pp. 17, 40-41; year differs within the report: executive summary (p. 17) says 2022; chapter 4 (pp. 40-41) and Figure 16 say 2019, adapted from the Global Transboundary E-waste Flows Monitor 2022; period left blank"
+    },
+    "why": "report read: the report describes these as uncontrolled movements; year ambiguity located by page"
+   },
+   {
+    "match": {
+     "value_as_published": "1.86 billion kg",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "p. 42, 'the remaining 1.86 billion kg (35 per cent of total transboundary movements)', as printed; 5.1 - 3.3 = 1.8 and 1.86 / 5.1 = 36.5%, so the report's figures do not add exactly; year as for the 5.1 billion kg row"
+    },
+    "why": "report read: 1.86 billion kg is the printed figure, so the earlier note's suggestion that it may be 1.8 is withdrawn"
+   },
+   {
+    "match": {
+     "value_as_published": "35%",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "p. 42, as printed (1.86 / 5.1 = 36.5%); year as for the 5.1 billion kg row"
+    },
+    "why": "report read; page and arithmetic recorded"
+   }
+  ],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "gem_2024.pdf",
+    "status": "obtained",
+    "result": "Global E-waste Monitor 2024, Edition 2 (November 2024), the PDF the entry cites; 62 billion kg (2022), 13.8 billion kg / 22.3%, and 1.86 billion kg / 35% (p. 42) confirmed as printed; transboundary year is 2022 in the summary and 2019 in chapter 4. Entry set to verified/high."
+   }
+  ]
+ },
+ {
+  "entry_id": "cl-lithium-atacama-sqm-sma",
+  "registry_file": "minerals_ewaste.json",
+  "documents_read": [
+   "Sentencia_R-21_26102020_FIRMADA.pdf (pp. 1-6, 13, 16-17, 23, 34, 49, 53-54 read; full text searched for Atacama, Salar, F-041, case numbers)"
+  ],
+  "findings": "The ruling is Primer Tribunal Ambiental case R-21-2019, dated and signed in Antofagasta on 27 Oct 2020 (p. 1, p. 54; the file name says 26 Oct). It decides a claim filed 22 Mar 2019 by the Comunidad Indígena Aymara de Quillagua and the Comunidad Indígena Quechua de Huatacondo against SMA Res. Ex. N°24 of 26 Feb 2019, which approved SQM S.A.'s third (refundido) compliance program in sanction procedure Rol D-027-2016 and suspended that procedure (p. 1). D-027-2016 concerns SQM S.A.'s Pampa Hermosa project (RCA N°890/2010), eight charges about the hydraulic barrier and monitoring of the Salar de Llamara puquios (pp. 16-17). The court rejected the claim in all parts and kept Res. Ex. N°24 in force, without costs (p. 54). It neither annulled an approval nor ordered anything, and it does not concern the Salar de Atacama or SQM Salar's F-041-2016 program; 'Atacama' and 'F-041' do not occur in it. It cites an earlier ruling of the same court, R-17-2019, on another point (p. 34) without saying what that case concerned. So the entry's link of the 2022 program to R-21-2019 (via Minería Chilena) is not supported by the ruling; either the article or the entry's transcription names the wrong case. Record and gap amended; no rows changed.",
+  "new_record": "Chile's Superintendencia del Medio Ambiente (SMA) opened sanction proceeding Rol F-041-2016 in November 2016 after an audit found brine over-extraction and incomplete information (six infractions [press: Diario Financiero, Minería Chilena]; charge 1 covers brine extraction above the authorised amount between August 2013 and August 2015). The SMA approved SQM Salar's compliance program by Res. Ex. N° 38/2022 of 29 August 2022 (cost more than CLP 46,000 million [press: Diario Financiero], about USD 52 million [press: Reuters via Mining.com]). The program steps the average maximum brine extraction down to 822 L/s from 2027 (slightly under 50% of the limit in RCA 226/2006), a step tied to an EIA still under evaluation, with a limit of 1,026 L/s for the 2025–2026 environmental year, and caps industrial freshwater pumping at 120 L/s (-50% versus RCA 226/2006). SQM filed progress report 15 of 20 on 27 Feb 2026 (program period 30 Aug 2022–28 May 2027). Minería Chilena links the program to the Primer Tribunal Ambiental's ruling in case R-21-2019 [press: Minería Chilena], but that ruling (27 Oct 2020) concerns another procedure: it rejected a claim by the Aymara community of Quillagua and the Quechua community of Huatacondo against SMA Res. Ex. N°24 of 26 Feb 2019, which approved SQM S.A.'s compliance program for the Pampa Hermosa project (Rol D-027-2016, Salar de Llamara), and left that approval in force. Reuters describes the 2022 program as a revision of a previous plan 'mandated by a local environmental court in 2020' [press: Reuters via Mining.com]; no ruling on F-041-2016 was read.",
+  "new_claim": null,
+  "new_gap": "Regulator record (822 L/s from 2027, conditional on a pending EIA; 1,026 L/s in 2025–2026) and company claim (50% by 2030) point the same way; no measured extraction volumes against these limits found yet in the documents read. The court ruling that preceded the 2022 program in F-041-2016 is not identified in the documents read; case R-21-2019 concerns Pampa Hermosa (D-027-2016).",
+  "set": {
+   "verification_status": "partial",
+   "confidence": "medium"
+  },
+  "add_record_sources": [
+   {
+    "title": "Sentencia Rol R-21-2019 (Comunidad Indígena Aymara de Quillagua y otra con Superintendencia del Medio Ambiente; Res. Ex. N°24/2019, SQM S.A. Pampa Hermosa, Rol D-027-2016)",
+    "url": "https://www.portaljudicial1ta.cl/sgc-web/sentencias.html",
+    "publisher": "Primer Tribunal Ambiental (Antofagasta)",
+    "date": "2020-10-27"
+   }
+  ],
+  "add_claim_sources": [],
+  "rows_add": [],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "tribunal_r21_2019.pdf",
+    "status": "contradicts",
+    "result": "Ruling R-21-2019 (27 Oct 2020) rejected indigenous communities' claim and upheld SMA Res. Ex. N°24/2019 approving SQM S.A.'s compliance program for Pampa Hermosa (D-027-2016, Salar de Llamara); it annulled nothing and does not concern the Salar de Atacama program (F-041-2016) the entry links it to. Entry record and gap corrected."
+   }
+  ]
+ },
+ {
+  "entry_id": "ar-stargate-argentina-rigi",
+  "registry_file": "latam_mena_africa.json",
+  "documents_read": [
+   "RIGI _ Argentina.gob.ar.pdf (5 pp., browser print 24/10/2026 13:40, anchor #20-la-pampa; text and page images)",
+   "RIGI _ Argentina.gob.ar.2pdf.pdf (5 pp., same print time, anchor #1-buenos-aires; text and p. 5 image)"
+  ],
+  "findings": "Both prints of argentina.gob.ar/economia/rigi (24 Oct 2026 13:40) show the same totals: 26 approved projects ('Projects that have been published in the Official Gazette are considered approved'), total investment USD 69.779 M, 124,876 jobs; sectors 2 electrical energy, 9 oil and gas, 12 mining, 1 iron and steel, 1 infrastructure, 1 technology (pp. 1-2). Under evaluation: 22 projects, USD 139.615 M, 125.040 jobs; sectors electrical energy 3, oil and gas 12, mining 6, infrastructure 1, no technology (pp. 3-4). The investment-plan chart (p. 3) has no technology series. The province map lists projects only for the province selected: La Pampa, one approved project (expansion of Tramo I of the Perito Moreno gas pipeline); Buenos Aires, 5 approved projects, USD 4.961M, 23.482 jobs: Sidersa, Parque Eólico Olavarría, Ampliación Mega, Fertilizantes, Toyota (p. 5; the list may continue below the fold). Holders and per-project investment are not shown. No Stargate, OpenAI, Sur Energy or data-centre text appears; the one approved 'Technology' project is not named in the prints, so whether it is a data centre is not shown. Record and gap updated; three count rows added.",
+  "new_record": "In May 2026 the Economy Ministry told Perfil that no resolution had put the declared intention into effect, that nothing supported the Stargate statement of intent and that it gives no information on RIGI projects before they are published in the Official Gazette [press: Perfil, 24 May 2026]. The FARN RIGI Observatory (Darío Clemente) counted 17 projects approved and 23 projects under evaluation, none of them Stargate [NGO: FARN, via Perfil]. The Ministry's own release of 11 Jun 2026 gives 16 approved and 25 projects under evaluation without naming projects. The Ministry's RIGI site, printed 24 Oct 2026, shows 26 approved projects (those published in the Official Gazette) and 22 projects under evaluation. By sector, 1 approved project is in 'Technology' and none under evaluation is; the pages printed name projects only for La Pampa and Buenos Aires, so that project is not identified, and they name no Stargate, OpenAI or Sur Energy project. No site has been confirmed.",
+  "new_claim": null,
+  "new_gap": "Only the OpenAI–Sur Energy letter of intent is described by a party to it, and it carries no MW, investment or RIGI terms; the US$25 bn / 500 MW / RIGI framing comes from the Presidency's X post and press; the RIGI site (printed 24 Oct 2026) does not name its one approved 'Technology' project, and no RIGI filing, Boletín Oficial entry, site or permit record for Stargate or Sur Energy was found (Oct 2026).",
+  "set": {
+   "verification_status": "partial",
+   "confidence": "medium"
+  },
+  "add_record_sources": [
+   {
+    "title": "RIGI – Régimen de Incentivo para Grandes Inversiones: approved projects and projects under evaluation (official project site; page printed 24 Oct 2026)",
+    "url": "https://www.argentina.gob.ar/economia/rigi",
+    "publisher": "Ministerio de Economía (Argentina)",
+    "date": "2026-10-24"
+   }
+  ],
+  "add_claim_sources": [],
+  "rows_add": [
+   {
+    "entry_id": "ar-stargate-argentina-rigi",
+    "side": "record",
+    "metric": "count_other",
+    "metric_detail": "RIGI projects approved (Ministry of Economy RIGI site; approved = published in the Official Gazette)",
+    "value_as_published": "26 approved projects",
+    "unit_as_published": "count",
+    "value": "26",
+    "value_high": "",
+    "period_start": "2026-10-24",
+    "period_end": "2026-10-24",
+    "basis": "official_statistic",
+    "source_url": "https://www.argentina.gob.ar/economia/rigi",
+    "notes": "page as printed 24 Oct 2026"
+   },
+   {
+    "entry_id": "ar-stargate-argentina-rigi",
+    "side": "record",
+    "metric": "count_other",
+    "metric_detail": "RIGI projects under evaluation (Ministry of Economy RIGI site)",
+    "value_as_published": "22 projects under evaluation",
+    "unit_as_published": "count",
+    "value": "22",
+    "value_high": "",
+    "period_start": "2026-10-24",
+    "period_end": "2026-10-24",
+    "basis": "official_statistic",
+    "source_url": "https://www.argentina.gob.ar/economia/rigi",
+    "notes": "page as printed 24 Oct 2026; sectors shown: electrical energy, oil and gas, mining, infrastructure (no technology)"
+   },
+   {
+    "entry_id": "ar-stargate-argentina-rigi",
+    "side": "record",
+    "metric": "count_other",
+    "metric_detail": "RIGI approved projects in the 'Technology' sector (Ministry of Economy RIGI site)",
+    "value_as_published": "1 approved project",
+    "unit_as_published": "count",
+    "value": "1",
+    "value_high": "",
+    "period_start": "2026-10-24",
+    "period_end": "2026-10-24",
+    "basis": "official_statistic",
+    "source_url": "https://www.argentina.gob.ar/economia/rigi",
+    "notes": "page as printed 24 Oct 2026; project not named in the pages printed; not shown to be a data centre"
+   }
+  ],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-26_ar-stargate-argentina-rigi.pdf",
+    "status": "partial",
+    "result": "Prints of 24 Oct 2026 show 26 approved and 22 projects under evaluation with sector counts (1 approved 'Technology', none under evaluation) and named projects only for La Pampa and Buenos Aires; no Stargate, OpenAI or Sur Energy project appears, but the full list (holders, investments) and the technology project are not shown. Record, gap and 3 count rows updated."
+   }
+  ]
+ },
+ {
+  "entry_id": "in-gujarat-jamnagar-policy",
+  "registry_file": "asia_pacific.json",
+  "documents_read": [
+   "ViewFile.pdf (13 pp., all read): Viksit Gujarat Data Center Policy (2026-29), G.R. No. DST/MIT/e-file/24/2026/0624/IT, Letter No. DST/0088/08/2026, approved 06-08-2026, e-signed by P. Bharathi, Secretary DST",
+   "ViewFile (1).pdf, (2).pdf, (3).pdf, (4).pdf (text searched for 'data center/centre': Electronics Component Manufacturing Policy 2025, Science Technology and Innovation Policy 2026-2031 (two copies), Industrial Policy 2015 incentive scheme; no data-centre provision found)"
+  ],
+  "findings": "The G.R. confirms each policy term the entry had from summaries: target of 7.5 GW (§4(b), p. 3; §7.9, p. 10 also limits incentives to an aggregate 7.5 GW); 'a minimum of 51%' of electricity for core operations from green and renewable energy (§7.1, p. 9); 100% reimbursement of electricity duty actually paid for 20 years from commercial operation (§6.1 item 5, p. 6); 'Essential Service' under the Gujarat Essential Services Maintenance Act, 1972 (§8, p. 10). Water: captive desalination support of 20% of capex or INR 2 crore/MLD, whichever is lower, for plants up to 20 MLD per GW, scaled pro rata (§6.3, p. 8); 24x7 water to the doorstep (§6.5, p. 9); entities 'expected' to meet water needs primarily through captive desalination 'wherever feasible' (§7.11, p. 10). Also: INR 1 per unit power-tariff reimbursement for 20 years (§6.1 item 3); eligibility from 150 MW approved IT load (§7.6); incentives capped at 75% of EFCI, disbursed over 20 years, 5% a year (§7.2-7.3); EFCI capped at INR 60,000 crore per GW (§5(d)). The G.R. does not mention Jamnagar, Reliance, Meta, 168 MW, or a Rs 6 lakh crore investment figure. Record rewritten from the G.R.; requirement rows re-sourced; four rows added.",
+  "new_record": "Gujarat DST G.R. No. DST/MIT/e-file/24/2026/0624/IT (approved 06-08-2026) issues the Viksit Gujarat Data Center Policy (2026-29). Data-centre entities must source a minimum of 51% of electricity for core operations from green and renewable energy (§7.1). Incentives include 100% reimbursement of electricity duty actually paid for 20 years from commercial operation, power-tariff reimbursement of INR 1 per unit for 20 years, and capital support for captive desalination plants up to 20 MLD per GW of data-centre capacity (§6.1, §6.3); the State is to supply 24x7 water to the doorstep, and entities are 'expected' to meet water needs primarily from captive desalination where feasible (§6.5, §7.11). Only projects with approved IT load of 150 MW or above qualify, and total incentives are capped at 75% of Eligible Fixed Capital Investment (§7.2, §7.6). Data-centre operation is an 'Essential Service' under the Gujarat Essential Services Maintenance Act, 1972 (§8). The G.R. does not mention Jamnagar, Reliance, Meta or 168 MW.",
+  "new_claim": "The policy's target is the establishment of 7.5 GW of data-centre capacity in Gujarat (G.R. §4(b); the Gujarat government's own aim). An investment figure of ~Rs 6 lakh crore is reported by SuperKalam citing The Indian Express and does not appear in the G.R. The same summary reports the Reliance-Meta Jamnagar site at 168 MW initial capacity using renewable energy and desalinated seawater for cooling. Reliance has publicly described the Jamnagar project as the world's largest AI data centre (gigawatt-scale) in press coverage.",
+  "new_gap": "The G.R. sets incentive terms and conditions but no water-use or electricity-use limits for any site; no High Powered Committee approval, water permit or desalination plant record for the Jamnagar site was located, and the 168 MW initial capacity and the Rs 6 lakh crore figure rest on a tertiary summary of press.",
+  "set": {
+   "verification_status": "verified",
+   "confidence": "high"
+  },
+  "add_record_sources": [
+   {
+    "title": "Viksit Gujarat Data Center Policy (2026-29), G.R. No. DST/MIT/e-file/24/2026/0624/IT (listed on the DST Policies page)",
+    "url": "https://dst.gujarat.gov.in/Home/Policies",
+    "publisher": "Department of Science and Technology, Government of Gujarat",
+    "date": "2026-08-06"
+   }
+  ],
+  "add_claim_sources": [
+   {
+    "title": "Viksit Gujarat Data Center Policy (2026-29), G.R. No. DST/MIT/e-file/24/2026/0624/IT (listed on the DST Policies page)",
+    "url": "https://dst.gujarat.gov.in/Home/Policies",
+    "publisher": "Department of Science and Technology, Government of Gujarat",
+    "date": "2026-08-06"
+   }
+  ],
+  "rows_add": [
+   {
+    "entry_id": "in-gujarat-jamnagar-policy",
+    "side": "record",
+    "metric": "price_or_tariff",
+    "metric_detail": "power-tariff reimbursement to approved data-centre entities, INR per unit (kWh) consumed (Gujarat policy subsidy rate)",
+    "value_as_published": "INR 1 per unit",
+    "unit_as_published": "money_per_unit",
+    "value": "1",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "government_document",
+    "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+    "notes": "incentive rate, currency INR; for 20 years from commercial operation; G.R. DST/MIT/e-file/24/2026/0624/IT §6.1 item 3, p. 6"
+   },
+   {
+    "entry_id": "in-gujarat-jamnagar-policy",
+    "side": "record",
+    "metric": "other",
+    "metric_detail": "captive desalination plant capacity eligible for capital support per 1 GW of data-centre capacity (Gujarat policy)",
+    "value_as_published": "up to 20 MLD",
+    "unit_as_published": "MLD",
+    "value": "20",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "government_document",
+    "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+    "notes": "eligibility ceiling for support, not a plant or actual water use; scaled pro rata (10 MLD for 500 MW); support 20% of capex or INR 2 crore/MLD, whichever is lower; G.R. DST/MIT/e-file/24/2026/0624/IT §6.3, p. 8"
+   },
+   {
+    "entry_id": "in-gujarat-jamnagar-policy",
+    "side": "record",
+    "metric": "other",
+    "metric_detail": "minimum approved installed IT load for a data-centre project to be eligible under the Gujarat policy",
+    "value_as_published": "150 MW or above",
+    "unit_as_published": "MW",
+    "value": "150",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "government_document",
+    "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+    "notes": "threshold, not a capacity; G.R. DST/MIT/e-file/24/2026/0624/IT §7.6, p. 10"
+   },
+   {
+    "entry_id": "in-gujarat-jamnagar-policy",
+    "side": "record",
+    "metric": "share_other",
+    "metric_detail": "ceiling on total financial incentives as share of Eligible Fixed Capital Investment (EFCI), Gujarat data-centre policy",
+    "value_as_published": "75% of Eligible Fixed Capital Investment",
+    "unit_as_published": "pct",
+    "value": "75",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "government_document",
+    "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+    "notes": "cap; disbursed over 20 years, annual disbursement capped at 5% of the total; G.R. DST/MIT/e-file/24/2026/0624/IT §7.2-7.3, p. 9"
+   }
+  ],
+  "rows_edit": [
+   {
+    "match": {
+     "value_as_published": ">=51%",
+     "side": "record"
+    },
+    "changes": {
+     "value_as_published": "a minimum of 51%",
+     "basis": "government_document",
+     "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+     "notes": "requirement (lower bound), not actual; G.R. DST/MIT/e-file/24/2026/0624/IT §7.1, p. 9"
+    },
+    "why": "now read in the G.R.; wording as published there; re-sourced from the tertiary summary to the policy"
+   },
+   {
+    "match": {
+     "value_as_published": "100% electricity duty",
+     "side": "record"
+    },
+    "changes": {
+     "value_as_published": "100% reimbursement of electricity duty",
+     "basis": "government_document",
+     "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+     "notes": "incentive; of electricity duty actually paid; public money, no amount stated; G.R. DST/MIT/e-file/24/2026/0624/IT §6.1 item 5, p. 6"
+    },
+    "why": "now read in the G.R.; re-sourced to the policy"
+   },
+   {
+    "match": {
+     "value_as_published": "20 years",
+     "side": "record"
+    },
+    "changes": {
+     "basis": "government_document",
+     "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+     "notes": "from the date of commencement of commercial operations; G.R. DST/MIT/e-file/24/2026/0624/IT §6.1 item 5, p. 6"
+    },
+    "why": "now read in the G.R.; re-sourced to the policy"
+   },
+   {
+    "match": {
+     "value_as_published": "7.5 GW",
+     "side": "claim"
+    },
+    "changes": {
+     "basis": "government_document",
+     "source_url": "https://dst.gujarat.gov.in/Home/Policies",
+     "notes": "policy target (plan), G.R. DST/MIT/e-file/24/2026/0624/IT §4(b), p. 3; §7.9 also limits incentives to an aggregate 7.5 GW; policy period 2026-29"
+    },
+    "why": "target now read in the G.R.; re-sourced to the policy"
+   },
+   {
+    "match": {
+     "value_as_published": "~Rs 6 lakh crore",
+     "side": "claim"
+    },
+    "changes": {
+     "notes": "currency INR; 1 lakh crore = 10^12; approximate; reported by SuperKalam citing The Indian Express; not stated in the G.R. (read 2026-10-24)"
+    },
+    "why": "the G.R. was read and contains no investment target, so the note says so"
+   }
+  ],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-01_in-gujarat-jamnagar-policy.pdf",
+    "status": "obtained",
+    "result": "G.R. DST/MIT/e-file/24/2026/0624/IT (approved 06-08-2026) read in full: confirms 7.5 GW target, minimum 51% green power, 100% electricity-duty reimbursement for 20 years, ESMA essential-service status, and captive-desalination support up to 20 MLD per GW; no Jamnagar, Reliance or 168 MW reference. Record rewritten from the G.R."
+   }
+  ]
+ },
+ {
+  "entry_id": "tw-taipower-north-5mw-cap",
+  "registry_file": "asia_pacific.json",
+  "documents_read": [
+   "2022sustainability.pdf (132 pp., English; full text searched)",
+   "2024Sustainability.pdf (132 pp., English; full text searched; PDF p. 93 read)",
+   "2025-Taipower-Sustainability-Report-e.pdf (152 pp., English; full text searched; PDF pp. 5, 15, 64, 73, 76 read)"
+  ],
+  "findings": "The press release sought was not obtained. None of the three reports mentions the 5 MW threshold, the suspension of supply to data centres north of Taoyuan, the 93.1 / 75.0 billion kWh (931 / 750 億度) northern comparison, or a large-load connection rule. 2022 report: data centres appear only as Taipower's own cloud data centres (p. 8). 2024 report (PDF p. 93, printed p. 92): with rising demand from the AI and semiconductor industries, power development 'must follow the principle of regional balance'; dedicated lines from five power plants to seven industrial parks, main grid reserved for civilian use. 2025 report: Chairman's statement (PDF p. 5, printed p. 4) introduces a 'Power Couple' concept, 'In response to the development of AI data centers', matching high demand with regional power sources and reducing cross-regional transmission; PDF p. 76 (printed p. 75) repeats the regional-balance principle and maps the five plants paired with seven parks, the Datan plant with Taoyuan Industrial Park and Taoyuan Aerotropolis; north-south 345 kV trunk upgrades (PDF p. 64). These are Taipower's own statements, so one sentence is added to the claim with the 2025 report as source; record, rows and status unchanged.",
+  "new_record": null,
+  "new_claim": "Taipower says it encourages data centres to locate in central and southern Taiwan where surplus and renewable supply is greater; MOEA says new data centres should be near power plants where possible. Taipower's 2025 Sustainability Report says that, in response to AI data centers and energy-intensive industries, it will promote a 'Power Couple' concept matching high demand with regional power sources to reduce cross-regional transmission (p. 4), and maps five power plants paired with seven industrial parks for new dedicated supply lines, the Datan plant with the Taoyuan parks (p. 75). In July 2026 Tseng said Taipower would support local AI data-centre zones near northern power plants after grid/substation assessment [press: Taipei Times], and MOEA Minister Kung Ming-hsin told the Legislative Yuan economic committee that 5 MW+ AI data centres could be sited north of Taoyuan conditionally, within roughly 2 km of the Datan and Hsieh-ho plants [press: UDN]; Taoyuan plans an AI computing centre near the Datan gas plant. MOEA's Industrial Development Administration estimates that data-centre electricity demand will increase by 1 GW by 2030 [press: Economic Daily News, 27 Apr 2026].",
+  "new_gap": "Taipower's first public statement of the suspension is dated 9-10 Aug 2024, but reports dating its start to Aug/Sep 2023 are unreconciled; no Taipower primary notice, application counts or MW totals for refused applications are public, and Taipower's English sustainability reports for 2022, 2024 and 2025 do not mention the 5 MW threshold, the suspension or the 2023 northern consumption and generation figures; the July 2026 conditional easing (~2 km from Datan/Hsieh-ho) is known only from press accounts of a Legislative Yuan session.",
+  "set": {},
+  "add_record_sources": [],
+  "add_claim_sources": [
+   {
+    "title": "2025 Taipower Sustainability Report (English)",
+    "url": "https://service.taipower.com.tw/csr/en/download/sustainables/Bd/2025-Taipower-Sustainability-Report-e.pdf",
+    "publisher": "Taiwan Power Company",
+    "date": "2026"
+   }
+  ],
+  "rows_add": [],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-15_tw-taipower-north-5mw-cap.pdf",
+    "status": "not_obtained",
+    "result": "The 10 Aug 2024 press release was not obtained; Taipower's English sustainability reports for 2022, 2024 and 2025 were read instead and do not mention the 5 MW threshold, the northern suspension or the 93.1/75.0 billion kWh figures; the 2025 report's 'Power Couple' and regional-balance statements were added to the claim."
+   },
+   {
+    "save_as": "2-16_tw-taipower-north-5mw-cap.pdf",
+    "status": "not_obtained",
+    "result": "Blocked: the MOEA site denied access in the browser; nothing obtained, entry unchanged on this point."
+   },
+   {
+    "save_as": "2-17_tw-tsmc-hsinchu-2021-drought.pdf",
+    "status": "not_obtained",
+    "result": "Blocked: the MOEA site denied access in the browser; nothing obtained."
+   }
+  ]
+ }
+]

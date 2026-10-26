@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use the Compute Ledger, please cite it as below, with the version you used."
+type: dataset
+title: "Compute Ledger: public records on the physical, social and economic footprint of AI compute"
+authors:
+  - name: "Compute Ledger contributors"
+version: "1.0.0"
+license:
+  - CC-BY-4.0
+  - MIT
+repository-code: "https://github.com/kn0wledgebfre3-sys/compute-ledger"
+url: "https://kn0wledgebfre3-sys.github.io/compute-ledger/"
+abstract: >-
+  A public, evidence-based ledger of AI compute's physical, social and economic
+  footprint, site by site, built only from public documents. Records (regulators,
+  courts, grid operators, statistics offices, auditors, registries, customs) are
+  kept apart from claims (what companies and governments say). It holds a registry
+  of sourced entries; one validated table of figures with units, periods and the
+  basis of each; a register of sites with coordinates where a document gives
+  them; a table of documented supply links from mine to site; metered electricity,
+  water and fuel from regulators; and the pipeline that rebuilds every output from
+  its sources. Data and text are CC BY 4.0; code is MIT.
+keywords:
+  - datacenters
+  - AI compute
+  - electricity
+  - emissions
+  - water
+  - air permits
+  - public records
+  - supply chain
+  - semiconductors

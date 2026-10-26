@@ -1,0 +1,527 @@
+{
+ "_about": "Controlled vocabulary for data/measurements.csv. Every row's metric must be a key of 'metrics'; every unit_as_published must be a key of 'units'. A unit converts to its dimension's canonical unit by the stated factor; units with factor null are kept as published and value_canonical is left empty. Edit this file to add a metric or unit; CI rejects anything not listed.",
+ "dimensions": {
+  "energy": "MWh",
+  "power": "MW",
+  "thermal_power": "MWth",
+  "apparent_power": "MVA",
+  "mass": "t",
+  "volume": "m3",
+  "volume_rate": "m3/day",
+  "area": "ha",
+  "floor_area": "m2",
+  "money": "as published (no currency conversion)",
+  "count": "count",
+  "share": "pct",
+  "duration": "h",
+  "sound": "dBA",
+  "ratio": "as published",
+  "intensity": "as published",
+  "concentration": "as published",
+  "length": "km",
+  "power_unspecified": "MW (the document does not say electrical or thermal)",
+  "temperature": "degC",
+  "compute": "as published",
+  "voltage": "kV",
+  "gas_volume": "m3"
+ },
+ "units": {
+  "MWh": {
+   "dimension": "energy",
+   "factor": 1
+  },
+  "kWh": {
+   "dimension": "energy",
+   "factor": 0.001
+  },
+  "GWh": {
+   "dimension": "energy",
+   "factor": 1000
+  },
+  "TWh": {
+   "dimension": "energy",
+   "factor": 1000000
+  },
+  "GJ": {
+   "dimension": "energy",
+   "factor": 0.277777777778,
+   "note": "1 GJ = 1/3.6 MWh"
+  },
+  "TJ": {
+   "dimension": "energy",
+   "factor": 277.777777778
+  },
+  "PJ": {
+   "dimension": "energy",
+   "factor": 277777.777778
+  },
+  "kBtu": {
+   "dimension": "energy",
+   "factor": 0.00029307107,
+   "note": "1 kBtu = 0.29307107 kWh (ENERGY STAR Portfolio Manager uses 3.412 kBtu per kWh)"
+  },
+  "MMBtu": {
+   "dimension": "energy",
+   "factor": 0.29307107
+  },
+  "MW": {
+   "dimension": "power",
+   "factor": 1
+  },
+  "MWe": {
+   "dimension": "power",
+   "factor": 1
+  },
+  "kW": {
+   "dimension": "power",
+   "factor": 0.001
+  },
+  "GW": {
+   "dimension": "power",
+   "factor": 1000
+  },
+  "aMW": {
+   "dimension": "power",
+   "factor": 1,
+   "note": "average megawatts: annual energy divided by hours in the year"
+  },
+  "MWth": {
+   "dimension": "thermal_power",
+   "factor": 1
+  },
+  "MVA": {
+   "dimension": "apparent_power",
+   "factor": 1
+  },
+  "t": {
+   "dimension": "mass",
+   "factor": 1
+  },
+  "short_ton": {
+   "dimension": "mass",
+   "factor": 0.90718474,
+   "note": "US short ton; EPA's National Emissions Inventory reports in short tons"
+  },
+  "kg": {
+   "dimension": "mass",
+   "factor": 0.001
+  },
+  "lb": {
+   "dimension": "mass",
+   "factor": 0.00045359237
+  },
+  "kt": {
+   "dimension": "mass",
+   "factor": 1000
+  },
+  "Mt": {
+   "dimension": "mass",
+   "factor": 1000000
+  },
+  "m3": {
+   "dimension": "volume",
+   "factor": 1
+  },
+  "L": {
+   "dimension": "volume",
+   "factor": 0.001
+  },
+  "ML": {
+   "dimension": "volume",
+   "factor": 1000,
+   "note": "megalitre"
+  },
+  "GL": {
+   "dimension": "volume",
+   "factor": 1000000
+  },
+  "gal": {
+   "dimension": "volume",
+   "factor": 0.00378541178,
+   "note": "US gallon"
+  },
+  "Mgal": {
+   "dimension": "volume",
+   "factor": 3785.41178,
+   "note": "million US gallons"
+  },
+  "acre_ft": {
+   "dimension": "volume",
+   "factor": 1233.48184
+  },
+  "hm3": {
+   "dimension": "volume",
+   "factor": 1000000
+  },
+  "m3/day": {
+   "dimension": "volume_rate",
+   "factor": 1
+  },
+  "m3/s": {
+   "dimension": "volume_rate",
+   "factor": 86400
+  },
+  "L/s": {
+   "dimension": "volume_rate",
+   "factor": 86.4
+  },
+  "MLD": {
+   "dimension": "volume_rate",
+   "factor": 1000,
+   "note": "megalitres per day"
+  },
+  "MGD": {
+   "dimension": "volume_rate",
+   "factor": 3785.41178,
+   "note": "million US gallons per day"
+  },
+  "gpd": {
+   "dimension": "volume_rate",
+   "factor": 0.00378541178
+  },
+  "ha": {
+   "dimension": "area",
+   "factor": 1
+  },
+  "acre": {
+   "dimension": "area",
+   "factor": 0.40468564
+  },
+  "km2": {
+   "dimension": "area",
+   "factor": 100
+  },
+  "m2_land": {
+   "dimension": "area",
+   "factor": 0.0001
+  },
+  "sqft": {
+   "dimension": "floor_area",
+   "factor": 0.09290304
+  },
+  "m2": {
+   "dimension": "floor_area",
+   "factor": 1
+  },
+  "USD": {
+   "dimension": "money",
+   "factor": null
+  },
+  "EUR": {
+   "dimension": "money",
+   "factor": null
+  },
+  "GBP": {
+   "dimension": "money",
+   "factor": null
+  },
+  "other_currency": {
+   "dimension": "money",
+   "factor": null,
+   "note": "name the currency in metric_detail"
+  },
+  "count": {
+   "dimension": "count",
+   "factor": 1
+  },
+  "pct": {
+   "dimension": "share",
+   "factor": 1
+  },
+  "h": {
+   "dimension": "duration",
+   "factor": 1
+  },
+  "days": {
+   "dimension": "duration",
+   "factor": 24
+  },
+  "years": {
+   "dimension": "duration",
+   "factor": 8760
+  },
+  "dBA": {
+   "dimension": "sound",
+   "factor": 1
+  },
+  "ratio": {
+   "dimension": "ratio",
+   "factor": null,
+   "note": "PUE, load factor as a fraction, or another dimensionless ratio; say which in metric_detail"
+  },
+  "kBtu/sqft": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "L/kWh": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "t/MWh": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "lb/MWh": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "kg/MWh": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "gCO2/kWh": {
+   "dimension": "intensity",
+   "factor": null
+  },
+  "money_per_unit": {
+   "dimension": "intensity",
+   "factor": null,
+   "note": "a price or rate (cents/kWh, USD/MW-day); give the unit in metric_detail"
+  },
+  "mg/L": {
+   "dimension": "concentration",
+   "factor": null
+  },
+  "ug/dL": {
+   "dimension": "concentration",
+   "factor": null
+  },
+  "ug/m3": {
+   "dimension": "concentration",
+   "factor": null
+  },
+  "ppm": {
+   "dimension": "concentration",
+   "factor": null
+  },
+  "km": {
+   "dimension": "length",
+   "factor": 1
+  },
+  "mi": {
+   "dimension": "length",
+   "factor": 1.609344
+  },
+  "m": {
+   "dimension": "length",
+   "factor": 0.001
+  },
+  "MW_unspecified": {
+   "dimension": "power_unspecified",
+   "factor": 1,
+   "note": "a permit's MW figure where the document does not state whether it is electrical output or thermal input"
+  },
+  "months": {
+   "dimension": "duration",
+   "factor": 730.0,
+   "note": "1 month = 730 h (8,760 / 12)"
+  },
+  "degC": {
+   "dimension": "temperature",
+   "factor": 1
+  },
+  "degF": {
+   "dimension": "temperature",
+   "factor": null,
+   "note": "kept as published; convert by (F - 32) x 5/9 in metric_detail if needed"
+  },
+  "kWth": {
+   "dimension": "thermal_power",
+   "factor": 0.001
+  },
+  "kV": {
+   "dimension": "voltage",
+   "factor": 1
+  },
+  "gpm": {
+   "dimension": "volume_rate",
+   "factor": 5.45099296,
+   "note": "US gallons per minute"
+  },
+  "L/day": {
+   "dimension": "volume_rate",
+   "factor": 0.001
+  },
+  "L/h": {
+   "dimension": "volume_rate",
+   "factor": 0.024
+  },
+  "m3/yr": {
+   "dimension": "volume_rate",
+   "factor": 0.00273972603,
+   "note": "per 365-day year"
+  },
+  "GL/yr": {
+   "dimension": "volume_rate",
+   "factor": 2739.72603
+  },
+  "Bcf": {
+   "dimension": "gas_volume",
+   "factor": 28316846.6,
+   "note": "billion cubic feet of natural gas"
+  },
+  "MMcf/d": {
+   "dimension": "volume_rate",
+   "factor": 28316.8466,
+   "note": "million cubic feet per day"
+  },
+  "EFLOPS": {
+   "dimension": "compute",
+   "factor": null
+  },
+  "tHM": {
+   "dimension": "mass",
+   "factor": 1,
+   "note": "metric tonnes of initial heavy metal (MTHM) in nuclear fuel"
+  },
+  "klb_U3O8e": {
+   "dimension": "mass",
+   "factor": 0.45359237,
+   "note": "thousand pounds of U3O8 equivalent; the canonical value is tonnes of U3O8 equivalent, not contained uranium (about 0.848 of it)"
+  },
+  "Mgal/yr": {
+   "dimension": "volume_rate",
+   "factor": 10.3709912,
+   "note": "million US gallons per year (3,785.41178 m3 / 365 days)"
+  },
+  "MMBtu/h": {
+   "dimension": "thermal_power",
+   "factor": 0.29307107,
+   "note": "million British thermal units per hour (boiler heat input)"
+  },
+  "cfs": {
+   "dimension": "volume_rate",
+   "factor": 2446.57555,
+   "note": "cubic feet per second"
+  },
+  "acre_ft/yr": {
+   "dimension": "volume_rate",
+   "factor": 3.3794023,
+   "note": "acre-feet per year (1,233.48184 m3 / 365 days)"
+  },
+  "MMBtu/d": {
+   "dimension": "thermal_power",
+   "factor": 0.0122112946,
+   "note": "million British thermal units per day, a rate of gas supply or transport"
+  }
+ },
+ "metrics": {
+  "electricity_consumed": "energy: electricity used over the period (metered where basis=metered)",
+  "energy_consumed_total": "energy: all fuels and electricity used over the period",
+  "electricity_share": "share: a subject's share of a stated electricity total (name the total in metric_detail)",
+  "electricity_sales": "energy: a utility's sales over the period",
+  "electricity_generated": "energy: generation over the period",
+  "average_load": "power: average draw over the period",
+  "peak_demand": "power: peak or billing demand; say which (billing, coincident, non-coincident) in metric_detail",
+  "contracted_capacity": "power or apparent_power: capacity under contract or agreement (say which agreement type in metric_detail)",
+  "requested_capacity": "power or apparent_power: capacity requested or in a connection queue",
+  "approved_capacity": "power or apparent_power: capacity a regulator or utility approved or allocated",
+  "forecast_demand": "power or energy or thermal_power: forecast load (MW), consumption (GWh, TWh) or thermal load for a future period",
+  "connected_capacity": "power or apparent_power: grid connection capacity, substation rating",
+  "it_capacity": "power: IT load capacity as stated",
+  "planned_capacity": "power: announced or planned site capacity",
+  "generation_capacity": "power or thermal_power: generating plant capacity, electrical or heat (not standby)",
+  "permitted_standby_generation": "power: standby generators permitted (MWe, sum of unit ratings)",
+  "permitted_generation_thermal_input": "thermal_power: rated thermal input permitted",
+  "generator_count": "count: generating units",
+  "generator_fuel_burned": "energy: fuel burned by on-site generators (thermal energy, not electricity generated); name fuels in metric_detail",
+  "natural_gas_burned": "energy: natural gas burned on site",
+  "generator_hours": "duration: run hours, limit or actual (say which in metric_detail)",
+  "emissions_nox": "mass",
+  "emissions_co": "mass",
+  "emissions_voc": "mass",
+  "emissions_so2": "mass",
+  "emissions_pm10": "mass",
+  "emissions_pm25": "mass",
+  "emissions_hap": "mass",
+  "emissions_co2": "mass",
+  "emissions_co2e": "mass: CO2-equivalent; say GWP horizon and scope in metric_detail",
+  "emissions_limit": "mass: a permitted emissions cap; name the pollutant in metric_detail",
+  "emissions_intensity": "intensity",
+  "water_withdrawn": "volume or volume_rate: water taken, as a total or a rate",
+  "water_consumed": "volume or volume_rate: water consumed (evaporated or not returned)",
+  "water_discharged": "volume or volume_rate: water returned or discharged",
+  "water_rate": "volume_rate: water use or allocation per day or second",
+  "water_allocation": "volume or volume_rate: a permitted or allocated amount",
+  "land_area": "area",
+  "floor_area": "floor_area",
+  "investment": "money: capital spend, announced or recorded",
+  "public_money": "money: tax exemption, subsidy, abatement, grant; say which in metric_detail",
+  "cost_to_customers": "money or intensity: bill impact, cost shifted, capacity-market cost (a per-unit figure uses money_per_unit)",
+  "price_or_tariff": "intensity (money_per_unit) or money",
+  "jobs": "count: jobs, stated or audited (say which in metric_detail)",
+  "site_count": "count: datacenters, campuses, buildings, projects",
+  "customer_count": "count: customers or metered accounts (say which)",
+  "share_other": "share: any other percentage (say what of what in metric_detail)",
+  "pue": "ratio: power usage effectiveness",
+  "load_factor": "share or ratio",
+  "noise_level": "sound",
+  "heat_delivered": "energy: waste heat delivered to a heat network",
+  "production_mineral": "mass: mine or refinery output; name the mineral in metric_detail",
+  "waste_generated": "mass: e-waste or other waste generated",
+  "waste_recycled": "mass or share",
+  "hardware_lifetime": "duration: server or equipment useful life",
+  "concentration": "concentration: a pollutant concentration measured or limited",
+  "distance": "length",
+  "duration_other": "duration: any other period (moratorium length, permit term)",
+  "count_other": "count: any other count (say what in metric_detail)",
+  "other": "anything not above; metric_detail must say what it is",
+  "permitted_generation_as_stated": "power_unspecified: a permit's generator capacity where the document does not say whether it is electrical or thermal",
+  "emissions_avoided": "mass: emissions a project states it avoided (not emitted); never add to emissions totals",
+  "temperature": "temperature: a design or limit temperature",
+  "compute_capacity": "compute: computing power (EFLOPS or similar) as stated",
+  "voltage_level": "voltage: a connection voltage",
+  "emissions_scope2_location": "mass: Scope 2 emissions, location-based (grid-average factors)",
+  "emissions_scope2_market": "mass: Scope 2 emissions, market-based (after certificates, PPAs and supplier factors)",
+  "emissions_scope1": "mass: Scope 1 emissions",
+  "emissions_scope3": "mass: Scope 3 emissions (say which categories in metric_detail)",
+  "certificates_used": "energy or share: electricity claimed through certificates (unbundled RECs, GOs, I-RECs) or PPAs, in MWh or as a share of consumption; say which instrument in metric_detail",
+  "carbon_credits": "mass: carbon credits or removals contracted, retired or claimed; say which in metric_detail",
+  "cfe_share": "share: hourly carbon-free energy share or similar matching metric; say the method in metric_detail",
+  "trade_value": "money: value of goods crossing a border in a period, by product code and partner, from customs statistics",
+  "trade_quantity": "count or mass: quantity of goods crossing a border in a period, by product code and partner, from customs statistics",
+  "spent_fuel_stored": "mass or count: spent nuclear fuel held at a site (pool and dry storage) as of a date; metric_detail says assemblies or initial heavy metal and names the inventory",
+  "uranium_purchased": "mass: uranium purchased or delivered, in U3O8 equivalent; metric_detail gives origin, buyer group and delivery year",
+  "electricity_by_sourcing_method": "energy or share: electricity a company attributes to a sourcing method other than a certificate or PPA in its renewable matching or market-based accounting (on-site generation, renewable content of the grid mix, or no instrument); the method in metric_detail"
+ },
+ "bases": {
+  "metered": "a meter reading reported to or by a regulator, statistics office or public utility",
+  "filed": "a figure a utility or operator filed with a regulator or grid operator (demand, forecast, contract)",
+  "permitted": "a limit or rating in a permit or licence",
+  "inventory": "a regulator's emissions or activity inventory",
+  "official_statistic": "a statistics office or government aggregate",
+  "audit_or_court": "an auditor's or court's finding",
+  "regulator_decision": "a figure in a regulator's order or decision",
+  "estimate_by_record_holder": "an estimate made by the public body that published it (e.g., a market monitor's counterfactual)",
+  "company_statement": "a party's statement in its own voice: a company's or industry body's release, report, plan or filing narrative, or a government's announcement, plan, forecast or target (as opposed to its binding decisions, statistics and gazetted rules)",
+  "press_report": "a figure known only through a press report of a document",
+  "derived": "computed by the ledger from other rows (formula in metric_detail)",
+  "utility_published": "a figure a public utility, public power authority or grid operator published in its own documents (board papers, updates, statistics pages, presentations, letters to a regulator)",
+  "ngo_report": "a figure from a non-governmental organisation's own investigation, monitoring or report",
+  "peer_reviewed_study": "a figure from a peer-reviewed journal article",
+  "assured_disclosure": "a company-reported figure covered by a third-party assurance statement; cite the statement and give its level (limited or reasonable) in notes",
+  "standard_or_methodology": "a figure stated in a standard-setter's, rater's or methodology document about its own rules",
+  "registry_record": "a record in a public registry (certificates, credits, retirements)",
+  "legislative_document": "a bill, rapporteur's opinion or committee report (not enacted law)",
+  "government_document": "a statement of fact in a government agency's own document that is not a decision, a statistic or an estimate (for example an environmental assessment describing existing infrastructure)"
+ },
+ "relations": {
+  "_about": "Edges of the chain the ledger traces, mine to datacenter to end of life (sites/chain/edges.csv). Each edge reads 'from <relation> to' and needs a document.",
+  "mines_for": "a mine or mining company supplies ore or concentrate to a smelter or refiner",
+  "refines_for": "a smelter or refiner supplies metal to a component maker, chipmaker or the filer of a conflict-minerals report",
+  "fabricates_for": "a foundry makes chips for a chip designer or buyer",
+  "supplies_memory_to": "a memory maker supplies memory to a chip or system maker",
+  "assembles_for": "an assembler or contract manufacturer builds boards, systems or servers for a buyer",
+  "ships_to": "goods move from one country or port to another (customs statistics)",
+  "supplies_power_to": "a plant, utility or grid supplies electricity to a site or cluster",
+  "contracts_power_from": "a site operator holds a contract (PPA, tariff, offtake) for a plant's output",
+  "supplies_water_to": "a utility or source supplies water to a site",
+  "supplies_fuel_to": "a pipeline or supplier delivers fuel to a site's generation",
+  "hosts_compute_for": "a site operator runs computing for a tenant",
+  "leases_site_to": "a site owner leases the site or capacity to a tenant",
+  "receives_end_of_life_from": "a recycler or refurbisher takes hardware retired from a site or company",
+  "owns": "one entity owns a site or another entity",
+  "operates": "an entity operates a site",
+  "packages_for": "an assembly, test and packaging house (OSAT), or a packaging joint venture, packages and tests chips for a chip designer"
+ }
+}

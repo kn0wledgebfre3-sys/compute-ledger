@@ -1,0 +1,12 @@
+jurisdiction,1_site_list_from_register,2_capacity_from_permits,3_metered_or_filed_total,4_records_law_and_requests,5_supply_and_emissions,next_action,notes
+Virginia,done (182 of 183 DEQ permits),done (read twice),done (Dominion and NOVEC filings),done (Virginia FOIA; citizen or media),in part (NEI emissions; Chesterfield; supply rows),geocode the 81; generator hours from permit rates,
+Texas,"in part (129 facilities, 109 located)",in part (two fleets),in part (CPS Energy; ERCOT large load),drafted (Public Information Act),in part (El Paso plant),Comptroller rerun; TCEQ request,
+Ireland,"done (40 sites, 22 located)",done,done (CSO; AERs for 11 licensed sites),done (AIE regulations),in part,coordinates for 18; Leixlip GHG permit,
+Singapore,"in part: the allocation calls name awardees, not facilities (9 sites, none located)",in part: four 50 MW allocations (DC-CFA2) from a government decision,in part: 2.75 TWh (2019) and 3.40 TWh (2020) from a parliamentary reply; capacity exceeding 1.4 GW (IMDA),"no FOI law of general application; questions for IMDA, EMA, NEA, JTC, URA, BCA listed in SINGAPORE.md",not started,MTI or EMA figure after 2020 (browser); JTC and URA planning records for sites,Begun 2026-10-24 (data/climate_trace_seed/SINGAPORE.md).
+Johor,not started,not started,not started,not started,not started,Johor DOE and SPAN,Promised in the email.
+Amsterdam / Noord-Holland,not started,not started,not started,Wet open overheid (Woo),not started,Omgevingsloket and province,Promised in the email.
+Arizona (Maricopa),not started,not started,in part (SRP published figures),drafted (SRP),not started,Maricopa County air permits through the Virginia pipeline,
+Oregon,not started,not started,not started,drafted (Northern Wasco PUD),not started,Oregon DEQ permits,
+Georgia,not started,not started,in part (Georgia Power filings in entries),not started,not started,Georgia EPD permits,
+Ohio,not started,not started,in part (PUCO tariff in entries),not started,not started,Ohio EPA permits,
+Germany,not started,not started,register exists (319 sites),Informationsfreiheitsgesetz,not started,register by browser,

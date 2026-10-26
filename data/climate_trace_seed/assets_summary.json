@@ -1,0 +1,76 @@
+{
+ "built": "2026-10-22",
+ "schema": "Climate TRACE v5.11.0 asset emissions and ownership columns",
+ "located_sites": 305,
+ "with_generator_capacity": 144,
+ "with_generator_capacity_by_basis": {
+  "primary on-site generation": 3,
+  "standby MWe (permit)": 128,
+  "Irish licence or GHG permit (mostly MWth input)": 13
+ },
+ "virginia_located_standby_mw": 18949.3,
+ "with_ledger_entry": 25,
+ "countries": 18,
+ "by_source": {
+  "seed_list": 49,
+  "ireland": 22,
+  "ireland_unlocated": 18,
+  "virginia_unlocated": 58,
+  "virginia": 125,
+  "texas": 109,
+  "texas_unlocated": 20,
+  "texas_comptroller_unmatched": 97,
+  "other_registers_unlocated": 5
+ },
+ "by_country": {
+  "USA": 259,
+  "IRL": 22,
+  "NLD": 3,
+  "CHL": 2,
+  "FIN": 2,
+  "JPN": 2,
+  "SGP": 2,
+  "IND": 2,
+  "BRA": 2,
+  "TWN": 1,
+  "DEU": 1,
+  "DNK": 1,
+  "BEL": 1,
+  "GBR": 1,
+  "URY": 1,
+  "ARE": 1,
+  "KEN": 1,
+  "AUS": 1
+ },
+ "backlog_unlocated_rows": 198,
+ "seed_rows_dropped_as_duplicates": [
+  {
+   "seed_site_id": "irl-google-dublin-grange-castle-data-center",
+   "replaced_by": "ie:irl-google-grange-castle-ghg170"
+  },
+  {
+   "seed_site_id": "usa-google-midlothian-data-center",
+   "replaced_by": "tx:sharka"
+  },
+  {
+   "seed_site_id": "usa-microsoft-sn-campus-sn1-sn2-sn4-sn7-san-antonio",
+   "replaced_by": "tx:ms-sn-campus"
+  },
+  {
+   "seed_site_id": "usa-childress-data-center-iren",
+   "replaced_by": "tx:iren-childress"
+  },
+  {
+   "seed_site_id": "usa-compass-red-oak-datacenter-dfw-iii",
+   "replaced_by": "tx:compass-red-oak"
+  },
+  {
+   "seed_site_id": "usa-alamo-mission-data-center-red-oak",
+   "replaced_by": "tx:alamo-mission"
+  },
+  {
+   "seed_site_id": "irl-vantage-data-centers-profile-park-campus-dub1x-dub13-refused",
+   "replaced_by": "ie:irl-vantage-dub13-profile-park-abp317446-refused"
+  }
+ ]
+}

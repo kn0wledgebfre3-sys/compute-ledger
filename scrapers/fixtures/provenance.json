@@ -1,0 +1,102 @@
+{
+  "benchmarking/96ck-qcfe.json": {
+    "detail": "Three 200 Paul Ave rows read on 2026-10-23 (2023 is a year the ledger has not transcribed, so the fixture exercises the 'new' path); keys follow the dataset's field names; fields not read are omitted.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://data.sf.gov/resource/96ck-qcfe.csv?category=Data%20Center&$limit=100"
+  },
+  "benchmarking/Boston_MA.json": {
+    "detail": "The 6 Bowdoin Sq feature as read on 2026-10-23, reduced to the attributes the parser uses.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://services.arcgis.com/sFnw0xNflSi8J0uh/ArcGIS/rest/services/berdo_static_2023/FeatureServer/0/query"
+  },
+  "eia/august_generator2026_SYNTHETIC.xlsx": {
+    "detail": "Sheet names (Operating/Planned/Retired/Canceled or Postponed), 1 title row, header row and trailing note row follow gridstatus/eia.py (skiprows=1, skipfooter=1); column names from gridstatus eia_constants.py with the '(MW)' suffixes it strips restored. Values invented.",
+    "provenance": "SYNTHETIC",
+    "source": "layout of https://www.eia.gov/electricity/data/eia860m/xls/august_generator2026.xlsx"
+  },
+  "eia/eia_v2_electric_power_operational_data_SYNTHETIC.json": {
+    "detail": "Values invented. Facet ids location/sectorid/fueltypeid and data id 'generation' are verified (third-party code calling the live API; datasetiq query string); the full response shape was not seen.",
+    "provenance": "SYNTHETIC",
+    "source": "shape of https://api.eia.gov/v2/electricity/electric-power-operational-data"
+  },
+  "eia/eia_v2_route_metadata_SYNTHETIC.json": {
+    "detail": "Values invented. Facet ids location/sectorid/fueltypeid and data id 'generation' are verified (third-party code calling the live API; datasetiq query string); the full response shape was not seen.",
+    "provenance": "SYNTHETIC",
+    "source": "shape of https://api.eia.gov/v2/electricity/electric-power-operational-data"
+  },
+  "ercot/9-Interconnection-and-Grid-Analysis-Update_2026-04-13_slides2-3_excerpt.txt": {
+    "detail": "Large-load passage only; quoted fragments re-joined with single spaces.",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf"
+  },
+  "ercot/ERCOT-Monthly-April-2026-FINAL_p4_excerpt.pdf": {
+    "detail": "The verbatim .txt excerpt typeset into a one-page PDF with reportlab (layout is not ERCOT's).",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf"
+  },
+  "ercot/ERCOT-Monthly-April-2026-FINAL_p4_excerpt.txt": {
+    "detail": "Large-load passage only; quoted fragments re-joined with single spaces.",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf"
+  },
+  "ercot/ERCOT-Monthly-Operational-Overview-August-2026_p9_excerpt.txt": {
+    "detail": "Large-load passage only; quoted fragments re-joined with single spaces.",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf"
+  },
+  "ie_leap/00000000-fixture-new-document.txt": {
+    "detail": "Lines quoted from the report's cover, Table 3 (p.15) and Table 5 (p.17) as read on 2026-10-23; stands in for the text a PDF extractor returns.",
+    "provenance": "REAL values, assembled layout",
+    "source": "https://leap.epa.ie/docs/d30f01fa-7b3c-4f1d-b37d-be8909ba4629.pdf (P1170-01 AER 2025)"
+  },
+  "ie_leap/P1170-01_7c16b775-a4ce-4414-bd47-4a08b151fb0e.json": {
+    "detail": "The two real document ids and URLs for P1170-01 are real; the third record is a placeholder that stands for a newly filed report. Record keys other than url are not confirmed against a live response.",
+    "provenance": "SYNTHETIC (shape)",
+    "source": "LEAP Open Data API Document/listbylicenceidfiltered"
+  },
+  "miso/miso_getprojects_sample.json": {
+    "detail": "Values from gridstatus docs tables (latest build: J4182..R5062; 0.13.0 build: E002, E291, G001). Raw key names from gridstatus/miso.py. applicationStatus/queueDate for the J/S/R rows were hidden in the docs and are null here. Exact JSON value types (string vs number) not observed.",
+    "provenance": "REAL-VIA-GRIDSTATUS",
+    "source": "https://www.misoenergy.org/api/giqueue/getprojects (the fetcher got a client error; not seen directly)"
+  },
+  "nei/VA_2023.csv": {
+    "detail": "Rows 1-6 are the live response for EIS 21518811 (filterable PM and condensable rows omitted). Row 7 carries only the fields the NAICS query returned (site, address, city, county, emissions); the other cells are left blank rather than filled in.",
+    "provenance": "REAL (partial)",
+    "source": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/eis_facility_id/equals/21518811/pollutant_type/equals/CAP/1:200/CSV and the Virginia NAICS 518210 NOx query, retrieved 2026-10-23"
+  },
+  "neso/ea_register_SYNTHETIC.xlsx": {
+    "detail": "Only 'Project Name' (column A) and 'Technology Type' (column F) with value 'Transmission Connected Demand' are verified (NESO FOI/25/174 response, 2025-12-18). All other headers are deliberately labelled UNSEEN. Values invented.",
+    "provenance": "SYNTHETIC",
+    "source": "layout hint for https://www.neso.energy/document/373996/download (binary; not readable via the fetcher)"
+  },
+  "neso/tec_register_SYNTHETIC.csv": {
+    "detail": "15 column names from the portal's data dictionary; the CSV itself is robots-blocked for the fetcher. Values invented; date and Stage formats not observed.",
+    "provenance": "SYNTHETIC",
+    "source": "layout of the TEC register CSV (https://www.neso.energy/data-portal/transmission-entry-capacity-tec-register)"
+  },
+  "nyiso/NYISO-Interconnection-Queue_sample.xlsx": {
+    "detail": "Sheet names and column names from gridstatus/nyiso.py; values from gridstatus docs (2026 build), raw Type/ Fuel codes recovered by inverting gridstatus' code map (S, W, ES, AC, DC). Column ORDER on the active/withdrawn sheets is not verified. Cells the docs showed as NaN are blank. 'Status' text on the In Service sheet is a placeholder. No NYISO load (Type 'L') rows were visible, so none are included.",
+    "provenance": "REAL-VIA-GRIDSTATUS",
+    "source": "https://www.nyiso.com/documents/20142/1407078/NYISO-Interconnection-Queue.xlsx (binary; not readable via the fetcher)"
+  },
+  "pjm/pjm_queue_export_sample.xlsx": {
+    "detail": "Values for Project ID, Name, State, Status, TO, MFO, MW Energy, MW Capacity, MW In Service, Fuel copied from the page table; written under the XLS-export column names used by gridstatus/pjm.py ('TO' -> 'Transmission Owner'). Other export columns left blank (not seen). AE2-130 showed two fuel icons, written as 'Solar, Storage' (the export's own multi-fuel format was not seen).",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://www.pjm.com/planning/m/cycle-service-request-status (HTML table, first 15 rows)"
+  },
+  "spp/spp_GenerateSummaryCSV_sample.csv": {
+    "detail": "Title line + 27-column header + first 12 data rows + first 4 Thermal (Gas/CTG) rows, file dated 10/19/2026. Field values copied one by one; CSV quoting style of the real file not observed.",
+    "provenance": "REAL-VERBATIM",
+    "source": "https://opsportal.spp.org/Studies/GenerateSummaryCSV"
+  },
+  "watch/grant_pud_datacenter_faq.html": {
+    "detail": "Two sentences as quoted on 2026-10-23; tests sentence extraction.",
+    "provenance": "REAL sentences, assembled layout",
+    "source": "https://www.grantpud.org/blog/data-center-faqs"
+  },
+  "watch/va_deq_datacenter_permits.html": {
+    "detail": "Two invented rows with showpublisheddocument links; tests link extraction and the new-item path only.",
+    "provenance": "SYNTHETIC",
+    "source": "layout of the DEQ datacenter permit list"
+  }
+}

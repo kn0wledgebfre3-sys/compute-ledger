@@ -1,0 +1,14 @@
+{
+ "features": [
+  {
+   "attributes": {
+    "Building_Address": "6 bowdoin sq",
+    "Property_Owner_Name": "",
+    "Largest_Property_Type": "Data Center",
+    "All_Property_Types": "Data Center",
+    "Reported_Gross_Floor_Area__Sq_F": 223538.0,
+    "Electricity_Usage__kBtu_": 26858820.4
+   }
+  }
+ ]
+}

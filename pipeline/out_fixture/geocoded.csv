@@ -1,0 +1,10 @@
+row_key,state,query_street,query_city,query_zip,lat,lon,geocoder,match_quality,confidence,matched_address,reason
+va-deq-73200,VA,7400 Infantry Ridge Road,Manassas,20109,38.7719,-77.5301,nominatim,rooftop,high,"7400 Infantry Ridge Road, Manassas, Virginia, 20109, United States (SYNTHETIC)",
+va-deq-73743,VA,21630 Red Rum Drive,Ashburn,20147,39.0217,-77.4617,nominatim,rooftop,high,"21630 Red Rum Drive, Ashburn, Loudoun County, Virginia, 20147, United States (SYNTHETIC)",
+va-deq-74081,VA,7060 Wellington Rd,Manassas,20109,38.7705,-77.5402,census,census_non_exact,medium,"7060 WELLINGTON RD, MANASSAS, VA, 20109",Census street-interpolated match (TIGER); replaces Nominatim street-level hit
+va-deq-74107,VA,10880 Airman Avenue,Manassas,20110,,,,,none,,Nominatim: no result; Census: No_Match
+va-deq-74129,VA,10321 Tanner Way,Manassas,20110,38.7623,-77.5011,nominatim,rooftop,high,"10321 Tanner Way, Manassas, Prince William County, Virginia, 20110, United States (SYNTHETIC)",
+va-deq-74161,VA,9400 Godwin Drive,Manassas,20110,38.7633,-77.5035,census,census_exact,high,"9400 GODWIN DR, MANASSAS, VA, 20110",
+va-deq-74171,VA,9040 Freedom Center Blvd,Manassas,20110,38.7555,-77.496,nominatim,rooftop,high,"9040 Freedom Center Boulevard, Manassas, Virginia, 20110, United States (SYNTHETIC)",
+va-deq-74274,VA,24214 Quail Ridge Lane,Aldie,20105,,,,,none,,Nominatim: no result; Census: Tie
+tx-tceq-O4794,TX,9554 Westover Hills Blvd,San Antonio,,29.461,-98.695,nominatim,rooftop,high,"9554 Westover Hills Boulevard, San Antonio, Bexar County, Texas, 78251, United States (SYNTHETIC)",

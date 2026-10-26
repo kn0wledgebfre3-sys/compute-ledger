@@ -1,0 +1,978 @@
+[
+ {
+  "id": "us-va-jlarc-rates",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Virginia datacenter industry: residential bill impact (JLARC Report 598)",
+  "operator": "Dominion Energy service territory (multiple operators)",
+  "lat": 39.0,
+  "lon": -77.5,
+  "category": "community",
+  "record": "JLARC (9 Dec 2024) estimated a typical Dominion residential customer could see generation and transmission costs rise $14-$37 per month by 2040 (constant dollars) under unconstrained datacenter demand; Virginia datacenters use ~5,050 MW (about 2 million households' electricity) and unconstrained demand could double within 10 years. One-third of sites are near residential areas; datacenters emit low-frequency noise that is 'not loud enough to damage nearby residents' hearing', and local noise ordinances carry a maximum civil penalty of $500.",
+  "record_sources": [
+   {
+    "title": "Data Centers in Virginia (Report 598)",
+    "url": "https://jlarc.virginia.gov/pdfs/reports/Rpt598.pdf",
+    "publisher": "Joint Legislative Audit and Review Commission, Virginia General Assembly",
+    "date": "2024-12-09"
+   }
+  ],
+  "claim": "none found (industry statements not retrieved from a legally bound source)",
+  "claim_sources": [],
+  "gap": "JLARC quantifies a residential bill impact range; no utility or operator figure for the residential bill effect was found yet for comparison.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read JLARC Report 598 on 2026-10-24. It confirms that Dominion residential customers 'could experience generation- and transmission-related costs increasing by an estimated $14 to $37 monthly' (constant dollars, by 2040), that 'Virginia data center sites use approximately 5,050 megawatts', 'roughly equivalent to the electricity needs of 2 million Virginia households', that unconstrained demand 'would double within the next 10 years', that 'One-third of data centers are currently located near residential areas', that data centers emit low-frequency noise 'not loud enough to damage nearby residents' hearing', and that noise ordinances 'carry a low maximum civil penalty of $500'. The earlier wording that low-frequency noise 'rarely violates ordinances' was not found in the report and was replaced with the report's own wording."
+ },
+ {
+  "id": "us-pjm-imm-capacity",
+  "country": "United States",
+  "region": "PJM Interconnection (13 states + DC)",
+  "site_or_subject": "PJM capacity auctions: revenue attributable to datacenter load (Independent Market Monitor)",
+  "operator": "PJM Interconnection / Monitoring Analytics LLC (IMM)",
+  "lat": 40.0,
+  "lon": -76.0,
+  "category": "community",
+  "record": "The IMM (1 Oct 2025) estimated that including 11,993 MW of existing and forecast datacenter load raised 2026/2027 Base Residual Auction revenues by $7,271,197,971, an 82.1% increase over the revenues without that load; total 2026/2027 BRA revenues were $16,124,370,889. Datacenter load raised 2025/2026 BRA revenues by $9,332,103,858, a combined $16,603,301,829 across the two auctions. In the market monitor's 2025 State of the Market report, the capacity component of the total cost of wholesale power rose from $2,834 million (2024) to $10,616 million (2025), +274.6% (ledger arithmetic: 10,616 / 2,834 - 1); per MWh of load it rose from $3.61 to $13.09 (+262.3%, as stated by the IMM), from 6.5% to 15.8% of the total.",
+  "record_sources": [
+   {
+    "title": "IMM Analysis of the 2026/2027 RPM Base Residual Auction Part A",
+    "url": "https://www.monitoringanalytics.com/reports/Reports/2025/IMM_Analysis_of_the_20262027_RPM_Base_Residual_Auction_Part_A_20251001.pdf",
+    "publisher": "Monitoring Analytics LLC (PJM Independent Market Monitor)",
+    "date": "2025-10-01"
+   },
+   {
+    "title": "2025 Annual State of the Market Report for PJM (IMM presentation to the PJM Members Committee)",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2026/20260424-special/2025-annual-state-of-the-market-report-for-pjm.pdf",
+    "publisher": "Monitoring Analytics LLC, filed to PJM Members Committee",
+    "date": "2026-04-24"
+   },
+   {
+    "title": "IMM Market Monitoring Report presentation to PJM MC (slide 9, datacenter load by auction)",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2026/20260122/20260122-item-06---market-monitoring-report---presentation.pdf",
+    "publisher": "PJM Interconnection / Monitoring Analytics",
+    "date": "2026-01-22"
+   }
+  ],
+  "claim": "IMM recommends that 'Large data centers should be required to bring their own new generation' and that a backstop auction include only datacenters with bilateral contracts.",
+  "claim_sources": [
+   {
+    "title": "2025 Annual State of the Market Report for PJM (IMM presentation to the PJM Members Committee) (Recommendations: Capacity)",
+    "url": "https://www.pjm.com/-/media/DotCom/committees-groups/committees/mc/2026/20260424-special/2025-annual-state-of-the-market-report-for-pjm.pdf",
+    "publisher": "Monitoring Analytics LLC",
+    "date": "2026-04-24"
+   }
+  ],
+  "gap": "The $16.6 bn figure is the market monitor's counterfactual estimate, not a bill impact; no PJM document quantifying a datacenter share of capacity costs was found yet.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read 2026-10-24. The IMM Part A analysis (1 Oct 2025) gives 'Inclusion of 11,993 MW' of existing and forecast data center load (embedded and above embedded; 7,892 MW above embedded), '$7,271,197,971 or an 82.1 percent increase in capacity market revenues' (relative to revenues without data center load; the same amount is 45.1% of actual revenues), total revenues of $16,124,370,889, $9,332,103,858 for 2025/2026 and a combined $16,603,301,829. The IMM's 22 Jan 2026 presentation (slide 9) shows 7,892 and 11,993 MW for 2026/2027. The 2025 State of the Market document at the PJM URL, which renders as the IMM's slides to the Members Committee, gives $2,834m and $10,616m, $3.61 and $13.09 per MWh ('262.3%'), 6.5% and 15.8%, and the 'bring their own new generation' recommendation. The 274.6% change is ledger arithmetic. The earlier sentence that PJM had not adopted the IMM attribution had no source and was removed."
+ },
+ {
+  "id": "ie-cru-leu-policy",
+  "country": "Ireland",
+  "region": "National",
+  "site_or_subject": "CRU Large Energy Users connection policy for datacenters",
+  "operator": "Commission for Regulation of Utilities (CRU); EirGrid/ESB Networks",
+  "lat": 53.35,
+  "lon": -6.26,
+  "category": "community",
+  "record": "CRU's proposed decision CRU/202504 (18 Feb 2025) recorded datacenters at ~21% of national electricity demand in 2023, and data centre and new technology load at 7.1 TWh of 30.5 TWh national demand; ~30% by 2030-32 (13.3 TWh in 2032), and ~50% of electricity produced in Dublin/Meath; it did not quantify network-cost impacts on consumers. The final decision CRU/2025236 (12 Dec 2025) [as summarised by Matheson LLP; the CRU's decision paper itself was not found] requires datacenters with MIC >=10 MVA to provide dispatchable onsite or proximate generation/storage at least equal to MIC (subject to de-rating), requires datacenters at or above the 1 MVA de-minimis level to meet >=80% of annual demand with additional Irish renewables on a 6-year glide path from energisation, and limits new datacenters to one-year capacity contracts.",
+  "record_sources": [
+   {
+    "title": "Large Energy Users Connection Policy: Proposed Decision CRU/202504",
+    "url": "https://consult.cru.ie/en/system/files/materials/200/CRU202504%20LEU%20connection%20policy%20proposed%20decision_0.pdf",
+    "publisher": "Commission for Regulation of Utilities",
+    "date": "2025-02-18"
+   },
+   {
+    "title": "Briefing on the Large Energy Users Connection Policy Decision CRU/2025236 (Matheson LLP's summary, not the decision paper)",
+    "url": "https://media.matheson.com/wp-content/uploads/2026/02/Large-Energy-Users-Connection-Policy-Decision-3.pdf",
+    "publisher": "Matheson LLP",
+    "date": "2025-12-12"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Regulator documents demand share and imposes generation obligations but publishes no consumer network-cost figure; final decision text read from a law-firm-hosted copy.",
+  "confidence": "medium",
+  "verification_note": "Read CRU/202504 on consult.cru.ie (21%, 30.5 TWh, ~30% by 2030, ~50% Dublin/Meath confirmed; 7.1 TWh is data centre plus new technology load) and Matheson LLP's briefing on CRU/2025236 (the briefing is the law firm's summary, not a copy of the decision paper, which was not found): 10 MVA dispatchable tier, 6-year glide path and one-year capacity contracts confirmed; corrected the scope of the 80% renewables requirement, which applies from the 1 MVA de-minimis level, not only to >=10 MVA sites. See also ie-cru-leu-connection-policy-2025 (same CRU decision). 2026-10-24: the 21% (datacentres) and the 7.1 TWh (data centre plus new technology load) are now given as two separate figures; 7.1 / 30.5 is 23.3%, so the 7.1 TWh is not the basis of the 21%. 2026-10-24: the Matheson document was found to be a law-firm briefing, so the final decision's terms rest on that summary; status set to partial and confidence to medium, as for ie-cru-leu-connection-policy-2025.",
+  "last_checked": "2026-10-24",
+  "verification_status": "partial"
+ },
+ {
+  "id": "au-aemo-esoo-2026",
+  "country": "Australia",
+  "region": "National Electricity Market",
+  "site_or_subject": "AEMO 2026 ESOO datacenter demand forecast",
+  "operator": "Australian Energy Market Operator",
+  "lat": -33.87,
+  "lon": 151.21,
+  "category": "community",
+  "record": "AEMO's 2026 ESOO datacenter overview puts datacenters at ~3% of NEM operational consumption in FY26, forecasting ~15 TWh (7.8%) by FY30 and ~34 TWh (13%) by FY36 (Step Change); 225 projects / 67 GW in development; 36% of developing projects in the 2025 ESOO were cancelled; connection utilisation averaged ~27% in FY26. No consumer cost figure is given; AEMO notes that 'Other proposed reforms would improve how the costs of connecting large new electricity users are allocated'.",
+  "record_sources": [
+   {
+    "title": "2026 ESOO Data Centre Forecasting Overview (undated; accompanies the 2026 ESOO)",
+    "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-esoo-data-centre-forecasting-overview.pdf",
+    "publisher": "Australian Energy Market Operator",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "AEMO quantifies load and project attrition; no consumer cost figure was found in the overview.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_note": "Re-read AEMO's 2026 ESOO Data Centre Forecasting Overview on 2026-10-24. It confirms 'around 3% of total NEM operational electricity consumption' (FY26), 'around 15 TWh or 7.8%' by FY30 and 'around 34 TWh or 13%' by FY36 (Step Change), '225 data centres with 67 GW', '36% of developing projects in 2025 ESOO were cancelled' and utilisation 'averaging ~27% in FY26'; no consumer cost figure appears. The earlier quoted phrase 'under consideration' is not in the document and was replaced with its own wording. The overview carries no publication date line. See also au-aemo-2026-esoo-dc-forecast (same AEMO 2026 ESOO; its figures agree).",
+  "verification_status": "verified"
+ },
+ {
+  "id": "us-az-chandler-ord5033",
+  "country": "United States",
+  "region": "Arizona",
+  "site_or_subject": "City of Chandler datacenter noise ordinance (Ordinance No. 5033)",
+  "operator": "City of Chandler (applies to all operators)",
+  "lat": 33.31,
+  "lon": -111.84,
+  "category": "community",
+  "record": "Ordinance 5033 (P&Z hearing 19 Oct 2022; published Dec 2022) bars standalone datacenters outside Planned Area Development approval; requires a third-party baseline sound study, design so facility sound does not exceed baseline ambient levels (third-party verified), a post-construction noise study then annual studies for five years, an on-site noise liaison 8am-10pm on City request, and generator-test notice 24 hours ahead with routine tests limited to 9-5 weekdays. No numeric dB limit or setback is specified.",
+  "record_sources": [
+   {
+    "title": "Ordinance No. 5033 (PLH22-0053) Data Center",
+    "url": "https://www.chandleraz.gov/sites/default/files/departments/development-services/PLH22-0053-Ordinance-No-5033-Data-Center.pdf",
+    "publisher": "City of Chandler, Arizona",
+    "date": "2022-12"
+   },
+   {
+    "title": "Chandler's data center ordinance now in effect",
+    "url": "https://www.chandleraz.gov/news-center/chandlers-data-center-ordinance-now-effect",
+    "publisher": "City of Chandler",
+    "date": "2023"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The ordinance mandates annual third-party noise studies for five years; no city-published results of those studies were found yet. Older source (2022).",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read Ordinance No. 5033 (PLH22-0053) on 2026-10-24. Confirmed: P&Z hearing 19 Oct 2022 and publication notes dated 16 and 23 Dec 2022 (the adoption line is blank in the copy); data centers 'are not permitted to operate in the City of Chandler unless explicitly approved' within a PAD; a 'sound study performed by a third-party acoustic engineer', with sound not to exceed 'the ambient noise levels that were observed in the baseline study'; a post-construction study and annual studies for 'five years'; a liaison 'between the hours of 8:00 am and 10:00 pm MST' on City request; generator-test notice 'at least twenty-four hours in advance' and routine runs 'between the hours of 9:00 am and 5:00 pm, Monday through Friday'. No decibel limit or setback (a half-mile notice radius only). The news-release link now uses the city's canonical URL."
+ },
+ {
+  "id": "us-va-loudoun-noise",
+  "country": "United States",
+  "region": "Virginia, Loudoun County",
+  "site_or_subject": "Loudoun County datacenter noise regulation and complaints",
+  "operator": "Loudoun County government (multiple operators)",
+  "lat": 39.04,
+  "lon": -77.49,
+  "category": "community",
+  "record": "The county states noise complaints are among its most persistent issues and frequently involve tonal noise; the residential receiving-property limit is 55 dBA; 'The county does not currently have policy or regulatory language specific to tonal noise or low frequency noise'; pre- and post-construction noise studies are required; Va. Code 15.2-2209.5 requires a sound profile for legislative applications of 100 MW or more; amendments on tonal/low-frequency noise are anticipated spring/summer 2027. No complaint counts, enforcement counts or measured levels are published.",
+  "record_sources": [
+   {
+    "title": "Data Centers: Noise & Air Quality Concerns",
+    "url": "https://www.loudoun.gov/6405/Noise-Air-Quality-Concerns",
+    "publisher": "Loudoun County, Virginia",
+    "date": "2026"
+   },
+   {
+    "title": "Data Centers in Virginia (Report 598), Summary p. viii",
+    "url": "https://jlarc.virginia.gov/pdfs/reports/Rpt598.pdf",
+    "publisher": "JLARC",
+    "date": "2024-12-09"
+   }
+  ],
+  "claim": "County page states datacenters have 'historically been cooperative' with enforcement.",
+  "claim_sources": [
+   {
+    "title": "Data Centers: Noise & Air Quality Concerns",
+    "url": "https://www.loudoun.gov/6405/Noise-Air-Quality-Concerns",
+    "publisher": "Loudoun County, Virginia",
+    "date": "2026"
+   }
+  ],
+  "gap": "Complaints are acknowledged as persistent but the dBA standard does not address the tonal/low-frequency noise complained of; no measured dataset is public.",
+  "confidence": "high",
+  "verification_note": "Re-fetched Loudoun County's Noise & Air Quality page: persistent/tonal complaints, 55 dBA residential limit, the verbatim no-tonal/low-frequency-policy sentence, pre- and post-construction noise studies, Va. Code 15.2-2209.5 sound profile at 100 MW, spring/summer 2027 amendments and 'historically ... cooperative' wording all confirmed; no complaint or enforcement counts are published.",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified"
+ },
+ {
+  "id": "nl-zeewolde-meta-land",
+  "country": "Netherlands",
+  "region": "Flevoland, Zeewolde",
+  "site_or_subject": "Meta hyperscale datacenter, Zeewolde: state land sale",
+  "operator": "Meta Platforms",
+  "lat": 52.33,
+  "lon": 5.54,
+  "category": "land_biodiversity",
+  "record": "The Meta site included land of which the State owned 'a large part' (Council of State, 2023); NOS put the State share at about 80 ha [press, source not named: NOS]. The Eerste Kamer adopted a motion on 21 Dec 2021 (35925 XIV, H) asking the government to have the Rijksvastgoedbedrijf suspend sales of agricultural land for hyperscale datacenters. In the 22 Feb 2022 Senate interpellation the minister said the State still held the land as a private-law party but would not undo the municipal permit. Minister De Jonge's letter of 10 June 2022 (Kamerstuk 26 643 nr. 862) transmitted TNO's assessment of the municipality's plan against the Aug 2021 sale conditions. The same day the Rijksvastgoedbedrijf wrote to Zeewolde that it could not sell the land on the current assessment. TNO found the design energy-efficient for now, with intelligent cooling and no drinking water used for cooling, but roofs, facades and surrounding land not maximally used for solar, rainwater use unclear and the residual-heat plan too undeveloped to assess. On 20 Sep 2023 the Council of State annulled the Trekkersveld IV zoning plan (ECLI:NL:RVS:2023:3550), noting that neither the municipality nor the initiator owned the land and that there was no certainty the State would sell.",
+  "record_sources": [
+   {
+    "title": "Brief Rijksvastgoedbedrijf aan college van B&W Zeewolde over verkoop gronden datacenter (toetsing TNO)",
+    "url": "https://www.eerstekamer.nl/overig/20220613/brief_rijksvastgoedbedrijf_van_10/f=y.pdf",
+    "publisher": "Rijksvastgoedbedrijf (via Eerste Kamer)",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Kabinet beperkt mogelijkheid tot vestiging hyperscale datacentra",
+    "url": "https://www.rijksoverheid.nl/actueel/nieuws/2022/06/10/kabinet-beperkt-mogelijkheid-tot-vestiging-hyperscale-datacentra",
+    "publisher": "Rijksoverheid",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Uitspraak 202201810/1/R1 (ECLI:NL:RVS:2023:3550), bestemmingsplan Bedrijventerrein Trekkersveld IV, Zeewolde",
+    "url": "https://www.raadvanstate.nl/uitspraken/@139351/202201810-1-r1/",
+    "publisher": "Raad van State, Afdeling bestuursrechtspraak",
+    "date": "2023-09-20"
+   },
+   {
+    "title": "Interpellatie grootschalige datacentra",
+    "url": "https://www.eerstekamer.nl/nieuws/20220222/interpellatie_grootschalige",
+    "publisher": "Eerste Kamer der Staten-Generaal",
+    "date": "2022-02-22"
+   },
+   {
+    "title": "Kamerstuk 26 643 nr. 862 (brief minister De Jonge, grond datacenter Zeewolde)",
+    "url": "https://zoek.officielebekendmakingen.nl/kst-26643-862.pdf",
+    "publisher": "Tweede Kamer / Officiële Bekendmakingen",
+    "date": "2022-06-10"
+   },
+   {
+    "title": "Komst datacenter Meta verder op losse schroeven, grond nog niet verkocht",
+    "url": "https://nos.nl/l/2432182",
+    "publisher": "NOS (reporting the ministerial decision)",
+    "date": "2022-06-10"
+   }
+  ],
+  "claim": "Senator Koffeman (PvdD) gave the site as 166 ha, a figure NOS also gives without a source, and stated in the 22 Feb 2022 Senate interpellation that only about 15% of residual heat could be used. Meta declined to comment on the June 2022 decision; it had earlier paused the project after both parliamentary chambers opposed it.",
+  "claim_sources": [
+   {
+    "title": "Interpellatie grootschalige datacentra",
+    "url": "https://www.eerstekamer.nl/nieuws/20220222/interpellatie_grootschalige",
+    "publisher": "Eerste Kamer der Staten-Generaal",
+    "date": "2022-02-22"
+   },
+   {
+    "title": "Komst datacenter Meta verder op losse schroeven",
+    "url": "https://nos.nl/l/2432182",
+    "publisher": "NOS",
+    "date": "2022-06-10"
+   }
+  ],
+  "gap": "Parliamentary, ministerial and Rijksvastgoedbedrijf records document the sale conditions, TNO's findings and the refusal to sell, and the zoning plan was annulled in 2023; the State's share of the land is given in hectares only by NOS (the Council of State says 'a large part'), and the ~15% heat-reuse figure is a senator's statement. Older sources (2022-2023).",
+  "confidence": "medium",
+  "verification_note": "Second pass: fetched the Rijksvastgoedbedrijf letter to Zeewolde of 10 Jun 2022 (Eerste Kamer copy), the Rijksoverheid release of the same day and the minister's 13 Jun 2022 letter to the Senate, which confirm the non-sale decision and TNO's mixed findings on solar, rainwater, cooling and residual heat; the Council of State ruling of 20 Sep 2023 (ECLI:NL:RVS:2023:3550) confirms that the State owned 'a large part' of the land but gives no hectares. The ~80 ha State share is still only in NOS (none of the RVB letter, the 13 Jun letter, the motion, the interpellation record or the ruling states it). Correction: the ~15% residual-heat figure was stated by Senator Koffeman in the interpellation, not recorded as a finding, and the 166 ha is also his figure. See also nl-zeewolde-meta-cancelled (same Zeewolde case). 2026-10-24: the 166 ha and ~15% figures moved to claim as Senator Koffeman's statements; NOS's ~80 ha, given without a source, is marked as such.",
+  "last_checked": "2026-10-24",
+  "verification_status": "partial"
+ },
+ {
+  "id": "cl-huechuraba-aws-tribunal",
+  "country": "Chile",
+  "region": "Región Metropolitana, Huechuraba",
+  "site_or_subject": "AWS 'Centro de Almacenamiento de Datos Huechuraba': environmental approval challenged by residents",
+  "operator": "Servicios Amazon Data Services Chile (AWS)",
+  "lat": -33.37,
+  "lon": -70.65,
+  "category": "community",
+  "record": "RCA N° 202413001289/2024 approved 12 July 2024 (the judgment also cites 17 July 2024) for a 10.9 ha site; Stage 1 is estimated to operate at least 30 years on existing medium-voltage supply. Residents sought annulment in late 2024 alleging improper project splitting from a high-voltage line (LAT Huechuraba, later desisted); the SEA rejected the claims by Res. Ex. N° 202599101336/2025 of 25 April 2025; the Segundo Tribunal Ambiental (Rol R N° 539-2025, judgment of 31 March 2026, reported 6 April 2026) upheld the RCA, finding no 'unidad de proyecto' or 'interdependencia funcional', and stated that any future LAT or transmission infrastructure in the area must enter the SEIA under art. 10(b) of Law 19.300 and assess cumulative and synergistic impacts, including those of the data center.",
+  "record_sources": [
+   {
+    "title": "Sentencia Rol R N° 539-2025 (Hernández Valenzuela con Dirección Ejecutiva del SEA), Segundo Tribunal Ambiental",
+    "url": "https://www.diarioconstitucional.cl/2026/04/06/segundo-tribunal-ambiental-confirmo-la-aprobacion-del-proyecto-de-data-center-de-amazon-en-huechuraba/2-trib-sent-437669/",
+    "publisher": "Segundo Tribunal Ambiental (mirror: Diario Constitucional)",
+    "date": "2026-03-31"
+   }
+  ],
+  "claim": "Emol reports a built area of 21,350 m2 and an investment of US$205 million in its own narration [press, source not named: Emol].",
+  "claim_sources": [
+   {
+    "title": "Tribunal Ambiental respalda aprobación de data center de Amazon en Huechuraba",
+    "url": "https://www.emol.com/noticias/Economia/2026/04/06/1196414/amazon-tribunal-ambiental.html",
+    "publisher": "Emol (reporting Segundo Tribunal Ambiental ruling)",
+    "date": "2026-04-06"
+   }
+  ],
+  "gap": "The court upheld the approval and required any future high-voltage supply to enter the SEIA with cumulative impacts including the data center; the built-area and investment figures are known only from a press report that names no source.",
+  "confidence": "medium",
+  "verification_note": "Fetched the judgment text (Rol R N° 539-2025, 31 Mar 2026; mirror on Diario Constitucional): confirms 10.9 ha, rejection of the splitting claim and the art. 10(b) / cumulative-impact requirement for future HV lines; added case number, judgment date, RCA and SEA resolution numbers; corrected '30-year design life' to the judgment's 'at least 30 years' for Stage 1 on medium-voltage supply. The 21,350 m2 and US$205 million figures are not in the judgment excerpt and remain via Emol. 2026-10-24: the built-area and investment figures, given by Emol without a named source (investment figures are the developer's claim even when sourced), moved to claim; confidence lowered to medium.",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified"
+ },
+ {
+  "id": "us-va-jlarc-sales-tax",
+  "country": "United States",
+  "region": "Virginia",
+  "site_or_subject": "Virginia datacenter sales and use tax exemption: cost and returns (JLARC)",
+  "operator": "~30 claimant companies (90% of industry)",
+  "lat": 37.54,
+  "lon": -77.43,
+  "category": "public_money",
+  "record": "Datacenters and tenants reported saving $928.6 million in sales taxes in FY23 (state share an estimated ~$683 million); median saving per company $5.4 million; the exemption is scheduled to expire in 2035. JLARC estimates that industry spending supports ~74,000 jobs/yr (average FY21-23 spending) and $9.1 billion GDP, and reports >8,000 operations jobs in FY23; datacenter revenue was 31% of Loudoun's and 7% of Prince William's total local tax revenue in FY23 (Prince William County's summary of the report gives $110 million).",
+  "record_sources": [
+   {
+    "title": "Data Centers in Virginia (Report 598), ch. 2",
+    "url": "https://jlarc.virginia.gov/pdfs/reports/Rpt598.pdf",
+    "publisher": "JLARC",
+    "date": "2024-12-09"
+   },
+   {
+    "title": "JLARC Report Summary (Prince William County)",
+    "url": "https://pwcva.gov/assets/2024-12/JLARC%20Report%20Summary_12-16-2024.pdf",
+    "publisher": "Prince William County",
+    "date": "2024-12-16"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The estimated cost and economic-impact figures both come from the same legislative auditor; no discrepancy was found.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read JLARC Report 598 on 2026-10-24. It confirms 'Data centers and tenants reported saving $928.6 million in sales taxes in FY23', 'The state portion of the exempted amount was an estimated $683 million', a median of '$5.4 million in FY23', expiry 'scheduled ... in 2035', '74,000 jobs, $5.5 billion in labor income, and $9.1 billion in GDP' (average spending FY21-FY23), 'over 8,000 full-time jobs in FY23', Loudoun and Prince William at '31 percent and 7 percent, respectively, of total local tax revenue', 'approximately 30 data center companies' and 'about 90 percent of the industry'. The $110 million for Prince William is not in the report passages read; it is in Prince William County's summary presentation of the report (Office of Sustainability, December 2024: 'Prince William $110M (7%)'), read on 2026-10-24."
+ },
+ {
+  "id": "us-ga-doaa-exemption-correction",
+  "country": "United States",
+  "region": "Georgia",
+  "site_or_subject": "Georgia datacenter sales tax exemption: DOAA economic evaluation and January 2026 correction",
+  "operator": "Statewide (multiple operators)",
+  "lat": 33.75,
+  "lon": -84.39,
+  "category": "public_money",
+  "record": "The Department of Audits and Accounts summary (dated December 2025, marked 'Revised January 2026') puts forgone state revenue at $474.2 million in FY2025, attributes 30% of activity to the exemption, and credits it with 8,505 construction jobs ($1.0 billion value added) and 1,641 operations jobs ($247 million), construction fiscal ROI 4%. The evaluation report behind it (report 33298, Carl Vinson Institute of Government for DOAA, December 2025) gives statewide totals of 28,350 construction jobs ($3.4 billion value added, Table 3) and 5,471 operations jobs ($823 million, Table 4); DOAA's original summary, released 24 Dec 2025 [press: The Augusta Press], credited these totals to the exemption and was superseded by the revised summary, with forgone revenue unchanged. A fiscal note on HB 1192 signed by the State Auditor on 14 Mar 2024 put FY2025 forgone state revenue from the existing exemption at $50.2 million.",
+  "record_sources": [
+   {
+    "title": "Data Center Tax Exemption Summary (Revised)",
+    "url": "https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf",
+    "publisher": "Georgia Department of Audits and Accounts",
+    "date": "2026-01"
+   },
+   {
+    "title": "Georgia data center sales and use tax exemption evaluation (report 33298), Tables 3-4",
+    "url": "https://open.ga.gov/openga/report/downloadFile?rid=33298",
+    "publisher": "Georgia Department of Audits and Accounts / Carl Vinson Institute of Government",
+    "date": "2025-12"
+   },
+   {
+    "title": "Error in state auditors' data center review inflated job production and economic value",
+    "url": "https://theaugustapress.com/error-in-state-auditors-data-center-review-inflated-job-production-and-economic-value",
+    "publisher": "The Augusta Press (reporting DOAA correction)",
+    "date": "2026-01-16"
+   },
+   {
+    "title": "Data Center Sales Tax Exemption Summary (2023)",
+    "url": "https://www.audits2.ga.gov/wp-content/uploads/2023/01/Data-Center-Sales-Tax-Exemption-Summary.pdf",
+    "publisher": "Georgia Department of Audits and Accounts",
+    "date": "2023-01"
+   },
+   {
+    "title": "Fiscal note, HB 1192 (LC 50 0792S), signed by State Auditor Greg S. Griffin and OPB Director Richard Dunn",
+    "url": "https://opb.georgia.gov/document/fiscal-notes-2024/lc-50-0792s/download",
+    "publisher": "Georgia Department of Audits and Accounts and Office of Planning and Budget",
+    "date": "2024-03-14"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "The revised job figures are 30% of the originals (8,505 / 28,350; 1,641 / 5,471), the share of activity the evaluation attributes to the exemption, and the originals equal the report's statewide totals for all data center activity; neither summary states this, report 33298 online still carries the original totals, and no document reconciling the fiscal note's $50.2 million with the evaluation's $474.2 million for FY2025 was found yet.",
+  "confidence": "medium",
+  "last_checked": "2026-10-24",
+  "receipt": "georgia_datacenter_exemption",
+  "verification_note": "Re-read 2026-10-24: report 33298 on open.ga.gov confirms FY2025 forgone revenue (Table 10, '-$474,182,904'), 'the remaining 30% could be attributed to the tax exemption', and the original totals (Table 3: 28,350 jobs, value added $3,351,493,594; Table 4: 5,471 jobs, $823,346,992). The revised DOAA summary on audits2.ga.gov could not be read in this check; its figures (8,505 jobs, $1.0 billion, 1,641 jobs, $247 million, fiscal ROI 4%) were read when the receipt was built (timeline T15) and equal 30% of the originals. The 24 Dec 2025 release date of the original summary rests on press. The original figures, earlier placed in claim, are the auditor's superseded record and now sit in record with their dates. The fiscal note is receipt timeline T5. Worked into a full receipt (20 dated documents).",
+  "verification_status": "partial"
+ },
+ {
+  "id": "us-tx-sao-jeti-audit",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "Texas JETI Act (Gov't Code ch. 403) agreements: State Auditor performance audit",
+  "operator": "Texas Comptroller / Governor's Office / Galena Park ISD / Northwest ISD",
+  "lat": 30.27,
+  "lon": -97.74,
+  "category": "public_money",
+  "record": "SAO Report 26-009 (11 Dec 2025) found the Comptroller and two school districts compliant (low risk) and rated the Governor's Office medium risk, recommending it strengthen performance-bond verification and due-diligence reviews of JETI participants. Only two executed agreements are referenced; no datacenter-specific job or dollar figures appear.",
+  "record_sources": [
+   {
+    "title": "An Audit Report on Selected Major Agreements Under the Texas Jobs, Energy, Technology, and Innovation Act (26-009)",
+    "url": "https://sao.texas.gov/SAOReports/ReportNumber?id=26-009",
+    "publisher": "Texas State Auditor's Office",
+    "date": "2025-12-11"
+   },
+   {
+    "title": "JETI applications list",
+    "url": "https://comptroller.texas.gov/economy/development/prop-tax/jeti/applications.php",
+    "publisher": "Texas Comptroller of Public Accounts",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "Audit is procedural; it does not report jobs promised or incentive value for datacenter agreements.",
+  "confidence": "high",
+  "verification_note": "Re-fetched SAO Report 26-009 (11 Dec 2025): Comptroller, Galena Park ISD and Northwest ISD rated low risk, Governor's Office medium with recommendations on performance-bond verification and due-diligence reviews, two executed agreements, no datacenter-specific job or dollar figures; confirmed.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "br-redata-renuncia",
+  "country": "Brazil",
+  "region": "Federal",
+  "site_or_subject": "Redata special tax regime for datacenters: official fiscal cost estimate",
+  "operator": "Federal government (MDIC/MF/MME); PL 278/2026",
+  "lat": -15.79,
+  "lon": -47.88,
+  "category": "public_money",
+  "record": "Senate budget note NT 33/2025 (23 Sept 2025) on MP 1.318/2025 describes counterparts of >=10% capacity to the domestic market and 2% of acquisitions to R&D, and mentions no job figures. The Câmara approved a substitute text of PL 278/2026 on 24 Feb 2026 and sent it to the Senate; it became Lei 15.504 of 15 Sept 2026, which requires beneficiaries to meet all their electricity demand from renewable or low-emission sources (art. 11-B §1º III), to invest 2% of the value of products acquired under the regime in research, development and innovation, with at least 40% going to programmes in the North, Northeast and Centre-West (art. 11-I), and to make at least 10% of effective processing supply available to the domestic market (art. 11-B §1º I); both commitments are reduced by 20% for establishments in those regions (§7º). It also requires a water usage effectiveness 'igual ou inferior a 0,05 L/kWh', measured annually (§1º IV).",
+  "record_sources": [
+   {
+    "title": "Nota Técnica de Adequação Orçamentária e Financeira nº 33/2025 (MP 1.318/2025)",
+    "url": "https://www12.senado.leg.br/orcamento/documentos/estudos/tipos-de-estudos/notas-tecnicas-de-adequacao-orcamentaria-e-financeira/mp-1318-2025-nota-tecnica-no-33-2025.pdf",
+    "publisher": "Senado Federal, Consultoria de Orçamentos",
+    "date": "2025-09-23"
+   },
+   {
+    "title": "PL 278/2026, ficha de tramitação (substitute approved in plenary 24/02/2026; transformed into Lei 15.504/2026)",
+    "url": "https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600838",
+    "publisher": "Câmara dos Deputados",
+    "date": "2026-02-24"
+   },
+   {
+    "title": "Lei nº 15.504, de 15 de setembro de 2026 (Redata)",
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/L15504.htm",
+    "publisher": "Presidência da República (Planalto)",
+    "date": "2026-09-15"
+   }
+  ],
+  "claim": "The executive's Exposição de Motivos 00010/2025 (16 Sept 2025), as recorded in Senate note NT 33/2025, estimates the renúncia at R$5.20 billion (2026), R$1.00 billion (2027) and R$1.05 billion (2028). The Senate rapporteur's parecer on PL 278/2026 repeats these figures and states the regime reduces initial project investment by 'até 30%' and that the 2% R&D obligation would yield 'centenas de milhões de reais' per year for universities.",
+  "claim_sources": [
+   {
+    "title": "Nota Técnica de Adequação Orçamentária e Financeira nº 33/2025 (MP 1.318/2025)",
+    "url": "https://www12.senado.leg.br/orcamento/documentos/estudos/tipos-de-estudos/notas-tecnicas-de-adequacao-orcamentaria-e-financeira/mp-1318-2025-nota-tecnica-no-33-2025.pdf",
+    "publisher": "Senado Federal, Consultoria de Orçamentos",
+    "date": "2025-09-23"
+   },
+   {
+    "title": "Parecer Cid Gomes (PL 278/2026); the document is undated, the copy was uploaded in September 2026",
+    "url": "https://static.poder360.com.br/uploads/2026/09/Parecer-Cid-Gomes-Redata-Senado-1-se-2026.pdf",
+    "publisher": "Senado Federal (via Poder360)",
+    "date": ""
+   }
+  ],
+  "gap": "The only cost figure found is the executive's estimate (R$5.20 + R$1.00 + R$1.05 billion = R$7.25 billion over 2026-28, ledger sum); no job figure was found in NT 33/2025 or in the provisions of Lei 15.504 read.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read 2026-10-24. NT 33/2025 ('Brasília-DF, 23 de setembro de 2025') confirms that EM 'nº 00010/2025 MDIC MF MME, de 16 de setembro de 2025' gives 'R$ 5,20 bilhões em 2026, R$ 1,00 bilhão em 2027 e R$ 1,05 bilhão em 2028', the 'disponibilização mínima de 10% da capacidade ao mercado interno', the 2% RD&I investment and no job figures. The Câmara's tramitação record shows the substitute approved in plenary on 24/02/2026, sent to the Senate on 25/02/2026 and the bill transformed into Lei 15.504/2026; the law on Planalto (15 Sept 2026) was read for art. 11-B and 11-I (its web text is garbled in places). The earlier record rested on the rapporteur's parecer (an undated copy hosted by Poder360, not re-read), which it described as setting a water-efficiency index with no threshold; the enacted law sets 0,05 L/kWh. The lapse of MP 1.318/2025 was not confirmed in a Congress record and was removed. The executive's cost estimate is a government forecast and now sits in claim. The 7.25 total is ledger arithmetic."
+ },
+ {
+  "id": "in-up-dc-policy-2026",
+  "country": "India",
+  "region": "Uttar Pradesh",
+  "site_or_subject": "Uttar Pradesh Data Centre Policy 2026 (G.O. 536/78-2-2026/E-105226)",
+  "operator": "Government of Uttar Pradesh / Invest UP",
+  "lat": 26.85,
+  "lon": 80.95,
+  "category": "public_money",
+  "record": "Policy notified 9 July 2026: capital subsidy 7% of eligible fixed capital investment capped Rs 20 crore (Rs 2 crore/yr) with an AI-compute booster of Rs 5 crore for >=350 FP64-grade units; park interest subsidy 60% for 7 years capped Rs 50 crore; land subsidy 50% (Bundelkhand/Purvanchal) or 25% (other regions); 100% stamp-duty exemption on the first purchase or lease from a government entity and 50% on the second transaction (DC Park to DC Unit), against a bank guarantee; 10-year electricity-duty exemption for DC Units; 25-year wheeling-charge exemptions of 50-100%.",
+  "record_sources": [
+   {
+    "title": "Uttar Pradesh Data Centre Policy 2026",
+    "url": "https://invest.up.gov.in/wp-content/uploads/2026/08/policy_En.pdf",
+    "publisher": "Government of Uttar Pradesh (Invest UP)",
+    "date": "2026-07-09"
+   }
+  ],
+  "claim": "The policy (§4) targets >Rs 2 lakh crore investment, 2 GW+ capacity and >=50% renewable share by 2030; Invest UP's page states the policy targets more than Rs 2 lakh crore of investment and 2 GW of additional capacity.",
+  "claim_sources": [
+   {
+    "title": "Uttar Pradesh Data Centre Policy 2026",
+    "url": "https://invest.up.gov.in/wp-content/uploads/2026/08/policy_En.pdf",
+    "publisher": "Government of Uttar Pradesh (Invest UP)",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "Uttar Pradesh Data Centre Policy 2026",
+    "url": "https://invest.up.gov.in/uttar-pradesh-data-centre-policy-2026/",
+    "publisher": "Invest UP",
+    "date": "2026-07"
+   }
+  ],
+  "gap": "Subsidies are capped per project; the policy sets no jobs target, applicants give employment projections (§6.9), and employment generation potential is a factor in special packages above 500 MW (§9).",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read the UP Data Centre Policy 2026 (G.O. No. 536/78-2-2026/E-105226 dated 09.07.2026) on 2026-10-24. Confirmed: capital subsidy 7% of EFCI with a Rs 20 crore ceiling and Rs 2 crore a year (§7.2.1), and a +Rs 5 crore booster for >=350 FP64-grade AI compute units (§7.2.7); park interest subsidy 60% for 7 years, overall ceiling Rs 50 crore (§7.1.1); land subsidy 50% for Bundelkhand/Purvanchal and 25% elsewhere (§7.1.3); stamp duty 100% on the first transaction and 50% on the second, against a bank guarantee (§7.1.4); electricity duty 100% for 10 years for DC Units (§7.2.2); wheeling exemptions of 50/75/100% for 25 years (§7.1.5). The investment, capacity and renewable targets (§4) are the government's plan and now sit in claim. Applicants give employment projections (§6.9); employment generation potential is a factor for special packages above 500 MW (§9); there is no jobs target."
+ },
+ {
+  "id": "my-dc-approvals-jobs",
+  "country": "Malaysia",
+  "region": "Johor / Selangor / Negeri Sembilan",
+  "site_or_subject": "Approved datacenter projects and projected jobs (Digital Ministry parliamentary reply)",
+  "operator": "27 approved projects (various)",
+  "lat": 1.49,
+  "lon": 103.74,
+  "category": "labor",
+  "record": "A Digital Ministry written parliamentary reply, reported on 15 Oct 2026 as answering Datuk Dr Ahmad Yunus Hairi (Kuala Langat) [press: The Vibes; The Star], states 27 datacenter projects were approved since the Feb 2025 Data Centre Task Force (16 Johor, 10 Selangor, 1 Negeri Sembilan; 1 operational, 26 projects under construction), and that approved projects must meet at least 30% local content, monitored by MIDA through six-monthly implementation reports.",
+  "record_sources": [
+   {
+    "title": "Twenty-seven approved data centres projected to create 4,053 jobs, including 3,523 skilled roles (written parliamentary reply)",
+    "url": "https://www.thevibes.com/articles/news/128358/twenty-seven-approved-data-centres-projected-to-create-4053-jobs-including-3523-skilled-roles",
+    "publisher": "The Vibes (reporting Kementerian Digital written reply)",
+    "date": "2026-10-15"
+   },
+   {
+    "title": "27 data centre projects worth RM225.97bil approved under task force, says Digital Ministry",
+    "url": "https://www.thestar.com.my/news/nation/2026/10/15/27-data-centre-projects-worth-rm22597bil-approved-under-task-force-says-digital-ministry",
+    "publisher": "The Star (reporting written reply to Datuk Dr Ahmad Yunus Hairi, Kuala Langat)",
+    "date": "2026-10-15"
+   }
+  ],
+  "claim": "Digital Minister Gobind Singh Deo told the Dewan Rakyat on 12 Nov 2024, winding up the Supply Bill 2025 debate, that RM141.72 billion of digital investment was approved in January-October 2024 and that 41,078 jobs were created in the digital economy sector in that period, not datacenters specifically [press: Bernama, reproduced by MIDA]. The Digital Ministry's October 2026 written reply, as reported [press: The Vibes; The Star], gives an RM225.97 billion pipeline for the 27 projects and 4,053 projected jobs including 3,523 high-skilled, with 89.21% of high-skilled roles expected to go to Malaysians.",
+  "claim_sources": [
+   {
+    "title": "RM141.7b worth of digital investments approved in 2024, 41,078 jobs created and 10 data centres operating in Johor, says Gobind",
+    "url": "https://www.mida.gov.my/mida-news/rm141-7b-worth-of-digital-investments-approved-in-2024-41078-jobs-created-and-10-data-centres-operating-in-johor-says-gobind/",
+    "publisher": "MIDA (reproducing Bernama report of Dewan Rakyat statement)",
+    "date": "2024-11-12"
+   },
+   {
+    "title": "Twenty-seven approved data centres projected to create 4,053 jobs, including 3,523 skilled roles (written parliamentary reply)",
+    "url": "https://www.thevibes.com/articles/news/128358/twenty-seven-approved-data-centres-projected-to-create-4053-jobs-including-3523-skilled-roles",
+    "publisher": "The Vibes (reporting Kementerian Digital written reply)",
+    "date": "2026-10-15"
+   },
+   {
+    "title": "27 data centre projects worth RM225.97bil approved under task force, says Digital Ministry",
+    "url": "https://www.thestar.com.my/news/nation/2026/10/15/27-data-centre-projects-worth-rm22597bil-approved-under-task-force-says-digital-ministry",
+    "publisher": "The Star (reporting written reply to Datuk Dr Ahmad Yunus Hairi, Kuala Langat)",
+    "date": "2026-10-15"
+   }
+  ],
+  "gap": "The datacenter job projection (4,053 for the 27 projects) and the 2024 digital-economy figure (41,078 jobs) have different scopes; no record of jobs filled at the approved datacenters was found yet.",
+  "confidence": "medium",
+  "verification_note": "Searched parlimen.gov.my and Digital Ministry/MIDA releases (English and Malay) for the October 2026 written reply (27 DCTF projects, RM225.97 bn, 4,053 jobs, 89.21%, 30% local content); only press located (The Vibes, The Star, Bernama, Berita Harian, which dates the 27 approvals to July 2026). The written reply text was not fetched. Second pass (2026-10-22): parlimen.gov.my written-question pages are robots-disallowed (added to browser_fetch_list.csv); searched repositori.parlimen.gov.my, digital.gov.my and Malay terms (pertanyaan bukan lisan, Ahmad Yunus Hairi, DCTF) and checked whether the ministry posts DR answers as PETRA does; found only The Star (names the asker and adds 1 operational/26 under construction), Luminews and Berita Harian (robots-disallowed), none with the reply text. 2026-10-24: the investment and job figures (RM141.72 billion, 41,078, RM225.97 billion, 4,053, 3,523, 89.21%) are the government's statements and moved to claim; MIDA's page (read 2026-10-24) gives the RM141.72 billion as approved 'in the first 10 months of this year' and the 41,078 jobs for 'the January-October 2024 period'. The approval counts and the local-content requirement stay in record as press reports of the reply. Berita Harian's July 2026 dating of the approvals is not in the sources and was removed from the record.",
+  "last_checked": "2026-10-24",
+  "verification_status": "not_found"
+ },
+ {
+  "id": "uk-abbots-langley-grey-belt",
+  "country": "United Kingdom",
+  "region": "England, Hertfordshire (Three Rivers)",
+  "site_or_subject": "Land off Bedmond Road, Abbots Langley: 96 MW datacenter on Green Belt arable land (recovered appeal APP/P1940/W/24/3346061)",
+  "operator": "Appellant (Greystoke-related applicant; 23/1068/OUT)",
+  "lat": 51.71,
+  "lon": -0.41,
+  "category": "land_biodiversity",
+  "record": "The Secretary of State allowed the recovered appeal on 12 May 2025 for an ~31 ha site entirely within the designated Green Belt (active arable land), finding Parcel 1 'grey belt' under NPPF para 155; Condition 11 requires at least 135% biodiversity net gain (Metric 4.0), and Conditions 15-16 provide for a country park on Parcel 2; loss of agricultural land was given limited weight, and district heating limited weight with no heat-reuse condition. The scheme is up to 84,000 m2 GEA with 96 MW of IT load; the officer report (18 Jan 2024) had recommended refusal.",
+  "record_sources": [
+   {
+    "title": "Recovered appeal: land off Bedmond Road, Abbots Langley (decision letter and Inspector's report)",
+    "url": "https://assets.publishing.service.gov.uk/media/6821f977c66deec8488f7f42/Recovered_appeal_-_land_off_Bedmond_Road__Abbots_Langley.pdf",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "date": "2025-05-12"
+   },
+   {
+    "title": "Officer report 23/1068/OUT, Planning Committee 18 January 2024",
+    "url": "https://moderngov.threerivers.gov.uk/documents/s6537/231068OUT%20-%20Outline%20application%20Demolition%20and%20clearance%20of%20existing%20buildings%20and%20hardstandings%20.pdf",
+    "publisher": "Three Rivers District Council",
+    "date": "2024-01-18"
+   }
+  ],
+  "claim": "The Inspector's report (IR 23) records as agreed between the parties 170-260 FTE jobs (mid 210) and annual wages of GBP 9-11m; the applicant's economic report (Nicol Economics), as quoted in the officer report, estimated 201 FTE jobs (210 elsewhere in the same report). The council leader (13 May 2025) said the village would gain 'some low-level employment' and the Green Belt would host 'mega warehouse-type buildings', and that the council would work to secure heat use and promised benefits.",
+  "claim_sources": [
+   {
+    "title": "Recovered appeal: land off Bedmond Road, Abbots Langley (decision letter and Inspector's report)",
+    "url": "https://assets.publishing.service.gov.uk/media/6821f977c66deec8488f7f42/Recovered_appeal_-_land_off_Bedmond_Road__Abbots_Langley.pdf",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "date": "2025-05-12"
+   },
+   {
+    "title": "Officer report 23/1068/OUT, Planning Committee 18 January 2024",
+    "url": "https://moderngov.threerivers.gov.uk/documents/s6537/231068OUT%20-%20Outline%20application%20Demolition%20and%20clearance%20of%20existing%20buildings%20and%20hardstandings%20.pdf",
+    "publisher": "Three Rivers District Council",
+    "date": "2024-01-18"
+   },
+   {
+    "title": "Council Leader responds to government's decision over Abbots Langley data centre",
+    "url": "https://www.threerivers.gov.uk/news/council-leader-responds-abbots-langley-data-centre",
+    "publisher": "Three Rivers District Council",
+    "date": "2025-05-13"
+   }
+  ],
+  "gap": "Good practice on paper: an enforceable 135% biodiversity net gain condition; no monitoring record was found yet, and heat reuse was weighed as a benefit but not conditioned.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read 2026-10-24. The SoS decision letter and Inspector's report of 12 May 2025 confirm a site of 'approximately 31 ha', 'Both Parcels 1 and 2 are within the designated Green Belt' on 'active agricultural land', 'Parcel 1 constitutes grey belt land' under paragraph 155, Condition 11's 'BNG uplift of least 135% (using Biodiversity Metric 4.0)' (sic), a country park on Parcel 2 (Conditions 15-16), 'limited weight' for the loss of arable land and for district heating with no condition, 'up to 84,000 sqm (GEA)' and '96 MW', and '170-260 FTE jobs, with a mid-range of 210 FTE jobs, and an annual wage bill of between £9m and £11m' among the matters agreed (IR 23). The officer report (18 Jan 2024) recommends 'That Outline Planning Permission be REFUSED' and quotes the applicant's Nicol Economics report at 201 FTE (7.5.4) and 210 FTE (7.7.17). The job and wage figures are projections and now sit in claim. Where the BNG is to be delivered was not checked."
+ },
+ {
+  "id": "uk-south-mimms-dc01uk",
+  "country": "United Kingdom",
+  "region": "England, Hertfordshire (Hertsmere)",
+  "site_or_subject": "DC01UK, South Mimms: 85-acre campus, jobs and BNG in outline permission",
+  "operator": "DC01UK (campus later acquired by Equinix)",
+  "lat": 51.69,
+  "lon": -0.23,
+  "category": "labor",
+  "record": "Hertsmere granted outline permission (24/1152/OUTEI, DC01 UK Limited, all matters reserved) for a phased data centre of up to 187,000 sqm GEA on about 34.4 ha (85 acres) of Green Belt east of South Mimms Services: committee resolution 23 Jan 2025, decision notice 12 Feb 2025, after a Section 106 agreement of 11 Feb 2025 (54% of the site to stay open space, per the council's release). Conditions require a minimum of 10% biodiversity net gain on site, diesel generators only for outages and testing (at most five hours in any 24 hour period), plant-noise approval, a cooling strategy with 'no adverse impact on local water supplies' and a PUE report against the EU Climate Neutral Data Centre Pact. The S106 secures the GBP 2m bus contribution as £2,000,000 (index-linked) for bus 398 and the Hertsmere Hopper, and a £38,500 skills contribution, both before commencement. Officers gave no weight to the applicant's separate £4.5M training-hub offer. A reserved-matters application for Phase 1a (26/1187/REM) was listed in 2026 [NGO: CPRE Hertfordshire].",
+  "record_sources": [
+   {
+    "title": "Data centre in Hertsmere given outline permission by planning committee",
+    "url": "https://www.hertsmere.gov.uk/news/data-centre-in-hertsmere-given-outline-permission-by-planning-committee",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-24"
+   },
+   {
+    "title": "Town and Country Planning Act 1990 notice: 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://publicnoticeportal.uk/notice/planning/675af07e878a9fe215ae87e1",
+    "publisher": "Hertsmere Borough Council via Public Notice Portal",
+    "date": "2024-12-11"
+   },
+   {
+    "title": "Land East of South Mimms Services (reserved matters 26/1187/REM pursuant to 24/1152/OUTEI)",
+    "url": "https://www.cpreherts.org.uk/resources/land-east-of-south-mimms-services-st-albans-road-south-mimms-2/",
+    "publisher": "CPRE Hertfordshire",
+    "date": "2026-10-05"
+   },
+   {
+    "title": "Planning Committee 23 January 2025, item 5A: officer report on 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-23"
+   },
+   {
+    "title": "Decision notice (12 Feb 2025, outline permission with 56 conditions) and Section 106 agreement (11 Feb 2025) for 24/1152/OUTEI, Hertsmere planning register, documents tab",
+    "url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-02-12"
+   }
+  ],
+  "claim": "Per the officer report, the applicant's Economic Benefits Statement (Stantec) estimates a £3.75bn construction value, at least 500 construction workers, 200 on-site jobs once fully operational and 12,741 indirect jobs across the UK; the council's release cites 500 construction jobs, 200 permanent on-site jobs and 10,900 indirect jobs. The applicant assumed approximately 144 diesel generators, a PUE no greater than 1.4 and free-cooling chillers rather than water for cooling. DC01UK sold the site to Equinix, with 'a projected total investment value in the region of £3.9bn' [press: The Construction Index, 30 Oct 2025, quoting DC01UK's directors].",
+  "claim_sources": [
+   {
+    "title": "Data centre in Hertsmere given outline permission by planning committee",
+    "url": "https://www.hertsmere.gov.uk/news/data-centre-in-hertsmere-given-outline-permission-by-planning-committee",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-24"
+   },
+   {
+    "title": "Deal done for £3.9bn South Mimms data centre",
+    "url": "https://www.theconstructionindex.co.uk/news/view/deal-done-for-39bn-south-mimms-data-centre",
+    "publisher": "The Construction Index (reporting the seller's announcement)",
+    "date": "2025-10-30"
+   },
+   {
+    "title": "Planning Committee 23 January 2025, item 5A: officer report on 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-23"
+   }
+  ],
+  "gap": "No condition or obligation secures a number of jobs. The officer report and decision give no electrical demand (MW) or water-use figure; generator numbers and fuel are left to reserved matters and an Environment Agency permit (not found). The release's 10,900 indirect jobs do not appear in the officer report, which gives the applicant's 12,741.",
+  "confidence": "high",
+  "verification_note": "Second pass: re-fetched Hertsmere's release (dated 24 Jan 2025) confirming every record figure; identified the application as 24/1152/OUTEI (public notice: up to 187,000 sqm GEA, received 9 Sep 2024) and located the committee report (hertsmere.moderngov.co.uk document s67144, agenda item mgAi.aspx?ID=41794), but moderngov and the Idox portal are robots-blocked and the Internet Archive copy is blocked, so conditions and S106 heads of terms were not read (both URLs added to the browser fetch list). The earlier gap statement that no condition secures job numbers was unverified and is now worded as not shown. 2026-10-24: CPRE Hertfordshire's page (added 5 October 2026) lists 26/1187/REM for Phase 1a enabling works but gives no date for the outline permission; the decision-notice date was not found, so the record gives only the committee resolution of 23 Jan 2025. The construction and permanent job figures are the applicant's and now sit in claim. The Equinix purchase rests on a press report (The Construction Index, 30 Oct 2025) quoting the seller's directors.",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified"
+ },
+ {
+  "id": "cl-alto-jahuel-terranova-sea",
+  "country": "Chile",
+  "region": "Región Metropolitana, Buin (Alto Jahuel)",
+  "site_or_subject": "Habilitación Data Center Alto Jahuel: SEA pertinencia (PERTI-2026-5962)",
+  "operator": "DC Terranova SpA",
+  "lat": -33.75,
+  "lon": -70.68,
+  "category": "land_biodiversity",
+  "record": "SEA Región Metropolitana resolved that the project 'no está obligado a someterse al SEIA' (the published text leaves the resolution's number and date blank; its publication path is dated 24 July 2026): ~16 ha property, 5.62 ha project area, 3.21 ha built on two levels; 92.7 MW on-site substation; 56 diesel generators totalling 94.95 MW with ~990 t diesel storage (below the 1,000 t SEIA threshold); ~307 operating staff; nearest protected area (Parque de la Viña Santa Rita) ~1,200 m and nearest wetland HRU-13-43 (an artificial water storage tank) ~1,476 m. The resolution notes the SMA can still require the project to enter the SEIA.",
+  "record_sources": [
+   {
+    "title": "Resolución Exenta, consulta de pertinencia PERTI-2026-5962, Habilitación Data Center Alto Jahuel",
+    "url": "https://firma.sea.gob.cl/publicaciones/2026/07/24/1784914495_42EC06A7-D626-4DCD-8456-E599CAEE7C3F",
+    "publisher": "Servicio de Evaluación Ambiental, Región Metropolitana",
+    "date": "2026-07-24"
+   }
+  ],
+  "claim": "The proponent describes insulated generator enclosures ('cabinas insonorizadas'), vehicle-emission measures and waste to be 'gestionados por empresas autorizadas'.",
+  "claim_sources": [
+   {
+    "title": "Resolución Exenta PERTI-2026-5962",
+    "url": "https://firma.sea.gob.cl/publicaciones/2026/07/24/1784914495_42EC06A7-D626-4DCD-8456-E599CAEE7C3F",
+    "publisher": "SEA",
+    "date": "2026-07-24"
+   }
+  ],
+  "gap": "Diesel storage of ~990 t is below the 1,000 t SEIA threshold; noise and waste measures are those described by the proponent, and the SMA can still require SEIA entry.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read the SEA resolution (PERTI-2026-5962) on 2026-10-24. Its number and date are blank in the published text; 24 July 2026 comes from the publication path. Confirmed: the project 'no está obligado a someterse al SEIA'; 'aproximadamente 16 hectáreas', '5,62 ha' and '3,21 ha ... distribuida en dos niveles'; a '92,7 MW' substation; '56 grupos electrógenos diésel ... 94,95 MW' (29 x 2,250 kW + 27 x 1,100 kW); 'aproximadamente 990 toneladas', 'inferior al umbral de 1.000 toneladas'; '307 trabajadores'; Parque de la Viña Santa Rita at about '1.200 metros' and wetland HRU-13-43 at about '1.476 metros' (an artificial water storage tank); the SMA's power to 'requerir el ingreso del Proyecto al SEIA'. The earlier statement that neither site is intervened was not found in the passages read and was removed; the noise and waste measures are described as the proponent's."
+ },
+ {
+  "id": "eu-eed-dc-reporting-2026",
+  "country": "European Union",
+  "region": "EU-27",
+  "site_or_subject": "First EED datacenter reporting cycle: water, heat reuse and coverage (COM(2026) 500)",
+  "operator": "770 reporting datacenters",
+  "lat": 50.85,
+  "lon": 4.35,
+  "category": "circularity",
+  "record": "The Commission's report of 21 Sept 2026 (COM(2026) 500) on the first reporting period (May-Sept 2024) covers 770 datacenters, about 36% of those in scope, with six Member States reporting none. It gives 2024 EU averages of PUE 1.36 and WUE 0.58 m3/MWh (national range 0.07-1.28) and a renewable energy factor of 0.86; 67 datacenters reported any waste-heat reuse, about 1.8% of generated heat (some reported values judged unrealistic). EU datacenter electricity use was 68 TWh in 2024, projected 114 TWh (3.2% of demand) by 2030.",
+  "record_sources": [
+   {
+    "title": "Report from the Commission on the energy efficiency of data centres in the EU, COM(2026) 500 final (Council register, ST 13443/26)",
+    "url": "https://data.consilium.europa.eu/doc/document/ST-13443-2026-INIT/en/pdf",
+    "publisher": "European Commission (Council of the EU document register)",
+    "date": "2026-09-21"
+   },
+   {
+    "title": "Report from the Commission on the energy efficiency of data centres in the EU, COM(2026) 500 final",
+    "url": "https://www.cdep.ro/afaceri_europene/CE/2026/COM_2026_500_EN_ACT_part1_v4.pdf",
+    "publisher": "European Commission (copy hosted by Romanian Chamber of Deputies)",
+    "date": "2026-09-21"
+   },
+   {
+    "title": "Energy performance of data centres (EED reporting page)",
+    "url": "https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficiency-targets-directive-and-rules/energy-efficiency-directive/energy-performance-data-centres_en",
+    "publisher": "European Commission DG ENER",
+    "date": "2026"
+   }
+  ],
+  "claim": "The report aggregates operators' self-reported matching: 'Over 70% of the reported sites already match 100% of their electricity consumption with renewable energy on an annual basis', largely via PPAs and guarantees of origin.",
+  "claim_sources": [
+   {
+    "title": "Report from the Commission on the energy efficiency of data centres in the EU, COM(2026) 500 final (Council register, ST 13443/26)",
+    "url": "https://data.consilium.europa.eu/doc/document/ST-13443-2026-INIT/en/pdf",
+    "publisher": "European Commission (Council of the EU document register)",
+    "date": "2026-09-21"
+   },
+   {
+    "title": "COM(2026) 500 final",
+    "url": "https://www.cdep.ro/afaceri_europene/CE/2026/COM_2026_500_EN_ACT_part1_v4.pdf",
+    "publisher": "European Commission",
+    "date": "2026-09-21"
+   }
+  ],
+  "gap": "About 36% of in-scope datacenters reported, and reported heat reuse was about 1.8% of generated heat; land take is not a reported metric.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_note": "Re-read 2026-10-24. The cdep.ro copy could not be read (robots-disallowed); the same COM(2026) 500 final, dated 21.9.2026, was read in the Council register (ST 13443/26), now the first source. Confirmed: 'reported data from the first reporting period (May-September 2024)'; '770 data centres', 'around 36% of the estimated total ... falling under the reporting requirement'; 'Six Member States have reported zero data centres'; 'In 2024, the average reported PUE ... stood at 1.36' ('1.3625'), WUE '0.58' (national range 0.07-1.28) and REF '0.86'; 'Only 67 data centres reported some waste heat reuse'; about 1.8% of heat, with footnote 39 that 'some computed values seemed unrealistically high'; '68 TWh' in 2024 and '114 TWh by 2030, reaching 3.2%'; and 'Over 70% of the reported sites already match 100%' on an annual basis. The report does not state the calendar year of operation the first reports describe. See also eu-eed-datacentre-reporting-2024-period (same first EED reporting period: the July 2025 technical report counts 770 sites, about 36% of those in scope; 776 is the Commission dashboard figure as reported by Data Center Dynamics).",
+  "verification_status": "verified"
+ },
+ {
+  "id": "se-stockholm-exergi-heat",
+  "country": "Sweden",
+  "region": "Stockholm",
+  "site_or_subject": "Stockholm Exergi / Stockholm Data Parks: datacenter heat recovery into municipal district heating",
+  "operator": "Stockholm Exergi (50% City of Stockholm, 50% Ankhiale)",
+  "lat": 59.33,
+  "lon": 18.07,
+  "category": "circularity",
+  "record": "Stockholm Exergi's 2023 annual report states: 'Under 2023 stod värmeåtervinningen från Stockholm Data Parks och Öppen Fjärrvärme för 117 GWh'; the company is owned 50% by Stockholms stad and 50% by Ankhiale; district heating is 98% renewable or recovered energy overall.",
+  "record_sources": [
+   {
+    "title": "Stockholm Exergi Årsredovisning 2023",
+    "url": "https://www.stockholmexergi.se/wp-content/uploads/2024/03/Arsredovisning-2023_SV_240326_sidor.pdf",
+    "publisher": "Stockholm Exergi AB (statutory annual report)",
+    "date": "2024-03-26"
+   }
+  ],
+  "claim": "Stockholm Data Parks markets heat recovery to datacenter tenants as a standard offer.",
+  "claim_sources": [
+   {
+    "title": "Stockholm Data Parks customer references",
+    "url": "https://stockholmdataparks.com/?p=9",
+    "publisher": "Stockholm Data Parks",
+    "date": "2025"
+   }
+  ],
+  "gap": "Good-practice case: a district-heating utility half-owned by the City of Stockholm publishes recovered heat (117 GWh in 2023) in its statutory annual report; the figure combines datacenters with other Öppen Fjärrvärme sources, and the sustainability report had a limited review by Deloitte AB whose scope for this line was not checked.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read Stockholm Exergi's Årsredovisning 2023 on 2026-10-24. Confirmed verbatim: 'Under 2023 stod värmeåtervinningen från Stockholm Data Parks och Öppen Fjärrvärme för 117 GWh'; ownership 'Stockholms stad och Ankhiale, 50 procent var'; 'Andel förnybar eller återvunnen energi (fjärrvärme): 98 procent'. The sustainability report was 'granskats översiktligt av revisionsfirman Deloitte AB'; whether the 117 GWh line is in that review's scope was not checked, so the earlier 'not separately assured' was replaced."
+ },
+ {
+  "id": "ie-tallaght-heatworks",
+  "country": "Ireland",
+  "region": "Dublin, Tallaght",
+  "site_or_subject": "Tallaght District Heating Scheme fed by Amazon datacenter (Heat Works, council-owned)",
+  "operator": "Heat Works (100% South Dublin County Council); heat source Amazon Web Services",
+  "lat": 53.29,
+  "lon": -6.37,
+  "category": "circularity",
+  "record": "SEAI's case study records ~6,000 MWh generated to date and 1,098 tCO2 saved as of June 2024 (~1,500 tCO2/yr estimated; lifetime estimate 270,000 MWh over 30 years), 100% of heat from the nearby Amazon datacenter, serving County Hall and TU Dublin Tallaght with further connections planned; Heat Works is a not-for-profit utility fully owned by South Dublin County Council. The council's 14 Apr 2025 written reply describes Heatworks as 'Ireland's first publicly owned, not-for-profit energy company'.",
+  "record_sources": [
+   {
+    "title": "Tallaght District Heating (case study)",
+    "url": "https://www.seai.ie/case-studies/tallaght-district-heating",
+    "publisher": "Sustainable Energy Authority of Ireland",
+    "date": "2024-06"
+   },
+   {
+    "title": "Council meeting written reply, Question 34 (Tallaght District Heating)",
+    "url": "https://meetings.southdublin.ie/Home/ViewReply/85873",
+    "publisher": "South Dublin County Council",
+    "date": "2025-04-14"
+   }
+  ],
+  "claim": "none found (Amazon statements not retrieved from a legally bound source)",
+  "claim_sources": [],
+  "gap": "Positive example: municipally owned heat network with published cumulative MWh and tCO2; annual MWh and capacity figures are not published by the council or SEAI (SEAI gives only a 30-year lifetime estimate).",
+  "confidence": "high",
+  "verification_note": "Re-fetched SEAI case study: ~6,000 MWh to date, 1,098 tCO2 as of June 2024, ~1,500 tCO2/yr, 100% Amazon datacenter heat, County Hall and TU Dublin served, Heat Works fully council-owned; confirmed, with the 270,000 MWh lifetime estimate added.",
+  "last_checked": "2026-10-20",
+  "verification_status": "verified"
+ },
+ {
+  "id": "dk-bek1167-surplus-heat",
+  "country": "Denmark",
+  "region": "National",
+  "site_or_subject": "BEK nr. 1167/2025: mandatory cost-benefit analysis and surplus-heat use for datacenters >1 MW",
+  "operator": "Energistyrelsen (Danish Energy Agency)",
+  "lat": 55.68,
+  "lon": 12.57,
+  "category": "circularity",
+  "record": "Executive order BEK nr. 1167 issued 2 Oct 2025 (in force 11 Oct 2025) requires datacenters with more than 1 MW nominal energy input to prepare a cost-benefit analysis when building or substantially renovating (section 3) and to use surplus heat unless the analysis shows it is not technically or economically feasible (section 6); operators that could use heat but do not want to must apply for an exemption (section 5(2)).",
+  "record_sources": [
+   {
+    "title": "Bekendtgørelse om udarbejdelse og godkendelse af cost-benefit-analyser for industrianlæg, servicefaciliteter og datacentre (BEK nr. 1167 af 02/10/2025)",
+    "url": "https://www.retsinformation.dk/eli/lta/2025/1167/pdf",
+    "publisher": "Retsinformation / Energistyrelsen",
+    "date": "2025-10-02"
+   },
+   {
+    "title": "Draft order submitted to Folketing KEF committee (Bilag 314)",
+    "url": "https://www.ft.dk/samling/20241/almdel/KEF/bilag/314/3046760.pdf",
+    "publisher": "Folketinget",
+    "date": "2025"
+   }
+  ],
+  "claim": "Dansk Fjernvarme's consultation response (14 Oct 2025) cites a June 2025 industry analysis that datacenters used 7% of Danish electricity in 2024 (~2.6 TWh) versus ~1.2 TWh assumed by the Energy Agency for 2025.",
+  "claim_sources": [
+   {
+    "title": "Høringssvar Analyseforudsætninger 2025 (AF25)",
+    "url": "https://ens.dk/media/7620/download",
+    "publisher": "Dansk Fjernvarme, submitted to Energistyrelsen",
+    "date": "2025-10-14"
+   }
+  ],
+  "gap": "Legal obligation now exists, but no official figure for surplus heat actually delivered by Danish datacenters was found.",
+  "confidence": "high",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified",
+  "verification_note": "Re-read BEK nr. 1167 on Retsinformation on 2026-10-24. Issued 'den 2. oktober 2025' (Lovtidende 'Udgivet den 3. oktober 2025'), in force 'den 11. oktober 2025' (§ 9); it covers datacentres with 'en samlet nominel energitilførsel på mere end 1 MW' (§ 2); § 3 'skal udarbejde en cost-benefit-analyse ved opførsel eller omfattende renovering'; § 6 surplus heat must be used 'medmindre cost-benefit-analysen ... viser, at det ikke er teknisk eller økonomisk gennemførligt'; § 5(2) 'anmode Energistyrelsen om dispensation'. The Dansk Fjernvarme claim source was not re-read."
+ },
+ {
+  "id": "msft-circular-centers-assurance",
+  "country": "United States",
+  "region": "Global (Circular Centers in North America, Europe, Asia)",
+  "site_or_subject": "Microsoft cloud-hardware reuse/recycle rate and third-party assurance scope",
+  "operator": "Microsoft",
+  "lat": 47.64,
+  "lon": -122.13,
+  "category": "circularity",
+  "record": "Deloitte & Touche LLP's limited-assurance review (AT-C 210) covers Section 1 of Microsoft's Environmental Data Fact Sheet; the review in the 2025 fact sheet (FY24) is dated 29 May 2025 and the review in the 2026 fact sheet (FY25) 9 July 2026. Section 1 of the 2026 fact sheet holds operational waste tonnages (Table 9) and the percentage of product packaging recyclability (Table 11), and no cloud-hardware reuse or recycle percentage.",
+  "record_sources": [
+   {
+    "title": "2025 Microsoft Environmental Data Fact Sheet (incl. Deloitte review report)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-05-29"
+   },
+   {
+    "title": "2026 Microsoft Environmental Data Fact Sheet (incl. Deloitte review report)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   }
+  ],
+  "claim": "Microsoft reports 90.9% reuse and recycling of cloud hardware servers and components in FY24 (July 2023-June 2024), against a goal of 90% by 2025, and more than 3.2 million components reused in FY24. Its April 2025 circularity white paper defines the rate as (reuse kg + recycle kg x recycling efficiency) / total kg and mentions no independent verification.",
+  "claim_sources": [
+   {
+    "title": "2025 Microsoft Environmental Sustainability Report",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-05"
+   },
+   {
+    "title": "Circularity White Paper (April 2025)",
+    "url": "https://datacenters.microsoft.com/wp-content/uploads/2025/04/CircularityWhitePaperApril2025.pdf",
+    "publisher": "Microsoft Datacenters",
+    "date": "2025-04"
+   }
+  ],
+  "gap": "The 90.9% hardware circularity figure is Microsoft's own; the Deloitte review covers Section 1 of the fact sheet, which lists waste tonnages and packaging recyclability but not the hardware reuse/recycle rate.",
+  "confidence": "medium",
+  "last_checked": "2026-10-24",
+  "verification_status": "partial",
+  "verification_note": "Re-read the 2026 Environmental Data Fact Sheet on 2026-10-24: the Deloitte & Touche LLP review report is dated 'July 9, 2026', under 'AT-C Section 210, Review Engagements', for limited assurance; its scope is 'Section 1 of the 2026 Environmental Data Fact Sheet' (plus the Table 11 fn 3 packaging percentage); Section 1 holds waste tonnages (Table 9) and 'Percentage of product packaging recyclability' (Table 11) and no cloud-hardware reuse or recycle percentage. The 29 May 2025 date of the review in the 2025 fact sheet was read with microsoft-scope2-two-numbers (2026-10-23); whether that fact sheet's Section 1 holds a hardware percentage was not checked. The April 2025 white paper was not re-read; its definition sentence is Microsoft's own and now sits in claim. Same 90.9% figure and Deloitte review as us-hyperscaler-server-lifespan-circularity, which also dates the figure to FY24 (1 July 2023 to 30 June 2024)."
+ },
+ {
+  "id": "ke-meta-sama-keca-2024",
+  "country": "Kenya",
+  "region": "Nairobi",
+  "site_or_subject": "Facebook content moderators v Meta, Sama and Majorel: Court of Appeal [2024] KECA 1152",
+  "operator": "Meta Platforms Inc / Meta Platforms Ireland; Samasource EPZ Ltd (Sama); Majorel Kenya Ltd",
+  "lat": -1.29,
+  "lon": 36.82,
+  "category": "labor",
+  "record": "On 20 Sept 2024 the Court of Appeal (Musinga P, Asike-Makhandia, Mativo JJA) allowed three consolidated appeals and set aside in its entirety the ELRC's 2 June 2023 interim ruling (which had restrained the redundancy of ~184 moderators, extended contracts and ordered medical and psychological care), holding the judge 'impermissibly and dangerously delved into contested issues of fact and the law' and was 'writing a final judgment as opposed to an interlocutory ruling'. The lawfulness of the redundancy and Meta's employer status remain for trial; Meta's jurisdiction objection was not decided in this judgment; each party bears its own costs. In a separate appeal decided by the same bench [press: NTV Kenya, 21 Sept 2024], the Court of Appeal held it was 'proper and within the jurisdiction of the Employment and Labour Relations court (ELRC) to intervene' and found Meta's appeal on that ground 'without merit'; that judgment was not read.",
+  "record_sources": [
+   {
+    "title": "Samasource EPZ Limited t/a Sama v Meta Platforms, Inc & 186 others; Kenya Human Rights Commission & 8 others (Interested Parties) [2024] KECA 1152 (KLR)",
+    "url": "https://new.kenyalaw.org/akn/ke/judgment/keca/2024/1152/eng@2024-09-20",
+    "publisher": "Kenya Law (National Council for Law Reporting)",
+    "date": "2024-09-20"
+   },
+   {
+    "title": "Court of Appeal rules Meta can be sued in Kenyan courts over layoffs of content moderators",
+    "url": "https://ntvkenya.co.ke/news/court-of-appeal-rules-meta-can-be-sued-in-kenyan-courts-over-layoffs-of-content-moderators/",
+    "publisher": "NTV Kenya (reporting a Court of Appeal judgment)",
+    "date": "2024-09-21"
+   }
+  ],
+  "claim": "none found in the court record beyond the parties' pleadings (Meta contends it is not the moderators' employer; moderators allege sham redundancy and unsafe conditions).",
+  "claim_sources": [],
+  "gap": "Interim protections were vacated on procedural grounds and a companion appeal on jurisdiction was reported dismissed; the substantive labor-condition allegations are undecided as of this record.",
+  "confidence": "medium",
+  "last_checked": "2026-10-24",
+  "verification_status": "not_found",
+  "verification_note": "Second reading attempted 2026-10-24: the Kenya Law judgment page could not be read in this check, so no fact in the record was confirmed or contradicted in this pass. A press report (NTV Kenya, 21 Sept 2024, same bench: Musinga, Asike-Makhandia, Mativo) describes a companion Court of Appeal judgment upholding the ELRC's jurisdiction over Meta; its citation was not found and it was not read. 'Not decided' now says 'in this judgment'."
+ },
+ {
+  "id": "id-morowali-itss-2023",
+  "country": "Indonesia",
+  "region": "Central Sulawesi, Morowali (IMIP)",
+  "site_or_subject": "PT Indonesia Tsingshan Stainless Steel furnace explosion, 24 Dec 2023 (nickel supply chain)",
+  "operator": "PT ITSS, tenant of Indonesia Morowali Industrial Park",
+  "lat": -2.82,
+  "lon": 122.15,
+  "category": "labor",
+  "record": "The Indonesian National Police (Central Sulawesi Regional Police, published 4 Jan 2024) recorded 21 worker deaths from the furnace explosion at PT ITSS on 24 Dec 2023 and said the case had been upgraded to a formal (pro justitia) investigation into suspected violations of standard operating procedures. No Kemnaker, ILO or Komnas HAM inspection report with findings was found.",
+  "record_sources": [
+   {
+    "title": "Police investigate furnace explosion at Morowali nickel smelter",
+    "url": "https://inp.polri.go.id/artikel/police-investigate-furnace-explosion-at-morowali-nickel-smelter",
+    "publisher": "Indonesian National Police (Polri)",
+    "date": "2024-01-04"
+   }
+  ],
+  "claim": "IMIP's spokesperson (Dedi Kurniawan) initially reported 18 deaths, at least 10 Indonesian and at least 8 Chinese, and 41 injured [press: The Jakarta Post]; IMIP stated the blast occurred during furnace repair and attributed the initial release to slag residue contacting flammable material and oxygen tanks.",
+  "claim_sources": [
+   {
+    "title": "As death toll rises, Morowali blast brings work safety squarely into focus",
+    "url": "https://www.thejakartapost.com/id/business/2023/12/27/as-death-toll-rises-morowali-blast-brings-work-safety-squarely-into-focus",
+    "publisher": "The Jakarta Post",
+    "date": "2023-12-27"
+   }
+  ],
+  "gap": "The death toll rose from IMIP's initial 18 to 21 in the police record; police treat the case as a criminal investigation into suspected SOP violations; no Kemnaker, ILO or Komnas HAM inspection findings were found. Older source (2023-24).",
+  "confidence": "high",
+  "verification_note": "Fetched Indonesian National Police article (inp.polri.go.id, 4 Jan 2024): records 21 deaths and an upgraded investigation for suspected SOP violations; resolves the earlier 18-vs-21 discrepancy (18 was IMIP's initial count, per Jakarta Post) in favour of the police figure. The police item gives no nationality split or injury count, so those remain IMIP figures via the Jakarta Post; Kemnaker and Komnas HAM findings were searched for (Indonesian) and not located. 2026-10-24: IMIP's counts (18 deaths, at least 10 Indonesian and at least 8 Chinese, 41 injured) are the company's statements via the Jakarta Post and moved to claim; the early toll of 13, which the Jakarta Post gives without naming who reported it, and the Tempo commentary (21 deaths; an account of access difficulties for ministry investigators) were dropped.",
+  "last_checked": "2026-10-24",
+  "verification_status": "verified"
+ }
+]

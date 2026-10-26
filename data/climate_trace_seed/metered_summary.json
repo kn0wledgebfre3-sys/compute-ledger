@@ -1,0 +1,169 @@
+{
+ "ireland_aer": {
+  "2024": {
+   "licences": 11,
+   "electricity_gwh": 3584.7,
+   "share_of_cso_national_metered_total": 0.514,
+   "amazon_licences": 9,
+   "amazon_electricity_gwh": 3388.9,
+   "amazon_share_of_cso_national_metered_total": 0.486,
+   "water_m3": 187328,
+   "generator_fuel_gj": 548734,
+   "natural_gas_gj": 510550
+  },
+  "2025": {
+   "licences": 11,
+   "electricity_gwh": 4108.9,
+   "share_of_cso_national_metered_total": 0.536,
+   "amazon_licences": 9,
+   "amazon_electricity_gwh": 3720.2,
+   "amazon_share_of_cso_national_metered_total": 0.485,
+   "water_m3": 427205,
+   "generator_fuel_gj": 46028,
+   "natural_gas_gj": 10322
+  }
+ },
+ "virginia_nei": {
+  "facilities_2023_nox": 27,
+  "nox_tons_2023_total": 393.3,
+  "facilities_2020_nox": 3,
+  "nox_tons_2020_total": 47.1,
+  "matched_to_deq_registration": 22,
+  "largest_2023": [
+   [
+    "Amazon Data Services, Inc IAD-132/133",
+    77.648975
+   ],
+   [
+    "DuPont Fabros Tech - Ashburn Corp Ctr",
+    47.73038187
+   ],
+   [
+    "CyrusOne Northern Virginia Data Center - Shaw Road (74109)",
+    31.7001925
+   ],
+   [
+    "Microsoft Corporation - East Coast Data Center",
+    28.765935
+   ],
+   [
+    "CyrusOne Kincora",
+    27.0697028
+   ]
+  ]
+ },
+ "benchmarking": {
+  "rows": 441,
+  "jurisdictions": {
+   "New York City": [
+    "2023",
+    "2024"
+   ],
+   "Chicago": [
+    "2022",
+    "2023"
+   ],
+   "Seattle": [
+    "2024",
+    "2025"
+   ],
+   "San Francisco": [
+    "2024",
+    "2025"
+   ],
+   "Washington DC": [
+    "2022",
+    "2023",
+    "2025"
+   ],
+   "Philadelphia": [
+    "2023",
+    "2024"
+   ],
+   "Montgomery County MD": [
+    "2024 (dataset title); row field reporting_year_start_date=2017",
+    "2024 (dataset title); row field reporting_year_start_date=2023"
+   ],
+   "Cambridge MA": [
+    "2023",
+    "2024"
+   ],
+   "Boston, MA": [
+    "2023 (BERDO reporting year as labelled by the City; calendar year of usage not stated on the layer)"
+   ],
+   "Kansas City, MO": [
+    "2023 (submission_year)"
+   ],
+   "California (statewide)": [
+    "2024",
+    "2025"
+   ],
+   "Portland OR": [
+    "2025"
+   ]
+  },
+  "largest_kwh": [
+   [
+    "New York City",
+    "2023",
+    "111 8th Avenue",
+    "Office",
+    148091230.3
+   ],
+   [
+    "New York City",
+    "2024",
+    "111 8th Avenue",
+    "Office",
+    130751883.2
+   ],
+   [
+    "San Francisco",
+    "2024",
+    "200 PAUL AVE",
+    "Data Center",
+    111435159.4
+   ],
+   [
+    "San Francisco",
+    "2025",
+    "200 PAUL AVE",
+    "Data Center",
+    103964027.7
+   ],
+   [
+    "Boston, MA",
+    "2023 (BERDO reporting year as labelled by the City; calendar year of usage not stated on the layer)",
+    "200 clarendon st, Boston, MA 02116",
+    "Office",
+    90192603.3
+   ],
+   [
+    "New York City",
+    "2023",
+    "60 Hudson Street",
+    "Data Center",
+    87180662.8
+   ],
+   [
+    "New York City",
+    "2024",
+    "56 Hudson Street",
+    "Data Center",
+    85542705.6
+   ],
+   [
+    "Seattle",
+    "2024",
+    "2001 6TH AVE",
+    "Data Center (largestpropertyusetype=Data Center)",
+    77368680.0
+   ]
+  ]
+ },
+ "filed_and_utility": {
+  "public_power_rows": 25,
+  "virginia_filed_rows": 62
+ },
+ "method": "Unit conversions only: 1 GJ = 1/3.6 MWh; average MW = MWh / hours in the reporting period. Fuel figures are thermal energy burned, not electricity generated. 'fuel_as_hours_at_full_fleet_thermal_rating' = fuel GJ / 3.6 / permitted fleet MWth; it is the number of hours the whole permitted fleet would take to burn that fuel at full rating, a scale for how little the generators ran, not a count of actual hours."
+}

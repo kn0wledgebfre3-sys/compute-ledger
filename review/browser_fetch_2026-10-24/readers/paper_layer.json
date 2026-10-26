@@ -1,0 +1,313 @@
+[
+ {
+  "entry_id": "microsoft-scope2-two-numbers",
+  "registry_file": "paper_layer.json",
+  "documents_read": [
+   "2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf (pp.2, 6, 22, 30, 40, 62-64; full text searched)"
+  ],
+  "findings": "Endnote 2 (p.64), attached to the 100% sentence on pp.6 and 22, says the 2025 100% renewable target counts two categories: renewable energy delivered under PPAs or similar long-term contracts, generally for new projects, which 'represents more than 90%' of the renewable energy applied, and 'grid mix', renewable energy in Microsoft's standard utility supply and rates, including renewable portfolio standards and state or utility decarbonization goals; short-term spot-market RECs are excluded. This explains the fact sheet's 93.3% (34,534,392 of 37,026,353 MWh), whose footnote leaves out grid-mix renewables: the 100% adds the grid mix on top. The endnote gives no MWh for either category. The report prints no Scope 2 location-based or market-based tonnage; it says Scope 2 was 13% of total emissions in FY25, up from nearly 2% (pp.6, 30), and its chart gives total FY25 emissions of 20,290,000 t with Scope 2 and 3 market-based (p.30). It refers to the separate Data Fact Sheet for data and says Deloitte & Touche LLP 'performed a review relating to specified information within Section 1' of it (p.2); no assurance statement is printed in the report and nothing says the 100% or the endnote is reviewed, so they stay claims. Record and its Scope 2 rows are unchanged. Claim and gap now state the endnote; one claim row added. Open: the p.30 total (20,290,000 t) is below the sum of the ledger's FY25 Scope 1, Scope 2 market-based and Scope 3 rows (21,121,315 t); the fact sheet was not re-read to reconcile this.",
+  "new_record": null,
+  "new_claim": "\"In FY25, we matched 100% of our annual global electricity consumption with renewable energy\". Endnote 2 (p.64) counts two categories toward the 100%: PPAs or similar long-term contracts, 'more than 90%' of the renewable energy applied, and 'grid mix', renewable energy in Microsoft's ordinary utility supply and rates, including renewable portfolio standards; short-term 'spot market' RECs are excluded. The FY25 fact sheet (Table 5) gives 34,534,392 MWh of 'total matched renewable electricity' (93.3% of the 37,026,353 MWh consumed, ledger arithmetic), which leaves out the grid mix; its footnote says spot certificates were discontinued in February 2025 and are not included. Goal to be carbon negative by 2030.",
+  "new_gap": "Market-based Scope 2 was 2,707,428 t against 12,030,556 t location-based in FY25 (77.5% lower) and 259,090 t against 9,955,368 t in FY24 (97.4% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments (certificates, PPAs, supplier factors) and residual-mix factors; the location-based figure is the grids'. Endnote 2 gives no MWh for either category in the 100%, so the grid-mix volume is not shown; the fact sheet's matched total is 2,491,961 MWh short of consumption (ledger arithmetic).",
+  "set": {
+   "verification_status": "verified",
+   "confidence": "high",
+   "last_checked": "2026-10-24",
+   "verification_note": "Both years were read from Table 1A of the FY24 and FY25 data fact sheets, each covered by a Deloitte limited-assurance review of Section 1. The 2026 fact sheet repeats the FY24 Scope 2 values unchanged. The fact sheets do not split matched renewable electricity into PPAs, unbundled certificates and on-site generation. Both Scope 2 rows, Table 5's electricity and matched rows and the spot-certificate footnote re-read directly on 2026-10-23. 2026-10-24: the matched-renewable total, the spot-certificate statement and the 100% headline are Microsoft's statements without an assurance statement read for them, and are in claim. 2026-10-24: endnote 2 of the 2026 report read (p.64, from a browser download): long-term contracts plus grid mix, spot RECs excluded; the report prints no Scope 2 tonnage."
+  },
+  "add_record_sources": [],
+  "add_claim_sources": [],
+  "rows_add": [
+   {
+    "entry_id": "microsoft-scope2-two-numbers",
+    "side": "claim",
+    "metric": "share_other",
+    "metric_detail": "Share of the renewable energy applied to the FY25 100% target that came from PPAs or similar long-term contracts (the rest is 'grid mix')",
+    "value_as_published": "more than 90%",
+    "unit_as_published": "pct",
+    "value": 90,
+    "value_high": "",
+    "period_start": "2024-07-01",
+    "period_end": "2025-06-30",
+    "basis": "company_statement",
+    "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+    "notes": "lower bound; p.64, endnote 2; no MWh given for either category; no assurance statement read for it.",
+    "company_figures_csv": {
+     "company": "Microsoft",
+     "fiscal_year": "FY2025",
+     "unit": "pct",
+     "document_title": "2026 Environmental Sustainability Report: Responsibly building the AI future",
+     "document_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+     "publisher": "Microsoft",
+     "document_date": "2026-07",
+     "page_or_table": "p.64, endnote 2",
+     "quoted_line": "This category represents more than 90% of the renewable energy applied to achieve our 2025 target.",
+     "second_read": "no"
+    }
+   }
+  ],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "msft_2026_esr_endnotes.pdf",
+    "status": "obtained",
+    "result": "Endnote 2 (p.64) counts PPAs or similar long-term contracts ('more than 90%') plus 'grid mix' renewables from ordinary utility supply toward the 100%, excluding spot-market RECs, which explains the gap to the fact sheet's 93.3% matched total that leaves out the grid mix; no MWh per category is given and the report prints no Scope 2 tonnage. Claim and gap rewritten; one claim row added."
+   }
+  ]
+ },
+ {
+  "entry_id": "alphabet-google-scope2-two-numbers",
+  "registry_file": "paper_layer.json",
+  "documents_read": [
+   "google-2025-environmental-report.pdf (pp.80-84, 98-101, 105-107, 112-114, 120; full text searched)"
+  ],
+  "findings": "Google's 2025 Environmental Report gives 2024 Scope 2 of 11,283,200 tCO2e location-based and 3,059,100 tCO2e market-based (p.105 data table), identical to the secondary tabulation, and 32,179,900 MWh of electricity, of which data centers 30,825,600 MWh (p.107). The PDF prints EY's Independent Accountants' Review Report on Alphabet's FY2024 Schedules of Select Environmental Metrics (p.112, San Jose, dated 16 June 2025): a review under AICPA AT-C 105 and 210 giving limited assurance, not reasonable assurance. Its Appendix A schedules (pp.112-114) include Scope 1, both Scope 2 figures, Scope 3 categories, total energy (32,727,800 MWh), the 100% renewable share, electricity consumption by data centers and offices, renewable electricity by PPAs (24,504,500 MWh), on-site (20,500) and grid (7,654,900), energy by renewable and non-renewable source (purchased electricity 8,110,400 MWh non-renewable) and water. The hourly CFE share (66%, p.107) is not in those schedules. So the 2024 Scope 2 and electricity figures become records (assured_disclosure, limited), the Internet Policy Review source is dropped, and the 2024 split is added. The report's method note (p.101; p.114) says the 100% counts on-site and grid renewables first, then contractual instruments, including surplus bought in other regions. Left open: whether the 2026 report restated 2024 (Google's stated 3% fall against an 8.0% fall from the assured values).",
+  "new_record": "Alphabet's schedules reviewed by Ernst & Young LLP at limited assurance give Scope 2 location-based emissions of 15,148,700 tCO2e and market-based emissions of 2,815,000 tCO2e for 2025 (report dated 22 June 2026), a difference of 12,333,700 t, and 11,283,200 tCO2e and 3,059,100 tCO2e for 2024 (report dated 16 June 2025, in Google's 2025 report, p.112), a difference of 8,224,100 t. For 2025 they give 43,586,600 MWh of electricity consumption, attributed to 'PPAs and other renewable energy agreements' (32,986,300 MWh), on-site generation (24,800 MWh) and renewable electricity in the grid (10,575,500 MWh), and class 7,282,000 MWh of purchased electricity as from non-renewable sources. For 2024: 32,179,900 MWh (data centers 30,825,600 MWh), split 24,504,500, 20,500 and 7,654,900 MWh across the same three lines, with 8,110,400 MWh non-renewable.",
+  "new_claim": "\"we again matched 100% of our electricity consumption with renewable energy purchases\" (ninth consecutive year); 24/7 carbon-free energy ambition. Google's 2025 report (p.101) says that to reach the 100% it first counts on-site generation and the renewable electricity already in the grids it uses, then buys contractual instruments, including surplus renewable electricity in other regions where it cannot source enough locally. Google reports an hourly carbon-free energy share of 66% across its data centers and offices for 2024 (2025 report, p.107); ESG Dive reports approximately 65% for 2025 and contracted removals of 1.38 million tons [press: ESG Dive].",
+  "new_gap": "Market-based Scope 2 was 2,815,000 t against 15,148,700 t location-based in 2025 (81.4% lower) and 3,059,100 t against 11,283,200 t in 2024 (72.9% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'. Whether 2024 was restated in the 2026 report is not shown (Google states a 3% fall in market-based Scope 2 for 2025; the assured values give 8.0%). Google's own hourly carbon-free share (66% in 2024) is the only hourly figure in the seven operators' documents read here.",
+  "set": {
+   "verification_status": "verified",
+   "confidence": "high",
+   "last_checked": "2026-10-24",
+   "verification_note": "The 2025 Scope 2 figures and the electricity split were read in EY's FY2025 review report and its Appendix A schedules and re-read directly on 2026-10-23 (see scope2-renewable-claims-by-instrument). 2026-10-24: Google's 2025 Environmental Report was read from a browser download; it prints EY's FY2024 review report (limited assurance, dated 16 June 2025, p.112) and its Appendix A schedules (pp.112-114), which give the 2024 Scope 2 values, electricity consumption and renewable split; the values equal those in the report's data tables (pp.105, 107) and the Internet Policy Review tabulation, which is dropped as a source. The hourly CFE share is not in the reviewed schedules and stays a claim. The 2026 report's data tables (pp.69-109) were not read, so a restatement of 2024 is not checked, and the 2025 hourly CFE share was not read in a primary source."
+  },
+  "add_record_sources": [
+   {
+    "title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+    "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "publisher": "Google / Ernst & Young LLP",
+    "date": "2025-06"
+   }
+  ],
+  "add_claim_sources": [
+   {
+    "title": "Google 2025 Environmental Report",
+    "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "publisher": "Google",
+    "date": "2025-06"
+   }
+  ],
+  "remove_claim_sources": [
+   {
+    "url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+    "why": "Its 2024 values equal Google's own report and EY's reviewed schedules, which now carry those rows; no row cites it after the edits."
+   }
+  ],
+  "rows_add": [
+   {
+    "entry_id": "alphabet-google-scope2-two-numbers",
+    "side": "record",
+    "metric": "electricity_consumed",
+    "metric_detail": "Data centers electricity consumption",
+    "value_as_published": "30,825,600",
+    "unit_as_published": "MWh",
+    "value": 30825600,
+    "value_high": "",
+    "period_start": "2024-01-01",
+    "period_end": "2024-12-31",
+    "basis": "assured_disclosure",
+    "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "notes": "p.114 EY Appendix A Schedule of Electricity Consumption; also p.107 data table. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A).",
+    "company_figures_csv": {
+     "company": "Alphabet (Google)",
+     "fiscal_year": "2024",
+     "unit": "MWh",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Electricity Consumption (year ended 2024-12-31, MWh); also p.107",
+     "quoted_line": "Data centers 30,825,600",
+     "second_read": "no"
+    }
+   },
+   {
+    "entry_id": "alphabet-google-scope2-two-numbers",
+    "side": "record",
+    "metric": "certificates_used",
+    "metric_detail": "Renewable electricity procured through PPAs and other renewable energy agreements (one line)",
+    "value_as_published": "24,504,500",
+    "unit_as_published": "MWh",
+    "value": 24504500,
+    "value_high": "",
+    "period_start": "2024-01-01",
+    "period_end": "2024-12-31",
+    "basis": "assured_disclosure",
+    "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "notes": "p.114 EY Appendix A Schedule of Electricity Procured from Renewable Sources; also p.107. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A).",
+    "company_figures_csv": {
+     "company": "Alphabet (Google)",
+     "fiscal_year": "2024",
+     "unit": "MWh",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Electricity Procured from Renewable Sources (year ended 2024-12-31, MWh); also p.107",
+     "quoted_line": "Renewable electricity procured (PPAs and other renewable energy agreements) 24,504,500",
+     "second_read": "no"
+    }
+   },
+   {
+    "entry_id": "alphabet-google-scope2-two-numbers",
+    "side": "record",
+    "metric": "electricity_by_sourcing_method",
+    "metric_detail": "On-site renewable electricity",
+    "value_as_published": "20,500",
+    "unit_as_published": "MWh",
+    "value": 20500,
+    "value_high": "",
+    "period_start": "2024-01-01",
+    "period_end": "2024-12-31",
+    "basis": "assured_disclosure",
+    "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "notes": "p.114 same schedule; also p.107. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A).",
+    "company_figures_csv": {
+     "company": "Alphabet (Google)",
+     "fiscal_year": "2024",
+     "unit": "MWh",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Electricity Procured from Renewable Sources (year ended 2024-12-31, MWh); also p.107",
+     "quoted_line": "Renewable electricity procured (on-site) 20,500",
+     "second_read": "no"
+    }
+   },
+   {
+    "entry_id": "alphabet-google-scope2-two-numbers",
+    "side": "record",
+    "metric": "electricity_by_sourcing_method",
+    "metric_detail": "Renewable electricity in the grid mix, counted toward the 100% annual renewable match",
+    "value_as_published": "7,654,900",
+    "unit_as_published": "MWh",
+    "value": 7654900,
+    "value_high": "",
+    "period_start": "2024-01-01",
+    "period_end": "2024-12-31",
+    "basis": "assured_disclosure",
+    "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "notes": "p.114 same schedule; the three lines sum to 32,179,900 MWh, equal to total electricity consumption; also p.107. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A).",
+    "company_figures_csv": {
+     "company": "Alphabet (Google)",
+     "fiscal_year": "2024",
+     "unit": "MWh",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Electricity Procured from Renewable Sources (year ended 2024-12-31, MWh); also p.107",
+     "quoted_line": "Renewable electricity (grid) 7,654,900",
+     "second_read": "no"
+    }
+   },
+   {
+    "entry_id": "alphabet-google-scope2-two-numbers",
+    "side": "record",
+    "metric": "electricity_by_sourcing_method",
+    "metric_detail": "Purchased electricity, 'Non-renewable sources' column (Schedule of Energy Consumption)",
+    "value_as_published": "8,110,400",
+    "unit_as_published": "MWh",
+    "value": 8110400,
+    "value_high": "",
+    "period_start": "2024-01-01",
+    "period_end": "2024-12-31",
+    "basis": "assured_disclosure",
+    "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "notes": "p.114 EY Appendix A Schedule of Energy Consumption (renewable 23,995,800; total 32,106,200); also p.107. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A).",
+    "company_figures_csv": {
+     "company": "Alphabet (Google)",
+     "fiscal_year": "2024",
+     "unit": "MWh",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Energy Consumption (columns: Renewable sources, Non-renewable sources, Total; MWh); also p.107",
+     "quoted_line": "Purchased electricity 23,995,800 8,110,400 32,106,200",
+     "second_read": "no"
+    }
+   }
+  ],
+  "rows_edit": [
+   {
+    "match": {
+     "entry_id": "alphabet-google-scope2-two-numbers",
+     "value_as_published": "11,283,200",
+     "side": "claim"
+    },
+    "changes": {
+     "basis": "assured_disclosure",
+     "side": "record",
+     "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "second_read": "no",
+     "metric_detail": "Scope 2 location-based",
+     "page_or_table": "p.112, Appendix A, Schedule of Select Environmental Metrics; also p.105 data table and p.113 Schedule of GHG Emissions by Type",
+     "quoted_line": "Scope 2 location-based 11,283,200",
+     "notes": "pp.105, 112, 113. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A). Same value as the Internet Policy Review tabulation."
+    },
+    "why": "Google's own report (p.105) and EY's FY2024 review schedules printed in it (pp.112-113) give the same value; the secondary source is replaced and the assured figure becomes a record."
+   },
+   {
+    "match": {
+     "entry_id": "alphabet-google-scope2-two-numbers",
+     "value_as_published": "3,059,100",
+     "side": "claim"
+    },
+    "changes": {
+     "basis": "assured_disclosure",
+     "side": "record",
+     "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "second_read": "no",
+     "metric_detail": "Scope 2 market-based",
+     "page_or_table": "p.112, Appendix A, Schedule of Select Environmental Metrics; also p.105 data table and p.113 Schedule of GHG Emissions by Type",
+     "quoted_line": "Scope 2 market-based 3,059,100",
+     "notes": "pp.105, 112, 113. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A). Same value as the Internet Policy Review tabulation. Google's '-3%' for 2025 against this value is not reconciled (2026 tables not read)."
+    },
+    "why": "As above: identical in Google's report and in EY's reviewed schedule; secondary source replaced; assured figure becomes a record."
+   },
+   {
+    "match": {
+     "entry_id": "alphabet-google-scope2-two-numbers",
+     "value_as_published": "32.2 million MWh",
+     "side": "claim"
+    },
+    "changes": {
+     "basis": "assured_disclosure",
+     "side": "record",
+     "source_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+     "document_title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+     "publisher": "Google / Ernst & Young LLP",
+     "document_date": "2025-06",
+     "second_read": "no",
+     "metric_detail": "Total electricity consumption",
+     "value": 32179900,
+     "value_as_published": "32,179,900",
+     "page_or_table": "p.114, Appendix A, Alphabet's Schedule of Electricity Consumption (year ended 2024-12-31, MWh); also p.107",
+     "quoted_line": "Total electricity consumption 17 32,179,900",
+     "notes": "pp.107, 114; '17' is a footnote marker. EY limited assurance (AICPA AT-C 105 and AT-C 210 review), report dated 2025-06-16, printed p.112; the schedule is part of the reviewed Subject Matter (Appendix A). The secondary source's 32.2 million MWh was this value rounded."
+    },
+    "why": "Google's report gives the exact value (pp.107, 114) inside EY's reviewed schedules; the rounded secondary value is replaced."
+   }
+  ],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "google_2025_env_report.pdf",
+    "status": "obtained",
+    "result": "Google's report gives 2024 Scope 2 of 11,283,200 t location-based and 3,059,100 t market-based (p.105), identical to the secondary tabulation, and prints EY's FY2024 limited-assurance review report (p.112) whose schedules cover both figures, 32,179,900 MWh of electricity and 30,825,600 MWh for data centers (pp.112-114). The 2024 figures move to record as assured_disclosure and the secondary source is dropped."
+   }
+  ]
+ }
+]

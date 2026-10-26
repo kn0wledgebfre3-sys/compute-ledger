@@ -1,0 +1,5 @@
+# Tested in fixture mode with Python 3.13, requests 2.34, pandas 3.0, pdfplumber 0.11.
+requests>=2.31
+pandas>=2.1
+pdfplumber>=0.10     # PDF text extraction (pypdf is used as a fallback if pdfplumber is missing)
+pypdf>=4.0

@@ -1,0 +1,961 @@
+[
+ {
+  "id": "microsoft-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Microsoft global operations, Scope 2 electricity emissions (FY24, FY25)",
+  "operator": "Microsoft",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Microsoft's data fact sheets report Scope 2 location-based emissions of 9,955,368 tCO2e in FY24 (July 2023-June 2024) and 12,030,556 tCO2e in FY25 (July 2024-June 2025). Market-based Scope 2 was 259,090 tCO2e in FY24 and 2,707,428 tCO2e in FY25. The difference was 9,696,278 t in FY24 and 9,323,128 t in FY25. Deloitte & Touche LLP reviewed Section 1, which includes both Scope 2 figures, at limited assurance for each year. The FY25 fact sheet gives 37,026,353 MWh of electricity consumed (Table 5, which by the fact sheet's structure appears to sit in the reviewed Section 1).",
+  "record_sources": [
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "2025 Environmental Sustainability Report Data Fact Sheet (FY24)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-05-29"
+   }
+  ],
+  "claim": "\"In FY25, we matched 100% of our annual global electricity consumption with renewable energy\". Endnote 2 (p.64) counts two categories toward the 100%: PPAs or similar long-term contracts, 'more than 90%' of the renewable energy applied, and 'grid mix', renewable energy in Microsoft's ordinary utility supply and rates, including renewable portfolio standards; short-term 'spot market' RECs are excluded. The FY25 fact sheet (Table 5) gives 34,534,392 MWh of 'total matched renewable electricity' (93.3% of the 37,026,353 MWh consumed, ledger arithmetic), which leaves out the grid mix; its footnote says spot certificates were discontinued in February 2025 and are not included. Goal to be carbon negative by 2030.",
+  "claim_sources": [
+   {
+    "title": "2026 Environmental Sustainability Report: Responsibly building the AI future",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07"
+   },
+   {
+    "title": "2025 Environmental Sustainability Report",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report.pdf",
+    "publisher": "Microsoft",
+    "date": "2025"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   }
+  ],
+  "gap": "Market-based Scope 2 was 2,707,428 t against 12,030,556 t location-based in FY25 (77.5% lower) and 259,090 t against 9,955,368 t in FY24 (97.4% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments (certificates, PPAs, supplier factors) and residual-mix factors; the location-based figure is the grids'. Endnote 2 gives no MWh for either category in the 100%, so the grid-mix volume is not shown; the fact sheet's matched total is 2,491,961 MWh short of consumption (ledger arithmetic).",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Both years were read from Table 1A of the FY24 and FY25 data fact sheets, each covered by a Deloitte limited-assurance review of Section 1. The 2026 fact sheet repeats the FY24 Scope 2 values unchanged. The fact sheets do not split matched renewable electricity into PPAs, unbundled certificates and on-site generation. Both Scope 2 rows, Table 5's electricity and matched rows and the spot-certificate footnote re-read directly on 2026-10-23. 2026-10-24: the matched-renewable total, the spot-certificate statement and the 100% headline are Microsoft's statements without an assurance statement read for them, and are in claim. 2026-10-24: endnote 2 of the 2026 report read (p.64, from a browser download): long-term contracts plus grid mix, spot RECs excluded; the report prints no Scope 2 tonnage.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "alphabet-google-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Google / Alphabet global operations (data centers and offices), Scope 2 electricity emissions (2024, 2025)",
+  "operator": "Alphabet (Google)",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Alphabet's schedules reviewed by Ernst & Young LLP at limited assurance give Scope 2 location-based emissions of 15,148,700 tCO2e and market-based emissions of 2,815,000 tCO2e for 2025 (report dated 22 June 2026), a difference of 12,333,700 t, and 11,283,200 tCO2e and 3,059,100 tCO2e for 2024 (report dated 16 June 2025, in Google's 2025 report, p.112), a difference of 8,224,100 t. For 2025 they give 43,586,600 MWh of electricity consumption, attributed to 'PPAs and other renewable energy agreements' (32,986,300 MWh), on-site generation (24,800 MWh) and renewable electricity in the grid (10,575,500 MWh), and class 7,282,000 MWh of purchased electricity as from non-renewable sources. For 2024: 32,179,900 MWh (data centers 30,825,600 MWh), split 24,504,500, 20,500 and 7,654,900 MWh across the same three lines, with 8,110,400 MWh non-renewable.",
+  "record_sources": [
+   {
+    "title": "Alphabet's 2026 (FY2025) Environmental Indicators Assurance Letter (EY Independent Accountants' Review Report and Schedules of Select Environmental Metrics)",
+    "url": "https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf",
+    "publisher": "Alphabet Inc. / Ernst & Young LLP",
+    "date": "2026-06-22"
+   },
+   {
+    "title": "Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",
+    "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "publisher": "Google / Ernst & Young LLP",
+    "date": "2025-06"
+   }
+  ],
+  "claim": "\"we again matched 100% of our electricity consumption with renewable energy purchases\" (ninth consecutive year); 24/7 carbon-free energy ambition. Google's 2025 report (p.101) says that to reach the 100% it first counts on-site generation and the renewable electricity already in the grids it uses, then buys contractual instruments, including surplus renewable electricity in other regions where it cannot source enough locally. Google reports an hourly carbon-free energy share of 66% across its data centers and offices for 2024 (2025 report, p.107); ESG Dive reports approximately 65% for 2025 and contracted removals of 1.38 million tons [press: ESG Dive].",
+  "claim_sources": [
+   {
+    "title": "Google 2026 Environmental Report",
+    "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+    "publisher": "Google",
+    "date": "2026-06"
+   },
+   {
+    "title": "2026 Environmental Report (blog post, Kate Brandt)",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/",
+    "publisher": "Google",
+    "date": "2026-06-30"
+   },
+   {
+    "title": "Read Google's 2025 Environmental Report (blog post, Kate Brandt)",
+    "url": "https://blog.google/company-news/outreach-and-initiatives/sustainability/environmental-report-2025/",
+    "publisher": "Google",
+    "date": "2025-06-27"
+   },
+   {
+    "title": "Google's emissions continue to climb due to AI buildout",
+    "url": "https://www.esgdive.com/news/googles-emissions-continue-to-climb-due-to-ai-buildout/824373/",
+    "publisher": "ESG Dive (reporting Google's 2026 Environmental Report)",
+    "date": "2026-07-02"
+   },
+   {
+    "title": "Google 2025 Environmental Report",
+    "url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+    "publisher": "Google",
+    "date": "2025-06"
+   }
+  ],
+  "gap": "Market-based Scope 2 was 2,815,000 t against 15,148,700 t location-based in 2025 (81.4% lower) and 3,059,100 t against 11,283,200 t in 2024 (72.9% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'. Whether 2024 was restated in the 2026 report is not shown (Google states a 3% fall in market-based Scope 2 for 2025; the assured values give 8.0%). Google's own hourly carbon-free share (66% in 2024) is the only hourly figure in the seven operators' documents read here.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "The 2025 Scope 2 figures and the electricity split were read in EY's FY2025 review report and its Appendix A schedules and re-read directly on 2026-10-23 (see scope2-renewable-claims-by-instrument). 2026-10-24: Google's 2025 Environmental Report was read from a browser download; it prints EY's FY2024 review report (limited assurance, dated 16 June 2025, p.112) and its Appendix A schedules (pp.112-114), which give the 2024 Scope 2 values, electricity consumption and renewable split; the values equal those in the report's data tables (pp.105, 107) and the Internet Policy Review tabulation, which is dropped as a source. The hourly CFE share is not in the reviewed schedules and stays a claim. The 2026 report's data tables (pp.69-109) were not read, so a restatement of 2024 is not checked, and the 2025 hourly CFE share was not read in a primary source.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "amazon-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Amazon global operations including AWS data centers, Scope 2 electricity emissions (2024, 2025)",
+  "operator": "Amazon",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Ernst & Young LLP reviewed Amazon's Scope 1 and 2 schedules at limited assurance. They report market-based Scope 2 of 2.80 MmtCO2e for 2024 and 3.74 MmtCO2e for 2025. The location-based figure is printed only as a footnote to the same schedules: 17.76 MmtCO2e for 2024 and 21.82 MmtCO2e for 2025. The difference was 14.96 Mt in 2024 and 18.08 Mt in 2025. Amazon's carbon methodology says it reports the market-based method. The sustainability report text that could be read gives no location-based figure.",
+  "record_sources": [
+   {
+    "title": "Independent Accountants' Review Report and Schedule of Select Sustainability Indicators, year ended December 31, 2025",
+    "url": "https://sustainability.aboutamazon.com/2025-ghg-assurance-scope-1-2.pdf",
+    "publisher": "Amazon.com, Inc. / Ernst & Young LLP",
+    "date": "2026-05-21"
+   },
+   {
+    "title": "Independent Accountants' Review Report and Schedule of Select Sustainability Indicators, year ended December 31, 2024",
+    "url": "https://sustainability.aboutamazon.com/2024-ghg-verification-scope-1-2.pdf",
+    "publisher": "Amazon.com, Inc. / Ernst & Young LLP",
+    "date": "2025-05-15"
+   },
+   {
+    "title": "What's in Amazon's 2025 Carbon Footprint? (Carbon Methodology)",
+    "url": "https://sustainability.aboutamazon.com/carbon-methodology",
+    "publisher": "Amazon",
+    "date": "2026-07"
+   }
+  ],
+  "claim": "\"100% Of the electricity consumed by Amazon was matched with renewable energy sources in 2025, for the third consecutive year\"; net-zero carbon by 2040.",
+  "claim_sources": [
+   {
+    "title": "2025 Amazon Sustainability Report",
+    "url": "https://sustainability.aboutamazon.com/2025-amazon-sustainability-report.pdf",
+    "publisher": "Amazon",
+    "date": "2026-07"
+   },
+   {
+    "title": "2024 Amazon Sustainability Report",
+    "url": "https://sustainability.aboutamazon.com/2024-amazon-sustainability-report.pdf",
+    "publisher": "Amazon",
+    "date": "2025-07"
+   }
+  ],
+  "gap": "Market-based Scope 2 was 3.74 MmtCO2e against 21.82 MmtCO2e location-based in 2025 (82.9% lower) and 2.80 against 17.76 MmtCO2e in 2024 (84.2% lower). The location-based figure appears only in a footnote to the assured schedule; the market-based method replaces grid-average factors with contractual instruments and residual-mix factors.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "All four Scope 2 numbers come from the two EY review reports. The location-based value is a footnote on the reviewed Appendix A schedule; EY's report text does not name it separately. Electricity consumption and the split between PPAs, certificates and on-site generation were not found. The report appendix data tables could not be read. The latest year's assured figures were re-read directly on 2026-10-23.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "meta-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Meta Platforms global operations (data centers and offices), Scope 2 electricity emissions",
+  "operator": "Meta Platforms, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "EY's review report (limited assurance) for the year ended 31 December 2024 lists Scope 2 location-based emissions of 5,967,348 tCO2e and market-based emissions of 1,358 tCO2e, a difference of 5,965,990 t. EY's review report for 2023 lists 5,141,350 t location-based and 1,658 t market-based, a difference of 5,139,692 t. Both Scope 2 methods are in the reviewed schedule. EY's 2024 schedule also lists 100% of electricity matched by renewable sources and 50,000 tCO2e of carbon credits (VCS). Electricity use was 18,423,634 MWh in 2024 and 15,325,314 MWh in 2023.",
+  "record_sources": [
+   {
+    "title": "Independent Accountants' Review Report, year ended December 31, 2024 (EY)",
+    "url": "https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/",
+    "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
+    "date": "2025-08-27"
+   },
+   {
+    "title": "Independent Accountants' Review Report, year ended December 31, 2023 (EY)",
+    "url": "https://sustainability.atmeta.com/asset/fy2023-independent-accountants-review-report",
+    "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
+    "date": "2024-08-01"
+   },
+   {
+    "title": "Meta 2025 Environmental Data Index (2024 data)",
+    "url": "https://sustainability.atmeta.com/asset/2025-environmental-data-index/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025",
+    "date_note": "undated; covers 1 Jan-31 Dec 2024"
+   }
+  ],
+  "claim": "Meta says it has \"matched 100% of our electricity use with clean and renewable energy\" since 2020 and targets net zero across its value chain in 2030.",
+  "claim_sources": [
+   {
+    "title": "Meta 2025 Sustainability Report",
+    "url": "https://sustainability.atmeta.com/asset/2025-sustainability-report/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025",
+    "date_note": "after June 2025; exact date not stated"
+   },
+   {
+    "title": "Meta 2025 Environmental Data Index (2024 data)",
+    "url": "https://sustainability.atmeta.com/asset/2025-environmental-data-index/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025",
+    "date_note": "undated; covers 1 Jan-31 Dec 2024"
+   }
+  ],
+  "gap": "Market-based Scope 2 was 1,358 t against 5,967,348 t location-based in 2024 (99.98% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Both Scope 2 figures appear in EY review reports (AICPA AT-C 210, limited assurance). Meta gives no MWh split between unbundled EACs, VPPAs and other instruments. It reports no hourly CFE figure. The latest year's assured figures were re-read directly on 2026-10-23.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "oracle-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Oracle global operations (OCI public cloud, co-location data centers, real estate), Scope 2 electricity emissions",
+  "operator": "Oracle Corporation",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "No assured or regulator figure for Oracle's Scope 2 emissions was found: Oracle's FY26 datasheet (October 2026) has no assurance text, and its disclosure index (GRI 2-5) names no assurance provider or level.",
+  "record_sources": [
+   {
+    "title": "Oracle Environmental and Social Impact FY26 Datasheet (October 2026, Version one)",
+    "url": "https://www.oracle.com/a/ocom/docs/social-impact-datasheet.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2026-10"
+   }
+  ],
+  "claim": "Oracle's FY26 datasheet reports Scope 2 location-based emissions of 2,690,440 tCO2e and market-based emissions of 4,299 tCO2e for FY2026 (June 2025 to May 2026), a difference of 2,686,141 t, and for FY2025 1,600,371 t location-based and 237,251 t market-based, a difference of 1,363,120 t; it reports renewable electricity use of 8,707,819 MWh in FY2026 and 4,645,576 MWh in FY2025. Oracle reports \"100% renewable electricity coverage\" as its CY2025 achievement, and its Planet page says Oracle offices and public cloud data centers run on 100% carbon-free electricity and that third-party assurance is detailed in the datasheet.",
+  "claim_sources": [
+   {
+    "title": "Oracle Environmental and Social Impact FY26 Datasheet (October 2026, Version one)",
+    "url": "https://www.oracle.com/a/ocom/docs/social-impact-datasheet.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2026-10"
+   },
+   {
+    "title": "Oracle Clean Cloud, OCI Data Sheet, Fiscal Year 2025 Results",
+    "url": "https://www.oracle.com/a/ocom/docs/corporate/citizenship/clean-cloud-oci.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2025-12"
+   },
+   {
+    "title": "Oracle Social Impact: Planet (web page)",
+    "url": "https://www.oracle.com/social-impact/planet/",
+    "publisher": "Oracle Corporation",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   }
+  ],
+  "gap": "As Oracle reports them, market-based Scope 2 was 4,299 t against 2,690,440 t location-based in FY2026 (99.84% lower) and 237,251 t against 1,600,371 t in FY2025 (85.18% lower); no assurance statement naming a provider or level was found for these figures.",
+  "confidence": "low",
+  "verification_status": "partial",
+  "verification_note": "The figures are Oracle's own datasheet values. The Planet page says third-party assurance is detailed in the datasheet, but the datasheet has no assurance text, and the disclosure index (GRI 2-5) names no provider or level. The CDP 2025 verification section could not be reached. Oracle gives no split between unbundled RECs and PPAs. The 100% claim is labeled calendar 2025, while the data use fiscal years. 2026-10-24: all Oracle figures moved to claim, as no assurance statement covering them was found; the record now states only that absence.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "equinix-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Equinix global data center portfolio (IBX), Scope 2 electricity emissions",
+  "operator": "Equinix, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Equinix's 2024 Sustainability Data Summary reports Scope 2 location-based emissions of 2,693,500 tCO2e and market-based emissions of 253,300 tCO2e for 2024, a difference of 2,440,200 t. Lucideon CICS gave limited assurance (ISO 14064-3) of 2024 Scope 1, 2 and 3 emissions; the statement does not name the two Scope 2 methods separately.",
+  "record_sources": [
+   {
+    "title": "Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable)",
+    "url": "https://media.greenweb.org/uploads/ds_sustainability_data_en.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2025-04",
+    "date_note": "values 'accurate as of April 2025'"
+   },
+   {
+    "title": "Equinix 2025 Annual Report (Form ARS, FY2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000075/EQIXAnnualRpt2025PRINT.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2026"
+   },
+   {
+    "title": "Equinix, Inc. Form 10-K for fiscal year ended December 31, 2025",
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000032/eqix-20251231.htm",
+    "publisher": "Equinix, Inc.",
+    "date": "2026-02"
+   }
+  ],
+  "claim": "For 2023 the Data Summary reports 2,623,800 t location-based and 247,600 t market-based, a difference of 2,376,200 t (not covered by the 2024 assurance statement). It reports 2024 renewable coverage of 96% from unbundled EACs (47%), utility-supplied EACs (38%) and PPAs (11%). Equinix reports \"96% renewable energy (RE) coverage, our eighth consecutive year with coverage over 90%\" for 2025.",
+  "claim_sources": [
+   {
+    "title": "Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable)",
+    "url": "https://media.greenweb.org/uploads/ds_sustainability_data_en.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2025-04",
+    "date_note": "values 'accurate as of April 2025'"
+   },
+   {
+    "title": "Equinix 2025 Annual Report (Form ARS, FY2025)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1101239/000110123926000075/EQIXAnnualRpt2025PRINT.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2026"
+   },
+   {
+    "title": "Equinix Environmental sustainability (web page)",
+    "url": "https://www.equinix.com/about/sustainability/environmental",
+    "publisher": "Equinix, Inc.",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   }
+  ],
+  "gap": "Market-based Scope 2 was 253,300 t against 2,693,500 t location-based in 2024 (90.6% lower); Equinix states that unbundled certificates covered 47% and PPAs 11% of its 2024 electricity, within its stated 96% renewable coverage for 2024.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "The 2024 and 2023 values come from a copy of Equinix's 2024 Data Summary hosted by the Green Web Foundation. The originals on equinix.com and its Adobe asset host, including the 2025 Data Summary, the 2026 CDP response and the verification statement, were blocked (robots or proxy 403). The 2025 Scope 1+2 values come from unlabeled chart text in the Form ARS, and Scope 2 cannot be separated from Scope 1 there. The 2025 annual-report chart, whose series labels could not be read, was left out. 2026-10-24: the 2023 values and the 2024 instrument split moved to claim (Lucideon's emissions statement covers 2024 only, and the split is Equinix's own table); the gap now names 2024 for the instrument shares. The instrument table is p.9, Table 1.2.4 'Renewable Energy Coverage by Type'.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "digital-realty-scope2-two-numbers",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Digital Realty global data center portfolio, Scope 2 electricity emissions",
+  "operator": "Digital Realty Trust, Inc.",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Digital Realty's 2024 Impact Report and ESG 2023 report cite external limited assurance by Cventure, LLC (2024) and DNV (2023), but the assurance statements could not be read, so no Scope 2 figure is held here as assured; no regulator figure was found.",
+  "record_sources": [
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   },
+   {
+    "title": "Digital Realty ESG 2023 Report (calendar year 2023)",
+    "url": "https://investor.digitalrealty.com/static-files/dca69404-5f3c-4877-ac14-9366aa25714a",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2024-06"
+   }
+  ],
+  "claim": "Digital Realty's 2024 Impact Report (GRI 305 table, p.34) reports Scope 2 location-based emissions of 3,311,323 tCO2e and market-based emissions of 948,175 tCO2e for 2024, a difference of 2,363,148 t; its ESG 2023 report gives 3,451,583 t and 1,547,989 t for 2023, a difference of 1,903,594 t. The 2025 report states a 68% reduction in absolute Scope 1+2 emissions from 2023, says 'Only 11% of our renewable energy in 2025 came from unbundled EACs', reports 93% global renewable electricity coverage in 2025, up from 75%, and \"205 Properties matched with 100% clean, emission-free energy\". Its FY2025 10-K states 'In 2024, we showed a 62% reduction in Scope 1 and 2 emissions.'",
+  "claim_sources": [
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   },
+   {
+    "title": "Digital Realty ESG 2023 Report (calendar year 2023)",
+    "url": "https://investor.digitalrealty.com/static-files/dca69404-5f3c-4877-ac14-9366aa25714a",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2024-06"
+   },
+   {
+    "title": "Digital Realty 2025 Impact Report (calendar year 2025)",
+    "url": "https://investor.digitalrealty.com/static-files/8e2cfc9f-e0a7-4ee0-a7a6-c6a2ea182fa5",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2026-05"
+   },
+   {
+    "title": "Digital Realty Publishes 2025 Impact Report, Highlighting Sustainability Progress (press release)",
+    "url": "https://digitalrealtytrust.gcs-web.com/news-releases/news-release-details/digital-realty-publishes-2025-impact-report-highlighting",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2026-05-27"
+   },
+   {
+    "title": "Digital Realty Trust, Inc. Form 10-K for fiscal year ended December 31, 2025 (Item 1, sustainability)",
+    "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2026-02"
+   }
+  ],
+  "gap": "Digital Realty reports market-based Scope 2 of 948,175 t against 3,311,323 t location-based in 2024 (71.4% lower) and 1,547,989 t against 3,451,583 t in 2023 (55.2% lower); the assurance statements' scope was not read.",
+  "confidence": "low",
+  "verification_status": "partial",
+  "verification_note": "The 2024 and 2023 values come from the company's reports. The assurance statements (2024 report p.54, 2023 report p.54, 2025 report p.93) could not be read, so coverage of both Scope 2 methods is unconfirmed. The 2025 absolute Scope 2 values (pp.91-92) were not reached. The 10-K's '62% reduction in Scope 1 and 2' for 2024 does not match the reported market-based totals (-37.7%), and its basis is not stated. 2026-10-24: all figures moved to claim until the assurance statements' coverage of both Scope 2 methods is read; the 10-K added as a source.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "ghg-protocol-scope2-revision",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "GHG Protocol Scope 2 Guidance (2015) and its revision: dual reporting, Scope 2 Quality Criteria, hourly matching and deliverability proposals",
+  "operator": "GHG Protocol (WRI / WBCSD); Independent Standards Board (ISB); Scope 2 Technical Working Group",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "The GHG Protocol Scope 2 Guidance (2015) states that \"companies shall report scope 2 according to a location-based method and a market-based method\" (Executive Summary, s.5.1); the full Guidance (s.3.2, p.11) applies this to operations in \"markets with choice in electricity product or supplier\". All contractual instruments used in the market-based method \"shall\" meet the Scope 2 Quality Criteria, among them: \"Be tracked and redeemed, retired, or canceled by or on behalf of the reporting entity\", \"Be issued and redeemed as close as possible to the period of energy consumption\", and \"Be sourced from the same market in which the reporting entity's electricity-consuming operations are located\" (Executive Summary, Table 1, p.6). A Scope 2 Technical Working Group of 45 experts was convened from September 2024. The public consultation on proposed revisions opened on 20 October 2025, was scheduled to close on 19 December 2025, and was \"extended to January 31, 2026\". The GHG Protocol release named \"a new hourly matching and deliverability requirement for market-based reporting\" as \"a central feature of the proposal\", together with load profiles, exemption thresholds, a phased timeline and \"a legacy clause for existing contractual commitments\"; the consultation slides also proposed using \"the most precise location-based emission factor accessible\". The feedback summary of 29 July 2026 reports \"nearly 1100 responses from 56 countries\" and states that \"The proposals for hourly matching and deliverability showed low levels of support\", while feasibility measures and a legacy clause for existing long-term contracts \"received broad support\". In July 2026, \"ISB members indicated majority support for the idea of developing two marketbased methods\": Method 1 would \"incorporate hourly matching, deliverability and incrementality\" requirements and Method 2 would \"maintain existing scope 2 requirements from the 2015 Scope 2 Guidance\". The proposed direction is that companies \"should report using Method 1 until a to-be-determined date\" and \"may report using Method 2\"; after that date they \"shall report using Method 1 if data that meets the quality criteria is available\". As of the GHG Protocol update dated 16 October 2026, the revision is not final: a \"consolidated public consultation\" is \"slated for Q2 2027\" and the joint GHG Protocol-ISO Corporate Standard is \"slated for publication in Q4 2028\". No effective date has been published; the 2015 Guidance remains the operative text.",
+  "record_sources": [
+   {
+    "title": "GHG Protocol Scope 2 Guidance (amendment to the Corporate Standard)",
+    "url": "https://ghgprotocol.org/sites/default/files/GHG%20Protocol%20Scope%202%20Guidance.pdf",
+    "publisher": "GHG Protocol (WRI/WBCSD)",
+    "date": "2015"
+   },
+   {
+    "title": "GHG Protocol Scope 2 Guidance: Executive Summary",
+    "url": "https://ghgprotocol.org/sites/default/files/Scope2_ExecSum_Final.pdf",
+    "publisher": "GHG Protocol (WRI/WBCSD)",
+    "date": "2015"
+   },
+   {
+    "title": "Upcoming Scope 2 public consultation: overview of revisions",
+    "url": "https://ghgprotocol.org/blog/upcoming-scope-2-public-consultation-overview-revisions",
+    "publisher": "GHG Protocol",
+    "date": "2025-09-29"
+   },
+   {
+    "title": "Release: GHG Protocol opens public consultations on Scope 2 and electricity-sector consequential",
+    "url": "https://ghgprotocol.org/blog/release-ghg-protocol-opens-public-consultations-scope-2-and-electricity-sector-consequential",
+    "publisher": "GHG Protocol",
+    "date": "2025-10-20"
+   },
+   {
+    "title": "Public Consultations Webinar Presentation",
+    "url": "https://ghgprotocol.org/sites/default/files/2025-10/Public-Consultations-Webinar-Presentation-20251027.pdf",
+    "publisher": "GHG Protocol",
+    "date": "2025-10-27"
+   },
+   {
+    "title": "Scope 2 Public Consultation Feedback Summary: Executive Summary",
+    "url": "https://ghgprotocol.org/sites/default/files/2026-07/S2-ExecutiveSummary-PublicConsultation%20ummaryofFeedback-2026.07.29.pdf",
+    "publisher": "GHG Protocol",
+    "date": "2026-07-29"
+   },
+   {
+    "title": "Scope 2 market-based method update: 2025-2026 public consultation and current status",
+    "url": "https://ghgprotocol.org/blog/scope-2-market-based-method-update-2025-2026-public-consultation-current-status",
+    "publisher": "GHG Protocol",
+    "date": "2026-10-16"
+   },
+   {
+    "title": "S2 Market-Based Method Update",
+    "url": "https://ghgprotocol.org/sites/default/files/2026-10/S2-Market-Based-Method-Update-20261006.pdf",
+    "publisher": "GHG Protocol",
+    "date": "2026-10-16"
+   }
+  ],
+  "claim": "The GHG Protocol says of its proposal: \"The proposed revisions also introduce several measures to improve the implementation feasibility of the updates.\"",
+  "claim_sources": [
+   {
+    "title": "Upcoming Scope 2 public consultation: overview of revisions",
+    "url": "https://ghgprotocol.org/blog/upcoming-scope-2-public-consultation-overview-revisions",
+    "publisher": "GHG Protocol",
+    "date": "2025-09-29"
+   }
+  ],
+  "gap": "Under the 2015 Guidance still in force, annually matched certificates from the same market reduce market-based Scope 2; the hourly matching and deliverability revision is not final and has no effective date as of October 2026.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "All quotes are from GHG Protocol documents fetched on 2026-10-23. The full 2015 Guidance PDF could not be read past about p.43, so the Quality Criteria are quoted from the official Executive Summary (Table 1); the dual-reporting rule was confirmed in the full Guidance (s.3.2 p.11; s.7.2 p.32). The October 2026 update PDF's filename is dated 20261006, and the document reads as dated 16 October 2026. The feedback summary gives no support percentages per proposal. Exemption threshold values, load-profile rules and legacy-clause cut-off dates were not stated in the documents read. The 16 October 2026 status page was re-read directly on 2026-10-23. The GHG Protocol is a private standard-setter, not a record holder; its documents are recorded here as what its own rules say (basis standard_or_methodology), as in sbti-netzero-scope2.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "scope2-disclosure-rules-esrs-issb-sb253",
+  "country": "Multiple (EU; Global/ISSB; US-California; US federal)",
+  "region": "EU; Global; California; United States",
+  "site_or_subject": "Mandatory disclosure rules on Scope 2: EU ESRS E1, ISSB IFRS S2, California SB 253, US SEC climate rule",
+  "operator": "European Commission / EFRAG; ISSB (IFRS Foundation); California Air Resources Board (CARB); US Securities and Exchange Commission",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "EU ESRS E1 (Delegated Regulation (EU) 2023/2772): EFRAG's Q&A (ID 831, 31 October 2024) cites E1 AR 45(d), which requires undertakings to \"apply the location-based and market-based methods to calculate Scope 2 GHG emissions\"; the text of E1-6 paragraph 49 itself was not reached. EFRAG's July 2025 draft amended E1 (v1.6, an unapproved working document) keeps paragraph 32(b): \"Scope 2 GHG emissions (location-based and market-based)\". EFRAG reported on 3 July 2026 that the European Commission had published the delegated act on revised ESRS; EFRAG states the revised standards \"will apply to financial years beginning on or after 1 January 2027\", subject to Parliament and Council scrutiny; the adopted revised E1 text was not read. ISSB IFRS S2: paragraph 29(a)(v), as reproduced in an AASB staff paper (21 May 2024), requires an entity to \"disclose its location-based Scope 2 greenhouse gas emissions\" and \"provide information about any contractual instruments that is necessary to inform users' understanding\"; B31 says the entity \"might disclose information about its market-based Scope 2\". The ISSB's December 2025 amendments (effective for periods beginning on or after 1 January 2027) changed 29(a)(ii), Category 15, GWP and industry-classification rules; 29(a)(v) was not amended. California SB 253: CARB approved the Initial Regulation at its February 2026 meeting, setting a first deadline of 10 August 2026 for a report that \"will include only Scope 1 and Scope 2 emissions\" for entities with \"more than $1 billion in annual revenue\"; CARB's program page now states the deadline \"is November 10, 2026\", with the regulation applying \"if approved by the Office of Administrative Law\". CARB pages read do not state the Scope 2 method; CARB's 21 July 2026 workshop proposed, as summarised by Ropes & Gray (not confirmed in a CARB document), that Scope 2 be \"calculated and reported using both market-based and location-based methods\" under \"the current 2015 version of the Scope 2 Guidance\", with limited assurance from 2027. US SEC: the March 2024 climate rules were stayed on 4 April 2024; the Eighth Circuit held the challenges in abeyance on 12 September 2025; on 29 May 2026 the SEC proposed \"to rescind the climate disclosure rules in their entirety\" (Release No. 33-11421). No final rescission was found as of 23 October 2026.",
+  "record_sources": [
+   {
+    "title": "EFRAG Knowledge Hub Q&A (Question ID 831), ESRS E1 Scope 2 contractual instruments",
+    "url": "https://knowledgehub.efrag.org/eng/qa-table/538",
+    "publisher": "EFRAG",
+    "date": "2024-10-31"
+   },
+   {
+    "title": "Draft Amended ESRS E1 Climate Change (Agenda Paper 05.01, v1.6)",
+    "url": "https://www.efrag.org/sites/default/files/media/document/2025-07/05.01_esrs_e1_v1.6_1.pdf",
+    "publisher": "EFRAG",
+    "date": "2025-07-10"
+   },
+   {
+    "title": "European Commission publishes delegated act on revised ESRS and voluntary sustainability reporting standard",
+    "url": "https://www.efrag.org/en/news-and-calendar/news/european-commission-publishes-delegated-act-on-revised-esrs-and-voluntary-sustainability-reporting",
+    "publisher": "EFRAG",
+    "date": "2026-07-03"
+   },
+   {
+    "title": "Staff Paper 5.7: Market-based scope 2 greenhouse gas emissions (SMC 16), AASB meeting M204",
+    "url": "https://aasb.gov.au/media/m0encb4y/05-7_sp_marketbasedscope2_m204_pp.pdf",
+    "publisher": "Australian Accounting Standards Board",
+    "date": "2024-05-21"
+   },
+   {
+    "title": "Amendments to Greenhouse Gas Emissions Disclosures (Amendments to IFRS S2)",
+    "url": "https://www.ifrs.org/content/dam/ifrs/publications/amendments/english/2025/issb-2025-1-amendments-ifrs-s2.pdf",
+    "publisher": "ISSB / IFRS Foundation",
+    "date": "2025-12"
+   },
+   {
+    "title": "Amendments to disclosure of greenhouse gas emissions (IFRS S2), completed project page",
+    "url": "https://www.ifrs.org/projects/completed-projects/2025/amendments-to-disclosure-of-greenhouse-gas-emissions-s2/",
+    "publisher": "IFRS Foundation",
+    "date": "2025-12"
+   },
+   {
+    "title": "CARB approves climate transparency regulation for entities doing business in California",
+    "url": "https://ww2.arb.ca.gov/news/carb-approves-climate-transparency-regulation-entities-doing-business-california/printable/print",
+    "publisher": "California Air Resources Board",
+    "date": "2026-02"
+   },
+   {
+    "title": "Corporate Disclosure of Climate Data",
+    "url": "https://ww2.arb.ca.gov/our-work/programs/corporate-ghg-reporting/corporate-disclosure-climate-data",
+    "publisher": "California Air Resources Board",
+    "date": "2026",
+    "date_note": "accessed 2026-10-23"
+   },
+   {
+    "title": "CARB fleshes out proposed SB 253 GHG emissions reporting and assurance requirements (secondary commentary)",
+    "url": "https://www.ropesgray.com/en/insights/viewpoints/2026/07/102ndej/carb-fleshes-out-proposed-sb-253-ghg-emissions-reporting-and-assurance-requiremen",
+    "publisher": "Ropes & Gray",
+    "date": "2026-07"
+   },
+   {
+    "title": "SEC Proposes Rescission of Climate-Related Disclosure Rules (Press Release 2026-49)",
+    "url": "https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules",
+    "publisher": "US Securities and Exchange Commission",
+    "date": "2026-05-29"
+   },
+   {
+    "title": "SEC formally proposes to rescind climate-related disclosure rules: what happens next? (secondary commentary)",
+    "url": "https://blogs.duanemorris.com/capitalmarkets/2026/06/03/sec-formally-proposes-to-rescind-climate-related-disclosure-rules-what-happens-next/",
+    "publisher": "Duane Morris LLP",
+    "date": "2026-06-03"
+   }
+  ],
+  "claim": "none found",
+  "claim_sources": [],
+  "gap": "ESRS E1 requires both location-based and market-based Scope 2; IFRS S2 requires only location-based plus information on contractual instruments; SB 253's Scope 2 method awaits CARB rulemaking; the SEC rule never took effect and is proposed for rescission.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "The verbatim text of ESRS E1-6 paragraph 49 (Set 1) was not reached: EUR-Lex and mirror texts of Regulation 2023/2772 could not be read as far as ESRS E1. The ESRS requirement is evidenced by EFRAG's Q&A citing AR 45(d) and by EFRAG's draft amended E1. The 3 July 2026 date is from EFRAG's news item (EY's commentary, earlier cited for it, was removed); the adopted revised E1 text (Commission 'have your say' page) was not read. IFRS S2 29(a)(v) is quoted as reproduced in the AASB staff paper, not from the ifrs.org standard text. CARB's July 2026 workshop slides were not reachable (client error), so the dual-method Scope 2 proposal rests on a law-firm summary. The SEC 2024 rule's Scope 1/2 phase-in by filer status was not re-read. 2026-10-24: the CARB dual-method proposal is marked as a law-firm summary.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "sbti-netzero-scope2",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "SBTi Corporate Net-Zero Standard V2.0: Scope 2 target basis and market-based instrument criteria",
+  "operator": "Science Based Targets initiative (SBTi)",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "The SBTi Corporate Net-Zero Standard Version 2.0 was released on 11 June 2026, with an effective date of 1 February 2027 (version history); earlier consultation drafts were published in March 2025 and November 2025. Criterion CNZS-C9.4 states that companies \"shall determine target ambition based on the physical GHG inventory, including the location-based method for scope 2\". Near-term Scope 2 targets may be absolute reduction targets or low-carbon electricity (LCE) alignment targets \"to increase the percentage of LCE used, contracted, or matched on a linear trajectory\" (C12.2.a). On instruments, the Standard states \"Contracts for plants up to 15 years of age are allowed\" and \"Existing contracts will be grandfathered for the duration of the contract\" (A.5, p.9); activity pools are \"defined on the basis of deliverability regions\"; a PPA may cover load across pools in one synchronous grid where \"the offtake begins within 36 months of the project's commissioning\" (C30.3.b); default-delivered LCE counts where \"LCE accounts for at least 95% of the generation mix\" (C31.1). Hourly matching is not required for target progress: SBTi describes an annual requirement with matching \"within a maximum 12-month period\", and companies with significant consumption are \"required to report the share of electricity consumption matched with low-carbon electricity on an hourly basis\". The criteria document sets hourly reporting for pools of 10 GWh or more (C32.1) and voluntary recognition thresholds of 'at least 50% hourly matching' until 2030, at least 75% until 2035 and at least 90% from 2035 (C34.1). SBTi says exceptions guidance will be \"published by Q4 2026\" and that it \"intends to launch a Call for Evidence on hourly matching\".",
+  "record_sources": [
+   {
+    "title": "Corporate Net-Zero Standard Version 2.0",
+    "url": "https://files.sciencebasedtargets.org/production/files/Corporate-Net-Zero-Standard-version-2.pdf",
+    "publisher": "Science Based Targets initiative",
+    "date": "2026-06-11"
+   },
+   {
+    "title": "Corporate Net-Zero Standard V2.0 Criteria",
+    "url": "https://files.sciencebasedtargets.org/production/files/Corporate-Net-Zero-Standard-V2-Criteria.pdf",
+    "publisher": "Science Based Targets initiative",
+    "date": "2026-06"
+   },
+   {
+    "title": "Understanding Scope 2 in the updated Corporate Net-Zero Standard V2.0",
+    "url": "https://sciencebasedtargets.org/blog/understanding-scope-2-in-the-updated-corporate-net-zero-standard-v2-0",
+    "publisher": "Science Based Targets initiative",
+    "date": "2026-06-11"
+   }
+  ],
+  "claim": "SBTi states: \"The intention is that SBTi aligns with the GHG Protocol's direction of travel on scope 2, without pre-empting the outcome of the GHG Protocol's ongoing work.\"",
+  "claim_sources": [
+   {
+    "title": "Understanding Scope 2 in the updated Corporate Net-Zero Standard V2.0",
+    "url": "https://sciencebasedtargets.org/blog/understanding-scope-2-in-the-updated-corporate-net-zero-standard-v2-0",
+    "publisher": "Science Based Targets initiative",
+    "date": "2026-06-11"
+   }
+  ],
+  "gap": "SBTi V2.0 sets Scope 2 target ambition on the location-based inventory and limits instruments by plant age and deliverability, but requires annual, not hourly, matching for target progress; it applies from 1 February 2027.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Release and effective dates, C9.4, the 15-year rule and grandfathering were read in the full Standard PDF. Section 4 of the full Standard could not be read, so C12.2.a, C30.3.b and C31.1 are quoted from the Criteria PDF. C32.1 ('where total annual electricity consumption is 10 GWh or more') and C34.1 ('Until 2030: at least 50% hourly matching', 'Until 2035: at least 75% hourly matching', 'From 2035: at least 90% hourly matching') were re-read verbatim in the Criteria PDF on 2026-10-24. The annual 12-month matching and Category A hourly-reporting points are quoted from the SBTi blog. SBTi is a private standard-setter; its standard is treated here as a record of its own rules.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "raters-scope2-inputs-msci-sustainalytics-cdp",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Which Scope 2 figure ESG raters and disclosure platforms use: MSCI, Sustainalytics, CDP, S&P Global CSA",
+  "operator": "MSCI ESG Research; Morningstar Sustainalytics; CDP; S&P Global",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Sustainalytics' Carbon Emissions Research FAQ (February 2024) states its \"Scope 2 data collection is based on the location-based approach since it is more commonly used\", and that where a company does not report location-based data \"the market-based data are collected instead\"; it also states \"38% of Scope 1 and 2 is estimated\". Its backgrounder states that the ESG Risk Rating assesses carbon through \"the carbon own operations material ESG issue (MEI)\", covering \"own operational energy use and GHG emissions (Scope 1 and 2)\". CDP's technical note Accounting of Scope 2 emissions (v12.0, 20 April 2026) states \"Companies must report both location-based and market-based scope 2 emissions if they have any\" (question 7.7), accepts energy attribute certificates and contracts that meet the GHG Protocol Quality Criteria, answers \"Yes\" to Guarantees of Origin, RECs and I-RECs counting toward a market-based target, \"recommends a vintage limitation of six months before the start of the reporting period\", and notes market boundaries \"describe, almost universally, national borders\". CDP's Full Corporate Scoring Introduction (2024, v1.0) does not describe Scope 2 scoring. MSCI's Greenhouse Gas Emissions Methodologies (June 2024) states that MSCI \"collects carbon emissions data (Scope 1, Scope 2, and Scope 3)\" and that \"Scope 1 and Scope 2 carbon emissions are separately estimated\" when not reported; neither it, the MSCI ESG Climate Change Metrics methodology (October 2023) nor MSCI's Climate Change Targets FAQ (June 2022) states whether MSCI uses the location-based or market-based Scope 2 figure: not found. S&P Global CSA methodology on Scope 2: not found.",
+  "record_sources": [
+   {
+    "title": "Carbon Emissions Research FAQ (Information Center for Issuers)",
+    "url": "https://www.sustainalytics.com/knowledge-hub/carbon-emissions-research-faq",
+    "publisher": "Morningstar Sustainalytics",
+    "date": "2024-02"
+   },
+   {
+    "title": "Material ESG Issues: Carbon Own Operations (backgrounder)",
+    "url": "https://connect.sustainalytics.com/material-esg-issues-carbon-own-ops-backgrounder",
+    "publisher": "Morningstar Sustainalytics",
+    "date": "",
+    "date_note": "undated; page copyright 2026"
+   },
+   {
+    "title": "Accounting of Scope 2 emissions (CDP technical note), Version 12.0",
+    "url": "https://cdn.cdp.net/cdp-production/cms/guidance_docs/pdfs/000/000/415/original/CDP-Accounting-of-Scope-2-Emissions.pdf",
+    "publisher": "CDP",
+    "date": "2026-04-20"
+   },
+   {
+    "title": "CDP Full Corporate Scoring Introduction 2024, v1.0",
+    "url": "https://cdn.cdp.net/cdp-production/cms/guidance_docs/pdfs/000/005/365/original/CDP_Full_Corporate_Scoring_Introduction.pdf",
+    "publisher": "CDP",
+    "date": "2024-06-14"
+   },
+   {
+    "title": "Greenhouse Gas Emissions Methodologies",
+    "url": "https://www.msci.com/documents/1296102/39141520/MSCI+Greenhouse+Gas+Emissions+Methodologies.pdf/973fb5dc-7ee1-75ac-4c62-a7d36e3b429f",
+    "publisher": "MSCI ESG Research LLC",
+    "date": "2024-06"
+   },
+   {
+    "title": "MSCI ESG Climate Change Metrics: Methodology and definitions (copy hosted by VanEck Australia)",
+    "url": "https://www.vaneck.com.au/globalassets/home.au/etf/equity/grnv/climate-change-metrics-methodology.pdf",
+    "publisher": "MSCI ESG Research LLC",
+    "date": "2023-10"
+   },
+   {
+    "title": "Climate Change Targets and Commitments FAQs for Issuers",
+    "url": "https://www.msci.com/documents/10199/242721/Climate+Change+Targets+and+Commitments+FAQs+for+Issuers.pdf",
+    "publisher": "MSCI ESG Research",
+    "date": "2022-06"
+   }
+  ],
+  "claim": "CDP: \"In practice, virtually every organization reporting to CDP must dual report.\" Sustainalytics gives as its reason for defaulting to location-based that it \"is more commonly used\". MSCI and S&P Global: none found.",
+  "claim_sources": [
+   {
+    "title": "Accounting of Scope 2 emissions (CDP technical note), Version 12.0",
+    "url": "https://cdn.cdp.net/cdp-production/cms/guidance_docs/pdfs/000/000/415/original/CDP-Accounting-of-Scope-2-Emissions.pdf",
+    "publisher": "CDP",
+    "date": "2026-04-20"
+   },
+   {
+    "title": "Carbon Emissions Research FAQ (Information Center for Issuers)",
+    "url": "https://www.sustainalytics.com/knowledge-hub/carbon-emissions-research-faq",
+    "publisher": "Morningstar Sustainalytics",
+    "date": "2024-02"
+   }
+  ],
+  "gap": "Sustainalytics collects location-based Scope 2 by default and CDP collects both; MSCI's published methodology documents read here do not state which Scope 2 figure feeds its ratings and metrics.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "These are the raters' own published methodology documents, not independently attested; they are recorded as what each document states. MSCI: three methodology documents were read and none distinguishes location-based from market-based; the MSCI ESG Ratings Carbon Emissions key-issue methodology was not found. CDP: how Scope 2 enters the CDP score (points or essential criteria) was not found; the 2024 Climate Change Essential Criteria document was not read. S&P Global CSA: one search returned no CSA methodology; an S&P Global Ratings article returned no body text. Sustainalytics: the backgrounder does not name the indicators used in the Carbon Own Operations MEI. Sustainalytics' FAQ re-read directly on 2026-10-23. Sustainalytics, MSCI, S&P Global and CDP are private raters or disclosure platforms, not record holders; their methodology documents are recorded here as what each says about its own method (basis standard_or_methodology), as in sbti-netzero-scope2.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "carbon-credit-registries-beneficiaries",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Carbon credit and removal registries (Verra, Gold Standard, Puro.earth, Isometric): whether retirements name a beneficiary; Microsoft, Alphabet, Amazon, Meta as beneficiaries",
+  "operator": "Verra; Gold Standard; Puro.earth; Isometric",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Verra: the Verra Registry v2 release notes (October 2020) list \"Beneficial owner\", retirement reason and retirement reason details as public retirement fields, but state \"These are optional fields and do not display publicly, if the account holder chooses to keep them private.\" Isometric: its registry user guide requires the retiring party to \"Select a beneficiary for the credit retirement\", and a public retirement record (ret_1JZX5YDJA1S0SQYZ, 11 July 2025) displays \"Beneficiary: BlackRock, Inc.\", retired by Supercritical, with the note \"1,500 tonnes of carbon dioxide removal retired by Supercritical on behalf of BlackRock, Inc\". Puro.earth: retirement pages on registry.puro.earth were reached but showed no record fields (client-side rendering). A retirement statement page on puro.earth does display a beneficiary: 26 tCO2e retired by Supercritical Tech Ltd 'on behalf of GSPV Limited' (beneficiary type 'End consumer'), transaction completed 2023-07-19. Gold Standard: the Impact Registry page (updated 10 July 2026) does not describe beneficiary fields. No registry record naming Microsoft, Alphabet/Google, Amazon or Meta as a retirement beneficiary was found in this check, so no registry figures are given.",
+  "record_sources": [
+   {
+    "title": "Verra Registry v2 Release Notes, October 2020",
+    "url": "https://verra.org/documents/verra-registry-v2-release-notes-october-2020",
+    "publisher": "Verra",
+    "date": "2020-10"
+   },
+   {
+    "title": "Isometric Registry: Retire credits (user guide)",
+    "url": "https://docs.isometric.com/user-guides/registry/retire-credits",
+    "publisher": "Isometric",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Isometric Registry: Key registry concepts",
+    "url": "https://docs.isometric.com/user-guides/registry/key-registry-concepts",
+    "publisher": "Isometric",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Isometric Registry retirement ret_1JZX5YDJA1S0SQYZ",
+    "url": "https://registry.isometric.com/retirement/ret_1JZX5YDJA1S0SQYZ",
+    "publisher": "Isometric",
+    "date": "2025-07-11"
+   },
+   {
+    "title": "Puro Registry retirement page (no fields rendered)",
+    "url": "https://registry.puro.earth/retirements/64a176c4-98a8-49da-8f9b-01caa8db40ba",
+    "publisher": "Puro.earth",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Gold Standard Impact Registry",
+    "url": "https://www.goldstandard.org/impact-registry",
+    "publisher": "Gold Standard",
+    "date": "2026-07-10"
+   },
+   {
+    "title": "Puro.earth Retirement Statement d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "url": "https://puro.earth/retirement-statement/d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "publisher": "Puro.earth",
+    "date": "2023-07-19"
+   }
+  ],
+  "claim": "Microsoft: carbon removal contracts \"totaling more than 78 million metric tonnes\" signed since June 2023, active through 20 January 2026, naming no registry (company statement, January 2026). Frontier: \"Tons contracted\" 1,835,427; \"Dollars contracted\" $679M; \"Tons delivered\" 87,482, naming no buyers or registries (company statement, October 2026).",
+  "claim_sources": [
+   {
+    "title": "Updating our Carbon Removal Portfolio",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Updating-our-Carbon-Removal-Portfolio.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-01"
+   },
+   {
+    "title": "Frontier progress",
+    "url": "https://www.frontierclimate.com/progress",
+    "publisher": "Frontier Climate",
+    "date": "2026-10"
+   }
+  ],
+  "gap": "Microsoft's and Frontier's removal volumes are contracted amounts stated by the buyers; no registry retirement naming Microsoft, Alphabet, Amazon or Meta as beneficiary was found yet.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Registry search interfaces (Verra, Gold Standard, Puro) render client-side and could not be queried by beneficiary; web searches for big-tech beneficiary records in Puro and Isometric returned none. A trade-press headline ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', qcintel.com) appeared in search results but was not fetched or checked against a registry, and is not used. Microsoft's January 2026 document gives three active-contract subtotals (21,303,984; 45,308,761; 11,673,048 t) that are contracted, not retired, volumes. A further check on 2026-10-23 (see carbon-credits-retired-by-company-disclosures) used the project IDs that Microsoft and Meta disclose under California AB 1305. Verra's registry returned an application shell, ACR's data on ICE GreenTrace requires a login, and Isometric's Vaulted Deep project page shows aggregate retirements only. Again no record naming the companies was found. 2026-10-24: the Microsoft and Frontier statements were removed from record (they are in claim), and the Gold Standard sentence resting on a paywalled trade-press item (Carbon Pulse) was dropped.",
+  "last_checked": "2026-10-24"
+ },
+ {
+  "id": "scope2-renewable-claims-by-instrument",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Electricity behind the renewable claims of Microsoft, Alphabet (Google), Amazon, Meta, Oracle, Equinix and Digital Realty, by instrument: unbundled certificates, PPAs, on-site generation, green tariffs and supplier contracts, grid or residual (2024, 2025)",
+  "operator": "Microsoft; Alphabet (Google); Amazon; Meta; Oracle; Equinix; Digital Realty",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "Alphabet is the only one of the seven whose split of electricity by instrument is covered by an assurance statement. Its FY2025 schedules, reviewed by Ernst & Young LLP at limited assurance (report dated 22 June 2026), give 43,586,600 MWh of electricity consumption in 2025. The schedule of electricity from renewable sources attributes all of it to 'PPAs and other renewable energy agreements' (32,986,300 MWh), on-site generation (24,800 MWh) and renewable electricity in the grid (10,575,500 MWh). The PPA line 'represents the portion of total renewable electricity allocated necessary to maintain the 100% renewable electricity match'. The methodology says such agreements may include PPAs, tax equity investments, PPA-linked RECs/GO agreements and utility renewable energy tariffs, so the line is not split further. The energy-consumption schedule in the same review classes 36,194,000 MWh of purchased electricity as from renewable sources and 7,282,000 MWh as from non-renewable sources.",
+  "record_sources": [
+   {
+    "title": "Alphabet's 2026 (FY2025) Environmental Indicators Assurance Letter (EY Independent Accountants' Review Report and Schedules of Select Environmental Metrics)",
+    "url": "https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf",
+    "publisher": "Alphabet Inc. / Ernst & Young LLP",
+    "date": "2026-06-22"
+   }
+  ],
+  "claim": "Equinix reports 96% renewable coverage in 2024: unbundled EACs 47%, utility-supplied EACs 38% and PPAs 11% (2023: 46%, 40%, 10%). Digital Realty's 2024 chart shows '18% EACs', '13% PPAs', '6% Green Tariffs', '19% Retail renewable supply' and '16% Customer-Sourced Renewables'. For 2025 it states 'Only 11% of our renewable energy in 2025 came from unbundled EACs.' Google states that GCs bought on the marketplace accounted for 19% of its 2025 market-based Scope 2 reductions and long-term clean energy agreements for 81%. Microsoft's FY25 data fact sheet reports 34,534,392 MWh of 'total matched renewable electricity' against 37,026,353 MWh consumed. That total excludes spot EACs, which were 'discontinued in February 2025'. The FY24 total of 29,829,540 MWh included them, and the FY24 'Percentage of direct renewable electricity' was 78. Meta's data index reports 100% of 2024 electricity matched by renewable sources and '>99%' of electricity from the grid, with no split by instrument. Amazon's renewable energy methodology (July 2026) names off-site renewable energy contracts, on-site rooftop solar, site energy contracts and green tariffs, retired RECs and 'Renewable Energy in the Grid', but gives no quantity for any of them. Oracle reports 8,707,819 MWh of renewable electricity use in FY2026, all instruments combined.",
+  "claim_sources": [
+   {
+    "title": "Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable)",
+    "url": "https://media.greenweb.org/uploads/ds_sustainability_data_en.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2025-04"
+   },
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   },
+   {
+    "title": "Digital Realty 2025 Impact Report (calendar year 2025)",
+    "url": "https://investor.digitalrealty.com/static-files/8e2cfc9f-e0a7-4ee0-a7a6-c6a2ea182fa5",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2026-05"
+   },
+   {
+    "title": "Google 2026 Environmental Report",
+    "url": "https://sustainability.google/files/google-2026-environmental-report.pdf",
+    "publisher": "Google",
+    "date": "2026-06"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "2025 Environmental Sustainability Report Data Fact Sheet (FY24)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-05-29"
+   },
+   {
+    "title": "Meta 2025 Environmental Data Index (2024 data)",
+    "url": "https://sustainability.atmeta.com/asset/2025-environmental-data-index/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025"
+   },
+   {
+    "title": "Amazon Renewable Energy Methodology",
+    "url": "https://sustainability.aboutamazon.com/amazon-renewable-energy-methodology",
+    "publisher": "Amazon",
+    "date": "2026-07"
+   },
+   {
+    "title": "Oracle Environmental and Social Impact FY26 Datasheet (October 2026, Version one)",
+    "url": "https://www.oracle.com/a/ocom/docs/social-impact-datasheet.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2026-10"
+   }
+  ],
+  "gap": "Microsoft, Amazon, Meta and Oracle publish no MWh or percentage split of their renewable claim by instrument. Equinix and Digital Realty publish percentage shares. Alphabet publishes an assured MWh split that puts PPAs, PPA-linked certificates and utility tariffs in one line and gives marketplace certificates only as a share of Scope 2 reductions. In the shares published, unbundled certificates were 47% of Equinix's 2024 electricity and 11% of Digital Realty's 2025 renewable energy. Alphabet's two 2025 schedules count 10,575,500 MWh of grid renewable content toward its 100% match and also class 7,282,000 MWh of purchased electricity as non-renewable.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Alphabet's split was read in EY's review report (Appendix A schedules) and re-read on 2026-10-23. The other figures are company statements already transcribed in sites/paper/company_figures.csv from the documents listed. Not reached: Alphabet's 2025 CDP response (www.gstatic.com, robots_disallowed); Oracle's 2026 CDP response (oracle.com/africa/a/ocom/docs/cdp-climate-change-questionnaire.pdf; extracted text, 97,672 characters, ends at question 4.1.2.7 and 7.30.14 is not reached); Equinix's 2025 Sustainability Report (Adobe asset host, robots_disallowed); the 2024 RE100 annual disclosure report (theclimategroup.org, client error). Not found by search: CDP responses for Microsoft and Amazon, or a Meta CDP response later than the asset titled '2023 Meta CDP Climate Change Response' (not read). Digital Realty's 2025 instrument chart (p.12) extracts as scrambled labels and percentages, so the 2025 pairings were not recorded, and its appendix (pp.91-92) was beyond the extracted text. Google's 2026 report text extracted only to about p.47.",
+  "last_checked": "2026-10-23"
+ },
+ {
+  "id": "carbon-credits-retired-by-company-disclosures",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "Carbon credits and removals applied, retired or contracted by Microsoft, Alphabet (Google), Amazon, Meta, Oracle, Equinix and Digital Realty: company project disclosures (California AB 1305 / VCMDA) and the registry records behind them",
+  "operator": "Microsoft; Alphabet (Google); Amazon; Meta; Oracle; Equinix; Digital Realty",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "No registry record naming any of the seven companies, or a named subsidiary, as retiring account or beneficiary was found. Verra says 'All VCU issuance and retirement records are publicly available on the Verra Registry', but registry.verra.org returned only an application shell with no record text. ACR's public reports page links to ICE GreenTrace, whose Credits page returned an application shell and asks users to log in or register to download data. Puro: pages under registry.puro.earth/retirements returned no record fields. A retirement statement on puro.earth does display beneficiary fields: 26 tCO2e retired by Supercritical Tech Ltd 'on behalf of GSPV Limited', transaction completed 2023-07-19. No statement naming the seven was found through search. Isometric: the registry page for Vaulted Deep's Great Plains project shows 74,920 credits issued and 17,582.544 retired, but no individual retirements or beneficiaries. EY's review report for Meta's 2024 schedule lists 50,000 tCO2e of carbon credits (VCS).",
+  "record_sources": [
+   {
+    "title": "Verified Carbon Units (VCUs)",
+    "url": "https://verra.org/programs/verified-carbon-standard/verified-carbon-units-vcus/",
+    "publisher": "Verra",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Verra Registry (home; application shell)",
+    "url": "https://registry.verra.org/",
+    "publisher": "Verra",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "ACR Registry Public Reports",
+    "url": "https://acrcarbon.org/acr-registry/public-reports/",
+    "publisher": "ACR",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "ACR on ICE GreenTrace: Credits",
+    "url": "https://greentrace.ice.com/acr/credits",
+    "publisher": "ACR / ICE",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Puro Registry retirement page (no fields rendered)",
+    "url": "https://registry.puro.earth/retirements/3bcfd1a4-268d-4cbd-a085-12d2d970ef99",
+    "publisher": "Puro.earth",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Puro.earth Retirement Statement d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "url": "https://puro.earth/retirement-statement/d0ad728c-f8fc-4d41-be3a-3d9caab1e0e5",
+    "publisher": "Puro.earth",
+    "date": "2023-07-19"
+   },
+   {
+    "title": "Isometric Registry project prj_1HHYZFVGW1S044ZY (Vaulted Deep, Great Plains)",
+    "url": "https://registry.isometric.com/project/prj_1HHYZFVGW1S044ZY",
+    "publisher": "Isometric",
+    "date": "",
+    "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Independent Accountants' Review Report, year ended December 31, 2024 (EY)",
+    "url": "https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/",
+    "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
+    "date": "2025-08-27"
+   }
+  ],
+  "claim": "Isometric states that Vaulted Deep selected it as registry for its Microsoft offtake of 'up to 4.9 million tonnes of carbon removal through to 2038' (17 July 2025). Microsoft's California AB 1305 report (published January 2025) lists 16 vintage rows of carbon removal credits for its FY23 carbon credit applications, with a total of 605,354 t ('Total 605,354'). The projects are IFM projects registered with CARB and ACR or CAR, an ACR IFM project (ACR574), TIST Kenya (VCS 005 (737)) and Delta Blue Carbon-1 (VCS 2250). The report defines the quantity as purchased volume and gives no retirement dates. Microsoft states it 'discontinued our program of purchasing spot EACs and carbon removal credits from existing projects'; its FY25 fact sheet and report give no FY25 retirement volume. Meta's disclosure under California's Voluntary Carbon Market Disclosures Act (as of 19 December 2024) states 'We supported the removal of 368,050 tons of CO2' for residual Scope 1 and 2 emissions in 2020-2023. It lists 11 projects (VCS993, VCS737, VCS899, ACR114, VCS1468, VCS596, VCS597, CAR1282, CAR1333, ACR282 / CAFR523, GS3039), three of them 'purchased but not yet applied', with no per-project quantities. Meta's 2025 Sustainability Report describes contracts for 676,000 nature-based removal credits from EFM through 2035 and 1.3 million from BTG Pactual Timberland Investment Group. Oracle's AB 1305 disclosure (December 2025) states 'As of 12/31/25 Oracle does not market, sell, purchase, or use voluntary carbon offsets.' Amazon states 'we do not count carbon credits toward our decarbonization targets' (14 February 2025). Digital Realty reports '1,979 MTCO2e carbon offsets retired' for 2024.",
+  "claim_sources": [
+   {
+    "title": "Vaulted Deep selects Isometric for Microsoft offtake agreement",
+    "url": "https://isometric.com/writing-articles/vaulted-deep-selects-isometric-for-microsoft-offtake-agreement",
+    "publisher": "Isometric",
+    "date": "2025-07-17"
+   },
+   {
+    "title": "California AB 1305 report",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/California-AB-1305-Regulation.pdf",
+    "publisher": "Microsoft",
+    "date": "2025-01"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report Data Fact Sheet (FY25)",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07-09"
+   },
+   {
+    "title": "2026 Environmental Sustainability Report: Responsibly building the AI future",
+    "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+    "publisher": "Microsoft",
+    "date": "2026-07"
+   },
+   {
+    "title": "California Voluntary Carbon Market Disclosures Act: Meta 2024 Disclosure",
+    "url": "https://sustainability.atmeta.com/asset/california-voluntary-carbon-market-disclosures-act-meta-2024-disclosure",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2024-12-19"
+   },
+   {
+    "title": "Meta 2025 Sustainability Report",
+    "url": "https://sustainability.atmeta.com/asset/2025-sustainability-report/",
+    "publisher": "Meta Platforms, Inc.",
+    "date": "2025"
+   },
+   {
+    "title": "CA AB 1305 Disclosure (fiscal year 2025, Version 1)",
+    "url": "https://oracle.com/a/ocom/docs/ca-ab-1305-disclosure.pdf",
+    "publisher": "Oracle Corporation",
+    "date": "2025-12"
+   },
+   {
+    "title": "How Amazon approaches carbon credits",
+    "url": "https://aboutamazon.com/news/sustainability/amazon-carbon-credit-decarbonization-sustainability",
+    "publisher": "Amazon",
+    "date": "2025-02-14"
+   },
+   {
+    "title": "Digital Realty 2024 Impact Report (calendar year 2024)",
+    "url": "https://s29.q4cdn.com/106493612/files/doc_financials/2024/ar/Digital-Realty-2024-Impact-Report.pdf",
+    "publisher": "Digital Realty Trust, Inc.",
+    "date": "2025-06"
+   }
+  ],
+  "gap": "The companies' disclosures name registries and project IDs but give no retirement serial numbers, dates or beneficiary names, and the registries' public interfaces could not be queried by beneficiary. As a result, none of the disclosed volumes (Microsoft 605,354 t for FY23; Meta 368,050 t for 2020-2023 and 50,000 t for 2024) was matched to a registry retirement record. No AB 1305 disclosure or registry record was found for Alphabet, Amazon, Equinix or Digital Realty.",
+  "confidence": "medium",
+  "verification_status": "partial",
+  "verification_note": "Company disclosures were read in the primary documents, and the quoted totals were re-read on 2026-10-23. Registry attempts on 2026-10-23: Verra (application shell), ACR/ICE GreenTrace (shell; login required to download), Puro (registry.puro.earth retirement pages render no fields; puro.earth retirement statements render but none naming the seven was surfaced by search), Isometric (project page shows aggregate retirements only), CarbonPlan OffsetsDB (updates paused; carbonplan.org/transactions client error). Climate Action Reserve's and Gold Standard's registries were not reached: no search result gave a URL for a CAR retirement report or a Gold Standard retirement record. A Quantum Commodity Intelligence item from registry data ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', 9 December 2025) is behind a login; its figure is not used. Microsoft's AB 1305 table quantities are purchased vintage volumes, not retirements. The Deloitte review it cites covers Section 1 of the 2024 fact sheet, not this report. 2026-10-24: Isometric's article on the Vaulted Deep offtake is a company statement and moved to claim.",
+  "last_checked": "2026-10-24"
+ }
+]

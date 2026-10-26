@@ -1,0 +1,20 @@
+[
+ {
+  "document_id": "d30f01fa-7b3c-4f1d-b37d-be8909ba4629",
+  "url": "https://leap.epa.ie/docs/d30f01fa-7b3c-4f1d-b37d-be8909ba4629.pdf",
+  "classification": "Annual Environmental Report",
+  "title": "AER 2025"
+ },
+ {
+  "document_id": "2ea853df-3fd4-4c75-8ad9-ac2f2b2af3e2",
+  "url": "https://leap.epa.ie/docs/2ea853df-3fd4-4c75-8ad9-ac2f2b2af3e2.pdf",
+  "classification": "Annual Environmental Report",
+  "title": "AER 2024"
+ },
+ {
+  "document_id": "00000000-fixture-new-document",
+  "url": "https://leap.epa.ie/docs/00000000-fixture-new-document.pdf",
+  "classification": "Annual Environmental Report",
+  "title": "AER 2026 (fixture: a document the ledger has not seen)"
+ }
+]

@@ -1,0 +1,859 @@
+{
+ "checks": 19,
+ "findings_in_table": 1293,
+ "random_sample_figures": {
+  "n": 166,
+  "verdicts": {
+   "found": 146,
+   "not_in_document": 8,
+   "found_different": 6,
+   "unreachable": 6
+  },
+  "found_as_published": 146,
+  "found_with_another_problem_noted": 66,
+  "differences": 14,
+  "differences_no_longer_in_the_form_checked": 11,
+  "differences_still_as_checked": 3
+ },
+ "random_sample_links": {
+  "n": 31,
+  "verdicts": {
+   "found": 30,
+   "found_different": 1
+  },
+  "found_as_published": 30,
+  "found_with_another_problem_noted": 10,
+  "differences": 1,
+  "differences_no_longer_in_the_form_checked": 0,
+  "differences_still_as_checked": 1
+ },
+ "status_now": {
+  "quoted text no longer present": 232,
+  "now on the claim side": 180,
+  "now on the record side": 160,
+  "resolved against the permit text": 158,
+  "confirmed at the check": 118,
+  "no longer in the table in the form checked": 81,
+  "now on the record side, basis press_report": 63,
+  "still in the table as checked": 48,
+  "as recorded on the fetch list: obtained": 37,
+  "not checkable (no quotation)": 31,
+  "as recorded with the finding: corrected": 28,
+  "quoted text still present": 27,
+  "entry status now verified": 24,
+  "outside the repository (email drafts or the live page)": 18,
+  "now on the claim side, basis press_report": 14,
+  "entry status now partial": 13,
+  "no longer in the table": 10,
+  "now on the record side (wording of the figure changed)": 9,
+  "as recorded with the finding: not changed": 9,
+  "not checkable (several entries named)": 6,
+  "now on the claim side (wording of the figure changed)": 4,
+  "now on the record side, basis filed": 4,
+  "entry status now not_found": 3,
+  "now on the claim side, basis company_statement": 3,
+  "as recorded on the fetch list: partial": 3,
+  "now on the record side, basis official_statistic": 2,
+  "no figures (not a permit, or no document)": 2,
+  "now on the claim side (wording of the figure changed), basis government_document": 1,
+  "now on the claim and record side (wording of the figure changed)": 1,
+  "now on the record side, basis press_report/regulator_decision": 1,
+  "now on the record side, basis derived": 1,
+  "as recorded on the fetch list: contradicts": 1,
+  "as recorded with the finding: partly corrected": 1
+ },
+ "entries_with_findings": 179,
+ "per_entry": {
+  "ae-abudhabi-uae-us-ai-campus-5gw": {
+   "sides-2026-10-23": 3,
+   "system-check-C-2026-10-24": 2
+  },
+  "alphabet-google-scope2-two-numbers": {
+   "browser-fetch-2026-10-24": 1,
+   "measurements-2026-10-23b": 3,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "amazon-scope2-two-numbers": {
+   "measurements-2026-10-23": 2,
+   "system-check-B-2026-10-24": 1
+  },
+  "amd-10k-2025-foundry-and-atmp-suppliers": {
+   "measurements-2026-10-24": 1
+  },
+  "ar-stargate-argentina-rigi": {
+   "browser-fetch-2026-10-24": 1,
+   "sides-2026-10-23": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 3
+  },
+  "au-aemo-2026-esoo-dc-forecast": {
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "au-aemo-esoo-2026": {
+   "system-check-V-2026-10-24": 1
+  },
+  "au-nsw-sydney-dc-water": {
+   "measurements-2026-10-23": 2,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 9
+  },
+  "br-eldorado-scala-ai-city": {
+   "system-check-P-2026-10-24": 1
+  },
+  "br-ons-grid-connection-pipeline": {
+   "measurements-2026-10-23": 1,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 10
+  },
+  "br-pecem-casadosventos-bytedance": {
+   "measurements-2026-10-23": 2,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 7
+  },
+  "br-redata-renuncia": {
+   "measurements-2026-10-23": 2,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "broadcom-10k-fy2025-foundry-and-own-fabs": {
+   "measurements-2026-10-24": 4
+  },
+  "ca-ab-aeso-large-load-byog-greenlight": {
+   "browser-fetch-2026-10-24": 2,
+   "browser-fetch-check-2026-10-24": 4,
+   "sides-2026-10-23": 4,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 1
+  },
+  "ca-bc-hydro-crypto-connection-pause-2022": {
+   "measurements-2026-10-23b": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "ca-bc-vancouver-telus-garden-heat-reuse": {
+   "measurements-2026-10-23": 1
+  },
+  "ca-on-bill-40-data-centre-playbook": {
+   "system-check-C-2026-10-24": 1
+  },
+  "ca-qc-hydro-quebec-data-centre-tariff-allocation": {
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "carbon-credit-registries-beneficiaries": {
+   "system-check-C-2026-10-24": 1
+  },
+  "carbon-credits-retired-by-company-disclosures": {
+   "measurements-2026-10-23b": 2,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "cd-cobalt-usgs-share": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "cl-alto-jahuel-terranova-sea": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "cl-cerrillos-google-water": {
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "cl-copper-cochilco-seawater": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "cl-huechuraba-aws-tribunal": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "cl-lithium-atacama-sqm-sma": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 2
+  },
+  "cn-gallium-export-controls": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "cn-guiyu-industrial-park": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 5
+  },
+  "cn-ndrc-green-dc-action-plan-2024": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 4,
+   "system-check-V-2026-10-24": 1
+  },
+  "cn-west-hubs-inner-mongolia-ningxia": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 16
+  },
+  "digital-realty-scope2-two-numbers": {
+   "system-check-C-2026-10-24": 1
+  },
+  "dk-bek1167-surplus-heat": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "dk-national-heat-reuse-and-forecast": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 3
+  },
+  "eg-national-dc-pipeline-grid": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-P-2026-10-24": 10
+  },
+  "equinix-scope2-two-numbers": {
+   "measurements-2026-10-23": 3,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 2
+  },
+  "es-aragon-amazon-blackstone-approvals": {
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 10
+  },
+  "es-ree-demand-capacity-map-2026": {
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 4,
+   "system-check-V-2026-10-24": 1
+  },
+  "et-eep-crypto-mining-phase-out": {
+   "system-check-P-2026-10-24": 3
+  },
+  "eu-eed-datacentre-reporting-2024-period": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 5
+  },
+  "eu-eed-dc-reporting-2026": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "eu-us-equinix-advanced-nuclear-preagreements": {
+   "measurements-2026-10-23b": 1
+  },
+  "eu-weee-collection-rate-2023": {
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "fi-espoo-kirkkonummi-microsoft-fortum-heat": {
+   "browser-fetch-2026-10-24": 1,
+   "browser-fetch-check-2026-10-24": 1,
+   "measurements-2026-10-23": 1,
+   "sides-2026-10-23": 8,
+   "system-check-C-2026-10-24": 1
+  },
+  "fi-espoo-kirkkonummi-microsoft-fortum-heat; uy-canelones-google-water": {
+   "system-check-F-2026-10-24": 1
+  },
+  "fi-hamina-google-heat-seawater": {
+   "sides-2026-10-23": 4,
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "fi-loviisa-fortum-google-ppa": {
+   "measurements-2026-10-23b": 1
+  },
+  "fr-idf-rte-datacentre-connections-2025": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "gh-agbogbloshie-demolition-2021": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 7
+  },
+  "ghg-protocol-scope2-revision": {
+   "measurements-2026-10-23": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "global-basel-ewaste-amendments-tracking": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 18
+  },
+  "global-gem-2024-ewaste": {
+   "browser-fetch-2026-10-24": 1,
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "id-batam-nongsa-power": {
+   "sides-2026-10-23": 2,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 3
+  },
+  "id-morowali-itss-2023": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 5
+  },
+  "id-nickel-halmahera-weda-bay": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 8
+  },
+  "ie-cru-leu-connection-policy-2025": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 5
+  },
+  "ie-cru-leu-policy": {
+   "system-check-C-2026-10-24": 1
+  },
+  "ie-dublin-vantage-dub13-abp-refusal": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "ie-epa-aer-metered-2025": {
+   "measurements-2026-10-23": 4,
+   "measurements-2026-10-24b": 11,
+   "system-check-B-2026-10-24": 5,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "ie-equinix-db5-prime-power-gas-2024": {
+   "measurements-2026-10-23": 1,
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "ie-national-cso-share-2025": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 4,
+   "system-check-V-2026-10-24": 1
+  },
+  "il-electricity-authority-dc-freeze-2026": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 1,
+   "system-check-P-2026-10-24": 8
+  },
+  "in-delhi-seelampur-informal": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "in-gujarat-jamnagar-policy": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-P-2026-10-24": 6
+  },
+  "in-telangana-aws-future-city": {
+   "sides-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 4
+  },
+  "in-up-dc-policy-2026": {
+   "system-check-V-2026-10-24": 1
+  },
+  "it-terna-datacentre-requests-2025": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 3
+  },
+  "jp-occto-dc-demand-2034": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "jp-softbank-tomakomai": {
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "ke-meta-sama-keca-2024": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "ke-olkaria-ecocloud-geothermal": {
+   "browser-fetch-2026-10-24": 1,
+   "measurements-2026-10-23": 1,
+   "sides-2026-10-23": 1
+  },
+  "ke-olkaria-microsoft-g42-stalled": {
+   "browser-fetch-2026-10-24": 1,
+   "sides-2026-10-23": 6,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 1
+  },
+  "kr-motie-grid-impact-assessment": {
+   "system-check-B-2026-10-24": 2,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 19
+  },
+  "kr-samsung-fabs-water": {
+   "sides-2026-10-23": 10,
+   "system-check-C-2026-10-24": 1
+  },
+  "ma-naver-500mw-taqa-renewable": {
+   "sides-2026-10-23": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 2
+  },
+  "meta-scope2-two-numbers": {
+   "measurements-2026-10-23": 1,
+   "measurements-2026-10-23b": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "microsoft-scope2-two-numbers": {
+   "browser-fetch-2026-10-24": 1,
+   "measurements-2026-10-23": 1
+  },
+  "mm-rare-earths-kachin-pangwa": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 4
+  },
+  "msft-circular-centers-assurance": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "mx-qro-queretaro-colon-water-grid": {
+   "browser-fetch-2026-10-24": 1,
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 7
+  },
+  "my-dc-approvals-jobs": {
+   "measurements-2026-10-23": 1,
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 13
+  },
+  "my-johor-dcdcc-rejections": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 11
+  },
+  "my-johor-span-water-440mld": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 6
+  },
+  "my-tnb-crypto-electricity-theft": {
+   "system-check-P-2026-10-24": 2
+  },
+  "my-tnb-esa-5-9gw": {
+   "sides-2026-10-23": 7,
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 3,
+   "system-check-P-2026-10-24": 3,
+   "system-check-V-2026-10-24": 1
+  },
+  "my-tnb-esa-5-9gw; us-pa-susquehanna-talen-aws-colocation": {
+   "system-check-F-2026-10-24": 1
+  },
+  "my-tnb-esa-5-9gw; us-pa-susquehanna-talen-aws-colocation; ae-abudhabi-uae-us-ai-campus-5gw": {
+   "system-check-F-2026-10-24": 1
+  },
+  "ng-lagos-diesel-gas-dependence": {
+   "browser-fetch-2026-10-24": 1,
+   "sides-2026-10-23": 5,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 10
+  },
+  "ng-lagos-person-in-the-port": {
+   "measurements-2026-10-23": 1
+  },
+  "nl-amsterdam-vestigingsbeleid-cap": {
+   "system-check-C-2026-10-24": 3,
+   "system-check-V-2026-10-24": 1
+  },
+  "nl-haarlemmermeer-tennet-goodman-ruling": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "nl-middenmeer-microsoft-water": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 5
+  },
+  "nl-middenmeer-microsoft-water; oracle-scope2-two-numbers": {
+   "system-check-F-2026-10-24": 1
+  },
+  "nl-zeewolde-meta-cancelled": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 1
+  },
+  "nl-zeewolde-meta-land": {
+   "system-check-P-2026-10-24": 3
+  },
+  "no-north-statnett-datacentre-reservations": {
+   "measurements-2026-10-23": 1,
+   "system-check-P-2026-10-24": 3
+  },
+  "nvidia-10k-fy2026-foundry-memory-assembly-suppliers": {
+   "measurements-2026-10-24": 6,
+   "system-check-B-2026-10-24": 2
+  },
+  "oracle-scope2-two-numbers": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "raters-scope2-inputs-msci-sustainalytics-cdp": {
+   "system-check-F-2026-10-24": 2
+  },
+  "sa-humain-pif-datacenters": {
+   "browser-fetch-2026-10-24": 1,
+   "sides-2026-10-23": 2,
+   "system-check-C-2026-10-24": 2
+  },
+  "sbti-netzero-scope2": {
+   "measurements-2026-10-23": 2,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "scope2-disclosure-rules-esrs-issb-sb253": {
+   "system-check-C-2026-10-24": 1
+  },
+  "scope2-renewable-claims-by-instrument": {
+   "system-check-F-2026-10-24": 1
+  },
+  "se-stockholm-exergi-heat": {
+   "measurements-2026-10-23": 1,
+   "sides-2026-10-23": 4,
+   "system-check-V-2026-10-24": 1
+  },
+  "server-makers-10k-suppliers-smci-dell": {
+   "measurements-2026-10-24": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "sg-imda-green-dc-roadmap-pue": {
+   "sides-2026-10-23": 4,
+   "system-check-C-2026-10-24": 1
+  },
+  "sg-imda-moratorium-capacity": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "sg-jtc-jurong-island-dc-park": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 3
+  },
+  "sg-mci-dc-electricity-2019-2020": {
+   "system-check-C-2026-10-24": 1
+  },
+  "sg-nea-eca-registration-scope": {
+   "system-check-C-2026-10-24": 1
+  },
+  "tsmc-20f-2025-customer-concentration-and-fabs": {
+   "measurements-2026-10-24": 3,
+   "system-check-C-2026-10-24": 1
+  },
+  "tw-taipower-north-5mw-cap": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 8
+  },
+  "tw-tsmc-hsinchu-2021-drought": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 5
+  },
+  "uk-abbots-langley-grey-belt": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "uk-neso-demand-queue-datacentres-2026": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "uk-south-mimms-dc01uk": {
+   "browser-fetch-2026-10-24": 2,
+   "browser-fetch-check-2026-10-24": 2,
+   "system-check-C-2026-10-24": 3
+  },
+  "uk-thames-affinity-water-datacentres": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 3
+  },
+  "us-az-chandler-ord5033": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-az-goodyear-mesa-water-records-vs-claims": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-P-2026-10-24": 2
+  },
+  "us-az-tsmc-phoenix-water": {
+   "measurements-2026-10-23": 1,
+   "measurements-2026-10-24b": 1,
+   "sides-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-ca-santa-clara-svp-datacenter-share-2025": {
+   "system-check-P-2026-10-24": 2
+  },
+  "us-city-benchmarking-datacenter-metered-electricity": {
+   "measurements-2026-10-23": 4,
+   "system-check-B-2026-10-24": 5,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-eia-umar-2025-uranium-origin": {
+   "measurements-2026-10-23b": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "us-epa-ewaste-2018-no-federal-law": {
+   "system-check-P-2026-10-24": 4
+  },
+  "us-ga-doaa-exemption-correction": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-ga-georgia-power-large-load-certification": {
+   "system-check-C-2026-10-24": 5,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-hyperscaler-server-lifespan-circularity": {
+   "browser-fetch-2026-10-24": 3,
+   "browser-fetch-check-2026-10-24": 1,
+   "sides-2026-10-23": 2,
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 2,
+   "system-check-P-2026-10-24": 4
+  },
+  "us-ia-duane-arnold-google-restart": {
+   "system-check-B-2026-10-24": 1
+  },
+  "us-ia-west-des-moines-microsoft-water": {
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "us-il-clinton-meta-ppa": {
+   "measurements-2026-10-23b": 3
+  },
+  "us-la-richland-meta-entergy-gas": {
+   "measurements-2026-10-24b": 1,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 12,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-meta-terrapower-natrium-units": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 3
+  },
+  "us-nuclear-deal-plants-spent-fuel": {
+   "measurements-2026-10-23b": 2,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-nv-google-nv-energy-clean-transition-tariff": {
+   "browser-fetch-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 1
+  },
+  "us-ny-greenidge-title-v-denial": {
+   "system-check-B-2026-10-24": 2
+  },
+  "us-ny-plattsburgh-crypto-mining-moratorium-2018": {
+   "measurements-2026-10-23b": 1
+  },
+  "us-oh-aep-ohio-data-center-tariff": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 6
+  },
+  "us-oh-pa-vistra-meta-ppas": {
+   "measurements-2026-10-23b": 3,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-oh-pike-oklo-meta": {
+   "system-check-P-2026-10-24": 1
+  },
+  "us-or-the-dalles-google-water-records": {
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 6
+  },
+  "us-pa-crane-tmi1-microsoft-restart": {
+   "measurements-2026-10-23b": 3,
+   "system-check-C-2026-10-24": 2,
+   "system-check-F-2026-10-24": 1,
+   "system-check-P-2026-10-24": 1
+  },
+  "us-pa-homer-city-gas-campus": {
+   "measurements-2026-10-23": 2,
+   "measurements-2026-10-24b": 3,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 7
+  },
+  "us-pa-susquehanna-talen-aws-colocation": {
+   "system-check-C-2026-10-24": 4,
+   "system-check-F-2026-10-24": 2,
+   "system-check-P-2026-10-24": 3,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-pjm-constellation-google-uprates-890mw": {
+   "measurements-2026-10-23b": 1
+  },
+  "us-pjm-imm-capacity": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-sec-crypto-to-ai-conversions-10k": {
+   "measurements-2026-10-23b": 5
+  },
+  "us-sec-form-sd-amd-cy2025": {
+   "measurements-2026-10-24": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "us-sec-form-sd-csco-cy2025": {
+   "measurements-2026-10-24": 1,
+   "system-check-B-2026-10-24": 1
+  },
+  "us-sec-form-sd-dell-cy2025": {
+   "measurements-2026-10-24": 2
+  },
+  "us-sec-form-sd-goog-cy2025": {
+   "measurements-2026-10-24": 1
+  },
+  "us-sec-form-sd-intc-cy2025": {
+   "measurements-2026-10-24": 4,
+   "system-check-B-2026-10-24": 5
+  },
+  "us-sec-form-sd-msft-cy2025": {
+   "measurements-2026-10-24": 1
+  },
+  "us-sec-form-sd-mu-cy2025": {
+   "system-check-B-2026-10-24": 1
+  },
+  "us-sec-form-sd-nvda-cy2025": {
+   "measurements-2026-10-24": 5,
+   "system-check-B-2026-10-24": 6
+  },
+  "us-sec-form-sd-smci-cy2024": {
+   "measurements-2026-10-24": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-sec-listed-miners-capacity-10k": {
+   "measurements-2026-10-23b": 9,
+   "system-check-B-2026-10-24": 4,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-switch-oklo-master-power-agreement": {
+   "measurements-2026-10-23b": 1
+  },
+  "us-tn-kairos-hermes2-google-tva": {
+   "measurements-2026-10-23b": 1,
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 1
+  },
+  "us-tn-memphis-xai-colossus-turbines": {
+   "measurements-2026-10-23b": 1,
+   "measurements-2026-10-24b": 5,
+   "system-check-A-2026-10-24": 1,
+   "system-check-C-2026-10-24": 4,
+   "system-check-F-2026-10-24": 2,
+   "system-check-P-2026-10-24": 9,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-tx-ercot-large-load-crypto": {
+   "system-check-C-2026-10-24": 1
+  },
+  "us-tx-ercot-large-load-queue-audit": {
+   "system-check-C-2026-10-24": 2,
+   "system-check-F-2026-10-24": 1,
+   "system-check-P-2026-10-24": 3,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-tx-riot-power-curtailment-credits": {
+   "system-check-C-2026-10-24": 1
+  },
+  "us-tx-tceq-datacenter-permit-pause": {
+   "system-check-C-2026-10-24": 2
+  },
+  "us-va-chesterfield-dominion-cerc-gas": {
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-va-dominion-datacenter-demand-filed-2026": {
+   "measurements-2026-10-23": 5,
+   "sides-2026-10-23": 2,
+   "system-check-B-2026-10-24": 2,
+   "system-check-C-2026-10-24": 3,
+   "system-check-F-2026-10-24": 1,
+   "system-check-P-2026-10-24": 1
+  },
+  "us-va-jlarc-rates": {
+   "system-check-V-2026-10-24": 1
+  },
+  "us-va-jlarc-sales-tax": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-V-2026-10-24": 1
+  },
+  "us-va-loudoun-diesel-backup-generators": {
+   "system-check-B-2026-10-24": 6,
+   "system-check-C-2026-10-24": 5,
+   "system-check-P-2026-10-24": 4,
+   "va-reread-2026-10-21": 160
+  },
+  "us-va-loudoun-noise": {
+   "system-check-C-2026-10-24": 1
+  },
+  "us-va-loudoun-water-reclaimed-datacenters": {
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-va-nei-2023-datacenter-generator-emissions": {
+   "measurements-2026-10-23": 4,
+   "measurements-2026-10-24b": 6,
+   "system-check-B-2026-10-24": 4,
+   "system-check-C-2026-10-24": 2,
+   "system-check-F-2026-10-24": 3
+  },
+  "us-va-prince-william-digital-gateway-court": {
+   "system-check-C-2026-10-24": 2
+  },
+  "us-wa-cascade-xenergy-amazon": {
+   "system-check-B-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "us-wa-grant-pud-datacenter-load-2025": {
+   "system-check-B-2026-10-24": 1
+  },
+  "us-wa-seattle-westin-amazon-heat-reuse": {
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 7
+  },
+  "us-wi-mount-pleasant-microsoft-racine-water": {
+   "measurements-2026-10-24b": 1,
+   "system-check-C-2026-10-24": 1
+  },
+  "us-wi-mount-pleasant-microsoft-we-energies": {
+   "measurements-2026-10-23": 1,
+   "measurements-2026-10-23b": 1,
+   "measurements-2026-10-24b": 2,
+   "system-check-C-2026-10-24": 1,
+   "system-check-P-2026-10-24": 2
+  },
+  "uy-canelones-google-water": {
+   "sides-2026-10-23": 1,
+   "system-check-C-2026-10-24": 1,
+   "system-check-F-2026-10-24": 3,
+   "system-check-P-2026-10-24": 4
+  },
+  "za-capetown-580mw-objection": {
+   "browser-fetch-2026-10-24": 1,
+   "browser-fetch-check-2026-10-24": 1,
+   "system-check-C-2026-10-24": 3,
+   "system-check-P-2026-10-24": 4
+  },
+  "za-teraco-solar-wheeling-diesel": {
+   "sides-2026-10-23": 8,
+   "system-check-B-2026-10-24": 1,
+   "system-check-C-2026-10-24": 2
+  }
+ },
+ "method": "`status_now` is computed from the current files at every build, except in two checks where it is recorded with the\nfinding: the documents fetched in a browser (the status on the fetch list) and the check of that work (its `resolution`\ncolumn). Elsewhere:\n  - a finding that quotes entry or page text: whether that quoted text is still present where it was found;\n  - a figure or link: whether a row with the same id (a hash of its value, subject, period, source and side) is still in\n    the table; \"confirmed at the check\" when the reader found it as published with no problem noted;\n  - a record-or-claim decision: which side the figure is on now (and its basis, for unattributed or wrong-basis figures);\n  - a second reading of an entry: the entry's verification status now;\n  - a Virginia permit: whether it now has resolved figures (the figures are in the finding).\n\nText no longer present means the passage was changed, not necessarily that the finding was right; text still present\nmeans it was kept, either because the finding was answered another way or because it was not acted on. A figure \"no\nlonger in the table in the form checked\" changed in its value, subject, period, source, side or description, which may\nbe an unrelated later edit; one \"still in the table as checked\" was not changed. Checks recorded only as prose (the three\nhostile reviews, the Texas check) have counts in the register, not rows here."
+}

@@ -1,0 +1,17 @@
+retired_site_id,site_id,reason
+irl-google-dublin-grange-castle-data-center,irl-google-grange-castle-ghg170,seed-list row for a site already in the register from a permit or licence
+irl-vantage-data-centers-profile-park-campus-dub1x-dub13-refused,irl-vantage-dub13-profile-park-abp317446-refused,seed-list row for a site already in the register from a permit or licence
+usa-alamo-mission-data-center-red-oak,usa-tx-alamo-mission,seed-list row for a site already in the register from a permit or licence
+usa-bench-new-york-city-11-metrotech-ctr,usa-bench-new-york-city-11-metrotech-center,the same building filed under another spelling of its address
+usa-bench-new-york-city-117-e-167th-st,usa-bench-new-york-city-117-e-167-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-125-w-73rd-st,usa-bench-new-york-city-125-w-73-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-14010-183rd-st,usa-bench-new-york-city-140-10-183rd-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-221-e-37th-st,usa-bench-new-york-city-221-e-37-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-230-w-36th-st,usa-bench-new-york-city-230-w-36-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-370-e-150th-st,usa-bench-new-york-city-370-e-150-st,the same building filed under another spelling of its address
+usa-bench-new-york-city-608-w-176th-st,usa-bench-new-york-city-608-w-176-st,the same building filed under another spelling of its address
+usa-childress-data-center-iren,usa-tx-iren-childress,seed-list row for a site already in the register from a permit or licence
+usa-compass-red-oak-datacenter-dfw-iii,usa-tx-compass-red-oak,seed-list row for a site already in the register from a permit or licence
+usa-google-midlothian-data-center,usa-tx-sharka,seed-list row for a site already in the register from a permit or licence
+usa-microsoft-sn-campus-sn1-sn2-sn4-sn7-san-antonio,usa-tx-ms-sn-campus,seed-list row for a site already in the register from a permit or licence
+usa-va-nei-21504711,usa-va-deq-74086,"inventory facility matched to its DEQ permit by street address (21111 Ridgetop Circle), 2026-10-24"

@@ -1,0 +1,5 @@
+asset_id,asset_type,asset_name,subsector,country,lat,lon,gas,emissions_quantity,activity,activity_units,capacity,capacity_units,start_time
+900001,power plant,Chesterfield Power Station,electricity-generation,USA,37.3790,-77.3810,co2e_100yr,1850000,4100000,MWh,1340,MW,2026-01-01
+900002,power plant,Homer City Generating Station,electricity-generation,USA,40.5130,-79.1960,co2e_100yr,120000,250000,MWh,4678,MW,2026-01-01
+900003,power plant,Oak Creek Power Plant,electricity-generation,USA,42.8450,-87.8300,co2e_100yr,2900000,5200000,MWh,1830,MW,2026-01-01
+900004,power plant,Allen Combined Cycle Plant,electricity-generation,USA,35.0680,-90.1400,co2e_100yr,1400000,3900000,MWh,1100,MW,2026-01-01

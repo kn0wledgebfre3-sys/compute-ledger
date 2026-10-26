@@ -1,0 +1,40 @@
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+QTS Investment Properties Manassas, LLC
+9400 Godwin Drive
+Manassas, VA 20110
+Registration No.: 74161
+is authorized to construct and operate
+emergency diesel engine generator sets (gen-sets)
+located at
+9400, 9420, 9480, and 9540 Godwin Drive;
+10680 University Blvd; and
+9301 Freedom Center Blvd
+Manassas, VA 20110
+(Prince William County)
+in accordance with the Conditions of this permit.
+Approved on October 1, 2024.
+QTS Investment Properties, LLC
+Registration Number: 74161
+October 1, 2024
+Page 2
+Equipment to be Constructed:
+Ref. No(s). Equipment Description Standby Rated Capacity Delegated Federal Requirements Original Permit Date
+Gen54 One (1) Caterpillar C32 emergency diesel engine gen-set 1,829 bhp 1,250 ekW None October 1, 2024
+Equipment Previously Permitted:
+Ref. No(s). Equipment Description Standby Rated Capacity Delegated Federal Requirements Original Permit Date
+Gen01 – Gen20 Twenty (20) MTU 16V4000G83L emergency diesel engine gen-sets 3,350 bhp 2,250 ekW (each unit) None December 7, 2018
+Gen21 – Gen52 Thirty-two (32) MTU 20V4000G64S emergency diesel engine gen-sets 3,672 bhp 2,500 ekW (each unit) None April 26, 2021
+Gen53 One (1) MTU 12V4000G24S emergency diesel engine gen-set 2,561 bhp 1,750 ekW None Original Permit Date: April 26, 2021 Modified Permit Date: October 1, 2024
+Gen55 – Gen159 (105) MTU Model 16V4000G84S and/or Caterpillar 3516C emergency diesel engine gen-sets 3,353 bhp/2,250 ekW 2,633 bhp/2,500 ekW (each) None November 14, 2022
+QTS Investment Properties, LLC
+Registration Number: 74161
+October 1, 2024
+Page 3
+7. a. No single unit (Ref. Nos. Gen01 – Gen20) shall operate more than 500 hours per year for all purposes.
+b. No single unit (Ref. Nos. Gen01 – Gen20) shall operate more than 100 hours per year for scheduled maintenance checks and readiness testing.
+8. Each individual emergency diesel engine gen-set (Ref. Nos. Gen21 – Gen159) shall operate no more than 30 hours per year for scheduled maintenance checks and readiness testing
+and no more than 500 hours per year for all purposes (as provided in Condition 6) combined.
+10. The approved fuel for the emergency diesel engine gen-sets (Ref. Nos. Gen01 – Gen159) is diesel fuel. The diesel fuel shall meet the American Society for Testing and Materials (ASTM) D975 specification
+for Grade No. 1-D S15 or Grade No. 2-D S15 and have a maximum sulfur content of 15 ppm, per shipment.
+11. The emergency diesel engine gen-sets (Ref. Nos. Gen01 – Gen52 and Gen54 – Gen159) combined shall consume no more than 677,594 gallons of diesel fuel oil per year.
+The emergency diesel engine gen-set (Ref. No. Gen53) shall consume no more than 2,772 gallons of diesel fuel oil per year.

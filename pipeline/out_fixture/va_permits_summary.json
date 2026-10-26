@@ -1,0 +1,35 @@
+{
+  "mode": "fixture",
+  "fixture_warning": "FIXTURE RUN: numbers come from the small sample files in fixtures/, not the full source. They test parsing only and must not be quoted as real totals.",
+  "format_inspected": "2026-10-20",
+  "retrieved_at": null,
+  "sources": [
+    {
+      "name": "VA DEQ issued air permits for data centers",
+      "url": "https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers",
+      "page_source": "pipeline/fixtures/va_deq_list_page.html",
+      "list_as_of": "2025-11-17",
+      "list_rows": 19,
+      "rows_with_links": 7
+    }
+  ],
+  "registrations": 16,
+  "with_pdf_text": 8,
+  "with_generator_mw": 8,
+  "with_street_address": 8,
+  "total_standby_mw_sum": 1512.5,
+  "by_locator": {
+    "none": 8,
+    "page_link": 6,
+    "known_documents": 2
+  },
+  "by_mw_confidence": {
+    "none": 8,
+    "medium": 7,
+    "low": 1
+  },
+  "by_address_confidence": {
+    "none": 8,
+    "high": 8
+  }
+}

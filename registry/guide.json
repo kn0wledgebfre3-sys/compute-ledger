@@ -1,0 +1,567 @@
+[
+ {
+  "key": "bills",
+  "title": "Your electricity bill",
+  "color": "--c-comm",
+  "blurb": "Who pays for the grid that serves a datacenter, and what the record says about household rates.",
+  "why": [
+   "A datacenter can draw as much power as a city. Someone pays for the wires, the substations and the new plants that serve it. When those costs are spread across all customers, the bill moves for everyone, including customers with no datacenter load.",
+   "The record on this is thin, but where a regulator or auditor has put a number on it, the number is in the ledger. Where only a promise exists, that is in the ledger too."
+  ],
+  "ask": [
+   [
+    "What does the site actually draw?",
+    "Almost nowhere is this public. Ireland is the exception: every EPA-licensed datacentre files an annual report with its metered electricity in gigajoules, and the eleven licensed installations account for just over half of the national metered total. Two US public utilities state the cluster figure (Grant County PUD: 280 average MW, 37% of county load; Silicon Valley Power: 60% of sales). Ask the regulator for the annual report, and a public utility for its large-load class."
+   ],
+   [
+    "Who pays for the connection?",
+    "Ask the utility commission docket whether large-load customers carry their own transmission and generation costs, or whether they are socialised. Virginia's regulator (in its November 2025 biennial review order for Dominion), Ohio's and Wisconsin's have adopted minimum-demand or long-term contract terms for large loads; Ontario has legislated connection restrictions and proposed a separate rate class. Most places in the ledger have not."
+   ],
+   [
+    "What is in the capacity auction?",
+    "In PJM, the independent market monitor has estimated, as a counterfactual, how much capacity-auction revenue is attributable to datacenter load ($16.6 billion across two auctions). It is an estimate of market revenue, not a measured bill impact; no PJM document quantifying a datacenter share was found yet."
+   ],
+   [
+    "What did the auditor say?",
+    "Virginia's legislative auditor (JLARC) has modelled residential bill impacts ($14–37 a month by 2040 under unconstrained demand) and counted jobs; Georgia's audit office has evaluated its sales-tax exemption's cost and jobs. Both reports are public."
+   ]
+  ],
+  "headline": [
+   "ie-epa-aer-metered-2025",
+   "us-pjm-imm-capacity",
+   "us-va-jlarc-rates"
+  ],
+  "all": [
+   "ie-epa-aer-metered-2025",
+   "us-wa-grant-pud-datacenter-load-2025",
+   "us-ca-santa-clara-svp-datacenter-share-2025",
+   "us-city-benchmarking-datacenter-metered-electricity",
+   "us-pjm-imm-capacity",
+   "us-va-jlarc-rates",
+   "ie-national-cso-share-2025",
+   "ie-cru-leu-policy",
+   "us-oh-aep-ohio-data-center-tariff",
+   "ca-on-bill-40-data-centre-playbook",
+   "ca-qc-hydro-quebec-data-centre-tariff-allocation",
+   "au-aemo-esoo-2026",
+   "es-aragon-amazon-blackstone-approvals",
+   "my-tnb-esa-5-9gw",
+   "us-az-chandler-ord5033",
+   "us-va-loudoun-noise"
+  ]
+ },
+ {
+  "key": "water",
+  "title": "Water",
+  "color": "--c-water",
+  "blurb": "How much a site takes, from which basin, and whether anyone outside the company has seen the number.",
+  "why": [
+   "Many datacenters cool with water. Evaporative cooling consumes water, and in a dry basin that water may come from the same aquifers or reservoirs as drinking supply. Air cooling uses more electricity and little water. Which one a site uses is a design choice, and in the cases in this ledger the volume became public only through a court, a council or a records request.",
+   "The ledger holds the cases where the number got out: The Dalles after the city's lawsuit against a reporter was settled, Uruguay after a court ordered disclosure, as reported, Chile in the environmental approval that a tribunal later partly annulled, Middenmeer after a regional newspaper published, as reported, the figure Microsoft had given the municipality. It also holds the designs that changed afterwards."
+  ],
+  "ask": [
+   [
+    "What does the water permit say?",
+    "Withdrawal permits are public in many jurisdictions. The permitted volume is the ceiling; ask for metered use against it."
+   ],
+   [
+    "What is the basin's status?",
+    "A permit in a stressed or over-allocated basin is a different fact from the same permit in a wet one. Basin stress data is published by water agencies and by WRI Aqueduct."
+   ],
+   [
+    "Is it 'water positive'?",
+    "That phrase means the company funds water projects somewhere, not that the site takes less. Ask for the site's own withdrawal and where the offset projects are."
+   ]
+  ],
+  "headline": [
+   "us-ia-west-des-moines-microsoft-water",
+   "us-or-the-dalles-google-water-records",
+   "nl-middenmeer-microsoft-water"
+  ],
+  "all": [
+   "uy-canelones-google-water",
+   "us-or-the-dalles-google-water-records",
+   "nl-middenmeer-microsoft-water",
+   "cl-cerrillos-google-water",
+   "us-az-goodyear-mesa-water-records-vs-claims",
+   "us-ia-west-des-moines-microsoft-water",
+   "mx-qro-queretaro-colon-water-grid",
+   "my-johor-span-water-440mld",
+   "au-nsw-sydney-dc-water",
+   "uk-thames-affinity-water-datacentres",
+   "es-aragon-amazon-blackstone-approvals",
+   "in-gujarat-jamnagar-policy",
+   "br-pecem-casadosventos-bytedance",
+   "tw-tsmc-hsinchu-2021-drought",
+   "us-az-tsmc-phoenix-water",
+   "kr-samsung-fabs-water",
+   "cl-copper-cochilco-seawater",
+   "cl-lithium-atacama-sqm-sma",
+   "us-va-loudoun-water-reclaimed-datacenters",
+   "us-wi-mount-pleasant-microsoft-racine-water"
+  ]
+ },
+ {
+  "key": "paper",
+  "title": "What the certificates do",
+  "color": "--c-acct",
+  "blurb": "Every large operator reports its electricity emissions twice. The gap between the two numbers is what certificates and contracts account for.",
+  "why": [
+   "A company's Scope 2 emissions can be counted two ways. Location-based uses the average emissions of the grids its datacenters draw from. Market-based subtracts what the company claims through renewable certificates, power purchase agreements and supplier contracts. The rules (the GHG Protocol's 2015 Scope 2 Guidance) require both numbers, and most headlines, '100% renewable' claims and many targets use the market-based one.",
+   "The ledger lays the two numbers side by side from each company's own reports, with the third-party assurance statement where one was read. For each company's latest reported year (2024 to fiscal 2026), the market-based figure is between 71% and 99.98% below the location-based one across the seven operators read so far. The rules on which certificates count are being revised; the revision is not final."
+  ],
+  "ask": [
+   [
+    "Which number is this?",
+    "When a company reports its emissions, ask whether Scope 2 is location-based or market-based, and for the other one. Both are in each company's own report or data sheet (Microsoft's 2026 report prints neither; its data fact sheet has both); for four of the seven, both sit in data an auditor reviewed (Equinix: the statement does not name the two methods; Oracle: none found; Digital Realty: not read)."
+   ],
+   [
+    "What is the 100% made of?",
+    "Annual matching lets a certificate from a sunny afternoon cover a windless night, and a certificate from another region cover local use. Ask for the share bought as unbundled certificates, the share from PPAs, and any hourly figure. Equinix states that unbundled certificates covered 47% of its 2024 electricity, of a 96% renewable coverage; of the seven, only Google's documents read here give an hourly carbon-free share. Microsoft's and Google's 100% both count renewable electricity already in the grids they use, beside their contracts."
+   ],
+   [
+    "Which number do the raters use?",
+    "Sustainalytics collects location-based Scope 2 by default; CDP collects both; the MSCI methodologies read here do not say which. The SBTi's new standard sets target ambition on the location-based inventory from February 2027."
+   ]
+  ],
+  "headline": [
+   "microsoft-scope2-two-numbers",
+   "meta-scope2-two-numbers",
+   "ghg-protocol-scope2-revision"
+  ],
+  "all": [
+   "microsoft-scope2-two-numbers",
+   "alphabet-google-scope2-two-numbers",
+   "amazon-scope2-two-numbers",
+   "meta-scope2-two-numbers",
+   "oracle-scope2-two-numbers",
+   "equinix-scope2-two-numbers",
+   "digital-realty-scope2-two-numbers",
+   "ghg-protocol-scope2-revision",
+   "scope2-disclosure-rules-esrs-issb-sb253",
+   "sbti-netzero-scope2",
+   "raters-scope2-inputs-msci-sustainalytics-cdp",
+   "carbon-credit-registries-beneficiaries",
+   "scope2-renewable-claims-by-instrument",
+   "carbon-credits-retired-by-company-disclosures"
+  ]
+ },
+ {
+  "key": "fuel",
+  "title": "What actually burns",
+  "color": "--c-fuel",
+  "blurb": "Gas plants, turbines and diesel generators built or approved for datacenter load, beside what the operator says about the same site.",
+  "why": [
+   "A company can buy renewable certificates for every hour it runs and still be served, physically, by a gas plant built for it. The certificate is an accounting instrument. The plant is in the utility's filing and the air permit.",
+   "The clearest records in the ledger are regulator orders and permits: a 944 MW gas peaker approved in Virginia, with datacenter growth named as a contributing factor; 15 turbines (247 MW, as reported) permitted in Memphis in July 2025, about a year after xAI turbines were first running on site; a 41-turbine plant of about 1,240 MW permitted across the state line in Mississippi (state permit, March 2026), alongside the state's separate order on 69 temporary turbines; 1,100 MW of gas approved in Wisconsin, which the regulator found \"necessary to satisfy the significant probable future requirements of one customer\", the data center Microsoft is building in Mount Pleasant; and three Entergy gas plants approved for Meta's site in Louisiana (2,262 MW as reported from Entergy's filings). Each entry sets the record beside what the operator says in public."
+  ],
+  "ask": [
+   [
+    "What does the air permit list?",
+    "Large standby generator fleets need an air permit in most jurisdictions, and the permit lists each unit. Permitted capacity is an upper bound on a site's design load, not its load: generators are sized with redundancy, and permits often cover phases not yet built. It is often public before any announcement."
+   ],
+   [
+    "What is in the interconnection queue?",
+    "Some grid operators publish what is waiting to connect and, for generators, what fuel (PJM, MISO, SPP and NYISO do). Texas and Great Britain publish no project-level file of large-load requests. Load growth with gas attached shows up in these queues and in utility resource filings."
+   ],
+   [
+    "Is the renewable claim hourly?",
+    "Annual matching means buying certificates equal to annual use. Hourly matching means the clean power was there when the load was. Ask which, and whether a third party checked it."
+   ],
+   [
+    "How much do the standby generators actually run?",
+    "Permits cap hours; the regulator's emissions inventory records what was emitted. EPA's 2023 inventory lists 27 Virginia datacenter facilities and 393 tons of NOx; Ireland's annual reports give the fuel burned, which at the Amazon sites with a rated fleet equals 0.6 to 6.4 hours of the permitted fleet at full rating in 2025, and at Equinix DB5 records the generators running as the primary supply on gas from February to November 2024 while full grid capacity was delayed."
+   ]
+  ],
+  "headline": [
+   "us-va-chesterfield-dominion-cerc-gas",
+   "us-tn-memphis-xai-colossus-turbines",
+   "ie-dublin-vantage-dub13-abp-refusal"
+  ],
+  "all": [
+   "ie-equinix-db5-prime-power-gas-2024",
+   "us-va-nei-2023-datacenter-generator-emissions",
+   "us-va-chesterfield-dominion-cerc-gas",
+   "us-tn-memphis-xai-colossus-turbines",
+   "us-ms-southaven-xai-1.2gw-gas",
+   "us-la-richland-meta-entergy-gas",
+   "us-wi-mount-pleasant-microsoft-we-energies",
+   "us-pa-homer-city-gas-campus",
+   "us-va-loudoun-diesel-backup-generators",
+   "ie-dublin-vantage-dub13-abp-refusal",
+   "ie-cru-leu-connection-policy-2025",
+   "ca-ab-aeso-large-load-byog-greenlight",
+   "id-batam-nongsa-power",
+   "za-teraco-solar-wheeling-diesel",
+   "ng-lagos-diesel-gas-dependence",
+   "cn-west-hubs-inner-mongolia-ningxia",
+   "cl-alto-jahuel-terranova-sea",
+   "us-nv-google-nv-energy-clean-transition-tariff",
+   "us-pa-susquehanna-talen-aws-colocation",
+   "ke-olkaria-ecocloud-geothermal"
+  ]
+ },
+ {
+  "key": "crypto",
+  "title": "Crypto mining",
+  "color": "--c-morat",
+  "blurb": "The same grids, queues and gas permits as datacenters, and increasingly the same sites under a new tenant.",
+  "why": [
+   "Cryptocurrency mining draws power continuously and can stop on request, so grid operators treat it as large flexible load. In Texas it sits in the same interconnection queue as datacenters, and since 3 August 2026 both are paused at 75 MW and above pending the Governor's audit. Mining companies report their sites, MW and curtailment payments in SEC filings; few other records exist.",
+   "Many mining sites are now being leased to AI tenants, so the power that was built for mining is being re-let. The ledger records each conversion as filed: the MW leased, the tenant, and any guarantor."
+  ],
+  "ask": [
+   [
+    "Where is the register?",
+    "Texas law requires mining sites over 75 MW to register with the PUCT, but the adoption order says registrations go into a tool 'that will not be accessible to the public'. Ask for the count and MW under the Public Information Act."
+   ],
+   [
+    "Who is paid to stop?",
+    "Riot's statement of operations shows $56.7 million of power curtailment credits in 2025 ($71.2 million in 2023). Ask ERCOT for the total paid to all mining loads."
+   ],
+   [
+    "What happened to the federal survey?",
+    "EIA's 2024 emergency survey of mining electricity was stopped by a temporary restraining order and withdrawn; EIA's last estimate is 0.6% to 2.3% of US electricity."
+   ]
+  ],
+  "headline": [
+   "us-eia-862-crypto-survey-blocked",
+   "us-tx-riot-power-curtailment-credits",
+   "us-sec-crypto-to-ai-conversions-10k"
+  ],
+  "all": [
+   "us-tx-puct-sb1929-crypto-registration",
+   "us-tx-ercot-large-load-crypto",
+   "us-tx-riot-power-curtailment-credits",
+   "us-ny-greenidge-title-v-denial",
+   "us-ny-pow-mining-moratorium-ch628-2022",
+   "us-eia-862-crypto-survey-blocked",
+   "us-eia-crypto-electricity-share-estimate",
+   "us-sec-listed-miners-capacity-10k",
+   "us-sec-crypto-to-ai-conversions-10k",
+   "no-crypto-mining-datacentre-ban-proposal",
+   "ru-mining-regional-ban-decree-1869",
+   "py-ande-crypto-intensive-tariff",
+   "kz-digital-mining-electricity-demand",
+   "us-pa-scrubgrass-title-v-permit",
+   "us-tx-denton-core-scientific-ppa-amendment",
+   "us-ky-psc-kentucky-power-ebon-contract-denied",
+   "us-ny-plattsburgh-crypto-mining-moratorium-2018",
+   "ca-mb-hydro-crypto-connection-pause",
+   "ca-bc-hydro-crypto-connection-pause-2022",
+   "ca-qc-hydro-quebec-blockchain-rate-2026",
+   "my-tnb-crypto-electricity-theft",
+   "et-eep-crypto-mining-phase-out"
+  ]
+ },
+ {
+  "key": "nuclear",
+  "title": "Nuclear supply",
+  "color": "--c-power",
+  "blurb": "The nuclear plants behind datacenter operators' clean-power deals, with what the regulator records about each: licence, water, spent fuel, and where the uranium comes from.",
+  "why": [
+   "Datacenter operators have signed deals for the output of existing nuclear plants, for restarts of closed ones, and for reactors not yet licensed. A deal is announced by the companies; whether a plant may run, how much river water it may take, and how much spent fuel sits on its site are recorded by the Nuclear Regulatory Commission, river basin commissions and the Department of Energy. The ledger lays each deal beside those records.",
+   "The same scrutiny as gas and diesel: the claim is the company's, the record is the regulator's, and where a record does not exist yet the ledger says so. Uranium origin is published only as a national total, so no deal can be matched to the country its fuel comes from."
+  ],
+  "ask": [
+   [
+    "Is the plant licensed to run for the length of the deal?",
+    "Compare the deal's term with the licence expiry on the NRC's reactor page. Duane Arnold's licence under review ends in 2034; Google's deal runs 25 years."
+   ],
+   [
+    "How much water will it take?",
+    "For a restart, ask the river basin commission or state for the approved withdrawal and consumptive use. Crane's approval allows up to 21.0 million gallons a day of consumptive use, against 19.2 under its earlier power-generation approval."
+   ],
+   [
+    "Where is the fuel from, and where does the spent fuel go?",
+    "EIA publishes uranium purchases by origin country for all US owners together; ask the operator for its own. DOE's inventory gives spent fuel stored per site."
+   ]
+  ],
+  "headline": [
+   "us-pa-crane-tmi1-microsoft-restart",
+   "us-ia-duane-arnold-google-restart",
+   "us-eia-umar-2025-uranium-origin"
+  ],
+  "all": [
+   "us-pa-crane-tmi1-microsoft-restart",
+   "us-ia-duane-arnold-google-restart",
+   "us-il-clinton-meta-ppa",
+   "us-oh-pa-vistra-meta-ppas",
+   "us-meta-terrapower-natrium-units",
+   "us-oh-pike-oklo-meta",
+   "us-tn-kairos-hermes2-google-tva",
+   "us-wa-cascade-xenergy-amazon",
+   "us-va-north-anna-smr-amazon-dominion",
+   "us-google-elementl-three-sites",
+   "us-switch-oklo-master-power-agreement",
+   "eu-us-equinix-advanced-nuclear-preagreements",
+   "fi-loviisa-fortum-google-ppa",
+   "us-pjm-constellation-google-uprates-890mw",
+   "us-eia-umar-2025-uranium-origin",
+   "us-nuclear-deal-plants-spent-fuel"
+  ]
+ },
+ {
+  "key": "grid",
+  "title": "The grid queue",
+  "color": "--c-grid",
+  "blurb": "How much is asking to connect, how much actually has, and what regulators have done about the gap.",
+  "why": [
+   "Where both numbers are public, the load asking to connect is many times what is connected (the Texas connected figure is press-reported; Malaysia's figures are TNB's own): about 474 GW of large-load requests in Texas (about 90% datacenters) against about 7.5 GW of large load connected, about 63 times; about 15 GW in the Paris region's connection pipeline against 640 MW connected to the transmission network, about 23 times; 5.9 GW of contracted maximum demand in Malaysia against 405 MW of actual load, both as TNB states them, about 15 times. Operators report high attrition (AEMO: 36% of projects in its 2025 forecast cancelled). Grids plan, and sometimes build, against the queue.",
+   "The response differs by country and the ledger records each: Ireland's regulator, per a law firm's summary, requires new sites of 10 MVA or more to bring dispatchable capacity equal to their import, Singapore paused new capacity and now allocates it by call for applications, Israel's regulator was reported to have frozen new applications for 140 days, Texas ordered an audit and paused datacenter permits at its environmental regulator, Amsterdam removed its growth allowance. These are the policy levers that exist today."
+  ],
+  "ask": [
+   [
+    "Queued versus connected?",
+    "Ask the grid operator for both numbers. The ratio is the fact that matters."
+   ],
+   [
+    "Who carries the risk of cancellation?",
+    "If a utility builds for a queue that evaporates, ask the commission docket who pays for the stranded capacity."
+   ],
+   [
+    "Is there a connection policy?",
+    "Ireland has adopted one (known here from a law firm's summary); Ontario has legislated the power to set one. Ask whether your regulator has one, and what it requires of large loads."
+   ]
+  ],
+  "headline": [
+   "us-va-dominion-datacenter-demand-filed-2026",
+   "fr-idf-rte-datacentre-connections-2025",
+   "ie-cru-leu-connection-policy-2025"
+  ],
+  "all": [
+   "us-va-dominion-datacenter-demand-filed-2026",
+   "us-tx-ercot-large-load-queue-audit",
+   "us-tx-tceq-datacenter-permit-pause",
+   "my-tnb-esa-5-9gw",
+   "ie-cru-leu-connection-policy-2025",
+   "fr-idf-rte-datacentre-connections-2025",
+   "uk-neso-demand-queue-datacentres-2026",
+   "es-ree-demand-capacity-map-2026",
+   "it-terna-datacentre-requests-2025",
+   "br-ons-grid-connection-pipeline",
+   "il-electricity-authority-dc-freeze-2026",
+   "sg-imda-moratorium-capacity",
+   "nl-haarlemmermeer-tennet-goodman-ruling",
+   "nl-amsterdam-vestigingsbeleid-cap",
+   "kr-motie-grid-impact-assessment",
+   "tw-taipower-north-5mw-cap",
+   "jp-occto-dc-demand-2034",
+   "in-mop-26gw-fy32",
+   "au-aemo-2026-esoo-dc-forecast",
+   "ke-olkaria-microsoft-g42-stalled",
+   "za-capetown-580mw-objection",
+   "us-ga-georgia-power-large-load-certification",
+   "eg-national-dc-pipeline-grid",
+   "eu-eed-datacentre-reporting-2024-period"
+  ]
+ },
+ {
+  "key": "money",
+  "title": "Public money and jobs",
+  "color": "--c-money",
+  "blurb": "Tax exemptions, subsidies and the jobs promised in exchange, as audited.",
+  "why": [
+   "Datacenter tax exemptions are large and the jobs attached to them are hard to count. Virginia's legislative auditor put the sales-tax exemption at about $929 million in FY2023 and counted more than 8,000 operations jobs alongside construction and indirect jobs; Georgia's evaluation reports model estimates, not head-counts. Announcements and evaluations alike usually include construction and indirect jobs; ask for the permanent on-site figure.",
+   "The ledger records the evaluations: Virginia's $928.6 million in FY2023 sales-tax savings; Georgia's audit office reissuing its summary with job figures at 30% of the originals, the share of activity its evaluator attributes to the exemption (the originals counted all datacenter activity), with the $474 million FY2025 cost unchanged and no reason given; Brazil's executive estimating R$7.25 billion in forgone revenue for 2026–28 (ledger sum), with no job figure found."
+  ],
+  "ask": [
+   [
+    "What does the incentive agreement require?",
+    "Ask for the signed agreement and whether it names a jobs number, a wage floor and a clawback. Many do not."
+   ],
+   [
+    "What did the auditor find?",
+    "State and national auditors evaluate these programmes. Their reports are the main independent estimate of jobs and cost; in the ledger they are model estimates, not counts of people on site."
+   ],
+   [
+    "Permanent jobs per megawatt?",
+    "Divide the permanent on-site jobs by the site's capacity, and compare with what the incentive costs. The ledger's records do not support a single rule: Virginia's auditor counts more than 8,000 operations jobs against about 5,050 MW statewide, and An English applicant projects 201 jobs for 96 MW, and a Chilean planning record gives about 307 staff for a 92.7 MW substation."
+   ]
+  ],
+  "headline": [
+   "us-ga-doaa-exemption-correction",
+   "us-va-jlarc-sales-tax",
+   "br-redata-renuncia"
+  ],
+  "all": [
+   "us-ga-doaa-exemption-correction",
+   "us-va-jlarc-sales-tax",
+   "br-redata-renuncia",
+   "us-tx-sao-jeti-audit",
+   "in-up-dc-policy-2026",
+   "my-dc-approvals-jobs",
+   "uk-south-mimms-dc01uk",
+   "cl-national-datacenter-plan",
+   "ar-stargate-argentina-rigi",
+   "sa-humain-pif-datacenters",
+   "ae-abudhabi-uae-us-ai-campus-5gw",
+   "ma-naver-500mw-taqa-renewable"
+  ]
+ },
+ {
+  "key": "land",
+  "title": "Land, noise and neighbours",
+  "color": "--c-land",
+  "blurb": "Hectares taken, habitat conditions, and the noise that does not show up in a dBA reading.",
+  "why": [
+   "A hyperscale campus can take tens to hundreds of hectares of farmland or green belt (about 31 ha at Abbots Langley), runs cooling plant around the clock, tests its backup generators on a schedule, and sits next to people. Planning records are where land take, biodiversity conditions and noise limits are written down, and where it shows whether a condition has a metric, a monitoring duty and an enforcement body.",
+   "The ledger holds both kinds: an enforceable 135% biodiversity net gain condition in England, a rezoning voided by a court in Virginia, a state land sale refused in the Netherlands, a noise ordinance in Arizona that requires annual third-party studies whose results we have not found published."
+  ],
+  "ask": [
+   [
+    "How many hectares, and what was it before?",
+    "The planning application states land take. Compare it with the previous land use and any protected designation."
+   ],
+   [
+    "Is the biodiversity condition enforceable?",
+    "A condition with monitoring and a named enforcement body is different from a commitment in a design statement."
+   ],
+   [
+    "What does the noise limit measure?",
+    "The ordinances in the ledger cap dBA or set no number. Loudoun County reports that complaints often involve tonal noise and that it has no rule specific to tonal or low-frequency noise. Ask whether your standard addresses it."
+   ]
+  ],
+  "headline": [
+   "uk-abbots-langley-grey-belt",
+   "us-va-prince-william-digital-gateway-court",
+   "us-va-loudoun-noise"
+  ],
+  "all": [
+   "uk-abbots-langley-grey-belt",
+   "us-va-prince-william-digital-gateway-court",
+   "us-va-loudoun-noise",
+   "us-az-chandler-ord5033",
+   "nl-zeewolde-meta-land",
+   "nl-zeewolde-meta-cancelled",
+   "cl-huechuraba-aws-tribunal",
+   "cl-alto-jahuel-terranova-sea",
+   "uk-south-mimms-dc01uk",
+   "br-eldorado-scala-ai-city"
+  ]
+ },
+ {
+  "key": "heat",
+  "title": "What good looks like",
+  "color": "--c-heat",
+  "blurb": "Sites and rules where the record shows a practice worth copying, and what has been measured so far.",
+  "why": [
+   "A datacenter is a heater that computes. Its waste heat can warm a city if a pipe network exists and someone requires the connection. It can run on geothermal or hydro where those exist. It can be air-cooled where water is scarce. None of this is exotic; all of it is documented somewhere in this ledger, some with a delivered figure and some still as a plan.",
+   "The pattern in the good cases is the same: a public owner or a binding rule, and a number that someone outside the company reports. Stockholm's half-municipal utility publishes recovered heat in its statutory annual report. The state energy agency publishes cumulative MWh for Tallaght's council-owned network. Denmark made surplus-heat analysis mandatory for new and substantially renovated sites above 1 MW. In Uruguay, as reported by the press, a court ordered the water figures released and Google's revised design states 48 m³ a day, against 7,600 m³ a day of potable water originally."
+  ],
+  "ask": [
+   [
+    "Who owns the heat network?",
+    "Municipal or regulated networks publish delivered MWh. Private arrangements usually do not."
+   ],
+   [
+    "Is heat reuse required?",
+    "Germany and Denmark have written it into law with thresholds. Ask whether your jurisdiction has, and whether the register is public."
+   ],
+   [
+    "Is the clean supply firm and additional?",
+    "A geothermal or hydro allocation with a regulator's order behind it is different from an annual certificate purchase."
+   ]
+  ],
+  "headline": [
+   "se-stockholm-exergi-heat",
+   "ie-tallaght-heatworks",
+   "dk-bek1167-surplus-heat"
+  ],
+  "all": [
+   "se-stockholm-exergi-heat",
+   "fi-espoo-kirkkonummi-microsoft-fortum-heat",
+   "fi-hamina-google-heat-seawater",
+   "ie-tallaght-heatworks",
+   "dk-bek1167-surplus-heat",
+   "dk-national-heat-reuse-and-forecast",
+   "de-enefg-datacentre-obligations",
+   "us-wa-seattle-westin-amazon-heat-reuse",
+   "ca-bc-vancouver-telus-garden-heat-reuse",
+   "ca-qc-hydro-quebec-data-centre-tariff-allocation",
+   "us-nv-google-nv-energy-clean-transition-tariff",
+   "us-pa-susquehanna-talen-aws-colocation",
+   "ke-olkaria-ecocloud-geothermal",
+   "za-teraco-solar-wheeling-diesel",
+   "uy-canelones-google-water",
+   "cl-cerrillos-google-water",
+   "sg-imda-green-dc-roadmap-pue",
+   "au-aemo-2026-esoo-dc-forecast",
+   "nl-amsterdam-vestigingsbeleid-cap",
+   "cl-copper-cochilco-seawater",
+   "cn-ndrc-green-dc-action-plan-2024"
+  ]
+ },
+ {
+  "key": "chain",
+  "title": "The hardware chain",
+  "color": "--c-min",
+  "blurb": "The mines, the fabs, the people who work them, and where the servers go when they die.",
+  "why": [
+   "The hardware in a datacenter draws on cobalt mined in Congo, copper from Chile, nickel from Indonesia, rare earths from Myanmar and gallium refined in China, and on chip fabs that need water in Taiwan, with labour at every step. Companies depreciate servers over five to six years in their filings, and no filing found states a physical life for a GPU. The UN's Global E-waste Monitor 2024 puts documented formal collection and recycling at 22.3% in 2022; what happens to much of the rest is known mainly from sample studies, including GPS trackers an advocacy group placed in discarded equipment.",
+   "This end of the ledger is the least documented, and the gaps fall where public records are thinnest. It holds what the UN, the USGS, the Basel Convention and national regulators have published, and it says plainly where nothing has."
+  ],
+  "ask": [
+   [
+    "Is the mineral sourcing traced to the mine?",
+    "Statutory conflict-minerals filings cover tin, tantalum, tungsten and gold. They do not cover cobalt, nickel or rare earths. Ask what covers those."
+   ],
+   [
+    "How long does the hardware live?",
+    "Companies state depreciation lives in their annual filings. Ask what happens to a GPU at the end of that period, and whether the reuse figure is third-party assured."
+   ],
+   [
+    "Where does the e-waste go?",
+    "Compare the national Basel report with customs data for used electronics. A gap between them is a question for the customs and environment agencies; it can reflect undeclared flows or differences in classification."
+   ]
+  ],
+  "headline": [
+   "eu-weee-collection-rate-2023",
+   "cd-cobalt-usgs-share",
+   "msft-circular-centers-assurance"
+  ],
+  "all": [
+   "global-gem-2024-ewaste",
+   "global-basel-ewaste-amendments-tracking",
+   "eu-weee-collection-rate-2023",
+   "us-epa-ewaste-2018-no-federal-law",
+   "gh-agbogbloshie-demolition-2021",
+   "cn-guiyu-industrial-park",
+   "ng-lagos-person-in-the-port",
+   "in-delhi-seelampur-informal",
+   "us-hyperscaler-server-lifespan-circularity",
+   "msft-circular-centers-assurance",
+   "eu-eed-dc-reporting-2026",
+   "cd-cobalt-usgs-share",
+   "cl-copper-cochilco-seawater",
+   "cl-lithium-atacama-sqm-sma",
+   "id-nickel-halmahera-weda-bay",
+   "mm-rare-earths-kachin-pangwa",
+   "cn-gallium-export-controls",
+   "tw-tsmc-hsinchu-2021-drought",
+   "us-az-tsmc-phoenix-water",
+   "kr-samsung-fabs-water",
+   "id-morowali-itss-2023",
+   "ke-meta-sama-keca-2024",
+   "us-sec-form-sd-nvda-cy2025",
+   "us-sec-form-sd-intc-cy2025",
+   "us-sec-form-sd-amd-cy2025",
+   "us-sec-form-sd-mu-cy2025",
+   "us-sec-form-sd-dell-cy2025",
+   "us-sec-form-sd-hpe-cy2025",
+   "us-sec-form-sd-smci-cy2024",
+   "us-sec-form-sd-csco-cy2025",
+   "us-sec-form-sd-msft-cy2025",
+   "us-sec-form-sd-goog-cy2025",
+   "us-sec-form-sd-amzn-cy2025",
+   "us-sec-form-sd-meta-cy2025",
+   "nvidia-10k-fy2026-foundry-memory-assembly-suppliers",
+   "tsmc-20f-2025-customer-concentration-and-fabs",
+   "amd-10k-2025-foundry-and-atmp-suppliers",
+   "broadcom-10k-fy2025-foundry-and-own-fabs",
+   "intel-10k-2025-fabs-and-tsmc-tiles",
+   "server-makers-10k-suppliers-smci-dell",
+   "micron-10k-fy2026-customers-and-fabs"
+  ]
+ }
+]

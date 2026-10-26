@@ -1,0 +1,17 @@
+{
+  "title": "Compute Ledger: public records on the physical, social and economic footprint of AI compute",
+  "upload_type": "dataset",
+  "description": "<p>A public, evidence-based ledger of AI compute's physical, social and economic footprint, site by site, built only from public documents. Records (regulators, courts, grid operators, statistics offices, auditors, registries, customs) are kept apart from claims (what companies and governments say).</p><p>The release holds a registry of sourced entries; one validated table of figures with units, periods and the basis of each; a register of sites with coordinates where a document gives them; a table of documented supply links from mine to site; metered electricity, water and fuel from regulators; and the pipeline that rebuilds every output from its sources, checked byte for byte on every change. The repository's README gives the counts for this version and the ROADMAP what is still open.</p><p>Data and text: CC BY 4.0. Code: MIT. Live pages: https://kn0wledgebfre3-sys.github.io/compute-ledger/</p>",
+  "creators": [
+    {"name": "Compute Ledger contributors"}
+  ],
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.0.0",
+  "keywords": ["datacenters", "AI compute", "electricity", "emissions", "water", "air permits", "public records", "supply chain", "semiconductors"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/kn0wledgebfre3-sys/compute-ledger", "relation": "isSupplementTo", "resource_type": "software"},
+    {"identifier": "https://kn0wledgebfre3-sys.github.io/compute-ledger/", "relation": "isDocumentedBy", "resource_type": "other"}
+  ]
+}

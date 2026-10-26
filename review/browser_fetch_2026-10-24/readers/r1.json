@@ -1,0 +1,581 @@
+[
+ {
+  "entry_id": "uk-south-mimms-dc01uk",
+  "registry_file": "people_land_money.json",
+  "documents_read": [
+   "20250123PL-5A Land East of South Mimms Report.pdf (171 pp.; read pp. 1-20 summary and consultee responses, objection tables pp. 40-50, planning assessment pp. 52-57, 98, 118, 124, 134-140 and conditions; the '(1)' copy is byte-identical)",
+   "DECISION_-_OUTLINE_-_GRANT_PERMISSION-1820388.pdf (35 pp., all; 56 conditions; date p. 33)",
+   "S106_AGREEMENT-1832244.pdf (41 pp., scanned; OCR at 200 dpi; read parties and recitals p. 1-2, definitions pp. 3-8, Schedules 1-10 pp. 22-36)",
+   "ECOLOGY_RESPONSE-1762951.pdf (3 pp., skimmed)"
+  ],
+  "findings": "Decision notice (p. 33): outline permission granted on 12 February 2025 (signed by the Head of Planning and Economic Development), after a Section 106 deed dated 11 February 2025 (handwritten day, read from the page image) between Wrotham Park Settled Estates (owner), DC01 UK Limited, Hertsmere BC and Hertfordshire CC. Conditions: 24 (LEMP ensuring at least 10% BNG on site, p. 12), 40 (187,000 sq.m GEA cap), 41 (net-zero scope 2 methodology per phase), 49 (diesel generators only for outages and testing; testing weekdays 07.00-18.00 and Saturday 08.00-13.00, max five hours per 24 h, p. 23), 50 (fixed-plant noise), 51 (data-centre use only), 53 (cooling strategy: no adverse impact on local water supplies, p. 24), 54 (district-heating study), 56 (PUE vs EU CNDCP targets, p. 25). S106: Public Transport Contribution GBP 2,000,000 index-linked for bus 398 and Hertsmere Hopper (definitions p. 7; Schedule 3 p. 24, before commencement); Local Employment Skills and Opportunities Contribution GBP 38,500 (Schedule 1 p. 22, before commencement); carbon offset at GBP 115/t (Schedule 2); BNG only as a GBP 531 gain-plan fee (Schedule 6). No job number is secured anywhere. Officer report: 500/200 jobs are from the applicant's Stantec Economic Benefits Statement (para 7.294, p. 134), which gives 12,741 indirect UK jobs, not 10,900; the 10,900 in the council release has no source in the documents read. No MW figure; supply from Letchmore Heath GSP and water from Affinity Water with free-cooling chillers (para 7.24, p. 57, applicant's advice); applicant assumed about 144 diesel generators (p. 118) and PUE no greater than 1.4 (p. 124); EA bespoke permit needed. Officers advised the applicant's GBP 4.5M White Hart training-hub offer carried no weight (p. 52). Inconsistency inside the report: heads of terms (p. 140) list GBP 400,000 + 100,000 for buses while paras 7.152-7.153 and 7.301 (p. 136) give GBP 1.5m + 0.5m; the signed S106 gives GBP 2,000,000. Confirms 187,000 sqm, 34.4 ha, committee date; corrects the gap (bus contribution and skills amount are now shown as secured).",
+  "new_record": "Hertsmere granted outline permission (24/1152/OUTEI, DC01 UK Limited, all matters reserved) for a phased data centre of up to 187,000 sqm GEA on about 34.4 ha (85 acres) of Green Belt east of South Mimms Services: committee resolution 23 Jan 2025, decision notice 12 Feb 2025, after a Section 106 agreement of 11 Feb 2025 (54% of the site to stay open space, per the council's release). Conditions require a minimum of 10% biodiversity net gain on site, diesel generators only for outages and testing (at most five hours in any 24 hour period), plant-noise approval, a cooling strategy with 'no adverse impact on local water supplies' and a PUE report against the EU Climate Neutral Data Centre Pact. The S106 secures the GBP 2m bus contribution as £2,000,000 (index-linked) for bus 398 and the Hertsmere Hopper, and a £38,500 skills contribution, both before commencement. Officers gave no weight to the applicant's separate £4.5M training-hub offer. A reserved-matters application for Phase 1a (26/1187/REM) was listed in 2026 [NGO: CPRE Hertfordshire].",
+  "new_claim": "Per the officer report, the applicant's Economic Benefits Statement (Stantec) estimates a £3.75bn construction value, at least 500 construction workers, 200 on-site jobs once fully operational and 12,741 indirect jobs across the UK; the council's release cites 500 construction jobs, 200 permanent on-site jobs and 10,900 indirect jobs. The applicant assumed approximately 144 diesel generators, a PUE no greater than 1.4 and free-cooling chillers rather than water for cooling. DC01UK sold the site to Equinix, with 'a projected total investment value in the region of £3.9bn' [press: The Construction Index, 30 Oct 2025, quoting DC01UK's directors].",
+  "new_gap": "No condition or obligation secures a number of jobs. The officer report and decision give no electrical demand (MW) or water-use figure; generator numbers and fuel are left to reserved matters and an Environment Agency permit (not found). The release's 10,900 indirect jobs do not appear in the officer report, which gives the applicant's 12,741.",
+  "set": {
+   "verification_status": "verified",
+   "confidence": "high",
+   "last_checked": "2026-10-24"
+  },
+  "add_record_sources": [
+   {
+    "title": "Planning Committee 23 January 2025, item 5A: officer report on 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-23"
+   },
+   {
+    "title": "Decision notice 24/1152/OUTEI: outline planning permission granted subject to 56 conditions (12 February 2025), Hertsmere planning register",
+    "url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-02-12"
+   },
+   {
+    "title": "Section 106 agreement for 24/1152/OUTEI between Wrotham Park Settled Estates, DC01 UK Limited, Hertsmere Borough Council and Hertfordshire County Council (11 February 2025), Hertsmere planning register",
+    "url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-02-11"
+   }
+  ],
+  "add_claim_sources": [
+   {
+    "title": "Planning Committee 23 January 2025, item 5A: officer report on 24/1152/OUTEI, Land East of South Mimms Services",
+    "url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "publisher": "Hertsmere Borough Council",
+    "date": "2025-01-23"
+   }
+  ],
+  "rows_add": [
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "record",
+    "metric": "other",
+    "metric_detail": "public transport contribution for bus service 398 and the Hertsmere Hopper, Section 106 agreement (Schedule 3)",
+    "value_as_published": "£2,000,000",
+    "unit_as_published": "GBP",
+    "value": "2000000",
+    "value_high": "",
+    "period_start": "2025-02-11",
+    "period_end": "2025-02-11",
+    "basis": "regulator_decision",
+    "source_url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "notes": "S106 dated 11 Feb 2025 (scanned; OCR), definitions p. 7 and Schedule 3; index-linked; payable before commencement"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "record",
+    "metric": "other",
+    "metric_detail": "local employment skills and opportunities contribution to Hertsmere BC, Section 106 agreement (Schedule 1)",
+    "value_as_published": "£38,500",
+    "unit_as_published": "GBP",
+    "value": "38500",
+    "value_high": "",
+    "period_start": "2025-02-11",
+    "period_end": "2025-02-11",
+    "basis": "regulator_decision",
+    "source_url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "notes": "S106 dated 11 Feb 2025 (scanned; OCR), Schedule 1; index-linked (CPI); payable before commencement"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "record",
+    "metric": "share_other",
+    "metric_detail": "minimum on-site biodiversity net gain required by condition 24 (LEMP) of the decision notice",
+    "value_as_published": "minimum of 10% biodiversity net gain",
+    "unit_as_published": "pct",
+    "value": "10",
+    "value_high": "",
+    "period_start": "2025-02-12",
+    "period_end": "2025-02-12",
+    "basis": "permitted",
+    "source_url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "notes": "lower bound; decision notice of 12 Feb 2025, condition 24 (p. 12)"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "record",
+    "metric": "generator_hours",
+    "metric_detail": "limit: maximum diesel generator testing per 24-hour period, condition 49 of the decision notice",
+    "value_as_published": "five hours in any 24 hour period",
+    "unit_as_published": "h",
+    "value": "5",
+    "value_high": "",
+    "period_start": "2025-02-12",
+    "period_end": "2025-02-12",
+    "basis": "permitted",
+    "source_url": "https://www6.hertsmere.gov.uk/online-applications/applicationDetails.do?activeTab=documents&keyVal=SJJXGQIFHRR00",
+    "notes": "limit; decision notice condition 49 (p. 23); testing only Mon-Fri 07.00-18.00 and Sat 08.00-13.00"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "claim",
+    "metric": "jobs",
+    "metric_detail": "indirect jobs across the UK estimated in the applicant's Economic Benefits Statement (Stantec), per officer report",
+    "value_as_published": "12,741 indirect jobs",
+    "unit_as_published": "count",
+    "value": "12741",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "company_statement",
+    "source_url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "notes": "applicant estimate; officer report para 7.294 (p. 134)"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "claim",
+    "metric": "generator_count",
+    "metric_detail": "backup diesel generators assumed by the applicant, per officer report",
+    "value_as_published": "approximately 144 diesel generators",
+    "unit_as_published": "count",
+    "value": "144",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "company_statement",
+    "source_url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "notes": "approximate; para 7.234 (p. 118); final number at reserved matters"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "claim",
+    "metric": "pue",
+    "metric_detail": "power usage effectiveness proposed by the applicant, per officer report",
+    "value_as_published": "no greater than 1.4",
+    "unit_as_published": "ratio",
+    "value": "1.4",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "company_statement",
+    "source_url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "notes": "upper bound; para 7.254 (p. 124)"
+   },
+   {
+    "entry_id": "uk-south-mimms-dc01uk",
+    "side": "claim",
+    "metric": "investment",
+    "metric_detail": "construction value estimated in the applicant's Economic Benefits Statement (Stantec), per officer report",
+    "value_as_published": "£3.75bn",
+    "unit_as_published": "GBP",
+    "value": "3750000000",
+    "value_high": "",
+    "period_start": "",
+    "period_end": "",
+    "basis": "company_statement",
+    "source_url": "https://hertsmere.moderngov.co.uk/documents/s67144/20250123PL-5A%20Land%20East%20of%20South%20Mimms%20Report.pdf",
+    "notes": "applicant estimate; para 7.294 (p. 134)"
+   }
+  ],
+  "rows_edit": [
+   {
+    "match": {
+     "value_as_published": "10% biodiversity net gain",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "council release figure; decision notice condition 24 (12 Feb 2025) requires a LEMP ensuring a minimum of 10% on site"
+    },
+    "why": "The decision notice is now read; the old note said whether the figure is secured by condition was not shown."
+   },
+   {
+    "match": {
+     "value_as_published": "GBP 2m",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "council release figure; secured as £2,000,000 (index-linked) by the S106 agreement of 11 Feb 2025, Schedule 3"
+    },
+    "why": "The signed S106 is now read; the old note said whether the contribution is secured was not shown."
+   }
+  ],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-05_uk-south-mimms-dc01uk.pdf",
+    "status": "obtained",
+    "result": "Officer report read: jobs figures are the applicant's (Stantec; 12,741 indirect, not 10,900), heads of terms include a GBP 38,500 skills contribution and bus contributions, about 144 diesel generators assumed, no MW figure, free cooling intended. Claim and gap rewritten."
+   },
+   {
+    "save_as": "2-06_uk-south-mimms-dc01uk.pdf",
+    "status": "obtained",
+    "result": "Decision notice (12 Feb 2025, 56 conditions) and signed S106 (11 Feb 2025; GBP 2,000,000 bus, GBP 38,500 skills) obtained from the Idox documents tab; no Secretary of State referral letter was among the files. Record now rests on them."
+   }
+  ]
+ },
+ {
+  "entry_id": "us-nv-google-nv-energy-clean-transition-tariff",
+  "registry_file": "north_america.json",
+  "documents_read": [
+   "DOCKETS - 24-06014 - ORIGINAL FILING - 6 10 2024 - AGN - UEL - SPP.pdf (1 p., scanned, OCR: cover letter only)",
+   "DOCKETS - 24-06014 - AMENDMENT TO FILING - 8 12 2024 - AGN - UEL - SPP.pdf (4 pp., scanned, OCR: letter, Exhibit A, certificate of service)",
+   "DOCKETS - 24-06014 - PROCEEDING TRANSCRIPT - 4 14 2025 - AGN - UEL - SPP.pdf (1 p., scanned, OCR: cover page only)",
+   "DOCKETS - 24-06014 - COMPLIANCE FILING RESPONSE - 6 30 2025 - AGN - UEL - SPP.pdf (1 p., scanned, OCR: transmittal letter only)",
+   "DOCKETS - 24-05023 - COMPLIANCE FILING RESPONSE - 6 11 2025 - ATN - UEL - SPP.pdf (10 pp., scanned, OCR: all; Schedule No. CTT sheets 81AZ(9)-(13))"
+  ],
+  "findings": "All five files are scanned and short; none is a PUCN order. Original filing: only NV Energy's cover letter (dated 7 Jun 2024, stamped received 10 Jun 2024) listing the application, ESA, draft notice and testimony (Janet Wells, Hank Will; Callisto's Briana Kobor, Carolyn Berry), with ESA pages and testimony under seal. Amendment (12 Aug 2024): unredacted ESA Exhibit A: Corsac geothermal 115MW, developer Fervo, PPA term 15 years, expected COD 1 Feb 2030, expected first-year output 872,431 MWh, 100% of capacity dedicated, PPA executed 8 May 2024. Transcript: cover page only, a prehearing conference (Volume 4) on 9 Apr 2025, filed 14 Apr 2025, stamped 'NOT AVAILABLE ON WEB'; it does not show any commission decision. 24-06014 compliance letter (27 Jun 2025, filed 30 Jun 2025): amended ESA submitted 'pursuant to the Commission's May 14, 2025 order' (Google's post is dated 13 May). 24-05023 compliance (11 Jun 2025): revised CTT tariff sheets 'per the Order dated March 11, 2025' and the stipulation: 5 MW average-load eligibility, bill credits removing generation cost, ESA energy charge at a fixed per-MWh 'CTT ESA Rate', ESA approval, filing with an IRP, protections for non-participating customers, early termination fee. Confirms the March 2025 order and the stipulation (previously press only) and dates the ESA order 14 May 2025; the orders' text is still unread. Following the brief, the utility's filed terms sit in claim (basis filed); note the ledger's builder elsewhere treats basis 'filed' as record. Exhibit A implies a capacity factor of about 0.87 (872,431 MWh / (115 MW x 8,760 h)); derived, not stated.",
+  "new_record": "Google (as Callisto Enterprises LLC) and NV Energy (Sierra Pacific Power) filed an energy supply agreement (ESA) with the PUCN on 2024-06-10 (Docket 24-06014), tied to the Clean Transition Tariff (CTT) in Docket 24-05023, for 115 MW from Fervo's Corsac Station enhanced geothermal project; per the PUCN notice, the applicants state the arrangement 'does not result in any increased costs or forgone benefits for non-participating customers.' A prehearing conference was held on 9 April 2025. NV Energy's compliance filings refer to a PUCN order of 11 March 2025 in 24-05023 requiring revised CTT tariffs per the stipulation [press: RTO Insider, 2025-03-12, reporting an all-issues stipulation and a pause on new CTT applications until the next IRP] and to a 14 May 2025 order in 24-06014, under which an amended ESA was filed on 30 June 2025, partly under seal; the orders have not been read. Google announced the approval on 2025-05-13. A further Sierra Pacific–Callisto ESA was filed on 2026-06-26 (Docket 26-06023).",
+  "new_claim": "NV Energy's CTT tariff, filed on 11 June 2025 in compliance with the March order, applies to non-residential customers averaging five megawatts or more: they pay their usual rates minus generation costs (bill credits) plus a fixed per-MWh energy rate set in the ESA, which must cover the utility's procurement cost and the customer's share of transmission and distribution costs, carry an early termination fee and be approved by the PUCN, which considers whether other customers face higher costs. The ESA's Exhibit A (public 12 Aug 2024) gives Corsac at 115MW, a PPA term of 15 years, expected operation from 1 February 2030, expected first-year output of 872,431 MWh and 100% of capacity dedicated to the customer. Google: 115 MW of new enhanced geothermal will bring 'round-the-clock clean power' to the grid serving its Nevada data centers toward its 24/7 carbon-free energy by 2030 goal; NV Energy CEO: the deal 'will not be paid for by NV Energy's other customers.'",
+  "new_gap": "The PUCN orders of 11 March 2025 and 14 May 2025 have not been read, so what the commission approved, including the 115 MW, rests on NV Energy's compliance filings, Google's announcement and press; the ESA price, the amended ESA and the cost testimony are under seal. No public hourly-matching verification mechanism has been found yet.",
+  "set": {
+   "verification_status": "partial",
+   "confidence": "medium",
+   "last_checked": "2026-10-24"
+  },
+  "add_record_sources": [
+   {
+    "title": "PUCN Docket 24-06014: joint application of Sierra Pacific Power and Callisto Enterprises for approval of an ESA, cover letter (dated 7 Jun 2024, filed 10 Jun 2024)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket filing by Sierra Pacific Power Co. d/b/a NV Energy)",
+    "date": "2024-06-10"
+   },
+   {
+    "title": "PUCN Docket 24-06014: transcript of proceedings, prehearing conference, Volume 4 (9 Apr 2025; filed 14 Apr 2025; cover page)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket)",
+    "date": "2025-04-14"
+   },
+   {
+    "title": "PUCN Docket 24-05023: Sierra Pacific Power compliance filing of revised Schedule No. CTT per the order dated 11 Mar 2025 (11 Jun 2025)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket filing by Sierra Pacific Power Co. d/b/a NV Energy)",
+    "date": "2025-06-11"
+   },
+   {
+    "title": "PUCN Docket 24-06014: Sierra Pacific Power compliance filing of the amended ESA pursuant to the order of 14 May 2025 (letter 27 Jun 2025, filed 30 Jun 2025)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket filing by Sierra Pacific Power Co. d/b/a NV Energy)",
+    "date": "2025-06-30"
+   }
+  ],
+  "add_claim_sources": [
+   {
+    "title": "PUCN Docket 24-06014: amendment to filing with unredacted ESA Exhibit A, Generating Facility (12 Aug 2024)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket filing by Sierra Pacific Power Co. d/b/a NV Energy)",
+    "date": "2024-08-12"
+   },
+   {
+    "title": "PUCN Docket 24-05023: Sierra Pacific Power compliance filing of revised Schedule No. CTT, Clean Transition Tariff (11 Jun 2025)",
+    "url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "publisher": "Public Utilities Commission of Nevada (docket filing by Sierra Pacific Power Co. d/b/a NV Energy)",
+    "date": "2025-06-11"
+   }
+  ],
+  "rows_add": [
+   {
+    "entry_id": "us-nv-google-nv-energy-clean-transition-tariff",
+    "side": "claim",
+    "metric": "duration_other",
+    "metric_detail": "PPA term for Fervo's Corsac geothermal plant under the Callisto (Google) ESA, Exhibit A",
+    "value_as_published": "15 years",
+    "unit_as_published": "years",
+    "value": "15",
+    "value_high": "",
+    "period_start": "2024-08-12",
+    "period_end": "2024-08-12",
+    "basis": "filed",
+    "source_url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "notes": "Docket 24-06014 amendment to filing of 12 Aug 2024, Exhibit A; PPA executed 2024-05-08"
+   },
+   {
+    "entry_id": "us-nv-google-nv-energy-clean-transition-tariff",
+    "side": "claim",
+    "metric": "electricity_generated",
+    "metric_detail": "expected Corsac output in the first contract year, ESA Exhibit A",
+    "value_as_published": "872,431 MWh",
+    "unit_as_published": "MWh",
+    "value": "872431",
+    "value_high": "",
+    "period_start": "2024-08-12",
+    "period_end": "2024-08-12",
+    "basis": "filed",
+    "source_url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "notes": "expected (forecast); Docket 24-06014 filing of 12 Aug 2024, Exhibit A; expected COD 2030-02-01"
+   },
+   {
+    "entry_id": "us-nv-google-nv-energy-clean-transition-tariff",
+    "side": "claim",
+    "metric": "share_other",
+    "metric_detail": "share of Corsac generating capacity dedicated to Callisto (Google), ESA Exhibit A",
+    "value_as_published": "100%",
+    "unit_as_published": "pct",
+    "value": "100",
+    "value_high": "",
+    "period_start": "2024-08-12",
+    "period_end": "2024-08-12",
+    "basis": "filed",
+    "source_url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "notes": "Docket 24-06014 filing of 12 Aug 2024, Exhibit A"
+   },
+   {
+    "entry_id": "us-nv-google-nv-energy-clean-transition-tariff",
+    "side": "claim",
+    "metric": "other",
+    "metric_detail": "Clean Transition Tariff eligibility: minimum average annual hourly load of a non-residential customer (Schedule No. CTT)",
+    "value_as_published": "five megawatts",
+    "unit_as_published": "MW",
+    "value": "5",
+    "value_high": "",
+    "period_start": "2025-06-11",
+    "period_end": "2025-06-11",
+    "basis": "filed",
+    "source_url": "https://pucweb1.state.nv.us/puc2/Dktinfo.aspx?Util=Electric",
+    "notes": "threshold; Docket 24-05023 compliance filing of 11 Jun 2025, sheet 81AZ(9); PUCN acceptance not read"
+   }
+  ],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-07_us-nv-google-nv-energy-clean-transition-tariff.pdf",
+    "status": "not_obtained",
+    "result": "None of the five docket files is the PUCN order; NV Energy's 24-06014 compliance filing (30 Jun 2025) refers to an order of 14 May 2025, which was not obtained."
+   },
+   {
+    "save_as": "2-08_us-nv-google-nv-energy-clean-transition-tariff.pdf",
+    "status": "partial",
+    "result": "Five docket filings obtained (24-06014 cover letter, unredacted Exhibit A, prehearing transcript cover, two compliance filings): they date the orders 11 Mar 2025 and 14 May 2025 and give the CTT tariff and ESA terms; the orders themselves were not obtained."
+   }
+  ]
+ },
+ {
+  "entry_id": "ca-ab-aeso-large-load-byog-greenlight",
+  "registry_file": "north_america.json",
+  "documents_read": [
+   "c70c859b9125c7ff2b1b04e41c15c491_Proposed BYOG Process.pdf (29 slides, all; dated 26 Jun 2026)",
+   "AESO-Data-Centre-Update-September-2025.pdf (4 pp., all)"
+  ],
+  "findings": "AESO 'Proposed BYOG Process' (26 Jun 2026), a proposal by the grid operator: applies to loads seeking DTS of 75 MW or more that bring qualified generation (slide 3); 'Initial BYOG intake will be limited to gas-fired thermal generation only', other technologies possibly in later rounds, generation must be 'net new' (slide 4); loads energize at most 3 months before the tethered generator's COD (slide 11); refundable DTS commitment fee of $15k/MW (slide 17); bridging limited to 1600 MW overall, shared across intakes, 20/30/40% of DTS by generator progress, first-come first-served, fully interruptible, max 3 years (slides 23-28). The press quote 'renewables and hybrid facilities are not eligible for now' does not appear; the gas-only rule covers the whole initial BYOG intake, not only the bridging pool. AESO Data Centre Update (Sep 2025): 'over 20,000 MW' of data-centre load on the project list (p. 1); Phase I: 15 projects, 5 developers, 4,800 MW qualified; 3 projects, 2 developers, 1,200 MW assigned; load contracts issued, pending execution, deadline extended from 4 Aug to Oct 2025 (p. 2). It does not give 33 proposals or 20.7 GW. Confirms 15 / 4.8 GW (as 'qualified', not 'viable') and the 1.6 GW pool; the 33 / 20.7 GW figures stay press-only. dedicated_supply.csv row 14 should cite the AESO PDF, give '1600 MW' bridging and drop the 'renewables and hybrid' quote and the 'press-sourced' note; gas-only applies to the initial intake.",
+  "new_record": "AESO's interim approach (rolled out 2025-06-04) limited large-load (≥75 MW) connections to 1,200 MW through 2028. Its September 2025 update reported over 20,000 MW of data-centre load on its project list, 15 projects qualified in Phase I (4,800 MW) and the 1,200 MW assigned to three projects, contracts pending; The Logic reported AESO's figures as 33 data center proposals of ~20.7 GW [press: The Logic]. AESO's 'Proposed BYOG Process' (26 June 2026), a proposal by the operator, would admit loads that bring 'net new' generation, with the initial intake 'limited to gas-fired thermal generation only', and would cap fully interruptible early 'bridging' load at 1600 MW overall. AUC Decision 30261-D02-2026 (2026-06-25; reasons for the approval granted in Decision 30261-D01-2026) approved Greenlight as a 1,864 MW two-phase combined-cycle plant (four Siemens SGT6-8000H gas turbines and four steam turbines) about 8.5 km east of Gibbons, describing it as intended in part 'to supply data centres', with ~538,000 m³/yr of water from Sturgeon County and Pembina holding a 50% interest.",
+  "new_claim": null,
+  "new_gap": "AESO's BYOG process is a proposal (26 June 2026); its final form and any list of admitted loads and tethered generators were not found. The 33-proposal and 20.7 GW figures do not appear in AESO's September 2025 update. The data center customer of the approved plant's first 932 MW (Pembina's figure) is not identified in any record found yet.",
+  "set": {
+   "verification_status": "partial",
+   "confidence": "high",
+   "last_checked": "2026-10-24"
+  },
+  "add_record_sources": [
+   {
+    "title": "Large Load Integration Phase 2A: Proposed BYOG Process",
+    "url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/170854",
+    "publisher": "AESO",
+    "date": "2026-06-26"
+   },
+   {
+    "title": "AESO Update on Data Centres (September 2025)",
+    "url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/158760",
+    "publisher": "AESO",
+    "date": "2025-09"
+   }
+  ],
+  "add_claim_sources": [],
+  "rows_add": [
+   {
+    "entry_id": "ca-ab-aeso-large-load-byog-greenlight",
+    "side": "record",
+    "metric": "requested_capacity",
+    "metric_detail": "data centre load on AESO's connection project list",
+    "value_as_published": "over 20,000 MW",
+    "unit_as_published": "MW",
+    "value": "20000",
+    "value_high": "",
+    "period_start": "2025-09-01",
+    "period_end": "2025-09-30",
+    "basis": "utility_published",
+    "source_url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/158760",
+    "notes": "lower bound; AESO Update on Data Centres, September 2025, p. 1"
+   },
+   {
+    "entry_id": "ca-ab-aeso-large-load-byog-greenlight",
+    "side": "record",
+    "metric": "approved_capacity",
+    "metric_detail": "large-load MW assigned under the Phase I interim limit (3 projects, 2 developers)",
+    "value_as_published": "1,200 MW",
+    "unit_as_published": "MW",
+    "value": "1200",
+    "value_high": "",
+    "period_start": "2025-09-01",
+    "period_end": "2025-09-30",
+    "basis": "utility_published",
+    "source_url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/158760",
+    "notes": "AESO Update on Data Centres, September 2025, p. 2; load contracts issued, pending execution"
+   }
+  ],
+  "rows_edit": [
+   {
+    "match": {
+     "value_as_published": "of which 15",
+     "side": "record"
+    },
+    "changes": {
+     "value_as_published": "15 projects",
+     "metric_detail": "data centre projects qualified by AESO in Phase I of the Large Load Integration Program (5 developers)",
+     "basis": "utility_published",
+     "source_url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/158760",
+     "notes": "AESO Update on Data Centres, September 2025, p. 2; AESO says 'qualified' (The Logic: 'viable')"
+    },
+    "why": "AESO's own update is now read and gives the figure; it replaces The Logic's report of it."
+   },
+   {
+    "match": {
+     "value_as_published": "~4.8 GW",
+     "side": "record"
+    },
+    "changes": {
+     "value_as_published": "4,800 MW",
+     "unit_as_published": "MW",
+     "value": "4800",
+     "metric_detail": "capacity of data centre projects qualified by AESO in Phase I",
+     "basis": "utility_published",
+     "source_url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/158760",
+     "notes": "AESO Update on Data Centres, September 2025, p. 2"
+    },
+    "why": "AESO's own update is now read and gives 4,800 MW qualified; it replaces The Logic's ~4.8 GW."
+   },
+   {
+    "match": {
+     "value_as_published": "33 data center proposals",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "AESO's September 2025 figure as reported by The Logic (2026-06-24); not in AESO's Update on Data Centres (September 2025), which gives 'over 20,000 MW' on the project list"
+    },
+    "why": "The AESO update was read and does not contain the figure; the old note said it was not read yet."
+   },
+   {
+    "match": {
+     "value_as_published": "~20.7 GW",
+     "side": "record"
+    },
+    "changes": {
+     "notes": "AESO's September 2025 figure as reported by The Logic (2026-06-24); not in AESO's Update on Data Centres (September 2025), which gives 'over 20,000 MW' on the project list"
+    },
+    "why": "The AESO update was read and does not contain the figure; the old note said it was not read yet."
+   },
+   {
+    "match": {
+     "value_as_published": "~1.6 GW",
+     "side": "record"
+    },
+    "changes": {
+     "value_as_published": "1600 MW",
+     "unit_as_published": "MW",
+     "value": "1600",
+     "metric_detail": "proposed overall limit on BYOG bridging load, fully interruptible (AESO proposal, not final)",
+     "period_start": "2026-06-26",
+     "period_end": "2026-06-26",
+     "basis": "utility_published",
+     "source_url": "https://aesoengage.aeso.ca/49943/widgets/210873/documents/170854",
+     "notes": "proposed; AESO Proposed BYOG Process (26 Jun 2026), slide 25; shared across intakes; initial BYOG intake gas-fired generation only"
+    },
+    "why": "AESO's proposal document is now read and states the limit; it replaces The Logic's report of the draft."
+   }
+  ],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-20_ca-ab-aeso-large-load-byog-greenlight.pdf",
+    "status": "obtained",
+    "result": "AESO's proposal (26 Jun 2026) caps bridging at 1600 MW and limits the initial BYOG intake to gas-fired thermal generation; the press phrase on renewables and hybrids does not appear. Record and row moved from press to the AESO document."
+   },
+   {
+    "save_as": "2-21_ca-ab-aeso-large-load-byog-greenlight.pdf",
+    "status": "obtained",
+    "result": "AESO update gives over 20,000 MW of data-centre load, 15 projects / 4,800 MW qualified and 1,200 MW assigned to 3 projects; it does not give the 33 proposals or 20.7 GW, which stay press-sourced."
+   }
+  ]
+ },
+ {
+  "entry_id": "uk-thames-affinity-water-datacentres",
+  "registry_file": "europe.json",
+  "documents_read": [
+   "annual-report-2024-25.pdf (Thames Water Utilities Holdings Limited annual report and financial statements, year to 31 Mar 2025; 131 pp., full text extracted, only the cover has no text)"
+  ],
+  "findings": "The whole text of the TWUHL 2024-25 annual report now extracts (131 pages). It contains no mention of data centres, 'hyper', the number 108, homes-equivalent figures or 1.68 million. The only 'carefully manage' passage (principal risk on climate change, population growth and demand) concerns drought, flooding and environmental damage, not data centres. So the Telegraph's '108 hyper or large' count is not in this report; it may come from another Thames document (for example the operating company Thames Water Utilities Limited's own 2024/25 annual report, which was not fetched). Entry text unchanged except the gap; both Thames figures stay press-sourced claims.",
+  "new_record": null,
+  "new_claim": null,
+  "new_gap": "No metered data-centre water consumption from either utility was found yet; Thames Water's count of 108 and the 1.68 million homes figure were not found in its reports read, including the full text of the Thames Water Utilities Holdings annual report 2024-25.",
+  "set": {
+   "last_checked": "2026-10-24"
+  },
+  "add_record_sources": [],
+  "add_claim_sources": [],
+  "rows_add": [],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-18_uk-thames-affinity-water-datacentres.pdf",
+    "status": "obtained",
+    "result": "Full TWUHL 2024-25 report read: no passage on data centres, no 108 count and no 1.68 million homes figure; the figures stay press-sourced and the gap now says so."
+   }
+  ]
+ },
+ {
+  "entry_id": "ng-lagos-diesel-gas-dependence",
+  "registry_file": "latam_mena_africa.json",
+  "documents_read": [
+   "2025_Q4-Report.pdf (NERC Quarterly Report, Fourth Quarter 2025; 92 pp.; read summary p. 13 (licences and permits), section 3.2 Table 13 p. 49 and section 3.3 Table 14 p. 50; searched full text for the operators)"
+  ],
+  "findings": "Table 14 (p. 50) lists the 11 captive generation permits granted in 2025/Q4 with location and MW; they total 136.19 MW: Wihi International Limited (Lagos-Ibadan Expressway, 3.40), Federal Inland Revenue Service (Abuja, 6.08), Yongxing Steel (Benin City, 45.00), Accugas (Esit-Eket, 4.20), Abuja Steel Mill (50.00), T&D West Africa (Abuja, 1.25), and five Kano/Jigawa manufacturers (2.26-7.00). Fuel is not stated. None is Rack Centre, MainOne/Equinix, OADC, Kasi, Digital Realty/Medallion or Africa Data Centres, and the full-text search finds none of those names. Table 13's five licences (p. 49) are in Kaduna, Niger State or have no location. So a regulator's record is now read but shows no data-centre captive permit in that quarter; earlier quarters' tables were not read. The NERC total (136.19 MW, all sectors) is unrelated to Mordor Intelligence's ~136.7 MW data-centre market estimate. verification_status stays not_found (no record documents data-centre power sourcing). dedicated_supply.csv row 40: documented_by can cite NERC 2025 Q4 Table 14 (no data-centre permit) instead of 'no NERC ... permit record'; its resource text still says 'Rack Centre LG2 runs on a diesel/gas mix', which the registry now attributes to Rack Centre's own LGS2 briefing.",
+  "new_record": "NERC's 2025 Q4 report lists 11 captive generation permits (136.19MW in total) granted that quarter, none to the Lagos data-centre operators checked (Rack Centre, MainOne/Equinix, OADC, Kasi, Digital Realty/Medallion, Africa Data Centres); earlier quarters' tables were not read. No TCN, LASERC or Lagos State record of data-centre power sourcing was found. TechCabal (4 Nov 2025), in its own reporting and without naming sources, puts diesel at about ₦1,000/L and estimates that a 1 MW diesel-backed load burns about 270 L/h (about ₦275,400/h at ₦1,020/L); it says gas is typically 30–60% cheaper, energy is over 35% of Nigerian data-centre opex, and the grid struggles to deliver a stable 5,000 MW [press, own estimates: TechCabal].",
+  "new_claim": null,
+  "new_gap": "No NERC, TCN or Lagos State record of data-centre power sourcing or generator permits found yet (NERC's 2025 Q4 permits include none for the operators checked; earlier quarters not read); the cost and fuel figures are TechCabal's own estimates, and the sector capacity figures differ (CEO about 25 MW installed base; Mordor Intelligence ~136.7 MW for 2025).",
+  "set": {
+   "verification_status": "not_found",
+   "confidence": "low",
+   "last_checked": "2026-10-24"
+  },
+  "add_record_sources": [
+   {
+    "title": "NERC Quarterly Report, Fourth Quarter 2025 (Table 14: captive generation permits issued in 2025/Q4)",
+    "url": "https://nerc.gov.ng/wp-content/uploads/2026/04/2025_Q4-Report.pdf",
+    "publisher": "Nigerian Electricity Regulatory Commission",
+    "date": "2026-04"
+   }
+  ],
+  "add_claim_sources": [],
+  "rows_add": [
+   {
+    "entry_id": "ng-lagos-diesel-gas-dependence",
+    "side": "record",
+    "metric": "count_other",
+    "metric_detail": "captive generation permits granted by NERC in 2025 Q4, all sectors, Nigeria",
+    "value_as_published": "11 captive generation permits",
+    "unit_as_published": "count",
+    "value": "11",
+    "value_high": "",
+    "period_start": "2025-10-01",
+    "period_end": "2025-12-31",
+    "basis": "regulator_decision",
+    "source_url": "https://nerc.gov.ng/wp-content/uploads/2026/04/2025_Q4-Report.pdf",
+    "notes": "Table 14, p. 50; none to a named Lagos data-centre operator"
+   },
+   {
+    "entry_id": "ng-lagos-diesel-gas-dependence",
+    "side": "record",
+    "metric": "permitted_generation_as_stated",
+    "metric_detail": "total capacity of captive generation permits granted by NERC in 2025 Q4, all sectors",
+    "value_as_published": "136.19MW",
+    "unit_as_published": "MW_unspecified",
+    "value": "136.19",
+    "value_high": "",
+    "period_start": "2025-10-01",
+    "period_end": "2025-12-31",
+    "basis": "regulator_decision",
+    "source_url": "https://nerc.gov.ng/wp-content/uploads/2026/04/2025_Q4-Report.pdf",
+    "notes": "sum of 11 permits, Table 14, p. 50; fuel not stated"
+   }
+  ],
+  "rows_edit": [],
+  "rows_delete": [],
+  "fetch_rows": [
+   {
+    "save_as": "2-34_ng-lagos-diesel-gas-dependence.pdf",
+    "status": "obtained",
+    "result": "Table 14 read: 11 captive permits (136.19 MW), none to Rack Centre, MainOne/Equinix, OADC, Kasi, Digital Realty/Medallion or Africa Data Centres; record now cites NERC for the absence in that quarter. Earlier quarters' tables were not in this file."
+   }
+  ]
+ }
+]

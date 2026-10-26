@@ -1,0 +1,55 @@
+name: Weekly pulls and page watch
+
+# Every Monday: pulls the sources that have an API (EPA's emissions inventory, Ireland's LEAP
+# annual reports, city benchmarking portals) and checks the watched pages (DEQ's permit list,
+# PJM load-forecast materials, utility datacenter pages, the CSO release). Anything new goes
+# into data/pulls/<date>/ and a pull request, never straight into the ledger: a person reads
+# each item against its document first.
+#
+# One-time setting: Settings > Actions > General > Workflow permissions >
+# "Allow GitHub Actions to create and approve pull requests" must be ticked.
+
+on:
+  schedule:
+    - cron: "41 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r scrapers/requirements.txt pdfplumber
+      - name: Pull and watch
+        run: |
+          D="data/pulls/$(date -u +%Y-%m-%d)"
+          mkdir -p "$D"
+          cd scrapers
+          python3 pull_nei.py --out "../$D/nei"                   || echo "nei: FAILED"          >> "../$D/failures.txt"
+          python3 pull_ie_aer.py --out "../$D/ie_aer"             || echo "ie_aer: FAILED"       >> "../$D/failures.txt"
+          python3 pull_benchmarking.py --out "../$D/benchmarking" || echo "benchmarking: FAILED" >> "../$D/failures.txt"
+          python3 watch_pages.py --out "../$D/watch"              || echo "watch: FAILED"        >> "../$D/failures.txt"
+          cd ..
+          python3 scrapers/pull_report.py "$D"
+      - name: Open a pull request if anything is new
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "ledger-bot"
+          git config user.email "ledger-bot@users.noreply.github.com"
+          DAY="$(date -u +%Y-%m-%d)"
+          git checkout -b "pulls/$DAY"
+          git add data/pulls data/watch
+          if git diff --cached --quiet; then echo "nothing new"; exit 0; fi
+          git commit -m "Weekly pulls $DAY"
+          git push origin "pulls/$DAY"
+          BODY="data/pulls/$DAY/SUMMARY.md"
+          [ -f "$BODY" ] || { echo "Watch baselines updated; nothing new to review." > /tmp/body.md; BODY=/tmp/body.md; }
+          gh pr create --base main --head "pulls/$DAY" --title "Weekly pulls $DAY: review before anything enters the ledger" --body-file "$BODY"

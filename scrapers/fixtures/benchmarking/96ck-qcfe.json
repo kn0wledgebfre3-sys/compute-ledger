@@ -1,0 +1,28 @@
+[
+ {
+  "benchmark_year": "2023",
+  "building_name": "Digital Realty Trust",
+  "building_address": "200 PAUL AVE",
+  "category": "Data Center",
+  "energy_star_score": "22",
+  "site_eui": "689.5",
+  "electricity_use_grid_purchase": "112372965.5"
+ },
+ {
+  "benchmark_year": "2024",
+  "building_name": "Digital Realty Trust",
+  "building_address": "200 PAUL AVE",
+  "category": "Data Center",
+  "site_eui": "690.2",
+  "electricity_use_grid_purchase": "111435159.4"
+ },
+ {
+  "benchmark_year": "2025",
+  "building_name": "Digital Realty Trust",
+  "building_address": "200 PAUL AVE",
+  "category": "Data Center",
+  "energy_star_score": "36",
+  "site_eui": "639.5",
+  "electricity_use_grid_purchase": "103964027.7"
+ }
+]

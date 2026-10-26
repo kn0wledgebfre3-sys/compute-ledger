@@ -1,0 +1,28 @@
+STATIONARY SOURCE PERMIT TO CONSTRUCT AND OPERATE
+Amazon Data Services, Inc.
+13200 Woodland Park Road
+Herndon, Virginia 20171
+Registration No.: 74274
+is authorized to construct and operate
+emergency diesel engine generator sets (gen-sets)
+located at
+24214, 24224, 24234, and 24244 Quail Ridge Lane
+Aldie, VA 20105
+(Loudoun County)
+in accordance with the Conditions of this permit.
+Approved on December 27, 2023
+Amazon Data Services, Inc.
+Registration Number: 74274
+December 27, 2023
+Page 2
+Equipment to be Constructed:
+Ref. Nos. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+1 through 92 (92) Cummins Model QSK60-G26 emergency diesel engine gen-sets 3,626 bhp 2,500 ekW (each) None 12/27/2023
+93 through 96 Four (4) Cummins Model QST30-G5 emergency diesel engine gen-sets 1,073 bhp 750 ekW (each) None 12/27/2023
+Transitory Equipment:
+Ref. Nos. Equipment Description Rated Capacity Delegated Federal Requirements Original Permit Date
+T1 and T2 Two (2) Caterpillar model 3516C emergency diesel engine gen-sets 2,937 bhp 2,000 ekW (each) None 12/27/2023
+The equipment specifications listed above are for informational purposes only and are not enforceable permit terms.
+7. Each individual emergency diesel engine gen-set shall not operate more than 32 hours per year for scheduled maintenance checks and readiness testing
+and shall not operate more than 500 hours per year for all purposes.
+9. The approved fuel for the emergency diesel engine gen-sets is ultra-low sulfur diesel fuel oil (15 ppm sulfur).
