@@ -28,6 +28,7 @@ from _common import FIXTURES, SchemaChangedError, SourceError, base_parser, fetc
 
 BASE = "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_{year}/state_abbr/equals/{st}/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV"
 YEARS = [2020, 2023, 2026, 2029]
+LATEST_RELEASED = 2023  # later years are probed each week; until EPA publishes one, its view does not exist
 STATES = ["VA", "TX", "GA", "AZ", "OH", "OR", "IA", "NE", "NC", "SC", "IL", "WA", "NV", "TN", "MS", "PA"]
 NEED = ["eis_facility_id", "site_name", "address", "city_name", "county_name", "pollutant_code", "emissions", "uom", "latitude", "longitude"]
 LEDGER = Path(__file__).resolve().parents[1] / "sites" / "metered" / "va_nei_transcribed.csv"
@@ -50,7 +51,7 @@ def main() -> None:
     ap.add_argument("--states", default=",".join(STATES))
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
-    out, failures, years_found = [], [], set()
+    out, failures, notes, years_found = [], [], [], set()
     if a.fixture:
         for p in sorted((FIXTURES / "nei").glob("*.csv")):
             st, year = p.stem.split("_")[0], int(p.stem.split("_")[1])
@@ -61,13 +62,20 @@ def main() -> None:
             for st in a.states.split(","):
                 url = BASE.format(year=year, st=st)
                 try:
-                    rows = parse(fetch(url, expect="csv").text(), st, year, url)
+                    got = fetch(url, expect="csv", allow_empty=True)
                 except SourceError as exc:
+                    if st == a.states.split(",")[0] and year > LATEST_RELEASED:
+                        notes.append(f"{year}: not released by EPA yet (the {year} view does not exist); checked again next week")
+                        log(f"{year}: not released yet")
+                        break
                     failures.append(f"{year} {st}: {exc}")
                     log(f"{year} {st}: {exc}")
-                    if st == a.states.split(",")[0] and year > 2023:
-                        break  # the view for this year is not released yet
                     continue
+                if not got.content.strip():
+                    notes.append(f"{year} {st}: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there")
+                    log(f"{year} {st}: no rows")
+                    continue
+                rows = parse(got.text(), st, year, url)
                 years_found.add(year)
                 out += rows
     out.sort(key=lambda r: (r["state"], r["year"], r["eis_facility_id"], r["pollutant_code"]))
@@ -91,7 +99,7 @@ def main() -> None:
         w.writerows(changes)
     write_json({**run_meta(a.fixture, [{"name": "EPA NEI facility summaries (Envirofacts DMAP)", "url": BASE}]),
                 "rows": len(out), "facilities": len({r["eis_facility_id"] for r in out}), "years_found": sorted(years_found),
-                "changes_vs_ledger": len(changes), "failures": failures}, a.out / "nei_summary.json")
+                "changes_vs_ledger": len(changes), "failures": failures, "notes": notes}, a.out / "nei_summary.json")
     log(f"NEI: {len(out)} rows, {len(changes)} new or changed vs the ledger")
 
 

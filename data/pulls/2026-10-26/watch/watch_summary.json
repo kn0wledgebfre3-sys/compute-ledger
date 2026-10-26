@@ -1,0 +1,39 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-26T13:34:46+00:00",
+  "sources": [
+    {
+      "name": "watched pages",
+      "config": "config/watch_pages.json"
+    }
+  ],
+  "pages": {
+    "pjm_las_materials": {
+      "items_now": 27,
+      "new": 0,
+      "baseline_run": true
+    },
+    "grant_pud_datacenter_faq": {
+      "items_now": 4,
+      "new": 0,
+      "baseline_run": true
+    },
+    "cso_datacentre_release": {
+      "items_now": 0,
+      "new": 0,
+      "baseline_run": true
+    },
+    "ghg_protocol_consultations": {
+      "items_now": 6,
+      "new": 0,
+      "baseline_run": true
+    }
+  },
+  "new_items": 0,
+  "failures": [
+    "va_deq_datacenter_permits: https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers returned HTTP 403 (access denied). The endpoint may now need a key, or blocks scripted access.",
+    "srp_datacenter_facts: https://www.srpnet.com/about/data-center-facts returned HTTP 403 (access denied). The endpoint may now need a key, or blocks scripted access."
+  ]
+}

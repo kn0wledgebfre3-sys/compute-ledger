@@ -106,11 +106,13 @@ def fetch(
     params: dict[str, Any] | None = None,
     data: Any = None,
     timeout: int = 180,
+    allow_empty: bool = False,
 ) -> Fetched:
     """Fetch ``url`` and check the payload is a ``expect`` file (xlsx|pdf|zip|json|csv|html).
 
     Raises SourceMovedError with a pointer to ``landing_page`` when the publisher has moved
     or renamed the file, and SourceUnreachableError when the host cannot be reached at all.
+    With ``allow_empty`` an empty csv body is returned as is (a query that matched no rows).
     """
     import requests  # imported lazily so --fixture runs do not need network libraries configured
 
@@ -154,7 +156,7 @@ def fetch(
         except ValueError as exc:
             raise SourceMovedError(moved_msg + f" (JSON parse error: {exc})") from exc
     elif expect == "csv":
-        if _looks_like_html(content) or not content.strip():
+        if _looks_like_html(content) or (not content.strip() and not allow_empty):
             raise SourceMovedError(moved_msg)
     elif expect == "html":
         pass

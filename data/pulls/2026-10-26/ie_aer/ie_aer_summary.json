@@ -1,0 +1,17 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-26T13:34:25+00:00",
+  "sources": [
+    {
+      "name": "EPA Ireland LEAP Open Data API",
+      "url": "https://data.epa.ie/leap/api/v1"
+    }
+  ],
+  "licences": 11,
+  "new_documents": 13,
+  "first_readings": 13,
+  "unlisted_licence_profiles": 15,
+  "failures": []
+}

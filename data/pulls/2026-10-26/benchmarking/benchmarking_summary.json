@@ -1,0 +1,27 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-26T13:34:41+00:00",
+  "sources": [
+    {
+      "name": "city benchmarking portals",
+      "config": "config/benchmarking_portals.json"
+    }
+  ],
+  "rows": 414,
+  "per_portal": {
+    "New York City": 201,
+    "Seattle": 46,
+    "San Francisco": 61,
+    "Chicago": 22,
+    "Cambridge MA": 40,
+    "Montgomery County MD": 4,
+    "Washington DC": 7,
+    "Boston, MA": 33
+  },
+  "changes_vs_ledger": 202,
+  "failures": [
+    "Philadelphia: Philadelphia: ArcGIS error {'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  ]
+}

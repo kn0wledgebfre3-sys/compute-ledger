@@ -1,0 +1,28 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-10-26T13:33:31+00:00",
+  "sources": [
+    {
+      "name": "EPA NEI facility summaries (Envirofacts DMAP)",
+      "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_{year}/state_abbr/equals/{st}/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV"
+    }
+  ],
+  "rows": 1261,
+  "facilities": 94,
+  "years_found": [
+    2020,
+    2023
+  ],
+  "changes_vs_ledger": 1132,
+  "failures": [
+    "2020 GA: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/GA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV (final URL https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/GA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV) did not return a csv file (Content-Type 'text/csv', 0 bytes). The file has probably moved and the old URL now redirects to a web page.",
+    "2020 AZ: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/AZ/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV (final URL https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/AZ/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV) did not return a csv file (Content-Type 'text/csv', 0 bytes). The file has probably moved and the old URL now redirects to a web page.",
+    "2020 WA: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/WA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV (final URL https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/WA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV) did not return a csv file (Content-Type 'text/csv', 0 bytes). The file has probably moved and the old URL now redirects to a web page.",
+    "2023 AZ: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/AZ/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV (final URL https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/AZ/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV) did not return a csv file (Content-Type 'text/csv', 0 bytes). The file has probably moved and the old URL now redirects to a web page.",
+    "2023 WA: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/WA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV (final URL https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/WA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV) did not return a csv file (Content-Type 'text/csv', 0 bytes). The file has probably moved and the old URL now redirects to a web page.",
+    "2026 VA: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2026/state_abbr/equals/VA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV returned HTTP 404: the file has probably moved or been renamed. Update the URL constant at the top of the script, or download the file by hand and pass it with the script's local-file option (see --help).",
+    "2029 VA: https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2029/state_abbr/equals/VA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV returned HTTP 404: the file has probably moved or been renamed. Update the URL constant at the top of the script, or download the file by hand and pass it with the script's local-file option (see --help)."
+  ]
+}
