@@ -20,11 +20,11 @@ First citable release of the Compute Ledger: public records on the physical, soc
 
 What is in it:
 - the registry of entries with their record and claim sources, and the guide and themes behind the public page;
-- `measurements.csv`, one validated table of figures with unit, period, basis and the line each was read from, and `site_register.csv`;
+- `measurements.csv`, one validated table of figures with unit, period, basis and the line each was read from, `site_register.csv`, the entries as tables (`entries.csv`, `entry_sources.csv`), and the schema of every table (`data/datapackage.json`, `data/DICTIONARY.md`);
 - Virginia's datacenter air permits read twice, EPA inventory emissions, and the minimum generator hours they imply;
 - Ireland's licensed datacentres: metered electricity, water and fuel from their annual reports, and the emissions computed from them with SEAI factors;
 - the chain table of documented links from mine and refiner to site, power, fuel, water and tenant;
 - topic feeds (crypto mining, nuclear, refiners, fabs, trade, hardware life, fuel and water, Singapore);
 - the pipeline and checks that rebuild every output from its sources.
 
-Counts for this version are at the top of `README.md`. Open items are in `ROADMAP.md`.
+Counts for this version are at the top of `README.md`; what changed is in `CHANGELOG.md`. Open items are in `ROADMAP.md`.

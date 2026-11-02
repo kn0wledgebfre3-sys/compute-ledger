@@ -268,7 +268,9 @@ def main():
 
     # checks whose findings file records each finding's resolution
     for check, path in (("browser-fetch-check-2026-10-24", "browser_fetch_2026-10-24/check_result.csv"),
-                        ("checks-log-check-2026-10-24", "checks_log_check_2026-10-24/check_result.csv")):
+                        ("checks-log-check-2026-10-24", "checks_log_check_2026-10-24/check_result.csv"),
+                        ("usability-review-2026-11-02", "usability_review_2026-11-02/check_result.csv"),
+                        ("ireland-2023-check-2026-11-02", "ireland_2023_check_2026-11-02/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""
@@ -292,7 +294,7 @@ def main():
              "move_to_claim": "moved to the claim", "unattributed": "unattributed", "mislabelled_basis": "wrong basis",
              "not_found": "primary not found", "contradicted": "contradicted", "verified": "verified", "partial": "partly verified",
              "error": "errors", "inconsistency": "inconsistencies", "weak": "weak", "style": "style", "obtained": "obtained",
-             "contradicts": "contradicts the entry"}
+             "contradicts": "contradicts the entry", "blocker": "blockers to use", "serious": "serious", "polish": "polish"}
 
     def counts(rs, key):
         return ", ".join(f"{n} {LABEL.get(k, k) if key == 'severity' else k}" for k, n in Counter(x[key] for x in rs).most_common())

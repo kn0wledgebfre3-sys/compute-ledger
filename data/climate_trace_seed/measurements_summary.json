@@ -1,5 +1,5 @@
 {
- "rows": 2984,
+ "rows": 3023,
  "sites_in_register": 853,
  "sites_with_figures": 530,
  "entries_with_figures": 189,
@@ -14,8 +14,8 @@
   "sites/topics/crypto/figures.csv": 147,
   "registry/latam_mena_africa.json": 143,
   "sites/paper/company_figures.csv": 129,
+  "sites/metered/ireland_aer_transcribed.csv": 128,
   "sites/metered/va_nei_transcribed.csv": 118,
-  "sites/metered/ireland_aer_transcribed.csv": 89,
   "sites/metered/filed_figures_curated.csv": 80,
   "sites/topics/nuclear/figures.csv": 80,
   "sites/topics/refiners/figures.csv": 57,
@@ -30,8 +30,8 @@
   "sites/topics/fuel_water/figures.csv": 2
  },
  "by_basis": {
+  "metered": 582,
   "company_statement": 555,
-  "metered": 543,
   "derived": 345,
   "press_report": 283,
   "permitted": 228,
@@ -51,7 +51,7 @@
   "registry_record": 2
  },
  "by_metric": {
-  "electricity_consumed": 516,
+  "electricity_consumed": 526,
   "share_other": 268,
   "generator_count": 232,
   "permitted_standby_generation": 193,
@@ -59,8 +59,9 @@
   "other": 139,
   "site_count": 87,
   "planned_capacity": 81,
+  "water_withdrawn": 70,
   "connected_capacity": 67,
-  "water_withdrawn": 60,
+  "generator_fuel_burned": 62,
   "generation_capacity": 59,
   "contracted_capacity": 52,
   "electricity_share": 51,
@@ -68,7 +69,6 @@
   "investment": 49,
   "duration_other": 48,
   "water_rate": 45,
-  "generator_fuel_burned": 44,
   "peak_demand": 42,
   "forecast_demand": 41,
   "approved_capacity": 38,
@@ -106,9 +106,9 @@
   "electricity_by_sourcing_method": 7,
   "load_factor": 6,
   "distance": 6,
+  "natural_gas_burned": 6,
   "permitted_generation_as_stated": 6,
   "electricity_generated": 5,
-  "natural_gas_burned": 5,
   "waste_generated": 5,
   "heat_delivered": 4,
   "energy_consumed_total": 4,
@@ -122,7 +122,7 @@
   "cfe_share": 2,
   "noise_level": 1
  },
- "second_read_yes": 1059,
+ "second_read_yes": 1098,
  "sites_with_permitted_capacity_and_metered_electricity": [
   "irl-amazon-airton-road-tallaght-dub56-p1173",
   "irl-amazon-blanchardstown-snugborough-road-p1172",

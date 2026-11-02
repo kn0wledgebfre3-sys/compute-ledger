@@ -1,0 +1,16 @@
+# Changelog
+
+What changed in the data between releases. Figures are identified by `measurement_id`, a hash of their content, so a corrected figure gets a new id; every retired id and the id that replaced it are in `data/climate_trace_seed/measurement_id_aliases.csv`. Every check run on the ledger, and what it found, is in `data/climate_trace_seed/checks.csv` and `findings.csv`.
+
+## 1.0.0 (2026-11-02)
+
+First citable release. 202 entries in 44 countries and territories plus EU-wide and global entries; 3,023 figures (663 of them claims); 853 sites; 207 documented links in the chain; 720 distinct linked documents; 21 checks and 1,474 findings.
+
+Changes since the version shared on 26 October 2026:
+
+- **Ireland, 2023.** The ten 2023 Annual Environmental Reports of the licensed datacentres (eight Amazon licences, Microsoft DUB14/15, Equinix DB5) are read and added: 39 figures. They cover part of the year; the period each report states is recorded in a new `period_start` column of `sites/metered/ireland_aer_transcribed.csv` (with the wording in `period_basis`) and used for average load. For the eight Amazon licences, average load was 370.6 MW from the month of licence grant (June or July 2023) to December, 377.6 MW in 2024 and 412.0 MW in 2025 (398.5 MW for 2023 if counted from the date of grant; `metered_summary.json`). P1181-01's 2024 average load is withdrawn: its report says it covers 8 August to 31 December "unless stated otherwise", but its Table 3 says "the energy used in 2024". Read from the rendered pages against the weekly pull's text extraction, then checked against the PDFs by a second reader; one figure the extraction missed (P1170-01's HVO) was added.
+- **NOx units.** EPA's emissions inventory reports US short tons; the text had written them as `t` (tonnes), about 10% high. The text now says short tons (393 short tons of NOx at 27 Virginia facilities in 2023 is 357 tonnes). The figures' converted values were already right. Twelve figures' wording changed, so their ids changed; see the aliases file.
+- **Data package.** `data/datapackage.json` describes every table and its columns; `data/DICTIONARY.md` is its readable version; every build checks every table against it. The entries are now also tables: `entries.csv` and `entry_sources.csv`.
+- **Weekly pulls.** The first live weekly pull (2026-10-26) is kept in `data/pulls/2026-10-26/` with a note on how to read it; it changes no table until each item is read against its document.
+- **Documentation.** The README starts with where the data is and how to cite it; the contribution steps now pass the checks as written; adding a country or topic is documented in `JURISDICTION_TEMPLATE.md`; `ci_local.sh` now fails where CI would; stale files moved to `history/`.
+- **Licence.** 30 seed-list rows rest on a Wikipedia article (CC BY-SA 4.0) for the site's identity or location; they are now flagged in the README and their licence value is listed in the asset file's definitions.

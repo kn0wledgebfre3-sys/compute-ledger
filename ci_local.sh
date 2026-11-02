@@ -3,9 +3,11 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 T="$(mktemp -d)"
+before=$(cat docs/index.html docs/brief.html site/index.html | cksum)
 python3 -I site/build_page.py | tail -1
 if python3 -I site/build_page.py 2>&1 | grep -q PROBLEMS; then echo "registry problems"; exit 1; fi
-git diff --quiet -- docs/ site/index.html || echo "note: docs/ changed by the build; commit it"
+after=$(cat docs/index.html docs/brief.html site/index.html | cksum)
+[ "$before" = "$after" ] || { echo "docs/ was stale (CI would fail); the build has now updated it: run ./rebuild.sh, then commit"; exit 1; }
 ( cd scrapers && for s in ercot_large_load pjm_queue miso_spp_nyiso_queues eia_860_923 neso_demand climate_trace_match pull_nei pull_ie_aer pull_benchmarking watch_pages; do python3 $s.py --fixture --out "$T/out" 2>/dev/null >/dev/null || { echo "scraper $s failed"; exit 1; }; done; python3 cross_check.py --fixture --out "$T/out" >/dev/null 2>&1 )
 cd pipeline
 ./run_all.sh --fixture > /dev/null 2>&1 || { echo "run_all fixture failed"; exit 1; }
@@ -24,6 +26,8 @@ for f in edges.csv summary.json; do cmp "$T/chain/$f" ../data/chain/$f; done
 cd ..
 python3 -I pipeline/build_checks.py --out "$T/checks" > /dev/null
 for f in checks.csv findings.csv checks_summary.json; do cmp "$T/checks/$f" data/climate_trace_seed/$f; done
+python3 -I pipeline/build_data_package.py --out "$T/pkg" > /dev/null || { python3 -I pipeline/build_data_package.py --out "$T/pkg"; exit 1; }
+cmp "$T/pkg/entries.csv" data/climate_trace_seed/entries.csv && cmp "$T/pkg/entry_sources.csv" data/climate_trace_seed/entry_sources.csv && cmp "$T/pkg/DICTIONARY.md" data/DICTIONARY.md
 python3 -I site/build_sites.py --out "$T/sites" > /dev/null
 diff -rq "$T/sites" docs/sites > /dev/null || { echo "docs/sites is stale: run python3 site/build_sites.py and commit"; exit 1; }
 v1=$(sed -n 's/^version: "\(.*\)"$/\1/p' CITATION.cff); v2=$(python3 -c 'import json;print(json.load(open(".zenodo.json"))["version"])')

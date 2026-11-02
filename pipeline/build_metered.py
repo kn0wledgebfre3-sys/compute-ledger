@@ -17,6 +17,7 @@ Nothing is estimated. A fuel figure is thermal energy, not electricity generated
 """
 import argparse
 import csv
+import datetime as dt
 import json
 import re
 from pathlib import Path
@@ -42,7 +43,6 @@ LICENCE_SITE = {
     "P1187-01": ("irl-microsoft-grange-castle-dub14-15-p1187", 342.8),
     "P1168-01": ("irl-equinix-db5-blanchardstown-p1168", 167.8),
 }
-PART_YEAR = {("P1181-01", "2024"): "AER covers 8 Aug to 31 Dec 2024 (part year); average MW uses 146 days"}
 
 
 def num(s):
@@ -69,9 +69,15 @@ def build_ireland():
         gas = num(r["natural_gas_gj"]) or 0.0
         water = num(r["water_m3"])
         hours = 8760 if yr != "2024" else 8784
-        note = PART_YEAR.get((lic, yr), "")
-        if note:
-            hours = 146 * 24
+        note = ""
+        if r.get("period_start"):  # part-year report: the AER states the date of grant
+            start = dt.date.fromisoformat(r["period_start"])
+            days = (dt.date(int(yr), 12, 31) - start).days + 1
+            hours = days * 24
+            note = f"covers {start.day} {start.strftime('%b')} to 31 Dec {yr} (part year); average MW uses {days} days"
+        if r.get("average_load_note"):  # period unclear or not comparable: no average load
+            hours = None
+            note = (f"covers {start.day} {start.strftime('%b')} to 31 Dec {yr} (part year); " if r.get("period_start") else "") + r["average_load_note"]
         el_mwh = round(el_gj / 3.6, 1) if el_gj is not None else None
         gen_fuel_gj = lfo + hvo + gas
         out.append({
@@ -81,7 +87,8 @@ def build_ireland():
             "report_year": yr,
             "electricity_gj": el_gj,
             "electricity_mwh": el_mwh,
-            "average_load_mw": round(el_mwh / hours, 2) if el_mwh is not None else None,
+            "average_load_mw": round(el_mwh / hours, 2) if el_mwh is not None and hours else None,
+            "period_start": r.get("period_start") or ("not stated" if r.get("average_load_note") else f"{yr}-01-01"),
             "water_m3": water,
             "generator_fuel_light_fuel_oil_gj": lfo,
             "generator_fuel_hvo_gj": hvo,
@@ -116,6 +123,34 @@ def build_ireland():
             "water_m3": round(sum(o["water_m3"] or 0 for o in sel)),
             "generator_fuel_gj": round(sum(o["generator_fuel_total_gj"] for o in sel)),
             "natural_gas_gj": round(sum(o["natural_gas_gj"] for o in sel)),
+        }
+    # 2023: part year (licences granted June-July 2023), so totals are not comparable with a full year and no CSO share is given
+    sel = [o for o in out if o["report_year"] == "2023" and o["electricity_mwh"] is not None]
+    if sel:
+        amz = [o for o in sel if o["operator"].startswith("Amazon")]
+        summ["2023_part_year"] = {
+            "note": "Part year: the eight Amazon reports cover the month of licence grant (June or July 2023) to 31 December; Microsoft DUB14/15's covers July to "
+                    "December and includes construction; Equinix DB5's does not state its period. Not comparable with a full year; no share of the CSO total.",
+            "licences": len(sel),
+            "electricity_gwh": round(sum(o["electricity_mwh"] for o in sel) / 1000, 1),
+            "amazon_licences": len(amz),
+            "amazon_electricity_gwh": round(sum(o["electricity_mwh"] for o in amz) / 1000, 1),
+            "water_m3": round(sum(o["water_m3"] or 0 for o in sel)),
+            "amazon_water_m3": round(sum(o["water_m3"] or 0 for o in amz)),
+            "generator_fuel_gj": round(sum(o["generator_fuel_total_gj"] for o in sel)),
+            "natural_gas_gj": round(sum(o["natural_gas_gj"] for o in sel)),
+        }
+    # Like for like: the licences whose 2023 report states its period (month of grant to 31 Dec), average load in each year
+    same = sorted({o["licence_no"] for o in out if o["report_year"] == "2023" and o["average_load_mw"] is not None})
+    if same:
+        by = {yr: [o for o in out if o["report_year"] == yr and o["licence_no"] in same and o["average_load_mw"] is not None]
+              for yr in ("2023", "2024", "2025")}
+        summ["average_load_same_licences"] = {
+            "licences": same,
+            "note": "Average load = metered electricity / hours in the period the report covers. Each 2023 report's Table 3 covers the month of "
+                    "licence grant (June or July 2023) to December, so 2023 is mid-year to December only (184 to 214 days). Counted instead from "
+                    "the date of grant (13 June to 19 July), the 2023 figure would be higher; see each row's period_basis.",
+            **{yr: {"licences_reporting": len(v), "average_load_mw": round(sum(o["average_load_mw"] for o in v), 1)} for yr, v in by.items()},
         }
     return out, summ
 

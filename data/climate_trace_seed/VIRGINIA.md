@@ -30,7 +30,7 @@ va_permits_resolved.csv (final per-registration figures, confidence, basis); va_
 
 ## Addendum, 2026-10-23: what the generators emitted
 
-EPA's 2023 National Emissions Inventory lists 27 Virginia datacenter facilities with 393 tons of NOx, 21 of them matched to a registration number in this list, plus 74086 matched by address on 2026-10-24 (not in the hours file: its NOx limits are not yet transcribed); it reports emissions only, not hours or fuel. The file is `va_nei_generator_emissions.csv` and the reading is in `METERED.md`. Minimum generator hours have since been computed for the 20 confident matches from each permit's per-engine NOx limits (`sites/metered/va_generator_hours.csv`; NTT's 74120 is excluded as a weak match).
+EPA's 2023 National Emissions Inventory lists 27 Virginia datacenter facilities with 393 short tons of NOx, 21 of them matched to a registration number in this list, plus 74086 matched by address on 2026-10-24 (not in the hours file: its NOx limits are not yet transcribed); it reports emissions only, not hours or fuel. The file is `va_nei_generator_emissions.csv` and the reading is in `METERED.md`. Minimum generator hours have since been computed for the 20 confident matches from each permit's per-engine NOx limits (`sites/metered/va_generator_hours.csv`; NTT's 74120 is excluded as a weak match).
 
 
 ## Addendum, 2026-10-23: what the utilities file as actual demand

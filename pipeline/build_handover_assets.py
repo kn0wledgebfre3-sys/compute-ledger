@@ -64,7 +64,7 @@ DEFS = {
     "other7_def": "Ledger gap line: where record and claim differ",
     "other8_def": "Compute Ledger entry id with full sources",
     "other9_def": "Confidence in site identity and coordinates: high (coordinate from the regulator's document) | medium (EPA registry point, or a geocode of the permit's street address) | low",
-    "other10_def": "Licence of the source record: public_record|ODbL|CC0|operator_site",
+    "other10_def": "Licence of the source record: public_record | ledger (computed by the ledger) | CC-BY-SA-4.0 (site identity or location rests on a Wikipedia article, share-alike; to be replaced by a record) | ODbL | CC0 | operator_site",
 }
 
 # Seed-list rows that describe the same site as a permit or licence row from a later source.

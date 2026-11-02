@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Combine va_permits.csv + tx_permits.csv (+ geocoded.csv) with registry/seed_sites.json into
+"""Combine va_permits.csv + tx_permits.csv (+ geocoded.csv) with sites/seed_sites.json into
 seed_sites_v2.json (seed_sites schema, 23 keys, plus a few additive keys), then write the two
 Climate TRACE asset CSVs with the row logic of scrapers/to_climate_trace.py, and a summary.
 

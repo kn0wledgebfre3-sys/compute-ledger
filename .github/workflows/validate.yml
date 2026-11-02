@@ -69,6 +69,12 @@ jobs:
           for f in checks.csv findings.csv checks_summary.json; do
             cmp /tmp/checks/$f data/climate_trace_seed/$f || { echo "$f is stale: run python3 pipeline/build_checks.py and commit"; exit 1; }
           done
+      - name: Every table matches data/datapackage.json; entry tables and DICTIONARY.md rebuild identically
+        run: |
+          python3 -I pipeline/build_data_package.py --out /tmp/pkg
+          cmp /tmp/pkg/entries.csv data/climate_trace_seed/entries.csv || { echo "entries.csv is stale: run ./rebuild.sh and commit"; exit 1; }
+          cmp /tmp/pkg/entry_sources.csv data/climate_trace_seed/entry_sources.csv || { echo "entry_sources.csv is stale: run ./rebuild.sh and commit"; exit 1; }
+          cmp /tmp/pkg/DICTIONARY.md data/DICTIONARY.md || { echo "data/DICTIONARY.md is stale: run ./rebuild.sh and commit"; exit 1; }
       - name: Site pages rebuild identically
         run: |
           python3 -I site/build_sites.py --out /tmp/sites > /dev/null

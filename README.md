@@ -2,30 +2,69 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**202 entries · 44 countries and territories, plus EU-wide and global entries · 718 distinct linked documents · 2,984 figures in one validated table · 853 sites, one page each · 207 documented links in the chain from smelter to site · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, two years, from the regulator** (as of 2026-10-24)
+**202 entries · 44 countries and territories, plus EU-wide and global entries · 720 distinct linked documents · 3,023 figures in one validated table · 853 sites, one page each · 207 documented links in the chain from smelter to site · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, 2023 (part year) to 2025, from the regulator** (as of 2026-11-02)
 
-Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/ and the Climate TRACE brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html. The handover package is in `data/climate_trace_seed/`.
+Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/, one page per site at https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/, and a one-page brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html.
 
 The ledger is built on one rule: a company's statement is a claim, and a document from a regulator, court, grid operator, statistical office, auditor or customs authority is a record. The ledger shows both and states the gap in one line without adjectives.
+
+## Get the data
+
+Every table is a CSV with a header row, UTF-8, under CC BY 4.0 (see Licence). Start with `measurements.csv`.
+
+| File | What it holds | Rows |
+|---|---|---|
+| `data/climate_trace_seed/measurements.csv` | **Every figure**, one row each: the value as published and converted to a standard unit, its period, whether it is a record or a claim, the kind of document, the source link, and whether a second reading confirmed it. | 3,023 |
+| `data/climate_trace_seed/entries.csv` | The 202 ledger entries as a table: record, claim, the gap between them, confidence and verification. | 202 |
+| `data/climate_trace_seed/entry_sources.csv` | Every document an entry cites, with the side (record or claim) it supports. | 932 |
+| `data/climate_trace_seed/site_register.csv` | Every site with figures or links: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners, with coordinates where a record gives them. Retired ids are in `site_id_aliases.csv`. | 853 |
+| `data/climate_trace_seed/entity_register.csv` | Companies, utilities and registers that figures refer to. | 44 |
+| `data/chain/edges.csv` | Documented links in the chain from smelter to chipmaker to site and its power, fuel and water. | 207 |
+| `data/climate_trace_seed/checks.csv`, `findings.csv` | Every check run on the ledger and every finding, with what the data show now. | 21 checks, 1,474 findings |
+
+**Columns:** `data/DICTIONARY.md`, generated from the machine-readable schema `data/datapackage.json` (Frictionless Data Package). Every build checks every table against it, so the dictionary cannot drift from the data. **Controlled values** for `metric`, `unit`, `basis` and `relation`, with definitions and unit conversions: `pipeline/measurement_vocab.json`.
+
+The folder `climate_trace_seed/` is named after the first package it was built for; it holds all of the ledger's tables, including the asset files in Climate TRACE's schema (`datacenters_emissions_seed.csv`, `datacenters_ownership_seed.csv`).
+
+```python
+import pandas as pd
+base = "https://raw.githubusercontent.com/kn0wledgebfre3-sys/compute-ledger/main/data/climate_trace_seed/"
+m = pd.read_csv(base + "measurements.csv", dtype=str, keep_default_na=False)
+records = m[(m.side == "record") & (m.metric == "electricity_consumed")]
+```
+
+Replace `main` with a release tag (for example `v1.0.0`) to pin a version. Things to know before using the figures:
+
+- `side` separates records from claims; `basis` says what kind of document a figure rests on; `second_read` says whether a second reading confirmed it.
+- `value` is in the published `unit`; `value_canonical` is in one unit per dimension (MWh, MW, MWth, t, m3, m3/day, ha, h). Tons in US documents are short tons (`short_ton`), converted to tonnes (`t`).
+- `period_start` is empty where the source gives no period. Some annual reports cover part of a year; the notes say so.
+- `measurement_id` is a hash of the figure's content, so a corrected figure gets a new id. `measurement_id_aliases.csv` maps every retired id to the id that replaced it, and `CHANGELOG.md` lists what changed between releases.
+
+## How to cite
+
+Compute Ledger contributors (2026). *Compute Ledger*, version 1.0.0. https://github.com/kn0wledgebfre3-sys/compute-ledger. Data CC BY 4.0.
+
+GitHub's "Cite this repository" button reads `CITATION.cff`. To cite an exact state of the data, add the commit hash, or use a release tag; each release is listed in `CHANGELOG.md`.
 
 ## What is here
 
 | Folder | What it holds |
 |---|---|
-| `registry/` | The entries, one JSON file per region plus `sources.json` (the open-data catalogue) and `guide.json` (the guided themes on the page). This is the dataset. |
-| `sites/` | Site lists in seed form (not ledger entries): the worldwide seed list, Ireland's 40 sites from EPA records, the register backlog, the 43-row dedicated-supply column, the Texas site joins, Climate TRACE's schema notes, and `sites/metered/`, the transcriptions of the Irish annual environmental reports, the EPA emissions-inventory records and the public-utility documents, each row with its document URL. `sites/build/` holds the scripts that rebuild the seed and Ireland lists from their embedded, sourced values. |
-| `pipeline/` | The Virginia and Texas permit extraction. `run_all.sh` reads the DEQ list and every permit PDF, extracts generator inventories and geocodes (run live 2026-10-21; the DEQ site blocks scripted PDF downloads, so PDFs are fetched by browser and passed with `--pdf-dir`). The extractor was fixed on 2026-10-22 after an independent second read and now agrees with it on 178 of 182 permits (`tests/`). `tx_fetch.py` rebuilds Texas from issued authorizations; `build_handover_assets.py` writes the handover's Climate TRACE asset files from the reviewed data; `build_metered.py` writes the metered-load files (unit conversions only). CI runs all of them on fixtures. |
+| `registry/` | The entries as written, one JSON file per region or theme, plus `sources.json` (the open-data catalogue), `guide.json` (the guided themes on the page) and `standard.json`. Edit entries here; the same entries as tables are built into `data/climate_trace_seed/entries.csv`. |
+| `sites/` | Site lists in seed form (not ledger entries): the worldwide seed list, Ireland's 40 sites from EPA records, the register backlog, the 43-row dedicated-supply column, the Texas site joins, Climate TRACE's schema notes, and `sites/metered/`, the transcriptions of the Irish annual environmental reports, the EPA emissions-inventory records and the public-utility documents, each row with its document URL. `sites/build/` holds the scripts that rebuild the seed and Ireland lists from their embedded, sourced values. Figures are edited in `sites/measurements_from_registry/` (one rows file per registry file, for figures in entries), `sites/metered/`, `sites/topics/` (one folder per topic: crypto, nuclear, fabs, refiners, Singapore, fuel and water), `sites/paper/` (the reporting layer) and `sites/chain/` (the chain links). |
+| `pipeline/` | The builders for every table (`build_measurements.py`, `build_metered.py`, `build_chain.py`, `build_checks.py`, `build_data_package.py`; `./rebuild.sh` runs them in order), and the Virginia and Texas permit extraction. `run_all.sh` reads the DEQ list and every permit PDF, extracts generator inventories and geocodes (run live 2026-10-21; the DEQ site blocks scripted PDF downloads, so PDFs are fetched by browser and passed with `--pdf-dir`). The extractor was fixed on 2026-10-22 after an independent second read and now agrees with it on 178 of 182 permits (`tests/`). `tx_fetch.py` rebuilds Texas from issued authorizations; `build_handover_assets.py` writes the handover's Climate TRACE asset files from the reviewed data; `build_metered.py` writes the metered-load files (unit conversions only). CI runs all of them on fixtures. |
 | `receipts/` | Cases worked all the way down: the claim, a dated timeline of documents, the gap, the limits. Markdown for reading, JSON for the page. |
 | `scrapers/` | Scripts that pull structured public files (US grid queues, federal plant data, UK register, Climate TRACE) so numbers come from a file, not from anyone's reading. See its README. |
 | `research_notes/` | The working notes behind each region's entries, with the gaps that were found. |
 | `site/` | `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`. |
 | `docs/` | The built ledger page (`index.html`) and the brief (`brief.html`), copied there by `site/build_page.py` so GitHub Pages can serve them. Do not edit by hand. |
-| `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the metered figures from regulators and public utilities, the method, and the hostile reviews). Monthly scraper runs land in dated subfolders. |
+| `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the metered figures from regulators and public utilities, the method, and the hostile reviews). Weekly pulls land in `data/pulls/<date>/` for a person to read before anything enters the tables. `datapackage.json` and `DICTIONARY.md` describe every table. |
 | `documents/` | Browser-downloaded copies of public records whose hosts refuse automated access (the Wisconsin PSC final decisions for Oak Creek and Paris), with their original URLs. |
 | `CONTRIBUTING.md`, `JURISDICTION_TEMPLATE.md` | How a figure enters the ledger, the two-reading rule, id and correction rules; the checklist for adding a country or state. |
-| `ci_local.sh` | Runs the same checks as CI before you push. |
+| `rebuild.sh`, `ci_local.sh` | `./rebuild.sh` rebuilds every generated file and then runs `ci_local.sh`, the same checks as CI. |
 | `ROADMAP.md` | What is open in the package, the legs of the chain not yet traced (refiners, fabs, chips in motion, metered site power, the paper layer of certificates and offsets), the record each would rest on, and the three-week schedule after the Climate TRACE emails. |
 | `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths and the names of the fetch and search tools were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
+| `history/` | Files kept for the record of how the ledger was built and no longer used: the run sheet of 21 October 2026 and the withdrawn site-estimate script. |
 
 ## Entry schema
 
@@ -56,11 +95,15 @@ Confidence: **high**: the record rests on record holders' documents that were re
 
 The correct response to an entry is a newer document, not a rebuttal.
 
-1. Open a pull request that edits the entry in `registry/`. Put the document first in `record_sources`, update `record`, `gap` and `last_checked`, and say in the PR what the document shows.
-2. For a new entry, use the schema above. No entry merges without a URL to a record. Company press releases are claims, not records. Mirrors of an actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as the document.
-3. Validation runs on every PR: the registry must parse, ids must be unique, every entry needs a record URL, and the page must build.
+**Without running anything:** open a GitHub issue with the document's link and what it says (the "Suggest a correction" button on each entry does this). Corrections are applied by hand and recorded.
 
-Corrections sent from the page open a GitHub issue with the entry's id; they are reviewed into the registry by hand.
+**With Python 3.10 or later.** The builders use the standard library only; the checks also run the scrapers' and the permit pipeline's fixture tests, so install their packages once: `pip install -r scrapers/requirements.txt -r pipeline/requirements.txt`.
+
+1. Find the figure's row in `data/climate_trace_seed/measurements.csv`. Its `feed` column names the file to edit; never edit the generated tables or `docs/`.
+2. For a figure in an entry (`feed` is `registry/<file>.json`), change the entry's text in `registry/<file>.json` and the figure's row in `sites/measurements_from_registry/rows_<file>.csv`; the row's `value_as_published` must appear word for word in the entry's text. Put the document in `record_sources` (or `claim_sources`) and update `gap` and `last_checked`.
+3. Run `./rebuild.sh`. It rebuilds every generated file, including the website in `docs/`, and runs the same checks as CI (`ci_local.sh`). Commit everything it changed; a pull request with stale generated files fails CI.
+4. For a new entry, use the schema above. No entry merges without a URL to a record. Company press releases are claims, not records. Mirrors of an actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as the document.
+5. To add a country, state or topic, follow `JURISDICTION_TEMPLATE.md`. `CONTRIBUTING.md` has the two-reading rule, the id rules and how corrections are recorded.
 
 ## Running the scrapers
 
@@ -81,3 +124,5 @@ See `scrapers/README.md`. They need a machine with ordinary internet access and,
 ## Licence
 
 Data (`registry/`, `sites/`, `receipts/`, `research_notes/`, `data/`, `review/`): CC BY 4.0. Code (`scrapers/`, `pipeline/`, `site/`): MIT. Climate TRACE data used by `climate_trace_match.py` is CC BY 4.0 from the Climate TRACE coalition.
+
+One exception: 30 rows of the worldwide seed list (`other10` = `CC-BY-SA-4.0` in `data/climate_trace_seed/datacenters_emissions_seed.csv`) rest on a Wikipedia article for the site's identity or location, not on a record. Wikipedia's text is CC BY-SA 4.0, so anything reused from those articles carries share-alike. Those rows are marked and are to be replaced by records.

@@ -7,7 +7,7 @@ whose numbers trace back to a URL, not to anyone's reading of a report.
 Source formats were inspected on **2026-10-20** from a build environment that could not reach the
 publishers' hosts. The proxy refused ERCOT, PJM, EIA, MISO, SPP, NYISO and NESO, so formats
 were read with web search and page fetches and checked against the open-source `gridstatus` parsers.
-**No script has yet been run against a live source.** See [Test status](#test-status).
+**The weekly pulls (`pull_nei.py`, `pull_ie_aer.py`, `pull_benchmarking.py`, `watch_pages.py`) first ran live on 2026-10-26 (`data/pulls/2026-10-26/`). The grid-queue and federal-data scripts listed below run monthly from 3 November 2026; until their first run they have been run on fixtures only.** See [Test status](#test-status).
 
 ```
 scrapers/

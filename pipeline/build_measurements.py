@@ -100,7 +100,9 @@ PP_ENTRY = {"us-utility-mlgw": "us-tn-memphis-xai-colossus-turbines", "us-federa
             "us-utility-grant-pud": "us-wa-grant-pud-datacenter-load-2025", "us-utility-svp": "us-ca-santa-clara-svp-datacenter-share-2025"}
 
 # documents re-read directly before publication (see METERED.md and the entries' verification notes)
-AER_REREAD = {("P1170-01", "2025"), ("P1171-01", "2025"), ("P1182-01", "2025"), ("P1187-01", "2025"), ("P1168-01", "2024")}
+AER_REREAD = {("P1170-01", "2025"), ("P1171-01", "2025"), ("P1182-01", "2025"), ("P1187-01", "2025"), ("P1168-01", "2024")} | \
+    {(lic, "2023") for lic in ("P1170-01", "P1171-01", "P1172-01", "P1173-01", "P1177-01", "P1182-01", "P1184-01", "P1186-01",
+                               "P1187-01", "P1168-01")}  # 2023 reports: script text extraction, then read from the rendered pages
 NEI_NAICS_REREAD = {"21510611", "15410111", "21519111", "17626111", "21496611", "21506611", "21508611", "21518611", "21518811",
                     "21519211", "21504811", "21519011", "21504711", "21504611", "21504911", "6744011", "21519611", "21518711",
                     "21512611", "21518911", "21496711", "21512711", "21519511"}
@@ -331,8 +333,8 @@ def feed_aer(T: Table):
         lic, yr = r["licence_no"], r["report_year"]
         site = LICENCE_SITE[lic][0]
         ps, pe = year_period(yr)
-        if (lic, yr) == ("P1181-01", "2024"):
-            ps = "2024-08-08"
+        ps = r.get("period_start") or ps  # part-year reports state the date of grant
+        note = r["notes"] + (f" Period: {r['period_basis']}." if r.get("period_basis") else "")
         common = dict(feed="sites/metered/ireland_aer_transcribed.csv", subject_type="site", subject_id=site, entry_id=FEED_ENTRY["aer"],
                       period_start=ps, period_end=pe, basis="metered", source_url=r["document_url"],
                       source_title=r["document_title_and_date"], source_publisher="Environmental Protection Agency (Ireland), LEAP",
@@ -344,11 +346,11 @@ def feed_aer(T: Table):
             vap = first_number(r[col])
             if vap:
                 T.add(metric=metric, metric_detail=detail, value=num(vap), unit="GJ", value_as_published=vap,
-                      notes=r["notes"], published_text=r[col], **common)
+                      notes=note, published_text=r[col], **common)
         vap = first_number(r["water_m3"])
         if vap:
             T.add(metric="water_withdrawn", metric_detail="total water used, all sources, AER Table 5 'Water Used'", value=num(vap),
-                  unit="m3", value_as_published=vap, notes=r["notes"], published_text=r["water_m3"], **common)
+                  unit="m3", value_as_published=vap, notes=note, published_text=r["water_m3"], **common)
 
 
 def feed_aer_emissions(T: Table):
@@ -366,8 +368,7 @@ def feed_aer_emissions(T: Table):
         lic, yr = r["licence_no"], r["report_year"]
         site = LICENCE_SITE[lic][0]
         ps, pe = year_period(yr)
-        if (lic, yr) == ("P1181-01", "2024"):
-            ps = "2024-08-08"
+        ps = r.get("period_start") or ps
         base = dict(feed="sites/metered/ireland_emission_factors.csv", subject_type="site", subject_id=site, entry_id=FEED_ENTRY["aer"],
                     period_start=ps, period_end=pe, basis="derived", source_url=r["document_url"],
                     source_title=r["document_title_and_date"] + "; with SEAI factors",
@@ -384,8 +385,8 @@ def feed_aer_emissions(T: Table):
                   notes=f"Factor: {ef['source_url']} ({ef['notes']})", **base)
         oil = first_number(r["light_fuel_oil_gj"])
         gas = first_number(r["natural_gas_gj"])
-        if not (oil or gas):
-            continue
+        if not (oil or gas) or f"ie-gasoil-{yr}" not in F:
+            continue  # no fuel burned, or the year's factors are not in ireland_emission_factors.csv (2023)
         go, gf, g2n = F[f"ie-gasoil-{yr}"], F[f"ie-gas-{yr}"], F[f"ie-gas-g2n-{yr}"]
         t_oil = num(oil) * float(go["value"]) / 1000 if oil else 0.0
         hi = t_oil + (num(gas) * float(gf["value"]) / 1000 if gas else 0.0)

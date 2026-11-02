@@ -21,6 +21,42 @@
    "water_m3": 427205,
    "generator_fuel_gj": 46028,
    "natural_gas_gj": 10322
+  },
+  "2023_part_year": {
+   "note": "Part year: the eight Amazon reports cover the month of licence grant (June or July 2023) to 31 December; Microsoft DUB14/15's covers July to December and includes construction; Equinix DB5's does not state its period. Not comparable with a full year; no share of the CSO total.",
+   "licences": 10,
+   "electricity_gwh": 1881.1,
+   "amazon_licences": 8,
+   "amazon_electricity_gwh": 1837.8,
+   "water_m3": 119123,
+   "amazon_water_m3": 55936,
+   "generator_fuel_gj": 26200,
+   "natural_gas_gj": 973
+  },
+  "average_load_same_licences": {
+   "licences": [
+    "P1170-01",
+    "P1171-01",
+    "P1172-01",
+    "P1173-01",
+    "P1177-01",
+    "P1182-01",
+    "P1184-01",
+    "P1186-01"
+   ],
+   "note": "Average load = metered electricity / hours in the period the report covers. Each 2023 report's Table 3 covers the month of licence grant (June or July 2023) to December, so 2023 is mid-year to December only (184 to 214 days). Counted instead from the date of grant (13 June to 19 July), the 2023 figure would be higher; see each row's period_basis.",
+   "2023": {
+    "licences_reporting": 8,
+    "average_load_mw": 370.6
+   },
+   "2024": {
+    "licences_reporting": 8,
+    "average_load_mw": 377.6
+   },
+   "2025": {
+    "licences_reporting": 8,
+    "average_load_mw": 412.0
+   }
   }
  },
  "virginia_nei": {

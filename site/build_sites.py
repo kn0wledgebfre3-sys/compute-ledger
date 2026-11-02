@@ -148,7 +148,7 @@ HEAD = ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="
 FOOT = ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
         'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap here means the ledger has not '
         'found or read a public record yet, not that none exists or that anything is wrong.</p>'
-        f'<p>Data CC BY 4.0. <a href="{REPO_URL}">Repository</a> · <a href="{REPO_URL}/issues">Report an error or a missing record</a> · '
+        f'<p>Data CC BY 4.0. <a href="{REPO_URL}#get-the-data">Download the data (CSV)</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · <a href="{REPO_URL}/issues">Report an error or a missing record</a> · '
         '<a href="../index.html">The ledger</a> · <a href="../brief.html">Brief</a></p></footer>\n</div>\n</body>\n</html>\n')
 
 CSS = """:root{

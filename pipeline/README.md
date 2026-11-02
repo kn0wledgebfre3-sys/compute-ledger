@@ -37,7 +37,7 @@ Smoke test first: `./run_all.sh --limit 10` (the extra args go to the Virginia s
 | 1 | `va_deq_permits.py` | DEQ list page, DEQ permit PDFs | `va_permits.csv` (one row per registration, 51 columns), `va_generator_rows.csv` (every equipment row counted, with the read it came from, for audit), `va_pdfs/`, `va_text/` (`<reg>.txt` text layer + `<reg>.tables.json` ruled tables), `va_permits_summary.json` |
 | 2 | `tx_permits.py` | TCEQ Title V + NSR pending-application index pages, TCEQ application PDFs | `tx_permits.csv` (one row per Comptroller registration), `tx_unmatched_tceq_packages.csv` (data-center TCEQ packages with no Comptroller row), `tx_index_rows.csv`, `tx_pdfs/`, `tx_text/`, `tx_permits_summary.json` |
 | 3 | `geocode.py` | Nominatim, US Census Geocoder | `geocoded.csv`, `geocode_cache.json`, `geocode_summary.json` |
-| 4 | `merge_to_handover.py` | `registry/seed_sites.json`, `scrapers/to_climate_trace.py` (column lists; embedded fallback) | `seed_sites_v2.json` + `.csv`, `climate_trace/datacenters_emissions_seed.csv` (44 cols), `climate_trace/datacenters_ownership_seed.csv` (19 cols), `handover_summary.json` |
+| 4 | `merge_to_handover.py` | `sites/seed_sites.json`, `scrapers/to_climate_trace.py` (column lists; embedded fallback) | `seed_sites_v2.json` + `.csv`, `climate_trace/datacenters_emissions_seed.csv` (44 cols), `climate_trace/datacenters_ownership_seed.csv` (19 cols), `handover_summary.json` |
 | 5 | `validate_outputs.py` | the above | exit 1 on any invalid file |
 
 Shared code: `permit_text.py` (PDF->text, all regexes, confidence rules; its docstring records the
@@ -95,7 +95,7 @@ Every extracted field has a confidence column (`high|medium|low|none`) and nothi
    rate-limited, needs the PDF to be indexed; each hit is verified by the registration number printed
    in the PDF; `--no-search` disables it), (c) `--pdf-dir DIR` with hand-downloaded PDFs named
    `<registration>*.pdf`, (d) `--enumerate 25690-26130` which tries the tick-less document URL for
-   the whole September-2024 upload batch; that URL form could not be tested tonight.
+   the whole September-2024 upload batch; that URL form could not be tested when this was written (2026-10-21).
 2. **The list page is server-rendered HTML (assumed).** If it became a JavaScript widget the parser
    raises `SchemaChangedError` naming the tables it did see; use `--html-file`.
 3. **PDF layout variants.** Built against 8 real DEQ permits (2006-2024: "Reference No." vs "Ref.
@@ -160,7 +160,7 @@ and area name in the PDF are the same site as the Comptroller registration (owne
 Also read `out/handover_summary.json`: sites, with coordinates, with generator MW, by state,
 by coordinate method, and how many rows are `needs_review`.
 
-## Fixture run (passes tonight)
+## Fixture run
 
 `./run_all.sh --fixture` runs every step on `fixtures/` and validates all 14 output files
 (`out_fixture/`). It is byte-deterministic (`retrieved_at` is null in fixture mode). What it proves:
@@ -196,7 +196,7 @@ pipeline/
     tx_known_documents.csv       7 real TCEQ application URLs with Comptroller match regexes
     tx_applications/<id>.txt     4 real TCEQ package texts (incl. one garbled)
     geocode_responses.json       SYNTHETIC geocoder replies
-    seed_sites.json              copy of registry/seed_sites.json (v1, 56 rows)
+    seed_sites.json              copy of sites/seed_sites.json (v1, 56 rows)
   out_fixture/                   result of ./run_all.sh --fixture
 ```
 

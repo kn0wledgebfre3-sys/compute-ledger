@@ -1,5 +1,5 @@
 {
- "_about": "Controlled vocabulary for data/measurements.csv. Every row's metric must be a key of 'metrics'; every unit_as_published must be a key of 'units'. A unit converts to its dimension's canonical unit by the stated factor; units with factor null are kept as published and value_canonical is left empty. Edit this file to add a metric or unit; CI rejects anything not listed.",
+ "_about": "Controlled vocabulary for data/climate_trace_seed/measurements.csv. Every row's metric must be a key of 'metrics'; every unit must be a key of 'units'. A unit converts to its dimension's canonical unit by the stated factor; units with factor null are kept as published and value_canonical is left empty. Edit this file to add a metric or unit; CI rejects anything not listed.",
  "dimensions": {
   "energy": "MWh",
   "power": "MW",

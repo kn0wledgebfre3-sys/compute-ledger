@@ -1,6 +1,6 @@
 # Adding a jurisdiction
 
-How Virginia, Texas and Ireland were built, written as the checklist for the next one (Singapore, Johor and Amsterdam are next). A jurisdiction counts as covered when it has the first four parts; the fifth makes it comparable.
+How Virginia, Texas, Ireland and Singapore were built, written as the checklist for the next one (Johor and Amsterdam are next). A jurisdiction counts as covered when it has the first four parts; the fifth makes it comparable.
 
 ## 1. A site list from a register, not from press
 
@@ -26,9 +26,17 @@ Which plant serves each site, from a document (`sites/dedicated_supply.csv`), an
 
 ## Files to add
 
+**The quick route, for a country, state or topic read by hand: a topic folder.** Singapore, crypto mining, nuclear, fabs and refiners were all added this way, with no code. Create `sites/topics/<name>/` with up to three files; `./rebuild.sh` picks the folder up, adds its sites to the site register and its figures to `measurements.csv`, and gives each site a page.
+
+- `README.md`: what the folder covers, which records it rests on, and what is missing.
+- `sites.csv` (optional; only if the topic has sites not already in the register). Columns, in this order: `site_id,site_name,operator,kind,country,state_or_region,locality,lat,lon,capacity_mw,capacity_basis,source_url,notes`. `site_id` is lowercase, hyphenated, starting with the ISO3 country code (`sgp-...`, `usa-...`) and must not already be in `data/climate_trace_seed/site_register.csv`; `kind` is one of the kinds listed in `data/DICTIONARY.md`; `country` is the ISO3 code; `lat`/`lon` only where a document gives the location.
+- `figures.csv`. Columns, in this order: `entry_id,subject_name,metric,metric_detail,value,unit,value_as_published,period_start,period_end,basis,document_title,document_url,publisher,document_date,quoted_line,notes,subject_site_id,second_read`. `entry_id` is the ledger entry the figure belongs to (add the entry to `registry/` first); `metric`, `unit` and `basis` come from `pipeline/measurement_vocab.json`; `quoted_line` is the line or cell of the document, copied exactly, and `value_as_published` must appear in it; `subject_site_id` is the site the figure is about (blank for a figure about the entry as a whole); `second_read` is `yes` only after a second reading against the document. A figure with basis `company_statement` becomes a claim.
+
+**The full route, for a register large enough to need a script:**
+
 - Site list builder in `sites/build/` or a pipeline script in `pipeline/`, with a `--fixture` mode and a fixture; CI runs it and compares its output.
 - Transcriptions in `sites/metered/` for regulator figures read by hand, with document URL and page on every row.
 - Ledger entries in `registry/<region>.json` for what a reader should see: one per finding, record and claim separated, sources listed, `verification_status` set.
 - A note `data/climate_trace_seed/<JURISDICTION>.md` written like `VIRGINIA.md` and `TEXAS.md`: what was read, what was found, what is missing and why.
 - If a source has an API or a page worth watching, a config entry in `scrapers/config/` so the weekly pulls cover it.
-- Rebuild: `python3 pipeline/build_handover_assets.py`, `python3 pipeline/build_measurements.py`, `python3 site/build_page.py`; `python3 pipeline/validate_measurements.py` must print 0 problems.
+- Rebuild with `./rebuild.sh`: it rebuilds every table and page and runs the same checks as CI, which must end with `all checks passed`. A new script also needs a line in `rebuild.sh`, `ci_local.sh` and `.github/workflows/validate.yml`.

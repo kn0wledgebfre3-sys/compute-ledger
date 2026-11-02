@@ -1,6 +1,6 @@
 # Irish EPA Annual Environmental Reports (AERs) for licensed datacentres - notes
 
-Date of work: 2026-10-23. Companion file: `ireland_aer_metered.csv` (22 site-years, 11 licences, reporting years 2025 and 2024).
+Date of work: 2026-10-23. Companion file: `ireland_aer_metered.csv` (32 site-years, 11 licences, reporting years 2023 (part year), 2024 and 2025; the 2023 reports were added on 2026-11-02, see the last section).
 
 ## Headline answers
 
@@ -52,7 +52,7 @@ Licence GUIDs found: P1170-01 7c16b775-a4ce-4414-bd47-4a08b151fb0e; P1171-01 1e8
 
 Amazon: P1170 (Grange Castle South A-C), P1184 (Grange Castle South, CyrusOne plot), P1173 (Airton Road), P1177 (Greenhills Road), P1172 (Blanchardstown/Snugborough), P1182 (Cruiserath), P1171 (Clonshaugh campus), P1186 (Clonshaugh W/X/Y), P1181 (Drogheda). Microsoft: P1187 (DUB14/15). Equinix: P1168 (DB5 with gas-turbine plant).
 
-AERs for 2023 also exist for all of these except P1181 (licensed Aug 2024) and have not been read yet; the 2024 AERs state the 2023 reports covered only part-years because the licences were granted mid-2023.
+AERs for 2023 exist for all of these except P1181 (licensed Aug 2024); they were read on 2026-11-02 (last section). The 2024 AERs state the 2023 reports covered only part-years because the licences were granted mid-2023.
 
 ## Sites NOT reached and why
 
@@ -60,8 +60,8 @@ AERs for 2023 also exist for all of these except P1181 (licensed Aug 2024) and h
 - P1222-01 (Amazon Leixlip KIC B1): LEAP status "Compliance Failure/Rejected", no licence in force, no AER. Not queried further.
 - P1203-01 (Vantage DUB11/12): application only; not queried yet.
 - P1238-01 (Amazon, new application LA020122, status Assessment) appeared in the LEAP profile search; not in the input list.
-- Second copy of the P1181 2024 AER (https://leap.epa.ie/docs/c1c93c77-e1f3-422f-b51a-7ee363bf6704.pdf) not read; the copy read (dacb2948-...) was found misfiled in the P1170-01 document list.
-- Microsoft "P1187-01 DUB14-15 AAQMR 2024 V2.pdf" and "AAQMR 2025.pdf" (ambient air quality monitoring reports, classified as AER in LEAP) not read.
+- Second copy of the P1181 2024 AER (https://leap.epa.ie/docs/c1c93c77-e1f3-422f-b51a-7ee363bf6704.pdf): read on 2026-11-02, figures identical to the copy read first (dacb2948-..., found misfiled in the P1170-01 document list); its pages are numbered one lower.
+- Microsoft "P1187-01 DUB14-15 AAQMR 2024 V2.pdf" and "AAQMR 2025.pdf" (ambient air quality monitoring reports, classified as AER in LEAP): read on 2026-11-02, see the last section; not in the tables.
 
 URLs that failed: https://leap.epa.ie/ (empty JS shell); https://epawebapp.epa.ie/licences/ (client error); https://epawebapp.epa.ie/terminalfour/ippc/ippc-view.jsp?regno=P1170-01 (client error); https://data.epa.ie/leap/swagger (JS shell; use /swagger/v1/swagger.json). Search engines did not index the AER PDFs by licence number; the first search hit (https://leap.epa.ie/docs/ed401de3-77ab-4c57-b529-26281184578e.pdf) was an SSE power station AER, not a datacentre.
 
@@ -69,7 +69,7 @@ URLs that failed: https://leap.epa.ie/ (empty JS shell); https://epawebapp.epa.i
 
 1. **Units.** Electricity is GJ, not MWh. All AERs, all years. Nothing in the documents gives kWh.
 2. **Scope = licensed installation, not operator campus.** Amazon's Clonshaugh campus is two licences (P1171 and P1186) at adjacent addresses (D17 V088 and D17 V3303); Grange Castle South is two licences (P1170 and P1184). Microsoft P1187 covers DUB14/DUB15 and the "CAB building" only, not the DB3-5 or DUB06-13 blocks, which have no IE licence. Do not sum across operators' rows as if they were campuses, and do not treat one licence as the operator's Irish total.
-3. **Part years.** P1181 2024 covers 8 Aug-31 Dec 2024 only. All 2023 AERs (not read) are part-years from the mid-2023 grant dates; that is why every 2024 "% change" column reads N/A.
+3. **Part years.** The 2023 AERs (read 2026-11-02) cover the month of licence grant, June or July 2023, to December, as their Table 3 says; p.9 of each gives the exact date of grant. P1181 2024 says it covers 8 Aug-31 Dec 2024 "unless stated otherwise" while its Table 3 comment says "the energy used in 2024". This is why every 2024 "% change" column reads N/A.
 4. **Equinix DB5 (P1168) is not a grid-fed datacentre in 2024.** It ran its gas turbines as prime power Feb-Nov 2024 (510,550 GJ natural gas vs 303,804 GJ purchased electricity). Grid electricity understates its energy use for that year. In 2025 it moved to mains (584,125 GJ electricity, 5,841 GJ gas).
 5. **Equinix water.** 399,153 m3 (2025) and 103,359 m3 (2024) vs 700-21,000 m3 for Amazon sites: DB5 has evaporative cooling towers; Amazon sites use mainly air cooling with occasional evaporative use. Water figures are not comparable as a "datacentre water" benchmark without the cooling type.
 6. **Percent-change columns are unreliable.** P1172 2025 Table 3 says Total Energy Used -50.0% while Electricity is -13.7% (actual arithmetic from the 2024 AER: about -13.8%). P1171 2025 Table 5 says -86% while the comment says 84%. P1186 2025 Table 5 says -70% while the comment says 84%. Microsoft 2025 comment says HVO rose 104.05% while the table says +38.23%. Equinix uses phrases like "500% reduction" and "88000% reduction". Use the absolute values from the current and prior AERs, not the % columns.
@@ -78,3 +78,15 @@ URLs that failed: https://leap.epa.ie/ (empty JS shell); https://epawebapp.epa.i
 9. **Generator hours per unit vs fleet** does not arise because no AER reports hours at all. Licence air-monitoring for generator stacks is triggered by cumulative operating hours ("three times the permitted maximum annual operating hours"), so the operators must hold per-unit hour logs, but they are not in the AER.
 10. **LEAP document lists can be misfiled**: the P1181-01 2024 AER appears in the P1170-01 document list. Always check the licence number printed on the AER cover.
 11. The P1171-01 licence shows in LEAP as "Licensed" from 2023-06-14; the input file's note that its grant was "not confirmed" can be updated.
+
+## 2023 reports (read 2026-11-02)
+
+The weekly pull of 2026-10-26 listed 13 documents not yet in the ledger (`data/pulls/2026-10-26/ie_aer/`) and gave a first reading by text extraction. The PDFs were downloaded from LEAP in a browser and each Table 3 and Table 5 was read again from the rendered page.
+
+- Ten are the 2023 AERs (eight Amazon licences, Microsoft P1187-01, Equinix P1168-01). Every figure in the first reading agrees with the page. One figure was missing from it: P1170-01 prints its HVO in a row of its own, "Hydrotreated Vegetable Oil (HVO) 558.45 N/A", and the extraction looks only for the "Renewable Biomass" row. Each table's printed total equals the sum of its rows (P1182-01 to within 0.01 GJ: printed 880,147.62, rows 880,147.63).
+- The Amazon 2023 reports give two statements of their period. p.9: "this AER reports the environmental performance from the date of grant 14th June 2023 to the 31st December 2023 unless stated otherwise" (the dates run from 13 June, P1173-01, to 19 July, P1172-01). Table 3's comment: "Table 3 sets out the energy used at the Installation from June (month of licence grant) to December inclusive" (or July). The `period_start` column of `ireland_aer_transcribed.csv` takes the month Table 3 states, the first of June or July, because that is the statement about the energy figures; `period_basis` quotes both and gives the average load counted from the date of grant. P1181-01's 2024 report (from 8 August) uses the same column; its average is not computed because its Table 3 comment says "the energy used in 2024".
+- Microsoft P1187-01: "As of 24th July 2023, the DUB14 Datacentre Admin Block and Data Hall one (of five) went live and the licence was considered active from this date"; Table 3 covers "July (month of licence grant) to December" and "these figures relate to the construction and handover of three Data Halls at DUB14". Water: "Incoming water to the site is also currently used for construction purposes". No average load is computed.
+- Equinix P1168-01: "The scheduled site activity commenced operation on 1st June 2023"; "approximately 18% maximum capacity"; "A significant percentage (61%) of the Fuel Oil and Natural Gas burned during 2023 was associated with the commissioning of the DB6x building". Water "60763*", footnoted "*Cumulative water used as per site meters, including construction and commissioning activities on site." The period the figures cover is not stated, so no average load is computed.
+- One document (P1181-01, LEAP date 2025-04-29, `c1c93c77-...pdf`) is a second upload of the 2024 report already in the ledger; its figures are identical. Not added.
+- Two documents filed under P1187-01 on 2026-05-06 are Microsoft's ambient air quality (NO2) reports for 2024 and 2025 at DUB14/15, not AERs. They report no exceedances: the 2024 report covers September to December only ("the detected concentrations for 2024 (September to December)"), when two indicative monitors averaged 9.5 and 9.3 ug/m3; in 2025 the two reference monitors, installed in July and August 2025, read 9.4 (DUB14) and 21.2 (DUB15) ug/m3, mean 15.3, against 11.62 at the EPA's Tallaght background monitor. The 2025 report lists 20 ug/m3 as the annual limit to be met by 2030. Not added to the tables yet.
+

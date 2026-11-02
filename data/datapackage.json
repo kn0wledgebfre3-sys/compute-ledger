@@ -1,0 +1,890 @@
+{
+ "name": "compute-ledger",
+ "title": "Compute Ledger: public records of the physical, social and economic footprint of AI compute",
+ "description": "Every table the ledger publishes, with its columns. Paths are relative to this file. `pipeline/build_data_package.py` checks every table against this schema on every build (CI fails on a mismatch) and writes the readable version, data/DICTIONARY.md. Controlled values for metric, unit, basis and relation are in pipeline/measurement_vocab.json.",
+ "homepage": "https://kn0wledgebfre3-sys.github.io/compute-ledger/",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0 (data); see README for the rows that cite Wikipedia"
+  }
+ ],
+ "resources": [
+  {
+   "name": "measurements",
+   "path": "climate_trace_seed/measurements.csv",
+   "description": "Every figure in the ledger, one row each: permits, metered loads, filed demand, company statements, computed values. Start here.",
+   "schema": {
+    "primaryKey": "measurement_id",
+    "fields": [
+     {
+      "name": "measurement_id",
+      "type": "string",
+      "required": true,
+      "description": "Content hash of feed, subject, metric, metric_detail, period, value_as_published, source_url, side and entry_id. It changes when any of those change (a corrected figure gets a new id); see CHANGELOG.md."
+     },
+     {
+      "name": "subject_type",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "site",
+       "entity",
+       "entry"
+      ],
+      "description": "What the figure is about: a site (site_register), an entity such as a utility (entity_register), or a ledger entry as a whole (entries)."
+     },
+     {
+      "name": "subject_id",
+      "type": "string",
+      "required": true,
+      "description": "The site_id, entity_id or entry id."
+     },
+     {
+      "name": "entry_id",
+      "type": "string",
+      "description": "The ledger entry the figure belongs to, if any."
+     },
+     {
+      "name": "metric",
+      "type": "string",
+      "required": true,
+      "vocab": "metrics",
+      "description": "What is measured, from pipeline/measurement_vocab.json (e.g. electricity_consumed, permitted_standby_generation)."
+     },
+     {
+      "name": "metric_detail",
+      "type": "string",
+      "description": "What exactly the figure counts, in words: scope, fuel, building, part of the site."
+     },
+     {
+      "name": "value",
+      "type": "number",
+      "required": true,
+      "description": "The figure in its published unit (the low end for a range)."
+     },
+     {
+      "name": "value_high",
+      "type": "number",
+      "description": "The high end of a range, if the source gives one."
+     },
+     {
+      "name": "unit",
+      "type": "string",
+      "required": true,
+      "vocab": "units",
+      "description": "The published unit, from the vocabulary (e.g. GJ, MW, short_ton, m3)."
+     },
+     {
+      "name": "value_canonical",
+      "type": "number",
+      "description": "The value converted to one unit per dimension (MWh, MW, MWth, t, m3, m3/day, ha, h). Empty where the unit has no fixed conversion."
+     },
+     {
+      "name": "value_high_canonical",
+      "type": "number",
+      "description": "value_high converted the same way."
+     },
+     {
+      "name": "canonical_unit",
+      "type": "string",
+      "description": "The unit of value_canonical."
+     },
+     {
+      "name": "value_as_published",
+      "type": "string",
+      "required": true,
+      "description": "The figure exactly as written in the text it was taken from: the document's line or cell, or for registry figures the entry's own sentence."
+     },
+     {
+      "name": "qualifier",
+      "type": "string",
+      "enum": [
+       "",
+       "approximate",
+       "lower_bound",
+       "upper_bound"
+      ],
+      "description": "Read from the words around the figure ('about', 'at least', 'up to')."
+     },
+     {
+      "name": "period_start",
+      "type": "date",
+      "description": "First day the figure covers (ISO date). Empty if the source gives no period."
+     },
+     {
+      "name": "period_end",
+      "type": "date",
+      "description": "Last day the figure covers."
+     },
+     {
+      "name": "basis",
+      "type": "string",
+      "required": true,
+      "vocab": "bases",
+      "description": "What kind of document the figure rests on (metered, permitted, filed, company_statement, press_report, derived...)."
+     },
+     {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "record",
+       "claim"
+      ],
+      "description": "record: a regulator, court, grid operator, utility, statistics office, auditor, registry or government decision. claim: what a company, applicant or government says or plans."
+     },
+     {
+      "name": "source_url",
+      "type": "string",
+      "required": true,
+      "description": "Link to the document."
+     },
+     {
+      "name": "source_title",
+      "type": "string",
+      "description": "Title of the document, with page or table where known."
+     },
+     {
+      "name": "source_publisher",
+      "type": "string",
+      "description": "Who published it."
+     },
+     {
+      "name": "source_date",
+      "type": "string",
+      "description": "Date of the document as known (ISO date, year-month or year). Empty if not known."
+     },
+     {
+      "name": "feed",
+      "type": "string",
+      "required": true,
+      "description": "The file in this repository the row was built from. To correct a figure, edit that file and run ./rebuild.sh."
+     },
+     {
+      "name": "extraction",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "registry_prose",
+       "hand_transcribed",
+       "api_query",
+       "pipeline_and_second_reading"
+      ],
+      "description": "How the figure was taken from its source."
+     },
+     {
+      "name": "second_read",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "yes",
+       "no"
+      ],
+      "description": "yes if a second reading, by a different method or person, confirmed it against the document."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "What a reader needs to know to use the figure: caveats, conversions, part years."
+     }
+    ]
+   }
+  },
+  {
+   "name": "measurement_id_aliases",
+   "path": "climate_trace_seed/measurement_id_aliases.csv",
+   "description": "Figures whose id changed because their wording or value was corrected: the retired id, the id that replaced it, when and why. A citation of a retired id resolves here.",
+   "schema": {
+    "primaryKey": "retired_measurement_id",
+    "fields": [
+     {
+      "name": "retired_measurement_id",
+      "type": "string",
+      "required": true,
+      "description": "The id no longer in measurements.csv."
+     },
+     {
+      "name": "measurement_id",
+      "type": "string",
+      "required": true,
+      "description": "The id of the corrected figure in measurements.csv."
+     },
+     {
+      "name": "date",
+      "type": "date",
+      "required": true,
+      "description": "Date of the correction."
+     },
+     {
+      "name": "reason",
+      "type": "string",
+      "required": true,
+      "description": "What was corrected."
+     }
+    ]
+   }
+  },
+  {
+   "name": "site_register",
+   "path": "climate_trace_seed/site_register.csv",
+   "description": "Every site the ledger has figures or links for: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners. One page each on the website.",
+   "schema": {
+    "primaryKey": "site_id",
+    "fields": [
+     {
+      "name": "site_id",
+      "type": "string",
+      "required": true,
+      "description": "Stable id. Retired ids are mapped in site_id_aliases.csv."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name as the register or document gives it."
+     },
+     {
+      "name": "operator",
+      "type": "string",
+      "description": "Operator or permittee, where known."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "datacenter",
+       "telecom_exchange",
+       "mixed_building_with_datacenter",
+       "crypto_mining",
+       "crypto_to_ai_conversion",
+       "nuclear_plant",
+       "fab",
+       "smelter_refiner"
+      ],
+      "description": "What the site is."
+     },
+     {
+      "name": "country",
+      "type": "string",
+      "required": true,
+      "description": "ISO 3166-1 alpha-3 code."
+     },
+     {
+      "name": "admin_region",
+      "type": "string",
+      "description": "State, province or county."
+     },
+     {
+      "name": "locality",
+      "type": "string",
+      "description": "Town or address."
+     },
+     {
+      "name": "lat",
+      "type": "number",
+      "description": "Latitude, WGS84 decimal degrees. Empty if the site is not yet placed."
+     },
+     {
+      "name": "lon",
+      "type": "number",
+      "description": "Longitude, WGS84 decimal degrees."
+     },
+     {
+      "name": "status",
+      "type": "string",
+      "description": "Usually operating, permitted, under_construction, announced or refused; Texas rows carry the TCEQ project status as text."
+     },
+     {
+      "name": "ct_source_id",
+      "type": "string",
+      "description": "Climate TRACE asset id, where the site was matched to one."
+     },
+     {
+      "name": "backlog_id",
+      "type": "string",
+      "description": "Id in the unlocated-site backlog, if the site came from it."
+     },
+     {
+      "name": "register_source",
+      "type": "string",
+      "description": "The register or document the site was taken from."
+     },
+     {
+      "name": "also_known_as",
+      "type": "string",
+      "description": "Other names and ids (registration numbers, licence numbers)."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Caveats."
+     }
+    ]
+   }
+  },
+  {
+   "name": "site_id_aliases",
+   "path": "climate_trace_seed/site_id_aliases.csv",
+   "description": "Site ids that were retired (merged duplicates) and the id that replaced each.",
+   "schema": {
+    "fields": [
+     {
+      "name": "retired_site_id",
+      "type": "string",
+      "required": true,
+      "description": "The id no longer used."
+     },
+     {
+      "name": "site_id",
+      "type": "string",
+      "required": true,
+      "description": "The id that replaced it (in site_register.csv)."
+     },
+     {
+      "name": "reason",
+      "type": "string",
+      "required": true,
+      "description": "Why it was retired."
+     }
+    ]
+   }
+  },
+  {
+   "name": "entity_register",
+   "path": "climate_trace_seed/entity_register.csv",
+   "description": "Companies, utilities and registers that figures or chain links refer to.",
+   "schema": {
+    "primaryKey": "entity_id",
+    "fields": [
+     {
+      "name": "entity_id",
+      "type": "string",
+      "required": true,
+      "description": "Stable id."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "description": "Company, municipal utility, cooperative, register..."
+     },
+     {
+      "name": "country",
+      "type": "string",
+      "description": "Country."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "Caveats."
+     }
+    ]
+   }
+  },
+  {
+   "name": "entries",
+   "path": "climate_trace_seed/entries.csv",
+   "description": "The ledger's 202 entries as a flat table, built from registry/*.json: the record, the claim and the one-line gap between them.",
+   "schema": {
+    "primaryKey": "id",
+    "fields": [
+     {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "description": "Entry id (stable)."
+     },
+     {
+      "name": "registry_file",
+      "type": "string",
+      "required": true,
+      "description": "The registry file the entry lives in; edit it there."
+     },
+     {
+      "name": "country",
+      "type": "string",
+      "required": true,
+      "description": "Country or countries, as names; 'EU' and 'Global' for entries above country level."
+     },
+     {
+      "name": "region",
+      "type": "string",
+      "description": "Region within the country."
+     },
+     {
+      "name": "site_or_subject",
+      "type": "string",
+      "required": true,
+      "description": "What the entry is about."
+     },
+     {
+      "name": "operator",
+      "type": "string",
+      "description": "Operator or responsible party."
+     },
+     {
+      "name": "lat",
+      "type": "number",
+      "description": "Latitude of the site or area (approximate for areas)."
+     },
+     {
+      "name": "lon",
+      "type": "number",
+      "description": "Longitude."
+     },
+     {
+      "name": "category",
+      "type": "string",
+      "required": true,
+      "description": "Theme of the entry.",
+      "enum": [
+       "accounting",
+       "circularity",
+       "community",
+       "ewaste",
+       "fab",
+       "fuel",
+       "grid_policy",
+       "heat_reuse",
+       "labor",
+       "land_biodiversity",
+       "minerals",
+       "moratorium",
+       "power",
+       "public_money",
+       "water"
+      ]
+     },
+     {
+      "name": "record",
+      "type": "string",
+      "required": true,
+      "description": "What the public record says, with numbers and dates."
+     },
+     {
+      "name": "claim",
+      "type": "string",
+      "required": true,
+      "description": "What the operator or government says in public, or 'none found'."
+     },
+     {
+      "name": "gap",
+      "type": "string",
+      "required": true,
+      "description": "The difference between record and claim, in one line, without adjectives."
+     },
+     {
+      "name": "confidence",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ],
+      "description": "How firmly the record rests on record holders' documents that were read."
+     },
+     {
+      "name": "verification_status",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "verified",
+       "partial",
+       "not_found"
+      ],
+      "description": "Result of the second reading of the record against its documents."
+     },
+     {
+      "name": "verification_note",
+      "type": "string",
+      "description": "What was read, when, and what was found."
+     },
+     {
+      "name": "last_checked",
+      "type": "date",
+      "required": true,
+      "description": "Date the entry was last checked."
+     },
+     {
+      "name": "receipt",
+      "type": "string",
+      "description": "Id of the worked case in receipts/, if the entry has one."
+     },
+     {
+      "name": "n_record_sources",
+      "type": "integer",
+      "required": true,
+      "description": "Number of record sources (listed in entry_sources.csv)."
+     },
+     {
+      "name": "n_claim_sources",
+      "type": "integer",
+      "required": true,
+      "description": "Number of claim sources."
+     }
+    ]
+   }
+  },
+  {
+   "name": "entry_sources",
+   "path": "climate_trace_seed/entry_sources.csv",
+   "description": "Every document an entry cites, one row each, with the side it supports.",
+   "schema": {
+    "fields": [
+     {
+      "name": "entry_id",
+      "type": "string",
+      "required": true,
+      "description": "Entry id."
+     },
+     {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "record",
+       "claim"
+      ],
+      "description": "Whether the document supports the record or the claim."
+     },
+     {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Title, with page or section where given."
+     },
+     {
+      "name": "url",
+      "type": "string",
+      "required": true,
+      "description": "Link."
+     },
+     {
+      "name": "publisher",
+      "type": "string",
+      "description": "Publisher."
+     },
+     {
+      "name": "date",
+      "type": "string",
+      "description": "Date as known."
+     },
+     {
+      "name": "date_note",
+      "type": "string",
+      "description": "Why the date is uncertain, where it is."
+     }
+    ]
+   }
+  },
+  {
+   "name": "edges",
+   "path": "chain/edges.csv",
+   "description": "Documented links in the chain from smelter to chipmaker to site and its power, fuel and water. Column guide: sites/chain/README.md.",
+   "schema": {
+    "primaryKey": "edge_id",
+    "fields": [
+     {
+      "name": "edge_id",
+      "type": "string",
+      "required": true,
+      "description": "Content hash of the row (notes and second_read excluded)."
+     },
+     {
+      "name": "leg",
+      "type": "string",
+      "required": true,
+      "description": "Which leg of the chain (refiner_to_maker, power_to_site, water_to_site...)."
+     },
+     {
+      "name": "from_type",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "site",
+       "entity",
+       "entry",
+       "named"
+      ],
+      "description": "site, entity, entry, or named (a party not yet in a register)."
+     },
+     {
+      "name": "from_id",
+      "type": "string",
+      "description": "Id of the supplying party."
+     },
+     {
+      "name": "from_name",
+      "type": "string",
+      "required": true,
+      "description": "Its name as the document gives it."
+     },
+     {
+      "name": "relation",
+      "type": "string",
+      "required": true,
+      "vocab": "relations",
+      "description": "From the vocabulary: refines_for, supplies_power_to, supplies_water_to..."
+     },
+     {
+      "name": "to_type",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "site",
+       "entity",
+       "entry",
+       "named"
+      ],
+      "description": "As from_type."
+     },
+     {
+      "name": "to_id",
+      "type": "string",
+      "description": "Id of the receiving party."
+     },
+     {
+      "name": "to_name",
+      "type": "string",
+      "required": true,
+      "description": "Its name as the document gives it."
+     },
+     {
+      "name": "period_start",
+      "type": "date",
+      "description": "When the link held, if the document says."
+     },
+     {
+      "name": "period_end",
+      "type": "date",
+      "description": "End of that period."
+     },
+     {
+      "name": "basis",
+      "type": "string",
+      "required": true,
+      "vocab": "bases",
+      "description": "Kind of document; company_statement makes the edge a claim."
+     },
+     {
+      "name": "side",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "record",
+       "claim"
+      ],
+      "description": "record or claim."
+     },
+     {
+      "name": "document_title",
+      "type": "string",
+      "required": true,
+      "description": "Document that states the link."
+     },
+     {
+      "name": "document_url",
+      "type": "string",
+      "required": true,
+      "description": "Link."
+     },
+     {
+      "name": "publisher",
+      "type": "string",
+      "description": "Publisher."
+     },
+     {
+      "name": "document_date",
+      "type": "string",
+      "description": "Date of the document."
+     },
+     {
+      "name": "quoted_line",
+      "type": "string",
+      "description": "The phrase in the document that states the link, copied exactly."
+     },
+     {
+      "name": "entry_id",
+      "type": "string",
+      "description": "The ledger entry that discusses it."
+     },
+     {
+      "name": "notes",
+      "type": "string",
+      "description": "What the reader needs to know."
+     },
+     {
+      "name": "second_read",
+      "type": "string",
+      "required": true,
+      "description": "yes or no, with how it was confirmed."
+     }
+    ]
+   }
+  },
+  {
+   "name": "checks",
+   "path": "climate_trace_seed/checks.csv",
+   "description": "Every check run on the ledger: what was checked, how, by whom, and what it found. Built from review/CHECKS.csv and the findings files.",
+   "schema": {
+    "primaryKey": "check_id",
+    "fields": [
+     {
+      "name": "check_id",
+      "type": "string",
+      "required": true,
+      "description": "Id."
+     },
+     {
+      "name": "date",
+      "type": "date",
+      "required": true,
+      "description": "Date of the check."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Short name."
+     },
+     {
+      "name": "what_was_checked",
+      "type": "string",
+      "required": true,
+      "description": "Scope."
+     },
+     {
+      "name": "method",
+      "type": "string",
+      "required": true,
+      "description": "How."
+     },
+     {
+      "name": "checker",
+      "type": "string",
+      "required": true,
+      "description": "Who (always someone other than the person who did the work)."
+     },
+     {
+      "name": "selection",
+      "type": "string",
+      "description": "How the items were chosen (all, random sample, targeted)."
+     },
+     {
+      "name": "n_checked",
+      "type": "string",
+      "description": "How many items."
+     },
+     {
+      "name": "result",
+      "type": "string",
+      "required": true,
+      "description": "What it found."
+     },
+     {
+      "name": "findings_file",
+      "type": "string",
+      "description": "The file in review/ with the findings."
+     },
+     {
+      "name": "applied_in",
+      "type": "string",
+      "description": "Where the corrections were applied."
+     },
+     {
+      "name": "n_findings_in_table",
+      "type": "integer",
+      "description": "Findings from this check in findings.csv."
+     },
+     {
+      "name": "findings_by_severity",
+      "type": "string",
+      "description": "Counts by severity."
+     },
+     {
+      "name": "status_now",
+      "type": "string",
+      "description": "What the current data show for those findings, recomputed at every build."
+     }
+    ]
+   }
+  },
+  {
+   "name": "findings",
+   "path": "climate_trace_seed/findings.csv",
+   "description": "Every finding from every check, with what the data show now.",
+   "schema": {
+    "primaryKey": "finding_id",
+    "fields": [
+     {
+      "name": "finding_id",
+      "type": "string",
+      "required": true,
+      "description": "Id."
+     },
+     {
+      "name": "check_id",
+      "type": "string",
+      "required": true,
+      "description": "The check (checks.csv)."
+     },
+     {
+      "name": "date",
+      "type": "date",
+      "required": true,
+      "description": "Date of the check."
+     },
+     {
+      "name": "subject_type",
+      "type": "string",
+      "description": "figure, link, entry, text or other."
+     },
+     {
+      "name": "subject_id",
+      "type": "string",
+      "description": "What it concerns."
+     },
+     {
+      "name": "entry_id",
+      "type": "string",
+      "description": "Entry, if any."
+     },
+     {
+      "name": "location",
+      "type": "string",
+      "description": "Where in the file or entry."
+     },
+     {
+      "name": "quoted",
+      "type": "string",
+      "description": "The text or value as it stood when checked."
+     },
+     {
+      "name": "finding",
+      "type": "string",
+      "description": "What the checker found."
+     },
+     {
+      "name": "severity",
+      "type": "string",
+      "description": "As the checker gave it."
+     },
+     {
+      "name": "status_now",
+      "type": "string",
+      "description": "What the current data show, recomputed at every build."
+     }
+    ]
+   }
+  }
+ ]
+}
