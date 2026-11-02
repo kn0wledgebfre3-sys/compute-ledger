@@ -1,0 +1,35 @@
+name: Add a public record
+description: A public document the ledger has not read yet, about a site, a company, a grid or a country.
+title: "Record: "
+labels: ["new record"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Records are documents from regulators, courts, grid operators, utilities, statistics offices, auditors, registries or customs. Company and government statements are welcome too; the ledger keeps them apart, as claims.
+  - type: input
+    id: subject
+    attributes:
+      label: Site, company or place
+      placeholder: the site's name, operator and town
+    validations:
+      required: true
+  - type: input
+    id: document
+    attributes:
+      label: Link to the document
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: publisher
+    attributes:
+      label: Who published it, and when
+      placeholder: Environmental Protection Agency, 2025
+  - type: textarea
+    id: shows
+    attributes:
+      label: What it shows
+      description: The figures, with units and the period they cover, and the page or table where each one is.
+    validations:
+      required: true

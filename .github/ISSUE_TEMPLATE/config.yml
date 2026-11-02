@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to change the data yourself
+    url: https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/CONTRIBUTING.md
+    about: The files to edit, the checks a change must pass, and how a correction is reviewed.

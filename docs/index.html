@@ -210,7 +210,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     </div>
   </div>
   <p class="lede">What permits, grid filings, court records, statistical offices, budgets and trade data say about where AI compute draws its power, burns its fuel, takes its water, uses its land, spends public money, employs people, and sends its hardware. Each entry lays the public record beside what the operator or government says in public, links every figure to the document it came from, and marks figures confirmed only through press reports of the document. The theme introductions and the standard are the ledger's own summaries of those entries. Good cases are entries too.</p>
-  <p class="mono" style="margin-top:10px"><a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/">Every site, one page each</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html">Brief</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Download the data (CSV)</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a></p>
+  <p class="mono" style="margin-top:10px"><a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html">Explore every figure</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html">Map of sites</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/">Every site, one page each</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html">Brief</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#get-the-data">Get the data (Excel, CSV, JSON)</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a></p>
 </header>
 
 <section class="guide" id="guide">
@@ -396,7 +396,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
   function openForm(id){
     const box=document.getElementById('cf-'+id); if(!box) return;
     if(!box.hidden){box.hidden=true;return;}
-    const gh='https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new?title='+encodeURIComponent('Correction: '+id)+'&body='+encodeURIComponent('Entry: '+id+'\nWhat is wrong (record, claim, gap line, source link, or a newer document):\nDocument URL:\nWhat the document says (figures and dates, no adjectives):\n');
+    const gh='https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new?template=correction.yml&title='+encodeURIComponent('Correction: '+id)+'&figure='+encodeURIComponent(id);
     box.innerHTML=`<div class="msg">Send the correction as a public GitHub issue, with the document's URL: <a href="${gh}" target="_blank" rel="noopener">open a correction for this entry</a>. Corrections are reviewed into the registry by hand.</div>`;
     box.hidden=false;
   }

@@ -98,6 +98,9 @@ LABEL = {
     "emissions_scope2_location": "Scope 2 emissions, location-based", "emissions_scope2_market": "Scope 2 emissions, market-based",
     "share_other": "Share", "duration_other": "Duration", "count_other": "Count", "site_count": "Sites", "land_area": "Land area",
     "spent_fuel_stored": "Spent fuel stored", "public_money": "Public money", "other": "Other figure",
+    "pue": "PUE (power usage effectiveness)", "cfe_share": "Carbon-free energy share", "production_mineral": "Mineral production",
+    "emissions_scope3": "Scope 3 emissions", "electricity_by_sourcing_method": "Electricity by how it was sourced",
+    "emissions_hap": "Hazardous air pollutants emitted",
 }
 
 
@@ -145,11 +148,19 @@ HEAD = ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="
         '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
         '<link rel="stylesheet" href="site.css">\n<body>\n<div class="wrap">\n')
+def nav_links(prefix: str = "../") -> str:
+    """The links every page carries at the top right: the same set on the ledger's own pages."""
+    return ('<span class="links">' + "".join(f'<a href="{prefix}{h}">{t}</a>' for h, t in (
+        ("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("brief.html", "Brief"),
+        ("explore.html#get-the-data", "Get the data"))) + "</span>")
+
+
 FOOT = ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
         'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap here means the ledger has not '
         'found or read a public record yet, not that none exists or that anything is wrong.</p>'
-        f'<p>Data CC BY 4.0. <a href="{REPO_URL}#get-the-data">Download the data (CSV)</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · <a href="{REPO_URL}/issues">Report an error or a missing record</a> · '
-        '<a href="../index.html">The ledger</a> · <a href="../brief.html">Brief</a></p></footer>\n</div>\n</body>\n</html>\n')
+        f'<p>Data CC BY 4.0. <a href="../explore.html#get-the-data">Get the data</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · '
+        f'<a href="{REPO_URL}/issues/new/choose">Report an error or a missing record</a> · '
+        '<a href="../index.html">The ledger</a> · <a href="../explore.html">Explore every figure</a> · <a href="../map.html">Map</a></p></footer>\n</div>\n</body>\n</html>\n')
 
 CSS = """:root{
   --paper:#F4F6F3; --paper-2:#E9EDE8; --ink:#17211E; --ink-2:#4B5955; --rule:#C9D1CC; --accent:#1C6B5F;
@@ -167,7 +178,9 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);f
 a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
 a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .wrap{max-width:1100px;margin:0 auto}
-nav.top{font-family:var(--mono);font-size:13px;padding:20px 0;border-bottom:1px solid var(--rule)}
+nav.top{font-family:var(--mono);font-size:13px;padding:20px 0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px}
+nav.top .links{display:flex;flex-wrap:wrap;gap:4px 16px}
+nav.top .links a[aria-current]{color:var(--ink);text-decoration:none;font-weight:500}
 h1,h2{font-family:var(--display);font-stretch:85%;line-height:1.1;text-wrap:balance;margin:0}
 h1{font-size:clamp(30px,5vw,52px);font-weight:800;letter-spacing:-0.015em;margin:28px 0 8px}
 h2{font-size:clamp(21px,2.6vw,27px);font-weight:700;margin:44px 0 6px;padding-left:12px;border-left:4px solid var(--bar,var(--rule))}
@@ -289,9 +302,13 @@ def main():
         if s["notes"]:
             facts.append(("Notes", e(s["notes"])))
 
-        body = [f'<nav class="top"><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></nav>',
+        n_fig = len(rows)
+        tools = ([f'<a href="../explore.html?subject={e(sid)}">Its {n_fig} figure{"s" if n_fig != 1 else ""} in Explore</a> (filter, download, cite one by one)']
+                 if n_fig else []) + ([f'<a href="../map.html?site={e(sid)}">On the map</a>'] if s["lat"] and s["lon"] else [])
+        body = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links()}</nav>',
                 f'<p class="eyebrow">{e(kind)} · {e(country)}</p><h1>{e(s["name"])}</h1>',
                 '<dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl>",
+                (f'<p class="m" style="margin-top:14px">{" · ".join(tools)}</p>' if tools else ""),
                 '<h2 class="gapc">What the public record holds</h2>',
                 '<p class="lede">The questions anyone would ask of this site, and whether the ledger has found a public record that answers them.</p>',
                 '<ul class="q">' + "".join(qs) + "</ul>"]
@@ -340,7 +357,7 @@ def main():
                    f'<td class="v">{nr or ""}</td><td class="v">{nc or ""}</td><td class="v">{ncl or ""}</td><td class="v">{ne or ""}</td>'
                    f'<td class="m">{"yes" if s["lat"] else ""}</td></tr>')
     n_rec = sum(1 for x in index_rows if x[3])
-    idx = [f'<nav class="top"><a href="../index.html">Compute Ledger</a> / Sites</nav>',
+    idx = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / Sites</span>{nav_links()}</nav>',
            f'<p class="eyebrow">{len(index_rows)} sites · {len(countries)} countries and territories</p><h1>Sites</h1>',
            f'<p>One page for every site in the ledger\'s register: datacenters, the buildings and exchanges that file as datacenters, '
            f'crypto mining sites, nuclear plants, chip fabs and the smelters and refiners in the chain. {n_rec} have at least one figure from a record. '
@@ -368,7 +385,7 @@ n.textContent=v+' of '+rows.length+' sites';}
         (a.out / f"{old}.html").write_text(
             HEAD.format(title="Moved · Compute Ledger", desc=e(f"{old} is now {r['site_id']}")).replace(
                 '<link rel="stylesheet" href="site.css">', f'<link rel="stylesheet" href="site.css">\n<meta http-equiv="refresh" content="0; url={new}.html">\n<link rel="canonical" href="{new}.html">')
-            + f'<nav class="top"><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></nav>\n'
+            + f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links()}</nav>\n'
             f'<h1>This site has one page</h1><p>The id <code>{e(old)}</code> was retired: {e(r["reason"])}. '
             f'Its records are on <a href="{new}.html">{new}</a>.</p>\n' + FOOT, encoding="utf-8")
     stale = sorted(p.name for p in a.out.glob("*.html") if p.stem not in ids and p.stem not in aliases and p.name != "index.html")

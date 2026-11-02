@@ -1,0 +1,43 @@
+name: Correct a figure or an entry
+description: A figure, a source link or a line of text in the ledger does not match its document, or a newer document changes it.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. The ledger changes when a public document shows the change, so the form asks for the document and the place in it. Write what the document says, in its own figures and dates. Anyone can read this issue.
+  - type: input
+    id: figure
+    attributes:
+      label: Figure id, entry or site
+      description: A figure's id starts with m- and is under "Cite · details" on the Explore page. For an entry or a site, give its name or the address of its page.
+      placeholder: m-263eef9478
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: What the ledger says now, and what the document says instead.
+    validations:
+      required: true
+  - type: input
+    id: document
+    attributes:
+      label: Link to the document
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: locator
+    attributes:
+      label: Page, table or section
+      placeholder: p. 12, Table 3
+    validations:
+      required: true
+  - type: textarea
+    id: quote
+    attributes:
+      label: The words or numbers as the document prints them
+      description: Copy them exactly, so the next reader can find them.

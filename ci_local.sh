@@ -30,6 +30,7 @@ python3 -I pipeline/build_data_package.py --out "$T/pkg" > /dev/null || { python
 cmp "$T/pkg/entries.csv" data/climate_trace_seed/entries.csv && cmp "$T/pkg/entry_sources.csv" data/climate_trace_seed/entry_sources.csv && cmp "$T/pkg/DICTIONARY.md" data/DICTIONARY.md
 python3 -I site/build_sites.py --out "$T/sites" > /dev/null
 diff -rq "$T/sites" docs/sites > /dev/null || { echo "docs/sites is stale: run python3 site/build_sites.py and commit"; exit 1; }
+python3 -I site/build_explore.py --check || exit 1
 v1=$(sed -n 's/^version: "\(.*\)"$/\1/p' CITATION.cff); v2=$(python3 -c 'import json;print(json.load(open(".zenodo.json"))["version"])')
 [ "$v1" = "$v2" ] || { echo "CITATION.cff version $v1 differs from .zenodo.json $v2"; exit 1; }
 if git grep -nIE '/home/[a-z]+/(repo|registry|deliver)|/tmp/[a-z]+-[0-9]+/|/root/\.[a-z]+/|/Users/[a-z]+/' -- . ':!ci_local.sh' ':!.github' > /dev/null; then echo "a local file path is in a tracked file:"; git grep -nIE '/home/[a-z]+/(repo|registry|deliver)|/tmp/[a-z]+-[0-9]+/|/root/\.[a-z]+/|/Users/[a-z]+/' -- . ':!ci_local.sh' ':!.github' | head; exit 1; fi

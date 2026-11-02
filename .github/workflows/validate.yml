@@ -79,6 +79,8 @@ jobs:
         run: |
           python3 -I site/build_sites.py --out /tmp/sites > /dev/null
           diff -rq /tmp/sites docs/sites || { echo "docs/sites is stale: run python3 site/build_sites.py and commit"; exit 1; }
+      - name: Explore page, map and downloads rebuild identically
+        run: python3 -I site/build_explore.py --check
       - name: Citation files agree on the version
         run: |
           v1=$(sed -n 's/^version: "\(.*\)"$/\1/p' CITATION.cff); v2=$(python3 -c 'import json;print(json.load(open(".zenodo.json"))["version"])')

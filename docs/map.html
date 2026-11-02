@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Map of sites · Compute Ledger</title>
+<meta name="description" content="Every site in the Compute Ledger on a map, with what public records show for each.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="sites/site.css">
+<link rel="stylesheet" href="vendor/leaflet-1.9.4/leaflet.css">
+<style>
+:root{--mk-rec:#00806A;--mk-claim:#C2491A;--mk-none:#4B5955}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--mk-rec:#1E9A84;--mk-claim:#D45A28;--mk-none:#A3B0AB} }
+:root[data-theme="dark"]{--mk-rec:#1E9A84;--mk-claim:#D45A28;--mk-none:#A3B0AB}
+#map{height:min(64vh,640px);min-height:360px;margin:12px 0 0;border:1px solid var(--rule);background:var(--paper-2)}
+.leaflet-container{font-family:var(--body);font-size:15px;background:var(--paper-2)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--paper);color:var(--ink);border-radius:2px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.leaflet-popup-content{margin:12px 14px;line-height:1.45}
+.leaflet-popup-content b{font-family:var(--display);font-size:16px}
+.leaflet-container a.leaflet-popup-close-button{color:var(--ink-2)}
+.leaflet-tooltip{background:var(--paper);color:var(--ink);border:1px solid var(--rule);font-family:var(--mono);font-size:12px;box-shadow:none}
+.leaflet-control-attribution{font-family:var(--mono);font-size:10.5px}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5)}
+  :root:not([data-theme="light"]) .leaflet-control-attribution{background:rgba(18,24,22,.8);color:var(--ink-2)} }
+:root[data-theme="dark"] .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.9) contrast(.9) saturate(.5)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 22px;font-family:var(--mono);font-size:12.5px;color:var(--ink-2);margin:10px 0 0;padding:0;list-style:none}
+.legend li{display:flex;align-items:center;gap:7px}
+.legend svg{flex:none}
+.legend b{color:var(--ink);font-weight:500}
+td.n{font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13.5px}
+button.show{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--rule);color:var(--accent);padding:4px 8px;cursor:pointer;white-space:nowrap}
+@media (max-width:760px){ table.sites th:nth-child(3),table.sites td:nth-child(3){display:none} }
+</style>
+<style>
+.getdata{font-family:var(--mono);font-size:13px;line-height:1.9;margin:14px 0 0;color:var(--ink-2)}
+.filters select{font:inherit;font-size:15px;padding:7px 9px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);flex:1 1 180px;max-width:100%}
+.filters{align-items:center}
+.chk{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:13px;color:var(--ink-2);flex:0 0 auto}
+.filters .chk input{flex:none;width:16px;height:16px;min-width:0;padding:0;margin:0;accent-color:var(--accent)}
+.bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin:16px 0 4px}
+.bar .count{font-family:var(--mono);font-size:13px;color:var(--ink-2);flex:1 1 280px}
+.bar .count b{color:var(--ink);font-weight:500}
+.btn{font-family:var(--mono);font-size:13px;line-height:1.3;padding:7px 11px;border:1px solid var(--accent);background:var(--accent);color:var(--paper);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.banner{background:var(--paper-2);border-left:4px solid var(--accent);padding:10px 14px;margin:16px 0 0;max-width:820px}
+.banner:empty{display:none}
+#status{font-family:var(--mono);font-size:13px;color:var(--ink-2);margin:14px 0}
+.kind{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:0 6px;border:1px solid currentColor;margin-bottom:2px}
+.k-record{color:var(--rec)} .k-computed{color:var(--calc)} .k-claim{color:var(--claim)}
+button.cite{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--rule);color:var(--accent);padding:5px 8px;cursor:pointer;white-space:nowrap}
+button.cite[aria-expanded="true"]{border-color:var(--accent)}
+tr.det > td{background:var(--paper-2);padding:14px 16px}
+.detail .citebox{margin:0 0 6px}
+.detail p.ct{font-size:15px;margin:4px 0 10px;max-width:none}
+.detail dl.facts{margin-top:14px}
+.more{margin:16px 0 0}
+.empty{padding:18px 0;color:var(--ink-2)}
+code{font-family:var(--mono);font-size:.9em}
+@media (max-width:760px){
+  table.fig thead{display:none}
+  table.fig tr.fr{display:block;border-top:1px solid var(--rule);padding:10px 0 12px}
+  table.fig tr.fr > td{display:block;border:0;padding:3px 0}
+  table.fig tr.fr > td[data-l]::before{content:attr(data-l);display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+  table.fig tr.det{display:block}
+  table.fig tr.det > td{display:block}
+  .filters select{flex-basis:100%}
+}
+</style>
+<body>
+<div class="wrap">
+<nav class="top"><span><a href="index.html">Compute Ledger</a> / Map</span><span class="links"><a href="explore.html">Explore figures</a><a href="map.html" aria-current="page">Map</a><a href="sites/">Sites</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav>
+<p class="eyebrow">Compute Ledger · version 1.0.0</p><h1>Map of sites</h1>
+<p class="lede">Every site the ledger holds with coordinates from a public document: datacenters, buildings that file as datacenters, crypto mining sites, chip fabs, smelters and refiners, and nuclear plants. The colour shows what the ledger has found for a site so far, not anything about the site itself. Click a site for its page and figures.</p>
+<p class="getdata" id="get-the-data">Get the data (version 1.0.0): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · <a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
+<p id="status">Loading 853 sites…</p>
+<noscript><p>This page needs JavaScript. Every site is listed on <a href="sites/">the sites page</a>.</p></noscript>
+<div id="app" hidden>
+<div class="filters" id="filters">
+<input id="q" type="search" placeholder="Search a site, operator or place" aria-label="Search the sites">
+<select id="kind" aria-label="Kind of site"><option value="">Every kind of site</option></select>
+<select id="country" aria-label="Country"><option value="">Every country</option></select>
+<select id="holds" aria-label="What the ledger has found"><option value="">Anything found or not</option><option value="rec">Records found</option><option value="claim">Claims only</option><option value="none">No figures yet</option></select>
+<label class="chk"><input type="checkbox" id="placed"> Only sites on the map</label>
+<button class="btn ghost" id="clear" type="button">Clear</button>
+</div>
+<div id="map" role="region" aria-label="Map of the sites; the same sites are listed in the table below"></div>
+<ul class="legend"><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-rec)"/></svg><span><b>Records found</b> (<span id="n-rec"></span>): at least one figure from a record</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-claim)"/></svg><span><b>Claims only</b> (<span id="n-claim"></span>): only what the company or a government says</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--paper)" stroke="var(--mk-none)" stroke-width="2"/></svg><span><b>No figures yet</b> (<span id="n-none"></span>): listed from a register, no figure read yet</span></li></ul>
+<p class="m" style="margin-top:10px">305 of 853 sites are placed from a document. The other 548 are in the list below but not on the map until a document gives their location.</p>
+<div class="bar"><span class="count" id="count" aria-live="polite"></span><button class="btn" id="dl" type="button">Download these sites (CSV)</button></div>
+<div class="tw"><table class="sites"><thead><tr><th>Site</th><th>Kind</th><th>Where</th><th>What the ledger holds</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="empty" id="empty" hidden>No site matches. Clear a filter, or search for fewer words.</p>
+<p class="more"><button class="btn ghost" id="more" type="button" hidden>Show more</button></p>
+</div>
+<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not found or read a public record yet, not that none exists or that anything is wrong.</p><p>Data CC BY 4.0. <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new/choose">Report an error or a missing record</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger">Repository</a> · <a href="index.html">The ledger</a></p></footer>
+</div>
+
+<script src="vendor/leaflet-1.9.4/leaflet.js"></script>
+
+<script>
+(()=>{'use strict';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>n.toLocaleString('en-GB');
+const PAGE=100, KEYS=['kind','country','holds'];
+const HOLD={rec:'Records found',claim:'Claims only',none:'No figures yet'};
+let D,S=[],view=[],shown=PAGE,map=null,layer=null,first=true;
+function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
+function style(s){const paper=css('--paper');
+  if(s._hold==='none')return {radius:5,weight:2,color:css('--mk-none'),fillColor:paper,fillOpacity:.85,opacity:1};
+  return {radius:s._hold==='rec'?6.5:6,weight:1.5,color:paper,fillColor:css(s._hold==='rec'?'--mk-rec':'--mk-claim'),fillOpacity:1,opacity:1};}
+function where(s){return [s.locality,s.admin_region,s._country].filter(Boolean).join(', ');}
+function counts(s){const p=[];if(s.n_record_figures)p.push(fmt(+s.n_record_figures)+' from records');if(s.n_computed_figures)p.push(fmt(+s.n_computed_figures)+' computed');
+  if(s.n_claimed_figures)p.push(fmt(+s.n_claimed_figures)+' claimed');if(s.n_chain_links)p.push(fmt(+s.n_chain_links)+' chain link'+(+s.n_chain_links===1?'':'s'));return p.join(' · ')||'No figures yet';}
+function popup(s){const id=encodeURIComponent(s.site_id);
+  return '<b>'+esc(s.name)+'</b><div class="m">'+esc(s._kind)+'</div><div>'+esc(where(s))+'</div>'+(s.operator?'<div class="m">Operator: '+esc(s.operator)+'</div>':'')
+   +'<div class="m" style="margin-top:6px">'+esc(counts(s))+'</div><div style="margin-top:8px"><a href="sites/'+id+'.html">Open the site page</a>'
+   +(s._n?' · <a href="explore.html?subject='+id+'">Its figures</a>':'')+'</div>';}
+function state(){const s={};for(const k of KEYS)s[k]=$(k).value;s.q=$('q').value.trim();s.qw=s.q.toLowerCase().split(/\s+/).filter(Boolean);s.placed=$('placed').checked;return s;}
+function match(s,st){if(st.kind&&s.kind!==st.kind)return false;if(st.country&&s.country!==st.country)return false;if(st.holds&&s._hold!==st.holds)return false;
+  if(st.placed&&!s._ll)return false;for(const w of st.qw)if(!s._text.includes(w))return false;return true;}
+function render(reset,fit){const st=state();if(reset)shown=PAGE;view=S.filter(s=>match(s,st));
+  const placed=view.filter(s=>s._ll),n={rec:0,claim:0,none:0};placed.forEach(s=>n[s._hold]++);
+  $('count').innerHTML='<b>'+fmt(view.length)+'</b> of '+fmt(S.length)+' sites · '+fmt(placed.length)+' on the map';
+  for(const k in n)$('n-'+k).textContent=fmt(n[k]);
+  if(layer){layer.clearLayers();for(const h of ['none','claim','rec'])for(const s of placed)if(s._hold===h)layer.addLayer(s._mk);
+    if(fit&&placed.length){const b=L.latLngBounds(placed.map(s=>s._ll));map.fitBounds(b.pad(0.08),{maxZoom:10,animate:!first});first=false;}}
+  $('rows').innerHTML=view.slice(0,shown).map(s=>'<tr><td><a href="sites/'+encodeURIComponent(s.site_id)+'.html">'+esc(s.name)+'</a><div class="m">'+esc(s.operator)+'</div></td>'
+    +'<td class="m">'+esc(s._kind)+'</td><td>'+esc(where(s))+'</td><td class="m">'+esc(HOLD[s._hold])+'<div>'+esc(counts(s))+'</div></td>'
+    +'<td>'+(s._ll&&map?'<button type="button" class="show" data-id="'+esc(s.site_id)+'">Show on map</button>':'<span class="m">'+(s._ll?'':'Not placed yet')+'</span>')+'</td></tr>').join('');
+  const left=view.length-shown;$('more').hidden=left<=0;if(left>0)$('more').textContent='Show '+fmt(Math.min(PAGE,left))+' more ('+fmt(left)+' not shown yet)';
+  $('empty').hidden=view.length>0;$('dl').disabled=!view.length;$('dl').textContent=view.length===1?'Download this site (CSV)':'Download these '+fmt(view.length)+' sites (CSV)';}
+function sync(){const p=new URLSearchParams(),st=state();for(const k of KEYS)if(st[k])p.set(k,st[k]);if(st.q)p.set('q',st.q);if(st.placed)p.set('placed','1');
+  const q=p.toString();history.replaceState(null,'',location.pathname+(q?'?'+q:''));}
+function csvCell(v){v=v==null?'':String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
+function download(){const C=D.columns.slice(0,D.n_register_columns),lines=[C.join(',')];for(const s of view)lines.push(C.map(c=>csvCell(s[c])).join(','));
+  const b=new Blob([lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');
+  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.version+'-sites'+(view.length<S.length?'-selected':'')+'.csv';document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},0);}
+function showSite(id){const s=S.find(x=>x.site_id===id);if(!s||!s._ll||!map)return;layer.addLayer(s._mk);map.setView(s._ll,Math.max(map.getZoom(),12));s._mk.openPopup();
+  $('map').scrollIntoView({block:'center'});}
+function opt(sel,v,t){const o=document.createElement('option');o.value=v;o.textContent=t;sel.appendChild(o);}
+function init(data){D=data;const C=D.columns;
+  S=D.rows.map(a=>{const s={};C.forEach((c,i)=>{s[c]=a[i];});s._country=D.countries[s.country]||s.country;s._kind=D.kinds[s.kind]||s.kind;
+    s._n=+s.n_record_figures+ +s.n_computed_figures+ +s.n_claimed_figures;s._hold=(+s.n_record_figures+ +s.n_computed_figures)>0?'rec':+s.n_claimed_figures>0?'claim':'none';
+    const la=parseFloat(s.lat),lo=parseFloat(s.lon);s._ll=s.lat&&s.lon&&isFinite(la)&&isFinite(lo)?[la,lo]:null;
+    s._text=[s.name,s.operator,s.site_id,s.locality,s.admin_region,s._country,s.also_known_as,s._kind].join(' ').toLowerCase();return s;});
+  S.sort((a,b)=>a.name.localeCompare(b.name));
+  Object.keys(D.kinds).forEach(k=>opt($('kind'),k,D.kinds[k]));
+  Object.keys(D.countries).sort((a,b)=>D.countries[a].localeCompare(D.countries[b])).forEach(c=>opt($('country'),c,D.countries[c]));
+  const p=new URLSearchParams(location.search);for(const k of KEYS){const v=p.get(k)||'';if([...$(k).options].some(o=>o.value===v))$(k).value=v;}
+  $('q').value=p.get('q')||'';$('placed').checked=p.get('placed')==='1';
+  if(window.L){map=L.map('map',{scrollWheelZoom:false,worldCopyJump:true,minZoom:2});map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · sites: Compute Ledger, CC BY 4.0'}).addTo(map);
+    map.setView([30,0],2);layer=L.layerGroup().addTo(map);
+    map.on('click',()=>map.scrollWheelZoom.enable());map.on('mouseout',()=>map.scrollWheelZoom.disable());
+    for(const s of S)if(s._ll){s._mk=L.circleMarker(s._ll,style(s)).bindTooltip(s.name,{direction:'top',offset:[0,-6]}).bindPopup(popup(s),{maxWidth:280,autoPanPaddingTopLeft:[52,16],autoPanPaddingBottomRight:[16,16]});}
+    const mq=matchMedia('(prefers-color-scheme: dark)');(mq.addEventListener?mq.addEventListener('change',restyle):mq.addListener(restyle));}
+  else{$('map').innerHTML='<p class="m" style="padding:16px">The map could not load. Every site is in the list below.</p>';}
+  const ch=()=>{sync();render(true,true);};
+  for(const k of KEYS)$(k).addEventListener('change',ch);$('placed').addEventListener('change',ch);
+  let tm;$('q').addEventListener('input',()=>{clearTimeout(tm);tm=setTimeout(ch,180);});
+  $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('placed').checked=false;ch();});
+  $('more').addEventListener('click',()=>{shown+=PAGE;render(false,false);});
+  $('dl').addEventListener('click',download);
+  $('rows').addEventListener('click',e=>{const b=e.target.closest('button.show');if(b)showSite(b.dataset.id);});
+  $('status').hidden=true;$('app').hidden=false;if(map)map.invalidateSize();render(true,true);
+  const site=p.get('site');if(site)showSite(site);}
+function restyle(){for(const s of S)if(s._mk)s._mk.setStyle(style(s));}
+fetch('data/sites.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(init)
+  .catch(e=>{$('status').textContent='The sites could not be loaded ('+e.message+'). They are in the Excel workbook and in sites.json, linked above.';});
+})();
+</script>
+</body>
+</html>

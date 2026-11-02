@@ -4,11 +4,13 @@ A public ledger of what records say about the physical, social and economic foot
 
 **202 entries · 44 countries and territories, plus EU-wide and global entries · 720 distinct linked documents · 3,023 figures in one validated table · 853 sites, one page each · 207 documented links in the chain from smelter to site · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, 2023 (part year) to 2025, from the regulator** (as of 2026-11-02)
 
-Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/, one page per site at https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/, and a one-page brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html.
+Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/, every figure to search, filter, download and cite at https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html, a map of the sites at https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html, one page per site at https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/, and a one-page brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html.
 
 The ledger is built on one rule: a company's statement is a claim, and a document from a regulator, court, grid operator, statistical office, auditor or customs authority is a record. The ledger shows both and states the gap in one line without adjectives.
 
 ## Get the data
+
+**Without code:** [Explore every figure](https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html) searches and filters all of them by country, topic, kind of figure, record or claim, kind of document and year; it downloads the rows you chose as CSV, and gives each figure a permanent link and a citation. The [map](https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html) does the same for sites. [The Excel workbook](https://kn0wledgebfre3-sys.github.io/compute-ledger/data/compute-ledger.xlsx) holds every table below on its own sheet, with a sheet saying what each column means. A figure's permanent link (`explore.html#m-…`) keeps working after a correction: it leads to the corrected figure.
 
 Every table is a CSV with a header row, UTF-8, under CC BY 4.0 (see Licence). Start with `measurements.csv`.
 
@@ -56,8 +58,8 @@ GitHub's "Cite this repository" button reads `CITATION.cff`. To cite an exact st
 | `receipts/` | Cases worked all the way down: the claim, a dated timeline of documents, the gap, the limits. Markdown for reading, JSON for the page. |
 | `scrapers/` | Scripts that pull structured public files (US grid queues, federal plant data, UK register, Climate TRACE) so numbers come from a file, not from anyone's reading. See its README. |
 | `research_notes/` | The working notes behind each region's entries, with the gaps that were found. |
-| `site/` | `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`. |
-| `docs/` | The built ledger page (`index.html`) and the brief (`brief.html`), copied there by `site/build_page.py` so GitHub Pages can serve them. Do not edit by hand. |
+| `site/` | The website's builders: `build_page.py` turns the registry, guide and receipts into one self-contained `index.html`; `build_sites.py` writes one page per site; `build_explore.py` writes the Explore page, the map and the downloads (`docs/data/`: the Excel workbook and the JSON the pages read). |
+| `docs/` | The website as GitHub Pages serves it, all generated: the ledger page (`index.html`), the brief, `explore.html`, `map.html`, `sites/` and `data/`. Do not edit by hand; `./rebuild.sh` writes it. `vendor/` holds an unchanged copy of the Leaflet map library (BSD 2-Clause), so the pages load no script from another site. |
 | `data/` | `climate_trace_seed/` is the handover package (sites in Climate TRACE's asset schema, Ireland, the supply column, Virginia extraction, the Climate TRACE plant match, the metered figures from regulators and public utilities, the method, and the hostile reviews). Weekly pulls land in `data/pulls/<date>/` for a person to read before anything enters the tables. `datapackage.json` and `DICTIONARY.md` describe every table. |
 | `documents/` | Browser-downloaded copies of public records whose hosts refuse automated access (the Wisconsin PSC final decisions for Oak Creek and Paris), with their original URLs. |
 | `CONTRIBUTING.md`, `JURISDICTION_TEMPLATE.md` | How a figure enters the ledger, the two-reading rule, id and correction rules; the checklist for adding a country or state. |
