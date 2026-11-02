@@ -11,7 +11,7 @@
   "ask": [
    [
     "What does the site actually draw?",
-    "Almost nowhere is this public. Ireland is the exception: every EPA-licensed datacentre files an annual report with its metered electricity in gigajoules, and the eleven licensed installations account for just over half of the national metered total. Two US public utilities state the cluster figure (Grant County PUD: 280 average MW, 37% of county load; Silicon Valley Power: 60% of sales). Ask the regulator for the annual report, and a public utility for its large-load class."
+    "Almost nowhere is this public. Ireland is the exception: every EPA-licensed datacentre files an annual report with its metered electricity in gigajoules, and the eleven licensed installations whose reports the ledger has read account for just over half of the national metered total. Two US public utilities state the cluster figure (Grant County PUD: 280 average MW, 37% of county load; Silicon Valley Power: 60% of sales). Ask the regulator for the annual report, and a public utility for its large-load class."
    ],
    [
     "Who pays for the connection?",

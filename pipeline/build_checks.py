@@ -270,7 +270,9 @@ def main():
     for check, path in (("browser-fetch-check-2026-10-24", "browser_fetch_2026-10-24/check_result.csv"),
                         ("checks-log-check-2026-10-24", "checks_log_check_2026-10-24/check_result.csv"),
                         ("usability-review-2026-11-02", "usability_review_2026-11-02/check_result.csv"),
-                        ("ireland-2023-check-2026-11-02", "ireland_2023_check_2026-11-02/check_result.csv")):
+                        ("ireland-2023-check-2026-11-02", "ireland_2023_check_2026-11-02/check_result.csv"),
+                        ("us-nei-identity-check-2026-11-02", "us_nei_identity_check_2026-11-02/check_result.csv"),
+                        ("ireland-licences-check-2026-11-02", "ireland_licences_check_2026-11-02/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""

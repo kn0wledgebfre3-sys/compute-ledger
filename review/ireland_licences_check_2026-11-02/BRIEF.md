@@ -1,0 +1,7 @@
+# Brief: the Irish licences the weekly pull found (2 November 2026)
+
+The weekly pull of 26 October 2026 searched the EPA's licensing system (LEAP) by company name and listed 15 licence numbers that are not in the ledger's watch list of licensed datacentres (`scrapers/config/ie_leap_licences.json`): P1181-02, P1182-02, P1186-02, P1222-01, P1238-01 (found under Amazon Data Services), P1190-01, P1191-01, P1242-01 (Microsoft Ireland), P1189-01 (Google Ireland), P1192-01 (Runways Information), P1203-01, P1227-01 (Vantage Data Centers), P1204-01 (EdgeConneX), P1143-01 (K2 Strategic), P1113-02 (Echelon). The search term is not a confirmed licensee.
+
+A reader working separately was asked to find, for each number, the EPA's own documents (application, proposed or recommended determination, licence, inspector's report, notices) and record the licensee, installation and address, status and date, what is licensed (activity class, rated thermal input, generators as stated), whether it is a datacentre, and the document. Quotations at most a short phrase; no adjectives about the companies; "not found" rather than a guess.
+
+The reader's table is `reader_result.csv`, as written except that wording about the search tools was replaced. EPA's document servers could not be reached directly from the reader's environment, so documents were read through a text-extraction step from search results; nothing here has been read page by page. `check_result.csv` gives what each finding means for the ledger and what was done.

@@ -6,7 +6,8 @@ What it does
      'Annual Environmental Report' and compares their URLs with sites/metered/ireland_aer_transcribed.csv.
   2. Downloads each report the ledger has not read and makes a FIRST READING of Table 3 (Energy Used,
      GJ) and Table 5 (Water Used, m3) from the PDF text. Every value is written beside the line it came from.
-  3. Searches licence profiles by operator name and lists licences that are not in the config yet.
+  3. Searches licence profiles by operator name and lists licences that are not in the config yet, each with the
+     plain fields of its profile record (licensee, status and the licence GUID the config needs), as the API returns them.
   Outputs: ie_aer_new_documents.csv, ie_aer_first_reading.csv, ie_leap_unlisted_profiles.csv, ie_aer_summary.json.
   Nothing enters the ledger from here: a second reading by a person, against the PDF, is required
   before a row is added to sites/metered/ireland_aer_transcribed.csv (CONTRIBUTING.md, two-reading rule).
@@ -40,6 +41,24 @@ LINES = {
     "total_energy_gj": r"^\s*Total Energy Used\s+([\d,]+(?:\.\d+)?)",
     "water_m3": r"^\s*Total Water Used\s+([\d,]+(?:\.\d+)?)",
 }
+
+
+LIC_RE = re.compile(r"P\d{4}-\d{2}")
+
+
+def profiles(obj) -> list[dict]:
+    """Every dict in a licence-search response whose own field is a licence number, with its plain fields (licensee,
+    status, the licence's GUID, which the watch list in config/ie_leap_licences.json needs)."""
+    out = []
+    if isinstance(obj, dict):
+        if any(isinstance(v, str) and LIC_RE.fullmatch(v.strip()) for v in obj.values()):
+            out.append(obj)
+        for v in obj.values():
+            out += profiles(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            out += profiles(v)
+    return out
 
 
 def records(obj) -> list[dict]:
@@ -128,9 +147,17 @@ def main() -> None:
             except SourceError as exc:
                 failures.append(f"search {term}: {exc}")
                 continue
-            for txt in re.findall(r"P\d{4}-\d{2}", json.dumps(data)):
-                if txt not in known_lic and txt not in {u["licence_no"] for u in unlisted}:
-                    unlisted.append({"licence_no": txt, "found_by_search_term": term})
+            seen = {u["licence_no"] for u in unlisted}
+            for prof in profiles(data):
+                txt = next(v.strip() for v in prof.values() if isinstance(v, str) and LIC_RE.fullmatch(v.strip()))
+                if txt not in known_lic and txt not in seen:
+                    seen.add(txt)
+                    unlisted.append({"licence_no": txt, "found_by_search_term": term,
+                                     "profile": json.dumps({k: v for k, v in prof.items() if isinstance(v, (str, int, float))}, sort_keys=True)})
+            for txt in LIC_RE.findall(json.dumps(data)):  # a number only inside a longer text: listed without a profile
+                if txt not in known_lic and txt not in seen:
+                    seen.add(txt)
+                    unlisted.append({"licence_no": txt, "found_by_search_term": term, "profile": ""})
     for name, rows in (("ie_aer_new_documents.csv", new_docs), ("ie_aer_first_reading.csv", readings), ("ie_leap_unlisted_profiles.csv", unlisted)):
         cols = list(rows[0].keys()) if rows else ["none"]
         with open(a.out / name, "w", newline="", encoding="utf-8") as f:

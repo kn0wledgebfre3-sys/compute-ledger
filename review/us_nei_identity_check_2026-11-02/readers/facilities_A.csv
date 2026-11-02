@@ -1,0 +1,27 @@
+state,eis_facility_id,name_in_inventory,address_in_inventory,city,county,latitude,longitude,inventory_years,nearby_site_already_listed
+NV,17015011,Switch Communications,7135 S Decatur Blvd.,Las Vegas,Clark,36.057850,-115.214310,2020 2023,
+NV,18122311,Apple Inc.,21505 Reno Technology Pkwy,Washoe County,Washoe,39.566156,-119.547974,2020 2023,
+NV,19058711,TRIC SITE,7400 USA Parkway,McCarran,Storey,39.500100,-119.430690,2020 2023,"usa-google-storey-county-reno-data-center (Google Storey County (Reno) data center), 0.16 km away"
+NV,21628611,Jasmine Development,520 West Warm Springs Rd,Henderson,Clark,36.057580,-115.008920,2023,"usa-google-henderson-data-center (Google Henderson data center), 0.26 km away"
+OR,19076611,"Vitesse, LLC",735 SW CONNECT WAY,PRINEVILLE,Crook,44.295700,-120.884000,2020 2023,
+OR,19076711,Apple Inc.,One Apple Park Way,Cupertino,Crook,44.287200,-120.872000,2020 2023,
+OR,19080411,"Amazon Data Services, Inc.","8350 W Grandridge Blvd., #443",Kennewick,Morrow,45.852200,-119.630000,2020 2023,
+OR,19080511,"Amazon Data Services, Inc.",79539 Rippee Rd,Boardman,Morrow,45.841000,-119.655000,2020 2023,
+OR,19084511,"Amazon Data Services, Inc.",2400 BEACH ACCESS RD,UMATILLA,Umatilla,45.916400,-119.268000,2020 2023,
+OR,19084611,"Amazon Data Services, Inc.",28803 LIVESTOCK RD.,HERMISTON,Umatilla,45.799500,-119.365000,2020 2023,
+OR,19085011,"Mallory & Evans, Inc.",1600 Amphitheatre Pkwy,Mountain View,Wasco,45.632100,-121.203000,2020 2023,"usa-google-the-dalles-data-center (Google The Dalles data center), 0.07 km away"
+OR,19085111,"DESIGN, LLC",1600 Amphitheatre Pkwy,Mountain View,Wasco,45.624600,-121.208000,2020,"usa-google-the-dalles-data-center (Google The Dalles data center), 0.99 km away"
+OR,19086611,"Stack Infrastructure, Inc.",3145 NE Brookwood Pkwy,Hillsboro,Washington,45.549400,-122.928000,2020 2023,
+OR,19086811,Beaver Ventures LLC,6675 NE 62nd Ave,Hillsboro,Washington,45.568200,-122.918000,2020 2023,
+OR,19086911,"QTS Investment Properties Hillsboro, LLC",4951 NE Huffman St,Hillsboro,Washington,45.558900,-122.932000,2020 2023,
+OR,19091411,"STACK  Infrastructure, Inc.",8135 NE Evergreen Pkwy,Hillsboro,Washington,45.547300,-122.898000,2020 2023,
+OR,19091511,"Design, LLC",4400 River Trail Way,The Dalles,Wasco,45.638100,-121.203000,2020 2023,"usa-google-the-dalles-data-center (Google The Dalles data center), 0.62 km away"
+OR,19091711,"Amazon Data Services, Inc.",75300 LEWIS & CLARK DR.,BOARDMAN,Morrow,45.846800,-119.606000,2020 2023,
+OR,19091811,"Amazon Data Services, Inc.",81712 LIND RD.,HERMISTON,Umatilla,45.903400,-119.320000,2020 2023,
+OR,19091911,"Amazon Data Services, Inc.","8350 W Grandridge Blvd, #443",Kennewick,Morrow,45.836900,-119.691000,2020 2023,
+OR,19437411,Flexential Colorado Corp,5737 NE Huffman St,Hillsboro,Washington,45.557800,-122.917000,2020 2023,
+OR,19438711,"NTT Global Data Centers HI, LLC",4050 NE Evergreen Road,Hillsboro,Washington,45.549400,-122.937500,2020 2023,
+OR,21707011,"Amazon Data Services, Inc.",8350 W Grandridge Blvd,Kennewick,Morrow,45.861000,-119.608000,2023,
+OR,21800711,"SI POR03A-C, LLC and SI POR03D, LLC",4735 NE STARR BLVD,HILLSBORO,Washington,45.554200,-122.938000,2023,
+OR,21800811,"Amazon Data Services, Inc.",34820 WANAPA RD.,UMATILLA,Umatilla,45.921100,-119.241000,2023,
+OR,21801011,Flexential Colorado Corp.,5419 NE Starr Blvd,Hillsboro,Washington,45.560100,-122.938000,2023,

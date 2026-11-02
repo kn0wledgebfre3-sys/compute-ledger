@@ -392,7 +392,7 @@
   {
    "name": "entries",
    "path": "climate_trace_seed/entries.csv",
-   "description": "The ledger's 202 entries as a flat table, built from registry/*.json: the record, the claim and the one-line gap between them.",
+   "description": "The ledger's entries as a flat table, built from registry/*.json: the record, the claim and the one-line gap between them.",
    "schema": {
     "primaryKey": "id",
     "fields": [

@@ -2,7 +2,7 @@
 
 Generated from `data/datapackage.json` by `pipeline/build_data_package.py`; do not edit by hand. Every table below is checked against this schema on every build. Controlled values for `metric`, `unit`, `basis` and `relation` are listed, with definitions, in `pipeline/measurement_vocab.json`.
 
-## `data/climate_trace_seed/measurements.csv` (3,023 rows)
+## `data/climate_trace_seed/measurements.csv` (3,899 rows)
 
 Every figure in the ledger, one row each: permits, metered loads, filed demand, company statements, computed values. Start here.
 
@@ -46,7 +46,7 @@ Figures whose id changed because their wording or value was corrected: the retir
 | `date` | date | yes |  | Date of the correction. |
 | `reason` | string | yes |  | What was corrected. |
 
-## `data/climate_trace_seed/site_register.csv` (853 rows)
+## `data/climate_trace_seed/site_register.csv` (917 rows)
 
 Every site the ledger has figures or links for: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners. One page each on the website.
 
@@ -90,9 +90,9 @@ Companies, utilities and registers that figures or chain links refer to.
 | `country` | string |  |  | Country. |
 | `notes` | string |  |  | Caveats. |
 
-## `data/climate_trace_seed/entries.csv` (202 rows)
+## `data/climate_trace_seed/entries.csv` (203 rows)
 
-The ledger's 202 entries as a flat table, built from registry/*.json: the record, the claim and the one-line gap between them.
+The ledger's entries as a flat table, built from registry/*.json: the record, the claim and the one-line gap between them.
 
 | Column | Type | Required | Values | Meaning |
 |---|---|---|---|---|
@@ -116,7 +116,7 @@ The ledger's 202 entries as a flat table, built from registry/*.json: the record
 | `n_record_sources` | integer | yes |  | Number of record sources (listed in entry_sources.csv). |
 | `n_claim_sources` | integer | yes |  | Number of claim sources. |
 
-## `data/climate_trace_seed/entry_sources.csv` (932 rows)
+## `data/climate_trace_seed/entry_sources.csv` (940 rows)
 
 Every document an entry cites, one row each, with the side it supports.
 
@@ -158,7 +158,7 @@ Documented links in the chain from smelter to chipmaker to site and its power, f
 | `notes` | string |  |  | What the reader needs to know. |
 | `second_read` | string | yes |  | yes or no, with how it was confirmed. |
 
-## `data/climate_trace_seed/checks.csv` (21 rows)
+## `data/climate_trace_seed/checks.csv` (23 rows)
 
 Every check run on the ledger: what was checked, how, by whom, and what it found. Built from review/CHECKS.csv and the findings files.
 
@@ -179,7 +179,7 @@ Every check run on the ledger: what was checked, how, by whom, and what it found
 | `findings_by_severity` | string |  |  | Counts by severity. |
 | `status_now` | string |  |  | What the current data show for those findings, recomputed at every build. |
 
-## `data/climate_trace_seed/findings.csv` (1,474 rows)
+## `data/climate_trace_seed/findings.csv` (1,560 rows)
 
 Every finding from every check, with what the data show now.
 

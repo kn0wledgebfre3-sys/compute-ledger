@@ -1492,6 +1492,74 @@
   "last_checked": "2026-10-24"
  },
  {
+  "id": "us-nei-datacenter-facilities-2020-2023",
+  "country": "United States",
+  "region": "13 states outside Virginia",
+  "site_or_subject": "What datacenter generators emitted outside Virginia: EPA National Emissions Inventory 2020 and 2023, facilities classed as computing infrastructure and data processing",
+  "operator": "71 facilities: Amazon Data Services (9 in Oregon), Apple, Switch, QTS, STACK, Flexential, NTT, Equinix, CyrusOne, Microsoft, Meta, Google, NASA and others, several under entity names that do not show the company",
+  "lat": 39.83,
+  "lon": -98.58,
+  "category": "fuel",
+  "record": "EPA's National Emissions Inventory, queried state by state for facilities classed under NAICS 518210 (computing infrastructure, data processing, web hosting), lists 71 such facilities outside Virginia in 13 states for the 2020 and 2023 inventories: 22 in Oregon (9 of them Amazon Data Services), 14 in Illinois, 6 in Pennsylvania, 5 in Tennessee, 4 each in Iowa, Nevada, Ohio and Texas, 3 in Nebraska, 2 in North Carolina and one each in Georgia, Mississippi and South Carolina. The 2023 inventory gives 67 of them 487.4 short tons of NOx in all (442 tonnes; the inventory reports US short tons); the 2020 inventory gives 51 of them 300.6 short tons. For the 47 facilities in both, NOx went from 299.5 to 368.2 short tons. Largest in 2023: Switch, Las Vegas, 32.8 short tons (33.0 in 2020); Apple, Prineville, Oregon, 25.9 short tons; QTS, Atlanta, 24.6 short tons; Foxman - Clarksville Data Center, Tennessee, 21.5 short tons; QTS, Hillsboro, Oregon, 21.2 short tons. The inventory gives annual facility-wide totals per pollutant only: no hours, no fuel, no per-unit split. Readers working from other documents identified 47 of the 71 (31 from a regulator's or other public body's record, 16 from company or press material); for six, the inventory's street address is an owner's mailing address in another state while its coordinates are at the site. Nine are sites the ledger already listed: four in Texas, by EPA's own facility registry, and five Google sites (Storey County and Henderson, Nevada; Papillion, Nebraska; New Albany, Ohio; Berkeley County, South Carolina), by a permit or a press report.",
+  "record_sources": [
+   {
+    "title": "NEI 2023 facility summaries, Oregon, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/OR/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "NEI 2023 facility summaries, Illinois, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/IL/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "NEI 2023 facility summaries, Nevada, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/NV/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "NEI 2023 facility summaries, Tennessee, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/TN/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "NEI 2023 facility summaries, Georgia, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/GA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "NEI 2020 facility summaries, Nevada, NAICS 518210, criteria pollutants (Envirofacts DMAP)",
+    "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/NV/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV",
+    "publisher": "US EPA Envirofacts",
+    "date": "2026-10-26"
+   },
+   {
+    "title": "Envirofacts Data Service API",
+    "url": "https://www.epa.gov/enviro/envirofacts-data-service-api",
+    "publisher": "US EPA",
+    "date": "2026"
+   },
+   {
+    "title": "National Emissions Inventory (NEI)",
+    "url": "https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei",
+    "publisher": "US EPA",
+    "date": "2026"
+   }
+  ],
+  "claim": "none found at site level.",
+  "claim_sources": [],
+  "gap": "The inventory gives emissions, not run hours or fuel; set against each permit's per-engine limits it bounds hours from below, as done for Virginia, but no permit outside Virginia has been read for those limits yet. The query finds only facilities a state classed under NAICS 518210, so datacenters under other codes are missed (in Virginia, 4 of 27 were), and EPA's service returned no such facility for Arizona or Washington in either year, or for Georgia in 2020, although both states host large datacenter clusters. Twenty-four of the 71 have not been identified from any other document yet.",
+  "confidence": "high",
+  "verification_status": "partial",
+  "verification_note": "Retrieved by the weekly pull of 2026-10-26 (state-by-state queries, NAICS 518210, criteria pollutants; data/pulls/2026-10-26/nei/): a first reading by script, transcribed unchanged into sites/metered/us_nei_transcribed.csv; the figures have not been re-queried. For Virginia, all 129 values that an earlier, separate query (2026-10-23) and the pull both returned agree. What and where each of the 71 facilities is was checked on 2026-11-02 by three readers working from documents other than the ledger (review/us_nei_identity_check_2026-11-02/, sites/metered/us_nei_facilities.csv); their search time ran out before every facility was searched.",
+  "last_checked": "2026-11-02"
+ },
+ {
   "id": "us-city-benchmarking-datacenter-metered-electricity",
   "country": "United States",
   "region": "New York, San Francisco, Seattle, Chicago, Washington DC, Philadelphia, Boston, Cambridge MA, Montgomery County MD, Kansas City MO",
@@ -1500,7 +1568,7 @@
   "lat": 40.74,
   "lon": -74.0,
   "category": "power",
-  "record": "City benchmarking ordinances publish each large building's metered energy by address with its property type. New York's Local Law 84 data give 60 Hudson Street (typed Data Center) 87.2 GWh of grid electricity in 2023 and 85.5 GWh in 2024, and 111 8th Avenue (typed Office, whole building, with a datacenter sub-use of about 530,000 to 615,000 sq ft) 148.1 GWh in 2023 and 130.8 GWh in 2024. San Francisco's disclosure gives 200 Paul Avenue (Digital Realty) 112.4 GWh in 2023, 111.4 in 2024 and 104.0 in 2025. Seattle's gives the Westin Building Exchange 77.4 GWh in 2024 and 73.5 in 2025. Chicago's gives 350 East Cermak 1,114 million kBtu of electricity for 2022 (kBtu only; absent in 2023). California's statewide disclosure (California Energy Commission, AB 802; data years 2024 and 2025, electricity in kBtu only) gives 2880 Northwestern Parkway, Santa Clara (typed Data Center) 1,431,476,183.2 kBtu of grid electricity in 2024 (about 419.5 GWh, ledger's conversion), and 2220 De La Cruz Boulevard, Santa Clara, 875,149,565.1 kBtu in 2024 and 772,009,099.1 kBtu in 2025. Portland's 2025 data give Pittock Block (typed Data Center) 20,064,630 kWh. In all, 441 building-years from twelve disclosures (also Washington DC, Philadelphia, Montgomery County MD, Cambridge MA, Boston in kBtu, and Kansas City, EUI only) are in the handover file, each with its query or file.",
+  "record": "City benchmarking ordinances publish each large building's metered energy by address with its property type. New York's Local Law 84 data give 60 Hudson Street (typed Data Center) 87.2 GWh of grid electricity in 2023 and 85.5 GWh in 2024, and 111 8th Avenue (typed Office, whole building, with a datacenter sub-use of about 530,000 to 615,000 sq ft) 148.1 GWh in 2023 and 130.8 GWh in 2024. San Francisco's disclosure gives 200 Paul Avenue (Digital Realty) 112.4 GWh in 2023, 111.4 in 2024 and 104.0 in 2025. Seattle's gives the Westin Building Exchange 77.4 GWh in 2024 and 73.5 in 2025. Chicago's gives 350 East Cermak 1,114 million kBtu of electricity for 2022 (kBtu only; absent in 2023). California's statewide disclosure (California Energy Commission, AB 802; data years 2024 and 2025, electricity in kBtu only) gives 2880 Northwestern Parkway, Santa Clara (typed Data Center) 1,431,476,183.2 kBtu of grid electricity in 2024 (about 419.5 GWh, ledger's conversion), and 2220 De La Cruz Boulevard, Santa Clara, 875,149,565.1 kBtu in 2024 and 772,009,099.1 kBtu in 2025. Portland's 2025 data give Pittock Block (typed Data Center) 20,064,630 kWh. In all, 634 building-years from twelve disclosures (also Washington DC, Philadelphia, Montgomery County MD, Cambridge MA, Boston in kBtu, and Kansas City, EUI only) are in the handover file, each with its query or file. 193 of them, earlier years back to 2011 for San Francisco, Seattle, Cambridge, Chicago, Washington DC and New York, came from the first weekly pull (26 October 2026) and have been read once, by script.",
   "record_sources": [
    {
     "title": "Energy and Water Data Disclosure for Local Law 84 (dataset 5zyy-y8am), rows for 60 Hudson Street",
@@ -1592,8 +1660,8 @@
   "gap": "Metered, annual and public, but only where a city has a disclosure law and only for the building as filed: carrier hotels in mixed buildings report the whole building, and most rows typed Data Center are telephone exchanges. California's statewide file publishes electricity in kBtu only and includes buildings that also file locally (San Francisco's are kept from the city's dataset only), and Ontario's file names no buildings.",
   "confidence": "high",
   "verification_status": "verified",
-  "verification_note": "The New York and San Francisco rows named here were re-read from the portals on 2026-10-23 and match; New York's electricity field is confirmed kWh by its kBtu companion field (ratio 3.412). Other rows carry their query URL in data/climate_trace_seed/benchmarking_datacenters.csv. 2026-10-24: California's 2024 and 2025 disclosure files and Portland's 2023-2025 workbooks were read from browser downloads; every electricity figure added was read twice by two methods (sites/metered/benchmarking_notes.md, last section).",
-  "last_checked": "2026-10-24"
+  "verification_note": "The New York and San Francisco rows named here were re-read from the portals on 2026-10-23 and match; New York's electricity field is confirmed kWh by its kBtu companion field (ratio 3.412). Other rows carry their query URL in data/climate_trace_seed/benchmarking_datacenters.csv. 2026-10-24: California's 2024 and 2025 disclosure files and Portland's 2023-2025 workbooks were read from browser downloads; every electricity figure added was read twice by two methods (sites/metered/benchmarking_notes.md, last section). 2026-11-02: 193 building-years from the weekly pull of 2026-10-26 added as first readings, nine left out with the reason for each (sites/metered/benchmarking_notes.md, last section).",
+  "last_checked": "2026-11-02"
  },
  {
   "id": "us-va-dominion-datacenter-demand-filed-2026",

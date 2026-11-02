@@ -2,7 +2,7 @@
 
 A public ledger of what records say about the physical, social and economic footprint of AI compute, site by site, worldwide. Permits, grid filings, court records, statistical offices, audits and trade data, laid beside what operators and governments say in public. Every number links to the document it came from. Good cases are entries too.
 
-**202 entries · 44 countries and territories, plus EU-wide and global entries · 720 distinct linked documents · 3,023 figures in one validated table · 853 sites, one page each · 207 documented links in the chain from smelter to site · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for Ireland's 11 licensed datacentres, 2023 (part year) to 2025, from the regulator** (as of 2026-11-02)
+**203 entries · 44 countries and territories, plus EU-wide and global entries · 727 distinct linked documents · 3,899 figures in one validated table · 917 sites, one page each · 207 documented links in the chain from smelter to site · 71 open datasets · 3 receipts · 182 Virginia permits read twice · 129 Texas facilities from regulator records · metered electricity for 11 licensed datacentres in Ireland, 2023 (part year) to 2025, from the regulator · EPA inventory emissions for 98 datacenter-type facilities in 14 US states** (as of 2026-11-02)
 
 Live pages (GitHub Pages, served from `docs/`): the ledger at https://kn0wledgebfre3-sys.github.io/compute-ledger/, every figure to search, filter, download and cite at https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html, a map of the sites at https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html, one page per site at https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/, and a one-page brief at https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html.
 
@@ -16,13 +16,13 @@ Every table is a CSV with a header row, UTF-8, under CC BY 4.0 (see Licence). St
 
 | File | What it holds | Rows |
 |---|---|---|
-| `data/climate_trace_seed/measurements.csv` | **Every figure**, one row each: the value as published and converted to a standard unit, its period, whether it is a record or a claim, the kind of document, the source link, and whether a second reading confirmed it. | 3,023 |
-| `data/climate_trace_seed/entries.csv` | The 202 ledger entries as a table: record, claim, the gap between them, confidence and verification. | 202 |
-| `data/climate_trace_seed/entry_sources.csv` | Every document an entry cites, with the side (record or claim) it supports. | 932 |
-| `data/climate_trace_seed/site_register.csv` | Every site with figures or links: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners, with coordinates where a record gives them. Retired ids are in `site_id_aliases.csv`. | 853 |
+| `data/climate_trace_seed/measurements.csv` | **Every figure**, one row each: the value as published and converted to a standard unit, its period, whether it is a record or a claim, the kind of document, the source link, and whether a second reading confirmed it. | 3,899 |
+| `data/climate_trace_seed/entries.csv` | The 203 ledger entries as a table: record, claim, the gap between them, confidence and verification. | 203 |
+| `data/climate_trace_seed/entry_sources.csv` | Every document an entry cites, with the side (record or claim) it supports. | 940 |
+| `data/climate_trace_seed/site_register.csv` | Every site with figures or links: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners, with coordinates where a record gives them. Retired ids are in `site_id_aliases.csv`. | 917 |
 | `data/climate_trace_seed/entity_register.csv` | Companies, utilities and registers that figures refer to. | 44 |
 | `data/chain/edges.csv` | Documented links in the chain from smelter to chipmaker to site and its power, fuel and water. | 207 |
-| `data/climate_trace_seed/checks.csv`, `findings.csv` | Every check run on the ledger and every finding, with what the data show now. | 21 checks, 1,474 findings |
+| `data/climate_trace_seed/checks.csv`, `findings.csv` | Every check run on the ledger and every finding, with what the data show now. | 23 checks, 1,560 findings |
 
 **Columns:** `data/DICTIONARY.md`, generated from the machine-readable schema `data/datapackage.json` (Frictionless Data Package). Every build checks every table against it, so the dictionary cannot drift from the data. **Controlled values** for `metric`, `unit`, `basis` and `relation`, with definitions and unit conversions: `pipeline/measurement_vocab.json`.
 

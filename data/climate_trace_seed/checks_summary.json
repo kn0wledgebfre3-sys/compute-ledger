@@ -1,6 +1,6 @@
 {
- "checks": 21,
- "findings_in_table": 1474,
+ "checks": 23,
+ "findings_in_table": 1560,
  "random_sample_figures": {
   "n": 166,
   "verdicts": {
@@ -32,9 +32,10 @@
   "now on the claim side": 180,
   "resolved against the permit text": 158,
   "now on the record side": 155,
-  "as recorded with the finding: confirmed": 149,
+  "as recorded with the finding: confirmed": 152,
   "confirmed at the check": 118,
   "no longer in the table in the form checked": 81,
+  "as recorded with the finding: applied": 80,
   "now on the record side, basis press_report": 63,
   "still in the table as checked": 48,
   "as recorded with the finding: corrected": 47,
@@ -53,6 +54,7 @@
   "now on the claim side (wording of the figure changed)": 4,
   "now on the record side, basis filed": 4,
   "as recorded with the finding: fixed": 4,
+  "as recorded with the finding: open": 4,
   "entry status now not_found": 3,
   "now on the claim side, basis company_statement": 3,
   "as recorded on the fetch list: partial": 3,
@@ -63,8 +65,7 @@
   "now on the record side, basis press_report/regulator_decision": 1,
   "now on the record side, basis derived": 1,
   "as recorded on the fetch list: contradicts": 1,
-  "as recorded with the finding: partly corrected": 1,
-  "as recorded with the finding: open": 1
+  "as recorded with the finding: partly corrected": 1
  },
  "entries_with_findings": 179,
  "per_entry": {

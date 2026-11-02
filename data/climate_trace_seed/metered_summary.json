@@ -89,25 +89,55 @@
   ]
  },
  "benchmarking": {
-  "rows": 441,
+  "rows": 634,
   "jurisdictions": {
    "New York City": [
+    "2022",
     "2023",
     "2024"
    ],
    "Chicago": [
+    "2019",
+    "2020",
+    "2021",
     "2022",
     "2023"
    ],
    "Seattle": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
     "2024",
     "2025"
    ],
    "San Francisco": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
     "2024",
     "2025"
    ],
    "Washington DC": [
+    "2012",
+    "2013",
+    "2014",
+    "2018",
     "2022",
     "2023",
     "2025"
@@ -121,6 +151,14 @@
     "2024 (dataset title); row field reporting_year_start_date=2023"
    ],
    "Cambridge MA": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
     "2023",
     "2024"
    ],
@@ -148,10 +186,24 @@
    ],
    [
     "New York City",
+    "2022",
+    "111 8th Avenue",
+    "Office",
+    144746407.0
+   ],
+   [
+    "New York City",
     "2024",
     "111 8th Avenue",
     "Office",
     130751883.2
+   ],
+   [
+    "San Francisco",
+    "2023",
+    "200 PAUL AVE",
+    "Data Center",
+    112372965.5
    ],
    [
     "San Francisco",
@@ -162,38 +214,24 @@
    ],
    [
     "San Francisco",
+    "2022",
+    "200 PAUL AVE",
+    "Data Center",
+    106630734.1
+   ],
+   [
+    "San Francisco",
     "2025",
     "200 PAUL AVE",
     "Data Center",
     103964027.7
    ],
    [
-    "Boston, MA",
-    "2023 (BERDO reporting year as labelled by the City; calendar year of usage not stated on the layer)",
-    "200 clarendon st, Boston, MA 02116",
-    "Office",
-    90192603.3
-   ],
-   [
-    "New York City",
-    "2023",
-    "60 Hudson Street",
+    "San Francisco",
+    "2021",
+    "200 PAUL AVE",
     "Data Center",
-    87180662.8
-   ],
-   [
-    "New York City",
-    "2024",
-    "56 Hudson Street",
-    "Data Center",
-    85542705.6
-   ],
-   [
-    "Seattle",
-    "2024",
-    "2001 6TH AVE",
-    "Data Center (largestpropertyusetype=Data Center)",
-    77368680.0
+    101549190.3
    ]
   ]
  },

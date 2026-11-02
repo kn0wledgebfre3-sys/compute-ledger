@@ -74,7 +74,7 @@ code{font-family:var(--mono);font-size:.9em}
 <p class="eyebrow">Compute Ledger · version 1.0.0</p><h1>Map of sites</h1>
 <p class="lede">Every site the ledger holds with coordinates from a public document: datacenters, buildings that file as datacenters, crypto mining sites, chip fabs, smelters and refiners, and nuclear plants. The colour shows what the ledger has found for a site so far, not anything about the site itself. Click a site for its page and figures.</p>
 <p class="getdata" id="get-the-data">Get the data (version 1.0.0): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · <a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
-<p id="status">Loading 853 sites…</p>
+<p id="status">Loading 917 sites…</p>
 <noscript><p>This page needs JavaScript. Every site is listed on <a href="sites/">the sites page</a>.</p></noscript>
 <div id="app" hidden>
 <div class="filters" id="filters">
@@ -87,7 +87,7 @@ code{font-family:var(--mono);font-size:.9em}
 </div>
 <div id="map" role="region" aria-label="Map of the sites; the same sites are listed in the table below"></div>
 <ul class="legend"><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-rec)"/></svg><span><b>Records found</b> (<span id="n-rec"></span>): at least one figure from a record</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-claim)"/></svg><span><b>Claims only</b> (<span id="n-claim"></span>): only what the company or a government says</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--paper)" stroke="var(--mk-none)" stroke-width="2"/></svg><span><b>No figures yet</b> (<span id="n-none"></span>): listed from a register, no figure read yet</span></li></ul>
-<p class="m" style="margin-top:10px">305 of 853 sites are placed from a document. The other 548 are in the list below but not on the map until a document gives their location.</p>
+<p class="m" style="margin-top:10px">367 of 917 sites are placed from a document. The other 550 are in the list below but not on the map until a document gives their location.</p>
 <div class="bar"><span class="count" id="count" aria-live="polite"></span><button class="btn" id="dl" type="button">Download these sites (CSV)</button></div>
 <div class="tw"><table class="sites"><thead><tr><th>Site</th><th>Kind</th><th>Where</th><th>What the ledger holds</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
 <p class="empty" id="empty" hidden>No site matches. Clear a filter, or search for fewer words.</p>

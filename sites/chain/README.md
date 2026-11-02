@@ -32,7 +32,7 @@ The ledger was built to trace one chain: mine, refiner, fab, chip buyer, datacen
 | `chips_across_borders` | Taiwan Ministry of Finance exports by destination; US imports by port. The series ends at the country and port, which is itself a finding. | waiting |
 | `power_to_site` | Utility-commission decisions, utility updates, permits for on-site generation | live |
 | `fuel_to_site` | Pipeline certificates (e.g. Rochester Lateral), gas supply agreements in dockets, utility updates | live: 9 links (Wisconsin's Rochester Lateral, MLGW gas to xAI, Homer City's suppliers, Energy Transfer to Meta's Louisiana plants, Equinix DB5's mains gas); most fuel permits name no supplier |
-| `water_to_site` | Water-rights registers, municipal supply agreements, annual environmental reports | live: 21 links (Ireland's 11 licensed sites; Memphis, Phoenix, The Dalles, West Des Moines, Racine, Loudoun's reclaimed water, Cerrillos, Querétaro) |
+| `water_to_site` | Water-rights registers, municipal supply agreements, annual environmental reports | live: 21 links (11 licensed sites in Ireland; Memphis, Phoenix, The Dalles, West Des Moines, Racine, Loudoun's reclaimed water, Cerrillos, Querétaro) |
 | `site_to_tenant` | 10-K leases and hosting agreements (claims), interconnection records | live |
 | `ownership` | Company registries, SEC exhibits | live: 2 links (AMD and Tongfu as owners of the packaging joint ventures) |
 | `hardware_to_end_of_life` | R2v3 and e-Stewards facility lists, companies' circularity disclosures | waiting |

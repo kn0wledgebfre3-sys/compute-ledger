@@ -1,0 +1,22 @@
+state,eis_facility_id,name_in_inventory,address_in_inventory,city,county,latitude,longitude,inventory_years,nearby_site_already_listed
+GA,21792611,"Quality Investment Properties Metro, LLC",1033 Jefferson St NW,Atlanta,Fulton,33.775737,-84.419535,2023,
+IA,16962311,GABLE CORPORATION,10420 BUNGE AVE,COUNCIL BLUFFS,Pottawattamie,41.175710,-95.803470,2020 2023,"usa-google-council-bluffs-data-center-second-campus (Google Council Bluffs data center (second campus)), 1.03 km away"
+IA,17928311,"Siculus, Inc.",1700 34th Avenue NW,Altoona,Polk,41.668000,-93.512000,2020 2023,
+IA,21802811,Willow Creek / Ginger East Data Centers,550 SE White Crane Rd,West Des Moines,Polk,41.516180,-93.708730,2023,
+IA,21803011,Osmium Data Center,5855 SW Kerry Street,West Des Moines,Warren,41.495820,-93.787760,2023,
+MS,15619511,"NASA SHARED SERVICE CENTER, NCCIPS",9325 CYPRESS LOOP ROAD,STENNIS SPACE CENTER,Hancock,30.383056,-89.603611,2020 2023,
+NC,16852811,"Tapaha Dynamics, LLC",708 Lynhaven Drive,Lenoir,Caldwell,35.900000,-81.547183,2020 2023,"usa-google-lenoir-data-center (Google Lenoir data center), 0.16 km away"
+NC,16853811,Apple Inc.,5977 Startown Road,Maiden,Catawba,35.587240,-81.262660,2023,
+NE,19031011,Midlands Data Center,11425 S 84 St,Papillion,Sarpy,41.134400,-96.039700,2020 2023,
+NE,19042511,Raven Northbrook LLC,14734 Friend Plaza,Papillion,Sarpy,41.118300,-96.143100,2020 2023,"usa-google-papillion-data-center (Google Papillion data center), 1.67 km away"
+NE,21399311,Fireball Group LLC Data Center,14865 Gold Cost Road,Papillion,Sarpy,41.132800,-96.139400,2023,"usa-google-papillion-data-center (Google Papillion data center), 0.40 km away"
+OH,18958211,Montauk Innovations LLC (0145000570),intersection of Morse Rd and Beech Rd SW,New Albany,Licking,40.050670,-82.755700,2020 2023,"usa-google-new-albany-data-center (Google New Albany data center), 1.22 km away"
+OH,21280711,Magellan Enterprises LLC (0125044418),225 Rathmell Rd,Columbus,Franklin,39.852000,-82.996000,2023,
+OH,21530611,Table Mountain Industries LLC (0123010437),35 Whiley Road,Lancaster,Fairfield,39.726360,-82.683380,2023,
+OH,21530811,Cologix (0125043211),535 SCHERERS COURT,Columbus,Franklin,40.116470,-83.002640,2023,
+SC,16850611,MAGURO ENTERPRISES LLC,1669 GARROTT AVE,MONCKS CORNER,Berkeley,33.064084,-80.041932,2020 2023,"usa-google-berkeley-county-moncks-corner-data-center (Google Berkeley County (Moncks Corner) data center), 0.13 km away"
+TN,17416311,HCA IT&S,5900 Crossings Boulevard,Antioch,Davidson,36.038060,-86.637220,2020 2023,
+TN,17416511,Change Healthcare,100 Airpark Center Drive East,Nashville,Davidson,36.113330,-86.642500,2020 2023,
+TN,17416811,"H5 Fund VIII, LLC","211 Commerce Street, Suite 700",Nashville,Davidson,36.164720,-86.777500,2020 2023,
+TN,19018211,Foxman LLC dba Foxman - Clarksville Data Center,1000 Boolean Drive,Clarksville,Montgomery,36.624599,-87.261980,2020 2023,"usa-google-montgomery-county-clarksville-data-center (Google Montgomery County (Clarksville) data center), 0.40 km away"
+TN,21976311,"EdgeConneX, Inc. (EDCNAS01)",1841 Air Lane Drive,Nashville,Davidson,36.144900,-86.701700,2023,

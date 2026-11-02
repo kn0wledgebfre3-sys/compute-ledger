@@ -12,6 +12,7 @@ Feeds (each row keeps the file it came from in `feed`):
   sites/metered/ireland_aer_transcribed.csv      Irish EPA Annual Environmental Reports
   sites/metered/ireland_emission_factors.csv     SEAI factors, for the emissions computed from those reports
   sites/metered/va_nei_transcribed.csv           EPA National Emissions Inventory, Virginia
+  sites/metered/us_nei_transcribed.csv           EPA National Emissions Inventory, other states (with us_nei_facilities.csv: what and where each facility is)
   sites/metered/benchmarking_transcribed.csv     city benchmarking disclosures
   sites/metered/filed_figures_curated.csv        utility filings and public-utility documents, mapped by hand
   sites/paper/company_figures.csv                companies' own Scope 1 and 2 figures (location- and market-based), certificates, credits
@@ -92,6 +93,7 @@ SEED_GEN_SOURCE = {
 FEED_ENTRY = {
     "aer": "ie-epa-aer-metered-2025",
     "nei": "us-va-nei-2023-datacenter-generator-emissions",
+    "us_nei": "us-nei-datacenter-facilities-2020-2023",
     "bench": "us-city-benchmarking-datacenter-metered-electricity",
     "va_filed": "us-va-dominion-datacenter-demand-filed-2026",
     "va_permits": "us-va-loudoun-diesel-backup-generators",
@@ -429,6 +431,57 @@ def feed_nei(T: Table, sites: dict):
               source_publisher="US EPA Envirofacts", extraction="api_query", second_read="yes" if rer else "no",
               notes=r["how_matched"], published_text=r["tons_per_year"])
 
+
+
+US_STATE = {"AL": "Alabama", "AZ": "Arizona", "CA": "California", "GA": "Georgia", "IA": "Iowa", "IL": "Illinois", "IN": "Indiana",
+            "MS": "Mississippi", "NC": "North Carolina", "NE": "Nebraska", "NV": "Nevada", "OH": "Ohio", "OR": "Oregon",
+            "PA": "Pennsylvania", "SC": "South Carolina", "TN": "Tennessee", "TX": "Texas", "VA": "Virginia", "WA": "Washington"}
+
+
+def feed_us_nei(T: Table, sites: dict):
+    """EPA's inventory beyond Virginia: facilities a state classed under NAICS 518210, as the weekly pull returned them.
+    us_nei_facilities.csv says what and where each facility is, from a document; a facility goes into the ledger only when a
+    document shows it is a datacenter (include = yes), on an existing site only when a document shows it is the same site."""
+    fac = {r["eis_facility_id"]: r for r in read_csv(MET / "us_nei_facilities.csv")}
+    feed = "sites/metered/us_nei_transcribed.csv"
+    for r in read_csv(MET / "us_nei_transcribed.csv"):
+        f = fac.get(r["eis_facility_id"])
+        if f is None:
+            T.problems.append(f"{feed}: EIS {r['eis_facility_id']} has no row in us_nei_facilities.csv")
+            continue
+        if f["include"] != "yes":
+            continue
+        metric = NEI_METRIC.get(r["pollutant"])
+        if not metric or r["tons_per_year"] in ("", "not found"):
+            continue
+        if r["uom"] != "TON":
+            T.problems.append(f"{feed}: EIS {r['eis_facility_id']} {r['pollutant']}: unit {r['uom']} (criteria pollutants are reported in TON)")
+            continue
+        sid = f["site_id"]
+        new_id = f"usa-{r['state'].lower()}-nei-{r['eis_facility_id']}"
+        if sid != new_id and sid not in sites:
+            T.problems.append(f"us_nei_facilities.csv: EIS {r['eis_facility_id']} is placed on {sid}, which is not in the site register")
+            continue
+        if sid not in sites:
+            sites[sid] = {c: "" for c in SITE_COLS} | {
+                "site_id": sid, "name": f["name"], "operator": f["operator"], "kind": f["kind"], "country": "USA",
+                "admin_region": US_STATE[r["state"]], "locality": f["locality"], "lat": r["latitude"], "lon": r["longitude"],
+                "register_source": f"EPA National Emissions Inventory, EIS facility {r['eis_facility_id']} (coordinates as the inventory gives them)",
+                "also_known_as": f"EIS {r['eis_facility_id']}; in the inventory as {r['facility_name_in_inventory']}"
+                                 + (f"; {f['permit_or_registration']}" if f["permit_or_registration"] else ""),
+                "notes": f["identity_note"]}
+        ps, pe = year_period(r["year"])
+        T.add(feed=feed, subject_type="site", subject_id=sid, entry_id=FEED_ENTRY["us_nei"],
+              metric=metric, metric_detail=f"{r['pollutant']}, facility-wide annual total (NEI {r['year']})",
+              value=float(r["tons_per_year"]), unit="short_ton", value_as_published=r["tons_per_year"],
+              period_start=ps, period_end=pe, basis="inventory", source_url=r["document_or_endpoint_url"],
+              source_title=f"NEI {r['year']} facility summaries, {US_STATE[r['state']]}, NAICS 518210 (EIS {r['eis_facility_id']}, "
+                           f"{r['facility_name_in_inventory']})",
+              source_publisher="US EPA Envirofacts", source_date="2026-10-26", extraction="api_query", second_read="no",
+              notes=f"Inventory address: {r['address_in_inventory']}, {r['city_in_inventory']}. What and where the facility is: "
+                    f"{f['identity_source_url']} ({f['identity_source_type']}). EPA reports US short tons."
+                    + (f" {f['identity_note']}" if sid != new_id else ""),
+              published_text=r["tons_per_year"])
 
 
 def feed_generator_hours(T: Table, sites: dict):
@@ -882,6 +935,7 @@ def main():
     feed_va_permits(T)
     feed_tx(T)
     feed_site_lists(T)
+    feed_us_nei(T, sites)
     for s in sites.values():
         if not re.fullmatch(r"[A-Z]{3}", s["country"] or ""):
             T.problems.append(f"site {s['site_id']}: country '{s['country']}' is not an ISO 3166 alpha-3 code")

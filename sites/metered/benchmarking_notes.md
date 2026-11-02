@@ -262,3 +262,16 @@ Compiled 2026-10-24 from files downloaded in a browser (folder `fetched/from_dow
 - **Data Center:** 0 rows in PrimPropTypCalc, PrimPropTypSelf or Largest_PropTyp. 89 rows list Data Center among All_Prop_Types: 82 Office, 2 Mixed Use, and 1 each Manufacturing, Convention Center, Financial Office, Other and Distribution Center. Their electricity intensities are 5-74 ekWh/ft², typical of offices with server rooms, so none is clearly a datacenter and none was added. The highest are EWRB_ID 136526 (Mississauga L5K, Office, 73.5), 101503 (Kanata, Manufacturing, 63.1) and 109797 (Markham, Office, 53.1).
 - **Toronto targets: not identifiable.** There is no address field. The FSAs M5J (151 Front St W), M6K (905 King St W) and M5A (45 Parliament St) have 49, 61 and 55 rows, none typed Data Center. Their highest Site_EUI2 values are 61.99 (M5J, "Other"), 74.09 (M6K, Strip Mall) and 59.73 (M5A, Office), and none lists Data Center except ordinary offices. No row there has a datacenter-like intensity. The three buildings are either not in the published file or cannot be told apart.
 - Builder trap, if Ontario rows are ever added: `feed_bench` hard-codes `country: "USA"` and `usa-bench-` site ids. Rows with address "not found" would also collapse into one site.
+
+## Earlier years from the weekly pull (added 2026-11-02)
+
+The first live weekly pull (2026-10-26, `data/pulls/2026-10-26/benchmarking/`) queried each portal for every year it holds and returned 202 building-years the ledger did not have. 193 were appended to `benchmarking_transcribed.csv` as first readings by script (`notes` begins "Weekly pull of 2026-10-26"): New York 2022 (63, most of them Verizon central offices, which the builder types as telephone exchanges from their names), San Francisco 2011 to 2023 (53), Cambridge 2015 to 2022 (32), Seattle 2015 to 2023 (30, including the Westin Building Exchange in 2019 and 2020, typed Mixed Use Property), Chicago 2019 to 2021 and 2023 (11, kBtu only) and Washington DC 2012 to 2014 and 2018 (4, with the year caveat above). Each row keeps the pull's query URL; the dataset name and landing page are the ones the earlier rows use. Rows with no electricity figure are kept as filed and give no figure.
+
+Nine were left out:
+
+- Brooklyn Friends School, 375 Pearl Street, 2023 and 2024 (typed K-12 School): another property at the address of a carrier hotel, not the datacenter.
+- 375 Pearl Street "- data", 2023 (39,687,832.2 kWh), and Stella Towers Condo, 2023 (13,297,866.4 kWh): the second of two records the dataset holds for one building-year; the ledger already has the other (39,701,436.9 and 13,298,564.8 kWh; see the duplicate note above).
+- Montgomery County MD, four rows: the pull labels them 2017 and 2023 from `reporting_year_start_date`, and two of their values differ from the rows already transcribed from the same dataset under the same field. Which year each value belongs to was not settled, so none was added.
+- 840 S Canal St, Chicago, 2023: typed Commercial, no electricity figure.
+
+These rows have not had a second reading. A second reading here means opening each year's row on the portal and checking the address, the type as filed and the electricity field and unit.
