@@ -1,0 +1,285 @@
+{
+  "data_mode": "live",
+  "label": "Built from live downloads; see each region's sources and each input summary's retrieved_at.",
+  "inputs": {
+    "ercot": {
+      "file": "ercot_large_load_summary.json",
+      "present": true,
+      "mode": "live",
+      "retrieved_at": "2026-11-03T14:18:07+00:00"
+    },
+    "pjm": {
+      "file": "pjm_queue_summary.json",
+      "present": true,
+      "mode": "live",
+      "retrieved_at": "2026-11-03T14:18:15+00:00"
+    },
+    "iso": {
+      "file": "iso_queues_summary.json",
+      "present": false,
+      "mode": null,
+      "retrieved_at": null
+    },
+    "eia": {
+      "file": "eia_summary.json",
+      "present": true,
+      "mode": "live",
+      "retrieved_at": "2026-11-03T14:18:29+00:00"
+    },
+    "neso": {
+      "file": "neso_demand_summary.json",
+      "present": true,
+      "mode": "live",
+      "retrieved_at": "2026-11-03T14:18:31+00:00"
+    }
+  },
+  "method_note": "Sentences juxtapose figures from different public files without implying causation. Queue MW is requested, not built; EIA-860M MW is nameplate of generators in operation.",
+  "regions": [
+    {
+      "region": "Texas",
+      "sentence": "Texas: 454.5 GW of large-load interconnection requests in ERCOT's queue (ERCOT PDF posted 2026-09-16); an ERCOT deck posted 2026-04-13 described ~87% of the queue as data centres, vs 4.2 GW of natural-gas generating capacity (nameplate) added in Texas since 2022, plus 20.7 GW planned (EIA-860M).",
+      "figures": {
+        "ercot_large_load_requests_mw": 454471.0,
+        "ercot_source": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+        "ercot_data_centre_share_pct": 87.0,
+        "eia_gas_added_since_mw": 4167.7,
+        "eia_gas_added_by_year_mw": {
+          "2022": 1059.0,
+          "2023": 1047.8,
+          "2024": 700.2,
+          "2025": 187.6,
+          "2026": 1173.1
+        },
+        "eia_planned_gas_mw": 20749.5,
+        "eia_since_year": 2022,
+        "ercot_mw_by_status": {
+          "approved_to_energize_not_operational": 3200.0,
+          "no_studies_submitted": 321000.0,
+          "observed_energized": 5900.0,
+          "section_9_5_requirements_met": 22000.0,
+          "under_ercot_review": 93700.0
+        },
+        "ercot_status_snapshot_date": "2026-05-13"
+      },
+      "inputs": [
+        "ercot",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+        "https://www.ercot.com/files/docs/2026/07/10/ERCOT-Monthly-June-2026-FINAL.pdf",
+        "https://www.ercot.com/files/docs/2026/06/19/ERCOT-Monthly-May-2026.pdf",
+        "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf",
+        "https://www.ercot.com/files/docs/2026/04/09/ERCOTLargeLoadUpdate-April9HouseStateAffairsHearing.pdf",
+        "https://www.ercot.com/files/docs/2026/04/01/ERCOT_LargeLoad_Update_April2026_B-C_-Hearing.pdf",
+        "https://www.ercot.com/files/docs/2026/03/17/ERCOT-Monthly-February-2026-FINAL.pdf",
+        "https://www.ercot.com/files/docs/2026/02/13/ERCOT-Monthly-January-2026-FINAL.pdf",
+        "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf",
+        "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Virginia",
+      "sentence": "Virginia: 2.7 GW of natural-gas generation requests are active in PJM's interconnection queue in Virginia (MW Energy), vs 4 MW of natural-gas generating capacity (nameplate) added in Virginia since 2022, plus 1.0 GW planned (EIA-860M).",
+      "figures": {
+        "pjm_active_gas_mw_energy": 2710.0,
+        "eia_gas_added_since_mw": 4.0,
+        "eia_gas_added_by_year_mw": {
+          "2024": 2.0,
+          "2025": 2.0
+        },
+        "eia_planned_gas_mw": 1000.0,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "pjm",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://services.pjm.com/PJMPlanningApi/api/Queue/ExportToXls",
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Ohio",
+      "sentence": "Ohio: 2.3 GW of natural-gas generation requests are active in PJM's interconnection queue in Ohio (MW Energy), vs 3.0 GW of natural-gas generating capacity (nameplate) added in Ohio since 2022, plus 0 MW planned (EIA-860M).",
+      "figures": {
+        "pjm_active_gas_mw_energy": 2327.4,
+        "eia_gas_added_since_mw": 3037.4,
+        "eia_gas_added_by_year_mw": {
+          "2022": 1.5,
+          "2023": 2058.5,
+          "2026": 977.4
+        },
+        "eia_planned_gas_mw": 0,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "pjm",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://services.pjm.com/PJMPlanningApi/api/Queue/ExportToXls",
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Pennsylvania",
+      "sentence": "Pennsylvania: 270 MW of natural-gas generation requests are active in PJM's interconnection queue in Pennsylvania (MW Energy), vs 9 MW of natural-gas generating capacity (nameplate) added in Pennsylvania since 2022, plus 4.4 GW planned (EIA-860M).",
+      "figures": {
+        "pjm_active_gas_mw_energy": 270.3,
+        "eia_gas_added_since_mw": 9.0,
+        "eia_gas_added_by_year_mw": {
+          "2022": 2.0,
+          "2024": 5.5,
+          "2025": 1.5
+        },
+        "eia_planned_gas_mw": 4398.5,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "pjm",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://services.pjm.com/PJMPlanningApi/api/Queue/ExportToXls",
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Wisconsin",
+      "sentence": "Wisconsin: ISO queue figures not available; 430 MW of natural-gas generating capacity (nameplate) added in Wisconsin since 2022, plus 2.7 GW planned (EIA-860M).",
+      "figures": {
+        "eia_gas_added_since_mw": 429.7,
+        "eia_gas_added_by_year_mw": {
+          "2023": 131.6,
+          "2025": 49.0,
+          "2026": 249.1
+        },
+        "eia_planned_gas_mw": 2715.5,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "iso",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Louisiana",
+      "sentence": "Louisiana: ISO queue figures not available; 825 MW of natural-gas generating capacity (nameplate) added in Louisiana since 2022, plus 9.5 GW planned (EIA-860M).",
+      "figures": {
+        "eia_gas_added_since_mw": 825.4,
+        "eia_gas_added_by_year_mw": {
+          "2024": 102.5,
+          "2025": 722.9
+        },
+        "eia_planned_gas_mw": 9482.1,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "iso",
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Georgia",
+      "sentence": "Georgia: 6 MW of natural-gas generating capacity (nameplate) added in Georgia since 2022, plus 2.5 GW planned (EIA-860M); no public interconnection-queue or large-load file for Georgia is scraped by this ledger yet.",
+      "figures": {
+        "eia_gas_added_since_mw": 6.0,
+        "eia_gas_added_by_year_mw": {
+          "2022": 1.0,
+          "2023": 5.0
+        },
+        "eia_planned_gas_mw": 2520.4,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Arizona",
+      "sentence": "Arizona: 805 MW of natural-gas generating capacity (nameplate) added in Arizona since 2022, plus 2.2 GW planned (EIA-860M); no public interconnection-queue or large-load file for Arizona is scraped by this ledger yet.",
+      "figures": {
+        "eia_gas_added_since_mw": 805.0,
+        "eia_gas_added_by_year_mw": {
+          "2022": 198.0,
+          "2024": 99.0,
+          "2025": 211.0,
+          "2026": 297.0
+        },
+        "eia_planned_gas_mw": 2181.0,
+        "eia_since_year": 2022
+      },
+      "inputs": [
+        "eia"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx"
+      ],
+      "data_mode": "live"
+    },
+    {
+      "region": "Great Britain",
+      "sentence": "Great Britain: 9 of 119 transmission-connected demand projects in NESO's Existing Agreement Register are named as data centres (no MW column identified); the register lists only consenting Gate 2 applicants, so this is a lower bound.",
+      "figures": {
+        "demand_projects": 119,
+        "data_centre_named_projects": 9,
+        "demand_mw_total": null,
+        "data_centre_named_mw_total": null,
+        "mw_column_used": null
+      },
+      "inputs": [
+        "neso"
+      ],
+      "input_modes": [
+        "live"
+      ],
+      "sources": [
+        "https://www.neso.energy/document/373996/download"
+      ],
+      "data_mode": "live"
+    }
+  ]
+}

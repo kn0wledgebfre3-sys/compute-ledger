@@ -1,0 +1,1445 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-03T14:18:15+00:00",
+  "sources": [
+    {
+      "url": "https://services.pjm.com/PJMPlanningApi/api/Queue/ExportToXls",
+      "landing_page": "https://www.pjm.com/planning/m/cycle-service-request-status"
+    }
+  ],
+  "projects": 9263,
+  "mw_measure": "MW Energy (incremental energy requested); MFO and MW Capacity shown alongside",
+  "status_group_map": {
+    "Active": "active",
+    "Annulled": "withdrawn",
+    "Canceled": "withdrawn",
+    "Confirmed": "active",
+    "Deactivated": "withdrawn",
+    "Engineering and Procurement": "active",
+    "In Service": "completed",
+    "Partially in Service - Under Construction": "completed",
+    "Pending Termination": "active",
+    "Retracted": "withdrawn",
+    "Suspended": "active",
+    "Under Construction": "active",
+    "Withdrawn": "withdrawn"
+  },
+  "mw_by_fuel_group_and_status_group": [
+    {
+      "fuel_group": "coal",
+      "status_group": "active",
+      "projects": 1,
+      "mw_energy": 0.0,
+      "mfo": 538.0,
+      "mw_capacity": 14.0
+    },
+    {
+      "fuel_group": "coal",
+      "status_group": "completed",
+      "projects": 54,
+      "mw_energy": 2190.5,
+      "mfo": 38481.5,
+      "mw_capacity": 2174.2
+    },
+    {
+      "fuel_group": "coal",
+      "status_group": "withdrawn",
+      "projects": 84,
+      "mw_energy": 34593.1,
+      "mfo": 47521.6,
+      "mw_capacity": 33745.3
+    },
+    {
+      "fuel_group": "gas",
+      "status_group": "active",
+      "projects": 46,
+      "mw_energy": 12106.3,
+      "mfo": 31436.7,
+      "mw_capacity": 12194.7
+    },
+    {
+      "fuel_group": "gas",
+      "status_group": "completed",
+      "projects": 397,
+      "mw_energy": 60585.7,
+      "mfo": 198422.4,
+      "mw_capacity": 58213.3
+    },
+    {
+      "fuel_group": "gas",
+      "status_group": "withdrawn",
+      "projects": 708,
+      "mw_energy": 246796.9,
+      "mfo": 346027.3,
+      "mw_capacity": 243085.4
+    },
+    {
+      "fuel_group": "hybrid",
+      "status_group": "active",
+      "projects": 33,
+      "mw_energy": 3924.8,
+      "mfo": 4304.8,
+      "mw_capacity": 2771.5
+    },
+    {
+      "fuel_group": "hybrid",
+      "status_group": "completed",
+      "projects": 11,
+      "mw_energy": 316.2,
+      "mfo": 686.0,
+      "mw_capacity": 107.8
+    },
+    {
+      "fuel_group": "hybrid",
+      "status_group": "withdrawn",
+      "projects": 496,
+      "mw_energy": 38506.9,
+      "mfo": 46569.0,
+      "mw_capacity": 29378.9
+    },
+    {
+      "fuel_group": "hydro",
+      "status_group": "active",
+      "projects": 1,
+      "mw_energy": 51.0,
+      "mfo": 105.2,
+      "mw_capacity": 30.0
+    },
+    {
+      "fuel_group": "hydro",
+      "status_group": "completed",
+      "projects": 32,
+      "mw_energy": 1197.1,
+      "mfo": 7931.9,
+      "mw_capacity": 1155.9
+    },
+    {
+      "fuel_group": "hydro",
+      "status_group": "withdrawn",
+      "projects": 62,
+      "mw_energy": 3482.3,
+      "mfo": 4691.7,
+      "mw_capacity": 2744.1
+    },
+    {
+      "fuel_group": "nuclear",
+      "status_group": "active",
+      "projects": 5,
+      "mw_energy": 1502.8,
+      "mfo": 9983.8,
+      "mw_capacity": 1305.9
+    },
+    {
+      "fuel_group": "nuclear",
+      "status_group": "completed",
+      "projects": 47,
+      "mw_energy": 4034.0,
+      "mfo": 65172.9,
+      "mw_capacity": 3984.2
+    },
+    {
+      "fuel_group": "nuclear",
+      "status_group": "withdrawn",
+      "projects": 26,
+      "mw_energy": 9241.0,
+      "mfo": 33216.0,
+      "mw_capacity": 9054.8
+    },
+    {
+      "fuel_group": "other",
+      "status_group": "active",
+      "projects": 3,
+      "mw_energy": 80.1,
+      "mfo": 80.1,
+      "mw_capacity": 79.1
+    },
+    {
+      "fuel_group": "other",
+      "status_group": "completed",
+      "projects": 116,
+      "mw_energy": 1932.2,
+      "mfo": 3588.1,
+      "mw_capacity": 1410.6
+    },
+    {
+      "fuel_group": "other",
+      "status_group": "withdrawn",
+      "projects": 236,
+      "mw_energy": 5621.4,
+      "mfo": 10533.0,
+      "mw_capacity": 5408.6
+    },
+    {
+      "fuel_group": "solar",
+      "status_group": "active",
+      "projects": 362,
+      "mw_energy": 32506.7,
+      "mfo": 46151.8,
+      "mw_capacity": 17965.7
+    },
+    {
+      "fuel_group": "solar",
+      "status_group": "completed",
+      "projects": 456,
+      "mw_energy": 18382.3,
+      "mfo": 23340.9,
+      "mw_capacity": 10601.4
+    },
+    {
+      "fuel_group": "solar",
+      "status_group": "withdrawn",
+      "projects": 3204,
+      "mw_energy": 139597.5,
+      "mfo": 207396.7,
+      "mw_capacity": 90598.5
+    },
+    {
+      "fuel_group": "storage",
+      "status_group": "active",
+      "projects": 93,
+      "mw_energy": 9158.4,
+      "mfo": 18222.4,
+      "mw_capacity": 7456.9
+    },
+    {
+      "fuel_group": "storage",
+      "status_group": "completed",
+      "projects": 31,
+      "mw_energy": 495.4,
+      "mfo": 677.4,
+      "mw_capacity": 210.4
+    },
+    {
+      "fuel_group": "storage",
+      "status_group": "withdrawn",
+      "projects": 930,
+      "mw_energy": 60406.0,
+      "mfo": 122390.5,
+      "mw_capacity": 58788.0
+    },
+    {
+      "fuel_group": "unknown",
+      "status_group": "active",
+      "projects": 225,
+      "mw_energy": 3906.0,
+      "mfo": 26946.0,
+      "mw_capacity": 253.2
+    },
+    {
+      "fuel_group": "unknown",
+      "status_group": "completed",
+      "projects": 30,
+      "mw_energy": 1793.0,
+      "mfo": 6126.0,
+      "mw_capacity": 650.0
+    },
+    {
+      "fuel_group": "unknown",
+      "status_group": "withdrawn",
+      "projects": 753,
+      "mw_energy": 47813.7,
+      "mfo": 186914.7,
+      "mw_capacity": 6402.0
+    },
+    {
+      "fuel_group": "wind",
+      "status_group": "active",
+      "projects": 26,
+      "mw_energy": 5889.1,
+      "mfo": 6736.9,
+      "mw_capacity": 1185.3
+    },
+    {
+      "fuel_group": "wind",
+      "status_group": "completed",
+      "projects": 127,
+      "mw_energy": 14122.1,
+      "mfo": 17296.0,
+      "mw_capacity": 2803.5
+    },
+    {
+      "fuel_group": "wind",
+      "status_group": "withdrawn",
+      "projects": 668,
+      "mw_energy": 131345.9,
+      "mfo": 162109.0,
+      "mw_capacity": 39503.9
+    }
+  ],
+  "mw_by_fuel_raw_and_status_raw": [
+    {
+      "fuel_raw": "Biomass",
+      "status_raw": "Deactivated",
+      "projects": 5,
+      "mw_energy": 113.8,
+      "mfo": 213.8,
+      "mw_capacity": 155.0
+    },
+    {
+      "fuel_raw": "Biomass",
+      "status_raw": "In Service",
+      "projects": 8,
+      "mw_energy": 184.7,
+      "mfo": 297.9,
+      "mw_capacity": 131.8
+    },
+    {
+      "fuel_raw": "Biomass",
+      "status_raw": "Withdrawn",
+      "projects": 41,
+      "mw_energy": 963.6,
+      "mfo": 1413.6,
+      "mw_capacity": 906.7
+    },
+    {
+      "fuel_raw": "Coal",
+      "status_raw": "Active",
+      "projects": 1,
+      "mw_energy": 0.0,
+      "mfo": 538.0,
+      "mw_capacity": 14.0
+    },
+    {
+      "fuel_raw": "Coal",
+      "status_raw": "Deactivated",
+      "projects": 14,
+      "mw_energy": 196.5,
+      "mfo": 6523.0,
+      "mw_capacity": 167.7
+    },
+    {
+      "fuel_raw": "Coal",
+      "status_raw": "In Service",
+      "projects": 53,
+      "mw_energy": 2154.5,
+      "mfo": 37125.5,
+      "mw_capacity": 2138.2
+    },
+    {
+      "fuel_raw": "Coal",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 1,
+      "mw_energy": 36.0,
+      "mfo": 1356.0,
+      "mw_capacity": 36.0
+    },
+    {
+      "fuel_raw": "Coal",
+      "status_raw": "Withdrawn",
+      "projects": 70,
+      "mw_energy": 34396.6,
+      "mfo": 40998.6,
+      "mw_capacity": 33577.6
+    },
+    {
+      "fuel_raw": "Diesel",
+      "status_raw": "Deactivated",
+      "projects": 3,
+      "mw_energy": 14.0,
+      "mfo": 24.0,
+      "mw_capacity": 14.1
+    },
+    {
+      "fuel_raw": "Diesel",
+      "status_raw": "In Service",
+      "projects": 6,
+      "mw_energy": 84.8,
+      "mfo": 92.0,
+      "mw_capacity": 60.3
+    },
+    {
+      "fuel_raw": "Diesel",
+      "status_raw": "Withdrawn",
+      "projects": 15,
+      "mw_energy": 83.5,
+      "mfo": 89.5,
+      "mw_capacity": 56.5
+    },
+    {
+      "fuel_raw": "Diesel; Methane",
+      "status_raw": "In Service",
+      "projects": 2,
+      "mw_energy": 0.0,
+      "mfo": 19.0,
+      "mw_capacity": 2.1
+    },
+    {
+      "fuel_raw": "Diesel; Solar",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 6.6,
+      "mfo": 6.6,
+      "mw_capacity": 0.0
+    },
+    {
+      "fuel_raw": "Hydro",
+      "status_raw": "Engineering and Procurement",
+      "projects": 1,
+      "mw_energy": 51.0,
+      "mfo": 105.2,
+      "mw_capacity": 30.0
+    },
+    {
+      "fuel_raw": "Hydro",
+      "status_raw": "In Service",
+      "projects": 32,
+      "mw_energy": 1197.1,
+      "mfo": 7931.9,
+      "mw_capacity": 1155.9
+    },
+    {
+      "fuel_raw": "Hydro",
+      "status_raw": "Withdrawn",
+      "projects": 62,
+      "mw_energy": 3482.3,
+      "mfo": 4691.7,
+      "mw_capacity": 2744.1
+    },
+    {
+      "fuel_raw": "Methane",
+      "status_raw": "Deactivated",
+      "projects": 25,
+      "mw_energy": 128.8,
+      "mfo": 153.8,
+      "mw_capacity": 113.0
+    },
+    {
+      "fuel_raw": "Methane",
+      "status_raw": "In Service",
+      "projects": 70,
+      "mw_energy": 324.5,
+      "mfo": 455.7,
+      "mw_capacity": 306.7
+    },
+    {
+      "fuel_raw": "Methane",
+      "status_raw": "Withdrawn",
+      "projects": 95,
+      "mw_energy": 522.9,
+      "mfo": 570.9,
+      "mw_capacity": 485.8
+    },
+    {
+      "fuel_raw": "Methane; Solar",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 11.6,
+      "mfo": 11.6,
+      "mw_capacity": 10.3
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Active",
+      "projects": 24,
+      "mw_energy": 7488.7,
+      "mfo": 18406.8,
+      "mw_capacity": 7446.1
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Deactivated",
+      "projects": 12,
+      "mw_energy": 373.5,
+      "mfo": 2151.8,
+      "mw_capacity": 357.0
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Engineering and Procurement",
+      "projects": 14,
+      "mw_energy": 2374.7,
+      "mfo": 8080.5,
+      "mw_capacity": 2476.6
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "In Service",
+      "projects": 395,
+      "mw_energy": 60474.6,
+      "mfo": 195790.4,
+      "mw_capacity": 58042.2
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 2,
+      "mw_energy": 111.1,
+      "mfo": 2632.0,
+      "mw_capacity": 171.1
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Under Construction",
+      "projects": 6,
+      "mw_energy": 2243.0,
+      "mfo": 3373.0,
+      "mw_capacity": 2218.0
+    },
+    {
+      "fuel_raw": "Natural Gas",
+      "status_raw": "Withdrawn",
+      "projects": 694,
+      "mw_energy": 245873.4,
+      "mfo": 341746.5,
+      "mw_capacity": 242145.3
+    },
+    {
+      "fuel_raw": "Natural Gas; Diesel; Other; Storage",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 21.5,
+      "mfo": 21.5,
+      "mw_capacity": 20.2
+    },
+    {
+      "fuel_raw": "Natural Gas; Oil",
+      "status_raw": "Active",
+      "projects": 1,
+      "mw_energy": 0.0,
+      "mfo": 51.0,
+      "mw_capacity": 20.0
+    },
+    {
+      "fuel_raw": "Natural Gas; Other",
+      "status_raw": "Active",
+      "projects": 1,
+      "mw_energy": 0.0,
+      "mfo": 1525.5,
+      "mw_capacity": 34.0
+    },
+    {
+      "fuel_raw": "Natural Gas; Other",
+      "status_raw": "Withdrawn",
+      "projects": 2,
+      "mw_energy": 550.0,
+      "mfo": 2129.0,
+      "mw_capacity": 583.1
+    },
+    {
+      "fuel_raw": "Natural Gas; Other; Storage; Solar",
+      "status_raw": "Withdrawn",
+      "projects": 2,
+      "mw_energy": 265.5,
+      "mfo": 265.5,
+      "mw_capacity": 248.2
+    },
+    {
+      "fuel_raw": "Natural Gas; Solar; Other",
+      "status_raw": "In Service",
+      "projects": 1,
+      "mw_energy": 5.0,
+      "mfo": 5.0,
+      "mw_capacity": 0.0
+    },
+    {
+      "fuel_raw": "Natural Gas; Storage",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 105.0,
+      "mfo": 565.0,
+      "mw_capacity": 40.0
+    },
+    {
+      "fuel_raw": "Nuclear",
+      "status_raw": "Active",
+      "projects": 5,
+      "mw_energy": 1502.8,
+      "mfo": 9983.8,
+      "mw_capacity": 1305.9
+    },
+    {
+      "fuel_raw": "Nuclear",
+      "status_raw": "Deactivated",
+      "projects": 1,
+      "mw_energy": 14.0,
+      "mfo": 824.0,
+      "mw_capacity": 16.8
+    },
+    {
+      "fuel_raw": "Nuclear",
+      "status_raw": "In Service",
+      "projects": 46,
+      "mw_energy": 3990.0,
+      "mfo": 62463.1,
+      "mw_capacity": 3940.2
+    },
+    {
+      "fuel_raw": "Nuclear",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 1,
+      "mw_energy": 44.0,
+      "mfo": 2709.8,
+      "mw_capacity": 44.0
+    },
+    {
+      "fuel_raw": "Nuclear",
+      "status_raw": "Withdrawn",
+      "projects": 25,
+      "mw_energy": 9227.0,
+      "mfo": 32392.0,
+      "mw_capacity": 9038.0
+    },
+    {
+      "fuel_raw": "Offshore Wind",
+      "status_raw": "In Service",
+      "projects": 1,
+      "mw_energy": 12.0,
+      "mfo": 12.0,
+      "mw_capacity": 1.5
+    },
+    {
+      "fuel_raw": "Offshore Wind",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 2,
+      "mw_energy": 1656.0,
+      "mfo": 1656.0,
+      "mw_capacity": 503.4
+    },
+    {
+      "fuel_raw": "Offshore Wind",
+      "status_raw": "Suspended",
+      "projects": 4,
+      "mw_energy": 1503.1,
+      "mfo": 1750.9,
+      "mw_capacity": 417.0
+    },
+    {
+      "fuel_raw": "Offshore Wind",
+      "status_raw": "Withdrawn",
+      "projects": 73,
+      "mw_energy": 41568.8,
+      "mfo": 54898.8,
+      "mw_capacity": 16684.6
+    },
+    {
+      "fuel_raw": "Oil",
+      "status_raw": "Deactivated",
+      "projects": 5,
+      "mw_energy": 31.0,
+      "mfo": 257.0,
+      "mw_capacity": 31.0
+    },
+    {
+      "fuel_raw": "Oil",
+      "status_raw": "Engineering and Procurement",
+      "projects": 1,
+      "mw_energy": 50.0,
+      "mfo": 50.0,
+      "mw_capacity": 50.0
+    },
+    {
+      "fuel_raw": "Oil",
+      "status_raw": "In Service",
+      "projects": 23,
+      "mw_energy": 718.8,
+      "mfo": 2024.5,
+      "mw_capacity": 525.8
+    },
+    {
+      "fuel_raw": "Oil",
+      "status_raw": "Withdrawn",
+      "projects": 23,
+      "mw_energy": 2324.0,
+      "mfo": 6319.5,
+      "mw_capacity": 2314.0
+    },
+    {
+      "fuel_raw": "Other",
+      "status_raw": "Active",
+      "projects": 1,
+      "mw_energy": 10.1,
+      "mfo": 10.1,
+      "mw_capacity": 9.1
+    },
+    {
+      "fuel_raw": "Other",
+      "status_raw": "Deactivated",
+      "projects": 3,
+      "mw_energy": 40.0,
+      "mfo": 90.0,
+      "mw_capacity": 40.0
+    },
+    {
+      "fuel_raw": "Other",
+      "status_raw": "Engineering and Procurement",
+      "projects": 1,
+      "mw_energy": 20.0,
+      "mfo": 20.0,
+      "mw_capacity": 20.0
+    },
+    {
+      "fuel_raw": "Other",
+      "status_raw": "In Service",
+      "projects": 5,
+      "mw_energy": 552.9,
+      "mfo": 552.9,
+      "mw_capacity": 329.9
+    },
+    {
+      "fuel_raw": "Other",
+      "status_raw": "Withdrawn",
+      "projects": 17,
+      "mw_energy": 1234.9,
+      "mfo": 1235.9,
+      "mw_capacity": 1139.4
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Active",
+      "projects": 99,
+      "mw_energy": 7670.2,
+      "mfo": 14097.9,
+      "mw_capacity": 4466.6
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Deactivated",
+      "projects": 1,
+      "mw_energy": 2.6,
+      "mfo": 2.6,
+      "mw_capacity": 1.0
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Engineering and Procurement",
+      "projects": 143,
+      "mw_energy": 15171.0,
+      "mfo": 20728.5,
+      "mw_capacity": 8178.2
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "In Service",
+      "projects": 411,
+      "mw_energy": 14371.0,
+      "mfo": 18490.9,
+      "mw_capacity": 8210.0
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 45,
+      "mw_energy": 4011.3,
+      "mfo": 4850.0,
+      "mw_capacity": 2391.4
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Pending Termination",
+      "projects": 12,
+      "mw_energy": 842.9,
+      "mfo": 1167.9,
+      "mw_capacity": 460.9
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Suspended",
+      "projects": 46,
+      "mw_energy": 2714.6,
+      "mfo": 3401.0,
+      "mw_capacity": 1466.1
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Under Construction",
+      "projects": 62,
+      "mw_energy": 6108.0,
+      "mfo": 6756.4,
+      "mw_capacity": 3394.0
+    },
+    {
+      "fuel_raw": "Solar",
+      "status_raw": "Withdrawn",
+      "projects": 3200,
+      "mw_energy": 139563.2,
+      "mfo": 207362.4,
+      "mw_capacity": 90579.9
+    },
+    {
+      "fuel_raw": "Solar; Biomass",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 13.5,
+      "mfo": 13.5,
+      "mw_capacity": 7.3
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "Active",
+      "projects": 11,
+      "mw_energy": 1386.3,
+      "mfo": 1466.3,
+      "mw_capacity": 1062.8
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "Engineering and Procurement",
+      "projects": 18,
+      "mw_energy": 2274.6,
+      "mfo": 2574.6,
+      "mw_capacity": 1551.1
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "In Service",
+      "projects": 7,
+      "mw_energy": 25.2,
+      "mfo": 125.0,
+      "mw_capacity": 12.4
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 1,
+      "mw_energy": 100.0,
+      "mfo": 130.0,
+      "mw_capacity": 56.0
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "Under Construction",
+      "projects": 4,
+      "mw_energy": 263.9,
+      "mfo": 263.9,
+      "mw_capacity": 157.6
+    },
+    {
+      "fuel_raw": "Solar; Storage",
+      "status_raw": "Withdrawn",
+      "projects": 473,
+      "mw_energy": 36851.0,
+      "mfo": 44054.1,
+      "mw_capacity": 28225.7
+    },
+    {
+      "fuel_raw": "Solar; Storage; Wind",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 450.0,
+      "mfo": 450.0,
+      "mw_capacity": 450.0
+    },
+    {
+      "fuel_raw": "Solar; Wind",
+      "status_raw": "Withdrawn",
+      "projects": 2,
+      "mw_energy": 10.0,
+      "mfo": 209.0,
+      "mw_capacity": 83.4
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Active",
+      "projects": 37,
+      "mw_energy": 5008.0,
+      "mfo": 9477.0,
+      "mw_capacity": 4529.3
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Deactivated",
+      "projects": 12,
+      "mw_energy": 115.9,
+      "mfo": 237.7,
+      "mw_capacity": 0.1
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Engineering and Procurement",
+      "projects": 40,
+      "mw_energy": 3207.2,
+      "mfo": 6371.2,
+      "mw_capacity": 2384.3
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "In Service",
+      "projects": 28,
+      "mw_energy": 275.4,
+      "mfo": 357.4,
+      "mw_capacity": 40.4
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 3,
+      "mw_energy": 220.0,
+      "mfo": 320.0,
+      "mw_capacity": 170.0
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Pending Termination",
+      "projects": 1,
+      "mw_energy": 160.0,
+      "mfo": 160.0,
+      "mw_capacity": 32.0
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Suspended",
+      "projects": 8,
+      "mw_energy": 308.2,
+      "mfo": 1739.2,
+      "mw_capacity": 281.3
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Under Construction",
+      "projects": 7,
+      "mw_energy": 475.0,
+      "mfo": 475.0,
+      "mw_capacity": 230.0
+    },
+    {
+      "fuel_raw": "Storage",
+      "status_raw": "Withdrawn",
+      "projects": 918,
+      "mw_energy": 60290.1,
+      "mfo": 122152.8,
+      "mw_capacity": 58787.9
+    },
+    {
+      "fuel_raw": "Storage; Solar",
+      "status_raw": "Withdrawn",
+      "projects": 12,
+      "mw_energy": 348.6,
+      "mfo": 423.6,
+      "mw_capacity": 215.9
+    },
+    {
+      "fuel_raw": "Storage; Wind",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 150.0,
+      "mfo": 150.0,
+      "mw_capacity": 26.4
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Active",
+      "projects": 4,
+      "mw_energy": 548.4,
+      "mfo": 548.4,
+      "mw_capacity": 92.0
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Deactivated",
+      "projects": 3,
+      "mw_energy": 13.6,
+      "mfo": 24.0,
+      "mw_capacity": 4.6
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Engineering and Procurement",
+      "projects": 8,
+      "mw_energy": 1545.9,
+      "mfo": 1745.9,
+      "mw_capacity": 273.2
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "In Service",
+      "projects": 117,
+      "mw_energy": 11469.8,
+      "mfo": 14184.2,
+      "mw_capacity": 2144.9
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Partially in Service - Under Construction",
+      "projects": 7,
+      "mw_energy": 984.3,
+      "mfo": 1443.8,
+      "mw_capacity": 153.7
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Pending Termination",
+      "projects": 1,
+      "mw_energy": 80.0,
+      "mfo": 80.0,
+      "mw_capacity": 11.8
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Suspended",
+      "projects": 3,
+      "mw_energy": 400.0,
+      "mfo": 500.0,
+      "mw_capacity": 60.0
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Under Construction",
+      "projects": 6,
+      "mw_energy": 1811.7,
+      "mfo": 2111.7,
+      "mw_capacity": 331.3
+    },
+    {
+      "fuel_raw": "Wind",
+      "status_raw": "Withdrawn",
+      "projects": 592,
+      "mw_energy": 89763.5,
+      "mfo": 107186.2,
+      "mw_capacity": 22814.8
+    },
+    {
+      "fuel_raw": "Wind; Solar",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 199.0,
+      "mfo": 199.0,
+      "mw_capacity": 51.4
+    },
+    {
+      "fuel_raw": "Wind; Storage",
+      "status_raw": "Canceled",
+      "projects": 1,
+      "mw_energy": 16.3,
+      "mfo": 141.3,
+      "mw_capacity": 5.8
+    },
+    {
+      "fuel_raw": "Wind; Storage",
+      "status_raw": "In Service",
+      "projects": 2,
+      "mw_energy": 186.0,
+      "mfo": 426.0,
+      "mw_capacity": 39.4
+    },
+    {
+      "fuel_raw": "Wind; Storage",
+      "status_raw": "Withdrawn",
+      "projects": 1,
+      "mw_energy": 90.0,
+      "mfo": 90.0,
+      "mw_capacity": 11.8
+    },
+    {
+      "fuel_raw": "Wood",
+      "status_raw": "In Service",
+      "projects": 2,
+      "mw_energy": 66.5,
+      "mfo": 146.1,
+      "mw_capacity": 54.0
+    },
+    {
+      "fuel_raw": "Wood",
+      "status_raw": "Withdrawn",
+      "projects": 4,
+      "mw_energy": 165.0,
+      "mfo": 165.0,
+      "mw_capacity": 153.0
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "Annulled",
+      "projects": 24,
+      "mw_energy": 0.0,
+      "mfo": 4914.0,
+      "mw_capacity": 0.0
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "Confirmed",
+      "projects": 224,
+      "mw_energy": 3073.0,
+      "mfo": 26113.0,
+      "mw_capacity": 0.0
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "In Service",
+      "projects": 30,
+      "mw_energy": 1793.0,
+      "mfo": 6126.0,
+      "mw_capacity": 650.0
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "Retracted",
+      "projects": 131,
+      "mw_energy": 2013.0,
+      "mfo": 30050.0,
+      "mw_capacity": 0.0
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "Under Construction",
+      "projects": 1,
+      "mw_energy": 833.0,
+      "mfo": 833.0,
+      "mw_capacity": 253.2
+    },
+    {
+      "fuel_raw": NaN,
+      "status_raw": "Withdrawn",
+      "projects": 598,
+      "mw_energy": 45800.7,
+      "mfo": 151950.7,
+      "mw_capacity": 6402.0
+    }
+  ],
+  "active_mw_by_state_and_fuel_group": [
+    {
+      "state": "DE",
+      "fuel_group": "solar",
+      "projects": 10,
+      "mw_energy": 232.3
+    },
+    {
+      "state": "DE",
+      "fuel_group": "wind",
+      "projects": 2,
+      "mw_energy": 255.1
+    },
+    {
+      "state": "IL",
+      "fuel_group": "gas",
+      "projects": 1,
+      "mw_energy": 11.0
+    },
+    {
+      "state": "IL",
+      "fuel_group": "hybrid",
+      "projects": 2,
+      "mw_energy": 112.3
+    },
+    {
+      "state": "IL",
+      "fuel_group": "nuclear",
+      "projects": 3,
+      "mw_energy": 387.0
+    },
+    {
+      "state": "IL",
+      "fuel_group": "solar",
+      "projects": 34,
+      "mw_energy": 5954.0
+    },
+    {
+      "state": "IL",
+      "fuel_group": "storage",
+      "projects": 14,
+      "mw_energy": 1240.0
+    },
+    {
+      "state": "IL",
+      "fuel_group": "wind",
+      "projects": 8,
+      "mw_energy": 2140.9
+    },
+    {
+      "state": "IN",
+      "fuel_group": "gas",
+      "projects": 3,
+      "mw_energy": 1660.0
+    },
+    {
+      "state": "IN",
+      "fuel_group": "hybrid",
+      "projects": 7,
+      "mw_energy": 785.5
+    },
+    {
+      "state": "IN",
+      "fuel_group": "solar",
+      "projects": 33,
+      "mw_energy": 4128.0
+    },
+    {
+      "state": "IN",
+      "fuel_group": "storage",
+      "projects": 11,
+      "mw_energy": 678.0
+    },
+    {
+      "state": "IN",
+      "fuel_group": "wind",
+      "projects": 8,
+      "mw_energy": 1355.0
+    },
+    {
+      "state": "KY",
+      "fuel_group": "gas",
+      "projects": 1,
+      "mw_energy": 786.0
+    },
+    {
+      "state": "KY",
+      "fuel_group": "hybrid",
+      "projects": 2,
+      "mw_energy": 169.2
+    },
+    {
+      "state": "KY",
+      "fuel_group": "solar",
+      "projects": 27,
+      "mw_energy": 2623.5
+    },
+    {
+      "state": "KY",
+      "fuel_group": "storage",
+      "projects": 1,
+      "mw_energy": 100.0
+    },
+    {
+      "state": "MD",
+      "fuel_group": "gas",
+      "projects": 1,
+      "mw_energy": 53.5
+    },
+    {
+      "state": "MD",
+      "fuel_group": "hybrid",
+      "projects": 5,
+      "mw_energy": 986.8
+    },
+    {
+      "state": "MD",
+      "fuel_group": "solar",
+      "projects": 6,
+      "mw_energy": 399.0
+    },
+    {
+      "state": "MD",
+      "fuel_group": "storage",
+      "projects": 2,
+      "mw_energy": 1000.0
+    },
+    {
+      "state": "MD",
+      "fuel_group": "wind",
+      "projects": 1,
+      "mw_energy": 80.0
+    },
+    {
+      "state": "MI",
+      "fuel_group": "hybrid",
+      "projects": 2,
+      "mw_energy": 500.0
+    },
+    {
+      "state": "MI",
+      "fuel_group": "solar",
+      "projects": 3,
+      "mw_energy": 335.0
+    },
+    {
+      "state": "MI",
+      "fuel_group": "storage",
+      "projects": 2,
+      "mw_energy": 50.0
+    },
+    {
+      "state": "NC",
+      "fuel_group": "hybrid",
+      "projects": 1,
+      "mw_energy": 100.0
+    },
+    {
+      "state": "NC",
+      "fuel_group": "solar",
+      "projects": 14,
+      "mw_energy": 1302.0
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "gas",
+      "projects": 4,
+      "mw_energy": 293.2
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "hybrid",
+      "projects": 2,
+      "mw_energy": 108.0
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "nuclear",
+      "projects": 1,
+      "mw_energy": 256.8
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "solar",
+      "projects": 8,
+      "mw_energy": 137.6
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "storage",
+      "projects": 10,
+      "mw_energy": 1210.0
+    },
+    {
+      "state": "NJ",
+      "fuel_group": "wind",
+      "projects": 2,
+      "mw_energy": 1248.0
+    },
+    {
+      "state": "OH",
+      "fuel_group": "gas",
+      "projects": 11,
+      "mw_energy": 2327.4
+    },
+    {
+      "state": "OH",
+      "fuel_group": "hybrid",
+      "projects": 3,
+      "mw_energy": 270.0
+    },
+    {
+      "state": "OH",
+      "fuel_group": "other",
+      "projects": 1,
+      "mw_energy": 10.1
+    },
+    {
+      "state": "OH",
+      "fuel_group": "solar",
+      "projects": 58,
+      "mw_energy": 6056.2
+    },
+    {
+      "state": "OH",
+      "fuel_group": "storage",
+      "projects": 12,
+      "mw_energy": 734.2
+    },
+    {
+      "state": "OH",
+      "fuel_group": "wind",
+      "projects": 1,
+      "mw_energy": 261.7
+    },
+    {
+      "state": "PA",
+      "fuel_group": "gas",
+      "projects": 1,
+      "mw_energy": 270.3
+    },
+    {
+      "state": "PA",
+      "fuel_group": "hybrid",
+      "projects": 5,
+      "mw_energy": 330.0
+    },
+    {
+      "state": "PA",
+      "fuel_group": "nuclear",
+      "projects": 1,
+      "mw_energy": 859.0
+    },
+    {
+      "state": "PA",
+      "fuel_group": "solar",
+      "projects": 78,
+      "mw_energy": 2532.6
+    },
+    {
+      "state": "PA",
+      "fuel_group": "storage",
+      "projects": 6,
+      "mw_energy": 620.0
+    },
+    {
+      "state": "VA",
+      "fuel_group": "gas",
+      "projects": 19,
+      "mw_energy": 2710.0
+    },
+    {
+      "state": "VA",
+      "fuel_group": "hybrid",
+      "projects": 3,
+      "mw_energy": 483.0
+    },
+    {
+      "state": "VA",
+      "fuel_group": "other",
+      "projects": 1,
+      "mw_energy": 20.0
+    },
+    {
+      "state": "VA",
+      "fuel_group": "solar",
+      "projects": 83,
+      "mw_energy": 8037.5
+    },
+    {
+      "state": "VA",
+      "fuel_group": "storage",
+      "projects": 35,
+      "mw_energy": 3526.2
+    },
+    {
+      "state": "VA",
+      "fuel_group": "unknown",
+      "projects": 1,
+      "mw_energy": 833.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "coal",
+      "projects": 1,
+      "mw_energy": 0.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "gas",
+      "projects": 5,
+      "mw_energy": 3995.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "hybrid",
+      "projects": 1,
+      "mw_energy": 80.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "hydro",
+      "projects": 1,
+      "mw_energy": 51.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "other",
+      "projects": 1,
+      "mw_energy": 50.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "solar",
+      "projects": 8,
+      "mw_energy": 769.0
+    },
+    {
+      "state": "WV",
+      "fuel_group": "wind",
+      "projects": 4,
+      "mw_energy": 548.4
+    },
+    {
+      "state": NaN,
+      "fuel_group": "unknown",
+      "projects": 224,
+      "mw_energy": 3073.0
+    }
+  ],
+  "data_centre_named_projects": [],
+  "large_load_forecast": {
+    "source_url": "https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/total-load-adjustments-breakdown.xlsx",
+    "interpreted": false,
+    "note": "Not fetched (run live with --with-load-adjustments). No fixture exists: columns never seen."
+  }
+}

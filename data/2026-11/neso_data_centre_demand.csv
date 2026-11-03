@@ -1,0 +1,10 @@
+Project Name,Technology Type,is_data_centre_name,mw,Associated Installed Capacity,Existing Connection Date,Existing Connection Point,Expressed an interest in Gate 1 agreement with reservation
+Digital and Manufacturing Campus Including Data Centres,Transmission Connected Demand,True,,500,2037-10-30 00:00:00,Easterhouse GSP,N
+Drax Power Station Data Centre,Transmission Connected Demand,True,,1200,2039-10-30 00:00:00,Trent Valley North Connection Node B 132kV Substation,N
+Edzell Data Centre,Transmission Connected Demand,True,,800,2033-10-31 00:00:00,New Brechin 400kV Substation,N
+Fiddler's Ferry Data Centre,Transmission Connected Demand,True,,900,2037-10-30 00:00:00,Manchester North Connection Node C 400kV Substation,N
+Mecure Data Centre,Transmission Connected Demand,True,,435,2030-01-31 00:00:00,Elstree 400kV Substation,N
+MedwayOne Datacentre,Transmission Connected Demand,True,,340,2037-10-31 00:00:00,North Kent Connection Node C 400kV Substation,N
+Ratcliffe Data Centre,Transmission Connected Demand,True,,720,2037-10-31 00:00:00,Derbyshire Connection Node F 132KV,N
+Sutton Courtenay Datacentre,Transmission Connected Demand,True,,99.9,2037-10-31 00:00:00,Didcot 132kV Substation,N
+West Burton Data Centre,Transmission Connected Demand,True,,500,2039-10-30 00:00:00,West Burton 400kV Substation,N

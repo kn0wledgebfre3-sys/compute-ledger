@@ -1,0 +1,81 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-03T14:18:31+00:00",
+  "sources": [
+    {
+      "dataset": "EA register",
+      "url": "https://www.neso.energy/document/373996/download",
+      "final_url": "https://www.neso.energy/document/373996/download",
+      "landing_page": "https://www.neso.energy/industry-information/connections-reform"
+    }
+  ],
+  "coverage_warning": "EA register lists only Gate 2 applicants that consented to publication; name-based data-centre flag is a lower bound.",
+  "ea_register": {
+    "sheet": "Sheet1",
+    "columns_found": [
+      "Project Name",
+      "Associated Installed Capacity",
+      "Existing Connection Date",
+      "Existing Connection Point",
+      "Expressed an interest in Gate 1 agreement with reservation",
+      "Technology Type"
+    ],
+    "technology_type_values": [
+      "battery",
+      "interconnector",
+      "ldes",
+      "liquid air energy storage (laes)",
+      "low carbon dispatchable power",
+      "nuclear",
+      "offshore wind",
+      "onshore wind",
+      "other",
+      "reactive compensation",
+      "run-of-river hydro",
+      "solar",
+      "tidal",
+      "transmission connected demand",
+      "unabated gas",
+      "unaligned"
+    ],
+    "demand_projects": 119,
+    "data_centre_named_projects": 9,
+    "mw_column_used": null,
+    "mw_column_verified": false,
+    "demand_mw_total": null,
+    "data_centre_named_mw_total": null,
+    "data_centre_name_pattern": "data[\\s_-]?cent(?:er|re)s?|datacent(?:er|re)|hyperscale",
+    "data_centre_named_list": [
+      {
+        "Project Name": "Digital and Manufacturing Campus Including Data Centres"
+      },
+      {
+        "Project Name": "Drax Power Station Data Centre"
+      },
+      {
+        "Project Name": "Edzell Data Centre"
+      },
+      {
+        "Project Name": "Fiddler's Ferry Data Centre"
+      },
+      {
+        "Project Name": "Mecure Data Centre"
+      },
+      {
+        "Project Name": "MedwayOne Datacentre"
+      },
+      {
+        "Project Name": "Ratcliffe Data Centre"
+      },
+      {
+        "Project Name": "Sutton Courtenay Datacentre"
+      },
+      {
+        "Project Name": "West Burton Data Centre"
+      }
+    ]
+  },
+  "tec_register": null
+}

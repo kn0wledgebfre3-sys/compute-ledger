@@ -1,0 +1,25 @@
+Plant State,Planned Operation Year,Technology,generators,nameplate_mw,net_summer_mw
+AZ,2027,Natural Gas Fired Combustion Turbine,18,931.0,784.0
+AZ,2030,Natural Gas Fired Combined Cycle,4,1250.0,1150.0
+GA,2027,Natural Gas Fired Combustion Turbine,6,1454.4,1261.1999999999998
+GA,2029,Natural Gas Fired Combined Cycle,2,804.0,711.0
+GA,2029,Natural Gas Fired Combustion Turbine,1,262.0,241.0
+LA,2028,Natural Gas Fired Combined Cycle,4,1560.6,1476.4
+LA,2029,Natural Gas Fired Combined Cycle,2,820.0,730.0
+LA,2030,Natural Gas Fired Combined Cycle,12,4760.6,4414.5
+LA,2031,Natural Gas Fired Combined Cycle,6,2340.9,2214.6
+PA,2026,Natural Gas Internal Combustion Engine,1,2.5,2.5
+PA,2028,Natural Gas Fired Combined Cycle,8,2512.0,2512.0
+PA,2029,Natural Gas Fired Combined Cycle,6,1884.0,1884.0
+TX,2026,Natural Gas Fired Combined Cycle,3,1306.0,1158.2
+TX,2026,Natural Gas Internal Combustion Engine,3,9.899999999999999,9.899999999999999
+TX,2027,Natural Gas Fired Combined Cycle,14,1040.0,1030.8
+TX,2027,Natural Gas Fired Combustion Turbine,18,1845.5,1786.5
+TX,2027,Natural Gas Internal Combustion Engine,10,131.8,129.39999999999998
+TX,2028,Natural Gas Fired Combined Cycle,10,4325.0,4033.2
+TX,2028,Natural Gas Fired Combustion Turbine,4,1814.3,1743.0
+TX,2029,Natural Gas Fired Combined Cycle,2,1445.0,1344.8
+TX,2030,Natural Gas Fired Combined Cycle,128,8832.0,8832.0
+VA,2029,Natural Gas Fired Combustion Turbine,4,1000.0,935.6
+WI,2028,Natural Gas Fired Combustion Turbine,8,1505.5,1462.0
+WI,2029,Natural Gas Fired Combustion Turbine,5,1210.0,1210.0

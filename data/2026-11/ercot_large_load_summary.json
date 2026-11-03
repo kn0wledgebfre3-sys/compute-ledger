@@ -1,0 +1,114 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-03T14:18:07+00:00",
+  "sources": [
+    {
+      "url": "https://www.ercot.com/files/docs/2026/08/20/Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf",
+      "document": "Batch-Zero-Verification-and-Audit-PUCT-Presentation.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/07/10/ERCOT-Monthly-June-2026-FINAL.pdf",
+      "document": "ERCOT-Monthly-June-2026-FINAL.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/06/19/ERCOT-Monthly-May-2026.pdf",
+      "document": "ERCOT-Monthly-May-2026.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf",
+      "document": "ERCOT-Monthly-April-2026-FINAL.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/04/09/ERCOTLargeLoadUpdate-April9HouseStateAffairsHearing.pdf",
+      "document": "ERCOTLargeLoadUpdate-April9HouseStateAffairsHearing.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/04/01/ERCOT_LargeLoad_Update_April2026_B-C_-Hearing.pdf",
+      "document": "ERCOT_LargeLoad_Update_April2026_B-C_-Hearing.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/03/17/ERCOT-Monthly-February-2026-FINAL.pdf",
+      "document": "ERCOT-Monthly-February-2026-FINAL.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/02/13/ERCOT-Monthly-January-2026-FINAL.pdf",
+      "document": "ERCOT-Monthly-January-2026-FINAL.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf",
+      "document": "9-Interconnection-and-Grid-Analysis-Update.pdf"
+    },
+    {
+      "url": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+      "document": "ERCOT-Monthly-Operational-Overview-August-2026.pdf"
+    }
+  ],
+  "what_this_is": "Aggregate large-load queue figures printed in ERCOT PDFs (no per-project file exists).",
+  "status_snapshot": {
+    "source_url": "https://www.ercot.com/files/docs/2026/05/13/ERCOT-Monthly-April-2026-FINAL.pdf",
+    "posted_date": "2026-05-13",
+    "mw_by_status": {
+      "approved_to_energize_not_operational": 3200.0,
+      "no_studies_submitted": 321000.0,
+      "observed_energized": 5900.0,
+      "section_9_5_requirements_met": 22000.0,
+      "under_ercot_review": 93700.0
+    },
+    "sum_of_statuses_mw": 445800.0,
+    "stated_total_mw_same_document": 445800.0,
+    "statuses_reconcile_with_stated_total": true
+  },
+  "latest_total_large_load_requests": {
+    "value_mw": 454471.0,
+    "value_pct": null,
+    "value_count": null,
+    "as_published": "454,471 MW",
+    "approximate": false,
+    "as_of_in_text": "August 31, 2026",
+    "posted_date": "2026-09-16",
+    "source_url": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+    "matched_text": "ive generation interconnection requests totaling 454,471 MW as of August 31. This includes 156,289"
+  },
+  "latest_data_centre_share_pct": {
+    "value_mw": null,
+    "value_pct": 87.0,
+    "value_count": null,
+    "as_published": "~87% are data centers",
+    "approximate": true,
+    "as_of_in_text": "March 26, 2026",
+    "posted_date": "2026-04-13",
+    "source_url": "https://www.ercot.com/files/docs/2026/04/13/9-Interconnection-and-Grid-Analysis-Update.pdf",
+    "matched_text": "tracking approximately 410 GW of Large Loads seeking interconnection, of which ~87% are data centers. This is an increase of 178 GW since the end of 2025. 3 87.6% PUBLIC Item 9 Com"
+  },
+  "latest_approved_to_energize_cumulative": {
+    "value_mw": 9456.0,
+    "value_pct": null,
+    "value_count": null,
+    "as_published": "9,456 MW",
+    "approximate": false,
+    "as_of_in_text": "August 31, 2026",
+    "posted_date": "2026-09-16",
+    "source_url": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+    "matched_text": "9,456 MW that have received Approval to Energize"
+  },
+  "latest_observed_non_simultaneous_peak": {
+    "value_mw": 4316.0,
+    "value_pct": null,
+    "value_count": null,
+    "as_published": "4,316 MW",
+    "approximate": false,
+    "as_of_in_text": "August 31, 2026",
+    "posted_date": "2026-09-16",
+    "source_url": "https://www.ercot.com/files/docs/2026/09/16/ERCOT-Monthly-Operational-Overview-August-2026.pdf",
+    "matched_text": "roval to Energize, ERCOT has observed a non-simultaneous monthly peak consumption of 4,316 MW in August 2026, which is a slight decre"
+  },
+  "by_county": null,
+  "by_county_reason": "ERCOT publishes no county-level large-load figures (checked 2026-10-20).",
+  "data_centre_project_count": null,
+  "data_centre_project_count_reason": "ERCOT publishes no per-project data-centre flag; only an aggregate percentage of MW.",
+  "outputs": [
+    "ercot_large_load_metrics.csv"
+  ]
+}

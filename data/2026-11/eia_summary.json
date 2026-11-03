@@ -1,0 +1,274 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-03T14:18:29+00:00",
+  "sources": [
+    {
+      "part": "A",
+      "dataset": "EIA-860M",
+      "url_or_file": "https://www.eia.gov/electricity/data/eia860m/xls/september_generator2026.xlsx",
+      "landing_page": "https://www.eia.gov/electricity/data/eia860m/"
+    }
+  ],
+  "states": [
+    "VA",
+    "TX",
+    "GA",
+    "OH",
+    "AZ",
+    "PA",
+    "WI",
+    "LA"
+  ],
+  "capacity_860m": {
+    "since_year": 2022,
+    "gas_energy_source_codes": [
+      "NG"
+    ],
+    "by_state": {
+      "VA": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BIT": 1560.5,
+          "BLQ": 218.7,
+          "DFO": 973.4,
+          "LFG": 97.3,
+          "MSW": 153.0,
+          "MWH": 230.6,
+          "NG": 15102.2,
+          "NUC": 3654.4,
+          "OBG": 1.4,
+          "SUN": 5308.3,
+          "WAT": 3932.4,
+          "WDS": 345.6,
+          "WND": 90.0
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2024": 2.0,
+          "2025": 2.0
+        },
+        "gas_nameplate_mw_added_since": 4.0,
+        "gas_generators_added_since": 2,
+        "planned_gas_nameplate_mw_by_year": {
+          "2029": 1000.0
+        }
+      },
+      "TX": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BFG": 30.0,
+          "BLQ": 170.7,
+          "DFO": 822.1,
+          "LFG": 23.0,
+          "LIG": 2554.6,
+          "MWH": 19399.6,
+          "NG": 84133.4,
+          "NUC": 5138.6,
+          "OG": 177.3,
+          "OTH": 7.5,
+          "PC": 61.9,
+          "PUR": 117.6,
+          "SUB": 14026.9,
+          "SUN": 34978.8,
+          "WAT": 735.2,
+          "WDS": 168.9,
+          "WH": 158.2,
+          "WND": 44525.9
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2022": 1059.0,
+          "2023": 1047.8,
+          "2024": 700.2,
+          "2025": 187.6,
+          "2026": 1173.1
+        },
+        "gas_nameplate_mw_added_since": 4167.7,
+        "gas_generators_added_since": 211,
+        "planned_gas_nameplate_mw_by_year": {
+          "2026": 1315.9,
+          "2027": 3017.3,
+          "2028": 6139.3,
+          "2029": 1445.0,
+          "2030": 8832.0
+        }
+      },
+      "GA": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BIT": 3498.6,
+          "BLQ": 407.4,
+          "DFO": 1310.7,
+          "LFG": 55.4,
+          "MWH": 863.7,
+          "NG": 18593.5,
+          "NUC": 6506.0,
+          "PC": 90.0,
+          "PUR": 8.5,
+          "SUB": 2673.0,
+          "SUN": 5496.6,
+          "WAT": 3596.8,
+          "WDS": 413.8
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2022": 1.0,
+          "2023": 5.0
+        },
+        "gas_nameplate_mw_added_since": 6.0,
+        "gas_generators_added_since": 2,
+        "planned_gas_nameplate_mw_by_year": {
+          "2027": 1454.4,
+          "2029": 1066.0
+        }
+      },
+      "OH": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BFG": 102.0,
+          "BIT": 6822.2,
+          "BLQ": 65.6,
+          "DFO": 560.6,
+          "LFG": 39.2,
+          "MWH": 35.8,
+          "NG": 19457.9,
+          "NUC": 2236.8,
+          "OBG": 8.4,
+          "OG": 147.0,
+          "PC": 177.0,
+          "SUN": 4969.5,
+          "WAT": 123.4,
+          "WND": 1239.9
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2022": 1.5,
+          "2023": 2058.5,
+          "2026": 977.4
+        },
+        "gas_nameplate_mw_added_since": 3037.4,
+        "gas_generators_added_since": 8,
+        "planned_gas_nameplate_mw_by_year": {}
+      },
+      "AZ": {
+        "operating_nameplate_mw_by_energy_source": {
+          "DFO": 125.3,
+          "LFG": 3.2,
+          "MWH": 6887.8,
+          "NG": 17683.1,
+          "NUC": 4209.6,
+          "SUB": 2791.6,
+          "SUN": 9095.3,
+          "WAT": 2913.9,
+          "WDS": 30.2,
+          "WND": 1734.5
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2022": 198.0,
+          "2024": 99.0,
+          "2025": 211.0,
+          "2026": 297.0
+        },
+        "gas_nameplate_mw_added_since": 805.0,
+        "gas_generators_added_since": 16,
+        "planned_gas_nameplate_mw_by_year": {
+          "2027": 931.0,
+          "2030": 1250.0
+        }
+      },
+      "PA": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BFG": 52.5,
+          "BIT": 3868.9,
+          "BLQ": 93.1,
+          "DFO": 1713.0,
+          "LFG": 111.4,
+          "MSW": 271.7,
+          "MWH": 54.6,
+          "NG": 29899.9,
+          "NUC": 10513.0,
+          "OBG": 5.6,
+          "OBS": 3.3,
+          "OG": 31.0,
+          "SUN": 1228.3,
+          "WAT": 2429.4,
+          "WC": 1354.3,
+          "WND": 1669.8
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2022": 2.0,
+          "2024": 5.5,
+          "2025": 1.5
+        },
+        "gas_nameplate_mw_added_since": 9.0,
+        "gas_generators_added_since": 6,
+        "planned_gas_nameplate_mw_by_year": {
+          "2026": 2.5,
+          "2028": 2512.0,
+          "2029": 1884.0
+        }
+      },
+      "WI": {
+        "operating_nameplate_mw_by_energy_source": {
+          "BIT": 26.3,
+          "BLQ": 33.1,
+          "DFO": 668.5,
+          "LFG": 65.9,
+          "MSW": 30.4,
+          "MWH": 314.9,
+          "NG": 8214.6,
+          "NUC": 1286.0,
+          "OBG": 11.5,
+          "PC": 63.4,
+          "SUB": 4923.9,
+          "SUN": 2556.7,
+          "WAT": 531.6,
+          "WDS": 174.4,
+          "WND": 826.4
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2023": 131.6,
+          "2025": 49.0,
+          "2026": 249.1
+        },
+        "gas_nameplate_mw_added_since": 429.7,
+        "gas_generators_added_since": 13,
+        "planned_gas_nameplate_mw_by_year": {
+          "2028": 1505.5,
+          "2029": 1210.0
+        }
+      },
+      "LA": {
+        "operating_nameplate_mw_by_energy_source": {
+          "AB": 13.1,
+          "BLQ": 453.7,
+          "DFO": 62.6,
+          "NG": 20850.7,
+          "NUC": 2235.7,
+          "OG": 223.5,
+          "OTH": 10.2,
+          "PC": 931.0,
+          "PUR": 214.5,
+          "SUB": 2449.5,
+          "SUN": 1555.9,
+          "WAT": 192.0,
+          "WDS": 20.0,
+          "WH": 221.1
+        },
+        "gas_nameplate_mw_added_by_year": {
+          "2024": 102.5,
+          "2025": 722.9
+        },
+        "gas_nameplate_mw_added_since": 825.4,
+        "gas_generators_added_since": 4,
+        "planned_gas_nameplate_mw_by_year": {
+          "2028": 1560.6,
+          "2029": 820.0,
+          "2030": 4760.6,
+          "2031": 2340.9
+        }
+      }
+    },
+    "rows": {
+      "operating": 28484,
+      "planned": 2358,
+      "retired": 7321
+    }
+  },
+  "generation_923": null,
+  "generation_923_skipped": true
+}

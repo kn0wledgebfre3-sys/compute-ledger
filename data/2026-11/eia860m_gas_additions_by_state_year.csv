@@ -1,0 +1,32 @@
+Plant State,Operating Year,Technology,generators,nameplate_mw,net_summer_mw,generators_since_retired
+AZ,2022,Natural Gas Fired Combustion Turbine,4,198.0,176.8,0
+AZ,2024,Natural Gas Fired Combustion Turbine,2,99.0,88.0,0
+AZ,2025,Natural Gas Fired Combustion Turbine,4,211.0,165.8,0
+AZ,2026,Natural Gas Fired Combustion Turbine,6,297.0,252.0,0
+GA,2022,Natural Gas Fired Combustion Turbine,1,1.0,1.0,0
+GA,2023,Natural Gas Fired Combustion Turbine,1,5.0,5.0,0
+LA,2024,Natural Gas Fired Combined Cycle,2,97.8,97.8,0
+LA,2024,Natural Gas Steam Turbine,1,4.7,4.2,0
+LA,2025,Natural Gas Fired Combined Cycle,1,722.9,678.7,0
+OH,2022,Natural Gas Internal Combustion Engine,1,1.5,1.5,0
+OH,2023,Natural Gas Fired Combined Cycle,3,2055.0,1788.5,0
+OH,2023,Natural Gas Internal Combustion Engine,1,3.5,3.5,0
+OH,2026,Natural Gas Fired Combined Cycle,3,977.4,900.4000000000001,0
+PA,2022,Natural Gas Internal Combustion Engine,1,2.0,2.0,0
+PA,2024,Natural Gas Internal Combustion Engine,3,5.5,5.5,0
+PA,2025,Natural Gas Internal Combustion Engine,2,1.5,1.5,0
+TX,2022,Natural Gas Fired Combustion Turbine,18,1047.0,799.6,0
+TX,2022,Natural Gas Internal Combustion Engine,30,12.0,12.0,0
+TX,2023,Natural Gas Fired Combined Cycle,3,244.0,232.0,0
+TX,2023,Natural Gas Fired Combustion Turbine,11,785.8,646.6,0
+TX,2023,Natural Gas Internal Combustion Engine,45,18.0,18.0,0
+TX,2024,Natural Gas Fired Combustion Turbine,11,655.0,495.2,0
+TX,2024,Natural Gas Internal Combustion Engine,39,45.2,45.2,0
+TX,2025,Natural Gas Internal Combustion Engine,29,187.6,187.6,0
+TX,2026,Natural Gas Fired Combustion Turbine,7,965.0999999999999,958.0,0
+TX,2026,Natural Gas Internal Combustion Engine,18,208.0,206.0,0
+VA,2024,Natural Gas Internal Combustion Engine,1,2.0,2.0,0
+VA,2025,Natural Gas Internal Combustion Engine,1,2.0,2.0,0
+WI,2023,Natural Gas Internal Combustion Engine,7,131.6,131.6,0
+WI,2025,Natural Gas Internal Combustion Engine,5,49.0,47.0,0
+WI,2026,Natural Gas Fired Combustion Turbine,1,249.1,223.1,0

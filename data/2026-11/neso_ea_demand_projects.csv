@@ -1,0 +1,120 @@
+Project Name,Technology Type,is_data_centre_name,mw,Associated Installed Capacity,Existing Connection Date,Existing Connection Point,Expressed an interest in Gate 1 agreement with reservation
+Apollo,Transmission Connected Demand,False,,0.1,2027-12-18 00:00:00,Gravity 400/132kV Substation,N
+Aurelius,Transmission Connected Demand,False,,400,2035-04-30 00:00:00,Aurelius 275kV,N
+Baglan Bay DC,Transmission Connected Demand,False,,500,2034-10-31 00:00:00,Baglan Bay GSP,N
+Berkswell,Transmission Connected Demand,False,,125,2030-02-28 00:00:00,Berkswell 275kV Substation,N
+Botley GEC (Ethos Green),Transmission Connected Demand,False,,200,2033-10-31 00:00:00,Botley 400kV Substation,N
+Bramford 2 GEC (Ethos Green),Transmission Connected Demand,False,,200,2032-07-01 00:00:00,Bramford 400kV Substation,N
+Bro Tathan Development,Transmission Connected Demand,False,,200,2029-10-31 00:00:00,Aberthaw 132kV Substation,N
+Bro Tathan Development,Transmission Connected Demand,False,,80,2027-10-29 00:00:00,Aberthaw 132kV Substation,N
+Bryn Coch DC,Transmission Connected Demand,False,,450,2037-10-30 00:00:00,Pentir 400kV Substation,N
+Buntington GEC (Ethos Green),Transmission Connected Demand,False,,850,2032-07-01 00:00:00,Cottered 400kV Substation,N
+CEG LP2 (II)  Site 1,Transmission Connected Demand,False,,300,2037-10-31 00:00:00,Culham Jet 400kV Substation,N
+CENOS,Transmission Connected Demand,False,,270,2035-10-31 00:00:00,Peterhead 400kV Substation,N
+Cardiff DC,Transmission Connected Demand,False,,150,2037-10-31 00:00:00,Cardiff East GSP,N
+Cato,Transmission Connected Demand,False,,600,2032-10-31 00:00:00,Mossmorran Storage BESS 132KV Substation,N
+Centrica Easington H2HE,Transmission Connected Demand,False,,1200,2039-10-30 00:00:00,Hedon 275kV Substation,N
+Clydebridge DC,Transmission Connected Demand,False,,360,2032-04-30 00:00:00,Clydesbridge,N
+Cottam Giga,Transmission Connected Demand,False,,1000,2039-10-30 00:00:00,Cottam 400kV Substation,N
+Daines Green Energy Centre,Transmission Connected Demand,False,,400,2033-10-31 00:00:00,Daines 400kV Substation,N
+Darwin,Transmission Connected Demand,False,,700,2039-10-30 00:00:00,Teesside Connection Node 2 C 132kV Substation,N
+Didcot Road 2,Transmission Connected Demand,False,,300,2037-10-31 00:00:00,Didcot 132kV Substation,N
+Digital and Manufacturing Campus Including Data Centres,Transmission Connected Demand,True,,500,2037-10-30 00:00:00,Easterhouse GSP,N
+Drakelow Green Energy Centre,Transmission Connected Demand,False,,400,2037-10-31 00:00:00,Drakelow 400kV Substation,N
+Drax BECCS,Transmission Connected Demand,False,,300,2035-10-30 00:00:00,Drax 400kV Substation,N
+Drax Power Station Data Centre,Transmission Connected Demand,True,,1200,2039-10-30 00:00:00,Trent Valley North Connection Node B 132kV Substation,N
+Dundee Feeder Station,Transmission Connected Demand,False,,16.2,2027-10-31 00:00:00,Dundee 25kV Network Rail,N
+East Claydon Green Energy Centre,Transmission Connected Demand,False,,500,2038-10-31 00:00:00,East Claydon 400kV Substation,N
+Edinburgh Business Park,Transmission Connected Demand,False,,160,2034-10-31 00:00:00,Currie 275/132kV,N
+Edzell Data Centre,Transmission Connected Demand,True,,800,2033-10-31 00:00:00,New Brechin 400kV Substation,N
+Eggborough DC,Transmission Connected Demand,False,,300,2039-10-30 00:00:00,Leeds North Connection Node B 400kV Substation,N
+Elstree 400MW Demand,Transmission Connected Demand,False,,400,2031-01-31 00:00:00,Letchmore Heath 132kV Substation,N
+Factory Road,Transmission Connected Demand,False,,300,2039-10-30 00:00:00,Borders Connection Node A 400kV Substation,N
+Feckenham Green Energy Centre,Transmission Connected Demand,False,,500,2037-10-30 00:00:00,Feckenham 400kV Substation,N
+Fiddler's Ferry Data Centre,Transmission Connected Demand,True,,900,2037-10-30 00:00:00,Manchester North Connection Node C 400kV Substation,N
+Forss Abbey Energy Storage,Transmission Connected Demand,False,,49.9,2031-06-30 00:00:00,Dounreay GSP,N
+GTR GB2,Transmission Connected Demand,False,,200,2037-10-31 00:00:00,"International Trading Estates, Bath Road -  GB2 - Substation 132kV No 2",N
+Green Volt Offshore Windfarm,Transmission Connected Demand,False,,150,2033-10-31 00:00:00,New Deer 400kV Substation,N
+Hawthorn Pit Green Energy Centre,Transmission Connected Demand,False,,500,2039-10-30 00:00:00,Hawthorn Pit 400kV Substation,N
+Hockliffe GEC (Ethos Green),Transmission Connected Demand,False,,850,2032-10-29 00:00:00,Dunstable 400kV Substation,N
+Horsey,Transmission Connected Demand,False,,500,2037-10-31 00:00:00,Bridgwater 132kV Substation,N
+Humber H2ub at Killingholme,Transmission Connected Demand,False,,120,2035-10-30 00:00:00,Killingholme 400kV Substation,N
+Hunterston Green Hydrogen,Transmission Connected Demand,False,,1000,2033-10-31 00:00:00,Hunterston East 400kV,N
+Hunterston Hydrogen,Transmission Connected Demand,False,,400,2033-10-31 00:00:00,Hunterston 400/132kV,N
+INTOG 1  - Aspen (Cerulean) ,Transmission connected demand,False,,15,2033-10-31 00:00:00,Fetteresso,Y
+INTOG 2,Transmission Connected Demand,False,,400,2032-06-30 00:00:00,Thorntonloch 400kV Substation,N
+INTOG 2 -  Cedar  (Cerulean) ,Transmission connected demand,False,,200,2032-06-30 00:00:00,Near Branxton,Y
+IPC Tremorfa Demand,Transmission Connected Demand,False,,1000,2037-10-31 00:00:00,Cardiff East GSP,N
+ITE (Bath Road - GTR) - Uxbridge Moor,Transmission Connected Demand,False,,150,2029-11-02 00:00:00,Uxbridge Moor (Iver B 132kV),N
+Ickenham,Transmission Connected Demand,False,,80,2030-02-28 00:00:00,Ickenham (HS2) GSP,N
+Inchinnan DC,Transmission Connected Demand,False,,180,2034-04-30 00:00:00,Inchinnan DC,N
+Iver 1 Ark Estates,Transmission Connected Demand,False,,435,2029-11-02 00:00:00,Uxbridge Moor (Iver B 132kV),N
+Iver 2 Ark Estates,Transmission Connected Demand,False,,435,2029-11-02 00:00:00,Uxbridge Moor (Iver B 132kV),N
+Iver 3 Ark Estates,Transmission Connected Demand,False,,435,2029-11-02 00:00:00,Uxbridge Moor (Iver B 132kV),N
+Jawcraig DC,Transmission Connected Demand,False,,180,2033-10-31 00:00:00,Armadale 400kv Substation,N
+Kintore Electrolysis,Transmission Connected Demand,False,,1000,2035-12-31 00:00:00,Kintore GSP,N
+Kintore Electrolysis,Transmission Connected Demand,False,,500,2028-11-14 00:00:00,Kintore GSP,N
+Kintore Electrolysis,Transmission Connected Demand,False,,500,2032-10-01 00:00:00,Kintore GSP,N
+Kintore Electrolysis,Transmission Connected Demand,False,,1000,2035-12-31 00:00:00,Kintore GSP,N
+Laleham DC,Transmission Connected Demand,False,,200,2037-10-31 00:00:00,Sunbury Common,N
+MKE DC,Transmission Connected Demand,False,,500,2037-10-31 00:00:00,East Claydon 400kV Substation,N
+Market Harborough GEC (Ethos Green),Transmission Connected Demand,False,,250,2032-10-31 00:00:00,Market Harborough 400kV Substation,N
+Mecure Data Centre,Transmission Connected Demand,True,,435,2030-01-31 00:00:00,Elstree 400kV Substation,N
+Medway,Transmission Connected Demand,False,,300,2028-10-29 00:00:00,Kingsnorth 400kV Substation,N
+MedwayOne Datacentre,Transmission Connected Demand,True,,340,2037-10-31 00:00:00,North Kent Connection Node C 400kV Substation,N
+Micklefield DC,Transmission Connected Demand,False,,300,2039-10-30 00:00:00,Micklefield,N
+Mossy Hill Wind Farm,Transmission Connected Demand,False,,55,2028-11-30 00:00:00,Mossy Hill 132kV Substation,N
+NR Wymondley,Transmission Connected Demand,False,,0.1,2024-05-21 00:00:00,Wymondley (Network Rail) GSP,N
+Navenby GEC (Ethos Green),Transmission Connected Demand,False,,580,2033-10-30 00:00:00,Navenby 400kV Substation,N
+Newton (Network Rail),Transmission Connected Demand,False,,52,2025-03-17 00:00:00,Newton (Network Rail) GSP,N
+Norwich Green Energy Centre,Transmission Connected Demand,False,,400,2037-10-31 00:00:00,Norwich Main 400kW Substation,N
+Overton Green Energy Centre,Transmission Connected Demand,False,,500,2039-10-30 00:00:00,Overton 400kV Substation,N
+Pelham GEC (Ethos Green),Transmission Connected Demand,False,,480,2035-05-31 00:00:00,Pelham 400kV Substation,N
+Penwortham,Transmission Connected Demand,False,,80,2028-04-01 00:00:00,Penwortham GSP,N
+Peterhead Hydrogen 1,Transmission Connected Demand,False,,99.9,2033-10-31 00:00:00,Peterhead Hydrogen 1 132kV Substation,N
+Peterhead Hydrogen 2,Transmission Connected Demand,False,,900,2033-10-31 00:00:00,Peterhead Hydrogen 2 400kV Substation,N
+Portobello,Transmission Connected Demand,False,,52,2026-01-13 00:00:00,Portobello (Network Rail) GSP,N
+Power Park Biggleswade,Transmission Connected Demand,False,,600,2037-10-31 00:00:00,Biggleswade 400kV Substation,N
+Power Park Ipswich,Transmission Connected Demand,False,,920,2037-10-31 00:00:00,Bramford 400kV Substation,N
+Power Park Retford,Transmission Connected Demand,False,,440,2039-10-30 00:00:00,High Marnham 400kV Substation,N
+Power Park Rugby,Transmission Connected Demand,False,,950,2037-10-31 00:00:00,Enderby 400kV Substation,N
+Quainton,Transmission Connected Demand,False,,110,2030-02-28 00:00:00,Quainton GSP HS2,N
+Quest Park,Transmission Connected Demand,False,,200,2034-10-31 00:00:00,Marston Vale 400kV Substation,N
+RHT2,Transmission Connected Demand,False,,57,2037-10-31 00:00:00,Rye House GSP,N
+Radlett 1,Transmission Connected Demand,False,,150,2037-10-31 00:00:00,Elstree GSP,N
+Radlett 2,Transmission Connected Demand,False,,150,2037-10-31 00:00:00,Elstree GSP,N
+Ratcliffe Data Centre,Transmission Connected Demand,True,,720,2037-10-31 00:00:00,Derbyshire Connection Node F 132KV,N
+Ratcliffe on Soar (EX),Transmission Connected Demand,False,,40,2028-12-31 00:00:00,Ratcliffe-On-Soar 132kV Substation,N
+Ratcliffe on Soar Farm,Transmission Connected Demand,False,,400,2037-10-31 00:00:00,Derbyshire Connection Node C 400kV Substation,N
+Relode Immingham,Transmission Connected Demand,False,,920,2039-10-30 00:00:00,Killingholme 400kV Substation,N
+Riverside Industrial Estate,Transmission Connected Demand,False,,80,2030-04-30 00:00:00,Elstree B 275/132kV,N
+Rufus,Transmission Connected Demand,False,,540,2034-04-30 00:00:00,Rufus 275kV compound,N
+Rye House (Tertiary),Transmission Connected Demand,False,,57,2037-10-31 00:00:00,Rye House 400kV Substation,N
+SSE Ferrybridge BESS,Transmission Connected Demand,False,,120,2035-10-30 00:00:00,Ferrybridge B 132kV Substation,N
+STALLINGBOROUGH CARBON CAPTURE CCGT,Transmission Connected Demand,False,,250,2035-05-30 00:00:00,Grimsby West 400kV Substation,N
+Scatsta Greener Grid Park,Transmission Connected Demand,False,,400,2032-10-29 00:00:00,Scatsta 132kV Substation,N
+Scatsta1 Greener Grid Park,Transmission Connected Demand,False,,405,2032-10-29 00:00:00,Scatsta 132kV Substation,N
+Seagull Data connect,Transmission Connected Demand,False,,450,2036-12-06 00:00:00,Gravity 400/132kV Substation,N
+South Tees 66kV Enhancement,Transmission Connected Demand,False,,960,2026-12-11 00:00:00,Tod Point and Grangetown 275/66kV,N
+South Tees Enhancement Phase 2,Transmission Connected Demand,False,,1440,2033-10-30 00:00:00,Teeside Connection Node A 400kV Substation,N
+Sundon DC,Transmission Connected Demand,False,,600,2037-10-31 00:00:00,Sundon GSP,N
+Sutton Courtenay Datacentre,Transmission Connected Demand,True,,99.9,2037-10-31 00:00:00,Didcot 132kV Substation,N
+Swansea North Green Energy Centre,Transmission Connected Demand,False,,400,2034-10-31 00:00:00,Swansea North 400kV Substation,N
+THORNTON,Transmission Connected Demand,False,,26,2026-05-29 00:00:00,Thornton North (Network Rail) GSP,N
+TWEEDBANK,Transmission Connected Demand,False,,10,2026-05-29 00:00:00,Tweedbank (Network Rail) GSP,N
+The Acorn Project Transport & Storage (St Fergus),Transmission Connected Demand,False,,53,2033-10-31 00:00:00,St Fergus Gas GSP,N
+This Gravity,Transmission Connected Demand,False,,250,2029-04-27 00:00:00,Gravity 400/132kV Substation,N
+Thorpe Marsh Green Energy Centre,Transmission Connected Demand,False,,400,2039-10-30 00:00:00,Thorpe Marsh 400kV Substation,N
+Walpole Flexible Generation,Transmission Connected Demand,False,,2550,2033-06-30 00:00:00,Walpole 400kV Substation,N
+Waltham,Transmission Connected Demand,False,,120,2033-10-31 00:00:00,Waltham Cross 275kV Substation,N
+Waltham Cross BESS,Transmission Connected Demand,False,,57,2033-11-30 00:00:00,London North East Connection Node A 132kv Substation,N
+Waltham Cross Farm 2,Transmission Connected Demand,False,,350,2033-04-04 00:00:00,Waltham Cross B 400kV Substation,N
+Waltham Cross Farm 2,Transmission Connected Demand,False,,300,2033-11-30 00:00:00,Waltham Cross B 400kV Substation,N
+West Burton Data Centre,Transmission Connected Demand,True,,500,2039-10-30 00:00:00,West Burton 400kV Substation,N
+West Burton Giga,Transmission Connected Demand,False,,1000,2039-10-30 00:00:00,West Burton 400kV Substation,N
+West Horndon Estate,Transmission Connected Demand,False,,250,2037-10-31 00:00:00,Warley 132kV Substation,N
+Willington Green Energy Centre,Transmission Connected Demand,False,,400,2037-10-30 00:00:00,Willington 400kV Substation,N
+Wymondley Farm,Transmission Connected Demand,False,,400,2034-10-31 00:00:00,Wymondley 2 400kV Substation,N
+Wymondley GEC (Ethos Green),Transmission Connected Demand,False,,400,2032-10-30 00:00:00,Wymondley 400kV Substation,N
+XLCC Hunterston High Voltage Cable Factory,Transmission Connected Demand,False,,100,2027-09-20 00:00:00,XLCC Hunterston HV Cable Factory 132kV Substation,N
+Yaxley GEC (Ethos Green),Transmission Connected Demand,False,,450,2031-10-31 00:00:00,Yaxley 400kV Substation,N
