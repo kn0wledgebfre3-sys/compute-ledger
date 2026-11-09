@@ -1,0 +1,43 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-09T16:51:39+00:00",
+  "sources": [
+    {
+      "name": "watched pages",
+      "config": "config/watch_pages.json"
+    }
+  ],
+  "pages": {
+    "pjm_las_materials": {
+      "items_now": 28,
+      "new": 1,
+      "baseline_run": false
+    },
+    "grant_pud_datacenter_faq": {
+      "items_now": 4,
+      "new": 0,
+      "baseline_run": false
+    },
+    "srp_datacenter_facts": {
+      "items_now": 5,
+      "new": 0,
+      "baseline_run": true
+    },
+    "cso_datacentre_release": {
+      "items_now": 0,
+      "new": 0,
+      "baseline_run": false
+    },
+    "ghg_protocol_consultations": {
+      "items_now": 6,
+      "new": 0,
+      "baseline_run": false
+    }
+  },
+  "new_items": 1,
+  "failures": [
+    "va_deq_datacenter_permits: https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers returned HTTP 403 (access denied). The endpoint may now need a key, or blocks scripted access."
+  ]
+}
