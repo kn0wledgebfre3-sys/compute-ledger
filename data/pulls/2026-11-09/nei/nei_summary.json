@@ -1,0 +1,29 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-09T16:50:55+00:00",
+  "sources": [
+    {
+      "name": "EPA NEI facility summaries (Envirofacts DMAP)",
+      "url": "https://data.epa.gov/dmapservice/nei.vw_facility_summaries_{year}/state_abbr/equals/{st}/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV"
+    }
+  ],
+  "rows": 1261,
+  "facilities": 94,
+  "years_found": [
+    2020,
+    2023
+  ],
+  "changes_vs_ledger": 1048,
+  "failures": [],
+  "notes": [
+    "2020 GA: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there",
+    "2020 AZ: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there",
+    "2020 WA: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there",
+    "2023 AZ: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there",
+    "2023 WA: the query returned an empty file (no rows); check by hand if a datacenter facility is expected there",
+    "2026: not released by EPA yet (the 2026 view does not exist); checked again next week",
+    "2029: not released by EPA yet (the 2029 view does not exist); checked again next week"
+  ]
+}

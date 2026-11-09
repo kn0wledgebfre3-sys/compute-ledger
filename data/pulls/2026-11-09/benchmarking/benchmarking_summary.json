@@ -1,0 +1,27 @@
+{
+  "mode": "live",
+  "fixture_warning": null,
+  "format_inspected": "2026-10-20",
+  "retrieved_at": "2026-11-09T16:51:30+00:00",
+  "sources": [
+    {
+      "name": "city benchmarking portals",
+      "config": "config/benchmarking_portals.json"
+    }
+  ],
+  "rows": 191,
+  "per_portal": {
+    "Seattle": 46,
+    "San Francisco": 61,
+    "Cambridge MA": 40,
+    "Montgomery County MD": 4,
+    "Washington DC": 7,
+    "Boston, MA": 33
+  },
+  "changes_vs_ledger": 4,
+  "failures": [
+    "New York City: https://data.cityofnewyork.us/resource/5zyy-y8am.json?$where=%28primary_property_type%3D%27Data%20Center%27%29%20OR%20address_1%20in%28%27111%208th%20Avenue%27%2C%27375%20Pearl%20Street%27%2C%2785%2010th%20Avenue%27%2C%27325%20Hudson%20Street%27%2C%2760%20Hudson%20Street%27%2C%2756%20Hudson%20Street%27%2C%2732%20Avenue%20of%20the%20Americas%27%29&$limit=5000 returned HTTP 503: '{\"message\":\"Service unavailable\",\"errorCode\":\"service-unavailable\",\"data\":{}}'",
+    "Chicago: https://data.cityofchicago.org/resource/xq83-jr8c.json?$where=%28primary_property_type%3D%27Data%20Center%27%29%20OR%20address%20in%28%27350%20E%20Cermak%20Rd%27%2C%27600%20S%20Federal%20St%27%2C%27427%20S%20LaSalle%20St%27%2C%27840%20S%20Canal%20St%27%29&$limit=5000 returned HTTP 503: '{\"message\":\"Service unavailable\",\"errorCode\":\"service-unavailable\",\"data\":{}}'",
+    "Philadelphia: Philadelphia: ArcGIS error {'code': 400, 'message': 'Invalid URL', 'details': ['Invalid URL']}"
+  ]
+}
