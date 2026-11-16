@@ -1,5 +1,5 @@
 {
- "_about": "Licences whose Annual Environmental Reports the ledger reads. GUIDs from the LEAP Open Data API (sites/metered/ireland_aer_notes.md). A reviewed licence keeps its AERs under the replaced -01 GUID, so both are listed. search_terms are used to find licences not yet listed.",
+ "_about": "Licences whose Annual Environmental Reports the ledger reads. GUIDs from the LEAP Open Data API (sites/metered/ireland_aer_notes.md). A reviewed licence keeps its AERs under the replaced -01 GUID, so both are listed. search_terms are used to find licences not yet listed. Added 2026-11-16 from EPA's licence register as returned to the weekly pull: the seven licensed installations in review/ireland_licences_check_2026-11-02/. listed_under names a reviewed licence's new number whose GUID is already listed under its old one.",
  "api_base": "https://data.epa.ie/leap/api/v1",
  "licences": {
   "P1170-01": [
@@ -36,6 +36,27 @@
   ],
   "P1168-01": [
    "1a296728-03f9-4ad6-8a08-852704311cc1"
+  ],
+  "P1190-01": [
+   "de822cad-7db2-43f0-a81e-013998ba874b"
+  ],
+  "P1191-01": [
+   "c5f43f21-2cbc-4425-a4b8-e68fbeca31f1"
+  ],
+  "P1189-01": [
+   "b9f8c203-dc89-4295-8589-92167adcde6a"
+  ],
+  "P1192-01": [
+   "0c626d48-c258-4ec8-85a8-f259c460efe0"
+  ],
+  "P1143-01": [
+   "4d5fefe0-c5a5-48ef-9900-247928221de3"
+  ],
+  "P1204-01": [
+   "6bada00e-8b66-4dde-bbee-0cad295d6f84"
+  ],
+  "P1113-02": [
+   "747de7dc-958a-4257-9ff1-21d2f74ff3aa"
   ]
  },
  "search_terms": [
@@ -52,5 +73,9 @@
   "Echelon",
   "Data Centre",
   "Data Center"
- ]
+ ],
+ "listed_under": {
+  "P1181-02": "P1181-01",
+  "P1186-02": "P1186-01"
+ }
 }

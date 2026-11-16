@@ -103,7 +103,7 @@ def main() -> None:
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     known = {r["document_url"] for r in csv.DictReader(open(LEDGER, encoding="utf-8"))}
-    known_lic = set(CFG["licences"])
+    known_lic = set(CFG["licences"]) | set(CFG.get("listed_under", {}))
     new_docs, readings, unlisted, failures = [], [], [], []
     for lic, guids in CFG["licences"].items():
         for g in guids:

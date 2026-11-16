@@ -5,10 +5,12 @@ What it does
   For each state in --states and each NEI year that exists, queries the facility-summary view for
   NAICS 518210 (data processing, hosting) criteria pollutants, and writes:
     nei_facilities.csv     one row per facility, year and pollutant, with the query URL
-    nei_changes.csv        rows that are new or differ from sites/metered/va_nei_transcribed.csv
+    nei_changes.csv        rows that are new or differ from sites/metered/va_nei_transcribed.csv (Virginia)
+                           and sites/metered/us_nei_transcribed.csv (the other states)
     nei_summary.json       counts, years found, failures
   Nothing is written to the ledger's tables. A person reads nei_changes.csv, checks the
-  facilities against permits, and adds them to sites/metered/va_nei_transcribed.csv.
+  facilities against permits, and adds them to the transcription for their state (and, outside
+  Virginia, a row for each new facility in sites/metered/us_nei_facilities.csv).
 
 Source (inspected 2026-10-23)
   https://data.epa.gov/dmapservice/nei.vw_facility_summaries_<year>/state_abbr/equals/<ST>/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV
@@ -31,7 +33,9 @@ YEARS = [2020, 2023, 2026, 2029]
 LATEST_RELEASED = 2023  # later years are probed each week; until EPA publishes one, its view does not exist
 STATES = ["VA", "TX", "GA", "AZ", "OH", "OR", "IA", "NE", "NC", "SC", "IL", "WA", "NV", "TN", "MS", "PA"]
 NEED = ["eis_facility_id", "site_name", "address", "city_name", "county_name", "pollutant_code", "emissions", "uom", "latitude", "longitude"]
-LEDGER = Path(__file__).resolve().parents[1] / "sites" / "metered" / "va_nei_transcribed.csv"
+MET = Path(__file__).resolve().parents[1] / "sites" / "metered"
+LEDGER = MET / "va_nei_transcribed.csv"
+LEDGER_US = MET / "us_nei_transcribed.csv"
 COLS = ["state", "year", "eis_facility_id", "site_name", "address", "city_name", "county_name", "latitude", "longitude",
         "pollutant_code", "emissions", "uom", "query_url"]
 
@@ -86,6 +90,9 @@ def main() -> None:
     known = {}
     for r in csv.DictReader(open(LEDGER, encoding="utf-8")):
         known[(r["eis_facility_id_or_deq_id"], r["year"], r["pollutant"])] = r["tons_per_year"]
+    if LEDGER_US.exists():
+        for r in csv.DictReader(open(LEDGER_US, encoding="utf-8")):
+            known[(r["eis_facility_id"], r["year"], r["pollutant"])] = r["tons_per_year"]
     changes = []
     for r in out:
         k = (r["eis_facility_id"], r["year"], r["pollutant_code"])

@@ -13,7 +13,7 @@ from pathlib import Path
 D = Path(sys.argv[1])
 PARTS = [
     ("nei", "nei_summary.json", "nei_changes.csv", "EPA emissions inventory: datacenter facilities new to the ledger or changed",
-     "Match each facility to a permit (site address, registration number in the name), then add it to sites/metered/va_nei_transcribed.csv."),
+     "Match each facility to a permit (site address, registration number in the name), then add it to sites/metered/va_nei_transcribed.csv (Virginia) or sites/metered/us_nei_transcribed.csv with a row in us_nei_facilities.csv (other states; see us_nei_notes.md)."),
     ("ie_aer", "ie_aer_summary.json", "ie_aer_first_reading.csv", "Irish annual environmental reports not yet read (first reading attached)",
      "Open each PDF and check every value against Table 3 and Table 5 before adding the row to sites/metered/ireland_aer_transcribed.csv."),
     ("benchmarking", "benchmarking_summary.json", "benchmarking_changes.csv", "Benchmarking rows new to the ledger or changed",
