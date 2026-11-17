@@ -25,3 +25,5 @@
 
 - Both readers read the documents as text extracted from the PDFs, not from the printed pages.
 - A grid reference marks the point the document gives, which may be the centre of the site, an installation, or one building. It is not a boundary.
+
+**Placed later.** Digital Realty Redhill (from the applicant's application form) and Manor Farm, Poyle (from the appeal form) were placed in the second pass of `review/site_locations_2_2026-11-17/`, where both were read twice.

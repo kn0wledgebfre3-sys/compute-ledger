@@ -1,6 +1,6 @@
 {
- "checks": 30,
- "findings_in_table": 2941,
+ "checks": 31,
+ "findings_in_table": 2988,
  "random_sample_figures": {
   "n": 166,
   "verdicts": {
@@ -29,14 +29,14 @@
  },
  "status_now": {
   "as recorded with the finding: confirmed; not entered as a figure": 310,
-  "as recorded with the finding: applied": 269,
+  "as recorded with the finding: applied": 274,
+  "as recorded with the finding: not placed": 242,
   "quoted text no longer present": 232,
-  "as recorded with the finding: not placed": 205,
   "now on the claim side": 180,
   "as recorded with the finding: confirmed": 168,
   "resolved against the permit text": 158,
   "now on the record side": 155,
-  "as recorded with the finding: not used": 141,
+  "as recorded with the finding: not used": 146,
   "confirmed at the check": 118,
   "as recorded with the finding: not sent for a second reading (not used as a figure)": 104,
   "no longer in the table in the form checked": 81,

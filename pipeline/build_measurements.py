@@ -917,13 +917,16 @@ LOCATIONS = ROOT / "sites" / "locations"
 
 def place_sites(sites: dict, problems: list):
     """Coordinates for sites that their own list leaves blank, from sites/locations/placed.csv (read from documents)
-    and sites/locations/geocodes.csv (an address geocoded under the ledger's rule, accepted rows only); and the addresses
+    sites/locations/geocodes.csv (an address geocoded under the ledger's rule) and sites/locations/records.csv (a federal
+    dataset joined by the record's identifier), accepted rows only; and the addresses
     in sites/locations/addresses.csv, added to the site's notes."""
     rows = []
     if (LOCATIONS / "placed.csv").exists():
         rows += [(r, "placed.csv") for r in read_csv(LOCATIONS / "placed.csv")]
     if (LOCATIONS / "geocodes.csv").exists():
         rows += [(r, "geocodes.csv") for r in read_csv(LOCATIONS / "geocodes.csv") if r.get("accepted") == "yes"]
+    if (LOCATIONS / "records.csv").exists():  # coordinates from a federal dataset, joined by the record's own identifier
+        rows += [(r, "records.csv") for r in read_csv(LOCATIONS / "records.csv") if r.get("accepted") == "yes"]
     if (LOCATIONS / "addresses.csv").exists():  # addresses read twice from a site's documents, not (yet) converted to coordinates
         for r in read_csv(LOCATIONS / "addresses.csv"):
             s = sites.get(r["site_id"])

@@ -279,7 +279,8 @@ def main():
                         ("organisation-identity-2026-11-17", "organisation_identity_2026-11-17/check_result.csv"),
                         ("graph-check-2026-11-17", "graph_check_2026-11-17/check_result.csv"),
                         ("uk-locations-2026-11-17", "uk_locations_2026-11-17/check_result.csv"),
-                        ("site-locations-2026-11-17", "site_locations_2026-11-17/check_result.csv")):
+                        ("site-locations-2026-11-17", "site_locations_2026-11-17/check_result.csv"),
+                        ("site-locations-2-2026-11-17", "site_locations_2_2026-11-17/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""

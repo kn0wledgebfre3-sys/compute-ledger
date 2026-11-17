@@ -1,247 +1,54 @@
 site_id,address_as_written,street,city,state,zip,address_from
-usa-bench-boston-ma-1-beacon-st-boston-ma-02108,"1 beacon st, Boston, MA 02108",1 beacon st,Boston,MA,02108,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-1-federal-st-boston-ma-02110,"1 federal st, Boston, MA 02110",1 federal st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-1-fenway-plz-boston-ma-02215,"1 fenway plz, Boston, MA 02215",1 fenway plz,Boston,MA,02215,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-100-federal-st-boston-ma-02110,"100 federal st, Boston, MA 02110",100 federal st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-100-high-st-boston-ma-02110,"100 high st, Boston, MA 02110",100 high st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-101-federal-st-boston-ma-02110,"101 federal st, Boston, MA 02110",101 federal st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-111-huntington-ave-boston-ma-02199,"111 huntington av, Boston, MA 02199",111 huntington av,Boston,MA,02199,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-1135-tremont-st-boston-ma-02120,"1135 tremont st, Boston, MA 02120",1135 tremont st,Boston,MA,02120,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-125-summer-st-boston-ma-02110,"125 summer st, Boston, MA 02110",125 summer st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-1295-1299-boylston-st-boston-ma-02115,"1295-1299 boylston st, Boston, MA 02115",1295-1299 boylston st,Boston,MA,02115,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-150-oliver-st-boston-ma-02110,"150 oliver st, Boston, MA 02110",150 oliver st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-16-20-wirt-st-boston-ma-02135,"16-20 wirt st, Boston, MA 02135",16-20 wirt st,Boston,MA,02135,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-175-adams-st-boston-ma-02122,"175 adams st, Boston, MA 02122",175 adams st,Boston,MA,02122,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-175-pilgrim-rd-boston-ma-02215,"175 pilgrim rd, Boston, MA 02215",175 pilgrim rd,Boston,MA,02215,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-200-clarendon-st-boston-ma-02116,"200 clarendon st, Boston, MA 02116",200 clarendon st,Boston,MA,02116,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-218-230-congress-st-boston-ma-02110,"218-230 congress st, Boston, MA 02110",218-230 congress st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-225-franklin-st-boston-ma-02110,"225 franklin st, Boston, MA 02110",225 franklin st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-24-school-st-boston-ma-02108,"24 school st, Boston, MA 02108",24 school st,Boston,MA,02108,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-245-summer-st-boston-ma-02210,"245 summer st, Boston, MA 02210",245 summer st,Boston,MA,02210,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-249-267-causeway-st-boston-ma-02114,"249-267 causeway st, Boston, MA 02114",249-267 causeway st,Boston,MA,02114,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-26-waverly-st-boston-ma-02119,"26 waverly st, Boston, MA 02119",26 waverly st,Boston,MA,02119,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-280-294-congress-st-boston-ma-02210,"280  294 congress st, Boston, MA 02210",280  294 congress st,Boston,MA,02210,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-29-51-belvidere-st-boston-ma-02115,"29-51 belvidere st, Boston, MA 02115",29-51 belvidere st,Boston,MA,02115,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-341-345-congress-st-boston-ma-02210,"341-345 congress st, Boston, MA 02210",341-345 congress st,Boston,MA,02210,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-40-saratoga-st-boston-ma-02128,"40 saratoga st, Boston, MA 02128",40 saratoga st,Boston,MA,02128,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-401-park-dr-boston-ma-02215,"401 park dr, Boston, MA 02215",401 park dr,Boston,MA,02215,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-426-belgrade-ave-boston-ma-02132,"426 belgrade ave, Boston, MA 02132",426 belgrade ave,Boston,MA,02132,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-560-578-e-fourth-st-boston-ma-02127,"560-578 e fourth st, Boston, MA 02127",560-578 e fourth st,Boston,MA,02127,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-6-bowdoin-sq-boston-ma-02114,"6 bowdoin sq, Boston, MA 02114",6 bowdoin sq,Boston,MA,02114,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-60-state-st-boston-ma-02109,"60 state st, Boston, MA 02109",60 state st,Boston,MA,02109,"the Boston, MA benchmarking disclosure"
-usa-bench-boston-ma-695-atlantic-ave-boston-ma-02111,"695 atlantic ave, Boston, MA 02111",695 atlantic ave,Boston,MA,02111,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-90-110-northern-ave-boston-ma-02210,"90  110 northern av, Boston, MA 02210",90  110 northern av,Boston,MA,02210,"the Boston, MA benchmarking disclosure"
 usa-bench-boston-ma-90-oliver-st-boston-ma-02110,"90 oliver st, Boston, MA 02110",90 oliver st,Boston,MA,02110,"the Boston, MA benchmarking disclosure"
-usa-bench-california-statewide-1075-triangle-court-west-sacramento-ca,"1075 triangle court, west sacramento, CA",1075 triangle court,West Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-10975-technology-place-san-diego-ca,"10975 technology place, san diego, CA",10975 technology place,San Diego,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1100-north-market-boulevard-sacramento-ca,"1100 north market boulevard, sacramento, CA",1100 north market boulevard,Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1100-space-park-drive-santa-clara-ca,"1100 space park drive, santa clara, CA",1100 space park drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-11085-sun-center-drive-rancho-cordova-ca,"11085 sun center drive, rancho cordova, CA",11085 sun center drive,Rancho Cordova,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1150-walsh-ave-santa-clara-ca,"1150 walsh avenue, santa clara, CA",1150 walsh avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1200-striker-ave-sacramento-ca,"1200 striker avenue, sacramento, CA",1200 striker avenue,Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1200-west-7th-st-los-angeles-ca,"1200 west 7th street, los angeles, CA",1200 west 7th street,Los Angeles,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-12270-world-trade-drive-san-diego-ca,"12270 world trade drive, san diego, CA",12270 world trade drive,San Diego,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-1310-1320-kifer-rd-sunnyvale-ca,"1310-1320 kifer rd, sunnyvale, CA",1310-1320 kifer rd,Sunnyvale,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1312-striker-ave-sacramento-ca,"1312 striker avenue, sacramento, CA",1312 striker avenue,Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-135-cyber-court-rocklin-ca,"135 cyber court, rocklin, CA",135 cyber court,Rocklin,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-1400-kifer-road-sunnyvale-ca,"1400 kifer road, sunnyvale, CA",1400 kifer road,Sunnyvale,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1400-south-grand-ave-santa-ana-ca,"1400 south grand avenue, santa ana, CA",1400 south grand avenue,Santa Ana,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-14381-franklin-ave-tustin-ca,"14381 franklin avenue, tustin, CA",14381 franklin avenue,Tustin,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1500-duane-ave-santa-clara-ca,"1500 duane avenue, santa clara, CA",1500 duane avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1500-space-park-drive-santa-clara-ca,"1500 space park drive, santa clara, CA",1500 space park drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1550-space-park-drive-santa-clara-ca,"1550 space park drive, santa clara, CA",1550 space park drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1625-west-national-drive-sacramento-ca,"1625 west national drive, sacramento, CA",1625 west national drive,Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1656-mccarthy-boulevard-milpitas-ca,"1656 mccarthy boulevard, milpitas, CA",1656 mccarthy boulevard,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-17222-von-karman-ave-irvine-ca,"17222 von karman avenue, irvine, CA",17222 von karman avenue,Irvine,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-17400-von-karman-ave-irvine-ca,"17400 von karman avenue, irvine, CA",17400 von karman avenue,Irvine,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-175-s-hill-dr-brisbane-ca,"175 s hill dr, brisbane, CA",175 s hill dr,Brisbane,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-17871-von-karman-ave-and-17836-gillette-ave-irvine,"17871 von karman ave and 17836 gillette ave, irvine, CA",17871 von karman ave and 17836 gillette ave,Irvine,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1850-california-ave-corona-ca,"1850 california avenue, corona, CA",1850 california avenue,Corona,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-18850-orange-st-bloomington-ca,"18850 orange street, bloomington, CA",18850 orange street,Bloomington,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-1920-east-maple-ave-el-segundo-ca,"1920 east maple avenue, el segundo, CA",1920 east maple avenue,El Segundo,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-200-north-nash-st-el-segundo-ca,"200 north nash street, el segundo, CA",200 north nash street,El Segundo,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-2045-lafayette-st-santa-clara-ca,"2045 lafayette street, santa clara, CA",2045 lafayette street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2050-martin-ave-santa-clara-ca,"2050 martin avenue, santa clara, CA",2050 martin avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-21350-cabot-boulevard-hayward-ca,"21350 cabot boulevard, hayward, CA",21350 cabot boulevard,Hayward,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2220-de-la-cruz-boulevard-santa-clara-ca,"2220 de la cruz boulevard, santa clara, CA",2220 de la cruz boulevard,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2240-east-imperial-highway-el-segundo-ca,"2240 east imperial highway, el segundo, CA",2240 east imperial highway,El Segundo,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2260-east-el-segundo-boulevard-el-segundo-ca,"2260 east el segundo boulevard, el segundo, CA",2260 east el segundo boulevard,El Segundo,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-23-parker-irvine-ca,"23 parker, irvine, CA",23 parker,Irvine,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2301-west-120th-st-hawthorne-ca,"2301 west 120th street, hawthorne, CA",2301 west 120th street,Hawthorne,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2401-walsh-ave-santa-clara-ca,"2401 walsh avenue, santa clara, CA",2401 walsh avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2403-walsh-ave-santa-clara-ca,"2403 walsh avenue, santa clara, CA",2403 walsh avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-2407-ak-st-mcclellan-park-ca,"2407 ak street, mcclellan park, CA",2407 ak street,Mcclellan Park,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2430-business-park-drive-vista-ca,"2430 business park drive, vista, CA",2430 business park drive,Vista,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-250-stockton-ave-san-jose-ca,"250 stockton avenue, san jose, CA",250 stockton avenue,San Jose,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2600-napa-valley-corporate-drive-napa-ca,"2600 napa valley corporate drive, napa, CA",2600 napa valley corporate drive,Napa,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-26464-corporate-ave-hayward-ca,"26464 corporate avenue, hayward, CA",26464 corporate avenue,Hayward,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2681-kelvin-ave-irvine-ca,"2681 kelvin ave, irvine, CA",2681 kelvin ave,Irvine,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-2805-lafayette-st-santa-clara-ca,"2805 lafayette street, santa clara, CA",2805 lafayette street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2805-mission-college-boulevard-santa-clara-ca,"2805 mission college boulevard, santa clara, CA",2805 mission college boulevard,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2807-mission-college-boulevard-santa-clara-ca,"2807 mission college boulevard, santa clara, CA",2807 mission college boulevard,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2820-kovr-drive-west-sacramento-ca,"2820 kovr drive, west sacramento, CA",2820 kovr drive,West Sacramento,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-2825-lafayette-st-santa-clara-ca,"2825 lafayette street, santa clara, CA",2825 lafayette street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2880-northwestern-parkway-santa-clara-ca,"2880 northwestern parkway, santa clara, CA",2880 northwestern parkway,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2901-coronado-drive-santa-clara-ca,"2901 coronado drive, santa clara, CA",2901 coronado drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2915-stender-way-santa-clara-ca,"2915 stender way, santa clara, CA",2915 stender way,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-2972-stender-way-santa-clara-ca,"2972 stender way, santa clara, CA",2972 stender way,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3011-lafayette-st-santa-clara-ca,"3011 lafayette street, santa clara, CA",3011 lafayette street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3015-winona-ave-burbank-ca,"3015 winona avenue, burbank, CA",3015 winona avenue,Burbank,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3020-coronado-drive-santa-clara-ca,"3020 coronado drive, santa clara, CA",3020 coronado drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3035-stender-way-santa-clara-ca,"3035 stender way, santa clara, CA",3035 stender way,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3045-raymond-st-santa-clara-ca,"3045 raymond street, santa clara, CA",3045 raymond street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3065-gold-camp-drive-rancho-cordova-ca,"3065 gold camp drive, rancho cordova, CA",3065 gold camp drive,Rancho Cordova,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3205-alfred-st-santa-clara-ca,"3205 alfred street, santa clara, CA",3205 alfred street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3301-hillview-ave-palo-alto-ca,"3301 hillview avenue, palo alto, CA",3301 hillview avenue,Palo Alto,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3303-hillview-ave-palo-alto-ca,"3303 hillview avenue, palo alto, CA",3303 hillview avenue,Palo Alto,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3305-hillview-ave-palo-alto-ca,"3305 hillview avenue, palo alto, CA",3305 hillview avenue,Palo Alto,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-3307-hillview-ave-palo-alto-ca,"3307 hillview avenue, palo alto, CA",3307 hillview avenue,Palo Alto,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-39800-eureka-drive-newark-ca,"39800 eureka drive, newark, CA",39800 eureka drive,Newark,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-4235-forcum-ave-mcclellan-park-ca,"4235 forcum avenue, mcclellan park, CA",4235 forcum avenue,Mcclellan Park,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-444-north-nash-st-el-segundo-ca,"444 north nash street, el segundo, CA",444 north nash street,El Segundo,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-4650-old-ironsides-drive-santa-clara-ca,"4650 old ironsides drive, santa clara, CA",4650 old ironsides drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-4700-old-ironsides-drive-santa-clara-ca,"4700 old ironsides drive, santa clara, CA",4700 old ironsides drive,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-47913-warm-springs-boulevard-fremont-ca,"47913 warm springs boulevard, fremont, CA",47913 warm springs boulevard,Fremont,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-48233-warm-springs-boulevard-fremont-ca,"48233 warm springs boulevard, fremont, CA",48233 warm springs boulevard,Fremont,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-500-stockton-ave-san-jose-ca,"500 stockton ave., san jose, CA",500 stockton ave.,San Jose,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-5000-hollis-st-emeryville-ca,"5000 hollis street, emeryville, CA",5000 hollis street,Emeryville,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-510-mccarthy-boulevard-milpitas-ca,"510 mccarthy boulevard, milpitas, CA",510 mccarthy boulevard,Milpitas,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-530-west-6th-st-los-angeles-ca,"530 west 6th street, los angeles, CA",530 west 6th street,Los Angeles,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-55-south-market-st-san-jose-ca,"55 south market street, san jose, CA",55 south market street,San Jose,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-560-mccarthy-boulevard-milpitas-ca,"560 mccarthy boulevard, milpitas, CA",560 mccarthy boulevard,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-5840-owens-drive-pleasanton-ca,"5840 owens drive, pleasanton, CA",5840 owens drive,Pleasanton,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-600-west-7th-st-los-angeles-ca,"600 west 7th street, los angeles, CA",600 west 7th street,Los Angeles,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-624-south-grand-ave-los-angeles-ca,"624 south grand avenue, los angeles, CA",624 south grand avenue,Los Angeles,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-625-mathew-st-santa-clara-ca,"625 mathew street, santa clara, CA",625 mathew street,Santa Clara,CA,,the California (statewide) benchmarking disclosure
 usa-bench-california-statewide-6320-6340-san-ignacio-ave-san-jose-ca,"6320-6340 san ignacio avenue, san jose, CA",6320-6340 san ignacio avenue,San Jose,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-641-walsh-ave-santa-clara-ca,"641 walsh avenue, santa clara, CA",641 walsh avenue,Santa Clara,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-705-sycamore-dr-milpitas-ca,"705 sycamore dr, milpitas, CA",705 sycamore dr,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-720-2nd-st-oakland-ca,"720 2nd street, oakland, CA",720 2nd street,Oakland,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-725-alder-drive-milpitas-ca,"725 alder drive, milpitas, CA",725 alder drive,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-771-alder-drive-milpitas-ca,"771 alder drive, milpitas, CA",771 alder drive,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-7901-freeport-boulevard-sacramento-ca,"7901 freeport boulevard, sacramento, CA",7901 freeport boulevard,Sacramento,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-800-south-hope-st-los-angeles-ca,"800 south hope street, los angeles, CA",800 south hope street,Los Angeles,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-821-alder-drive-milpitas-ca,"821 alder drive, milpitas, CA",821 alder drive,Milpitas,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-8929-aero-drive-san-diego-ca,"8929 aero drive, san diego, CA",8929 aero drive,San Diego,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-9-first-american-way-santa-ana-ca,"9 first american way, santa ana, CA",9 first american way,Santa Ana,CA,,the California (statewide) benchmarking disclosure
-usa-bench-california-statewide-9725-scranton-road-san-diego-ca,"9725 scranton road, san diego, CA",9725 scranton road,San Diego,CA,,the California (statewide) benchmarking disclosure
 usa-bench-cambridge-ma-185-205-bent-st,185 / 205 Bent St,185 / 205 Bent St,Cambridge,MA,,the Cambridge MA benchmarking disclosure
-usa-bench-cambridge-ma-250-bent-st,250 Bent St,250 Bent St,Cambridge,MA,,the Cambridge MA benchmarking disclosure
-usa-bench-cambridge-ma-300-bent-st,300 Bent Street,300 Bent Street,Cambridge,MA,,the Cambridge MA benchmarking disclosure
-usa-bench-cambridge-ma-89-fulkerson-st,89 Fulkerson Street,89 Fulkerson Street,Cambridge,MA,,the Cambridge MA benchmarking disclosure
-usa-bench-chicago-1432-s-clinton-st,1432 S CLINTON ST,1432 S CLINTON ST,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-chicago-2800-s-ashland-ave,2800 S. Ashland Ave,2800 S. Ashland Ave,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-chicago-350-e-cermak,350 E Cermak,350 E Cermak,Chicago,IL,,the Chicago benchmarking disclosure
 usa-bench-chicago-427-s-lasalle,427 S. Lasalle`,427 S. Lasalle`,Chicago,IL,,the Chicago benchmarking disclosure
 usa-bench-chicago-427-s-lasalle-st,427 S LaSalle St,427 S LaSalle St,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-chicago-600-s-federal-st,600 S Federal St,600 S Federal St,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-chicago-601-w-polk-st,601 W Polk Street,601 W Polk Street,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-chicago-725-s-wells,725 S. Wells,725 S. Wells,Chicago,IL,,the Chicago benchmarking disclosure
-usa-bench-montgomery-county-md-11961-bournefield-way-silver-spring,"11961 bournefield way, silver spring",11961 bournefield way,Silver Spring,MD,,the Montgomery County MD benchmarking disclosure
-usa-bench-montgomery-county-md-12401-prosperity-dr-silver-spring,"12401 prosperity dr, silver spring",12401 prosperity dr,Silver Spring,MD,,the Montgomery County MD benchmarking disclosure
-usa-bench-montgomery-county-md-20441-century-blvd-germantown,"20441 century blvd, germantown",20441 century blvd,Germantown,MD,,the Montgomery County MD benchmarking disclosure
-usa-bench-montgomery-county-md-75-w-watkins-mill-rd-gaithersburg,"75 w watkins mill rd, gaithersburg",75 w watkins mill rd,Gaithersburg,MD,,the Montgomery County MD benchmarking disclosure
-usa-bench-new-york-city-104-broad-st,104 BROAD ST,104 BROAD ST,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-107-15-70th-rd,107 15 70TH RD,107 15 70TH RD,Forest Hills,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-1070-bushwick-ave,1070 BUSHWICK AVE,1070 BUSHWICK AVE,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-11-31-46th-rd,11-31 46TH RD,11-31 46TH RD,Long Island City,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-1101-ave-r,1101 AVE R,1101 AVE R,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-1106-hoe-ave,1106 HOE AVE,1106 HOE AVE,Bronx,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-117-e-167-st,117 E 167 ST,117 E 167 ST,Bronx,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-118-15-115th-ave,118 15 115TH AVE,118 15 115TH AVE,South Ozone Park,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-125-w-73-st,125 W 73 ST,125 W 73 ST,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-13-11-bayport-pl,13-11 BAYPORT PL,13-11 BAYPORT PL,Far Rockaway,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-137-34-northern-blvd,137-34 NORTHERN BLVD,137-34 NORTHERN BLVD,Flushing,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-140-10-183rd-st,140-10 183RD ST,140-10 183RD ST,Springfield Gardens,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-1421-ocean-ave,1421 OCEAN AVE,1421 OCEAN AVE,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-151-e-97-st,151 E 97 ST,151 E 97 ST,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-1530-carroll-st,1530 CARROLL ST,1530 CARROLL ST,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-193-manhattan-ave,193 MANHATTAN AVE,193 MANHATTAN AVE,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-199-06-93rd-ave,199-06 93RD AVE,199-06 93RD AVE,Hollis,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-204-2nd-ave,204 2ND AVE,204 2ND AVE,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-208-e-79-st,208 E 79 ST,208 E 79 ST,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-2101-w-12th-st,2101 W 12TH ST,2101 W 12TH ST,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-214-20-43-ave,214-20 43 AVE,214-20 43 AVE,Bayside,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-216-beach-81st-st,216 BEACH 81ST ST,216 BEACH 81ST ST,Far Rockaway,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-2177-albemarle-rd,2177 ALBEMARLE RD,2177 ALBEMARLE RD,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-221-e-37-st,221 E 37 ST,221 E 37 ST,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-228-e-56-st,228 E 56 ST,228 E 56 ST,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-230-w-36-st,230 W 36 ST,230 W 36 ST,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-2373-tiebout-ave,2373 TIEBOUT AVE,2373 TIEBOUT AVE,Bronx,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-2411-tratman-ave,2411 TRATMAN AVE,2411 TRATMAN AVE,Bronx,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-28-27-30-st,28-27 30 ST,28-27 30 ST,Astoria,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-2885-ocean-ave,2885 OCEAN AVE,2885 OCEAN AVE,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-3001-kingsbridge-ave,3001 KINGSBRIDGE AVE,3001 KINGSBRIDGE AVE,Bronx,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-3050-cruger-ave,3050 CRUGER AVE,3050 CRUGER AVE,Bronx,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-335-14th-st,335 14TH ST,335 14TH ST,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-355-forest-ave,355 FOREST AVE,355 FOREST AVE,Staten Island,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-360-bridge-st,360 BRIDGE ST,360 BRIDGE ST,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-370-e-150-st,370 E 150 ST,370 E 150 ST,Bronx,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-380-convent-ave,380 CONVENT AVE,380 CONVENT AVE,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-4101-14th-ave,4101 14TH AVE,4101 14TH AVE,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-42-new-dorp-ln,42 NEW DORP LN,42 NEW DORP LN,Staten Island,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-50-thayer-st,50 THAYER ST,50 THAYER ST,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-5120-broadway,5120 Broadway,5120 Broadway,New York,NY,10034,the New York City benchmarking disclosure
-usa-bench-new-york-city-5180-amboy-rd,5180 AMBOY RD,5180 AMBOY RD,Staten Island,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-54-laight-st,54 LAIGHT ST,54 LAIGHT ST,New York,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-547-clinton-ave,547 CLINTON AVE,547 CLINTON AVE,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-55-meserole-st,55 MESEROLE ST,55 MESEROLE ST,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-5515-ave-i,5515 AVE I,5515 AVE I,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-608-w-176-st,608 W 176 ST,608 W 176 ST,New York,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-680-fairview-ave,680 FAIRVIEW AVE,680 FAIRVIEW AVE,Queens,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-71-40-164th-st,71-40 164TH ST,71-40 164TH ST,Fresh Meadows,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-7101-16th-ave,7101 16TH AVE,7101 16TH AVE,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-739-rockaway-ave,739 ROCKAWAY AVE,739 ROCKAWAY AVE,Brooklyn,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-7701-3rd-ave,7701 3RD AVE,7701 3RD AVE,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-82-23-broadway,82-23 BROADWAY,82-23 BROADWAY,Elmhurst,NY,,the New York City benchmarking disclosure
-usa-bench-new-york-city-862-liberty-ave,862 LIBERTY AVE,862 LIBERTY AVE,Brooklyn,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-87-28-109th-st,87-28 109TH ST,87-28 109TH ST,Richmond Hill,NY,,the New York City benchmarking disclosure
 usa-bench-new-york-city-89-63-163rd-st,89-63 163RD ST,89-63 163RD ST,Jamaica,NY,,the New York City benchmarking disclosure
-usa-bench-philadelphia-1000-w-tabor-rd,1000 W Tabor Rd,1000 W Tabor Rd,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-1601-jefferson-st,1601 JEFFERSON ST,1601 JEFFERSON ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-1601-w-jefferson-st,1601 W JEFFERSON ST,1601 W JEFFERSON ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-1631-arch-st,1631 ARCH ST,1631 ARCH ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-2000-s-broad-st,2000 S BROAD ST,2000 S BROAD ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-2210-lott-st,2210 LOTT ST,2210 LOTT ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-2514-emerald-st,2514 EMERALD ST,2514 EMERALD ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-3429-n-17th-st,3429 N 17TH ST,3429 N 17TH ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-3810-chestnut-st,3810 CHESTNUT ST,3810 CHESTNUT ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-401-north-broad,401 North Broad,401 North Broad,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-423-s-17th-st,423 S 17TH ST,423 S 17TH ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-4808-leiper-st,4808 LEIPER ST,4808 LEIPER ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-5160-lancaster-ave,5160 LANCASTER AVE,5160 LANCASTER AVE,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-5650-chestnut-st,5650 CHESTNUT ST,5650 CHESTNUT ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-6468-n-broad-st,6468 N BROAD ST,6468 N BROAD ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-7254-rising-sun-ave,7254 RISING SUN AVE,7254 RISING SUN AVE,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-8318-germantown-ave,8318 GERMANTOWN AVE,8318 GERMANTOWN AVE,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-philadelphia-900-race-st,900 RACE ST,900 RACE ST,Philadelphia,PA,,the Philadelphia benchmarking disclosure
-usa-bench-portland-or-1225-nw-13th-ave,1225 NW 13TH AVE,1225 NW 13TH AVE,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-portland-or-1330-ne-102nd-ave,1330 NE 102ND AVE,1330 NE 102ND AVE,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-portland-or-2923-ne-24th-ave,2923 NE 24TH AVE,2923 NE 24TH AVE,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-portland-or-310-sw-park-ave,310 SW PARK AVE,310 SW PARK AVE,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-portland-or-5051-wi-se-71st-ave,5051 WI/ SE 71ST AVE,5051 WI/ SE 71ST AVE,Portland,OR,,the Portland OR benchmarking disclosure
 usa-bench-portland-or-8021-8025-sw-capitol-hill-rd,8021-8025 SW CAPITOL HILL RD,8021-8025 SW CAPITOL HILL RD,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-portland-or-921-sw-washington-st,921 SW WASHINGTON ST,921 SW WASHINGTON ST,Portland,OR,,the Portland OR benchmarking disclosure
-usa-bench-san-francisco-200-paul-ave,200 PAUL AVE,200 PAUL AVE,San Francisco,CA,,the San Francisco benchmarking disclosure
-usa-bench-san-francisco-274-brannan-st,274 BRANNAN ST,274 BRANNAN ST,San Francisco,CA,,the San Francisco benchmarking disclosure
-usa-bench-san-francisco-365-main-st,365 MAIN ST,365 MAIN ST,San Francisco,CA,,the San Francisco benchmarking disclosure
-usa-bench-san-francisco-630-3rd-st,630 3RD ST,630 3RD ST,San Francisco,CA,,the San Francisco benchmarking disclosure
-usa-bench-seattle-1122-3rd-ave,1122 3RD AVE,1122 3RD AVE,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-1138-nw-63rd-st,1138 NW 63RD ST,1138 NW 63RD ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-120-lenora-st,120 LENORA ST,120 LENORA ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-1208-ne-64th-st,1208 NE 64TH ST,1208 NE 64TH ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-1249-ne-145th-st,1249 NE 145TH ST,1249 NE 145TH ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-1503-3rd-ave-w,1503 3RD AVE W,1503 3RD AVE W,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-1708-e-pike-st,1708 E PIKE ST,1708 E PIKE ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-2001-6th-ave,2001 6TH AVE,2001 6TH AVE,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-2020-5th-ave,2020 5TH AVE,2020 5TH AVE,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-4310-12th-ave-ne,4310 12TH AVE NE,4310 12TH AVE NE,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-4415-california-ave-sw,4415 CALIFORNIA AVE SW,4415 CALIFORNIA AVE SW,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-7000-east-marginal-way-s,7000 EAST MARGINAL WAY S,7000 EAST MARGINAL WAY S,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-seattle-801-ne-42nd-st,801 NE 42ND ST,801 NE 42ND ST,Seattle,WA,,the Seattle benchmarking disclosure
-usa-bench-washington-dc-1401-r-st-nw,1401 R ST NW,1401 R ST NW,Washington,DC,,the Washington DC benchmarking disclosure
-usa-bench-washington-dc-3919-benning-rd-ne,3919 BENNING RD NE,3919 BENNING RD NE,Washington,DC,,the Washington DC benchmarking disclosure
-usa-crypto-bitdeer-knoxville,"5101 S. National Drive, Knoxville, Tennessee, 37914",5101 S. National Drive,Knoxville,TN,37914,"the site address in the operator's filing with the SEC, read twice"
+usa-crypto-ebon-international-louisa,"23250 US Highway 23, Louisa, Kentucky",23250 US Highway 23,Louisa,KY,,"the site address in Kentucky Power's brief to the Kentucky Public Service Commission, read twice"
+usa-tx-cyrusone-dfw-4941,"557 CR 3610, Whitney, TX 76692",557 CR 3610,Whitney,TX,76692,"the site address in Texas building-project records, read twice"
+usa-tx-stream-houston-i,"4001 TECHNOLOGY FOREST BLVD., The Woodlands, TX 77381",4001 TECHNOLOGY FOREST BLVD.,The Woodlands,TX,77381,"the site address in Texas building-project records, read twice"
+usa-tx-trg-tx,"2626 Spring Cypress Road, Spring, TX 77388",2626 Spring Cypress Road,Spring,TX,77388,"the site address in Texas building-project records, read twice"
 usa-va-deq-21527,"101 Herbert Drive, Boydton, VA 23917",101 Herbert Drive,Boydton,VA,23917,the site address in the Virginia DEQ air permit
 usa-va-deq-52403,"6050 TechnologyCreek Drive, Sandston, Virginia 23150",6050 TechnologyCreek Drive,Sandston,VA,23150,the site address in the Virginia DEQ air permit
 usa-va-deq-52903,"608 Ridge Road, Boydton, VA 23917 (Mecklenburg County)",608 Ridge Road,Boydton,VA,23917,the site address in the Virginia DEQ air permit
@@ -255,7 +62,6 @@ usa-va-deq-73757,"44874 Moran Road, Dulles, VA 20166",44874 Moran Road,Dulles,VA
 usa-va-deq-74109,"511 Shaw Road, CyrusOne Northern Virginia Data Center - Shaw Road",511 Shaw Road,CyrusOne Northern,VA,,the site address in the Virginia DEQ air permit
 usa-va-deq-74120,"44245 Gigabit Plaza, Ashburn, VA 20147 (VA3) (+4 more addresses), Ashburn, VA 20147 (VA3) (+4 more addresses)","44245 Gigabit Plaza, Ashburn, VA 20147 (VA3) (+4 more addresses)",Ashburn,VA,20147,the site address in the Virginia DEQ air permit
 usa-va-deq-74126,"44540 Round Table Plaza, Ashburn, Virginia 20147 and (+1 more addresses), Ashburn, Virginia 20147 and (+1 more addresses)","44540 Round Table Plaza, Ashburn, Virginia 20147 and (+1 more addresses)",Ashburn,VA,20147,the site address in the Virginia DEQ air permit
-usa-va-deq-74147,"21830 Uunet Way, Ashburn, Virginia 20147",21830 Uunet Way,Ashburn,VA,20147,the site address in the Virginia DEQ air permit
 usa-va-deq-74152,"24400 Howling Rooster Ln, Sterling, VA 20166",24400 Howling Rooster Ln,Sterling,VA,20166,the site address in the Virginia DEQ air permit
 usa-va-deq-74154,"7900 Telegraph Road, Fort Belvoir, VA 22060-5928",7900 Telegraph Road,Fort Belvoir,VA,22060,the site address in the Virginia DEQ air permit
 usa-va-deq-74156,"22260 Cloud Plaza, Sterling, VA 20166",22260 Cloud Plaza,Sterling,VA,20166,the site address in the Virginia DEQ air permit

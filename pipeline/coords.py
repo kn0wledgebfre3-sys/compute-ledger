@@ -126,6 +126,8 @@ def parse_latlon(text):
     (a, ha, la), (b, hb, lb) = vals[0], vals[1]
     if ha in ("E", "W") or hb in ("N", "S") or la == "lon" or lb == "lat":
         a, b = b, a
+    elif not -90 <= a <= 90 and -90 <= b <= 90:  # a map link that writes longitude first ("-101.5776,35.2843")
+        a, b = b, a
     if not (-90 <= a <= 90 and -180 <= b <= 180):
         return None
     return round(a, 6), round(b, 6)
@@ -150,7 +152,8 @@ def _test():
     assert parse_latlon("29°28'25.6\"N 98°40'15.4\"W") == (29.473778, -98.670944)
     assert parse_latlon("N 29 28 25.6, W 98 40 15.4") == (29.473778, -98.670944)
     assert parse_latlon("29.473781, -98.670945") == (29.473781, -98.670945)
-    assert parse_latlon("Longitude -98.670945, Latitude 29.473781") is not None
+    assert parse_latlon("Longitude -98.670945, Latitude 29.473781") == (29.473781, -98.670945)
+    assert parse_latlon("-101.5776,35.2843") == (35.2843, -101.5776)
     print("ok")
 
 
