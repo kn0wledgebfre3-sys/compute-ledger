@@ -25,4 +25,4 @@ They recorded 814 items from 170 documents (`readers/first_reading_*.csv`).
 
 - Both readers read the documents through a text-extraction step, because the publishers' servers refused direct downloads, so page numbers can be off by one.
 - Several planning decisions are known from the press only, because the councils' reports could not be reached; their figures are marked press reports.
-- No UK site is placed on the map yet: the documents give addresses and grid references, which the ledger has not converted.
+- When this round was read, no UK site was placed on the map. 43 were placed afterwards from their grid references, read twice (`review/uk_locations_2026-11-17/`).

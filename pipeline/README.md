@@ -86,7 +86,7 @@ Every extracted field has a confidence column (`high|medium|low|none`) and nothi
 
 ## Known fragilities (read before the live run)
 
-1. **DEQ list page links are unverified.** The fetch tool strips `<a href>`, so whether each Air Site
+1. **DEQ list page links are unverified.** The page reader strips `<a href>`, so whether each Air Site
    Name links its permit PDF (`deq.virginia.gov/home/showpublisheddocument/<id>/<ticks>`) is inferred
    from the Virginia Mercury's write-up, not seen. The parser takes any link in a row. If the live run
    logs `rows with links = 0`, open the page in a browser: if names are links, save the page and
@@ -115,14 +115,14 @@ Every extracted field has a confidence column (`high|medium|low|none`) and nothi
    has no county or address, so matching is by name only; same-company-different-site errors are
    limited by facility-code and metro-region checks (TX11 vs TX21, CyrusOne Houston vs DFW) but
    not eliminated. The Central Registry client (`--central-registry`) was written blind (the site
-   is robots-blocked for the fetch tool) and should be treated as untested.
+   is robots-blocked for the page reader) and should be treated as untested.
 6. **Garbled TCEQ PDFs.** 40584-ac.pdf (CyrusOne DFW) extracts as glyph codes; detected and
    reported as `text_quality=garbled`, no OCR attempted.
 7. **Geocoder policy.** Nominatim allows 1 request/s with an identifying User-Agent (set in
    `_common.USER_AGENT`, override with env `LEDGER_USER_AGENT`); heavy use should move to a local
    instance. Census batch endpoint sometimes times out on large batches; the script sends 1,000 at a
    time and records the failure per row.
-8. **Fixtures are reassembled quotes, not PDF dumps.** The fetch tool caps verbatim quotes at ~125
+8. **Fixtures are reassembled quotes, not PDF dumps.** The page reader caps verbatim quotes at ~125
    characters, so `fixtures/*.txt` are those fragments arranged in the reported layout; three rows
    are reconstructed from reported totals and are marked in `fixtures/provenance.json`. Expect the
    live extracted text to differ in whitespace and page-header noise; the regexes work on a

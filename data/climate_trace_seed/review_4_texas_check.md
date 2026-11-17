@@ -10,7 +10,7 @@ I didn't edit any files. Direct downloads from tceq.texas.gov were blocked, so a
 
 **Blocked:**
 - `38509-ac.pdf`, `411006-ac.pdf`, `nsr-pending-permits.html`, `184403-pls-english.pdf` and the PUC `59076_176_1686197.PDF`: the fetch was refused (access not approved in time).
-- The airperm project reports: TCEQ's robots.txt refuses the fetch tool.
+- The airperm project reports: TCEQ's robots.txt refuses the page reader.
 
 | # | Claim | Verdict | Document / section | Correction wording |
 |---|---|---|---|---|

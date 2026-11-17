@@ -6,7 +6,7 @@ Compiled 2026-10-23; California statewide and Portland added 2026-10-24 (last se
 - Direct downloads were blocked; all data came through page fetches. Two behaviours of the fetch route shaped the queries and matter to a checker:
   1. The fetch cache is keyed on URL path only (query string ignored for ~15 min), so the same Socrata dataset was hit through alternative paths (`/resource/<id>.json`, `/resource/<id>.csv`, `/api/id/<id>.json`, `/api/id/<id>.csv`) and host-case variants (`DATA.`, `Data.`, `dAta.cityofnewyork.us`). These are equivalent endpoints; a checker can use any of them.
   2. URLs longer than ~230 characters are rejected, and some `$query`/`$select` parameters were silently dropped by the server/proxy combination (the full dataset came back). Rows were only recorded from responses where the filter demonstrably applied.
-- Values were extracted from the response by the fetch tool's text extraction. For the wide NYC and Philadelphia responses, numbers were transcribed from tables; spot-check against the query_url.
+- Values were extracted from the response by the page reader's text extraction. For the wide NYC and Philadelphia responses, numbers were transcribed from tables; spot-check against the query_url.
 - `electricity_kwh` column: kWh only where the dataset field is in kWh (NYC, Seattle, SF, DC, Montgomery, Cambridge). Chicago and Philadelphia publish electricity in kBtu only; those cells carry the kBtu field name and value and say "NOT kWh". No conversion was done.
 
 ## New York City (Local Law 84) - 137 rows (2023: 68, 2024: 69)

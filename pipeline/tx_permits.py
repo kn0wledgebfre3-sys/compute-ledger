@@ -31,7 +31,7 @@ Two static HTML index pages, each an A-Z sectioned table (letter rows link "Back
       not a match.
 TCEQ Central Registry (https://www.tceq.texas.gov/goto/centralregistry -> www15.tceq.texas.gov/crpub) and
 the air-permit database (https://www2.tceq.texas.gov/airperm/index.cfm, "pending and completed permits")
-are robots-blocked for the fetch tool used tonight, so their forms were NOT inspected. --central-registry
+are robots-blocked for the page reader used tonight, so their forms were NOT inspected. --central-registry
 turns on a best-effort client that reads the search form's field names at run time; treat its output as
 untested.
 

@@ -277,7 +277,8 @@ def main():
                         ("us-state-incentives-check-2026-11-17", "us_state_incentives_check_2026-11-17/check_result.csv"),
                         ("uk-round-2026-11-17", "uk_round_2026-11-17/check_result.csv"),
                         ("organisation-identity-2026-11-17", "organisation_identity_2026-11-17/check_result.csv"),
-                        ("graph-check-2026-11-17", "graph_check_2026-11-17/check_result.csv")):
+                        ("graph-check-2026-11-17", "graph_check_2026-11-17/check_result.csv"),
+                        ("uk-locations-2026-11-17", "uk_locations_2026-11-17/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""
@@ -285,9 +286,12 @@ def main():
                 finding=r["what_is_wrong"] + " Resolution: " + r["resolution"].split(": ", 1)[-1], severity=r["severity"],
                 status_now="as recorded with the finding: " + r["resolution"].split(":")[0])
 
+    # findings whose process wording was replaced with plain words on 2026-11-17 keep the ids they were published with
+    KEEP_ID = {"f-03c114b200": "f-6c7faf43e9", "f-5eb2700b99": "f-8ca93cd86f", "f-92aba251d0": "f-81fbd25f6f"}
     seen = Counter()
     for r in rows:  # a hash of what was found, so the id does not change when status_now does
         fid = "f-" + hashlib.sha1("|".join(r[c] for c in COLS[1:-1]).encode("utf-8")).hexdigest()[:10]
+        fid = KEEP_ID.get(fid, fid)
         seen[fid] += 1
         r["finding_id"] = fid if seen[fid] == 1 else f"{fid}-{seen[fid]}"
 

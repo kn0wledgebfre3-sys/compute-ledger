@@ -22,8 +22,8 @@ Every table is a CSV with a header row, UTF-8, under CC BY 4.0 (see Licence). St
 | `data/climate_trace_seed/site_register.csv` | Every site with figures or links: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners, with coordinates where a record gives them. Retired ids are in `site_id_aliases.csv`. | 984 |
 | `data/climate_trace_seed/entity_register.csv` | Organisations: companies, utilities, public bodies and registers that sites, figures or chain links refer to. Which names in the sources refer to which organisation is in `sites/organisations/`, with the rules; identifiers (LEI, SEC CIK) are in `sites/organisations/identifiers.csv`. | 399 |
 | `data/chain/edges.csv` | Documented links in the chain from smelter to chipmaker to site and its power, fuel and water, and which group a company belongs to (leg `ownership`). | 254 |
-| `data/graph/nodes.csv`, `links.csv` | **The ledger as a graph**: every organisation, site, country, region, document, entry, check and figure, and every link between them, each with the document that states it or the table that holds it. Also as JSON-LD (`graph.jsonld`, `vocabulary.jsonld`); see `data/graph/README.md`. | 7,090 nodes, 12,433 links |
-| `data/climate_trace_seed/checks.csv`, `findings.csv` | Every check run on the ledger and every finding, with what the data show now. | 28 checks, 2,689 findings |
+| `data/graph/nodes.csv`, `links.csv` | **The ledger as a graph**: every organisation, site, country, region, document, entry, check and figure, and every link between them, each with the document that states it or the table that holds it. Also as JSON-LD (`graph.jsonld`, `vocabulary.jsonld`); see `data/graph/README.md`. | 7,091 nodes, 12,472 links |
+| `data/climate_trace_seed/checks.csv`, `findings.csv` | Every check run on the ledger and every finding, with what the data show now. | 29 checks, 2,756 findings |
 
 **Columns:** `data/DICTIONARY.md`, generated from the machine-readable schema `data/datapackage.json` (Frictionless Data Package). Every build checks every table against it, so the dictionary cannot drift from the data. **Controlled values** for `metric`, `unit`, `basis` and `relation`, with definitions and unit conversions: `pipeline/measurement_vocab.json`.
 
@@ -66,7 +66,7 @@ GitHub's "Cite this repository" button reads `CITATION.cff`. To cite an exact st
 | `CONTRIBUTING.md`, `JURISDICTION_TEMPLATE.md` | How a figure enters the ledger, the two-reading rule, id and correction rules; the checklist for adding a country or state. |
 | `rebuild.sh`, `ci_local.sh` | `./rebuild.sh` rebuilds every generated file and then runs `ci_local.sh`, the same checks as CI. |
 | `ROADMAP.md` | What is open in the package, the legs of the chain not yet traced (refiners, fabs, chips in motion, metered site power, the paper layer of certificates and offsets), the record each would rest on, and the three-week schedule after the Climate TRACE emails. |
-| `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths and the names of the fetch and search tools were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
+| `review/` | The hostile reviews (handover, final package, ledger page), unedited except that local file paths and the names of software were replaced, with their findings applied in the current files; the Virginia second reading (`va_reread/`); the Texas check; and `BROWSER_FETCH_LIST.csv`, the documents that need a person with a browser. |
 | `history/` | Files kept for the record of how the ledger was built and no longer used: the run sheet of 21 October 2026 and the withdrawn site-estimate script. |
 
 ## Entry schema

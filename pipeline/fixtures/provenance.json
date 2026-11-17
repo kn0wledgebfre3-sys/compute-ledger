@@ -1,5 +1,5 @@
 {
- "_read_me": "Every fixture was built on 2026-10-20 with page fetches and web search only (direct downloads from deq.virginia.gov / tceq.texas.gov were blocked, so no PDF was downloaded as a file). The fetcher returns extracted text with verbatim quotes capped at ~125 characters each, so the .txt fixtures are those verbatim fragments re-assembled in the layout the summary described, NOT pdfplumber output. Lines marked RECONSTRUCTED below carry values reported by the fetch but wording that is mine. Totals computed from fixtures match the independent sums reported by the fetch tool where noted.",
+ "_read_me": "Every fixture was built on 2026-10-20 with page fetches and web search only (direct downloads from deq.virginia.gov / tceq.texas.gov were blocked, so no PDF was downloaded as a file). The fetcher returns extracted text with verbatim quotes capped at ~125 characters each, so the .txt fixtures are those verbatim fragments re-assembled in the layout the summary described, NOT pdfplumber output. Lines marked RECONSTRUCTED below carry values reported by the fetch but wording that is mine. Totals computed from fixtures match the independent sums reported by the page reader where noted.",
  "va_permits/74129.txt": {
   "source": "https://deq.virginia.gov/home/showpublisheddocument/25843/638628762496730000",
   "provenance": "REAL-VERBATIM-FRAGMENTS",

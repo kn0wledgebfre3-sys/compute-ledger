@@ -24,9 +24,9 @@ Sources (details and what is blocked: SOURCES.md)
    standard permits and NSR permits after issuance:
    https://www2.tceq.texas.gov/airperm/index.cfm?fuseaction=airpermits.project_report&proj_id=<project>
    https://www2.tceq.texas.gov/airperm/index.cfm?fuseaction=airpermits.start   (search form)
-   robots.txt blocks it for the fetch tool used to build the fixtures, so the report parser here is UNTESTED; raw
+   robots.txt blocks it for the page reader used to build the fixtures, so the report parser here is UNTESTED; raw
    HTML is saved so it can be checked.
-4. EPA ECHO air_rest_services (robots-blocked for the fetch tool; documented form):
+4. EPA ECHO air_rest_services (robots-blocked for the page reader; documented form):
    https://echodata.epa.gov/echo/air_rest_services.get_facilities?output=JSON&p_st=TX&p_ncs=518210
    -> Results.QueryID -> https://echodata.epa.gov/echo/air_rest_services.get_download?output=CSV&qid=<QueryID>
 5. ECHO bulk files: https://echo.epa.gov/files/echodownloads/echo_exporter.zip and .../ICIS-AIR_downloads.zip

@@ -1,6 +1,6 @@
 # Texas datacenter air authorizations: sources (checked 2026-10-22)
 
-The 2026-10-21 run used TCEQ's two pending-application indexes, which drop a permit once it issues. The sources below keep issued authorizations. For each source: what it holds, whether it can be scripted, the exact URL and query form, and what was blocked here. Direct downloads were off in the build, so everything was read through the fetch tool. The web-search budget ran out in the first pass. A same-day follow-up pass covered data.texas.gov, the emissions inventory and the Amazon/Google/Meta LLC names (sections 10-12).
+The 2026-10-21 run used TCEQ's two pending-application indexes, which drop a permit once it issues. The sources below keep issued authorizations. For each source: what it holds, whether it can be scripted, the exact URL and query form, and what was blocked here. Direct downloads were off in the build, so everything was read through the page reader. The searches set for the pass ran out in the first pass. A same-day follow-up pass covered data.texas.gov, the emissions inventory and the Amazon/Google/Meta LLC names (sections 10-12).
 
 ## Summary
 
@@ -8,15 +8,15 @@ The 2026-10-21 run used TCEQ's two pending-application indexes, which drop a per
 |---|---|---|---|---|
 | 1 | EPA FRS, public ArcGIS feature service | Links each facility to its ICIS-Air id, TCEQ Central Registry RN, EIS, CEDRI and TCEQ stormwater ids, with lat/lon | Yes, no token | **Used.** 286 Texas interest rows captured |
 | 2 | TCEQ Title V public-notice PDFs (statement of basis, draft or effective permit) | Yes: unit groups, NSPS kW classes, NSR authorization references, sometimes PBR registration numbers and counts | Yes (static PDFs) | **Used.** 10 datacenter Title V projects read |
-| 3 | TCEQ NSR air-permits database ("airperm") | Yes: PBR registrations, PBR certifications (APD-CERT), standard permits and NSR permits, pending and complete | Yes from a laptop (plain ColdFusion pages) | Robots-blocked for the fetch tool. Project numbers came from a FracTracker sheet (FracTracker's transcription; the rendered sheet shows no TCEQ links) |
+| 3 | TCEQ NSR air-permits database ("airperm") | Yes: PBR registrations, PBR certifications (APD-CERT), standard permits and NSR permits, pending and complete | Yes from a laptop (plain ColdFusion pages) | Robots-blocked for the page reader. Project numbers came from a FracTracker sheet (FracTracker's transcription; the rendered sheet shows no TCEQ links) |
 | 4 | TCEQ Records Online / Central File Room (CFR) | Yes: the documents themselves (registrations, permits, technical reviews) | **No** (JavaScript search) | Reachable but needs a browser, so these go in tx_browser_list.csv |
-| 5 | EPA ECHO air_rest_services | Texas ICIS-Air facilities (majors and synthetic minors) | Yes from a laptop | Robots-blocked for the fetch tool |
-| 6 | ECHO Exporter and ICIS-Air bulk ZIPs | Same as 5, in bulk | Yes (download plus filter) | Too large for the fetch tool; pipeline/tx_fetch.py filters them locally |
-| 7 | TCEQ Central Registry (crpub) | RN, name, address, NAICS/SIC per regulated entity | Form POST from a laptop | Robots-blocked for the fetch tool |
+| 5 | EPA ECHO air_rest_services | Texas ICIS-Air facilities (majors and synthetic minors) | Yes from a laptop | Robots-blocked for the page reader |
+| 6 | ECHO Exporter and ICIS-Air bulk ZIPs | Same as 5, in bulk | Yes (download plus filter) | Too large for the page reader; pipeline/tx_fetch.py filters them locally |
+| 7 | TCEQ Central Registry (crpub) | RN, name, address, NAICS/SIC per regulated entity | Form POST from a laptop | Robots-blocked for the page reader |
 | 8 | TCEQ pending indexes (Title V, NSR) | Pending applications only | Yes | Used yesterday. Still useful for applications in process |
 | 9 | TCEQ eCID (Commissioners' Integrated Database) | Notices and decisions for major permits | Yes | Links captured, pages not opened |
 | 10 | data.texas.gov / Texas Socrata network | No TCEQ air-permit, PBR or standard-permit dataset. TCEQ publishes complaints, violations, enforcement, spills, waste and water permits, and one regional Central Registry file. | Yes (Socrata API) | Checked in the follow-up; the Central Registry file's columns were not verifiable |
-| 11 | TCEQ Point Source Emissions Inventory | Annual site/account emissions for the ~2,000 sites above 30 TAC 101.10 thresholds. Large datacenter generator fleets may report. | Yes (xlsx download) | 54 MB workbooks, not readable through the fetch tool; `--psei` in pipeline/tx_fetch.py |
+| 11 | TCEQ Point Source Emissions Inventory | Annual site/account emissions for the ~2,000 sites above 30 TAC 101.10 thresholds. Large datacenter generator fleets may report. | Yes (xlsx download) | 54 MB workbooks, not readable through the page reader; `--psei` in pipeline/tx_fetch.py |
 | 12 | PUC of Texas (utility certificate cases), plus TDLR building registrations for LLC names and addresses | PUC: dedicated generation for a named datacenter (Meta El Paso). TDLR: owner LLC and street address per building project. | PUC Interchange PDFs: yes. TDLR: per-project pages. | PUC document blocked here (fetch refused); TDLR pages read |
 
 No source publishes a statewide list of datacenter air permits the way Virginia DEQ does. The closest is the airperm database (3), which holds every registration but has to be searched by RN, permit number or project number.
@@ -48,7 +48,7 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
   - NAICS coding is sparse.
   - FRS geocodes are usually address matches, and one was ~35 km off (rejected, see `COORD_REJECT` in pipeline/tx_fetch.py).
   - Amazon, Google and Meta datacenters do not appear under those names. They file under shell LLCs or contractors.
-- Capture note: the fetch tool layer cached by URL path and ignored the query string, so each query here used a different letter-case of `ArcGIS/rest/services`. Responses with no features also came back as "server error" through that layer. Neither applies to a normal client.
+- Capture note: the page reader cached by URL path and ignored the query string, so each query here used a different letter-case of `ArcGIS/rest/services`. Responses with no features also came back as "server error" through that layer. Neither applies to a normal client.
 
 ## 2. TCEQ Title V public-notice documents (stay public after issuance)
 
@@ -90,7 +90,7 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
   - `https://www.tceq.texas.gov/assets/public/permitting/air/Guidance/Title_V/titlev-nsr-guide6433.pdf`
   - `https://www.tceq.texas.gov/assets/public/permitting/air/Guidance/Title_V/titlev-pbr-guide6434.pdf`
 - PBR 106.511 itself does not require registration. Sites register when they certify emissions (APD-CERT), and many large datacenters do. Unregistered PBR use leaves no record anywhere public.
-- **Blocked here:** robots.txt disallows www2.tceq.texas.gov/airperm for the fetch tool. From a laptop it is ordinary HTML.
+- **Blocked here:** robots.txt disallows www2.tceq.texas.gov/airperm for the page reader. From a laptop it is ordinary HTML.
   - `pipeline/tx_fetch.py` fetches the project report for every IMS project number it holds and saves the raw HTML. The parser is untested.
   - `--airperm-dump-form` prints the search form's field names so an RN or permit-type search can be wired up.
 - Project and permit numbers for 25 datacenter-related actions (APD-CERT, 106.511 registrations, standard permits, PSD notices) came from FracTracker's sheet "TCEQ data center permits since the Sept 21 halt", which transcribes these TCEQ actions (the rendered sheet shows no TCEQ URLs, so the numbers are FracTracker's): `https://docs.google.com/spreadsheets/d/1O8F1erF3yiHnDjWpXgC5GI5bp66H-kAYqyXAatxw4lE/edit#gid=1531514719`. That sheet covers only actions after 2026-09-21. Older registrations need the airperm RN search or CFR. FracTracker records seven PBR certifications as issued after the governor's 2026-09-21 directive; TCEQ told 404 Media it has not issued data-center permits since then. Neither was checked against TCEQ's own records.
@@ -113,7 +113,7 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
   - `https://echodata.epa.gov/echo/air_rest_services.get_download?output=CSV&qid=<QueryID>`
   - `get_qid?qid=<QueryID>&pageno=N` pages through JSON.
 - The base URL and endpoints (`get_facilities, get_facility_info, get_qid, get_map, get_download, get_geojson, metadata`) are confirmed from EPA's docs and API catalogs. The all-data service documents `p_sic2`/`p_sic4` for SIC. The SIC parameter name for the air service was not confirmed, so the script tries `p_sic` and then `p_sic4`.
-- **Blocked here:** echodata.epa.gov answers `robots_disallowed` to the fetch tool, and ECHO's detailed facility reports are robots-disallowed too.
+- **Blocked here:** echodata.epa.gov answers `robots_disallowed` to the page reader, and ECHO's detailed facility reports are robots-disallowed too.
 - The ECHO ArcGIS layer `oeca__echo__facilities_air` needs a token.
 - ECHO covers the same ICIS-Air universe as FRS `AIR`, so it adds no PBR-only sites.
 
@@ -163,7 +163,7 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
 - Page: `https://www.tceq.texas.gov/airquality/point-source-ei/point-source-emissions-data`
 - Account-level workbooks: `https://www.tceq.texas.gov/downloads/air-quality/point-source/<year>.xlsx` for 2016-2024, about 54 MB each.
 - Site summary: `https://www.tceq.texas.gov/downloads/air-quality/point-source/2010-2024-state-sum.xlsx`
-- Column names are not documented on the page, and the fetch tool returns "[binary data]" for xlsx. `pipeline/tx_fetch.py --psei 2024` scans every sheet and column for 518210, 7374 or a datacenter name (needs openpyxl).
+- Column names are not documented on the page, and the page reader returns "[binary data]" for xlsx. `pipeline/tx_fetch.py --psei 2024` scans every sheet and column for 518210, 7374 or a datacenter name (needs openpyxl).
 - The EPA side of the same inventory shows EIS ids for Microsoft SN (23058611), Sharka (19128811), SDC DFW-VII (21604811) and a "Plano Data Center" (21606411).
 
 ## 12. Utility regulator and LLC-name sources (follow-up pass)
@@ -205,7 +205,7 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
 ### FRS operator-name searches
 
 - Stack, Riot, Bitdeer, Edged, VoltaGrid, Galaxy, TRG, Big Watt, Decennial, Yondr, plus the Google and Amazon LLC names: **not run from the build.**
-- The fetch tool caches by URL path. Every FRS path already used still returned its first response more than 40 minutes later, and new path spellings was not retrievable from the build environment that went unanswered.
+- The page reader caches by URL path. Every FRS path already used still returned its first response more than 40 minutes later, and new path spellings was not retrievable from the build environment that went unanswered.
 - All of these names are in `FRS_NAME_QUERIES_ALL_PROGRAMS` in pipeline/tx_fetch.py for a laptop run.
 
 ## Blocked or not reached
@@ -220,8 +220,8 @@ No source publishes a statewide list of datacenter air permits the way Virginia 
 | `records.tceq.texas.gov` search | JavaScript only |
 | `frs-public.epa.gov/ords/frs_public2/frs_rest_services.*` | access to this host was not available from the build environment. The ArcGIS service was used instead. |
 | Other tabs of the FracTracker sheet | not rendered |
-| FRS operator and LLC-name queries (follow-up pass) | fetch-tool path cache, and new paths not retrievable from the build environment. The queries are in pipeline/tx_fetch.py. |
+| FRS operator and LLC-name queries (follow-up pass) | page-reader path cache, and new paths not retrievable from the build environment. The queries are in pipeline/tx_fetch.py. |
 | `data.austintexas.gov/api/views/tzyg-j7q4/columns.json`, `data.austintexas.gov/d/tzyg-j7q4` | not retrievable from the build environment |
 | `interchange.puc.texas.gov/Documents/59076_176_1686197.PDF` | not retrievable from the build environment |
 | `tceq.texas.gov/.../applications/411006-ac.pdf` (ROMAN Energy Center) | not retrievable from the build environment |
-| TCEQ emissions-inventory xlsx | binary, not readable through the fetch tool |
+| TCEQ emissions-inventory xlsx | binary, not readable through the page reader |

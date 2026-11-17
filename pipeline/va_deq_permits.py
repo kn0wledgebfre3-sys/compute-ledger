@@ -15,7 +15,7 @@ links, then ONE table headed "Issued Air Permits for Data Centers as of 11/17/20
 per permit, e.g. 21527 Title V 04/24/2024 and mNSR 09/19/2023). Dates are mm/dd/yyyy. Long site
 names wrap. No addresses, coordinates, generator data or CSV/XLSX export.
 
-PDF links: the fetch tool strips <a href>, so whether each row links its permit PDF could NOT be
+PDF links: the page reader strips <a href>, so whether each row links its permit PDF could NOT be
 verified tonight. Circumstantial evidence says yes: the Virginia Mercury (2024-11-13) article
 about this page links individual permits as deq.virginia.gov/home/showpublisheddocument/<id>/<ticks>
 and the ~180 permit PDFs were uploaded to that document store in Sept-Oct 2024, just before the

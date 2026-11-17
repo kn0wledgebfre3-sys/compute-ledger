@@ -2,7 +2,7 @@
 
 Scope: public record (USGS, UN/ITU/UNITAR, Basel Secretariat, Cochilco, SMA Chile, Eurostat, EPA, SEC filings, peer-reviewed journals) vs. company/government claims. Neutral tone; numbers always carry a URL. Checked 2026-10-19. Older sources (pre-2024) are flagged "[older]".
 
-Method note: ~45 search/fetch calls. The per-turn web-search budget was exhausted near the end, so a few planned lookups (Taiwan WRA primary drought bulletins, Argentine provincial lithium regulators, Korean Ministry of Environment withdrawal records, Amazon/Alphabet 10-K Note 1 text directly from EDGAR, GEM 2024 server-specific text) could not be completed and are listed under Gaps.
+Method note: about 45 searches and page reads. The searches set for the pass were used up near the end, so a few planned lookups (Taiwan WRA primary drought bulletins, Argentine provincial lithium regulators, Korean Ministry of Environment withdrawal records, Amazon/Alphabet 10-K Note 1 text directly from EDGAR, GEM 2024 server-specific text) could not be completed and are listed under Gaps.
 
 ---
 
@@ -40,7 +40,7 @@ Cochilco's June 2025 projection records a documented shift: seawater rose from 3
 - Two Cochilco vintages (June 2025 PDF; March 2026 update) disagree by 1–3 percentage points; the ledger should cite the primary PDF and flag the later update.
 
 ### Gaps
-- Chilean DGA (Dirección General de Aguas) water-rights records and SEA RCA documents for specific Atacama mines were not retrieved (search budget exhausted). Peru and DRC copper water records not covered.
+- Chilean DGA (Dirección General de Aguas) water-rights records and SEA RCA documents for specific Atacama mines were not retrieved (the searches set for the pass were used up). Peru and DRC copper water records not covered.
 
 ---
 
@@ -192,7 +192,7 @@ EPA's most recent national figures stop at 2018: 2.7 million short tons of selec
 - Destinations: see B2 (BAN 2016: Hong Kong 37/69; 2025: Batam 914 containers; Philippines ~234 containers).
 
 ### Gaps
-- No state-level (e.g., California CalRecycle, Washington E-Cycle) datasets fetched (search budget). Absence of federal law is well known but no primary citation was retrieved in this run.
+- No state-level (e.g., California CalRecycle, Washington E-Cycle) datasets fetched (the searches set for the pass were used up). Absence of federal law is well known but no primary citation was retrieved in this run.
 
 ---
 
