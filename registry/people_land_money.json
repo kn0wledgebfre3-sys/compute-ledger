@@ -385,6 +385,259 @@
   "verification_status": "partial"
  },
  {
+  "id": "us-mn-datacenter-exemption-evaluation",
+  "country": "United States",
+  "region": "Minnesota",
+  "site_or_subject": "Minnesota datacenter equipment sales tax exemption: legislative evaluation (2025) and cost projections",
+  "operator": "42 qualifying datacenters (16 new, 26 refurbished)",
+  "lat": 44.95,
+  "lon": -93.09,
+  "category": "public_money",
+  "record": "The evaluation of Minnesota's datacenter equipment sales tax exemption, written by the University of Georgia's Carl Vinson Institute of Government for the Tax Expenditure Review Commission (December 2025), finds that 42 data centers had qualified as of 2025. It puts forgone state revenue at $43.9 million in 2013, a peak of $101.6 million in 2015, and $68,674,000 in 2024 (these include the exemption for electricity, repealed in 2025). It estimates that the share of datacenter activity attributable to the exemption fell from 50% in 2013 to 24% in 2024, and that the state gets about $0.98 in value added for each $1 forgone, a return on investment of approximately -2.0%; spending the same money directly would have returned an estimated 140.0%. Its model projects 677 permanent full-time jobs at qualifying datacenters in 2024, 1,377 counting indirect and induced jobs, and 2,292 construction workers in the peak year, 2013. Commission members flagged the exemption for legislative review (3 for continuing it, 2 for repeal). The Department of Revenue's Tax Expenditure Budget (November 2026) projects its cost at $94,800,000 in FY2026, rising to $145,900,000 in FY2029.",
+  "record_sources": [
+   {
+    "title": "Data Center Equipment Tax Exemption evaluation (Minn. Stat. 297A.68, subd. 42)",
+    "url": "https://www.lbo.mn.gov/terc/meetings/2026/2026_01_15/UGA_Data_Center_Evaluation_Report.pdf",
+    "publisher": "Carl Vinson Institute of Government, University of Georgia, for the Minnesota Tax Expenditure Review Commission",
+    "date": "2025-12"
+   },
+   {
+    "title": "Data Center Equipment Exemption (Tax Expenditure 4.2.12): evaluation summary and member responses",
+    "url": "https://www.lbo.mn.gov/terc/meetings/2026/2026_06_17/(A)Data_Center_Equipment_Eval_Summary.pdf",
+    "publisher": "Minnesota Tax Expenditure Review Commission (Legislative Budget Office)",
+    "date": "2026-06-17"
+   },
+   {
+    "title": "State of Minnesota Tax Expenditure Budget, Fiscal Years 2026-2029 (revised), item 4.2.12",
+    "url": "https://www.revenue.state.mn.us/sites/default/files/2026-11/2026-tax-expenditure-budget-revised-11102026.pdf",
+    "publisher": "Minnesota Department of Revenue",
+    "date": "2026-11-11"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "The jobs are model projections, not counted employment. The evaluation prints the overall return as '-.02%' on p. 8 and '-2.0%' on pp. 34 and 42, and counts 42 qualifying data centers in its summary and 43 on p. 14; neither is reconciled. The Department of Revenue's projection is for all funds, without a state and local split.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
+  "id": "us-wa-datacenter-exemptions-jlarc",
+  "country": "United States",
+  "region": "Washington",
+  "site_or_subject": "Washington datacenter sales and use tax exemptions (rural counties and large urban counties): JLARC reviews and Department of Revenue figures",
+  "operator": "30 participants reporting in 2024 (rural and urban exemptions)",
+  "lat": 47.04,
+  "lon": -122.9,
+  "category": "public_money",
+  "record": "Washington exempts datacenter equipment from sales and use tax in rural counties and, since 2023, in counties of over 800,000 people. The Joint Legislative Audit and Review Committee's 2016 review (January 2017) estimated that beneficiaries would save $111.6 million in the 2017-19 biennium ($88.0 million state, $23.6 million local); 18 businesses held exemption certificates in February 2016, and annual reports showed between 70 and 127 family-wage jobs. JLARC could not determine how much investment the preference caused; by its calculation, the state breaks even if 72 percent of the investment is caused by the preference. Its 2026 preliminary review of the urban exemption finds that beneficiaries saved an estimated $42.4 million (2023-26), with four owner and six tenant certificates, and reported 53 family-wage jobs and nearly 300 temporary construction jobs; 'No new urban data centers were built using the preference', and JLARC recommends letting it expire. The Department of Revenue's 2024 Tax Exemption Study puts the rural exemption at $87.040 million state and $24.790 million local in FY2026 (22 taxpayers), and the urban one at $13.900 million state and $6.700 million local (10 taxpayers). Participants reported $119,857,669 in exemptions claimed for calendar 2024 (30 participants), and the state's Data Center Workgroup cites about $584 million in reported savings over 2012-2023.",
+  "record_sources": [
+   {
+    "title": "2016 Tax Preference Performance Reviews (Report 17-02): Data Center Equipment",
+    "url": "https://leg.wa.gov/jlarc/taxReports/2016/DataCenterEquipment/f/default.htm",
+    "publisher": "Joint Legislative Audit and Review Committee (JLARC), Washington State Legislature",
+    "date": "2017-01"
+   },
+   {
+    "title": "2026 tax preference review: Data Centers in Urban Counties (preliminary report)",
+    "url": "https://leg.wa.gov/studies-audits-and-reports/performance-audits/published-audits/2026trdata/",
+    "publisher": "Joint Legislative Audit and Review Committee (JLARC), Washington State Legislature",
+    "date": "2026-07"
+   },
+   {
+    "title": "2024 Tax Exemption Study, RCW 82.08.986 and 82.08.9861",
+    "url": "https://dor.wa.gov/sites/default/files/2024-01/2024_Exemption_Study.pdf",
+    "publisher": "Washington State Department of Revenue",
+    "date": "2024-01"
+   },
+   {
+    "title": "Descriptive Statistics 2025 Report (tax incentive annual reports), chapter 5",
+    "url": "https://dor.wa.gov/sites/default/files/2025-12/DescriptiveStatistics_2025.pdf",
+    "publisher": "Washington State Department of Revenue",
+    "date": "2025-12-26"
+   },
+   {
+    "title": "Data Center Workgroup: Adopted Findings, Finding T.14",
+    "url": "https://dor.wa.gov/sites/default/files/2025-10/DataCenterWorkgroup_AdoptedFindings10_2025.pdf",
+    "publisher": "Washington Data Center Workgroup (posted by the Department of Revenue)",
+    "date": "2025-10"
+   }
+  ],
+  "claim": "none collected yet. The Data Center Workgroup's findings also give job figures from an industry-funded study; they were not read.",
+  "claim_sources": [],
+  "gap": "The savings are estimates of what beneficiaries saved, which JLARC says do not represent a net change in total tax revenue, and the job counts are reported by beneficiaries; for 2023-24 the Department of Revenue 'has not verified any of the new employment positions'. The 79,873 employees the 2024 participants report are all their Washington employees, not jobs at datacenters.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
+  "id": "us-il-datacenter-investment-program",
+  "country": "United States",
+  "region": "Illinois",
+  "site_or_subject": "Illinois Data Center Investment program: Department of Commerce annual reports, 2024 and 2025",
+  "operator": "34 projects with memoranda of understanding (2025 report)",
+  "lat": 41.88,
+  "lon": -87.63,
+  "category": "public_money",
+  "record": "The Department of Commerce and Economic Opportunity's 2025 annual report on the Data Center Investment program lists 34 projects with memoranda of understanding through 31 December 2025, with $10,665,815,092 in investment commitments, 731 new jobs, and an 'Est. Value of Tax Benefits' of $666,613,443, which it calculates at 6.25% of the investment commitment. The 2024 report listed 27 data center owners or operators and an estimated value of $983,196,670, calculated on $15,731,146,724 of reported investment; it gives 534 new full-time jobs in its text and 591 in its table.",
+  "record_sources": [
+   {
+    "title": "Data Center Investment Program 2025 Annual Report",
+    "url": "https://dceo.illinois.gov/content/dam/soi/en/web/dceo/aboutdceo/reportsrequiredbystatute/2025-data-centers-annual-report.pdf",
+    "publisher": "Illinois Department of Commerce and Economic Opportunity",
+    "date": "2026"
+   },
+   {
+    "title": "Data Center Investment Program 2024 Annual Report",
+    "url": "https://dceo.illinois.gov/content/dam/soi/en/web/dceo/aboutdceo/reportsrequiredbystatute/2024-data-centers-annual-report-submission.pdf",
+    "publisher": "Illinois Department of Commerce and Economic Opportunity",
+    "date": "2025"
+   }
+  ],
+  "claim": "The 2024 report estimates 4,000 to 8,000 construction-related jobs statewide, from 'industry norms' of 150 to 300 construction jobs per project, and says the tax-benefit figure 'does not represent a reduction of existing state revenue'.",
+  "claim_sources": [
+   {
+    "title": "Data Center Investment Program 2024 Annual Report, p. 18",
+    "url": "https://dceo.illinois.gov/content/dam/soi/en/web/dceo/aboutdceo/reportsrequiredbystatute/2024-data-centers-annual-report-submission.pdf",
+    "publisher": "Illinois Department of Commerce and Economic Opportunity",
+    "date": "2025"
+   }
+  ],
+  "gap": "Neither report gives tax actually forgone: the benefit is a 6.25% formula, applied to commitments in 2025 and to reported investment in 2024, so the 2025 figure is lower than 2024's although the program grew. The 2024 jobs figures (534 and 591) are not reconciled. Each report's table names every project; the site-level figures are not in the ledger yet.",
+  "confidence": "high",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
+  "id": "us-oh-datacenter-exemption-tax-expenditure",
+  "country": "United States",
+  "region": "Ohio",
+  "site_or_subject": "Ohio datacenter sales tax exemption (R.C. 122.175): Department of Taxation tax expenditure report",
+  "operator": "Statewide (recipients not listed)",
+  "lat": 39.96,
+  "lon": -83.0,
+  "category": "public_money",
+  "record": "The Department of Taxation's Tax Expenditure Report for FY2026-2027 puts the General Revenue Fund revenue forgone through the exemption for equipment in eligible computer data centers at $130.4 million in FY2024, $135.8 million in FY2025, $141.8 million in FY2026 and $148.0 million in FY2027 (state General Revenue Fund only).",
+  "record_sources": [
+   {
+    "title": "Tax Expenditure Report, FY 2026-2027, item 1.53",
+    "url": "https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/research/publications/Tax_Expenditure_Report_2026-2027_-_Final.pdf",
+    "publisher": "Ohio Department of Taxation",
+    "date": "2025"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "The report counts the state General Revenue Fund only, not local taxes, and does not say how many datacenters receive the exemption. Press reports attribute much larger actual figures for 2024 and 2025 to the Department of Taxation; no published document giving them was found.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
+  "id": "us-tx-datacenter-exemption-comptroller",
+  "country": "United States",
+  "region": "Texas",
+  "site_or_subject": "Texas datacenter sales tax exemptions (Tax Code 151.359 and 151.3595): registered projects and the cost estimate",
+  "operator": "Registered qualifying data center projects (Comptroller's lists)",
+  "lat": 30.27,
+  "lon": -97.74,
+  "category": "public_money",
+  "record": "The Comptroller's lists of datacenter projects registered for the sales tax exemptions held 69 qualifying data center projects and 113 qualifying large data center projects when read on 17 November 2026 (rows counted by two readers; the page prints no total, and rows are registrations, not distinct campuses). The Legislative Budget Board's fiscal note on HB 2482 (27 March 2023) estimated the value of the exemptions for the data centers qualified at the time (24 under section 151.359 and 11 large ones under 151.3595) at $157.5 million in FY 2023, declining as the ten-year exemptions expire.",
+  "record_sources": [
+   {
+    "title": "Data Centers in Texas: Registered Qualifying Data Center Projects; Registered Qualifying Large Data Center Projects",
+    "url": "https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php",
+    "publisher": "Texas Comptroller of Public Accounts",
+    "date": "2026-11-17"
+   },
+   {
+    "title": "Fiscal Note, 88th Legislative Regular Session, HB 2482 (as introduced)",
+    "url": "https://capitol.texas.gov/tlodocs/88R/fiscalnotes/pdf/HB02482I.pdf",
+    "publisher": "Legislative Budget Board (Texas)",
+    "date": "2023-03-27"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "The cost estimate is from 2023, when 35 data centers qualified; the lists now hold 182 registrations. The Comptroller's report on tax exemptions (January 2025) could not be read, so no later cost figure is in the ledger.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
+  "id": "us-states-datacenter-exemption-cost-unpublished",
+  "country": "United States",
+  "region": "Arizona, Indiana, Oklahoma, North Carolina, South Carolina, Nebraska, Michigan, Nevada",
+  "site_or_subject": "Datacenter tax incentives in eight more states: what the official documents give, and what they do not",
+  "operator": "Statewide programs",
+  "lat": 39.83,
+  "lon": -98.58,
+  "category": "public_money",
+  "record": "Arizona: the Commerce Authority's FY2025 annual report shows its computer data center program approving 7 applicants before investment and 2 after, with jobs and incentive amounts shown as 'N/A', and cumulative minimum capital investment of $8,126,342,502 (actual amounts confidential). Indiana: the Legislative Services Agency's Tax Expenditure Review (October 2024) gives the cost of the data center equipment exemption as 'Indeterminable' in every year, FY2022 to FY2027. Oklahoma: a draft evaluation for the Incentive Evaluation Commission (30 September 2026) says 'the total foregone revenue associated with the exemption cannot be determined' without auditing each recipient, that zero to eight exemptions were issued a year from 2014 to 2025, and that the 'but for' case for the exemption is weak. North Carolina: a Department of Commerce memo (6 April 2026) counts 37 written determinations of eligibility from 2015 to 2025 and estimates $20 million a year in electricity exemptions for existing operators, assuming all qualify; it says changes to reporting 'would be needed to know the true value'. South Carolina: the Revenue and Fiscal Affairs Office (January 2026) says fewer than five data centers claim the exemption and the amount 'is not disclosed to protect taxpayer confidentiality'. Nebraska: the Department of Revenue's 2025 report gives no totals for its datacenter tiers. Michigan: the Strategic Fund reports 2,972 data center industry or related jobs from 2016 to 2025, counting the datacenters, co-located businesses and contractors together. Nevada: the Governor's Office of Economic Development lists 10 approved datacenter tax abatements from FY2016 to FY2024.",
+  "record_sources": [
+   {
+    "title": "FY25 Annual Report, Tables 1, 2 and 6",
+    "url": "https://azcommerce-prod.azurewebsites.net/media/esphcazj/aca-fy25-annual-report.pdf",
+    "publisher": "Arizona Commerce Authority",
+    "date": "2025"
+   },
+   {
+    "title": "Tax Expenditure Review, ST12 Data center equipment",
+    "url": "https://in.gov/sba/files/2024-Tax-Expenditure-Review-FINAL.pdf",
+    "publisher": "Indiana Legislative Services Agency, Office of Fiscal and Management Analysis",
+    "date": "2024-10"
+   },
+   {
+    "title": "Draft Evaluation: Computer Services and Data Processing Tax Exemption (68 O.S. 1357(21))",
+    "url": "https://oklahoma.gov/content/dam/ok/en/omes/documents/computer-services-exemption-draft.pdf",
+    "publisher": "PFM Group Consulting for the Oklahoma Incentive Evaluation Commission",
+    "date": "2026-09-30"
+   },
+   {
+    "title": "Memo: Sales and Use Tax Exemptions for Data Centers",
+    "url": "https://governor.nc.gov/media/5476/open",
+    "publisher": "North Carolina Department of Commerce",
+    "date": "2026-04-06"
+   },
+   {
+    "title": "Statement of Estimated Fiscal Impact, H. 4925 (introduced)",
+    "url": "https://www.scstatehouse.gov/sess126_2025-2026/fiscalimpactstatements/H4925%202026-01-14%20introduced.pdf",
+    "publisher": "South Carolina Revenue and Fiscal Affairs Office",
+    "date": "2026-01-27"
+   },
+   {
+    "title": "Nebraska Tax Incentives: 2025 Annual Report to the Nebraska Legislature",
+    "url": "https://www.nebraskalegislature.gov/FloorDocs/109/PDF/Agencies/Revenue__Department_of/160_20251031-150024.pdf",
+    "publisher": "Nebraska Department of Revenue",
+    "date": "2025-10-31"
+   },
+   {
+    "title": "Qualified Data Centers Jobs Creation Report",
+    "url": "https://www.michiganbusiness.org/globalassets/documents/reports/legislative-reports/qualified-data-centers-jobs-creation-report-12-12-25.pdf",
+    "publisher": "Michigan Strategic Fund",
+    "date": "2025-12-12"
+   },
+   {
+    "title": "Biennial Report to the Legislature: approved NRS 360.754 (data center) tax abatements, FY2016-FY2024",
+    "url": "https://goed.nv.gov/newsroom/abatement-biennial-report-fy22-fy24",
+    "publisher": "Nevada Governor's Office of Economic Development",
+    "date": "2025-01-15"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "In five of these states no annual cost of the datacenter exemption is published (Arizona, Indiana, Oklahoma, South Carolina, Nebraska), and North Carolina's is an estimate that assumes every datacenter qualifies; Michigan's job count does not say how many jobs are permanent, and Nevada's list was not read for its investment and jobs columns. Oklahoma's draft prints two different recommendations, 'Retain with modifications' and 'Reconfigure'.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "Read twice on 2026-11-17: a first reader found the documents and took the figures; a second reader, not shown them, read the same documents for the same items, and every figure here agrees between the two readings (review/us_state_incentives_check_2026-11-17/). Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "last_checked": "2026-11-17"
+ },
+ {
   "id": "us-tx-sao-jeti-audit",
   "country": "United States",
   "region": "Texas",

@@ -1,0 +1,9 @@
+# Check: state evaluations of datacenter tax incentives, read twice (17 November 2026)
+
+A first reader (`BRIEF_first_reading.md`) looked for official evaluations and statutory reports on state tax incentives for datacenters, beyond Virginia and Georgia, which the ledger already held, and wrote 80 figures from documents in 15 states (`readers/first_reading.csv`). 62 of them, from 24 documents, were chosen for the ledger. A second reader (`BRIEF_second_reading.md`) was given only those documents and what to look for in each (`readers/second_reading_tasks.csv`), not the first reader's figures, and read them again (`readers/second_reading.csv`).
+
+The two readings agree on every figure. Four items differ in what was quoted rather than in any figure: for Washington's 2016 review, Minnesota's evaluation and Oklahoma's draft, each reader quoted a different part of the evaluator's assessment, and for Washington's urban review the second reader also quoted 'fewer than 10 businesses'. Where both parts are in the document, both are used; where the readings differ on a recommendation (Washington, 2016), none is stated. `check_result.csv` gives both readings for each figure and where it was used.
+
+Both readers read the documents through a text-extraction step, because the publishers' servers could not be reached directly; page numbers may be off by one, and figures were not checked against a page image. The files are as written except that wording about the search and extraction tools was replaced.
+
+Entries: `us-mn-datacenter-exemption-evaluation`, `us-wa-datacenter-exemptions-jlarc`, `us-il-datacenter-investment-program`, `us-oh-datacenter-exemption-tax-expenditure`, `us-tx-datacenter-exemption-comptroller`, `us-states-datacenter-exemption-cost-unpublished` (`registry/people_land_money.json`; figures in `sites/measurements_from_registry/rows_people_land_money.csv`).

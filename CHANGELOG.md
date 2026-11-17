@@ -2,6 +2,11 @@
 
 What changed in the data between releases. Figures are identified by `measurement_id`, a hash of their content, so a corrected figure gets a new id; every retired id and the id that replaced it are in `data/climate_trace_seed/measurement_id_aliases.csv`. Every check run on the ledger, and what it found, is in `data/climate_trace_seed/checks.csv` and `findings.csv`.
 
+## Unreleased
+
+- **What states give up for datacenters.** Six entries from official evaluations and statutory reports on state tax incentives for datacenters, beside the Virginia and Georgia evaluations already held: Minnesota (an evaluation for the legislature: forgone state revenue of $68.7 million in 2024, about $0.98 in value added per $1 forgone, a share of activity attributable to the exemption that fell from 50% to 24%), Washington (two JLARC reviews and Department of Revenue figures; the urban exemption built no new datacenters and JLARC recommends letting it expire), Illinois (the Department of Commerce's annual reports, whose 'value of tax benefits' is a formula, not tax forgone), Ohio, Texas, and eight states whose documents give little or no annual cost (Arizona, Indiana, Oklahoma, North Carolina, South Carolina, Nebraska, Michigan, Nevada). 60 figures, each read by two readers who agree (`review/us_state_incentives_check_2026-11-17/`).
+- **EPA inventory facilities.** A second search identified 21 of the 23 facilities outside Virginia not yet identified; two remain (`review/us_nei_identity_round2_2026-11-17/`).
+
 ## 1.0.0 (2026-11-16)
 
 First citable release. 203 entries in 44 countries and territories plus EU-wide and global entries; 3,899 figures (663 of them claims); 917 sites, 367 of them placed from a document; 207 documented links in the chain; 727 distinct linked documents; 23 checks and 1,560 findings.

@@ -272,7 +272,9 @@ def main():
                         ("usability-review-2026-11-02", "usability_review_2026-11-02/check_result.csv"),
                         ("ireland-2023-check-2026-11-02", "ireland_2023_check_2026-11-02/check_result.csv"),
                         ("us-nei-identity-check-2026-11-02", "us_nei_identity_check_2026-11-02/check_result.csv"),
-                        ("ireland-licences-check-2026-11-02", "ireland_licences_check_2026-11-02/check_result.csv")):
+                        ("ireland-licences-check-2026-11-02", "ireland_licences_check_2026-11-02/check_result.csv"),
+                        ("us-nei-identity-round2-2026-11-17", "us_nei_identity_round2_2026-11-17/check_result.csv"),
+                        ("us-state-incentives-check-2026-11-17", "us_state_incentives_check_2026-11-17/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""
