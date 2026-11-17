@@ -1,6 +1,6 @@
 {
- "checks": 29,
- "findings_in_table": 2756,
+ "checks": 30,
+ "findings_in_table": 2941,
  "random_sample_figures": {
   "n": 166,
   "verdicts": {
@@ -31,11 +31,12 @@
   "as recorded with the finding: confirmed; not entered as a figure": 310,
   "as recorded with the finding: applied": 269,
   "quoted text no longer present": 232,
+  "as recorded with the finding: not placed": 205,
   "now on the claim side": 180,
   "as recorded with the finding: confirmed": 168,
   "resolved against the permit text": 158,
   "now on the record side": 155,
-  "as recorded with the finding: not used": 139,
+  "as recorded with the finding: not used": 141,
   "confirmed at the check": 118,
   "as recorded with the finding: not sent for a second reading (not used as a figure)": 104,
   "no longer in the table in the form checked": 81,
@@ -49,7 +50,6 @@
   "quoted text still present": 27,
   "entry status now verified": 24,
   "as recorded with the finding: applied in uk-public-money-ai-compute": 24,
-  "as recorded with the finding: not placed": 22,
   "outside the repository (email drafts or the live page)": 18,
   "as recorded with the finding: applied in us-wa-datacenter-exemptions-jlarc": 16,
   "as recorded with the finding: applied in us-states-datacenter-exemption-cost-unpublished": 16,

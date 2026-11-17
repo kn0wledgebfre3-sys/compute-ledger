@@ -46,6 +46,9 @@ Open from this round:
 | Group links not found for 14 companies (among them Vantage, STACK, NTT and Aligned project companies in Virginia, EdgeConneX and K2 in Ireland, and MSFT MCIO Limited, whose register entry states that it has no registrable person or legal entity; its filed accounts would name the ultimate parent) | national company registers, read in a browser where they refuse scripts | 2 |
 | The 32 sampled graph links not yet read (Virginia permits, EPA's inventory queries, benchmarking data services) | the same documents, read in a browser | 1 |
 | Countries of registration for the 17 organisations added through group links | the register entries already cited | 0.5 |
+| Run `pipeline/geocode_addresses.py` on a computer with internet access, for the 275 US addresses in `sites/locations/address_queue.csv` (the workspace that builds the ledger cannot reach the geocoder) | US Census geocoder | 0.1 |
+| A second pass on the 185 unplaced sites with fresh searches (`review/site_locations_2026-11-17/`): the 19 Texas sites with no document (TCEQ Central Registry, EPA's Facility Registry), the nuclear plants (NRC environmental reports give coordinates), the Virginia sites known from EPA's inventory (its facility records carry coordinates), Irish licence applications (grid references), and second readings of the one-reading leads | the same regulators' records | 2 |
+| A record-based count of US and UK datacentres: EPA's Facility Registry Service lists facilities filed under the datacentre industry code with coordinates; the Environment Agency's public register lists permitted installations; directory totals can sit beside them as stated estimates | EPA FRS; Environment Agency public register | 2 |
 
 ## 2. Open items stated in the package (kept for the record; each now sits in section 4 or 5)
 

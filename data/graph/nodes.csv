@@ -14,6 +14,7 @@ check:measurements-2026-10-24,check,Chip-chain figures and links: random sample,
 check:measurements-2026-10-24b,check,"Water and fuel links, generator hours",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-measurements-2026-10-24b,,,check,2026-10-24
 check:organisation-identity-2026-11-17,check,"Organisation identifiers and group links, read twice",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-organisation-identity-2026-11-17,,,check,2026-11-17
 check:sides-2026-10-23,check,Company statements on the record side,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-sides-2026-10-23,,,check,2026-10-23
+check:site-locations-2026-11-17,check,"Where the unplaced sites are, read twice",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-site-locations-2026-11-17,,,check,2026-11-17
 check:system-check-A-2026-10-24,check,System check A: every number in the outward text,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-system-check-A-2026-10-24,,,check,2026-10-24
 check:system-check-B-2026-10-24,check,System check B: fresh random sample,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-system-check-B-2026-10-24,,,check,2026-10-24
 check:system-check-C-2026-10-24,check,System check C: every registry entry,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-system-check-C-2026-10-24,,,check,2026-10-24

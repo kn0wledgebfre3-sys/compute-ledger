@@ -912,6 +912,45 @@ def summarise(rows: list[dict], sites: list[dict]) -> dict:
     }
 
 
+LOCATIONS = ROOT / "sites" / "locations"
+
+
+def place_sites(sites: dict, problems: list):
+    """Coordinates for sites that their own list leaves blank, from sites/locations/placed.csv (read from documents)
+    and sites/locations/geocodes.csv (an address geocoded under the ledger's rule, accepted rows only); and the addresses
+    in sites/locations/addresses.csv, added to the site's notes."""
+    rows = []
+    if (LOCATIONS / "placed.csv").exists():
+        rows += [(r, "placed.csv") for r in read_csv(LOCATIONS / "placed.csv")]
+    if (LOCATIONS / "geocodes.csv").exists():
+        rows += [(r, "geocodes.csv") for r in read_csv(LOCATIONS / "geocodes.csv") if r.get("accepted") == "yes"]
+    if (LOCATIONS / "addresses.csv").exists():  # addresses read twice from a site's documents, not (yet) converted to coordinates
+        for r in read_csv(LOCATIONS / "addresses.csv"):
+            s = sites.get(r["site_id"])
+            if s is None:
+                problems.append(f"addresses.csv: site {r['site_id']} is not in the site register")
+            elif r["note"].strip() not in (s["notes"] or ""):
+                s["notes"] = ((s["notes"] or "").rstrip() + " " + r["note"].strip()).strip()
+    for r, f in rows:
+        s = sites.get(r["site_id"])
+        if s is None:
+            problems.append(f"{f}: site {r['site_id']} is not in the site register")
+            continue
+        try:
+            lat, lon = float(r["lat"]), float(r["lon"])
+        except ValueError:
+            problems.append(f"{f}: site {r['site_id']}: no coordinates")
+            continue
+        if not (-90 <= lat <= 90 and -180 <= lon <= 180):
+            problems.append(f"{f}: site {r['site_id']}: coordinates out of range")
+            continue
+        if (s["lat"] or "").strip():
+            problems.append(f"{f}: site {r['site_id']} already has coordinates from its own list")
+            continue
+        s["lat"], s["lon"] = f"{lat:.6f}", f"{lon:.6f}"
+        s["notes"] = ((s["notes"] or "").rstrip() + " " + r["note"].strip()).strip()
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", type=Path, default=PKG)
@@ -939,6 +978,7 @@ def main():
     feed_tx(T)
     feed_site_lists(T)
     feed_us_nei(T, sites)
+    place_sites(sites, T.problems)
     for s in sites.values():
         if not re.fullmatch(r"[A-Z]{3}", s["country"] or ""):
             T.problems.append(f"site {s['site_id']}: country '{s['country']}' is not an ISO 3166 alpha-3 code")
