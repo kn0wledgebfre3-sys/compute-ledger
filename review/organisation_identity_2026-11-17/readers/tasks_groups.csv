@@ -1,0 +1,47 @@
+task_id,entity_as_named,ledger_id,related_organisation,related_ledger_id,relation_to_check
+G01,"Amazon Data Services, Inc.",org-amazon-data-services-inc,"Amazon.com, Inc.",co-amazon,owned by / subsidiary of
+G02,"VADATA, Inc.",org-vadata-inc,"Amazon.com, Inc. or Amazon Data Services, Inc.",co-amazon,"owned by, or renamed as Amazon Data Services, Inc."
+G03,Amazon Data Services Ireland Ltd,org-amazon-data-services-ireland-ltd,"Amazon.com, Inc.",co-amazon,owned by / ultimate parent
+G04,Microsoft Ireland Operations Ltd,org-microsoft-ireland-operations-ltd,Microsoft Corporation,co-microsoft,owned by / ultimate parent
+G05,Google Ireland Ltd,org-google-ireland-ltd,Alphabet Inc. or Google LLC,co-alphabet,owned by / ultimate parent
+G06,Equinix (Ireland) Ltd,org-equinix-ireland-ltd,"Equinix, Inc.",co-equinix,owned by / ultimate parent
+G07,Equinix (DB1) Ltd,org-equinix-db1-ltd,"Equinix, Inc.",co-equinix,owned by / ultimate parent
+G08,Equinix Hyperscale 1 (DB5) Ltd,org-equinix-hyperscale-1-db5-ltd,"Equinix, Inc. (or its xScale joint venture)",co-equinix,owned by / ultimate parent
+G09,Runways Information Services Ltd,org-runways-information-services-ltd,"Meta Platforms, Inc.",co-meta,owned by / ultimate parent
+G10,Vantage Data Centers DUB11 Ltd,org-vantage-data-centers-dub11-ltd,Vantage Data Centers,org-vantage-data-centers,owned by / ultimate parent
+G11,"Vantage Data Centers VA2, LLC (also VA3, VA16, VA41)",org-vantage-data-centers-va2-llc,Vantage Data Centers,org-vantage-data-centers,project company of / owned by
+G12,"QTS Investment Properties Ashburn, LLC (and the other QTS ... LLC companies holding Virginia, Chicago and Hillsboro permits)",org-qts-investment-properties-ashburn-llc,QTS (Quality Technology Services),org-qts,project company of / owned by
+G13,"Quality Investment Properties Metro, LLC (Georgia) and Quality Investment Properties Richmond, LLC",org-quality-investment-properties-metro-llc,QTS (Quality Technology Services),org-qts,project company of / owned by
+G14,QTS (Quality Technology Services),org-qts,Blackstone,,owned by (acquisition)
+G15,"SI NVA02D, LLC (also SI NVA05A, SI NVA06A, SI POR03)",org-si-nva02d-llc,STACK Infrastructure,org-stack-infrastructure,project company of / owned by
+G16,"CoreSite Real Estate 12100 Sunrise Valley Dr, LLC (and CoreSite Real Estate Sunrise Technology Park, LLC)",org-coresite-real-estate-12100-sunrise-valley-dr-llc,CoreSite Realty / American Tower,,subsidiary of
+G17,"DuPont Fabros Technology, Inc.",org-dupont-fabros-technology-inc,Digital Realty Trust,co-digital-realty,acquired by / merged into
+G18,"Digital Reston, LLC (also Digital Loudoun Pkwy Center N LLC, Digital Western Lands, LLC)",org-digital-reston-llc,Digital Realty Trust,co-digital-realty,subsidiary of
+G19,Digital Netherlands VIII B.V.,org-digital-netherlands-viii-b-v,Digital Realty Trust,co-digital-realty,subsidiary of
+G20,"NTT Global Data Centers VA10, LLC",org-ntt-global-data-centers-va10-llc,NTT Global Data Centers,org-ntt-global-data-centers,subsidiary of
+G21,"RagingWire Data Centers, Inc.",org-ragingwire-data-centers-inc,NTT (NTT Global Data Centers),org-ntt-global-data-centers,owned by / renamed
+G22,"Aligned Data Centers (Relo) Propco, LLC",org-aligned-data-centers-relo-propco-llc,Aligned Data Centers,org-aligned-data-centers,subsidiary of
+G23,EdgeConneX Ireland Ltd,org-edgeconnex-ireland-ltd,EdgeConneX,,owned by / ultimate parent
+G24,K2 Strategic Infrastructure Ireland Ltd,org-k2-strategic-infrastructure-ireland-ltd,K2 Strategic,,owned by
+G25,KDCR (Ireland) Ltd (and KDCR (Ireland) 2 Ltd),org-kdcr-ireland-ltd,Keppel DC REIT,,owned by
+G26,Echelon Clondalkin DC Services Ltd,org-echelon-clondalkin-dc-services-ltd,Echelon Data Centres,,owned by
+G27,"Cyxtera Communications, LLC",org-cyxtera-communications-llc,Cyxtera Technologies / its successor,,subsidiary of / successor
+G28,IE US Development Holdings 3 (and 7),org-ie-us-development-holdings-3,IREN Ltd,org-iren,subsidiary of
+G29,EDC Austin LLC,org-edc-austin-llc,Edged (Edged Energy),org-edged,project company of
+G30,Laidley LLC,org-laidley-llc,"Meta Platforms, Inc.",co-meta,acts for / subsidiary of
+G31,Wurldwide LLC,org-wurldwide-llc,"Meta Platforms, Inc.",co-meta,acts for / subsidiary of
+G32,"Vitesse, LLC",org-vitesse-llc,"Meta Platforms, Inc. (Facebook)",co-meta,acts for / subsidiary of
+G33,"Design, LLC",org-design-llc,Google LLC,co-alphabet,acts for / affiliate of
+G34,"Silver Slate, LLC (Nevada air permit AP7374-4671, Storey County)",,Google LLC,co-alphabet,acts for / affiliate of
+G35,"Jasmine Development LLC (Nevada permit NV0024262, Henderson)",,Google LLC,co-alphabet,acts for / affiliate of
+G36,"Fireball Group, LLC (Nebraska, Papillion)",,Google LLC,co-alphabet,acts for / affiliate of
+G37,"Montauk Innovations LLC (New Albany, Ohio)",,Google LLC,co-alphabet,acts for / affiliate of
+G38,"Maguro Enterprises (Berkeley County, South Carolina)",,Google LLC,co-alphabet,acts for / affiliate of
+G39,TSMC Arizona Corporation,org-tsmc-arizona,Taiwan Semiconductor Manufacturing Company Limited,co-tsmc,subsidiary of
+G40,TSMC (Nanjing) Company Limited,org-tsmc-nanjing,Taiwan Semiconductor Manufacturing Company Limited,co-tsmc,subsidiary of
+G41,Japan Advanced Semiconductor Manufacturing (JASM),org-jasm,Taiwan Semiconductor Manufacturing Company Limited,co-tsmc,majority-owned subsidiary of
+G42,European Semiconductor Manufacturing Company (ESMC),org-esmc,Taiwan Semiconductor Manufacturing Company Limited,co-tsmc,majority-owned subsidiary of
+G43,"Constellation Energy Generation, LLC",org-constellation-energy-generation-llc,Constellation Energy Corporation,,subsidiary of
+G44,"NextEra Energy Duane Arnold, LLC",org-nextera-energy-duane-arnold-llc,"NextEra Energy, Inc.",,subsidiary of
+G45,"Iron Mountain Information Management, LLC",org-iron-mountain-information-management-llc,Iron Mountain Incorporated,,subsidiary of
+G46,"Meta Platforms Inc (formerly Siculus, Inc.) at Altoona, Iowa",co-meta,"Siculus, Inc.",,renamed / formerly named

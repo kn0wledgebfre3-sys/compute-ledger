@@ -1,0 +1,79 @@
+entity_id,scheme,identifier,legal_name_on_page,source_url,read_on,second_read,note
+co-amazon,lei,ZXTILKJKG63JELOEG630,"AMAZON.COM, INC.",https://lei.bloomberg.com/leis/view/ZXTILKJKG63JELOEG630,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-amazon,sec_cik,0001018724,"AMAZON.COM, INC.",https://www.sec.gov/Archives/edgar/data/1018724/000101872422000015/R1.htm,2026-11-17,yes,
+co-amd,lei,R2I72C950HOYXII45366,"ADVANCED MICRO DEVICES, INC.",https://lei.bloomberg.com/leis/view/R2I72C950HOYXII45366,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-amd,sec_cik,0000002488,ADVANCED MICRO DEVICES INC,https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/0000002488-26-000191-index.htm,2026-11-17,yes,
+co-amkor,lei,529900VHLRTKPWZJBM84,"AMKOR TECHNOLOGY, INC.",https://lei.bloomberg.com/leis/view/529900VHLRTKPWZJBM84,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-amkor,sec_cik,0001047127,"AMKOR TECHNOLOGY, INC.",https://www.sec.gov/Archives/edgar/data/1047127/000104712725000187/0001047127-25-000187-index.htm,2026-11-17,yes,
+co-ase,sec_cik,0001122411,"ASE Technology Holding Co., Ltd.",https://www.sec.gov/Archives/edgar/data/1122411/000095010320006422/0000950103-20-006422-index-headers.html,2026-11-17,yes,
+co-broadcom,lei,549300WV6GIDOZJTV909,BROADCOM INC.,https://lei.bloomberg.com/leis/view/549300WV6GIDOZJTV909,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-broadcom,sec_cik,0001730168,Broadcom Inc.,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000068/0001730168-26-000068-index.htm,2026-11-17,yes,
+co-cisco,lei,549300LKFJ962MZ46593,"CISCO SYSTEMS, INC.",https://lei.bloomberg.com/leis/view/549300LKFJ962MZ46593,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-cisco,sec_cik,0000858877,"CISCO SYSTEMS, INC.",https://www.sec.gov/Archives/edgar/data/858877/000085887726000075/R1.htm,2026-11-17,yes,
+co-dell,lei,549300TJB5YBRUPOG437,Dell Technologies Inc.,https://lei.bloomberg.com/leis/view/549300TJB5YBRUPOG437,2026-11-17,yes,LAPSED (entity ACTIVE)
+co-dell,sec_cik,0001571996,Dell Technologies Inc.,https://www.sec.gov/Archives/edgar/data/1571996/000157199625000076/0001571996-25-000076-index.htm,2026-11-17,yes,
+co-digital-realty,lei,549300HKCZ31D08NEI41,"DIGITAL REALTY TRUST, INC.",https://lei.bloomberg.com/leis/view/549300HKCZ31D08NEI41,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-digital-realty,sec_cik,0001297996,"DIGITAL REALTY TRUST, INC.",https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/0001104659-26-015365-index.html,2026-11-17,yes,
+co-equinix,lei,549300EVUN2BTLJ3GT74,"EQUINIX, INC.",https://lei.bloomberg.com/leis/view/549300EVUN2BTLJ3GT74,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-equinix,sec_cik,0001101239,EQUINIX INC,https://www.sec.gov/Archives/edgar/data/1101239/000162828023005277/0001628280-23-005277-index.htm,2026-11-17,yes,
+co-fabrinet,lei,5493004TETZ6IYF7CV44,FABRINET,https://lei.info/5493004TETZ6IYF7CV44,2026-11-17,yes,Issued (entity Active)
+co-fabrinet,sec_cik,0001408710,Fabrinet,https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/0001408710-26-000016-index.htm,2026-11-17,yes,
+co-globalfoundries,lei,549300BA76VK784VMX48,GLOBALFOUNDRIES INC.,https://lei.bloomberg.com/leis/view/549300BA76VK784VMX48,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-globalfoundries,sec_cik,0001709048,GLOBALFOUNDRIES Inc.,https://www.sec.gov/Archives/edgar/data/1709048/000170904826000094/0001709048-26-000094-index.htm,2026-11-17,yes,
+co-hon-hai,lei,30030004CM3GSZXX7O56,鸿海精密工业股份有限公司,https://lei.bloomberg.com/leis/view/30030004CM3GSZXX7O56,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-hpe,lei,549300BX44RGX6ANDV88,HEWLETT PACKARD ENTERPRISE COMPANY,https://lei.bloomberg.com/leis/view/549300BX44RGX6ANDV88,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-hpe,sec_cik,0001645590,Hewlett Packard Enterprise Co,https://www.sec.gov/Archives/edgar/data/1645590/000164559026000036/0001645590-26-000036-index.htm,2026-11-17,yes,
+co-intel,lei,KNX4USFCNGPY45LOCE31,INTEL CORPORATION,https://lei.bloomberg.com/leis/view/KNX4USFCNGPY45LOCE31,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-intel,sec_cik,0000050863,INTEL CORP,https://www.sec.gov/Archives/edgar/data/50863/000005086326000127/0000050863-26-000127-index.htm,2026-11-17,yes,
+co-meta,lei,BQ4BKCS1HXDV9HN80Z93,"META PLATFORMS, INC.",https://lei.bloomberg.com/leis/view/BQ4BKCS1HXDV9HN80Z93,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-meta,sec_cik,0001326801,"Meta Platforms, Inc.",https://www.sec.gov/Archives/edgar/data/1326801/000132680122000054/R1.htm,2026-11-17,yes,
+co-micron,lei,B3DXGBC8GAIYWI2Z0172,"MICRON TECHNOLOGY, INC.",https://lei.bloomberg.com/leis/view/B3DXGBC8GAIYWI2Z0172,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-micron,sec_cik,0000723125,MICRON TECHNOLOGY INC,https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/0000723125-26-000018-index.htm,2026-11-17,yes,
+co-microsoft,lei,INR2EJN1ERAN0W5ZP974,MICROSOFT CORPORATION,https://lei.bloomberg.com/leis/view/INR2EJN1ERAN0W5ZP974,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-microsoft,sec_cik,0000789019,MICROSOFT CORPORATION,https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/R1.htm,2026-11-17,yes,
+co-nvidia,lei,549300S4KLFTLO7GSQ80,NVIDIA CORPORATION,https://lei.bloomberg.com/leis/view/549300S4KLFTLO7GSQ80,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-oracle,lei,1Z4GXXU7ZHVWFCD8TV52,ORACLE CORPORATION,https://lei.bloomberg.com/leis/view/1Z4GXXU7ZHVWFCD8TV52,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-oracle,sec_cik,0001341439,ORACLE CORP,https://www.sec.gov/Archives/edgar/data/1341439/000119312510151896/0001193125-10-151896-index.htm,2026-11-17,yes,
+co-samsung-electronics,lei,9884007ER46L6N7EI764,삼성전자(주),https://lei.bloomberg.com/leis/view/9884007ER46L6N7EI764,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-samsung-electronics,sec_cik,0000879316,SAMSUNG ELECTRONICS CO LTD /FI,https://www.sec.gov/Archives/edgar/data/879316/999999999704042926/9999999997-04-042926-index.htm,2026-11-17,yes,
+co-sk-hynix,lei,988400XAIK6XISWQV045,에스케이하이닉스 주식회사,https://lei.bloomberg.com/leis/view/988400XAIK6XISWQV045,2026-11-17,yes,LAPSED (entity ACTIVE)
+co-sk-hynix,sec_cik,0002120882,SK hynix Inc.,https://www.sec.gov/Archives/edgar/data/2120882/000119312526444399/0001193125-26-444399-index.htm,2026-11-17,yes,
+co-supermicro,sec_cik,0001375365,"Super Micro Computer, Inc.",https://www.sec.gov/Archives/edgar/data/1375365/0001104659-24-022042-index.html,2026-11-17,yes,
+co-tsmc,lei,549300KB6NK5SBD14S87,台灣積體電路製造股份有限公司,https://opencorpdata.com/lei/549300KB6NK5SBD14S87,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-tsmc,sec_cik,0001046179,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/0001628280-26-025362-index.htm,2026-11-17,yes,
+co-umc,lei,391200YJCAGH9LF96P73,聯華電子股份有限公司,https://www.lei-lookup.com/record/391200YJCAGH9LF96P73/,2026-11-17,yes,ISSUED (entity ACTIVE)
+co-umc,sec_cik,0001033767,UNITED MICROELECTRONICS CORP,https://www.sec.gov/Archives/edgar/data/1033767/000156459021021578/0001564590-21-021578-index.htm,2026-11-17,yes,
+co-wistron,lei,254900DIEONKUALBFM06,緯創資通股份有限公司,https://www.lei-lookup.com/record/254900DIEONKUALBFM06/,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-apple-inc,lei,HWUPKR0MPOU8FGXBT394,Apple Inc.,https://lei.bloomberg.com/leis/view/HWUPKR0MPOU8FGXBT394,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-apple-inc,sec_cik,0000320193,Apple Inc.,https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm,2026-11-17,yes,
+org-applied-digital,lei,2549004NE2B6RYXINZ02,APPLIED DIGITAL CORPORATION,https://lei.bloomberg.com/leis/view/2549004NE2B6RYXINZ02,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-applied-digital,sec_cik,0001144879,Applied Digital Corp.,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000079/0001144879-25-000079-index.htm,2026-11-17,yes,
+org-bitdeer-technologies-group,lei,2549007M2KGWVJ9XFP20,Bitdeer Technologies Group,https://lei.bloomberg.com/leis/view/2549007M2KGWVJ9XFP20,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-bitdeer-technologies-group,sec_cik,0001899123,Bitdeer Technologies Group,https://www.sec.gov/Archives/edgar/data/1899123/000121390026049770/0001213900-26-049770-index.htm,2026-11-17,yes,
+org-bitfarms,lei,254900YWMA64Y1RPNJ12,Bitfarms Ltd.,https://www.lei-lookup.com/record/254900YWMA64Y1RPNJ12/,2026-11-17,yes,RETIRED (entity INACTIVE)
+org-bitfarms,sec_cik,0001812477,Bitfarms Ltd,https://www.sec.gov/Archives/edgar/data/1812477/000121390025098365/0001213900-25-098365-index.htm,2026-11-17,yes,
+org-cipher-digital,sec_cik,0001819989,Cipher Mining Inc.,https://www.sec.gov/Archives/edgar/data/1819989/000119312525218502/0001193125-25-218502-index.htm,2026-11-17,yes,
+org-cleanspark,sec_cik,0000827876,"CLEANSPARK, INC.",https://www.sec.gov/Archives/edgar/data/827876/000095017025021683/0000950170-25-021683-index.htm,2026-11-17,yes,
+org-core-scientific,lei,5299003RGB2LAZ65RK73,"Core Scientific, Inc..",https://lei.bloomberg.com/leis/view/5299003RGB2LAZ65RK73,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-core-scientific,sec_cik,0001839341,"Core Scientific, Inc./tx",https://www.sec.gov/Archives/edgar/data/1839341/000090514826002547/0000905148-26-002547-index.htm,2026-11-17,yes,
+org-coreweave,lei,984500511DP2B6186053,"COREWEAVE, INC.",https://lei.bloomberg.com/leis/view/984500511DP2B6186053,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-coreweave,sec_cik,0001769628,"CoreWeave, Inc.",https://www.sec.gov/Archives/edgar/data/1769628/000176962826000372/0001769628-26-000372-index.htm,2026-11-17,yes,
+org-cyrusone,lei,5493006S177ZK2ZNBU43,CyrusOne Holdco LLC,https://lei.bloomberg.com/leis/view/5493006S177ZK2ZNBU43,2026-11-17,yes,LAPSED (entity ACTIVE)
+org-cyrusone,sec_cik,0001553023,CyrusOne Inc.,https://www.sec.gov/Archives/edgar/data/1553023/000110465922007461/0001104659-22-007461-index.htm,2026-11-17,yes,
+org-fortum,lei,635400IUIZZIUJSAMF76,Fortum Oyj,https://lei.bloomberg.com/leis/view/635400IUIZZIUJSAMF76,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-hut-8,sec_cik,0001964789,Hut 8 Corp.,https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/0001104659-26-055894-index.htm,2026-11-17,yes,
+org-iren,lei,254900FZF02RB3NNGB71,IREN LIMITED,https://lei.bloomberg.com/leis/view/254900FZF02RB3NNGB71,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-mara-holdings,sec_cik,0001507605,"MARA Holdings, Inc.",https://www.sec.gov/Archives/edgar/data/1507605/000149315226024692/0001493152-26-024692-index.htm,2026-11-17,yes,
+org-oklo,sec_cik,0001849056,Oklo Inc.,https://www.sec.gov/Archives/edgar/data/1849056/000184905626000028/0001849056-26-000028-index.htm,2026-11-17,yes,
+org-riot-platforms,lei,5299005LKZAJQDQZDF73,"Riot Platforms, Inc.",https://lei.info/5299005LKZAJQDQZDF73,2026-11-17,yes,Lapsed (entity Active)
+org-riot-platforms,sec_cik,0001167419,"Riot Platforms, Inc.",https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/0001104659-26-093448-index.htm,2026-11-17,yes,
+org-stack-infrastructure,lei,2549001YU2NNI3440B51,"STACK INFRASTRUCTURE PARENT, LLC",https://lei.bloomberg.com/leis/view/2549001YU2NNI3440B51,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-talen-energy,sec_cik,0001622536,Talen Energy Corporation,https://www.sec.gov/Archives/edgar/data/1622536/000162828024047751/R1.htm,2026-11-17,yes,
+org-terawulf,lei,254900CVMW1SX2T78A64,TERAWULF INC.,https://lei.bloomberg.com/leis/view/254900CVMW1SX2T78A64,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-terawulf,sec_cik,0001083301,TERAWULF INC.,https://www.sec.gov/Archives/edgar/data/1083301/000108330126000044/0001083301-26-000044-index.htm,2026-11-17,yes,
+org-vistra,lei,549300KP43CPCUJOOG15,VISTRA CORP.,https://opencorpdata.com/lei/549300KP43CPCUJOOG15,2026-11-17,yes,ISSUED (entity ACTIVE)
+org-vistra,sec_cik,0001692819,Vistra Corp.,https://www.sec.gov/Archives/edgar/data/1692819/000169281926000023/0001692819-26-000023-index.htm,2026-11-17,yes,
+org-xai,sec_cik,0002002695,X.AI CORP.,https://www.sec.gov/Archives/edgar/data/2002695/0002002695-24-000003-index.htm,2026-11-17,yes,
+us-federal-tva,lei,549300HE1ISW43LNKM54,Tennessee Valley Authority,https://www.lei-lookup.com/record/549300HE1ISW43LNKM54/,2026-11-17,yes,ISSUED (entity ACTIVE)
+us-federal-tva,sec_cik,0001376986,Tennessee Valley Authority,https://www.sec.gov/Archives/edgar/data/1376986/000137698625000056/0001376986-25-000056-index.htm,2026-11-17,yes,
+us-utility-dominion-va,sec_cik,0000103682,VIRGINIA ELECTRIC & POWER CO,https://www.sec.gov/Archives/edgar/data/715957/000119312526440697/0001193125-26-440697-index.htm,2026-11-17,yes,

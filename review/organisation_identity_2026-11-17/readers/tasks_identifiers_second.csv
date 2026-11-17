@@ -1,0 +1,100 @@
+task_id,organisation,scheme,url
+J001,"Amazon.com, Inc.",wikidata,https://www.wikidata.org/wiki/Q3884
+J002,"Amazon.com, Inc.",lei,https://lei.bloomberg.com/leis/view/ZXTILKJKG63JELOEG630
+J003,"Amazon.com, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1018724/000101872422000015/R1.htm
+J004,Microsoft Corporation,wikidata,https://www.wikidata.org/wiki/Q2283
+J005,Microsoft Corporation,lei,https://lei.bloomberg.com/leis/view/INR2EJN1ERAN0W5ZP974
+J006,Microsoft Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/R1.htm
+J007,"Meta Platforms, Inc.",wikidata,https://www.wikidata.org/wiki/Q380
+J008,"Meta Platforms, Inc.",lei,https://lei.bloomberg.com/leis/view/BQ4BKCS1HXDV9HN80Z93
+J009,"Meta Platforms, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1326801/000132680122000054/R1.htm
+J010,Oracle Corporation,wikidata,https://www.wikidata.org/wiki/Q19900
+J011,Oracle Corporation,lei,https://lei.bloomberg.com/leis/view/1Z4GXXU7ZHVWFCD8TV52
+J012,Oracle Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/1341439/000119312510151896/0001193125-10-151896-index.htm
+J013,"Equinix, Inc.",lei,https://lei.bloomberg.com/leis/view/549300EVUN2BTLJ3GT74
+J014,"Equinix, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1101239/000162828023005277/0001628280-23-005277-index.htm
+J015,"Digital Realty Trust, Inc.",lei,https://lei.bloomberg.com/leis/view/549300HKCZ31D08NEI41
+J016,"Digital Realty Trust, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/0001104659-26-015365-index.html
+J017,NVIDIA Corporation,wikidata,https://www.wikidata.org/wiki/Q182477
+J018,NVIDIA Corporation,lei,https://lei.bloomberg.com/leis/view/549300S4KLFTLO7GSQ80
+J019,NVIDIA Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm
+J020,Intel Corporation,wikidata,https://www.wikidata.org/wiki/Q248
+J021,Intel Corporation,lei,https://lei.bloomberg.com/leis/view/KNX4USFCNGPY45LOCE31
+J022,Intel Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/50863/000005086326000127/0000050863-26-000127-index.htm
+J023,"Advanced Micro Devices, Inc.",lei,https://lei.bloomberg.com/leis/view/R2I72C950HOYXII45366
+J024,"Advanced Micro Devices, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/2488/000000248826000191/0000002488-26-000191-index.htm
+J025,Broadcom Inc.,lei,https://lei.bloomberg.com/leis/view/549300WV6GIDOZJTV909
+J026,Broadcom Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/1730168/000173016826000068/0001730168-26-000068-index.htm
+J027,"Micron Technology, Inc.",lei,https://lei.bloomberg.com/leis/view/B3DXGBC8GAIYWI2Z0172
+J028,"Micron Technology, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/723125/000072312526000018/0000723125-26-000018-index.htm
+J029,Dell Technologies Inc.,lei,https://lei.bloomberg.com/leis/view/549300TJB5YBRUPOG437
+J030,Dell Technologies Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/1571996/000157199625000076/0001571996-25-000076-index.htm
+J031,Hewlett Packard Enterprise Company,wikidata,https://www.wikidata.org/wiki/Q19923099
+J032,Hewlett Packard Enterprise Company,lei,https://lei.bloomberg.com/leis/view/549300BX44RGX6ANDV88
+J033,Hewlett Packard Enterprise Company,sec_cik,https://www.sec.gov/Archives/edgar/data/1645590/000164559026000036/0001645590-26-000036-index.htm
+J034,"Super Micro Computer, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1375365/0001104659-24-022042-index.html
+J035,"Cisco Systems, Inc.",wikidata,https://www.wikidata.org/wiki/Q173395
+J036,"Cisco Systems, Inc.",lei,https://lei.bloomberg.com/leis/view/549300LKFJ962MZ46593
+J037,"Cisco Systems, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/858877/000085887726000075/R1.htm
+J038,Taiwan Semiconductor Manufacturing Company Limited,wikidata,https://www.wikidata.org/wiki/Q713418
+J039,Taiwan Semiconductor Manufacturing Company Limited,lei,https://opencorpdata.com/lei/549300KB6NK5SBD14S87
+J040,Taiwan Semiconductor Manufacturing Company Limited,sec_cik,https://www.sec.gov/Archives/edgar/data/1046179/000162828026025362/0001628280-26-025362-index.htm
+J041,"Samsung Electronics Co., Ltd.",wikidata,https://www.wikidata.org/wiki/Q20718
+J042,"Samsung Electronics Co., Ltd.",lei,https://lei.bloomberg.com/leis/view/9884007ER46L6N7EI764
+J043,"Samsung Electronics Co., Ltd.",sec_cik,https://www.sec.gov/Archives/edgar/data/879316/999999999704042926/9999999997-04-042926-index.htm
+J044,SK hynix Inc.,wikidata,https://www.wikidata.org/wiki/Q370719
+J045,SK hynix Inc.,lei,https://lei.bloomberg.com/leis/view/988400XAIK6XISWQV045
+J046,SK hynix Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/2120882/000119312526444399/0001193125-26-444399-index.htm
+J047,GLOBALFOUNDRIES Inc.,lei,https://lei.bloomberg.com/leis/view/549300BA76VK784VMX48
+J048,GLOBALFOUNDRIES Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/1709048/000170904826000094/0001709048-26-000094-index.htm
+J049,United Microelectronics Corporation,wikidata,https://www.wikidata.org/wiki/Q143616
+J050,United Microelectronics Corporation,lei,https://www.lei-lookup.com/record/391200YJCAGH9LF96P73/
+J051,United Microelectronics Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/1033767/000156459021021578/0001564590-21-021578-index.htm
+J052,"Hon Hai Precision Industry Co., Ltd.",lei,https://lei.bloomberg.com/leis/view/30030004CM3GSZXX7O56
+J053,Wistron Corporation,wikidata,https://www.wikidata.org/wiki/Q441821
+J054,Wistron Corporation,lei,https://www.lei-lookup.com/record/254900DIEONKUALBFM06/
+J055,Fabrinet,lei,https://lei.info/5493004TETZ6IYF7CV44
+J056,Fabrinet,sec_cik,https://www.sec.gov/Archives/edgar/data/1408710/000140871026000016/0001408710-26-000016-index.htm
+J057,"ASE Technology Holding / Advanced Semiconductor Engineering, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1122411/000095010320006422/0000950103-20-006422-index-headers.html
+J058,"Amkor Technology, Inc.",lei,https://lei.bloomberg.com/leis/view/529900VHLRTKPWZJBM84
+J059,"Amkor Technology, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1047127/000104712725000187/0001047127-25-000187-index.htm
+J060,"Tongfu Microelectronics Co., Ltd.",wikidata,https://www.wikidata.org/wiki/Q104480285
+J061,CyrusOne,lei,https://lei.bloomberg.com/leis/view/5493006S177ZK2ZNBU43
+J062,CyrusOne,sec_cik,https://www.sec.gov/Archives/edgar/data/1553023/000110465922007461/0001104659-22-007461-index.htm
+J063,QTS Realty Trust / Quality Technology Services,sec_cik,https://www.sec.gov/Archives/edgar/data/1577368/000114420415011255/v402460_10k.htm
+J064,STACK Infrastructure,wikidata,https://www.wikidata.org/wiki/Q115477173
+J065,STACK Infrastructure,lei,https://lei.bloomberg.com/leis/view/2549001YU2NNI3440B51
+J066,"Core Scientific, Inc.",lei,https://lei.bloomberg.com/leis/view/5299003RGB2LAZ65RK73
+J067,"Core Scientific, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1839341/000090514826002547/0000905148-26-002547-index.htm
+J068,Bitdeer Technologies Group,lei,https://lei.bloomberg.com/leis/view/2549007M2KGWVJ9XFP20
+J069,Bitdeer Technologies Group,sec_cik,https://www.sec.gov/Archives/edgar/data/1899123/000121390026049770/0001213900-26-049770-index.htm
+J070,Hut 8 Corp.,sec_cik,https://www.sec.gov/Archives/edgar/data/1964789/000110465926055894/0001104659-26-055894-index.htm
+J071,Bitfarms Ltd.,lei,https://www.lei-lookup.com/record/254900YWMA64Y1RPNJ12/
+J072,Bitfarms Ltd.,sec_cik,https://www.sec.gov/Archives/edgar/data/1812477/000121390025098365/0001213900-25-098365-index.htm
+J073,"MARA Holdings, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1507605/000149315226024692/0001493152-26-024692-index.htm
+J074,IREN Limited,lei,https://lei.bloomberg.com/leis/view/254900FZF02RB3NNGB71
+J075,IREN Limited,sec_cik,https://www.sec.gov/Archives/edgar/data/1878848/000187884826000066/iren-20260930.htm
+J076,"CleanSpark, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/827876/000095017025021683/0000950170-25-021683-index.htm
+J077,"Riot Platforms, Inc.",wikidata,https://www.wikidata.org/wiki/Q113840664
+J078,"Riot Platforms, Inc.",lei,https://lei.info/5299005LKZAJQDQZDF73
+J079,"Riot Platforms, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1167419/000110465926093448/0001104659-26-093448-index.htm
+J080,Cipher Digital Inc. (formerly Cipher Mining),sec_cik,https://www.sec.gov/Archives/edgar/data/1819989/000119312525218502/0001193125-25-218502-index.htm
+J081,TeraWulf Inc.,lei,https://lei.bloomberg.com/leis/view/254900CVMW1SX2T78A64
+J082,TeraWulf Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/1083301/000108330126000044/0001083301-26-000044-index.htm
+J083,Applied Digital Corporation,lei,https://lei.bloomberg.com/leis/view/2549004NE2B6RYXINZ02
+J084,Applied Digital Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/1144879/000114487925000079/0001144879-25-000079-index.htm
+J085,"CoreWeave, Inc.",lei,https://lei.bloomberg.com/leis/view/984500511DP2B6186053
+J086,"CoreWeave, Inc.",sec_cik,https://www.sec.gov/Archives/edgar/data/1769628/000176962826000372/0001769628-26-000372-index.htm
+J087,xAI (X.AI Corp.),sec_cik,https://www.sec.gov/Archives/edgar/data/2002695/0002002695-24-000003-index.htm
+J088,Vistra Corp.,lei,https://opencorpdata.com/lei/549300KP43CPCUJOOG15
+J089,Vistra Corp.,sec_cik,https://www.sec.gov/Archives/edgar/data/1692819/000169281926000023/0001692819-26-000023-index.htm
+J090,Talen Energy Corporation,sec_cik,https://www.sec.gov/Archives/edgar/data/1622536/000162828024047751/R1.htm
+J091,Fortum Oyj,wikidata,https://www.wikidata.org/wiki/Q1439075
+J092,Fortum Oyj,lei,https://lei.bloomberg.com/leis/view/635400IUIZZIUJSAMF76
+J093,Oklo Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/1849056/000184905626000028/0001849056-26-000028-index.htm
+J094,Virginia Electric and Power Company (Dominion Energy Virginia),sec_cik,https://www.sec.gov/Archives/edgar/data/715957/000119312526440697/0001193125-26-440697-index.htm
+J095,Tennessee Valley Authority,lei,https://www.lei-lookup.com/record/549300HE1ISW43LNKM54/
+J096,Tennessee Valley Authority,sec_cik,https://www.sec.gov/Archives/edgar/data/1376986/000137698625000056/0001376986-25-000056-index.htm
+J097,Apple Inc.,wikidata,https://www.wikidata.org/wiki/Q312
+J098,Apple Inc.,lei,https://lei.bloomberg.com/leis/view/HWUPKR0MPOU8FGXBT394
+J099,Apple Inc.,sec_cik,https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/0000320193-25-000079-index.htm

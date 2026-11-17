@@ -1,0 +1,205 @@
+entry_id,entity_id,name_as_written
+ae-abudhabi-uae-us-ai-campus-5gw,co-cisco,Cisco
+ae-abudhabi-uae-us-ai-campus-5gw,co-nvidia,Nvidia
+ae-abudhabi-uae-us-ai-campus-5gw,co-oracle,Oracle
+ae-abudhabi-uae-us-ai-campus-5gw,org-g42,G42
+ae-abudhabi-uae-us-ai-campus-5gw,org-khazna,Khazna
+alphabet-google-scope2-two-numbers,co-alphabet,Alphabet
+amazon-scope2-two-numbers,co-amazon,Amazon
+amd-10k-2025-foundry-and-atmp-suppliers,co-amd,Advanced Micro Devices
+au-nsw-sydney-dc-water,co-amazon,Amazon
+au-nsw-sydney-dc-water,co-microsoft,Microsoft
+au-nsw-sydney-dc-water,org-goodman,Goodman
+br-eldorado-scala-ai-city,org-scala-data-centers,Scala Data Centers
+br-pecem-casadosventos-bytedance,org-casa-dos-ventos,Casa dos Ventos
+broadcom-10k-fy2025-foundry-and-own-fabs,co-broadcom,Broadcom
+carbon-credits-retired-by-company-disclosures,co-alphabet,Alphabet
+carbon-credits-retired-by-company-disclosures,co-amazon,Amazon
+carbon-credits-retired-by-company-disclosures,co-digital-realty,Digital Realty
+carbon-credits-retired-by-company-disclosures,co-equinix,Equinix
+carbon-credits-retired-by-company-disclosures,co-meta,Meta
+carbon-credits-retired-by-company-disclosures,co-microsoft,Microsoft
+carbon-credits-retired-by-company-disclosures,co-oracle,Oracle
+cl-cerrillos-google-water,co-alphabet,Google
+cl-huechuraba-aws-tribunal,co-amazon,Amazon
+digital-realty-scope2-two-numbers,co-digital-realty,Digital Realty
+eg-national-dc-pipeline-grid,org-khazna,Khazna
+equinix-scope2-two-numbers,co-equinix,Equinix
+es-aragon-amazon-blackstone-approvals,co-amazon,Amazon Web Services
+eu-us-equinix-advanced-nuclear-preagreements,co-equinix,Equinix
+fi-espoo-kirkkonummi-microsoft-fortum-heat,co-microsoft,Microsoft
+fi-espoo-kirkkonummi-microsoft-fortum-heat,org-fortum,Fortum
+fi-hamina-google-heat-seawater,co-alphabet,Google
+fi-loviisa-fortum-google-ppa,co-alphabet,Google
+fi-loviisa-fortum-google-ppa,org-fortum,Fortum
+ie-dublin-vantage-dub13-abp-refusal,org-vantage-data-centers,Vantage Data Centers
+ie-epa-aer-metered-2025,org-amazon-data-services-ireland-ltd,Amazon Data Services Ireland
+ie-epa-aer-metered-2025,org-equinix-hyperscale-1-db5-ltd,Equinix DB5
+ie-epa-aer-metered-2025,org-microsoft-ireland-operations-ltd,Microsoft Ireland Operations
+ie-equinix-db5-prime-power-gas-2024,org-equinix-hyperscale-1-db5-ltd,Equinix Hyperscale 1 (DB5) Ltd
+ie-tallaght-heatworks,co-amazon,Amazon Web Services
+in-gujarat-jamnagar-policy,co-meta,Meta
+in-gujarat-jamnagar-policy,org-reliance-industries,Reliance Industries
+in-telangana-aws-future-city,co-amazon,Amazon Web Services
+intel-10k-2025-fabs-and-tsmc-tiles,co-intel,Intel Corporation
+jp-softbank-tomakomai,org-softbank-corp,SoftBank Corp.
+ke-meta-sama-keca-2024,co-meta,Meta Platforms
+ke-olkaria-ecocloud-geothermal,org-g42,G42
+ke-olkaria-microsoft-g42-stalled,co-microsoft,Microsoft
+ke-olkaria-microsoft-g42-stalled,org-g42,G42
+kr-samsung-fabs-water,co-samsung-electronics,Samsung Electronics
+meta-scope2-two-numbers,co-meta,Meta Platforms
+micron-10k-fy2026-customers-and-fabs,co-micron,Micron
+microsoft-scope2-two-numbers,co-microsoft,Microsoft
+msft-circular-centers-assurance,co-microsoft,Microsoft
+mx-qro-queretaro-colon-water-grid,co-alphabet,Google
+mx-qro-queretaro-colon-water-grid,co-amazon,AWS
+mx-qro-queretaro-colon-water-grid,co-microsoft,Microsoft
+nl-haarlemmermeer-tennet-goodman-ruling,org-goodman,Goodman
+nl-middenmeer-microsoft-water,co-microsoft,Microsoft
+nl-zeewolde-meta-cancelled,co-meta,Meta
+nl-zeewolde-meta-land,co-meta,Meta Platforms
+nvidia-10k-fy2026-foundry-memory-assembly-suppliers,co-nvidia,NVIDIA
+oracle-scope2-two-numbers,co-oracle,Oracle
+scope2-renewable-claims-by-instrument,co-alphabet,Alphabet
+scope2-renewable-claims-by-instrument,co-amazon,Amazon
+scope2-renewable-claims-by-instrument,co-digital-realty,Digital Realty
+scope2-renewable-claims-by-instrument,co-equinix,Equinix
+scope2-renewable-claims-by-instrument,co-meta,Meta
+scope2-renewable-claims-by-instrument,co-microsoft,Microsoft
+scope2-renewable-claims-by-instrument,co-oracle,Oracle
+server-makers-10k-suppliers-smci-dell,co-dell,Dell Technologies
+server-makers-10k-suppliers-smci-dell,co-supermicro,Super Micro Computer
+sg-imda-green-dc-roadmap-pue,co-digital-realty,Digital Realty
+sg-imda-moratorium-capacity,co-digital-realty,Digital Realty
+sg-imda-moratorium-capacity,co-equinix,Equinix
+sg-imda-moratorium-capacity,co-microsoft,Microsoft
+sg-imda-moratorium-capacity,org-airtrunk-bytedance-consortium,AirTrunk-ByteDance
+sg-imda-moratorium-capacity,org-gds,GDS
+sg-imda-moratorium-capacity,org-keppel-data-centres,Keppel Data Centres
+sg-imda-moratorium-capacity,org-st-telemedia-global-data-centres,ST Telemedia Global Data Centres
+sg-jtc-jurong-island-dc-park,co-digital-realty,Digital Realty
+sg-jtc-jurong-island-dc-park,co-equinix,Equinix
+sg-jtc-jurong-island-dc-park,org-jtc-corporation,JTC Corporation
+sg-jtc-jurong-island-dc-park,org-keppel-data-centres,Keppel Data Centres
+sg-jtc-jurong-island-dc-park,org-st-telemedia-global-data-centres,ST Telemedia Global Data Centres
+tsmc-20f-2025-customer-concentration-and-fabs,co-tsmc,TSMC
+tw-tsmc-hsinchu-2021-drought,co-tsmc,TSMC
+uk-public-money-ai-compute,org-uk-atomic-energy-authority,UK Atomic Energy Authority
+uk-south-mimms-dc01uk,co-equinix,Equinix
+us-az-goodyear-mesa-water-records-vs-claims,co-meta,Meta
+us-az-goodyear-mesa-water-records-vs-claims,co-microsoft,Microsoft
+us-az-goodyear-mesa-water-records-vs-claims,org-apple-inc,Apple
+us-az-tsmc-phoenix-water,co-tsmc,TSMC
+us-ca-santa-clara-svp-datacenter-share-2025,us-utility-svp,Silicon Valley Power
+us-city-benchmarking-datacenter-metered-electricity,co-alphabet,Google
+us-city-benchmarking-datacenter-metered-electricity,co-digital-realty,Digital Realty
+us-google-elementl-three-sites,co-alphabet,Google
+us-hyperscaler-server-lifespan-circularity,co-alphabet,Alphabet
+us-hyperscaler-server-lifespan-circularity,co-amazon,Amazon
+us-hyperscaler-server-lifespan-circularity,co-microsoft,Microsoft
+us-ia-duane-arnold-google-restart,co-alphabet,Google
+us-ia-duane-arnold-google-restart,org-nextera-energy-duane-arnold-llc,"NextEra Energy Duane Arnold, LLC"
+us-ia-west-des-moines-microsoft-water,co-microsoft,Microsoft
+us-il-clinton-meta-ppa,co-meta,Meta
+us-il-clinton-meta-ppa,org-constellation-energy-generation-llc,"Constellation Energy Generation, LLC"
+us-ky-psc-kentucky-power-ebon-contract-denied,org-ebon-international-llc,"Ebon International, LLC"
+us-la-richland-meta-entergy-gas,co-meta,Meta
+us-la-richland-meta-entergy-gas,org-laidley-llc,Laidley LLC
+us-meta-terrapower-natrium-units,co-meta,Meta
+us-ms-southaven-xai-1.2gw-gas,org-mzx-tech,MZX Tech
+us-ms-southaven-xai-1.2gw-gas,org-xai,xAI
+us-nei-datacenter-facilities-2020-2023,co-alphabet,Google
+us-nei-datacenter-facilities-2020-2023,co-equinix,Equinix
+us-nei-datacenter-facilities-2020-2023,co-meta,Meta
+us-nei-datacenter-facilities-2020-2023,co-microsoft,Microsoft
+us-nei-datacenter-facilities-2020-2023,org-amazon-data-services-inc,Amazon Data Services
+us-nei-datacenter-facilities-2020-2023,org-apple-inc,Apple
+us-nei-datacenter-facilities-2020-2023,org-cyrusone,CyrusOne
+us-nei-datacenter-facilities-2020-2023,org-nasa-shared-services-center,NASA
+us-nei-datacenter-facilities-2020-2023,org-ntt-global-data-centers,NTT
+us-nei-datacenter-facilities-2020-2023,org-qts,QTS
+us-nei-datacenter-facilities-2020-2023,org-stack-infrastructure,STACK
+us-nei-datacenter-facilities-2020-2023,org-switch-ltd,Switch
+us-nuclear-deal-plants-spent-fuel,org-constellation-energy-generation-llc,Constellation
+us-nuclear-deal-plants-spent-fuel,org-talen-energy,Talen
+us-nuclear-deal-plants-spent-fuel,org-vistra,Vistra
+us-nv-google-nv-energy-clean-transition-tariff,co-alphabet,Google
+us-ny-greenidge-title-v-denial,org-greenidge-generation-holdings,Greenidge Generation Holdings
+us-oh-pa-vistra-meta-ppas,co-meta,Meta
+us-oh-pa-vistra-meta-ppas,org-vistra,Vistra
+us-oh-pike-oklo-meta,co-meta,Meta
+us-oh-pike-oklo-meta,org-oklo,Oklo
+us-or-the-dalles-google-water-records,co-alphabet,Google
+us-pa-crane-tmi1-microsoft-restart,co-microsoft,Microsoft
+us-pa-crane-tmi1-microsoft-restart,org-constellation-energy-generation-llc,"Constellation Energy Generation, LLC"
+us-pa-homer-city-gas-campus,org-homer-city-generation-lp,Homer City Generation
+us-pa-homer-city-gas-campus,org-homer-city-redevelopment,Homer City Redevelopment
+us-pa-susquehanna-talen-aws-colocation,co-amazon,Amazon Web Services
+us-pa-susquehanna-talen-aws-colocation,org-talen-energy,Talen Energy
+us-pjm-constellation-google-uprates-890mw,co-alphabet,Google
+us-pjm-constellation-google-uprates-890mw,org-constellation-energy-generation-llc,Constellation Energy
+us-sec-crypto-to-ai-conversions-10k,org-cipher-digital,Cipher Digital
+us-sec-crypto-to-ai-conversions-10k,org-cleanspark,CleanSpark
+us-sec-crypto-to-ai-conversions-10k,org-core-scientific,Core Scientific
+us-sec-crypto-to-ai-conversions-10k,org-hut-8,Hut 8
+us-sec-crypto-to-ai-conversions-10k,org-iren,IREN
+us-sec-crypto-to-ai-conversions-10k,org-mara-holdings,MARA
+us-sec-crypto-to-ai-conversions-10k,org-riot-platforms,Riot Platforms
+us-sec-crypto-to-ai-conversions-10k,org-terawulf,TeraWulf
+us-sec-form-sd-amd-cy2025,co-amd,Advanced Micro Devices
+us-sec-form-sd-amzn-cy2025,co-amazon,Amazon.com
+us-sec-form-sd-csco-cy2025,co-cisco,Cisco
+us-sec-form-sd-dell-cy2025,co-dell,Dell Technologies
+us-sec-form-sd-goog-cy2025,co-alphabet,Alphabet
+us-sec-form-sd-hpe-cy2025,co-hpe,Hewlett Packard Enterprise
+us-sec-form-sd-intc-cy2025,co-intel,Intel Corporation
+us-sec-form-sd-meta-cy2025,co-meta,Meta Platforms
+us-sec-form-sd-msft-cy2025,co-microsoft,Microsoft
+us-sec-form-sd-mu-cy2025,co-micron,Micron
+us-sec-form-sd-nvda-cy2025,co-nvidia,NVIDIA
+us-sec-form-sd-smci-cy2024,co-supermicro,Super Micro Computer
+us-sec-listed-miners-capacity-10k,org-cipher-digital,Cipher Digital
+us-sec-listed-miners-capacity-10k,org-cleanspark,CleanSpark
+us-sec-listed-miners-capacity-10k,org-core-scientific,Core Scientific
+us-sec-listed-miners-capacity-10k,org-hut-8,Hut 8
+us-sec-listed-miners-capacity-10k,org-iren,IREN
+us-sec-listed-miners-capacity-10k,org-mara-holdings,MARA Holdings
+us-sec-listed-miners-capacity-10k,org-riot-platforms,Riot Platforms
+us-sec-listed-miners-capacity-10k,org-terawulf,TeraWulf
+us-switch-oklo-master-power-agreement,org-oklo,Oklo
+us-switch-oklo-master-power-agreement,org-switch-ltd,Switch
+us-tn-kairos-hermes2-google-tva,co-alphabet,Google
+us-tn-kairos-hermes2-google-tva,org-kairos-power-llc,Kairos Power
+us-tn-kairos-hermes2-google-tva,us-federal-tva,Tennessee Valley Authority
+us-tn-memphis-xai-colossus-turbines,org-xai,xAI
+us-tx-denton-core-scientific-ppa-amendment,org-core-scientific,Core Scientific
+us-tx-riot-power-curtailment-credits,org-riot-platforms,Riot Platforms
+us-va-chesterfield-dominion-cerc-gas,us-utility-dominion-va,Dominion Energy Virginia
+us-va-dominion-datacenter-demand-filed-2026,us-utility-dominion-va,Dominion Energy Virginia
+us-va-dominion-datacenter-demand-filed-2026,us-utility-novec,Northern Virginia Electric Cooperative
+us-va-loudoun-water-reclaimed-datacenters,org-loudoun-water,Loudoun Water
+us-va-nei-2023-datacenter-generator-emissions,co-amazon,Amazon
+us-va-nei-2023-datacenter-generator-emissions,co-digital-realty,Digital Realty
+us-va-nei-2023-datacenter-generator-emissions,co-equinix,Equinix
+us-va-nei-2023-datacenter-generator-emissions,co-microsoft,Microsoft
+us-va-nei-2023-datacenter-generator-emissions,org-cyrusone,CyrusOne
+us-va-nei-2023-datacenter-generator-emissions,org-cyxtera-communications-llc,Cyxtera
+us-va-nei-2023-datacenter-generator-emissions,org-dupont-fabros-technology-inc,DuPont Fabros
+us-va-nei-2023-datacenter-generator-emissions,org-qts,QTS
+us-va-nei-2023-datacenter-generator-emissions,org-vantage-data-centers,Vantage
+us-va-north-anna-smr-amazon-dominion,co-amazon,Amazon
+us-va-north-anna-smr-amazon-dominion,us-utility-dominion-va,Dominion Energy Virginia
+us-va-prince-william-digital-gateway-court,org-compass-datacenters,Compass Datacenters
+us-va-prince-william-digital-gateway-court,org-qts,QTS
+us-wa-cascade-xenergy-amazon,co-amazon,Amazon
+us-wa-cascade-xenergy-amazon,org-energy-northwest,Energy Northwest
+us-wa-grant-pud-datacenter-load-2025,us-utility-grant-pud,Grant County PUD
+us-wa-seattle-westin-amazon-heat-reuse,co-amazon,Amazon
+us-wa-seattle-westin-amazon-heat-reuse,co-digital-realty,Digital Realty
+us-wa-seattle-westin-amazon-heat-reuse,org-clise-properties,Clise Properties
+us-wi-mount-pleasant-microsoft-racine-water,co-microsoft,Microsoft
+us-wi-mount-pleasant-microsoft-racine-water,org-racine-water-utility,Racine Water Utility
+us-wi-mount-pleasant-microsoft-we-energies,co-microsoft,Microsoft
+uy-canelones-google-water,co-alphabet,Google
+za-capetown-580mw-objection,co-equinix,Equinix

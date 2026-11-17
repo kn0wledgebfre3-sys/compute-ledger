@@ -73,6 +73,8 @@ WORKBOOK_SHEETS = {  # data/datapackage.json path -> sheet name, in the order th
     "climate_trace_seed/findings.csv": "Findings",
     "climate_trace_seed/measurement_id_aliases.csv": "Figure id changes",
     "climate_trace_seed/site_id_aliases.csv": "Site id changes",
+    "graph/nodes.csv": "Graph nodes",
+    "graph/links.csv": "Graph links",
 }
 
 
@@ -118,6 +120,29 @@ def entry_countries(text: str, names: dict) -> list[str]:
     return out
 
 
+def org_subjects() -> dict:
+    """For each organisation with figures: its name and the subjects its page counts (site_graph's org_subjects), in the
+    measurements table's own terms (site:, entity:, entry:), so Explore's ?org= shows the same figures as the page."""
+    from graphdata import graph
+    g = graph()
+    back = {"site": "site", "org": "entity", "entry": "entry"}
+    have = {(r["subject_type"], r["subject_id"]) for r in read_csv(PKG / "measurements.csv")}
+    out = {}
+    for nid, n in sorted(g.nodes.items()):
+        if n["type"] != "org":
+            continue
+        subj = sorted(f"{back[x.split(':', 1)[0]]}:{x.split(':', 1)[1]}" for x in g.org_subjects(nid) if x.split(":", 1)[0] in back)
+        subj = [x for x in subj if tuple(x.split(":", 1)) in have]
+        if subj:
+            out[nid[4:]] = [n["name"], subj]
+    return out
+
+
+def doc_urls() -> dict:
+    from graphdata import graph
+    return {n["node_id"][4:]: [n["name"], n["detail"]] for n in sorted(graph().nodes.values(), key=lambda n: n["node_id"]) if n["type"] == "doc"}
+
+
 def build_data():
     vocab = json.loads((ROOT / "pipeline" / "measurement_vocab.json").read_text(encoding="utf-8"))
     countries = {**bs.COUNTRY, **EXTRA_COUNTRY}
@@ -132,7 +157,7 @@ def build_data():
     entries = read_csv(PKG / "entries.csv")
     entities = read_csv(PKG / "entity_register.csv")
     for s in sites + entities:
-        if s["country"] not in countries:
+        if s["country"] not in countries and not (s in entities and not s["country"]):
             raise SystemExit(f"{s.get('site_id') or s.get('entity_id')}: no country name for {s['country']!r}")
 
     topic_of = {}
@@ -164,6 +189,7 @@ def build_data():
         "sites": D_sites, "entries": dict(sorted(D_entries.items())), "entities": D_entities,
         "countries": {c: countries[c] for c in sorted(used_cc)}, "topics": [t for t, _ in TOPICS], "metrics": metrics,
         "bases": {b: vocab["bases"][b] for b in sorted({r["basis"] for r in M})}, "feeds": feeds, "aliases": dict(sorted(aliases.items())),
+        "orgs": org_subjects(), "docs": doc_urls(),
     }
 
     # sites: the register's columns, then what the ledger holds for each
@@ -237,20 +263,21 @@ code{font-family:var(--mono);font-size:.9em}
 
 
 def nav(current: str, prefix: str = "") -> str:
-    links = [("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("brief.html", "Brief"),
-             ("explore.html#get-the-data", "Get the data")]
+    links = bs.NAV
     out = []
     for href, text in links:
         cur = ' aria-current="page"' if href == current else ""
         out.append(f'<a href="{prefix}{href}"{cur}>{text}</a>')
     return (f'<nav class="top"><span><a href="{prefix}index.html">Compute Ledger</a> / {bs.e(dict(links).get(current, ""))}</span>'
-            f'<span class="links">{"".join(out)}</span></nav>')
+            f'<span class="links">{"".join(out)}</span></nav>'
+            f'<div class="gsearch" data-base="{prefix}"><input type="search" placeholder="Search sites, organisations, countries, documents" '
+            'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>')
 
 
 def head(title: str, desc: str, extra: str = "") -> str:
     return ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
             f'<title>{bs.e(title)}</title>\n<meta name="description" content="{bs.e(desc)}">\n' + FONTS
-            + '<link rel="stylesheet" href="sites/site.css">\n' + extra + f"<style>{PAGE_CSS}</style>\n<body>\n<div class=\"wrap\">\n")
+            + '<link rel="stylesheet" href="sites/site.css">\n<link rel="stylesheet" href="assets/graph.css">\n' + extra + f"<style>{PAGE_CSS}</style>\n<body>\n<div class=\"wrap\">\n")
 
 
 def foot() -> str:
@@ -258,7 +285,7 @@ def foot() -> str:
             'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not '
             'found or read a public record yet, not that none exists or that anything is wrong.</p>'
             f'<p>Data CC BY 4.0. <a href="{REPO_URL}#how-to-cite">Cite</a> · <a href="{REPO_URL}/issues/new/choose">Report an error or a missing record</a> · '
-            f'<a href="{REPO_URL}">Repository</a> · <a href="index.html">The ledger</a></p></footer>\n</div>\n')
+            f'<a href="{REPO_URL}">Repository</a> · <a href="index.html">The ledger</a></p></footer>\n</div>\n<script src="assets/graph.js" defer></script>\n')
 
 
 def get_data_line(cite: dict) -> str:
@@ -292,10 +319,12 @@ function cite(r){const c=D.cite,p=period(r);
     +c.site+'explore.html#'+r.measurement_id+'. Original source: '+[r.source_publisher,r.source_title?'“'+r.source_title+'”':'',r.source_date].filter(Boolean).join(', ')
     +(href(r.source_url)?', '+r.source_url:'')+'.';}
 function state(){const s={};for(const k of KEYS)s[k]=$(k).value;s.q=$('q').value.trim();s.qw=s.q.toLowerCase().split(/\s+/).filter(Boolean);
-  s.twice=$('twice').checked;s.sort=$('sort').value;s.subject=subject;return s;}
-let subject='',bnote='';
+  s.twice=$('twice').checked;s.sort=$('sort').value;s.subject=subject;s.org=org;s.doc=doc;return s;}
+let subject='',org='',doc='',orgSet=null,bnote='';
 function match(r,s,skip){
   if(s.subject&&r.subject_id!==s.subject&&r.entry_id!==s.subject)return false;
+  if(s.org&&!(orgSet&&orgSet.has(r.subject_type+':'+r.subject_id)))return false;
+  if(s.doc&&!(D.docs[s.doc]&&r.source_url===D.docs[s.doc][1]))return false;
   if(skip!=='country'&&s.country&&!r._cc.includes(s.country))return false;
   if(skip!=='topic'&&s.topic&&r._topic!==s.topic)return false;
   if(skip!=='metric'&&s.metric&&r.metric!==s.metric)return false;
@@ -348,15 +377,17 @@ function render(reset){const s=state();if(reset)shown=PAGE;
   $('dl').disabled=!view.length;$('dl').textContent=view.length===1?'Download this row (CSV)':'Download these '+fmt(view.length)+' rows (CSV)';
   if(!single)facets(s);}
 function sync(){const p=new URLSearchParams();const s=state();for(const k of KEYS)if(s[k])p.set(k,s[k]);if(s.q)p.set('q',s.q);if(s.twice)p.set('twice','1');
-  if(s.sort!=='place')p.set('sort',s.sort);if(subject)p.set('subject',subject);const q=p.toString();history.replaceState(null,'',location.pathname+(q?'?'+q:''));}
+  if(s.sort!=='place')p.set('sort',s.sort);if(subject)p.set('subject',subject);if(org)p.set('org',org);if(doc)p.set('doc',doc);const q=p.toString();history.replaceState(null,'',location.pathname+(q?'?'+q:''));}
 function setBanner(){let h=bnote;if(single)h='Showing one figure.'+bnote+' <a href="explore.html">Show every figure</a>';
   else if(subject){const nm=(D.sites[subject]||D.entries[subject]||D.entities[subject]||[subject])[0];h=(bnote?bnote+' ':'')+'Showing the figures for <b>'+esc(nm)+'</b>. <a href="#" id="unsubject">Show every figure</a>';}
+  else if(org){const o=D.orgs[org];h=(bnote?bnote+' ':'')+'Showing the figures for <b>'+esc(o?o[0]:org)+'</b>, its sites and the entries about it alone (<a href="org/'+esc(encodeURIComponent(org))+'.html">its page</a>). <a href="#" id="unsubject">Show every figure</a>';}
+  else if(doc){const d=D.docs[doc];h=(bnote?bnote+' ':'')+'Showing the figures read from <b>'+esc(d?d[0]:doc)+'</b> (<a href="doc/'+esc(encodeURIComponent(doc))+'.html">its page</a>). <a href="#" id="unsubject">Show every figure</a>';}
   $('banner').innerHTML=h;}
 function changed(){if(single||bnote){single=null;bnote='';}setBanner();sync();render(true);}
 function readUrl(){const p=new URLSearchParams(location.search);
   for(const k of KEYS){const v=p.get(k)||'';if(v&&![...$(k).options].some(o=>o.value===v))continue;$(k).value=v;}
   $('q').value=p.get('q')||'';$('twice').checked=p.get('twice')==='1';$('sort').value=['recent','published'].includes(p.get('sort'))?p.get('sort'):'place';
-  subject=p.get('subject')||'';
+  subject=p.get('subject')||'';org=D.orgs[p.get('org')]?p.get('org'):'';doc=D.docs[p.get('doc')]?p.get('doc'):'';orgSet=org?new Set(D.orgs[org][1]):null;
   const h=decodeURIComponent(location.hash.slice(1));single=null;bnote='';
   if(/^m-[0-9a-f]{10}$/.test(h)){let id=h;if(!ids.has(id)&&D.aliases[id]){id=D.aliases[id];bnote=' It was corrected: its earlier id '+esc(h)+' now points to '+esc(id)+'.';}
     if(ids.has(id))single=id;else bnote='No figure has the id '+esc(h)+'.';}
@@ -393,8 +424,8 @@ function init(data){D=data;const C=D.columns;
   $('sort').addEventListener('change',()=>{sync();render(true);});
   let tm;$('q').addEventListener('input',()=>{clearTimeout(tm);tm=setTimeout(changed,180);});
   $('twice').addEventListener('change',changed);
-  $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('twice').checked=false;subject='';changed();});
-  $('banner').addEventListener('click',e=>{if(e.target.id==='unsubject'){e.preventDefault();subject='';changed();}});
+  $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('twice').checked=false;subject='';org='';doc='';orgSet=null;changed();});
+  $('banner').addEventListener('click',e=>{if(e.target.id==='unsubject'){e.preventDefault();subject='';org='';doc='';orgSet=null;changed();}});
   $('more').addEventListener('click',()=>{shown+=PAGE;render(false);});
   $('dl').addEventListener('click',download);
   $('share').addEventListener('click',e=>copy(location.href,e.currentTarget));

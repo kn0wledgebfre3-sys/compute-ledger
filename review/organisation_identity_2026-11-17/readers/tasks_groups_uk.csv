@@ -1,0 +1,19 @@
+task_id,entity_as_named,ledger_id,related_organisation,related_ledger_id,relation_to_check
+U01,Amazon Data Services UK Limited (also printed 'Amazon Data Services (UK) Limited'),,"Amazon.com, Inc.",,owned by / ultimate parent / person with significant control
+U02,Equinix (UK) Limited,,"Equinix, Inc.",,owned by / ultimate parent / person with significant control
+U03,Digital Realty (UK) Limited,,"Digital Realty Trust, Inc.",,owned by / ultimate parent / person with significant control
+U04,MSFT MCIO Limited,,Microsoft Corporation,,owned by / ultimate parent / person with significant control
+U05,NTT Global Data Centers EMEA UK Limited,,NTT (NTT Global Data Centers / NTT DATA),,owned by / ultimate parent / person with significant control
+U06,Virtus Holdco Limited,,ST Telemedia Global Data Centres,,owned by / ultimate parent / person with significant control
+U07,Ark Data Centres Limited,,its parent or controlling shareholder,,owned by / ultimate parent / person with significant control
+U08,Colt Data Centre Services UK Limited,,Colt DCS / Fidelity,,owned by / ultimate parent / person with significant control
+U09,CyrusOne UK4 Limited (and CyrusOne UK6 Limited),,CyrusOne,,owned by / ultimate parent / person with significant control
+U10,"Vantage Data Centres UK Ltd (and VDC CWL4 Limited, VDC LHR11 Limited)",,Vantage Data Centers,,owned by / ultimate parent / person with significant control
+U11,Global Infrastructure UK Limited (Cheshunt data centre applicant),,Google LLC or Alphabet Inc.,,owned by / ultimate parent / person with significant control
+U12,KD 2 Limited and Harlow Operations Limited,,Kao Data,,owned by / ultimate parent / person with significant control
+U13,"Renaissance Land Limited (Cambois, Northumberland)",,QTS or Blackstone,,owned by / ultimate parent / person with significant control
+U14,Zenium UK2 Limited,,its parent,,owned by / ultimate parent / person with significant control
+U15,Yondr Group Limited,,its parent or controlling shareholder,,owned by / ultimate parent / person with significant control
+U16,Green Mountain DC UK Limited,,Green Mountain (Norway) / its parent,,owned by / ultimate parent / person with significant control
+U17,PDCG (Group Services) Limited,,Pure Data Centres Group,,owned by / ultimate parent / person with significant control
+U18,Iron Mountain (UK) Data Centre Limited,,Iron Mountain Incorporated,,owned by / ultimate parent / person with significant control

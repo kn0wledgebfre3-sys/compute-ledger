@@ -31,6 +31,7 @@ COUNTRY = {"ARE": "United Arab Emirates", "AUS": "Australia", "AUT": "Austria", 
            "USA": "United States", "VNM": "Vietnam", "IDN": "Indonesia", "ESP": "Spain", "ITA": "Italy", "POL": "Poland",
            "ZAF": "South Africa", "NZL": "New Zealand", "CHE": "Switzerland", "ISL": "Iceland", "PRY": "Paraguay",
            "ARG": "Argentina", "EGY": "Egypt", "NGA": "Nigeria", "QAT": "Qatar", "OMN": "Oman", "KWT": "Kuwait"}
+DC_KINDS = {"datacenter", "telecom_exchange", "mixed_building_with_datacenter", "crypto_to_ai_conversion"}
 KIND = {"datacenter": "Datacenter", "telecom_exchange": "Telephone exchange filed as a datacenter",
         "mixed_building_with_datacenter": "Building that contains a datacenter", "smelter_refiner": "Smelter or refiner",
         "fab": "Chip fab or packaging plant", "crypto_mining": "Crypto mining site",
@@ -147,12 +148,16 @@ HEAD = ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="
         '<title>{title}</title>\n<meta name="description" content="{desc}">\n'
         '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
-        '<link rel="stylesheet" href="site.css">\n<body>\n<div class="wrap">\n')
-def nav_links(prefix: str = "../") -> str:
+        '<link rel="stylesheet" href="site.css">\n<link rel="stylesheet" href="../assets/graph.css">\n{ld}<body>\n<div class="wrap">\n')
+SEARCH = ('<div class="gsearch" data-base="../"><input type="search" placeholder="Search sites, organisations, countries, documents" '
+          'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>\n')
+NAV = [("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("org/", "Organisations"), ("country/", "Countries"),
+       ("doc/", "Documents"), ("chain.html", "The chain"), ("brief.html", "Brief"), ("explore.html#get-the-data", "Get the data")]
+
+
+def nav_links(prefix: str = "../", current: str = "") -> str:
     """The links every page carries at the top right: the same set on the ledger's own pages."""
-    return ('<span class="links">' + "".join(f'<a href="{prefix}{h}">{t}</a>' for h, t in (
-        ("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("brief.html", "Brief"),
-        ("explore.html#get-the-data", "Get the data"))) + "</span>")
+    return ('<span class="links">' + "".join(f'<a href="{prefix}{h}"' + (' aria-current="page"' if h == current else "") + f'>{t}</a>' for h, t in NAV) + "</span>")
 
 
 FOOT = ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
@@ -160,7 +165,8 @@ FOOT = ('<footer><p>Records are documents from regulators, courts, grid operator
         'found or read a public record yet, not that none exists or that anything is wrong.</p>'
         f'<p>Data CC BY 4.0. <a href="../explore.html#get-the-data">Get the data</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · '
         f'<a href="{REPO_URL}/issues/new/choose">Report an error or a missing record</a> · '
-        '<a href="../index.html">The ledger</a> · <a href="../explore.html">Explore every figure</a> · <a href="../map.html">Map</a></p></footer>\n</div>\n</body>\n</html>\n')
+        '<a href="../index.html">The ledger</a> · <a href="../explore.html">Explore every figure</a> · <a href="../map.html">Map</a></p></footer>\n</div>\n'
+        '<script src="../assets/graph.js" defer></script>\n</body>\n</html>\n')
 
 CSS = """:root{
   --paper:#F4F6F3; --paper-2:#E9EDE8; --ink:#17211E; --ink-2:#4B5955; --rule:#C9D1CC; --accent:#1C6B5F;
@@ -220,6 +226,12 @@ def main():
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
 
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import build_graph_pages as gp  # the shared sections (topic grid, chain drawing, side panel); it imports this module
+    ctx = gp.Ctx()
+    G = ctx.g
+    op_note = {r["name_as_listed"]: r["note"] for r in read_csv(ROOT / "sites" / "organisations" / "operator_names.csv") if not r["entity_id"]}
     sites = read_csv(PKG / "site_register.csv")
     vocab = json.load(open(ROOT / "pipeline" / "measurement_vocab.json", encoding="utf-8"))
     bases = vocab["bases"]
@@ -265,28 +277,17 @@ def main():
         country = COUNTRY[s["country"]]
         place = ", ".join(x for x in (s["locality"], s["admin_region"], country) if x)
 
-        # what is there and what is not
-        found = defaultdict(lambda: [0, 0])
-        for r in rows:
-            q = question_of(r["metric"])
-            found[q][0 if r["side"] == "record" else 1] += 1
-        qs = []
-        for q, _ in QUESTIONS:
-            n_rec, n_cl = found.get(q, [0, 0])
-            if n_rec:
-                qs.append(f'<li><b>{e(q)}</b><span>{n_rec} figure{"s" if n_rec != 1 else ""} from records'
-                          f'{f", {n_cl} claimed" if n_cl else ""}</span></li>')
-            elif n_cl:
-                qs.append(f'<li class="no"><b>{e(q)}</b><span>Only what the company says ({n_cl}); no record found yet</span></li>')
-            else:
-                qs.append(f'<li class="no"><b>{e(q)}</b><span>No public record found yet</span></li>')
-        no = ' class="no"'
-        qs.append(f'<li{"" if eds else no}><b>Who supplies it, and whom it serves</b><span>'
-                  + (f'{len(eds)} documented link{"s" if len(eds) != 1 else ""}' if eds else "No documented link yet") + "</span></li>")
-        qs.append(f'<li{"" if s["lat"] else no}><b>Location</b><span>'
-                  + ("Placed from a document" if s["lat"] else "Not yet placed on a map") + "</span></li>")
-
-        facts = [("Kind", e(kind)), ("Operator", e(s["operator"]) or "not named in the records read"), ("Where", e(place))]
+        nid = f"site:{sid}"
+        listed = G.rel_out(nid, "listed_operator")
+        ops = []
+        for l in sorted(listed, key=lambda l: G.nodes[l["to_id"]]["name"].lower()):
+            o = G.nodes[l["to_id"]]
+            ops.append(f'<a href="../{e(o["page"])}">{e(o["name"])}</a> <span class="m">{e(l["note"].split(";", 1)[0])}</span>')
+        op_html = ("<br>".join(ops) + (f'<div class="m">as listed: “{e(s["operator"])}”</div>' if s["operator"] else "")) if ops else (
+            (e(s["operator"]) + ' <span class="m">(not matched to an organisation: ' + e(op_note.get(s["operator"], "not reviewed yet")) + ")</span>") if s["operator"] else "not named in the records read")
+        facts = [("Kind", e(kind)), ("Operator", op_html),
+                 ("Where", e(", ".join(x for x in (s["locality"], s["admin_region"]) if x)) + (", " if (s["locality"] or s["admin_region"]) else "")
+                  + f'<a href="../country/{e(s["country"])}.html">{e(country)}</a>')]
         if s["lat"] and s["lon"]:
             lat, lon = float(s["lat"]), float(s["lon"])
             facts.append(("Coordinates", f'{lat:.5f}, {lon:.5f} · <a href="https://www.openstreetmap.org/?mlat={lat:.5f}&amp;mlon={lon:.5f}#map=15/{lat:.5f}/{lon:.5f}" rel="noopener">map</a>'))
@@ -302,49 +303,63 @@ def main():
         if s["notes"]:
             facts.append(("Notes", e(s["notes"])))
 
+        chain = sorted(G.chain_links(nid), key=lambda l: l["link_id"])
         n_fig = len(rows)
         tools = ([f'<a href="../explore.html?subject={e(sid)}">Its {n_fig} figure{"s" if n_fig != 1 else ""} in Explore</a> (filter, download, cite one by one)']
                  if n_fig else []) + ([f'<a href="../map.html?site={e(sid)}">On the map</a>'] if s["lat"] and s["lon"] else [])
-        body = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links()}</nav>',
-                f'<p class="eyebrow">{e(kind)} · {e(country)}</p><h1>{e(s["name"])}</h1>',
+        grid = gp.topic_grid(rows, f"subject={e(sid)}", "../")
+        no = ' class="no"'
+        grid = grid[:-5] + (f'<li{"" if chain else no}><b>Who supplies it, and whom it serves</b><span>'
+                            + (f'{len(chain)} documented link{"s" if len(chain) != 1 else ""}' if chain else "No documented link yet") + "</span></li>"
+                            f'<li{"" if s["lat"] else no}><b>Location</b><span>' + ("Placed from a document" if s["lat"] else "Not yet placed on a map") + "</span></li></ul>")
+        body = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links(current="sites/")}</nav>', SEARCH,
+                f'<p class="eyebrow">{e(kind)} · {e(country)}</p><h1>{e(s["name"])}</h1>', '<div class="cols2"><main>',
                 '<dl class="facts">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in facts) + "</dl>",
                 (f'<p class="m" style="margin-top:14px">{" · ".join(tools)}</p>' if tools else ""),
                 '<h2 class="gapc">What the public record holds</h2>',
-                '<p class="lede">The questions anyone would ask of this site, and whether the ledger has found a public record that answers them.</p>',
-                '<ul class="q">' + "".join(qs) + "</ul>"]
-        if rec:
-            body += ['<h2 class="rec">Records</h2><p class="lede">Figures from regulators, grid operators, utilities, statistics offices and other record holders, each as published.</p>',
-                     figure_table(rec, bases)]
-        if calc:
-            body += ['<h2 class="calc">Computed by the ledger from those records</h2><p class="lede">Each row gives its formula; the inputs are records above or in the linked documents.</p>',
-                     figure_table(calc, bases)]
-        if claim:
-            body += ['<h2 class="claim">Claims</h2><p class="lede">What the operator or another party says, kept apart from the records.</p>',
-                     figure_table(claim, bases)]
-        if eds:
-            t = ['<div class="tw"><table><thead><tr><th>Link</th><th>Period</th><th>Kind of document</th><th>Source and the line that states it</th></tr></thead><tbody>']
-            for r in eds:
-                def node(side):
-                    i, n = r[f"{side}_id"], r[f"{side}_name"]
-                    if r[f"{side}_type"] == "site" and i in ids and i != sid:
-                        return f'<a href="{e(i)}.html">{e(n or i)}</a>'
-                    return f"<strong>{e(n or i)}</strong>"
-                planned = ' <span class="tag">planned</span>' if re.search(r"\bplanned\b", r["notes"], re.I) else ""
-                t.append(f'<tr><td>{node("from")} {e(r["relation"].replace("_", " "))} {node("to")}{planned}<div class="m">{e(r["leg"].replace("_", " "))}</div></td>'
-                         f'<td class="m">{e(period(r))}</td><td class="m">{e(r["basis"].replace("_", " "))}</td>'
-                         f'<td>{link(r["document_url"], r["document_title"])}<div class="m">{e(" · ".join(x for x in (r["publisher"], r["document_date"]) if x))}</div>'
-                         f'<blockquote>{e(r["quoted_line"])}</blockquote></td></tr>')
-            t.append("</tbody></table></div>")
-            body += ['<h2 class="rec">Supply links</h2><p class="lede">Who supplies this site, or whom it serves, as a document states it.</p>', "".join(t)]
+                '<p class="lede">One cell per topic, the same on every site\'s page, and whether the ledger has found a public record that answers it.</p>', grid]
+        body += ['<h2 class="rec">Records</h2><p class="lede">Figures from regulators, grid operators, utilities, statistics offices and other record holders, each as published.</p>',
+                 figure_table(rec, bases) if rec else '<p class="none">No figure from a record yet.</p>']
+        body += ['<h2 class="calc">Computed by the ledger from those records</h2><p class="lede">Each row gives its formula; the inputs are records above or in the linked documents.</p>',
+                 figure_table(calc, bases) if calc else '<p class="none">Nothing computed yet.</p>']
+        body += ['<h2 class="claim">Claims</h2><p class="lede">What the operator or another party says, kept apart from the records.</p>',
+                 figure_table(claim, bases) if claim else '<p class="none">No claim recorded.</p>']
+        body += ['<h2 class="rec">The chain</h2><p class="lede">Who supplies this site, or whom it serves, as a document states it.</p>',
+                 gp.chain_block(chain, ctx, "../", "ch-site", {nid},
+                                "No public record read yet names the chips running here: the chain stops before the datacenter." if s["kind"] in DC_KINDS else "")]
         ents = sorted({r["entry_id"] for r in rows + eds if r.get("entry_id") in entries})
+        body += ['<h2>Ledger entries that discuss it</h2>' + ('<ul>' + "".join(f'<li><a href="../index.html#{e(i)}">{e(entries[i]["site_or_subject"])}</a> <span class="m">{e(entries[i]["country"])}</span></li>' for i in ents) + "</ul>"
+                                                         if ents else '<p class="none">No entry discusses it.</p>')]
+        missing = [f"{e(q)}: no figure from a record" for q in ("Electricity used", "Water", "Generators, fuel and air pollution")
+                   if not any(r["side"] == "record" and r["basis"] != "derived" and gp.TOPIC_OF.get(r["metric"], gp.LAST_TOPIC) == [t for t, _ in gp.TOPICS].index(q) for r in rows)]
+        if not s["lat"]:
+            missing.append("Not placed on a map yet")
+        if not ops:
+            missing.append("Operator: not matched to an organisation")
+        if s["kind"] in DC_KINDS:
+            missing.append("The chips running here: no record read yet")
+        body += ['<h2 class="gapc">Not found yet</h2>', gp.gaps_box(missing), "</main>"]
+        ring = [gp.ring_item(ctx, l["to_id"], "../", "") for l in listed[:5]]
+        ring.append(gp.ring_item(ctx, f"country:{s['country']}", "../", ""))
+        seen_r = {x["id"] for x in ring}
+        for l in chain:
+            o = l["to_id"] if l["from_id"] == nid else l["from_id"]
+            if o not in seen_r:
+                seen_r.add(o); ring.append(gp.ring_item(ctx, o, "../", l["side"]))
         if ents:
-            body += ['<h2>Ledger entries that discuss it</h2><ul>'
-                     + "".join(f'<li><a href="../index.html#{e(i)}">{e(entries[i]["site_or_subject"])}</a> <span class="m">{e(entries[i]["country"])}</span></li>' for i in ents)
-                     + "</ul>"]
+            ring.append({"id": "entries", "name": f"{len(ents)} entr{'y' if len(ents) == 1 else 'ies'}", "type": "entry", "count": len(ents), "side": "", "page": ""})
+        body.append(gp.side_panel(ctx, nid, "../", ring[:12], "site", sid, ([(f"../explore.html?subject={e(sid)}", f"Its {n_fig} figures in Explore")] if n_fig else [])
+                                  + [(f"{REPO_URL}/blob/main/data/climate_trace_seed/site_register.csv", "The site register (CSV)")]))
+        body.append("</div>")
+        ld = {"@context": "https://schema.org", "@type": "Place", "@id": G.nodes[nid]["iri"], "name": s["name"],
+              "containedInPlace": {"@type": "Country", "@id": G.nodes[f"country:{s['country']}"]["iri"], "name": country}}
+        if s["lat"] and s["lon"]:
+            ld["geo"] = {"@type": "GeoCoordinates", "latitude": float(s["lat"]), "longitude": float(s["lon"])}
+        ld_html = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("</", "<" + chr(92) + "/") + "</script>\n"
         desc = f"{s['name']}: {kind} in {place}. What public records show, from the Compute Ledger."
-        page = HEAD.format(title=e(f"{s['name']} · Compute Ledger"), desc=e(desc)) + "\n".join(body) + "\n" + FOOT
+        page = HEAD.format(title=e(f"{s['name']} · Compute Ledger"), desc=e(desc), ld=ld_html) + "\n".join(body) + "\n" + FOOT
         (a.out / f"{sid}.html").write_text(page, encoding="utf-8")
-        index_rows.append((s, kind, country, len(rec), len(calc), len(claim), len(eds)))
+        index_rows.append((s, kind, country, len(rec), len(calc), len(claim), len(chain)))
 
     # index
     kinds = sorted({k for _, k, *_ in index_rows})
@@ -357,7 +372,7 @@ def main():
                    f'<td class="v">{nr or ""}</td><td class="v">{nc or ""}</td><td class="v">{ncl or ""}</td><td class="v">{ne or ""}</td>'
                    f'<td class="m">{"yes" if s["lat"] else ""}</td></tr>')
     n_rec = sum(1 for x in index_rows if x[3])
-    idx = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / Sites</span>{nav_links()}</nav>',
+    idx = [f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / Sites</span>{nav_links(current="sites/")}</nav>', SEARCH,
            f'<p class="eyebrow">{len(index_rows)} sites · {len(countries)} countries and territories</p><h1>Sites</h1>',
            f'<p>One page for every site in the ledger\'s register: datacenters, the buildings and exchanges that file as datacenters, '
            f'crypto mining sites, nuclear plants, chip fabs and the smelters and refiners in the chain. {n_rec} have at least one figure from a record. '
@@ -376,14 +391,14 @@ rows.forEach(r=>{const ok=(!k.value||r.dataset.k===k.value)&&(!c.value||r.datase
 n.textContent=v+' of '+rows.length+' sites';}
 [q,k,c].forEach(x=>x.addEventListener('input',f));f();})();
 </script>"""]
-    (a.out / "index.html").write_text(HEAD.format(title="Sites · Compute Ledger", desc=e("Every site in the Compute Ledger, with what public records show.")) + "\n".join(idx) + "\n" + FOOT, encoding="utf-8")
+    (a.out / "index.html").write_text(HEAD.format(title="Sites · Compute Ledger", desc=e("Every site in the Compute Ledger, with what public records show."), ld="") + "\n".join(idx) + "\n" + FOOT, encoding="utf-8")
     (a.out / "site.css").write_text(CSS, encoding="utf-8")
     # a retired id keeps its address: a short page that sends the reader to the site's current page
     aliases = {r["retired_site_id"]: r for r in read_csv(PKG / "site_id_aliases.csv")}
     for old, r in sorted(aliases.items()):
         new = e(r["site_id"])
         (a.out / f"{old}.html").write_text(
-            HEAD.format(title="Moved · Compute Ledger", desc=e(f"{old} is now {r['site_id']}")).replace(
+            HEAD.format(title="Moved · Compute Ledger", desc=e(f"{old} is now {r['site_id']}"), ld="").replace(
                 '<link rel="stylesheet" href="site.css">', f'<link rel="stylesheet" href="site.css">\n<meta http-equiv="refresh" content="0; url={new}.html">\n<link rel="canonical" href="{new}.html">')
             + f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links()}</nav>\n'
             f'<h1>This site has one page</h1><p>The id <code>{e(old)}</code> was retired: {e(r["reason"])}. '

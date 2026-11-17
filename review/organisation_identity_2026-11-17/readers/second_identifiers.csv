@@ -1,0 +1,100 @@
+task_id,identifier_on_page,legal_name_on_page,status_on_page,notes
+J001,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J002,ZXTILKJKG63JELOEG630,"AMAZON.COM, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J003,0001018724,"AMAZON.COM, INC.",,"XBRL cover page (R1) of 8-K, period Jun. 01, 2022"
+J004,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J005,INR2EJN1ERAN0W5ZP974,MICROSOFT CORPORATION,ISSUED (entity ACTIVE),"Legal address Tumwater, Washington; no other names shown"
+J006,0000789019,MICROSOFT CORPORATION,,"XBRL cover page (R1) of 10-K, period Jun. 30, 2026"
+J007,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J008,BQ4BKCS1HXDV9HN80Z93,"META PLATFORMS, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J009,0001326801,"Meta Platforms, Inc.",,"XBRL cover page (R1) of 8-K, period Apr. 27, 2022"
+J010,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J011,1Z4GXXU7ZHVWFCD8TV52,ORACLE CORPORATION,ISSUED (entity ACTIVE),"Previous legal name shown: Ozark Holding Inc. (same LEI record, earlier name)"
+J012,0001341439,ORACLE CORP,,"10-K filing index, filed 2010-07-01; no former names shown"
+J013,549300EVUN2BTLJ3GT74,"EQUINIX, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J014,0001101239,EQUINIX INC,,"10-K/A filing index, filed 2023-02-27"
+J015,549300HKCZ31D08NEI41,"DIGITAL REALTY TRUST, INC.",ISSUED (entity ACTIVE),Maryland; no other names shown
+J016,0001297996,"DIGITAL REALTY TRUST, INC.",,"10-K filed 2026-02-13 jointly with DIGITAL REALTY TRUST, L.P. (CIK 0001494877, the operating partnership); the Inc. CIK is the one recorded here"
+J017,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J018,549300S4KLFTLO7GSQ80,NVIDIA CORPORATION,ISSUED (entity ACTIVE),Delaware; no other names shown
+J019,not printed on page,NVIDIA CORPORATION,,"Main 10-K document (fiscal year ended January 26, 2025); cover shows Commission file number 0-23985 but no CIK; the CIK appears only as the archive folder number in the URL (1045810)"
+J020,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J021,KNX4USFCNGPY45LOCE31,INTEL CORPORATION,ISSUED (entity ACTIVE),Delaware; no other names shown
+J022,0000050863,INTEL CORP,,"Form 4 filed 2026-05-15; Intel is the issuer (reporting person Smith Stacy J, CIK 0001415529)"
+J023,R2I72C950HOYXII45366,"ADVANCED MICRO DEVICES, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J024,0000002488,ADVANCED MICRO DEVICES INC,,"10-Q filing index, filed 2026-11-04"
+J025,549300WV6GIDOZJTV909,BROADCOM INC.,ISSUED (entity ACTIVE),"Previous legal name shown: Broadcom Limited (same LEI record, earlier name)"
+J026,0001730168,Broadcom Inc.,,Form 4 filed 2026-07-10; Broadcom is the issuer (reporting person DELLY GAYLA J)
+J027,B3DXGBC8GAIYWI2Z0172,"MICRON TECHNOLOGY, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J028,0000723125,MICRON TECHNOLOGY INC,,"8-K filing index, filed 2026-09-30"
+J029,549300TJB5YBRUPOG437,Dell Technologies Inc.,LAPSED (entity ACTIVE),Right entity but LEI registration has lapsed
+J030,0001571996,Dell Technologies Inc.,,Form 4 filed 2025-06-30; Dell is the issuer (reporting person Rios Brunilda)
+J031,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J032,549300BX44RGX6ANDV88,HEWLETT PACKARD ENTERPRISE COMPANY,ISSUED (entity ACTIVE),Delaware; no other names shown
+J033,0001645590,Hewlett Packard Enterprise Co,,"8-K filing index, filed 2026-04-03"
+J034,0001375365,"Super Micro Computer, Inc.",,SC 13G/A filed 2024-02-13 by VANGUARD GROUP INC (CIK 0000102909); Super Micro is the subject company
+J035,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J036,549300LKFJ962MZ46593,"CISCO SYSTEMS, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J037,0000858877,"CISCO SYSTEMS, INC.",,"XBRL cover page (R1) of 8-K, period May 13, 2026"
+J038,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J039,549300KB6NK5SBD14S87,台灣積體電路製造股份有限公司,ISSUED (entity ACTIVE),"Transliterated name shown: Taiwan Semiconductor Manufacturing Company Limited; Hsinchu, Taiwan"
+J040,0001046179,TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD,,"20-F filing index, filed 2026-04-16"
+J041,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J042,9884007ER46L6N7EI764,삼성전자(주),ISSUED (entity ACTIVE),"Alternative-language name shown: SAMSUNG ELECTRONICS CO., LTD; Suwon, South Korea"
+J043,0000879316,SAMSUNG ELECTRONICS CO LTD /FI,,"ARS filing index, filed 2004-10-28; EDGAR name carries the suffix /FI; an old filing, not a current registrant record"
+J044,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J045,988400XAIK6XISWQV045,에스케이하이닉스 주식회사,LAPSED (entity ACTIVE),"Alternative-language name shown: SK HYNIX INC.; Icheon-si, South Korea; LEI registration has lapsed"
+J046,0002120882,SK hynix Inc.,,"SCHEDULE 13D filed 2026-11-03 by SK hynix Inc.; subject company is Penguin Solutions, Inc. (CIK 0001616533), so the page is about another company's shares, but the SK hynix CIK is shown as the filer"
+J047,549300BA76VK784VMX48,GLOBALFOUNDRIES INC.,ISSUED (entity ACTIVE),Cayman Islands; no other names shown
+J048,0001709048,GLOBALFOUNDRIES Inc.,,Form 4 filed 2026-04-22; GlobalFoundries is the issuer (reporting person Dorchak Glenda)
+J049,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J050,391200YJCAGH9LF96P73,聯華電子股份有限公司,ISSUED (entity ACTIVE),"Transliterated name shown: United Microelectronics Corporation; Hsinchu City, Taiwan"
+J051,0001033767,UNITED MICROELECTRONICS CORP,,"20-F filing index, filed 2021-04-29"
+J052,30030004CM3GSZXX7O56,鸿海精密工业股份有限公司,ISSUED (entity ACTIVE),"Legal name printed in simplified characters; alternative-language name shown: Hon Hai Precision Industry Co., Ltd.; Tucheng, New Taipei City, Taiwan"
+J053,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J054,254900DIEONKUALBFM06,緯創資通股份有限公司,ISSUED (entity ACTIVE),"No English name shown on page; Zhubei, Taiwan"
+J055,5493004TETZ6IYF7CV44,FABRINET,Issued (entity Active),Cayman Islands (Camana Bay); no other names shown
+J056,0001408710,Fabrinet,,"10-Q filing index, filed 2026-05-05"
+J057,0001122411,"ASE Technology Holding Co., Ltd.",,"20-F header, filed 20200331; former names on the same CIK: ASE Industrial Holding Co., Ltd. (changed 20180430) and ADVANCED SEMICONDUCTOR ENGINEERING INC (changed 20000822)"
+J058,529900VHLRTKPWZJBM84,"AMKOR TECHNOLOGY, INC.",ISSUED (entity ACTIVE),"Delaware; Tempe, Arizona; no other names shown"
+J059,0001047127,"AMKOR TECHNOLOGY, INC.",,"8-K filing index, filed 2025-10-27"
+J060,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J061,5493006S177ZK2ZNBU43,CyrusOne Holdco LLC,LAPSED (entity ACTIVE),"Previous legal name shown: CYRUSONE INC.; record now names the LLC successor after the take-private, and the LEI registration has lapsed"
+J062,0001553023,CyrusOne Inc.,,"8-K filing index, filed 2022-01-25 (pre take-private)"
+J063,not printed on page,"QTS Realty Trust, Inc.",,"Main 10-K document (fiscal year ended December 31, 2014); cover shows Commission File Number 001-36109 but no CIK; the CIK appears only as the archive folder number in the URL (1577368)"
+J064,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J065,2549001YU2NNI3440B51,"STACK INFRASTRUCTURE PARENT, LLC",ISSUED (entity ACTIVE),"Record is for a holding entity named STACK Infrastructure Parent, LLC, not an operating company; no parent shown"
+J066,5299003RGB2LAZ65RK73,"Core Scientific, Inc..",ISSUED (entity ACTIVE),Name printed with a double full stop; Delaware; no other names shown
+J067,0001839341,"Core Scientific, Inc./tx",,Form 4 filed 2026-05-20; issuer EDGAR name carries the suffix /tx
+J068,2549007M2KGWVJ9XFP20,Bitdeer Technologies Group,ISSUED (entity ACTIVE),Cayman Islands; no other names shown
+J069,0001899123,Bitdeer Technologies Group,,"20-F filing index, filed 2026-04-30"
+J070,0001964789,Hut 8 Corp.,,"8-K filing index, filed 2026-05-06"
+J071,254900YWMA64Y1RPNJ12,Bitfarms Ltd.,RETIRED (entity INACTIVE),"LEI retired and entity marked inactive (Ontario, Toronto); may no longer be the current identifier"
+J072,0001812477,Bitfarms Ltd,,"6-K filing index, filed 2025-10-14"
+J073,0001507605,"MARA Holdings, Inc.",,Form 4 filed 2026-05-20; MARA is the issuer (reporting person Nowaid Zabi)
+J074,254900FZF02RB3NNGB71,IREN LIMITED,ISSUED (entity ACTIVE),"Previous legal names shown: IRIS ENERGY PTY LTD, Iris Energy Limited (same LEI record, earlier names)"
+J075,not printed on page,IREN Limited,,"Main 10-Q document (quarter ended September 30, 2026); cover shows Commission File Number 001-41072 but no CIK; the CIK appears only as the archive folder number in the URL (1878848)"
+J076,0000827876,"CLEANSPARK, INC.",,Form 4 filed 2025-02-14; CleanSpark is the issuer (reporting person Bradford Zachary)
+J077,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J078,5299005LKZAJQDQZDF73,"Riot Platforms, Inc.",Lapsed (entity Active),"Nevada (US-NV), Carson City; LEI registration has lapsed"
+J079,0001167419,"Riot Platforms, Inc.",,"10-Q filing index, filed 2026-08-10"
+J080,0001819989,Cipher Mining Inc.,,8-K filed 2025-09-26 under the former name Cipher Mining Inc.; page shows no later name
+J081,254900CVMW1SX2T78A64,TERAWULF INC.,ISSUED (entity ACTIVE),Delaware; no other names shown
+J082,0001083301,TERAWULF INC.,,Form 4 filed 2026-03-20; TeraWulf is the issuer (reporting person Bucella Michael C.)
+J083,2549004NE2B6RYXINZ02,APPLIED DIGITAL CORPORATION,ISSUED (entity ACTIVE),"Previous legal names shown: FLIGHT SAFETY TECHNOLOGIES, INC., APPLIED SCIENCE PRODUCTS, INC., APPLIED BLOCKCHAIN, INC.; Nevada"
+J084,0001144879,Applied Digital Corp.,,Form 4 filed 2025-10-28; Applied Digital is the issuer (reporting person Lee Rachel H.)
+J085,984500511DP2B6186053,"COREWEAVE, INC.",ISSUED (entity ACTIVE),Delaware; no other names shown
+J086,0001769628,"CoreWeave, Inc.",,Form 4 filed 2026-08-12; CoreWeave is the issuer (reporting person McBee Brannin)
+J087,0002002695,X.AI CORP.,,Form D filed 2024-12-05; state of incorporation NV; Palo Alto address
+J088,549300KP43CPCUJOOG15,VISTRA CORP.,ISSUED (entity ACTIVE),"Previous legal name shown: VISTRA ENERGY CORP. (same LEI record, earlier name)"
+J089,0001692819,Vistra Corp.,,"8-K filing index, filed 2026-11-06"
+J090,0001622536,Talen Energy Corporation,,"XBRL cover page (R1) of 10-Q, period Sep. 30, 2024"
+J091,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J092,635400IUIZZIUJSAMF76,Fortum Oyj,ISSUED (entity ACTIVE),"Espoo, Finland; no other names shown"
+J093,0001849056,Oklo Inc.,,"8-K filing index, filed 2026-06-08"
+J094,0000103682,VIRGINIA ELECTRIC & POWER CO,,"WRONG ENTITY RISK: joint 10-Q filed 2026-10-30 by VIRGINIA ELECTRIC & POWER CO (CIK 0000103682) and DOMINION ENERGY, INC (CIK 0000715957); the URL folder 715957 is the parent Dominion Energy's CIK, not Virginia Electric and Power's"
+J095,549300HE1ISW43LNKM54,Tennessee Valley Authority,ISSUED (entity ACTIVE),"Knoxville, Tennessee; no other names shown"
+J096,0001376986,Tennessee Valley Authority,,"10-K filing index, filed 2025-11-13"
+J097,could not open,,,text extraction returned url_not_found for the Wikidata page; no other source used
+J098,HWUPKR0MPOU8FGXBT394,Apple Inc.,ISSUED (entity ACTIVE),
+J099,0000320193,Apple Inc.,,"10-K filing index, filed 2025-10-31"

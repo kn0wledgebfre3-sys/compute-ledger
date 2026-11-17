@@ -1,0 +1,54 @@
+task_id,ledger_id,organisation
+I01,co-alphabet,Alphabet Inc.
+I02,co-amazon,"Amazon.com, Inc."
+I03,co-microsoft,Microsoft Corporation
+I04,co-meta,"Meta Platforms, Inc."
+I05,co-oracle,Oracle Corporation
+I06,co-equinix,"Equinix, Inc."
+I07,co-digital-realty,"Digital Realty Trust, Inc."
+I08,co-nvidia,NVIDIA Corporation
+I09,co-intel,Intel Corporation
+I10,co-amd,"Advanced Micro Devices, Inc."
+I11,co-broadcom,Broadcom Inc.
+I12,co-micron,"Micron Technology, Inc."
+I13,co-dell,Dell Technologies Inc.
+I14,co-hpe,Hewlett Packard Enterprise Company
+I15,co-supermicro,"Super Micro Computer, Inc."
+I16,co-cisco,"Cisco Systems, Inc."
+I17,co-tsmc,Taiwan Semiconductor Manufacturing Company Limited
+I18,co-samsung-electronics,"Samsung Electronics Co., Ltd."
+I19,co-sk-hynix,SK hynix Inc.
+I20,co-globalfoundries,GLOBALFOUNDRIES Inc.
+I21,co-umc,United Microelectronics Corporation
+I22,co-hon-hai,"Hon Hai Precision Industry Co., Ltd."
+I23,co-wistron,Wistron Corporation
+I24,co-fabrinet,Fabrinet
+I25,co-ase,"ASE Technology Holding / Advanced Semiconductor Engineering, Inc."
+I26,co-amkor,"Amkor Technology, Inc."
+I27,co-kyec,"King Yuan Electronics Co., Ltd."
+I28,co-tongfu,"Tongfu Microelectronics Co., Ltd."
+I29,org-cyrusone,CyrusOne
+I30,org-qts,QTS Realty Trust / Quality Technology Services
+I31,org-vantage-data-centers,Vantage Data Centers
+I32,org-stack-infrastructure,STACK Infrastructure
+I33,org-core-scientific,"Core Scientific, Inc."
+I34,org-bitdeer-technologies-group,Bitdeer Technologies Group
+I35,org-hut-8,Hut 8 Corp.
+I36,org-bitfarms,Bitfarms Ltd.
+I37,org-mara-holdings,"MARA Holdings, Inc."
+I38,org-iren,IREN Limited
+I39,org-cleanspark,"CleanSpark, Inc."
+I40,org-riot-platforms,"Riot Platforms, Inc."
+I41,org-cipher-digital,Cipher Digital Inc. (formerly Cipher Mining)
+I42,org-terawulf,TeraWulf Inc.
+I43,org-applied-digital,Applied Digital Corporation
+I44,org-coreweave,"CoreWeave, Inc."
+I45,org-xai,xAI (X.AI Corp.)
+I46,org-vistra,Vistra Corp.
+I47,org-talen-energy,Talen Energy Corporation
+I48,org-fortum,Fortum Oyj
+I49,org-oklo,Oklo Inc.
+I50,us-utility-dominion-va,Virginia Electric and Power Company (Dominion Energy Virginia)
+I51,us-federal-tva,Tennessee Valley Authority
+I52,org-switch-ltd,"Switch, Ltd."
+I53,org-apple-inc,Apple Inc.

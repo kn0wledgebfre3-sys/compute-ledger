@@ -274,7 +274,10 @@ def main():
                         ("us-nei-identity-check-2026-11-02", "us_nei_identity_check_2026-11-02/check_result.csv"),
                         ("ireland-licences-check-2026-11-02", "ireland_licences_check_2026-11-02/check_result.csv"),
                         ("us-nei-identity-round2-2026-11-17", "us_nei_identity_round2_2026-11-17/check_result.csv"),
-                        ("us-state-incentives-check-2026-11-17", "us_state_incentives_check_2026-11-17/check_result.csv")):
+                        ("us-state-incentives-check-2026-11-17", "us_state_incentives_check_2026-11-17/check_result.csv"),
+                        ("uk-round-2026-11-17", "uk_round_2026-11-17/check_result.csv"),
+                        ("organisation-identity-2026-11-17", "organisation_identity_2026-11-17/check_result.csv"),
+                        ("graph-check-2026-11-17", "graph_check_2026-11-17/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""
@@ -298,7 +301,8 @@ def main():
              "move_to_claim": "moved to the claim", "unattributed": "unattributed", "mislabelled_basis": "wrong basis",
              "not_found": "primary not found", "contradicted": "contradicted", "verified": "verified", "partial": "partly verified",
              "error": "errors", "inconsistency": "inconsistencies", "weak": "weak", "style": "style", "obtained": "obtained",
-             "contradicts": "contradicts the entry", "blocker": "blockers to use", "serious": "serious", "polish": "polish"}
+             "contradicts": "contradicts the entry", "blocker": "blockers to use", "serious": "serious", "polish": "polish",
+             "first_reading_only": "read once, not used"}
 
     def counts(rs, key):
         return ", ".join(f"{n} {LABEL.get(k, k) if key == 'severity' else k}" for k, n in Counter(x[key] for x in rs).most_common())

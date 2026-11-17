@@ -1,5 +1,5 @@
 {
- "edges": 207,
+ "edges": 254,
  "by_leg": {
   "mine_to_refiner": 0,
   "refiner_to_maker": 139,
@@ -12,12 +12,12 @@
   "fuel_to_site": 9,
   "water_to_site": 21,
   "site_to_tenant": 5,
-  "ownership": 2,
+  "ownership": 49,
   "hardware_to_end_of_life": 0
  },
  "by_side": {
-  "claim": 179,
-  "record": 28
+  "claim": 192,
+  "record": 62
  },
  "legs_without_edges": [
   "mine_to_refiner",

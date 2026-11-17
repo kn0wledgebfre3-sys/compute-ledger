@@ -1,0 +1,12 @@
+name_as_written,entity_id,note
+AMD,co-amd,
+City of Phoenix,org-city-of-phoenix,
+City of The Dalles (municipal water system),org-city-of-the-dalles,
+Core Scientific (the sites it leases to CoreWeave; the figure is company-level),org-core-scientific,
+CoreWeave,org-coreweave,
+EQT Corporation,org-eqt-corporation,
+Energy Transfer LP (Tiger Pipeline expansion with a 12-mile lateral),org-energy-transfer-lp,
+Fluidstack,org-fluidstack,
+Loudoun Water (reclaimed water distribution system),org-loudoun-water,
+Racine Water Utility,org-racine-water-utility,
+West Des Moines Water Works (WDMWW),org-west-des-moines-water-works,

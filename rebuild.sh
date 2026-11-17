@@ -9,7 +9,10 @@ python3 pipeline/validate_measurements.py
 python3 -I pipeline/build_chain.py | tail -1
 python3 -I pipeline/build_checks.py
 python3 -I pipeline/build_data_package.py
+python3 -I pipeline/build_graph.py
+python3 -I pipeline/build_data_package.py > /dev/null  # again: the data dictionary counts the graph's rows
 python3 -I site/build_page.py | tail -1
 python3 -I site/build_sites.py
+python3 -I site/build_graph_pages.py
 python3 -I site/build_explore.py
 bash ci_local.sh | tail -1

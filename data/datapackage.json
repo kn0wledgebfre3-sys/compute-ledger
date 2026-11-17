@@ -355,7 +355,7 @@
   {
    "name": "entity_register",
    "path": "climate_trace_seed/entity_register.csv",
-   "description": "Companies, utilities and registers that figures or chain links refer to.",
+   "description": "Organisations: companies, utilities, public bodies and registers that sites, figures or chain links refer to. Which names in the ledger's sources refer to which organisation is in sites/organisations/.",
    "schema": {
     "primaryKey": "entity_id",
     "fields": [
@@ -374,12 +374,12 @@
      {
       "name": "kind",
       "type": "string",
-      "description": "Company, municipal utility, cooperative, register..."
+      "description": "Company, municipal utility, cooperative, public body, joint venture, register..."
      },
      {
       "name": "country",
       "type": "string",
-      "description": "Country."
+      "description": "Where the organisation is registered or headquartered, where a document read gives it; empty otherwise (never inferred from where its sites are)."
      },
      {
       "name": "notes",
@@ -882,6 +882,151 @@
       "name": "status_now",
       "type": "string",
       "description": "What the current data show, recomputed at every build."
+     }
+    ]
+   }
+  },
+  {
+   "name": "graph_nodes",
+   "path": "graph/nodes.csv",
+   "description": "Every node of the ledger's graph (pipeline/build_graph.py; data/graph/README.md): organisations, sites, countries, regions, documents, entries, checks, figures and named parties.",
+   "schema": {
+    "primaryKey": "node_id",
+    "fields": [
+     {
+      "name": "node_id",
+      "type": "string",
+      "required": true,
+      "description": "type:id, for example org:co-alphabet, site:usa-xai-colossus-1-south-memphis, doc:d-ae2849d89b."
+     },
+     {
+      "name": "type",
+      "type": "string",
+      "required": true,
+      "enum": [
+       "org",
+       "site",
+       "country",
+       "region",
+       "doc",
+       "entry",
+       "check",
+       "figure",
+       "party"
+      ],
+      "description": "Kind of node."
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Name; for a document its title, for a figure its metric and value as published."
+     },
+     {
+      "name": "iri",
+      "type": "string",
+      "required": true,
+      "description": "Permanent address on the ledger's site."
+     },
+     {
+      "name": "page",
+      "type": "string",
+      "description": "Page, relative to the site root."
+     },
+     {
+      "name": "country",
+      "type": "string",
+      "description": "ISO 3166 alpha-3 of a site, organisation or region; the countries of an entry, separated by ';'."
+     },
+     {
+      "name": "kind",
+      "type": "string",
+      "description": "Kind of site or organisation; the main kind of document; a figure's metric."
+     },
+     {
+      "name": "detail",
+      "type": "string",
+      "description": "For a document its URL; for a site the operator as listed; for a figure its side; for an organisation the register's notes."
+     }
+    ]
+   }
+  },
+  {
+   "name": "graph_links",
+   "path": "graph/links.csv",
+   "description": "Every link of the ledger's graph, with the document that states it and the line it was read from, or the table of the ledger that holds it.",
+   "schema": {
+    "primaryKey": "link_id",
+    "fields": [
+     {
+      "name": "link_id",
+      "type": "string",
+      "required": true,
+      "description": "l- and ten hex digits, from the link's ends, relation, document and source."
+     },
+     {
+      "name": "from_id",
+      "type": "string",
+      "required": true,
+      "description": "node_id the link starts from."
+     },
+     {
+      "name": "relation",
+      "type": "string",
+      "required": true,
+      "description": "A relation in data/graph/vocabulary.jsonld."
+     },
+     {
+      "name": "to_id",
+      "type": "string",
+      "required": true,
+      "description": "node_id the link points to."
+     },
+     {
+      "name": "side",
+      "type": "string",
+      "enum": [
+       "",
+       "record",
+       "claim"
+      ],
+      "description": "record or claim where a document states the link; empty for the ledger's own bookkeeping."
+     },
+     {
+      "name": "basis",
+      "type": "string",
+      "description": "Kind of document (pipeline/measurement_vocab.json bases), or 'register' for a link one of the ledger's tables holds."
+     },
+     {
+      "name": "document_id",
+      "type": "string",
+      "description": "The document node (without doc:) that states it."
+     },
+     {
+      "name": "quoted_line",
+      "type": "string",
+      "description": "The words in the document that state the link, copied exactly (chain links)."
+     },
+     {
+      "name": "period_start",
+      "type": "string",
+      "description": "When the link held, if the document says."
+     },
+     {
+      "name": "period_end",
+      "type": "string",
+      "description": "As period_start."
+     },
+     {
+      "name": "source",
+      "type": "string",
+      "required": true,
+      "description": "The ledger table it comes from (chain:<edge_id>, site_register, measurements, entry_sources:<side>, ...)."
+     },
+     {
+      "name": "note",
+      "type": "string",
+      "description": "For a listed operator: the role and the name as listed."
      }
     ]
    }

@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="sites/site.css">
+<link rel="stylesheet" href="assets/graph.css">
 <style>
 .getdata{font-family:var(--mono);font-size:13px;line-height:1.9;margin:14px 0 0;color:var(--ink-2)}
 .filters select{font:inherit;font-size:15px;padding:7px 9px;border:1px solid var(--rule);background:var(--paper);color:var(--ink);flex:1 1 180px;max-width:100%}
@@ -46,12 +47,12 @@ code{font-family:var(--mono);font-size:.9em}
 </style>
 <body>
 <div class="wrap">
-<nav class="top"><span><a href="index.html">Compute Ledger</a> / Explore figures</span><span class="links"><a href="explore.html" aria-current="page">Explore figures</a><a href="map.html">Map</a><a href="sites/">Sites</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav>
+<nav class="top"><span><a href="index.html">Compute Ledger</a> / Explore figures</span><span class="links"><a href="explore.html" aria-current="page">Explore figures</a><a href="map.html">Map</a><a href="sites/">Sites</a><a href="org/">Organisations</a><a href="country/">Countries</a><a href="doc/">Documents</a><a href="chain.html">The chain</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav><div class="gsearch" data-base=""><input type="search" placeholder="Search sites, organisations, countries, documents" aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>
 <p class="eyebrow">Compute Ledger · version 1.0.0</p><h1>Explore every figure</h1>
-<p class="lede">Every figure the ledger holds, 3,959 of them, one row each, as the document printed it and with its source. <b>Records</b> are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. <b>Claims</b> are what companies and governments say. <b>Computed</b> figures are the ledger’s own arithmetic on records, with the formula in the details. Filter, then download the rows you chose, or open a figure’s details to cite it or report an error.</p>
+<p class="lede">Every figure the ledger holds, 4,281 of them, one row each, as the document printed it and with its source. <b>Records</b> are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. <b>Claims</b> are what companies and governments say. <b>Computed</b> figures are the ledger’s own arithmetic on records, with the formula in the details. Filter, then download the rows you chose, or open a figure’s details to cite it or report an error.</p>
 <p class="getdata" id="get-the-data">Get the data (version 1.0.0): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · <a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
 <div class="banner" id="banner" role="status"></div>
-<p id="status">Loading 3,959 figures…</p>
+<p id="status">Loading 4,281 figures…</p>
 <noscript><p>This page needs JavaScript to filter the figures. The same figures are in the <a href="data/compute-ledger.xlsx">Excel workbook</a> and in <a href="data/figures.json">figures.json</a>.</p></noscript>
 <div id="app" hidden>
 <div class="filters" id="filters">
@@ -74,6 +75,7 @@ code{font-family:var(--mono);font-size:.9em}
 </div>
 <footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not found or read a public record yet, not that none exists or that anything is wrong.</p><p>Data CC BY 4.0. <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new/choose">Report an error or a missing record</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger">Repository</a> · <a href="index.html">The ledger</a></p></footer>
 </div>
+<script src="assets/graph.js" defer></script>
 
 <script>
 (()=>{'use strict';
@@ -96,10 +98,12 @@ function cite(r){const c=D.cite,p=period(r);
     +c.site+'explore.html#'+r.measurement_id+'. Original source: '+[r.source_publisher,r.source_title?'“'+r.source_title+'”':'',r.source_date].filter(Boolean).join(', ')
     +(href(r.source_url)?', '+r.source_url:'')+'.';}
 function state(){const s={};for(const k of KEYS)s[k]=$(k).value;s.q=$('q').value.trim();s.qw=s.q.toLowerCase().split(/\s+/).filter(Boolean);
-  s.twice=$('twice').checked;s.sort=$('sort').value;s.subject=subject;return s;}
-let subject='',bnote='';
+  s.twice=$('twice').checked;s.sort=$('sort').value;s.subject=subject;s.org=org;s.doc=doc;return s;}
+let subject='',org='',doc='',orgSet=null,bnote='';
 function match(r,s,skip){
   if(s.subject&&r.subject_id!==s.subject&&r.entry_id!==s.subject)return false;
+  if(s.org&&!(orgSet&&orgSet.has(r.subject_type+':'+r.subject_id)))return false;
+  if(s.doc&&!(D.docs[s.doc]&&r.source_url===D.docs[s.doc][1]))return false;
   if(skip!=='country'&&s.country&&!r._cc.includes(s.country))return false;
   if(skip!=='topic'&&s.topic&&r._topic!==s.topic)return false;
   if(skip!=='metric'&&s.metric&&r.metric!==s.metric)return false;
@@ -152,15 +156,17 @@ function render(reset){const s=state();if(reset)shown=PAGE;
   $('dl').disabled=!view.length;$('dl').textContent=view.length===1?'Download this row (CSV)':'Download these '+fmt(view.length)+' rows (CSV)';
   if(!single)facets(s);}
 function sync(){const p=new URLSearchParams();const s=state();for(const k of KEYS)if(s[k])p.set(k,s[k]);if(s.q)p.set('q',s.q);if(s.twice)p.set('twice','1');
-  if(s.sort!=='place')p.set('sort',s.sort);if(subject)p.set('subject',subject);const q=p.toString();history.replaceState(null,'',location.pathname+(q?'?'+q:''));}
+  if(s.sort!=='place')p.set('sort',s.sort);if(subject)p.set('subject',subject);if(org)p.set('org',org);if(doc)p.set('doc',doc);const q=p.toString();history.replaceState(null,'',location.pathname+(q?'?'+q:''));}
 function setBanner(){let h=bnote;if(single)h='Showing one figure.'+bnote+' <a href="explore.html">Show every figure</a>';
   else if(subject){const nm=(D.sites[subject]||D.entries[subject]||D.entities[subject]||[subject])[0];h=(bnote?bnote+' ':'')+'Showing the figures for <b>'+esc(nm)+'</b>. <a href="#" id="unsubject">Show every figure</a>';}
+  else if(org){const o=D.orgs[org];h=(bnote?bnote+' ':'')+'Showing the figures for <b>'+esc(o?o[0]:org)+'</b>, its sites and the entries about it alone (<a href="org/'+esc(encodeURIComponent(org))+'.html">its page</a>). <a href="#" id="unsubject">Show every figure</a>';}
+  else if(doc){const d=D.docs[doc];h=(bnote?bnote+' ':'')+'Showing the figures read from <b>'+esc(d?d[0]:doc)+'</b> (<a href="doc/'+esc(encodeURIComponent(doc))+'.html">its page</a>). <a href="#" id="unsubject">Show every figure</a>';}
   $('banner').innerHTML=h;}
 function changed(){if(single||bnote){single=null;bnote='';}setBanner();sync();render(true);}
 function readUrl(){const p=new URLSearchParams(location.search);
   for(const k of KEYS){const v=p.get(k)||'';if(v&&![...$(k).options].some(o=>o.value===v))continue;$(k).value=v;}
   $('q').value=p.get('q')||'';$('twice').checked=p.get('twice')==='1';$('sort').value=['recent','published'].includes(p.get('sort'))?p.get('sort'):'place';
-  subject=p.get('subject')||'';
+  subject=p.get('subject')||'';org=D.orgs[p.get('org')]?p.get('org'):'';doc=D.docs[p.get('doc')]?p.get('doc'):'';orgSet=org?new Set(D.orgs[org][1]):null;
   const h=decodeURIComponent(location.hash.slice(1));single=null;bnote='';
   if(/^m-[0-9a-f]{10}$/.test(h)){let id=h;if(!ids.has(id)&&D.aliases[id]){id=D.aliases[id];bnote=' It was corrected: its earlier id '+esc(h)+' now points to '+esc(id)+'.';}
     if(ids.has(id))single=id;else bnote='No figure has the id '+esc(h)+'.';}
@@ -197,8 +203,8 @@ function init(data){D=data;const C=D.columns;
   $('sort').addEventListener('change',()=>{sync();render(true);});
   let tm;$('q').addEventListener('input',()=>{clearTimeout(tm);tm=setTimeout(changed,180);});
   $('twice').addEventListener('change',changed);
-  $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('twice').checked=false;subject='';changed();});
-  $('banner').addEventListener('click',e=>{if(e.target.id==='unsubject'){e.preventDefault();subject='';changed();}});
+  $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('twice').checked=false;subject='';org='';doc='';orgSet=null;changed();});
+  $('banner').addEventListener('click',e=>{if(e.target.id==='unsubject'){e.preventDefault();subject='';org='';doc='';orgSet=null;changed();}});
   $('more').addEventListener('click',()=>{shown+=PAGE;render(false);});
   $('dl').addEventListener('click',download);
   $('share').addEventListener('click',e=>copy(location.href,e.currentTarget));

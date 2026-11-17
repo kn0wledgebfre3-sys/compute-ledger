@@ -143,6 +143,9 @@ def qualifier_in_context(value_as_published: str, published_text) -> str:
     if q or not published_text or not value_as_published or value_as_published not in published_text:
         return q
     before = published_text[:published_text.index(value_as_published)][-24:].lower()
+    wide = published_text[:published_text.index(value_as_published)][-48:].lower()
+    if re.search(r"\b(not|no)\b[^.;]{0,30}\b(more than|over|exceed\w*)\s*$", wide):
+        return "upper_bound"  # 'shall not operate for more than 500 hours' is a cap
     if DURATION.search(value_as_published):
         before = re.sub(r"\bover\s*$", "", before)  # 'over 30 years' is a period, not a bound
     for name, pat in PREFIX_QUAL:
@@ -720,8 +723,8 @@ def feed_topics(T: Table, entries: dict):
             site = r.get("subject_site_id", "")
             T.add(feed=f"sites/topics/{folder.name}/figures.csv", subject_type="site" if site else "entry",
                   subject_id=site or r["entry_id"], entry_id=r["entry_id"], metric=r["metric"], metric_detail=r["metric_detail"],
-                  value=r["value"], unit=r["unit"], value_as_published=r["value_as_published"], period_start=r["period_start"],
-                  period_end=r["period_end"], basis=r["basis"], side=topic_side(r, entries),
+                  value=r["value"], value_high=r.get("value_high", ""), unit=r["unit"], value_as_published=r["value_as_published"], period_start=r["period_start"],
+                  period_end=r["period_end"], basis=r["basis"], side=r.get("side") or topic_side(r, entries),
                   source_url=r["document_url"], source_title=r["document_title"], source_publisher=r["publisher"],
                   source_date=r["document_date"], extraction="hand_transcribed", second_read=r.get("second_read", "no"),
                   notes=r["notes"], published_text=r["quoted_line"])

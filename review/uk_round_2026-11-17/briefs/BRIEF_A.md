@@ -1,0 +1,6 @@
+# Your part (A): permits for datacenter generators, and the West London grid constraint
+
+1. **Environment Agency permits** for datacenters in England: installation permits under the Environmental Permitting Regulations for combustion at datacenters (aggregated rated thermal input of 50 MW or more), and medium combustion plant or specified generator permits. The Environment Agency's public register and its permit decision documents ("decision document", "permit variation") name the operator, site, total rated thermal input (MWth), number and size of generators, permitted run hours, and the permit number (for example EPR/AB1234CD). Slough, Hayes, Park Royal, Dagenham, Crawley, Cambridgeshire and Hertfordshire host many. Also Natural Resources Wales (Newport) and SEPA (Scotland) if they have permitted datacenter combustion.
+2. **The West London electricity constraint**: the Greater London Authority's documents from 2022 onward on electricity capacity in Ealing, Hillingdon and Hounslow (how much capacity datacentres took, how long new housing was told to wait), and any later GLA, Ofgem or distribution network (SSEN, UK Power Networks) record of capacity reserved for datacentres.
+
+Write `result_A.csv` in this folder. Pace yourself: about 55 web searches in all.

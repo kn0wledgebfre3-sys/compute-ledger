@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="sites/site.css">
+<link rel="stylesheet" href="assets/graph.css">
 <link rel="stylesheet" href="vendor/leaflet-1.9.4/leaflet.css">
 <style>
 :root{--mk-rec:#00806A;--mk-claim:#C2491A;--mk-none:#4B5955}
@@ -70,11 +71,11 @@ code{font-family:var(--mono);font-size:.9em}
 </style>
 <body>
 <div class="wrap">
-<nav class="top"><span><a href="index.html">Compute Ledger</a> / Map</span><span class="links"><a href="explore.html">Explore figures</a><a href="map.html" aria-current="page">Map</a><a href="sites/">Sites</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav>
+<nav class="top"><span><a href="index.html">Compute Ledger</a> / Map</span><span class="links"><a href="explore.html">Explore figures</a><a href="map.html" aria-current="page">Map</a><a href="sites/">Sites</a><a href="org/">Organisations</a><a href="country/">Countries</a><a href="doc/">Documents</a><a href="chain.html">The chain</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav><div class="gsearch" data-base=""><input type="search" placeholder="Search sites, organisations, countries, documents" aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>
 <p class="eyebrow">Compute Ledger · version 1.0.0</p><h1>Map of sites</h1>
 <p class="lede">Every site the ledger holds with coordinates from a public document: datacenters, buildings that file as datacenters, crypto mining sites, chip fabs, smelters and refiners, and nuclear plants. The colour shows what the ledger has found for a site so far, not anything about the site itself. Click a site for its page and figures.</p>
 <p class="getdata" id="get-the-data">Get the data (version 1.0.0): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · <a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
-<p id="status">Loading 917 sites…</p>
+<p id="status">Loading 984 sites…</p>
 <noscript><p>This page needs JavaScript. Every site is listed on <a href="sites/">the sites page</a>.</p></noscript>
 <div id="app" hidden>
 <div class="filters" id="filters">
@@ -87,7 +88,7 @@ code{font-family:var(--mono);font-size:.9em}
 </div>
 <div id="map" role="region" aria-label="Map of the sites; the same sites are listed in the table below"></div>
 <ul class="legend"><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-rec)"/></svg><span><b>Records found</b> (<span id="n-rec"></span>): at least one figure from a record</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="var(--mk-claim)"/></svg><span><b>Claims only</b> (<span id="n-claim"></span>): only what the company or a government says</span></li><li><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="var(--paper)" stroke="var(--mk-none)" stroke-width="2"/></svg><span><b>No figures yet</b> (<span id="n-none"></span>): listed from a register, no figure read yet</span></li></ul>
-<p class="m" style="margin-top:10px">367 of 917 sites are placed from a document. The other 550 are in the list below but not on the map until a document gives their location.</p>
+<p class="m" style="margin-top:10px">367 of 984 sites are placed from a document. The other 617 are in the list below but not on the map until a document gives their location.</p>
 <div class="bar"><span class="count" id="count" aria-live="polite"></span><button class="btn" id="dl" type="button">Download these sites (CSV)</button></div>
 <div class="tw"><table class="sites"><thead><tr><th>Site</th><th>Kind</th><th>Where</th><th>What the ledger holds</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
 <p class="empty" id="empty" hidden>No site matches. Clear a filter, or search for fewer words.</p>
@@ -95,6 +96,7 @@ code{font-family:var(--mono);font-size:.9em}
 </div>
 <footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not found or read a public record yet, not that none exists or that anything is wrong.</p><p>Data CC BY 4.0. <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new/choose">Report an error or a missing record</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger">Repository</a> · <a href="index.html">The ledger</a></p></footer>
 </div>
+<script src="assets/graph.js" defer></script>
 
 <script src="vendor/leaflet-1.9.4/leaflet.js"></script>
 

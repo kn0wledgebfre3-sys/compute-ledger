@@ -1,0 +1,46 @@
+{
+ "nodes": 7090,
+ "links": 12433,
+ "nodes_by_type": {
+  "check": 28,
+  "country": 52,
+  "doc": 1037,
+  "entry": 216,
+  "figure": 4281,
+  "org": 399,
+  "party": 14,
+  "region": 79,
+  "site": 984
+ },
+ "links_by_relation": {
+  "about": 4281,
+  "acts_for": 2,
+  "assembles_for": 3,
+  "based_in": 44,
+  "cites": 1099,
+  "contracts_power_from": 7,
+  "examined": 162,
+  "fabricates_for": 8,
+  "leases_site_to": 5,
+  "listed_operator": 650,
+  "located_in": 1063,
+  "names": 204,
+  "owns": 46,
+  "packages_for": 8,
+  "published_by": 122,
+  "read_again": 273,
+  "read_from": 4281,
+  "refines_for": 139,
+  "renamed_as": 1,
+  "supplies_fuel_to": 9,
+  "supplies_memory_to": 3,
+  "supplies_power_to": 2,
+  "supplies_water_to": 21
+ },
+ "links_by_side": {
+  "claim": 2031,
+  "ledger table": 2518,
+  "record": 7884
+ },
+ "operator_names_not_matched": {}
+}

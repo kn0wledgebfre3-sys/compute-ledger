@@ -75,12 +75,20 @@ jobs:
           cmp /tmp/pkg/entries.csv data/climate_trace_seed/entries.csv || { echo "entries.csv is stale: run ./rebuild.sh and commit"; exit 1; }
           cmp /tmp/pkg/entry_sources.csv data/climate_trace_seed/entry_sources.csv || { echo "entry_sources.csv is stale: run ./rebuild.sh and commit"; exit 1; }
           cmp /tmp/pkg/DICTIONARY.md data/DICTIONARY.md || { echo "data/DICTIONARY.md is stale: run ./rebuild.sh and commit"; exit 1; }
+      - name: The graph validates and rebuilds identically
+        run: |
+          python3 -I pipeline/build_graph.py --out /tmp/graph
+          for f in nodes.csv links.csv graph.jsonld vocabulary.jsonld summary.json; do
+            cmp /tmp/graph/$f data/graph/$f || { echo "data/graph/$f is stale: run python3 pipeline/build_graph.py and commit"; exit 1; }
+          done
       - name: Site pages rebuild identically
         run: |
           python3 -I site/build_sites.py --out /tmp/sites > /dev/null
           diff -rq /tmp/sites docs/sites || { echo "docs/sites is stale: run python3 site/build_sites.py and commit"; exit 1; }
       - name: Explore page, map and downloads rebuild identically
         run: python3 -I site/build_explore.py --check
+      - name: Organisation, country, document and chain pages rebuild identically
+        run: python3 -I site/build_graph_pages.py --check
       - name: Citation files agree on the version
         run: |
           v1=$(sed -n 's/^version: "\(.*\)"$/\1/p' CITATION.cff); v2=$(python3 -c 'import json;print(json.load(open(".zenodo.json"))["version"])')

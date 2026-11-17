@@ -1,0 +1,1388 @@
+{
+ "@context": {
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+  "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "skos": "http://www.w3.org/2004/02/skos/core#",
+  "schema": "https://schema.org/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "qudt": "http://qudt.org/schema/qudt/"
+ },
+ "@graph": [
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Organisation",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Organisation",
+   "rdfs:comment": "A company, utility, public body or other organisation the ledger names.",
+   "rdfs:subClassOf": {
+    "@id": "schema:Organization"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Site",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Site",
+   "rdfs:comment": "A datacenter, fab, smelter or refiner, mining site or power plant in the site register.",
+   "rdfs:subClassOf": {
+    "@id": "schema:Place"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Document",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Document",
+   "rdfs:comment": "A document the ledger read: a record (regulator, court, grid operator, statistics office, auditor, registry, customs) or a claim (what a company or government says).",
+   "rdfs:subClassOf": {
+    "@id": "schema:CreativeWork"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Entry",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Entry",
+   "rdfs:comment": "A ledger entry: what the records show about one subject, what is claimed, and what is missing.",
+   "rdfs:subClassOf": {
+    "@id": "schema:CreativeWork"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Figure",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Figure",
+   "rdfs:comment": "One number as a document published it, with its period, the document, and whether it is a record or a claim.",
+   "rdfs:subClassOf": {
+    "@id": "qudt:QuantityValue"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Link",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Link",
+   "rdfs:comment": "A statement that one node relates to another, with the document that states it and the line it was read from.",
+   "rdfs:subClassOf": {
+    "@id": "prov:Entity"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#Check",
+   "@type": "rdfs:Class",
+   "rdfs:label": "Check",
+   "rdfs:comment": "A check of the ledger: what was read again, how, and what was found.",
+   "rdfs:subClassOf": {
+    "@id": "prov:Activity"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#NamedParty",
+   "@type": "rdfs:Class",
+   "rdfs:label": "NamedParty",
+   "rdfs:comment": "A party a document names that is in no register of the ledger yet.",
+   "rdfs:subClassOf": {
+    "@id": "schema:Thing"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#from",
+   "@type": "rdf:Property",
+   "rdfs:label": "from",
+   "rdfs:comment": "The node a link starts from."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#to",
+   "@type": "rdf:Property",
+   "rdfs:label": "to",
+   "rdfs:comment": "The node a link points to."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation",
+   "@type": "rdf:Property",
+   "rdfs:label": "relation",
+   "rdfs:comment": "What the link says (a concept in cl:relations)."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#side",
+   "@type": "rdf:Property",
+   "rdfs:label": "side",
+   "rdfs:comment": "record or claim: whether the document that states it is a record or a claim."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis",
+   "@type": "rdf:Property",
+   "rdfs:label": "basis",
+   "rdfs:comment": "The kind of document (a concept in cl:bases)."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#quotedLine",
+   "@type": "rdf:Property",
+   "rdfs:label": "quotedLine",
+   "rdfs:comment": "The words in the document that state the link, copied exactly."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#about",
+   "@type": "rdf:Property",
+   "rdfs:label": "about",
+   "rdfs:comment": "What a figure is about."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric",
+   "@type": "rdf:Property",
+   "rdfs:label": "metric",
+   "rdfs:comment": "What a figure measures (a concept in cl:metrics)."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#valueAsPublished",
+   "@type": "rdf:Property",
+   "rdfs:label": "valueAsPublished",
+   "rdfs:comment": "The value as the document printed it."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#unitText",
+   "@type": "rdf:Property",
+   "rdfs:label": "unitText",
+   "rdfs:comment": "The unit, where no QUDT unit is given."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#periodStart",
+   "@type": "rdf:Property",
+   "rdfs:label": "periodStart",
+   "rdfs:comment": "Start of the period a figure or link covers."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#periodEnd",
+   "@type": "rdf:Property",
+   "rdfs:label": "periodEnd",
+   "rdfs:comment": "End of the period."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#kind",
+   "@type": "rdf:Property",
+   "rdfs:label": "kind",
+   "rdfs:comment": "The kind of site or organisation."
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "relations"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/about",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "about",
+   "skos:definition": "a figure is about this site, organisation or entry",
+   "skos:closeMatch": {
+    "@id": "schema:about"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/acts_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "acts for",
+   "skos:definition": "a company holds a permit, land, an incentive agreement or an application for a site on behalf of another company, as a document states"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/assembles_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "assembles for",
+   "skos:definition": "an assembler or contract manufacturer builds boards, systems or servers for a buyer"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/based_in",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "based in",
+   "skos:definition": "an organisation's country as the ledger's register gives it (registration or headquarters)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/cites",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "cites",
+   "skos:definition": "a ledger entry cites this document, on its record side or its claim side",
+   "skos:closeMatch": {
+    "@id": "schema:citation"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/contracts_power_from",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "contracts power from",
+   "skos:definition": "a site operator holds a contract (PPA, tariff, offtake) for a plant's output"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/examined",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "examined",
+   "skos:definition": "a check of the ledger examined this site, organisation or entry"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/fabricates_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "fabricates for",
+   "skos:definition": "a foundry makes chips for a chip designer or buyer"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/hosts_compute_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "hosts compute for",
+   "skos:definition": "a site operator runs computing for a tenant"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/leases_site_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "leases site to",
+   "skos:definition": "a site owner leases the site or capacity to a tenant"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/listed_operator",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "listed operator",
+   "skos:definition": "a site was listed with this organisation as its operator, permit holder, applicant or occupant (the role is in the link's note)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/located_in",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "located in",
+   "skos:definition": "a site lies in a region or country, or a region in a country, as the site register gives it",
+   "skos:closeMatch": {
+    "@id": "schema:containedInPlace"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/mines_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "mines for",
+   "skos:definition": "a mine or mining company supplies ore or concentrate to a smelter or refiner"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/names",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "names",
+   "skos:definition": "a ledger entry names this organisation among those it concerns"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/operates",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "operates",
+   "skos:definition": "an entity operates a site"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/owns",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "owns",
+   "skos:definition": "one entity owns a site or another entity",
+   "skos:closeMatch": {
+    "@id": "schema:subOrganization"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/packages_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "packages for",
+   "skos:definition": "an assembly, test and packaging house (OSAT), or a packaging joint venture, packages and tests chips for a chip designer"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/published_by",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "published by",
+   "skos:definition": "a document was published by this organisation, as the ledger records its publisher",
+   "skos:closeMatch": {
+    "@id": "schema:publisher"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/read_again",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "read again",
+   "skos:definition": "a check of the ledger read this document again (it is named in the check's findings)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/read_from",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "read from",
+   "skos:definition": "a figure was read from this document, or computed from documents it names",
+   "skos:closeMatch": {
+    "@id": "prov:wasDerivedFrom"
+   }
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/receives_end_of_life_from",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "receives end of life from",
+   "skos:definition": "a recycler or refurbisher takes hardware retired from a site or company"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/refines_for",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "refines for",
+   "skos:definition": "a smelter or refiner supplies metal to a component maker, chipmaker or the filer of a conflict-minerals report"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/renamed_as",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "renamed as",
+   "skos:definition": "an organisation is the same organisation under a later name, as a document states"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/ships_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "ships to",
+   "skos:definition": "goods move from one country or port to another (customs statistics)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/supplies_fuel_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "supplies fuel to",
+   "skos:definition": "a pipeline or supplier delivers fuel to a site's generation"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/supplies_memory_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "supplies memory to",
+   "skos:definition": "a memory maker supplies memory to a chip or system maker"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/supplies_power_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "supplies power to",
+   "skos:definition": "a plant, utility or grid supplies electricity to a site or cluster"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relation/supplies_water_to",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#relations"
+   },
+   "skos:prefLabel": "supplies water to",
+   "skos:definition": "a utility or source supplies water to a site"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "bases"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/assured_disclosure",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "assured disclosure",
+   "skos:definition": "a company-reported figure covered by a third-party assurance statement; cite the statement and give its level (limited or reasonable) in notes"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/audit_or_court",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "audit or court",
+   "skos:definition": "an auditor's or court's finding"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/company_statement",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "company statement",
+   "skos:definition": "a party's statement in its own voice: a company's or industry body's release, report, plan or filing narrative, or a government's announcement, plan, forecast or target (as opposed to its binding decisions, statistics and gazetted rules)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/derived",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "derived",
+   "skos:definition": "computed by the ledger from other rows (formula in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/estimate_by_record_holder",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "estimate by record holder",
+   "skos:definition": "an estimate made by the public body that published it (e.g., a market monitor's counterfactual)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/filed",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "filed",
+   "skos:definition": "a figure a utility or operator filed with a regulator or grid operator (demand, forecast, contract)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/government_document",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "government document",
+   "skos:definition": "a statement of fact in a government agency's own document that is not a decision, a statistic or an estimate (for example an environmental assessment describing existing infrastructure)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/inventory",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "inventory",
+   "skos:definition": "a regulator's emissions or activity inventory"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/legislative_document",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "legislative document",
+   "skos:definition": "a bill, rapporteur's opinion or committee report (not enacted law)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/metered",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "metered",
+   "skos:definition": "a meter reading reported to or by a regulator, statistics office or public utility"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/ngo_report",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "ngo report",
+   "skos:definition": "a figure from a non-governmental organisation's own investigation, monitoring or report"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/official_statistic",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "official statistic",
+   "skos:definition": "a statistics office or government aggregate"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/peer_reviewed_study",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "peer reviewed study",
+   "skos:definition": "a figure from a peer-reviewed journal article"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/permitted",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "permitted",
+   "skos:definition": "a limit or rating in a permit or licence"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/press_report",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "press report",
+   "skos:definition": "a figure known only through a press report of a document"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/registry_record",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "registry record",
+   "skos:definition": "a record in a public registry (certificates, credits, retirements)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/regulator_decision",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "regulator decision",
+   "skos:definition": "a figure in a regulator's order or decision"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/standard_or_methodology",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "standard or methodology",
+   "skos:definition": "a figure stated in a standard-setter's, rater's or methodology document about its own rules"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#basis/utility_published",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#bases"
+   },
+   "skos:prefLabel": "utility published",
+   "skos:definition": "a figure a public utility, public power authority or grid operator published in its own documents (board papers, updates, statistics pages, presentations, letters to a regulator)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "metrics"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/approved_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Capacity approved",
+   "skos:definition": "power or apparent_power: capacity a regulator or utility approved or allocated"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/average_load",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Average load",
+   "skos:definition": "power: average draw over the period"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/carbon_credits",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Carbon credits",
+   "skos:definition": "mass: carbon credits or removals contracted, retired or claimed; say which in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/certificates_used",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Certificates used",
+   "skos:definition": "energy or share: electricity claimed through certificates (unbundled RECs, GOs, I-RECs) or PPAs, in MWh or as a share of consumption; say which instrument in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/cfe_share",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Carbon-free energy share",
+   "skos:definition": "share: hourly carbon-free energy share or similar matching metric; say the method in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/compute_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Compute capacity",
+   "skos:definition": "compute: computing power (EFLOPS or similar) as stated"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/concentration",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Concentration",
+   "skos:definition": "concentration: a pollutant concentration measured or limited"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/connected_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Grid capacity connected",
+   "skos:definition": "power or apparent_power: grid connection capacity, substation rating"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/contracted_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Grid capacity contracted",
+   "skos:definition": "power or apparent_power: capacity under contract or agreement (say which agreement type in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/cost_to_customers",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Cost to customers",
+   "skos:definition": "money or intensity: bill impact, cost shifted, capacity-market cost (a per-unit figure uses money_per_unit)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/count_other",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Count",
+   "skos:definition": "count: any other count (say what in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/customer_count",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Customer count",
+   "skos:definition": "count: customers or metered accounts (say which)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/distance",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Distance",
+   "skos:definition": "length"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/duration_other",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Duration",
+   "skos:definition": "duration: any other period (moratorium length, permit term)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/electricity_by_sourcing_method",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Electricity by how it was sourced",
+   "skos:definition": "energy or share: electricity a company attributes to a sourcing method other than a certificate or PPA in its renewable matching or market-based accounting (on-site generation, renewable content of the grid mix, or no instrument); the method in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/electricity_consumed",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Electricity used",
+   "skos:definition": "energy: electricity used over the period (metered where basis=metered)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/electricity_generated",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Electricity generated",
+   "skos:definition": "energy: generation over the period"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/electricity_sales",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Electricity sales",
+   "skos:definition": "energy: a utility's sales over the period"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/electricity_share",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Share of an electricity total",
+   "skos:definition": "share: a subject's share of a stated electricity total (name the total in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_avoided",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Emissions avoided",
+   "skos:definition": "mass: emissions a project states it avoided (not emitted); never add to emissions totals"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_co",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "CO emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_co2",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "CO2 emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_co2e",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Greenhouse gases emitted (CO2e)",
+   "skos:definition": "mass: CO2-equivalent; say GWP horizon and scope in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_hap",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Hazardous air pollutants emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_intensity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Emissions intensity",
+   "skos:definition": "intensity"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_limit",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Emissions limit",
+   "skos:definition": "mass: a permitted emissions cap; name the pollutant in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_nox",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "NOx emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_pm10",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "PM10 emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_pm25",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "PM2.5 emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_scope1",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Scope 1 emissions",
+   "skos:definition": "mass: Scope 1 emissions"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_scope2_location",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Scope 2 emissions, location-based",
+   "skos:definition": "mass: Scope 2 emissions, location-based (grid-average factors)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_scope2_market",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Scope 2 emissions, market-based",
+   "skos:definition": "mass: Scope 2 emissions, market-based (after certificates, PPAs and supplier factors)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_scope3",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Scope 3 emissions",
+   "skos:definition": "mass: Scope 3 emissions (say which categories in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_so2",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "SO2 emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/emissions_voc",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "VOC emitted",
+   "skos:definition": "mass"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/energy_consumed_total",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Energy used, all fuels",
+   "skos:definition": "energy: all fuels and electricity used over the period"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/floor_area",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Floor area",
+   "skos:definition": "floor_area"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/forecast_demand",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Forecast demand",
+   "skos:definition": "power or energy or thermal_power: forecast load (MW), consumption (GWh, TWh) or thermal load for a future period"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/generation_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generating capacity",
+   "skos:definition": "power or thermal_power: generating plant capacity, electrical or heat (not standby)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/generator_count",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generators",
+   "skos:definition": "count: generating units"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/generator_fuel_burned",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generator fuel burned",
+   "skos:definition": "energy: fuel burned by on-site generators (thermal energy, not electricity generated); name fuels in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/generator_hours",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generator hours",
+   "skos:definition": "duration: run hours, limit or actual (say which in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/hardware_lifetime",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Hardware lifetime",
+   "skos:definition": "duration: server or equipment useful life"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/heat_delivered",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Heat delivered",
+   "skos:definition": "energy: waste heat delivered to a heat network"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/investment",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Investment",
+   "skos:definition": "money: capital spend, announced or recorded"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/it_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "IT capacity",
+   "skos:definition": "power: IT load capacity as stated"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/jobs",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Jobs",
+   "skos:definition": "count: jobs, stated or audited (say which in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/land_area",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Land area",
+   "skos:definition": "area"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/load_factor",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Load factor",
+   "skos:definition": "share or ratio"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/natural_gas_burned",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Natural gas burned",
+   "skos:definition": "energy: natural gas burned on site"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/noise_level",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Noise level",
+   "skos:definition": "sound"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/other",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Other figure",
+   "skos:definition": "anything not above; metric_detail must say what it is"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/peak_demand",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Peak demand",
+   "skos:definition": "power: peak or billing demand; say which (billing, coincident, non-coincident) in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/permitted_generation_as_stated",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generation permitted (as stated)",
+   "skos:definition": "power_unspecified: a permit's generator capacity where the document does not say whether it is electrical or thermal"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/permitted_generation_thermal_input",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Generation permitted (thermal input)",
+   "skos:definition": "thermal_power: rated thermal input permitted"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/permitted_standby_generation",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Standby generation permitted",
+   "skos:definition": "power: standby generators permitted (MWe, sum of unit ratings)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/planned_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Capacity planned",
+   "skos:definition": "power: announced or planned site capacity"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/price_or_tariff",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Price or tariff",
+   "skos:definition": "intensity (money_per_unit) or money"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/production_mineral",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Mineral production",
+   "skos:definition": "mass: mine or refinery output; name the mineral in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/public_money",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Public money",
+   "skos:definition": "money: tax exemption, subsidy, abatement, grant; say which in metric_detail"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/pue",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "PUE (power usage effectiveness)",
+   "skos:definition": "ratio: power usage effectiveness"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/requested_capacity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Capacity requested",
+   "skos:definition": "power or apparent_power: capacity requested or in a connection queue"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/share_other",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Share",
+   "skos:definition": "share: any other percentage (say what of what in metric_detail)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/site_count",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Sites",
+   "skos:definition": "count: datacenters, campuses, buildings, projects"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/spent_fuel_stored",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Spent fuel stored",
+   "skos:definition": "mass or count: spent nuclear fuel held at a site (pool and dry storage) as of a date; metric_detail says assemblies or initial heavy metal and names the inventory"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/temperature",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Temperature",
+   "skos:definition": "temperature: a design or limit temperature"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/trade_quantity",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Trade quantity",
+   "skos:definition": "count or mass: quantity of goods crossing a border in a period, by product code and partner, from customs statistics"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/trade_value",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Trade value",
+   "skos:definition": "money: value of goods crossing a border in a period, by product code and partner, from customs statistics"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/uranium_purchased",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Uranium purchased",
+   "skos:definition": "mass: uranium purchased or delivered, in U3O8 equivalent; metric_detail gives origin, buyer group and delivery year"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/voltage_level",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Voltage level",
+   "skos:definition": "voltage: a connection voltage"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/waste_generated",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Waste generated",
+   "skos:definition": "mass: e-waste or other waste generated"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/waste_recycled",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Waste recycled",
+   "skos:definition": "mass or share"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/water_allocation",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Water allocation",
+   "skos:definition": "volume or volume_rate: a permitted or allocated amount"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/water_consumed",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Water consumed",
+   "skos:definition": "volume or volume_rate: water consumed (evaporated or not returned)"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/water_discharged",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Water discharged",
+   "skos:definition": "volume or volume_rate: water returned or discharged"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/water_rate",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Water rate",
+   "skos:definition": "volume_rate: water use or allocation per day or second"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metric/water_withdrawn",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#metrics"
+   },
+   "skos:prefLabel": "Water withdrawn",
+   "skos:definition": "volume or volume_rate: water taken, as a total or a rate"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind",
+   "@type": "skos:ConceptScheme",
+   "skos:prefLabel": "sitekind"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/crypto_mining",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "crypto mining",
+   "skos:definition": "Crypto mining site"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/crypto_to_ai_conversion",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "crypto to ai conversion",
+   "skos:definition": "Crypto mining site moving to AI or hosting"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/datacenter",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "datacenter",
+   "skos:definition": "Datacenter"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/fab",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "fab",
+   "skos:definition": "Chip fab or packaging plant"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/mixed_building_with_datacenter",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "mixed building with datacenter",
+   "skos:definition": "Building that contains a datacenter"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/nuclear_plant",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "nuclear plant",
+   "skos:definition": "Nuclear plant"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/smelter_refiner",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "smelter refiner",
+   "skos:definition": "Smelter or refiner"
+  },
+  {
+   "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind/telecom_exchange",
+   "@type": "skos:Concept",
+   "skos:inScheme": {
+    "@id": "https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab#sitekind"
+   },
+   "skos:prefLabel": "telecom exchange",
+   "skos:definition": "Telephone exchange filed as a datacenter"
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # Roadmap
 
-Written 2026-10-23 and reorganised the same evening; updated 2026-11-02. The Climate TRACE emails and eight others went out on 26 October 2026. From here the work is organised by what each item is waiting for: data the ledger can mine now (section 4), a person with a browser, a records request or a setting (section 5), or time (section 6). `review/INTAKE.csv` is the working list of every awaited dataset, with its status and the file it lands in; this file says why and in what order. Every item names the public record it rests on and an estimate in working days.
+Written 2026-10-23 and reorganised the same evening; updated 2026-11-02 and 2026-11-17. The Climate TRACE emails and eight others went out on 26 October 2026. From here the work is organised by what each item is waiting for: data the ledger can mine now (section 4), a person with a browser, a records request or a setting (section 5), or time (section 6). `review/INTAKE.csv` is the working list of every awaited dataset, with its status and the file it lands in; this file says why and in what order. Every item names the public record it rests on and an estimate in working days.
 
 The rule does not change: a company's statement enters as a claim, a regulator's, court's, grid operator's, statistical office's, auditor's or customs authority's document enters as a record, and nothing enters without a URL.
 
@@ -29,6 +29,23 @@ The rule does not change: a company's statement enters as a claim, a regulator's
 - Water stress: WRI Aqueduct 4.0 baseline water stress for the 305 sites located by 2026-10-24 (the 62 placed on 2026-11-02 are not joined yet) (`data/climate_trace_seed/water_stress.csv`, `WATER_STRESS.md`), shown on each site page; 97 agree with a separate lookup.
 - One page per site (`docs/sites/`), Irish site emissions (`sites/metered/ireland_emissions_notes.md`), citation files for a Zenodo release (`RELEASING.md`).
 - A full system check before publication: five independent reviews, a primary re-read of 40 entries never re-read before, and a classification of every press and NGO figure (`review/system_check_2026-10-24/`).
+
+## 1b. Done 2026-11-17
+
+- ~~The ledger as a graph~~: one page per organisation, country and document, with the same sections on every page of a kind, and each page's neighbourhood drawn; the chain drawn on its own page and on each site and organisation page; `data/graph/` (CSV and JSON-LD) and the vocabulary page. Which names are which organisation is set down by hand in `sites/organisations/`.
+- ~~United Kingdom~~: seven entries, 322 figures and 67 sites, each figure read twice (`review/uk_round_2026-11-17/`).
+- ~~Organisations~~: 78 identifiers (LEI, SEC CIK) and 47 group links, each read twice (`review/organisation_identity_2026-11-17/`).
+- ~~A check of the graph~~: 52 links drawn at random; 20 read against their documents; two roles corrected (`review/graph_check_2026-11-17/`).
+
+Open from this round:
+
+| Item | Record source | Days |
+|---|---|---|
+| Place the 67 UK sites on the map: the permits give grid references and the planning documents addresses | the Environment Agency's and Natural Resources Wales's permits; the councils' decisions | 1 |
+| Wikidata items for the 47 organisations with identifiers: the second reading could not open wikidata.org | Wikidata item pages | 0.5 |
+| Group links not found for 14 companies (among them Vantage, STACK, NTT and Aligned project companies in Virginia, EdgeConneX and K2 in Ireland, and MSFT MCIO Limited, whose register entry states that it has no registrable person or legal entity; its filed accounts would name the ultimate parent) | national company registers, read in a browser where they refuse scripts | 2 |
+| The 32 sampled graph links not yet read (Virginia permits, EPA's inventory queries, benchmarking data services) | the same documents, read in a browser | 1 |
+| Countries of registration for the 17 organisations added through group links | the register entries already cited | 0.5 |
 
 ## 2. Open items stated in the package (kept for the record; each now sits in section 4 or 5)
 

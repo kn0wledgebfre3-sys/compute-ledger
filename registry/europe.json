@@ -945,5 +945,972 @@
   "verification_status": "verified",
   "verification_note": "Both AERs read directly on 2026-10-23; sentences quoted verbatim.",
   "last_checked": "2026-10-24"
+ },
+ {
+  "id": "uk-ea-nrw-datacentre-generator-permits",
+  "country": "United Kingdom",
+  "region": "England and Wales",
+  "site_or_subject": "Environmental permits for datacentre standby generators (Environment Agency; Natural Resources Wales)",
+  "operator": "Multiple operators (see the UK site list)",
+  "lat": 51.51,
+  "lon": -0.6,
+  "category": "fuel",
+  "record": "The Environment Agency's decision documents for datacentre standby generating plant, read for 40 installations in England (permits and variations issued 2018 to 2026), permit the aggregate rated thermal input of the generators, the fuel they can burn rather than electricity out. The largest is Amazon's Didcot North campus: 925 MWth across 129 generators (permit EPR/GP3127LV, granted 27/07/2026). Others include Data Centre Staples Corner (409.36 MWth after a variation issued 20/05/2025), NTT Dagenham (335.15 MWth after a variation issued 17/12/2024), Ark Spring Park, Corsham (328.2 MWth after a variation) and Amazon's Linmere Island site (324.6 MWth, 42 generators, granted 29/01/2026). Most permits cap emergency running at 500 hours a year for the installation and testing at less than 50 hours a year per generator or stack; some set 20 or 22 hours. For the Stockley Park campus the Agency refused part of the 2021 application (data halls London 7 and London 8). Natural Resources Wales lists permit DB3691FK for Microsoft's Imperial Park site in Newport as issued in January 2026.",
+  "record_sources": [
+   {
+    "title": "Decision document Virtus LON11 EPR/DP3348QS/A001",
+    "url": "https://assets.publishing.service.gov.uk/media/64c3b3547aea5b000d6a8e15/Decision_document_Virtus_LON11_EPRDP3348QSA001.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke A001 Decision document (EPR/TP3120LE)",
+    "url": "https://assets.publishing.service.gov.uk/media/6968eb326958e5645144b0d1/Application_Bespoke_A001_Decision_document_-_07012026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-01-07"
+   },
+   {
+    "title": "Application Variation V003 Decision Document (EPR/BP3945QX/V003)",
+    "url": "https://assets.publishing.service.gov.uk/media/69e6018844a079b27f997f50/Application_Variation_V003_Decision_Document_-_15042026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-04-15"
+   },
+   {
+    "title": "Decision document Campus EPR/BP3945QX/A001",
+    "url": "https://assets.publishing.service.gov.uk/media/64d2455ba4045e000da84c1b/Decision_document_Campus_EPRBP3945QXA001.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document (EPR/AP3427SQ)",
+    "url": "https://assets.publishing.service.gov.uk/media/69846ade468d351e1406b4b8/Application_Bespoke_A001_Decision_Document_-_29012026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-01-29"
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document (EPR/ZP3527SS)",
+    "url": "https://assets.publishing.service.gov.uk/media/68e64d9649e17d00a56fff0e/Application_Bespoke_A001_Decision_Document_-_03102025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-10-06"
+   },
+   {
+    "title": "EPR/AP3903PD/A001 Decision Document",
+    "url": "https://assets.publishing.service.gov.uk/media/61976d7bd3bf7f055c4b760d/EPRAP3903PDA001_Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2021-11-16"
+   },
+   {
+    "title": "Decision Document YP3329SB",
+    "url": "https://assets.publishing.service.gov.uk/media/66cefb13704a0794913a89a2/Decision_Document_YP3329SB.pdf",
+    "publisher": "Environment Agency",
+    "date": "2024-08-14"
+   },
+   {
+    "title": "Application Bespoke Decision Document (EPR/TP3839QU)",
+    "url": "https://assets.publishing.service.gov.uk/media/664359c8b7249a4c6e9d33db/Application_Bespoke_Decision_Document_-_24042024.pdf",
+    "publisher": "Environment Agency",
+    "date": "2024-04-24"
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document (EPR/JP3647JU)",
+    "url": "https://assets.publishing.service.gov.uk/media/67938f8c7b75412c254f4b0e/Application_Bespoke_A001_-_Decision_Document_-_22012025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-01-22"
+   },
+   {
+    "title": "PP3309MK A001 Application Bespoke Decision Document",
+    "url": "https://assets.publishing.service.gov.uk/media/63cfc847d3bf7f3c40d67246/PP3309MK_A001_Application_Bespoke_Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Variation V002 Decision Document (EPR/QP3706LH/V002)",
+    "url": "https://assets.publishing.service.gov.uk/media/68371f204115cfe5bfaa2cb1/Application_Variation_V002_Descision_Document_-_20052025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-05-20"
+   },
+   {
+    "title": "02 Docklands Final DD (EPR/QP3108ST/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/6311cb91e90e077b77e70108/02_Docklands_Final_DD.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Decision Document FP3000LY",
+    "url": "https://assets.publishing.service.gov.uk/media/624bfbebd3bf7f32afeba097/Decision_Document_FP3000LY.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Decision Document - LP3005BL Final",
+    "url": "https://assets.publishing.service.gov.uk/media/617c0f958fa8f529777ffd49/Decision_Document_-_LP3005BL_Final.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document (EPR/GP3127LV)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a7077d1cceb23e86789783c/Application_Bespoke_A001_Decision_Document_-_27072026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-07-27"
+   },
+   {
+    "title": "Application Bespoke A001 Permit (EPR/GP3127LV)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a7077d10ddb7e4831c62b62/Application_Bespoke_A001_Permit_-27072026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-07-27"
+   },
+   {
+    "title": "Application Bespoke A001 Decision document (EPR/GP3721SQ)",
+    "url": "https://assets.publishing.service.gov.uk/media/6899eccdad0cbc0e27643221/Application_Bespoke_A001_Decision_document_-_30_07_2025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-07-30"
+   },
+   {
+    "title": "Applicatin Bespoke Decision Document 23052024 (EPR/DP3107LF)",
+    "url": "https://assets.publishing.service.gov.uk/media/6659b3d58f90ef31c23ebcd9/Applicatin_Bespoke_Decision_Document_23052024.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Decision document (EPR/HP3136DK)",
+    "url": "https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/748773/Decision_document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2018-10-12"
+   },
+   {
+    "title": "Decision document (EPR/KP3139DW)",
+    "url": "https://assets.publishing.service.gov.uk/media/5c46fe3be5274a6e52aa6071/Decision_document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2019-01-18"
+   },
+   {
+    "title": "Decision document (EPR-CP3339DZ)",
+    "url": "https://assets.publishing.service.gov.uk/media/5c405fd340f0b61704aec4c6/Decision_document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2019-01-11"
+   },
+   {
+    "title": "Decision Document (EPR/QP3533ED)",
+    "url": "https://assets.publishing.service.gov.uk/media/5a7f45aeed915d74e33f5672/Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Decision document (EPR/YP3935QM)",
+    "url": "https://assets.publishing.service.gov.uk/media/5d23428040f0b609f298d9e6/Decision_document__pdf_.pdf",
+    "publisher": "Environment Agency",
+    "date": "2019-07-01"
+   },
+   {
+    "title": "Decision Document (EPR/LP3303PR/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/5e5f8d1ad3bf7f108502ec85/Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2020-02-26"
+   },
+   {
+    "title": "Application Variation V004 Decision Document (EPR/LP3303PR/V004)",
+    "url": "https://assets.publishing.service.gov.uk/media/68bed2db223d92d088f01db6/Application_Variation_V004_Decision_Document_-_29082025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-08-29"
+   },
+   {
+    "title": "Decision Document CP3409BH (EPR/CP3409BH/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/602b8a35e90e070556671415/Decision_Document_CP3409BH.pdf",
+    "publisher": "Environment Agency",
+    "date": "2021-02-09"
+   },
+   {
+    "title": "Decision Document TP3500PB V003",
+    "url": "https://assets.publishing.service.gov.uk/media/659d5659aaae22000d56dc91/Decision_Document_TP3500PB-V003.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke Decision Document-16102023 (EPR/DP3906BE)",
+    "url": "https://assets.publishing.service.gov.uk/media/653b771180884d000df71bf7/Application_Bespoke_Decision_Document-16102023.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke Decision Document - 08122023 (EPR/CP3042QG)",
+    "url": "https://assets.publishing.service.gov.uk/media/657afbca0467eb000d55f829/Application_Bespoke_Decision_Document_-_08122023.pdf",
+    "publisher": "Environment Agency",
+    "date": "2023-12-08"
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document - 11 02 2025 (EPR/JP3929SJ)",
+    "url": "https://assets.publishing.service.gov.uk/media/67adda2a2c594609b38acd39/Application_Bespoke_A001_Decision_Document_-_11_02_2025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-02-11"
+   },
+   {
+    "title": "Decision Document London 14 Data Centre (EPR/UP3624SW)",
+    "url": "https://assets.publishing.service.gov.uk/media/67ceee211e2f37b1f3fd1401/Decision_Document_London_14_Data_Centre.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-03-04"
+   },
+   {
+    "title": "Application Bespoke A001 Decision Document - 02062025 (EPR/EP3022ST)",
+    "url": "https://assets.publishing.service.gov.uk/media/6846bf6757f3515d9611f0e3/Application_Bespoke_A001_Decision_Document_-_02062025.pdf",
+    "publisher": "Environment Agency",
+    "date": "2025-06-02"
+   },
+   {
+    "title": "Application Variation V002 Notice Issue - 19022026 (EPR/FP3630EU/V002)",
+    "url": "https://assets.publishing.service.gov.uk/media/69a160923e672177d0bc7767/Application_Variation_V002_Notice_Issue_-_19022026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-02-19"
+   },
+   {
+    "title": "Application Variation V002 Decision Document - 19022026",
+    "url": "https://assets.publishing.service.gov.uk/media/69a160a1c497bac082bc776c/Application_Variation_V002_Decision_Document_-_19022026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-02-19"
+   },
+   {
+    "title": "Decision Document EP3508PS A001",
+    "url": "https://assets.publishing.service.gov.uk/media/6283a2bfd3bf7f1f46f9b672/Decision_Document_EP3508PS_A001.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "DD CP3902LV (EPR/CP3902LV/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/61e7f57a8fa8f50597fb3042/DD_CP3902LV.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Variation V003 Decision Document - 17122024 (EPR/CP3902LV/V003)",
+    "url": "https://assets.publishing.service.gov.uk/media/6769485a4e2d5e9c0bde9d1f/Application_Variation_V003_Decision_Document_-_17122024.pdf",
+    "publisher": "Environment Agency",
+    "date": "2024-12-17"
+   },
+   {
+    "title": "Decision Document BP3800PZ (EPR/BP3800PZ/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/6204fb57e90e077f7ca77840/Decision_Document_BP3800PZ.pdf",
+    "publisher": "Environment Agency",
+    "date": "2022-02-10"
+   },
+   {
+    "title": "Application Bespoke Decision Document - 19122023 (EPR/BP3546QP)",
+    "url": "https://assets.publishing.service.gov.uk/media/6582d797fc07f300128d456a/Application_Bespoke_Decision_Document_-_19122023.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Application Bespoke Decision Document 29092023 (EPR/DP3442QV)",
+    "url": "https://assets.publishing.service.gov.uk/media/651ab8d97c2c4a000d95e33e/Application_Bespoke_Decision_Document_29092023.pdf",
+    "publisher": "Environment Agency",
+    "date": "2023-09-28"
+   },
+   {
+    "title": "Decision Document NP3829SP",
+    "url": "https://assets.publishing.service.gov.uk/media/6566050a75007400131ded52/Decision_Document_NP3829SP.pdf",
+    "publisher": "Environment Agency",
+    "date": ""
+   },
+   {
+    "title": "Decision Document (EPR/PP3003PW/A001)",
+    "url": "https://assets.publishing.service.gov.uk/media/5f072844d3bf7f2bf63bddf7/Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2020-07-07"
+   },
+   {
+    "title": "Application Variation V003 Decision Document - 07112024 (EPR/PP3003PW/V003)",
+    "url": "https://assets.publishing.service.gov.uk/media/673373d879e9143625613589/Application_Variation_V003_Decision_Document_-_07112024.pdf",
+    "publisher": "Environment Agency",
+    "date": "2024-11-13"
+   },
+   {
+    "title": "Decision Document VP3235DJ",
+    "url": "https://assets.publishing.service.gov.uk/media/5e328b1eed915d093b9d3d4b/Decision_Document_VP3235DJ.pdf",
+    "publisher": "Environment Agency",
+    "date": "2020-01-27"
+   },
+   {
+    "title": "Decision Document SP3237JU",
+    "url": "https://assets.publishing.service.gov.uk/media/5cc3089040f0b64039aede55/Decision_Document_SP3237JU.pdf",
+    "publisher": "Environment Agency",
+    "date": "2019-04-24"
+   },
+   {
+    "title": "Decision Document (EPR/BP3530YR)",
+    "url": "https://assets.publishing.service.gov.uk/media/5d15e22c40f0b609ccf7e4b5/Decision_Document.pdf",
+    "publisher": "Environment Agency",
+    "date": "2019-06-25"
+   },
+   {
+    "title": "Application Variation V002 Decision Document - 03062026 (EPR/WE4588AB/V002)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a202c72dbcb60fc6ccb29d2/Application_Variation_V002_Decision_Document_-_03062026.pdf",
+    "publisher": "Environment Agency",
+    "date": "2026-06-03"
+   },
+   {
+    "title": "MSFT MCIO Limited - consultation on environmental permit application (PAN-026552)",
+    "url": "https://naturalresources.wales/permits-and-permissions/permit-applications-consultations-and-decisions/current-consultations-environmental-permit-applications/msft-mcio-limited/?lang=en",
+    "publisher": "Natural Resources Wales",
+    "date": ""
+   },
+   {
+    "title": "Our environmental permitting decisions monthly report",
+    "url": "https://naturalresources.wales/permits-and-permissions/permit-applications-consultations-and-decisions/final-environmental-permitting-decisions/?lang=en",
+    "publisher": "Natural Resources Wales",
+    "date": "2026-01"
+   },
+   {
+    "title": "EN8 8XH, Global Infrastructure UK Limited: environmental permit application advertisement - EPR/ZP3128SD/A001",
+    "url": "https://www.gov.uk/government/publications/en8-8xh-global-infrastructure-uk-limited-environmental-permit-application-advertisement-eprzp3128sda001/en8-8xh-global-infrastructure-uk-limited-environmental-permit-application-advertisement-eprzp3128sda001",
+    "publisher": "Environment Agency",
+    "date": "2024-05-24"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "No permit read states IT capacity or electrical output, so thermal input cannot be read as power drawn from the grid. Only decision documents published on GOV.UK were read: the Agency's public register is not searchable by sector, and standard-rules and medium combustion plant permits were not read. SEPA's guidance names no datacentre permit in Scotland. Google's application at Cheshunt (EPR/ZP3128SD/A001) has no decision found. No site is placed on the map yet: the documents give addresses and grid references.",
+  "confidence": "high",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "uk-west-london-grid-constraint-datacentres",
+  "country": "United Kingdom",
+  "region": "West London (Ealing, Hillingdon, Hounslow)",
+  "site_or_subject": "West London electricity capacity constraint: housing connections delayed and datacentre demand contracted",
+  "operator": "Multiple operators",
+  "lat": 51.51,
+  "lon": -0.42,
+  "category": "grid_policy",
+  "record": "The Greater London Authority's documents record that from 2022 new housing in Ealing, Hillingdon and Hounslow was told to wait for electricity connections: until the late 2020s, or in some cases 2030 (June 2022), up to 2035 (July 2022), and 2037 as the earliest connection date for projects above 1MVA (June 2023). The utilities' letter to the Mayor (12 September 2022) gives 443MW of contracted demand connections to the transmission system and 18 accepted SSEN connection applications of over 10MW, without saying what kind of customer they are; the GLA's November 2022 update says National Grid ESO 'currently have over 3GW of data centre demand contracted in the region', without defining the region. The West London Local Area Energy Plan (2023) counts 22 existing datacentres with 273 MW of IT load. SSEN's Iver 132kV plan (2025) counts over 600MVA of datacentres already connected and contracted. The GLA reports homes unblocked since: 7,800 (March 2024), 11,481 (November 2024) and 16,944 permitted homes (February 2025); the London Assembly's report (December 2025) says over 12,000 new homes had connections by early 2025.",
+  "record_sources": [
+   {
+    "title": "Update on new approach to demand connections in West London to facilitate housing",
+    "url": "https://www.london.gov.uk/media/98405/download",
+    "publisher": "SSEN (DSO), National Grid ESO, National Grid Electricity Transmission; published by GLA",
+    "date": "2022-09-12"
+   },
+   {
+    "title": "West London Electricity Capacity Constraints Update (November 2022)",
+    "url": "https://london.gov.uk/media/98682/download",
+    "publisher": "Greater London Authority",
+    "date": "2022-11"
+   },
+   {
+    "title": "West London Local Area Energy Plan - Subregional Report (Phase 1)",
+    "url": "https://www.london.gov.uk/media/107525/download",
+    "publisher": "West London Energy Planning Partnership (GLA and West London boroughs); prepared by Arup; published on london.gov.uk",
+    "date": "2023-07"
+   },
+   {
+    "title": "West London Electricity Capacity Constraints Update (March 2024)",
+    "url": "https://www.london.gov.uk/media/105111/download",
+    "publisher": "Greater London Authority",
+    "date": "2024-03"
+   },
+   {
+    "title": "West London electricity capacity constraints and energy planning",
+    "url": "https://democracy.brent.gov.uk/documents/s146071/06.+GLA+Electricity+Paper.pdf",
+    "publisher": "Greater London Authority (paper hosted by Brent Council)",
+    "date": "2024-11-19"
+   },
+   {
+    "title": "West London Electricity Capacity Constraints Update (February 2025)",
+    "url": "https://www.london.gov.uk/media/108378/download",
+    "publisher": "Greater London Authority",
+    "date": "2025-02"
+   },
+   {
+    "title": "Gridlocked: how planning can ease London's electricity constraints",
+    "url": "https://www.london.gov.uk/sites/default/files/2025-12/Planning%20Regeneration%20Committee%20-%20Energy%20Infrastructure%20Report%20FINAL.pdf",
+    "publisher": "London Assembly Planning and Regeneration Committee",
+    "date": "2025-12-01"
+   },
+   {
+    "title": "Iver 132kV GSP Strategic Development Plan (draft for consultation)",
+    "url": "https://www.ssen.co.uk/globalassets/about-us/dso/consultation-library/iver-132kv-grid-supply-point---sdp---for-consultation.pdf",
+    "publisher": "Scottish and Southern Electricity Networks (SSEN Distribution)",
+    "date": "2025-05"
+   },
+   {
+    "title": "FOI response MGLA060622-2383 (Electricity Capacity in West London)",
+    "url": "https://www.london.gov.uk/media/62957/download",
+    "publisher": "Greater London Authority",
+    "date": "2022-06-17"
+   },
+   {
+    "title": "West London Electrical Capacity Constraints July 2022",
+    "url": "https://www.london.gov.uk/media/4975/download",
+    "publisher": "Greater London Authority (Infrastructure Coordination Service)",
+    "date": "2022-07"
+   },
+   {
+    "title": "West London Electricity Capacity Constraints Update (June 2023)",
+    "url": "https://www.london.gov.uk/media/101619/download",
+    "publisher": "Greater London Authority",
+    "date": "2023-06"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [],
+  "gap": "No document read gives the capacity datacentres hold in West London from the network operators' own queue: the GLA describes the queue as confidential and its datacentre forecast is unpublished. No UK Power Networks figure was found. The 3GW is for an undefined region.",
+  "confidence": "medium",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "uk-datacentre-planning-decisions-2023-2026",
+  "country": "United Kingdom",
+  "region": "England, Wales and Scotland",
+  "site_or_subject": "Planning decisions on datacentres, 2023 to 2026: appeals, committee decisions and directions",
+  "operator": "Multiple applicants (see the UK site list)",
+  "lat": 51.53,
+  "lon": -0.52,
+  "category": "land_biodiversity",
+  "record": "Secretary of State decisions on appeals: Woodlands Park, Iver, Woodlands 1 dismissed on 30 October 2023 (163,000 sqm GEA, 147 MW IT load, 52.4 ha); Woodlands 2 allowed on 9 July 2025 (up to 72,000 sqm GEA in 2 buildings); Court Lane, Iver allowed on 6 December 2024 (up to 65,000 sqm, a 140MW grid connection reserved, generators not to exceed 88); Manor Farm, Poyle allowed on 10 June 2026 (36,368 sqm GIA, 72 MW IT, 47 generators). Council officer reports read: Hillingdon, Colt at Hayes Bridge (250MW secured through two National Grid connections, 74 generators, recommended for approval 2 October 2025) and Ark's Union Park UP4 (28 MW IT, 14 generators); Bridgend, Vantage at the former Ford engine plant (ten buildings, 392 backup diesel generators); Redcar and Cleveland, Teesworks (reserved matters for 462,419 sqm in six units, approved under delegated powers). The government directed the Dartford project into the development consent route on 1 July 2026. Edinburgh's council refused South Gyle on 9 February 2026; Scottish Ministers recalled the appeal on 17 August 2026.",
+  "record_sources": [
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/N0410/W/24/3347353 (Woodlands Park, Iver)",
+    "url": "https://www.slough.gov.uk/downloads/file/5111/cd-7-01-appeal-decision-relating-to-woodlands-park-landfill-site-dated-9-july-2025-reference-3347353-",
+    "publisher": "Ministry of Housing, Communities and Local Government (copy published by Slough Borough Council as inquiry core document CD 7.01)",
+    "date": "2025-07-09"
+   },
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/N0410/W/22/3307420 (Woodlands Park)",
+    "url": "https://www.ftbchambers.co.uk/images/uploads/documents/Combined_DL_IR_R_to_C_Woodlands_Park.pdf",
+    "publisher": "Department for Levelling Up, Housing and Communities (copy published by FTB Chambers)",
+    "date": "2023-10-30"
+   },
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/N0410/W/24/3337981 (Court Lane Industrial Estate, Iver)",
+    "url": "https://www.slough.gov.uk/downloads/file/5110/cd-7-03-appealdecisionrelatingtocourtlaneindustrialestatecourtlaneiversl0-9hl-dated-6-december-2024-reference-3337981-",
+    "publisher": "Ministry of Housing, Communities and Local Government (copy published by Slough Borough Council as inquiry core document CD 7.03)",
+    "date": "2024-12-06"
+   },
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/J0350/W/25/3366043 (Manor Farm, Slough)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a292d6edb0592d809052b94/260610_Combined_DL_IR_RtoC_-_Manor_Farm_Slough_-_3366043.pdf",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "date": "2026-06-10"
+   },
+   {
+    "title": "Planning committee report, application 78343/APP/2025/719",
+    "url": "https://modgov.hillingdon.gov.uk/documents/s64694/Hayes%20Bridge%20Retail%20Park%20Uxb%20Road.pdf",
+    "publisher": "London Borough of Hillingdon",
+    "date": "2025-10-02"
+   },
+   {
+    "title": "Planning committee report, application 75111/APP/2025/739",
+    "url": "https://modgov.hillingdon.gov.uk/documents/s64459/739%20REPORT.pdf",
+    "publisher": "London Borough of Hillingdon",
+    "date": "2025-09-04"
+   },
+   {
+    "title": "Officer report, reserved matters application R/2025/0382/ESM",
+    "url": "https://planning.redcar-cleveland.gov.uk/Document/Download?module=PLA&recordNumber=85406&planId=719824&imageId=83&isPlan=False&fileName=Officer%20report%20_R20250382ESM.pdf",
+    "publisher": "Redcar and Cleveland Borough Council",
+    "date": "2025-07-31"
+   },
+   {
+    "title": "60,000sqm data centre approved for Iver Heath",
+    "url": "https://www.maidenhead-advertiser.co.uk/news/planning/201771/60-000sqm-data-centre-approved-for-iver-heath.html",
+    "publisher": "Maidenhead Advertiser (press)",
+    "date": "2025-06"
+   },
+   {
+    "title": "Iver Amazon data centre (Planning Geek article)",
+    "url": "https://www.planninggeek.co.uk/2026/iver-amazon-data-centre/",
+    "publisher": "Planning Geek (press)",
+    "date": "2026-10-08"
+   },
+   {
+    "title": "Local council in the London commuter belt approves Amazon's massive M25 hub despite air quality fears",
+    "url": "https://techradar.com/pro/need-for-data-centres-outweighs-other-considerations-local-council-in-the-london-commuter-belt-approves-amazons-massive-m25-hub-despite-air-quality-fears",
+    "publisher": "TechRadar (press)",
+    "date": "2026-10-07"
+   },
+   {
+    "title": "Green light for 'monster' data centre at former AkzoNobel site",
+    "url": "https://www.sloughexpress.co.uk/news/planning/701854/green-light-for-monster-data-centre-at-former-akzonobel-site.html",
+    "publisher": "Slough Express (press)",
+    "date": "2025-11-29"
+   },
+   {
+    "title": "Officer report, application P/00072/128 (enabling works)",
+    "url": "https://democracy.slough.gov.uk/documents/s77735/Report.pdf",
+    "publisher": "Slough Borough Council",
+    "date": ""
+   },
+   {
+    "title": "Google Data Centre (application EPF/0849/25)",
+    "url": "https://www.northweald-pc.gov.uk/google-data-centre",
+    "publisher": "North Weald Bassett Parish Council",
+    "date": ""
+   },
+   {
+    "title": "Google's latest UK data centre gains planning approval, despite local opposition",
+    "url": "https://datacentrereview.com/2025/12/googles-latest-uk-data-centre-gains-planning-approval-despite-local-opposition/",
+    "publisher": "Data Centre Review (press)",
+    "date": "2025-12-16"
+   },
+   {
+    "title": "Planners green light £10bn Northumberland data centre",
+    "url": "https://www.acenet.co.uk/news/infrastructure-intelligence/planners-green-light-10bn-northumberland-data-centre/",
+    "publisher": "Infrastructure Intelligence / ACE (press)",
+    "date": "2025-03-05"
+   },
+   {
+    "title": "North Lincolnshire approves plans for major AI data centre campus",
+    "url": "https://datacentrereview.com/2026/03/north-lincolnshire-approves-plans-for-major-ai-data-centre-campus/",
+    "publisher": "Data Centre Review (press)",
+    "date": "2026-03-12"
+   },
+   {
+    "title": "Officer report, hybrid application P/25/247/HYB",
+    "url": "https://democratic.bridgend.gov.uk/documents/s36191/Officers%20Report_P25247HYB.pdf",
+    "publisher": "Bridgend County Borough Council",
+    "date": "2025-10-02"
+   },
+   {
+    "title": "Direction under section 35(1) Planning Act 2008 (AI data centre campus)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a44f717065c5aec12a4e4e7/Direction_Granted.pdf",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "date": "2026-07-01"
+   },
+   {
+    "title": "DPEA case PPA-230-2794 (planning permission appeal)",
+    "url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582",
+    "publisher": "Scottish Government Planning and Environmental Appeals Division",
+    "date": "2026-08-17"
+   }
+  ],
+  "claim": "Applicants' figures as decisions, reports and announcements give them: Woodlands 2, £1billion and 1,100 to 1,600 construction jobs; Manor Farm, about 490 construction and 65 operational jobs; Hayes Bridge, 232 FTE on site; Bridgend, about 1,500 construction FTE; Iver Heath (CyrusOne), 90 MW and £1.2 billion; Cambois (QTS), up to £10bn; Wapseys Wood, up to 300 MW IT and £2billion.",
+  "claim_sources": [
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/N0410/W/24/3347353 (Woodlands Park, Iver)",
+    "url": "https://www.slough.gov.uk/downloads/file/5111/cd-7-01-appeal-decision-relating-to-woodlands-park-landfill-site-dated-9-july-2025-reference-3347353-",
+    "publisher": "Ministry of Housing, Communities and Local Government (copy published by Slough Borough Council as inquiry core document CD 7.01)",
+    "date": "2025-07-09"
+   },
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/N0410/W/22/3307420 (Woodlands Park)",
+    "url": "https://www.ftbchambers.co.uk/images/uploads/documents/Combined_DL_IR_R_to_C_Woodlands_Park.pdf",
+    "publisher": "Department for Levelling Up, Housing and Communities (copy published by FTB Chambers)",
+    "date": "2023-10-30"
+   },
+   {
+    "title": "Secretary of State decision letter and Inspector's report, appeal APP/J0350/W/25/3366043 (Manor Farm, Slough)",
+    "url": "https://assets.publishing.service.gov.uk/media/6a292d6edb0592d809052b94/260610_Combined_DL_IR_RtoC_-_Manor_Farm_Slough_-_3366043.pdf",
+    "publisher": "Ministry of Housing, Communities and Local Government",
+    "date": "2026-06-10"
+   },
+   {
+    "title": "Planning committee report, application 78343/APP/2025/719",
+    "url": "https://modgov.hillingdon.gov.uk/documents/s64694/Hayes%20Bridge%20Retail%20Park%20Uxb%20Road.pdf",
+    "publisher": "London Borough of Hillingdon",
+    "date": "2025-10-02"
+   },
+   {
+    "title": "Planning committee report, application 75111/APP/2025/739",
+    "url": "https://modgov.hillingdon.gov.uk/documents/s64459/739%20REPORT.pdf",
+    "publisher": "London Borough of Hillingdon",
+    "date": "2025-09-04"
+   },
+   {
+    "title": "Officer report, reserved matters application R/2025/0382/ESM",
+    "url": "https://planning.redcar-cleveland.gov.uk/Document/Download?module=PLA&recordNumber=85406&planId=719824&imageId=83&isPlan=False&fileName=Officer%20report%20_R20250382ESM.pdf",
+    "publisher": "Redcar and Cleveland Borough Council",
+    "date": "2025-07-31"
+   },
+   {
+    "title": "60,000sqm data centre approved for Iver Heath",
+    "url": "https://www.maidenhead-advertiser.co.uk/news/planning/201771/60-000sqm-data-centre-approved-for-iver-heath.html",
+    "publisher": "Maidenhead Advertiser (press)",
+    "date": "2025-06"
+   },
+   {
+    "title": "CyrusOne Plans Pioneering New London Facility with Sustainability At Its Core",
+    "url": "https://www.cyrusone.com/resources/press-releases/cyrusone-plans-pioneering-new-london-facility-with-sustainability-at-its-core",
+    "publisher": "CyrusOne (company press release)",
+    "date": "2025-06-13"
+   },
+   {
+    "title": "Local council in the London commuter belt approves Amazon's massive M25 hub despite air quality fears",
+    "url": "https://techradar.com/pro/need-for-data-centres-outweighs-other-considerations-local-council-in-the-london-commuter-belt-approves-amazons-massive-m25-hub-despite-air-quality-fears",
+    "publisher": "TechRadar (press)",
+    "date": "2026-10-07"
+   },
+   {
+    "title": "Green light for 'monster' data centre at former AkzoNobel site",
+    "url": "https://www.sloughexpress.co.uk/news/planning/701854/green-light-for-monster-data-centre-at-former-akzonobel-site.html",
+    "publisher": "Slough Express (press)",
+    "date": "2025-11-29"
+   },
+   {
+    "title": "£1.3bn Essex data centre receives planning approval",
+    "url": "https://www.acenet.co.uk/news/infrastructure-intelligence/1-3bn-essex-data-centre-receives-planning-approval/",
+    "publisher": "Infrastructure Intelligence / ACE (press)",
+    "date": "2025-09-29"
+   },
+   {
+    "title": "Planners green light £10bn Northumberland data centre",
+    "url": "https://www.acenet.co.uk/news/infrastructure-intelligence/planners-green-light-10bn-northumberland-data-centre/",
+    "publisher": "Infrastructure Intelligence / ACE (press)",
+    "date": "2025-03-05"
+   },
+   {
+    "title": "North Lincolnshire approves plans for major AI data centre campus",
+    "url": "https://datacentrereview.com/2026/03/north-lincolnshire-approves-plans-for-major-ai-data-centre-campus/",
+    "publisher": "Data Centre Review (press)",
+    "date": "2026-03-12"
+   },
+   {
+    "title": "Statement of Common Ground for Culham Campus (Policy AS11), Joint Local Plan 2041 examination",
+    "url": "https://www.southandvale.gov.uk/app/uploads/2026/04/LPA59-AS11-Statement-of-Common-Ground-for-Culham-Campus.pdf",
+    "publisher": "South Oxfordshire and Vale of White Horse District Councils with Carter Jonas for UKAEA",
+    "date": "2026-03-26"
+   },
+   {
+    "title": "Officer report, hybrid application P/25/247/HYB",
+    "url": "https://democratic.bridgend.gov.uk/documents/s36191/Officers%20Report_P25247HYB.pdf",
+    "publisher": "Bridgend County Borough Council",
+    "date": "2025-10-02"
+   },
+   {
+    "title": "Tech giant Microsoft to create 120 jobs at new data centre",
+    "url": "https://nation.cymru/news/tech-giant-microsoft-to-create-120-jobs-at-new-data-centre",
+    "publisher": "Nation.Cymru (press)",
+    "date": "2024-07-04"
+   },
+   {
+    "title": "Rejected Edinburgh data centre needs EIA before appeal, says Scottish Gov",
+    "url": "https://datacentrereview.com/?p=90331",
+    "publisher": "Data Centre Review (press)",
+    "date": "2026-08-04"
+   },
+   {
+    "title": "Section 35 Direction qualifying request, SDC M40 Campus",
+    "url": "https://assets.publishing.service.gov.uk/media/69b7ece3ba47c264e6c8cfba/Request_Document_-_SDC_M40_Campus_-_Section_35_Direction.pdf",
+    "publisher": "Applicant's request (published on GOV.UK)",
+    "date": "2026-01-21"
+   },
+   {
+    "title": "Harworth and Microsoft receive resolution to grant planning consent for hyperscale data centre and I&L space at Skelton Grange, Leeds",
+    "url": "https://harworthgroup.com/2026/04/27/harworth-and-microsoft-receive-resolution-to-grant-planning-consent-for-hyperscale-data-centre-and-il-space-at-skelton-grange-leeds/",
+    "publisher": "Harworth Group (company announcement)",
+    "date": "2026-04-27"
+   },
+   {
+    "title": "Newham Council approves plans for hyperscale data centre",
+    "url": "https://worldconstructionnetwork.com/news/newham-council-approves-plans-hyperscale-data-centre",
+    "publisher": "World Construction Network (press)",
+    "date": "2024-10-17"
+   },
+   {
+    "title": "West London hyperscale data centre approved",
+    "url": "https://www.londonbuildexpo.com/news/west-london-hyperscale-data-centre-approved-1bn-digital-infrastructure-boost",
+    "publisher": "London Build Expo (press)",
+    "date": "2026-05-06"
+   }
+  ],
+  "gap": "Several decisions are known from the press only (Iver Heath, Ridgeway, AkzoNobel Slough, Wickford, Loughton, Cambois, Elsham, Canning Town, Premier Park), because the councils' reports could not be read. Few decisions state IT capacity or water use; no decision read states metered water or electricity. Jobs and investment are the applicants' figures, and construction and operational jobs are not always separated.",
+  "confidence": "medium",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "uk-national-datacentre-demand-estimates",
+  "country": "United Kingdom",
+  "region": "Great Britain",
+  "site_or_subject": "National estimates of datacentre electricity demand and the grid connection queue (NESO, Ofgem, Parliament)",
+  "operator": "All operators",
+  "lat": 51.5,
+  "lon": -0.12,
+  "category": "grid_policy",
+  "record": "NESO's Future Energy Scenarios 2025 estimate GB datacentre demand now at 7.6 TWh from 2.4 GW connected (year not stated), and in 2050 between 30 and 71 TWh across the pathways (65 TWh Holistic Transition, 71 TWh Electric Engagement, 51 TWh Hydrogen Evolution, 30 TWh Falling Behind; 14.1, 14.6, 9.9 and 6.1 GW connected). Its Clean Power 2030 annex puts demand at 5 TWh today and 22 TWh in 2030. In written evidence to the Environmental Audit Committee NESO forecasts around 5.2 GW connected and just over 20 TWh by 2030, and says connection requests exceed 70 GW, with nearly 59 GW of datacentres awaiting connection at transmission level. Ofgem's consultation of 29 July 2026 counts around 73 GW of datacentres across approximately 315 projects in the contracted demand queue, and proposes a commitment fee of approximately £237,500 to £712,500 per MW of requested capacity for large projects. The Parliamentary Office of Science and Technology (March 2026) counts around 450 large datacentres in the UK using about 2% of all UK electricity.",
+  "record_sources": [
+   {
+    "title": "Future Energy Scenarios: NESO Pathways to Net Zero 2025 (V5)",
+    "url": "https://www.neso.energy/document/364541/download",
+    "publisher": "National Energy System Operator (NESO)",
+    "date": "2025-11-21"
+   },
+   {
+    "title": "Future Energy Scenarios (FES) 2025: Economics Annex",
+    "url": "https://www.neso.energy/document/374246/download",
+    "publisher": "National Energy System Operator (NESO)",
+    "date": "2025-12"
+   },
+   {
+    "title": "Future Energy Scenarios: ESO Pathways to Net Zero (FES 2024)",
+    "url": "https://www.neso.energy/document/321041/download",
+    "publisher": "National Grid ESO",
+    "date": "2024-07"
+   },
+   {
+    "title": "Clean Power 2030, Annex 1: Electricity demand and supply analysis",
+    "url": "https://neso.energy/document/346791/download",
+    "publisher": "National Energy System Operator (NESO)",
+    "date": ""
+   },
+   {
+    "title": "Written submission from NESO (DCU0081), Environmental Audit Committee inquiry: Risks and opportunities to the sustainability of data centres in the UK",
+    "url": "https://committees.parliament.uk/writtenevidence/166090/html/",
+    "publisher": "National Energy System Operator (NESO), published by House of Commons Environmental Audit Committee",
+    "date": ""
+   },
+   {
+    "title": "Curate - Demand Connections Reform (consultation on proposed data centre connection reforms)",
+    "url": "https://www.ofgem.gov.uk/sites/default/files/2026-07/Proposed-data-centre-connection-reforms-curate-consultation-document.pdf",
+    "publisher": "Ofgem",
+    "date": "2026-07-29"
+   },
+   {
+    "title": "What are data centres and how sustainable are they? (POSTnote 762)",
+    "url": "https://www.wired-gov.net/wg/news.nsf/print/What+are+data+centres+and+how+sustainable+are+they+18032026092500",
+    "publisher": "UK Parliament, Parliamentary Office of Science and Technology",
+    "date": "2026-03-17"
+   }
+  ],
+  "claim": "none collected yet.",
+  "claim_sources": [
+   {
+    "title": "Written answer: Electricity: Data Centres (answered by Michael Shanks MP)",
+    "url": "https://parallelparliament.co.uk/question/127433/electricity-data-centres",
+    "publisher": "Department for Energy Security and Net Zero (via UK Parliament written questions; aggregator page)",
+    "date": "2026-04-24"
+   }
+  ],
+  "gap": "The demand figures are estimates and scenarios by the system operator, not metered consumption; the 73 GW is contracted queue capacity, not load. DESNZ's projections do not separate datacentres (written answer, 24 April 2026). No metered national total was found.",
+  "confidence": "high",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "verified"
+ },
+ {
+  "id": "uk-climate-change-agreement-datacentres",
+  "country": "United Kingdom",
+  "region": "United Kingdom",
+  "site_or_subject": "Climate Change Agreement for the datacentre sector: targets and reported results",
+  "operator": "Participating datacentre operators (sector association DATC)",
+  "lat": 51.5,
+  "lon": -0.12,
+  "category": "accounting",
+  "record": "The Environment Agency published the umbrella agreement for the datacentre sector (sector association DATC) on 24 July 2014. In the text of its biennial progress reports for 2021 and 2024 the ledger found no datacentre sector result; the reports put sector results in a separate spreadsheet, which could not be read.",
+  "record_sources": [
+   {
+    "title": "Climate change umbrella agreement for the data centre sector",
+    "url": "https://www.gov.uk/government/publications/climate-change-umbrella-agreement-for-the-data-centre-sector",
+    "publisher": "Environment Agency",
+    "date": "2014-07-24"
+   },
+   {
+    "title": "Climate change agreements: biennial progress report for 2024 (TP6)",
+    "url": "https://www.gov.uk/government/publications/climate-change-agreements-cca-biennial-report/climate-change-agreements-biennial-progress-report-for-2023-and-2024",
+    "publisher": "Environment Agency",
+    "date": "2025-12-18"
+   },
+   {
+    "title": "Climate change agreements: biennial progress report for 2021 and 2022 (TP5)",
+    "url": "https://www.gov.uk/government/publications/climate-change-agreements-cca-biennial-report/climate-change-agreements-biennial-progress-report-for-2021-and-2022",
+    "publisher": "Environment Agency",
+    "date": "2023-10-31"
+   }
+  ],
+  "claim": "techUK, which administers the sector's agreement, reports 98 facilities in the first target period and 129 in the second (2015-2016), total energy use of 2,573,454 MWh a year on average in the second period, an improvement of 10.24% against a target of 8.333%, a target of a 4.539% PUE reduction by 2022 from a 2018 baseline, over 170 sites in 2024, and a target of 14.5% from a 2022 baseline for 2026 to 2030.",
+  "claim_sources": [
+   {
+    "title": "Climate Change Agreement (CCA) for Data Centres: Target Period One: Report on findings",
+    "url": "https://www.techuk.org/asset/3837C4E4%2D89DF%2D47B6%2DAA596EBC96FD75F8",
+    "publisher": "techUK",
+    "date": ""
+   },
+   {
+    "title": "Climate Change Agreement (CCA) for Data Centres: Target Period Two: Report on Findings",
+    "url": "https://www.techuk.org/asset/7964A7E2-9BEE-4596-8223B1079105F85A",
+    "publisher": "techUK",
+    "date": "2017-09"
+   },
+   {
+    "title": "Climate Change Agreement for Data Centres: First Findings Report",
+    "url": "https://www.techuk.org/asset/A8698DB1-2879-4E30-A292E73923E9D99D",
+    "publisher": "techUK",
+    "date": "2014-11"
+   },
+   {
+    "title": "Climate Change Agreement for techUK, Note 01: What is a CCA? (revised April 2022)",
+    "url": "https://www.techuk.org/asset/99491B0C%2DA529%2D4828%2DAB94DB98AA8B4FD9/",
+    "publisher": "techUK",
+    "date": "2022-04"
+   },
+   {
+    "title": "techUK Consultation Response: Climate Change Agreements: consultation on a new scheme",
+    "url": "https://www.techuk.org/asset/70A20F3D%2D8B75%2D422A%2DA87DB162AB7BC2A1",
+    "publisher": "techUK",
+    "date": "2024-02-14"
+   },
+   {
+    "title": "Data centres Climate Change Agreement target periods 7-9 announced",
+    "url": "https://www.techuk.org/insights/news/data-centres-climate-change-agreement-target-periods-7-9-announced",
+    "publisher": "techUK",
+    "date": "2025-10-16"
+   }
+  ],
+  "gap": "The sector's results from the Environment Agency's own data (energy use, facilities, target met or not) are not read yet: the spreadsheet could not be opened. The 2026-2030 target is known from techUK only.",
+  "confidence": "medium",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "uk-water-resources-plans-datacentres",
+  "country": "United Kingdom",
+  "region": "England",
+  "site_or_subject": "Water resources plans and datacentre demand (Thames Water, Affinity Water, Anglian Water)",
+  "operator": "Water companies; datacentre operators not named",
+  "lat": 51.45,
+  "lon": -0.97,
+  "category": "water",
+  "record": "Thames Water's revised draft Water Resources Management Plan (August 2023) adds forecast datacentre demand to its non-household forecast, using the midpoint between its low and medium scenarios; the ledger found no volume stated in the text. Its 2024-25 annual review says it is negotiating with data centres to reduce their planned water consumption. Affinity Water's presentation to planning authorities (March 2025) says AI data centres have not been directly incorporated in its forecast. The ledger found no mention of datacentres in Anglian Water's 2025 annual review.",
+  "record_sources": [
+   {
+    "title": "Revised Draft WRMP24 - Section 3: Demand Forecast",
+    "url": "https://www.thameswater.co.uk/media-library/zgse0jlk/section-3-demand-forecast.pdf",
+    "publisher": "Thames Water",
+    "date": "2023-08"
+   },
+   {
+    "title": "Water Resources Management Plan Annual Review 2024-25 (AR25)",
+    "url": "https://www.thameswater.co.uk/media-library/bolnxdid/wrmp-annual-review-2025.pdf",
+    "publisher": "Thames Water",
+    "date": "2025-06"
+   }
+  ],
+  "claim": "techUK's survey of 73 sites (2025) reports that 51% of surveyed data centres use waterless cooling systems and 64% use less than 10,000 m³ of water per year.",
+  "claim_sources": [
+   {
+    "title": "New report sheds light on commercial data centres' water usage in England",
+    "url": "https://www.techuk.org/about/media-centre/press-releases/new-report-sheds-light-on-commercial-data-centres-water-usage-in-england",
+    "publisher": "techUK",
+    "date": "2025-08-18"
+   },
+   {
+    "title": "Water Resources Management Plan (WRMP): Demand (presentation to local planning authorities)",
+    "url": "https://www.affinitywater.co.uk/docs/lpa/water-resources-management-plan.pdf",
+    "publisher": "Affinity Water",
+    "date": "2025-03-13"
+   },
+   {
+    "title": "APPENDIX: AI and Data Centre Water Footprint in the UK: Strategic Recommendations for UK Government",
+    "url": "https://assets.publishing.service.gov.uk/media/688cb41cdc6688ed50878368/Water_use_in_data_centre_and_AI_appendix__1_.pdf",
+    "publisher": "not stated (hosted on GOV.UK; linked to GDSA Planetary Impact Working Group report)",
+    "date": ""
+   }
+  ],
+  "gap": "No water company plan read states datacentre water demand in Ml/d in its text, and no metered datacentre consumption was found. The Environment Agency's national framework appendix on emerging demand was not read.",
+  "confidence": "medium",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "partial"
+ },
+ {
+  "id": "uk-public-money-ai-compute",
+  "country": "United Kingdom",
+  "region": "United Kingdom",
+  "site_or_subject": "Public money and designations for AI compute: national supercomputer, AI Research Resource, AI Growth Zones",
+  "operator": "Department for Science, Innovation and Technology; UKRI; UK Atomic Energy Authority",
+  "lat": 51.5,
+  "lon": -0.12,
+  "category": "public_money",
+  "record": "The National Audit Office (HC 1735, March 2026) reports that the next national supercomputer in Edinburgh will cost up to £750 million over its five-year life, that there will be a gap of at least 13 months between ARCHER2 closing and its replacement, that an earlier exascale plan was cancelled in 2024, and that the University of Edinburgh had paid to install a 30-megawatt grid connection. DSIT's accounts for 2025-26 record a £21.3 million underspend in AI Group due to the supercomputer project. UKAEA's prior information notice for a data centre at Culham describes about 100MW of steady-state power on a c10 acre site.",
+  "record_sources": [
+   {
+    "title": "DSIT's investment in research infrastructure (HC 1735, Session 2024-2026)",
+    "url": "https://www.nao.org.uk/wp-content/uploads/2026/03/DSITs-investment-in-research-infrastructure.pdf",
+    "publisher": "National Audit Office",
+    "date": "2026-03-13"
+   },
+   {
+    "title": "Prior information notice: Mission Led AI Data Centre and a Strategic Investment Partnership Funder for Future Campus Development (T/ED029/25)",
+    "url": "https://www.find-tender.service.gov.uk/Notice/005218-2025",
+    "publisher": "Find a Tender Service (UKAEA notice 2025/S 000-005218)",
+    "date": "2025-02-14"
+   },
+   {
+    "title": "DSIT annual report and accounts 2025 to 2026 (HC 364)",
+    "url": "https://www.gov.uk/government/publications/dsit-annual-report-and-accounts-2025-to-2026/dsit-annual-report-and-accounts-2025-to-2026",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2026-07-14"
+   }
+  ],
+  "claim": "Government announcements: data centres designated as Critical National Infrastructure (12 September 2024); £2 billion for compute to 2030 and at least 6GW of AI-capable data centre capacity needed by 2030 (Compute Roadmap); up to £750 million for a new national supercomputer; £225 million for Isambard-AI (2023); £5 million per AI Growth Zone; electricity discounts for zones in Scotland and North East England; potential for more than 5,000 jobs and £30 billion of private investment in the North East; 3,450 jobs in North Wales; a £202 million National Wealth Fund guarantee for Lanarkshire.",
+  "claim_sources": [
+   {
+    "title": "Data centres to be given massive boost and protections from cyber criminals and IT blackouts",
+    "url": "https://gov.uk/government/news/data-centres-to-be-given-massive-boost-and-protections-from-cyber-criminals-and-it-blackouts",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2024-09-12"
+   },
+   {
+    "title": "Delivering AI Growth Zones",
+    "url": "https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-11-13"
+   },
+   {
+    "title": "UK Compute Roadmap (CP 1352)",
+    "url": "https://www.gov.uk/government/publications/uk-compute-roadmap/uk-compute-roadmap",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-07-17"
+   },
+   {
+    "title": "Technology Secretary announces investment boost making British AI supercomputing 30 times more powerful",
+    "url": "https://www.gov.uk/government/news/technology-secretary-announces-investment-boost-making-british-ai-supercomputing-30-times-more-powerful",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2023-11-01"
+   },
+   {
+    "title": "AI Opportunities Action Plan: government response",
+    "url": "https://www.gov.uk/government/publications/ai-opportunities-action-plan-government-response/ai-opportunities-action-plan-government-response",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-01-13"
+   },
+   {
+    "title": "North East England set for billions in investment and thousands of jobs as UK and US ink tech partnership",
+    "url": "https://www.gov.uk/government/news/north-east-england-set-for-billions-in-investment-and-thousands-of-jobs-as-uk-and-us-ink-tech-partnership",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-09-16"
+   },
+   {
+    "title": "AI Growth Zones to create thousands of jobs and unlock up to £100 billion in investment, as new site confirmed for North Wales",
+    "url": "https://www.gov.uk/government/news/ai-growth-zones-to-create-thousands-of-jobs-and-unlock-up-to-100-billion-in-investment-as-new-site-confirmed-for-north-wales",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-11-13"
+   },
+   {
+    "title": "AI to power national renewal as government announces billions of additional investment and new plans to boost UK businesses, jobs and innovation",
+    "url": "https://www.gov.uk/government/news/ai-to-power-national-renewal-as-government-announces-billions-of-additional-investment-and-new-plans-to-boost-uk-businesses-jobs-and-innovation",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2025-11-20"
+   },
+   {
+    "title": "More than 3,400 jobs and targeted support for local communities to help tackle the cost of living as Lanarkshire named latest AI Growth Zone",
+    "url": "https://www.gov.uk/government/news/more-than-3400-jobs-and-targeted-support-for-local-communities-to-help-tackle-the-cost-of-living-as-lanarkshire-named-latest-ai-growth-zone",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2026-01-29"
+   },
+   {
+    "title": "Lanarkshire AI Growth Zone Designation and Delivery Update on the AI Opportunities Action Plan (written statement, HLWS1290)",
+    "url": "https://questions-statements.parliament.uk/written-statements/1876473",
+    "publisher": "Department for Science, Innovation and Technology",
+    "date": "2026-01-29"
+   }
+  ],
+  "gap": "No audit or committee report on AI Growth Zones, Isambard-AI or the AI Research Resource was found. The electricity discounts and jobs are announced figures; construction and permanent jobs are not separated, and the investment totals are private money.",
+  "confidence": "medium",
+  "last_checked": "2026-11-17",
+  "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
+  "verification_status": "partial"
  }
 ]

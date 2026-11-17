@@ -522,6 +522,8 @@
   "receives_end_of_life_from": "a recycler or refurbisher takes hardware retired from a site or company",
   "owns": "one entity owns a site or another entity",
   "operates": "an entity operates a site",
+  "acts_for": "a company holds a permit, land, an incentive agreement or an application for a site on behalf of another company, as a document states",
+  "renamed_as": "an organisation is the same organisation under a later name, as a document states",
   "packages_for": "an assembly, test and packaging house (OSAT), or a packaging joint venture, packages and tests chips for a chip designer"
  }
 }
