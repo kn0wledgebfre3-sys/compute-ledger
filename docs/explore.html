@@ -4,6 +4,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Explore every figure · Compute Ledger</title>
 <meta name="description" content="Search, filter, download and cite every figure in the Compute Ledger, each with its public source.">
+<link rel="canonical" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html">
+<link rel="alternate" type="application/atom+xml" title="Compute Ledger: what changed" href="feed.xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Compute Ledger">
+<meta property="og:title" content="Explore every figure · Compute Ledger">
+<meta property="og:description" content="Search, filter, download and cite every figure in the Compute Ledger, each with its public source.">
+<meta property="og:url" content="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html">
+<meta property="og:image" content="https://kn0wledgebfre3-sys.github.io/compute-ledger/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Compute Ledger: public records on AI compute's footprint, kept apart from claims">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="sites/site.css">
@@ -23,7 +35,7 @@
 .btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .banner{background:var(--paper-2);border-left:4px solid var(--accent);padding:10px 14px;margin:16px 0 0;max-width:820px}
 .banner:empty{display:none}
-#status{font-family:var(--mono);font-size:13px;color:var(--ink-2);margin:14px 0}
+p#status,#loading{font-family:var(--mono);font-size:13px;color:var(--ink-2);margin:14px 0}
 .kind{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:0 6px;border:1px solid currentColor;margin-bottom:2px}
 .k-record{color:var(--rec)} .k-computed{color:var(--calc)} .k-claim{color:var(--claim)}
 button.cite{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--rule);color:var(--accent);padding:5px 8px;cursor:pointer;white-space:nowrap}
@@ -47,12 +59,12 @@ code{font-family:var(--mono);font-size:.9em}
 </style>
 <body>
 <div class="wrap">
-<nav class="top"><span><a href="index.html">Compute Ledger</a> / Explore figures</span><span class="links"><a href="explore.html" aria-current="page">Explore figures</a><a href="map.html">Map</a><a href="sites/">Sites</a><a href="org/">Organisations</a><a href="country/">Countries</a><a href="doc/">Documents</a><a href="chain.html">The chain</a><a href="records-and-claims.html">Records and claims</a><a href="coverage.html">Coverage</a><a href="timeline.html">Timeline</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav><div class="gsearch" data-base=""><input type="search" placeholder="Search sites, organisations, countries, documents" aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>
-<p class="eyebrow">Compute Ledger · version 1.0.0</p><h1>Explore every figure</h1>
-<p class="lede">Every figure the ledger holds, 4,349 of them, one row each, as the document printed it and with its source. <b>Records</b> are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. <b>Claims</b> are what companies and governments say. <b>Computed</b> figures are the ledger’s own arithmetic on records, with the formula in the details. Filter, then download the rows you chose, or open a figure’s details to cite it or report an error.</p>
-<p class="getdata" id="get-the-data">Get the data (version 1.0.0): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · <a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
+<nav class="top"><span><a href="index.html">Compute Ledger</a> / Explore figures</span><span class="links"><a href="explore.html" aria-current="page">Explore figures</a><a href="map.html">Map</a><a href="sites/">Sites</a><a href="org/">Organisations</a><a href="country/">Countries</a><a href="doc/">Documents</a><a href="chain.html">The chain</a><a href="records-and-claims.html">Records and claims</a><a href="coverage.html">Coverage</a><a href="timeline.html">Timeline</a><a href="totals.html">Totals</a><a href="brief.html">Brief</a><a href="explore.html#get-the-data">Get the data</a></span></nav><div class="gsearch" data-base=""><input type="search" placeholder="Search sites, organisations, countries, documents" aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>
+<p class="eyebrow">Compute Ledger · version 1.0.0, with changes to 20 November 2026</p><h1>Explore every figure</h1>
+<p class="lede">Every figure the ledger holds, 4,389 of them, one row each, as the document printed it and with its source. <b>Records</b> are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. <b>Claims</b> are what companies and governments say. <b>Computed</b> figures are the ledger’s own arithmetic on records, with the formula in the details. Filter, then download the rows you chose, or open a figure’s details to cite it or report an error.</p>
+<p class="getdata" id="get-the-data">Get the data (version 1.0.0, with changes to 20 November 2026): <a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a>&#160;· <a href="data/figures.json">Figures as JSON</a>&#160;· <a href="data/sites.json">Sites as JSON</a>&#160;· <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#get-the-data">Every table as CSV</a>&#160;· <a href="https://lite.datasette.io/?csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fclimate_trace_seed%2Fmeasurements.csv&amp;csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fclimate_trace_seed%2Fsite_register.csv&amp;csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fclimate_trace_seed%2Fentries.csv&amp;csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fclimate_trace_seed%2Fentry_sources.csv&amp;csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fclimate_trace_seed%2Fentity_register.csv&amp;csv=https%3A%2F%2Fraw.githubusercontent.com%2Fkn0wledgebfre3-sys%2Fcompute-ledger%2Fmain%2Fdata%2Fchain%2Fedges.csv&amp;metadata=https%3A%2F%2Fkn0wledgebfre3-sys.github.io%2Fcompute-ledger%2Fdata%2Fdatasette-metadata.json" rel="noopener">Query the six main tables with SQL in your browser</a> <span class="m">(Datasette Lite, another site; it loads the latest tables, about 5 MB, into your browser and uploads nothing)</span>&#160;· <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a>&#160;· <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">How to cite</a></p>
 <div class="banner" id="banner" role="status"></div>
-<p id="status">Loading 4,349 figures…</p>
+<p id="status">Loading 4,389 figures…</p>
 <noscript><p>This page needs JavaScript to filter the figures. The same figures are in the <a href="data/compute-ledger.xlsx">Excel workbook</a> and in <a href="data/figures.json">figures.json</a>.</p></noscript>
 <div id="app" hidden>
 <div class="filters" id="filters">
@@ -73,7 +85,7 @@ code{font-family:var(--mono);font-size:.9em}
 <p class="more"><button class="btn ghost" id="more" type="button" hidden>Show more</button></p>
 <p class="m" style="margin-top:18px">The download has the columns of <code>measurements.csv</code>, described in <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">the data dictionary</a>. A figure corrected after you cite it keeps its old link: the page sends it to the corrected figure.</p>
 </div>
-<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not found or read a public record yet, not that none exists or that anything is wrong.</p><p>Data CC BY 4.0. <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new/choose">Report an error or a missing record</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger">Repository</a> · <a href="index.html">The ledger</a></p></footer>
+<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not found or read a public record yet, not that none exists or that anything is wrong.</p><p><a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new?template=page.yml&amp;title=Page%3A%20Explore&amp;page=https%3A%2F%2Fkn0wledgebfre3-sys.github.io%2Fcompute-ledger%2Fexplore.html" rel="noopener">Report a problem with this page</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/issues/new?template=new-record.yml&amp;title=Record%3A%20" rel="noopener">Send a record the ledger does not have</a></p><p>Data CC BY 4.0. <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a> · <a href="changes.html">What changed</a> (<a href="feed.xml">feed</a>) · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger">Repository</a> · <a href="index.html">The ledger</a></p></footer>
 </div>
 <script src="assets/graph.js" defer></script>
 
@@ -87,13 +99,13 @@ const PAGE=100, UNIT={pct:'%',m3:'m³',short_ton:'short tons',count:''};
 const WHAT={record:'Record',computed:'Computed',claim:'Claim'};
 const KEYS=['country','topic','metric','what','basis','year'];
 let D,R=[],ids=new Set(),view=[],shown=PAGE,single=null;
-function asPub(r){const v=r.value_as_published;if(/^[\d.,\s~<>≈-]+$/.test(v||'')){const u=(r.unit in UNIT)?UNIT[r.unit]:r.unit.replace(/_/g,' ');return (v+' '+u).trim();}return v;}
+function asPub(r){let v=r.value_as_published;if(/^-?\d+(\.\d+)?[eE][-+]?\d+$/.test(v||''))v=String(Number(v));if(/^[\d.,\s~<>≈-]+$/.test(v||'')){const u=(r.unit in UNIT)?UNIT[r.unit]:r.unit.replace(/_/g,' ');return (v+' '+u).trim();}return v;}
 function period(r){const s=r.period_start,t=r.period_end;
   if(s&&t&&s.slice(5)==='01-01'&&t.slice(5)==='12-31'&&s.slice(0,4)===t.slice(0,4))return s.slice(0,4);
   if(s&&t&&s.slice(0,7)===s.slice(0,4)+'-07'&&t.slice(5)==='06-30'&&+t.slice(0,4)===+s.slice(0,4)+1)return 'FY to '+t;
   if(s&&t)return s+' to '+t;return s||t||'not stated';}
 function cite(r){const c=D.cite,p=period(r);
-  return c.authors+' ('+c.year+'). '+c.title+', version '+c.version+(c.doi?', https://doi.org/'+c.doi:'')+'. Figure '+r.measurement_id+': '
+  return c.authors+' ('+c.year+'). '+c.title+', version '+c.label+(c.doi?', https://doi.org/'+c.doi:'')+'. Figure '+r.measurement_id+': '
     +r._label+(r.metric_detail?' ('+r.metric_detail+')':'')+', '+r._name+': '+asPub(r)+(p!=='not stated'?', '+p:'')+'. '
     +c.site+'explore.html#'+r.measurement_id+'. Original source: '+[r.source_publisher,r.source_title?'“'+r.source_title+'”':'',r.source_date].filter(Boolean).join(', ')
     +(href(r.source_url)?', '+r.source_url:'')+'.';}
@@ -174,7 +186,7 @@ function readUrl(){const p=new URLSearchParams(location.search);
 function csvCell(v){v=v==null?'':String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
 function download(){const C=D.columns,lines=[C.map(csvCell).join(',')];for(const r of view)lines.push(C.map(c=>csvCell(r[c])).join(','));
   const b=new Blob([lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');
-  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.version+'-figures'+(view.length<R.length?'-selected':'')+'.csv';
+  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.file_tag+'-figures'+(view.length<R.length?'-selected':'')+'.csv';
   document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},0);}
 async function copy(text,btn){try{await navigator.clipboard.writeText(text);}catch(e){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(_){}t.remove();}
   const o=btn.textContent;btn.textContent='Copied';setTimeout(()=>{btn.textContent=o;},1600);}
@@ -212,8 +224,9 @@ function init(data){D=data;const C=D.columns;
     if(b.classList.contains('cite')){const id=b.dataset.id,tr=$('d-'+id),open=b.getAttribute('aria-expanded')!=='true';
       if(open&&!tr.firstChild.innerHTML)tr.firstChild.innerHTML=detail(R.find(r=>r.measurement_id===id));tr.hidden=!open;b.setAttribute('aria-expanded',String(open));}
     else if(b.dataset.copy)copy($(b.dataset.copy).textContent,b);else if(b.dataset.copytext)copy(b.dataset.copytext,b);});
-  window.addEventListener('hashchange',()=>{readUrl();render(true);$('banner').scrollIntoView({block:'nearest'});});
-  $('status').hidden=true;$('app').hidden=false;render(true);}
+  window.addEventListener('hashchange',()=>{readUrl();render(true);$('banner').scrollIntoView({block:single?'start':'nearest'});});
+  $('status').hidden=true;$('app').hidden=false;render(true);
+  if(single)setTimeout(()=>$('banner').scrollIntoView({block:'start'}),0);}
 fetch('data/figures.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(init)
   .catch(e=>{$('status').textContent='The figures could not be loaded ('+e.message+'). The same figures are in the Excel workbook and in measurements.csv, linked above.';});
 })();

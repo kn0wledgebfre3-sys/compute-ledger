@@ -3,6 +3,7 @@ check:browser-fetch-2026-10-24,check,Documents fetched in a browser,https://kn0w
 check:browser-fetch-check-2026-10-24,check,Check of the browser-fetch changes,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-browser-fetch-check-2026-10-24,,,check,2026-10-24
 check:checks-log-check-2026-10-24,check,Check of this corrections log,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-checks-log-check-2026-10-24,,,check,2026-10-24
 check:directory-counts-2026-11-20,check,"Datacentre counts in a commercial directory, read twice",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-directory-counts-2026-11-20,,,check,2026-11-20
+check:features-check-2026-11-20,check,"Totals, the richer map, the changes page and feed, link previews and correction links, checked for accuracy and in a browser",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-features-check-2026-11-20,,,check,2026-11-20
 check:final-review-2026-10-21,check,Final review of the package and brief,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-final-review-2026-10-21,,,check,2026-10-21
 check:graph-check-2026-11-17,check,The graph's links against their documents,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-graph-check-2026-11-17,,,check,2026-11-17
 check:hostile-review-2026-10-21,check,Hostile methodology review of the handover,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-hostile-review-2026-10-21,,,check,2026-10-21
@@ -14,6 +15,7 @@ check:measurements-2026-10-23b,check,New figures and chain links: random sample,
 check:measurements-2026-10-24,check,Chip-chain figures and links: random sample,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-measurements-2026-10-24,,,check,2026-10-24
 check:measurements-2026-10-24b,check,"Water and fuel links, generator hours",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-measurements-2026-10-24b,,,check,2026-10-24
 check:organisation-identity-2026-11-17,check,"Organisation identifiers and group links, read twice",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-organisation-identity-2026-11-17,,,check,2026-11-17
+check:roadmap-round-2026-11-20,check,"Roadmap items read twice: Morowali, Meta, Equinix and Scotland's register items",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-roadmap-round-2026-11-20,,,check,2026-11-20
 check:scotland-round-2026-11-20,check,"Scotland's datacentre directions and applications, read twice",https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-scotland-round-2026-11-20,,,check,2026-11-20
 check:sides-2026-10-23,check,Company statements on the record side,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-sides-2026-10-23,,,check,2026-10-23
 check:site-locations-2-2026-11-17,check,Where the unplaced sites are: second pass,https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#check-site-locations-2-2026-11-17,,,check,2026-11-17
@@ -125,12 +127,14 @@ doc:d-075d23c906,doc,Taipower backs AI data center zones near northern power pla
 doc:d-07d5ca09fc,doc,"Large Load Power Supply Framework, Proposed Microsoft Contract (commission presentation), June 2, 2025; and Microsoft Contract and Rate Schedules 4 & 36 updates (public hearing), June 16, 2025",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-07d5ca09fc,doc/d-07d5ca09fc.html,,utility_published,https://www.chelanpud.org/docs/default-source/default-document-library/large-load-framework-and-draft-microsoft-agreementbaa1beaf9dd5636da1c4ff0800ce4554.pdf
 doc:d-07eed9f8cb,doc,"Sentencia Rol R N° 539-2025 (Hernández Valenzuela con Dirección Ejecutiva del SEA), Segundo Tribunal Ambiental",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-07eed9f8cb,doc/d-07eed9f8cb.html,,audit_or_court,https://www.diarioconstitucional.cl/2026/04/06/segundo-tribunal-ambiental-confirmo-la-aprobacion-del-proyecto-de-data-center-de-amazon-en-huechuraba/2-trib-sent-437669/
 doc:d-07f18ed3e2,doc,West London Electricity Capacity Constraints Update (November 2022),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-07f18ed3e2,doc/d-07f18ed3e2.html,,government_document,https://london.gov.uk/media/98682/download
+doc:d-0807c9daab,doc,"EIA Screening Report, Southside Data Centre",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-0807c9daab,doc/d-0807c9daab.html,,company_statement,https://docs.planning.org.uk/20251211/231/T7264GNT0BQ00/21pk056v2z6iaoe3.pdf
 doc:d-081a3ef807,doc,"Rack Centre set to commission 12MW LGS2 data centre (Brand Press, Rack Centre media briefing of 18 Mar 2025)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-081a3ef807,doc/d-081a3ef807.html,,company_statement,https://techpoint.africa/brandpress/rack-centre-set-to-commission-12mw-lgs2-data-centre-hyperscale-ai-ready-lowest-power-usage-efficiency-in-nigeria/
 doc:d-0836fda51c,doc,"Gewijzigde motie van het lid Grinwis c.s. (Kamerstuk 26 643, nr. 919)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-0836fda51c,doc/d-0836fda51c.html,,,https://zoek.officielebekendmakingen.nl/kst-26643-919.pdf
 doc:d-084254492f,doc,"Annual Environmental Report (AER) 2023, licence P1170-01; LEAP document date 2024-04-28; period: July (month of licence grant; granted 6th July 2023) to 31 Dec 2023, part year",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-084254492f,doc/d-084254492f.html,,metered,https://leap.epa.ie/docs/a5cee463-0f08-422f-bc30-74ce4aeacd3a.pdf
 doc:d-089fb32f89,doc,Oak Creek Generation Project (Docket 6630-CE-317) case page,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-089fb32f89,doc/d-089fb32f89.html,,,https://psc.wi.gov/Pages/CommissionActions/CasePages/OakCreekGeneration.aspx
 doc:d-08eb3b89cc,doc,Delivering AI Growth Zones,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-08eb3b89cc,doc/d-08eb3b89cc.html,,government_document,https://www.gov.uk/government/publications/delivering-ai-growth-zones/delivering-ai-growth-zones
 doc:d-097b0b3231,doc,Alphabet's 2026 (FY2025) Environmental Indicators Assurance Letter (EY Independent Accountants' Review Report and Schedules of Select Environmental Metrics),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-097b0b3231,doc/d-097b0b3231.html,,assured_disclosure,https://sustainability.google/files/6b09a7cbecbf228f4d30ad089301578eb599425e/alphabet-fy2025-environmental-indicators-assurance-letter.pdf
+doc:d-09aad84e71,doc,Equinix 2025 Sustainability Report,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-09aad84e71,doc/d-09aad84e71.html,,company_statement,https://d1io3yog0oux5.cloudfront.net/_dd4537fcab139e43b5bb871d20079fe3/equinix/db/2197/27037/file/Equinix-Inc_2025_Sustainability-Report.pdf
 doc:d-09b1d1486d,doc,Data Center Tax Exemption Summary (Revised),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-09b1d1486d,doc/d-09b1d1486d.html,,audit_or_court,https://www.audits2.ga.gov/wp-content/uploads/2025/12/Data-Center-Tax-Exemption-Summary-Revised.pdf
 doc:d-09d3d5fad1,doc,Naesten al overskudsvarme fra datacentre gaar tabt,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-09d3d5fad1,doc/d-09d3d5fad1.html,,press_report,https://ing.dk/artikel/naesten-al-overskudsvarme-fra-datacentre-gaar-tabt-vanskeligere-end-de-fleste-forestillede-sig
 doc:d-0ad7bd0f66,doc,"Datacenter Microsoft in Wieringermeer verbruikt veel meer drinkwater (Noordhollands Dagblad, 11 Aug 2022, reposted)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-0ad7bd0f66,doc/d-0ad7bd0f66.html,,company_statement,https://www.stichting-jas.nl/2022/08/datacenter-microsoft-wieringermeer.html
@@ -183,6 +187,7 @@ doc:d-15282acbdd,doc,EnEfG im Rechenzentrum: Was Betreiber jetzt wissen muessen,
 doc:d-1570a53569,doc,Application Variation V002 Decision Document (EPR/QP3706LH/V002),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1570a53569,doc/d-1570a53569.html,,permitted,https://assets.publishing.service.gov.uk/media/68371f204115cfe5bfaa2cb1/Application_Variation_V002_Descision_Document_-_20052025.pdf
 doc:d-15c5ccef50,doc,"Super Micro Computer Conflict Minerals Report for the Calendar Year Ended December 31, 2024 (Exhibit 1.01 to Form SD)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-15c5ccef50,doc/d-15c5ccef50.html,,company_statement,https://www.sec.gov/Archives/edgar/data/1375365/000137536525000015/ry2024ex101draftlegalcomme.htm
 doc:d-15e3517a7d,doc,Court of Appeal rules Meta can be sued in Kenyan courts over layoffs of content moderators,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-15e3517a7d,doc/d-15e3517a7d.html,,,https://ntvkenya.co.ke/news/court-of-appeal-rules-meta-can-be-sued-in-kenyan-courts-over-layoffs-of-content-moderators/
+doc:d-15ef812e5e,doc,"EIA Screening Request, Aurelius Data Centre (26/00595/EIASCR)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-15ef812e5e,doc/d-15ef812e5e.html,,company_statement,https://aprs.scot/wp-content/uploads/2026/07/26_00595_EIASCR-EIA_SCREENING_REQUEST-2012718.pdf
 doc:d-15f4772241,doc,"Building Energy Benchmarking Data, 2015-Present",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-15f4772241,doc/d-15f4772241.html,,metered,https://cos-data.seattle.gov/api/id/teqw-tu6e.csv?$query=SELECT%20*%20WHERE%20epapropertytype%3D%27Data%20Center%27%20OR%20largestpropertyusetype%3D%27Data%20Center%27%20LIMIT%2080
 doc:d-1603fa8ceb,doc,"As power costs soar, Rack Centre goes hybrid with gas and solar",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1603fa8ceb,doc/d-1603fa8ceb.html,,press_report,https://techcabal.com/2025/11/04/rack-centre-goes-hybrid-with-gas-and-solar/
 doc:d-16183f46fc,doc,Israel freezes data center grid connections for 140 days (CTech),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-16183f46fc,doc/d-16183f46fc.html,,press_report,https://www.calcalistech.com/ctechnews/article/tvp6729tr
@@ -209,6 +214,7 @@ doc:d-194500ca5f,doc,Nota Técnica de Adequação Orçamentária e Financeira n�
 doc:d-1974fc366e,doc,Application Bespoke Decision Document - 19122023 (EPR/BP3546QP),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1974fc366e,doc/d-1974fc366e.html,,permitted,https://assets.publishing.service.gov.uk/media/6582d797fc07f300128d456a/Application_Bespoke_Decision_Document_-_19122023.pdf
 doc:d-19f3a404ec,doc,Constellation to Launch Crane Clean Energy Center Restoring Jobs and Carbon Free Power to The Grid,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-19f3a404ec,doc/d-19f3a404ec.html,,company_statement,https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html
 doc:d-19fd1a69f2,doc,Our first-of-its-kind partnership for clean energy has been approved in Nevada,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-19fd1a69f2,doc/d-19fd1a69f2.html,,,https://blog.google/feed/nevada-clean-energy/
+doc:d-1ade667135,doc,"Chapelcross Technology Campus EIA Report, Volume 1, Chapter 16: Human Health",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1ade667135,doc/d-1ade667135.html,,company_statement,https://docs.planning.org.uk/20260930/187/TLPCUJGBKSH00/bsweyeqryxmdnaue.pdf
 doc:d-1b0d4ca40a,doc,"Three Mile Island Nuclear Station, Unit 1 / Christopher M. Crane Clean Energy Center (reactor page, docket 05000289)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1b0d4ca40a,doc/d-1b0d4ca40a.html,,,https://www.nrc.gov/info-finder/reactors/tmi1.html
 doc:d-1b834b8dc0,doc,Holes in the Circular Economy: WEEE Leakage from Europe (release and report link),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1b834b8dc0,doc/d-1b834b8dc0.html,,ngo_report,https://www.ban.org/news-new/2019/2/6/gps-trackers-discover-illegal-e-waste-exports-to-africa-and-asia
 doc:d-1bd5172f8c,doc,Racine releases records showing Microsoft data center would use 8 million gallons of water per year,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1bd5172f8c,doc/d-1bd5172f8c.html,,press_report,https://wisconsinexaminer.com/2025/09/17/racine-releases-records-showing-microsoft-data-center-would-use-8-million-gallons-of-water-per-year/
@@ -216,13 +222,16 @@ doc:d-1c05af0bb1,doc,CYRUSONE UK4 LIMITED persons with significant control (Comp
 doc:d-1ca5186184,doc,Decision Document CP3409BH (EPR/CP3409BH/A001),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1ca5186184,doc/d-1ca5186184.html,,permitted,https://assets.publishing.service.gov.uk/media/602b8a35e90e070556671415/Decision_Document_CP3409BH.pdf
 doc:d-1d118f8a1d,doc,"IREN Ltd Form 10-K for fiscal year ended June 30, 2025",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1d118f8a1d,doc/d-1d118f8a1d.html,,company_statement,https://www.sec.gov/Archives/edgar/data/1878848/000187884825000063/iren-20250630.htm
 doc:d-1d1976a98f,doc,Hyperscale-datacenters in Nederland? Nog maar op twee plekken welkom,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1d1976a98f,doc/d-1d1976a98f.html,,,https://nos.nl/l/2432219
+doc:d-1d425de08f,doc,Police await PT ITSS accident investigation for suspect designation,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1d425de08f,doc/d-1d425de08f.html,,official_statistic,https://inp.polri.go.id/artikel/police-await-pt-itss-accident-investigation-for-suspect-designation
 doc:d-1d77ad7c23,doc,TeraWulf Inc. Form 10-K for fiscal year 2025,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1d77ad7c23,doc/d-1d77ad7c23.html,,company_statement,https://www.sec.gov/Archives/edgar/data/1083301/000108330126000031/wulf-20251231.htm
 doc:d-1d8e404fa9,doc,Eldorado do Sul: Censo 2022 population,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1d8e404fa9,doc/d-1d8e404fa9.html,,official_statistic,https://www.ibge.gov.br/cidades-e-estados/rs/eldorado-do-sul.html
 doc:d-1ddb791925,doc,"PL 278/2026, ficha de tramitação (substitute approved in plenary 24/02/2026; transformed into Lei 15.504/2026)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1ddb791925,doc/d-1ddb791925.html,,,https://www.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2600838
+doc:d-1e6e093814,doc,"Independent Accountants' Review Report, year ended December 31, 2024 (EY)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1e6e093814,doc/d-1e6e093814.html,,assured_disclosure,https://sustainability.atmeta.com/wp-content/uploads/2025/09/Meta-EY_FY24-Independent-Accountants-Review-Report-and-Appendix.pdf
 doc:d-1e6f3937d9,doc,Release of 7 November 2023 on the Tomakomai data centre (METI subsidy adoption),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1e6f3937d9,doc/d-1e6f3937d9.html,,company_statement,https://www.softbank.jp/corp/news/press/sbkk/2023/20231107_01/
 doc:d-1ee0b19951,doc,"Energy, water use under close watch as data centers expand in Iowa",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1ee0b19951,doc/d-1ee0b19951.html,,company_statement,https://www.businessrecord.com/energy-water-use-under-close-watch-as-data-centers-expand-in-iowa/
 doc:d-1f2f4b1397,doc,R-4333-2026-B-0035 – Réponses de HQD aux demandes de renseignements,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1f2f4b1397,doc/d-1f2f4b1397.html,,filed,https://www.regie-energie.qc.ca/fr/participants/dossiers/R-4333-2026/doc/R-4333-2026-B-0035-DDR-RepDDR-2026_06_22.pdf
 doc:d-1f36b6784c,doc,Decision Document (EPR/PP3003PW/A001),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1f36b6784c,doc/d-1f36b6784c.html,,permitted,https://assets.publishing.service.gov.uk/media/5f072844d3bf7f2bf63bddf7/Decision_Document.pdf
+doc:d-1f9f46b004,doc,"Screening opinion 25/00744/EIASCR: proposed construction of a data centre campus, Ravenscraig Regeneration Area (East)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1f9f46b004,doc/d-1f9f46b004.html,,,https://aprs.scot/wp-content/uploads/2026/08/EIA_not_required_response-1893874.pdf
 doc:d-1fed431a65,doc,Texas said it would halt data center permits. The state is pushing ahead anyway,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-1fed431a65,doc/d-1fed431a65.html,,,https://404media.co/it-aint-right-texas-said-it-would-halt-data-center-permits-the-state-is-pushing-ahead-anyway
 doc:d-200e9bd852,doc,Thames Water launches data center water probe in London & Slough amid drought,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-200e9bd852,doc/d-200e9bd852.html,,company_statement,https://datacenterdynamics.com/en/news/thames-water-launches-data-center-water-probe-in-london-slough-amid-drought
 doc:d-20449650fe,doc,"Beaver Valley Power Station, Unit 1 (reactor page, docket 05000334)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-20449650fe,doc/d-20449650fe.html,,permitted,https://www.nrc.gov/info-finder/reactors/bv1
@@ -554,6 +563,8 @@ doc:d-6f4a44eff6,doc,"Equinix, Inc. Form 10-K for fiscal year ended December 31,
 doc:d-6f537cd209,doc,Issued air permits for data centers,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-6f537cd209,doc/d-6f537cd209.html,,derived,https://www.deq.virginia.gov/news-info/shortcuts/permits/air/issued-air-permits-for-data-centers
 doc:d-6f6b2e98c4,doc,Dansk Fjernvarmes hoeringssvar vedroerende Analyseforudsaetninger til Energinet 2025,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-6f6b2e98c4,doc/d-6f6b2e98c4.html,,company_statement,https://ens.dk/media/7620/download
 doc:d-6f80947493,doc,Cambridge Building Energy and Water Use Data Disclosure (BEUDO),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-6f80947493,doc/d-6f80947493.html,,metered,https://data.cambridgema.gov/resource/72g6-j7aq.csv?primary_property_type_self_selected=Data%20Center
+doc:d-6fb80c7b93,doc,"EIA screening checklist (updated), Ravenscraig data centre campus",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-6fb80c7b93,doc/d-6fb80c7b93.html,,company_statement,https://aprs.scot/wp-content/uploads/2026/08/EIA_SCREENING_CHECKLIST_UPDATED-2018695.pdf
+doc:d-70039c73c3,doc,"Planning Statement for DV4, Chapelhall (26/01110/PPP)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-70039c73c3,doc/d-70039c73c3.html,,company_statement,https://aprs.scot/wp-content/uploads/2026/09/26_01110_PPP-PLANNING_STATEMENT-2059067.pdf
 doc:d-700959667b,doc,"Echelon DUB10 data centre and Energy Centre, Crag Avenue, Clondalkin (ex-Crag Digital site): document cited in the Ireland site list",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-700959667b,doc/d-700959667b.html,,derived,https://epawebapp.epa.ie/licences/lic_eDMS/090151b2808f8296.pdf
 doc:d-700c690d6c,doc,Directive to the Manitoba Hydro-Electric Board respecting cryptocurrency operations (continuation),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-700c690d6c,doc/d-700c690d6c.html,,,https://manitoba.ca/asset_library/en/proactive/20242025/directive-hydro-cryptocurrency-operations.pdf
 doc:d-703dbe08ac,doc,Public Consultations Webinar Presentation,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-703dbe08ac,doc/d-703dbe08ac.html,,,https://ghgprotocol.org/sites/default/files/2025-10/Public-Consultations-Webinar-Presentation-20251027.pdf
@@ -580,6 +591,7 @@ doc:d-740e2be8b7,doc,«السعودية للطاقة» توقع 3 اتفاقيا
 doc:d-741178d7f9,doc,"2024 Tax Exemption Study, RCW 82.08.986 and 82.08.9861",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-741178d7f9,doc/d-741178d7f9.html,,estimate_by_record_holder,https://dor.wa.gov/sites/default/files/2024-01/2024_Exemption_Study.pdf
 doc:d-7412484a60,doc,Large Load Integration Phase 2A: Proposed BYOG Process,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7412484a60,doc/d-7412484a60.html,,utility_published,https://aesoengage.aeso.ca/49943/widgets/210873/documents/170854
 doc:d-74401d1d43,doc,Decision Document NP3829SP,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-74401d1d43,doc/d-74401d1d43.html,,permitted,https://assets.publishing.service.gov.uk/media/6566050a75007400131ded52/Decision_Document_NP3829SP.pdf
+doc:d-74692a91ec,doc,"Minute of the Planning Committee pre-determination hearing, 16 September 2026",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-74692a91ec,doc/d-74692a91ec.html,,,https://coins.falkirk.gov.uk/viewSelectedDocument.asp?c=e%97%9Dc%95l%81%89
 doc:d-74ca8862c3,doc,"Google, Fervo and NV Energy ask Nevada PUC to approve clean energy tariff",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-74ca8862c3,doc/d-74ca8862c3.html,,,https://www.utilitydive.com/news/google-fervo-nv-energy-nevada-puc-clean-energy-tariff/719472
 doc:d-754fcec24f,doc,Data Centers in Texas: Registered Qualifying Data Center Projects; Registered Qualifying Large Data Center Projects,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-754fcec24f,doc/d-754fcec24f.html,,registry_record,https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php
 doc:d-759b335d89,doc,Apple Conflict Minerals Report / Form SD (CY2025),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-759b335d89,doc/d-759b335d89.html,,company_statement,https://s203.q4cdn.com/367071867/files/doc_downloads/2026/05/Conflict-Minerals-Filing.pdf
@@ -611,6 +623,7 @@ doc:d-7ae24e9acb,doc,"EdgeConneX Dublin campus (EDCDUB / ESSDUB97), Ballymakaily
 doc:d-7b3a4e2b9a,doc,"Energy benchmarking (Kansas City, MO; dataset p92b-cm6v)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7b3a4e2b9a,doc/d-7b3a4e2b9a.html,,,https://data.kcmo.org/d/p92b-cm6v
 doc:d-7b580cacb7,doc,DEQ Guidance Memo APG-578: Sudden and Reasonably Unforeseeable Events in the Context of Planned Electric Outages,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7b580cacb7,doc/d-7b580cacb7.html,,,https://townhall.virginia.gov/l/GetFile.cfm?File=C:%5CTownHall%5Cdocroot%5CGuidanceDocs_Proposed%5C440%5CGDoc_DEQ_8407_20251003.pdf
 doc:d-7bc556450f,doc,Naver plans 500MW data center campus in Morocco,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7bc556450f,doc/d-7bc556450f.html,,company_statement,https://www.datacenterdynamics.com/en/news/naver-plans-500mw-data-center-campus-in-morocco/
+doc:d-7bc67a9629,doc,"As death toll rises, Morowali blast brings work safety squarely into focus",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7bc67a9629,doc/d-7bc67a9629.html,,company_statement,https://www.thejakartapost.com/business/2023/12/27/as-death-toll-rises-morowali-blast-brings-work-safety-squarely-into-focus
 doc:d-7bc9196274,doc,"RESOLUCIÓN de 6 de octubre de 2025, del INAGA, declaración de impacto ambiental de las infraestructuras exteriores de agua del centro de datos WQA (Huesca), BOA nº 215",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7bc9196274,doc/d-7bc9196274.html,,regulator_decision,https://www.boa.aragon.es/cgi-bin/EBOA/BRSCGI?CMD=VEROBJ&MLKOB=1419118381010&type=pdf
 doc:d-7bd6cf56b5,doc,ERCOT Senate July 29 Panel 1: Assessing the Grid,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7bd6cf56b5,doc/d-7bd6cf56b5.html,,utility_published,https://www.ercot.com/files/docs/2026/07/29/ERCOT-Senate-July-29-Panel-1-Assessing-The-Grid.pdf
 doc:d-7bfe52a9ca,doc,Application Variation V002 Notice Issue - 19022026 (EPR/FP3630EU/V002),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-7bfe52a9ca,doc/d-7bfe52a9ca.html,,permitted,https://assets.publishing.service.gov.uk/media/69a160923e672177d0bc7767/Application_Variation_V002_Notice_Issue_-_19022026.pdf
@@ -661,6 +674,7 @@ doc:d-84ab88ce57,doc,Circularity White Paper (April 2025),https://kn0wledgebfre3
 doc:d-84cf98b5c4,doc,"NEI 2020 facility summaries, Pennsylvania, NAICS 518210 (EIS 18081511, VANGUARD GROUP INC/PHILADELPHIA)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-84cf98b5c4,doc/d-84cf98b5c4.html,,inventory,https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/PA/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV
 doc:d-85124aefd3,doc,Curate - Demand Connections Reform (consultation on proposed data centre connection reforms),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-85124aefd3,doc/d-85124aefd3.html,,government_document,https://www.ofgem.gov.uk/sites/default/files/2026-07/Proposed-data-centre-connection-reforms-curate-consultation-document.pdf
 doc:d-852c1e536f,doc,2024 Energy Benchmarking All Sites,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-852c1e536f,doc/d-852c1e536f.html,,metered,https://data.montgomerycountymd.gov/resource/g6nn-rgwc.csv?primary_property_type_epa=data%20center
+doc:d-859b111dca,doc,"Planning Statement, proposed data centre, Spango Valley, Greenock (26/0136/IC)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-859b111dca,doc/d-859b111dca.html,,company_statement,https://aprs.scot/wp-content/uploads/2026/08/26_0136_IC-Planning_Statement-670475.pdf
 doc:d-85a9b33a17,doc,"AI to power national renewal as government announces billions of additional investment and new plans to boost UK businesses, jobs and innovation",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-85a9b33a17,doc/d-85a9b33a17.html,,government_document,https://www.gov.uk/government/news/ai-to-power-national-renewal-as-government-announces-billions-of-additional-investment-and-new-plans-to-boost-uk-businesses-jobs-and-innovation
 doc:d-864c8cc2e3,doc,P1186-01-Annual Environmental Report-2025.pdf; LEAP document date 2026-04-29; reporting period 1 Jan-31 Dec 2025,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-864c8cc2e3,doc/d-864c8cc2e3.html,,metered,https://leap.epa.ie/docs/7e3d2b6f-cb9a-4528-ad23-01ffc34e9391.pdf
 doc:d-869c8e0197,doc,E-waste won't be permitted at scrap dealers' new site at Teacher Mante – EPA,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-869c8e0197,doc/d-869c8e0197.html,,press_report,https://citinewsroom.com/2021/07/e-waste-wont-be-permitted-at-scrap-dealers-new-site-at-teacher-mante-epa/
@@ -708,6 +722,7 @@ doc:d-91a0be9d48,doc,"Independent Accountants' Review Report, year ended Decembe
 doc:d-91b0dd6bd5,doc,Digital Realty 2025 Impact Report (calendar year 2025),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-91b0dd6bd5,doc/d-91b0dd6bd5.html,,company_statement,https://investor.digitalrealty.com/static-files/8e2cfc9f-e0a7-4ee0-a7a6-c6a2ea182fa5
 doc:d-91b5431b32,doc,"Case PPA-230-2794: 1 Redheughs Avenue, South Gyle, Edinburgh",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-91b5431b32,doc/d-91b5431b32.html,,,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582
 doc:d-91c93afae9,doc,"Dominion documentation for the PJM load forecast (letter, Director Data Center Practice)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-91c93afae9,doc/d-91c93afae9.html,,filed,https://www.pjm.com/-/media/DotCom/planning/res-adeq/load-forecast/dominion-documentation.pdf
+doc:d-91faa6e202,doc,"Scoping opinion 26/0464/SCO: proposed datacentre led development, land north of the former Chapelcross Nuclear Power Station, near Annan",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-91faa6e202,doc/d-91faa6e202.html,,government_document,https://aprs.scot/wp-content/uploads/2026/08/26_0464_SCO-Delegated_Report-1766447.pdf
 doc:d-9229bd999c,doc,Fortum has started heat production at two large data centre sites in Finland,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-9229bd999c,doc/d-9229bd999c.html,,company_statement,https://www.fortum.com/media/2026/05/fortum-has-started-heat-production-two-large-data-centre-sites-finland
 doc:d-9231e24d5e,doc,"Peremptory Exception and Motion to Declare Laidley, LLC and Meta Platforms, LLC as Parties Necessary for Just Adjudication (LPSC Docket U-37425)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-9231e24d5e,doc/d-9231e24d5e.html,,filed,https://all4energy.org/wp-content/uploads/2025/03/2025-03-05-U-37425-AAE-UCS-Joint-Mtn-to-Declare-Parties-as-Necessary.pdf
 doc:d-9239ef442a,doc,China's Guiyu shifts away from crude processing,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-9239ef442a,doc/d-9239ef442a.html,,press_report,http://resource-recycling.com/e-scrap/2015/12/17/chinas-guiyu-shifts-away-crude-processing/
@@ -810,6 +825,7 @@ doc:d-a706d29ad5,doc,Reclaimed Water Program,https://kn0wledgebfre3-sys.github.i
 doc:d-a7ed60b9ae,doc,Assembly Bill A7389 actions list,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a7ed60b9ae,doc/d-a7ed60b9ae.html,,,https://nysenate.gov/legislation/bills/2021/A7389
 doc:d-a82299386d,doc,Person in the Port Project flyer,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a82299386d,doc/d-a82299386d.html,,,https://i.unu.edu/media/ias.unu.edu-en/news/5651/Flyer_Person_in_the_Port_Project.pdf
 doc:d-a83a26a537,doc,Analyseforudsaetninger til Energinet 2025 - Datacentre (baggrundsnotat),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a83a26a537,doc/d-a83a26a537.html,,estimate_by_record_holder,https://ens.dk/media/7603/download
+doc:d-a911bf4f98,doc,18 Workers Killed in Smelter Explosion: Morowali Police,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a911bf4f98,doc/d-a911bf4f98.html,,official_statistic,https://inp.polri.go.id/artikel/18-victims-killed-in-smelter-explosion-morowali-police
 doc:d-a938de6999,doc,"Google 2025 Environmental Report (includes Ernst & Young LLP's Independent Accountants' Review Report for FY2024 and Appendix A schedules, pp.112-114)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a938de6999,doc/d-a938de6999.html,,assured_disclosure,https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf
 doc:d-a941301431,doc,Isometric Registry: Key registry concepts,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a941301431,doc/d-a941301431.html,,,https://docs.isometric.com/user-guides/registry/key-registry-concepts
 doc:d-a94ceac687,doc,"NEI 2020 facility summaries, Nevada, NAICS 518210 (EIS 17015011, Switch Communications)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-a94ceac687,doc/d-a94ceac687.html,,inventory,https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2020/state_abbr/equals/NV/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV
@@ -900,6 +916,7 @@ doc:d-c098a8887e,doc,Application Variation V003 Decision Document (EPR/BP3945QX/
 doc:d-c0b6a15130,doc,"Duane Arnold Energy Center (reactor page, docket 05000331)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c0b6a15130,doc/d-c0b6a15130.html,,,https://www.nrc.gov/info-finder/reactors/duan
 doc:d-c0ee1a4fec,doc,"Micron Technology, Inc. Form 10-K for the fiscal year ended September 3, 2026",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c0ee1a4fec,doc/d-c0ee1a4fec.html,,company_statement,https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000023/mu-20260903.htm
 doc:d-c163fdb81d,doc,Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c163fdb81d,doc/d-c163fdb81d.html,,company_statement,https://media.greenweb.org/uploads/ds_sustainability_data_en.pdf
+doc:d-c185cf0cfc,doc,"Indonesia nickel smelter furnace blast kills 13 workers, wounds 38",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c185cf0cfc,doc/d-c185cf0cfc.html,,company_statement,https://www.thejakartapost.com/indonesia/2023/12/24/indonesia-nickel-smelter-furnace-blast-kills-13-workers-wounds-38.html
 doc:d-c1ba6c7f4e,doc,ACR on ICE GreenTrace: Credits,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c1ba6c7f4e,doc/d-c1ba6c7f4e.html,,,https://greentrace.ice.com/acr/credits
 doc:d-c1e9c36aa5,doc,"Statement of Estimated Fiscal Impact, H. 4925 (introduced)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c1e9c36aa5,doc/d-c1e9c36aa5.html,,,https://www.scstatehouse.gov/sess126_2025-2026/fiscalimpactstatements/H4925%202026-01-14%20introduced.pdf
 doc:d-c2243381d6,doc,"Amazon.com Inc. Form 10-K FY2022 (Note 1, Use of Estimates)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-c2243381d6,doc/d-c2243381d6.html,,filed,https://www.sec.gov/Archives/edgar/data/1018724/000101872423000004/amzn-20221231.htm
@@ -1009,12 +1026,12 @@ doc:d-da87fc5459,doc,"Dewan Negeri Johor: written questions and answers, Nov 202
 doc:d-daec79dc05,doc,"NEI 2023 facility summaries, Tennessee, NAICS 518210 (EIS 17416311, HCA IT&S)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-daec79dc05,doc/d-daec79dc05.html,,inventory,https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/TN/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV
 doc:d-daf6c96d9a,doc,Uttar Pradesh Data Centre Policy 2026,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-daf6c96d9a,doc/d-daf6c96d9a.html,,government_document,https://invest.up.gov.in/uttar-pradesh-data-centre-policy-2026/
 doc:d-db2cd5611e,doc,"NEI 2023 facility summary, EIS 15410111",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-db2cd5611e,doc/d-db2cd5611e.html,,inventory,https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/eis_facility_id/equals/15410111/pollutant_type/equals/CAP/1:200/CSV
-doc:d-db494bf684,doc,"As death toll rises, Morowali blast brings work safety squarely into focus",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-db494bf684,doc/d-db494bf684.html,,company_statement,https://www.thejakartapost.com/id/business/2023/12/27/as-death-toll-rises-morowali-blast-brings-work-safety-squarely-into-focus
 doc:d-db758963c0,doc,Data Centers - Database (datacentres listed by country),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-db758963c0,doc/d-db758963c0.html,,company_statement,https://www.datacentermap.com/datacenters.html
 doc:d-db8fb1713c,doc,MP do Redata caduca sem votação no Senado,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-db8fb1713c,doc/d-db8fb1713c.html,,,https://cenarioenergia.com.br/2026/02/26/mp-do-redata-caduca-sem-votacao-no-senado-e-cria-vacuo-regulatorio-para-data-centers-e-demanda-por-energia-limpa/
 doc:d-dc550ee7df,doc,Musk's xAI gets go-ahead for 41 natural gas turbines in Mississippi,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dc550ee7df,doc/d-dc550ee7df.html,,company_statement,https://www.datacenterdynamics.com/en/news/musks-xai-gets-go-ahead-for-41-natural-gas-turbines-in-mississippi-to-power-colossus-data-centers
 doc:d-dc5c8c313e,doc,"NEI 2023 facility summaries, North Carolina, NAICS 518210 (EIS 16852811, Tapaha Dynamics, LLC)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dc5c8c313e,doc/d-dc5c8c313e.html,,inventory,https://data.epa.gov/dmapservice/nei.vw_facility_summaries_2023/state_abbr/equals/NC/naics_code/equals/518210/pollutant_type/equals/CAP/1:5000/CSV
-doc:d-dcf1b79cd7,doc,"Independent Accountants' Review Report, year ended December 31, 2024 (EY)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dcf1b79cd7,doc/d-dcf1b79cd7.html,,assured_disclosure,https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/
+doc:d-dcd1ea3acb,doc,"Planning Statement, data centre at Glenbervie, Larbert (P/26/0237/FUL)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dcd1ea3acb,doc/d-dcd1ea3acb.html,,company_statement,https://aprs.scot/wp-content/uploads/2026/06/P_26_0237_FUL-Planning_Statement-1644123.pdf
+doc:d-dcf1b79cd7,doc,"Independent Accountants' Review Reports, year ended December 31, 2025 (EY)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dcf1b79cd7,doc/d-dcf1b79cd7.html,,assured_disclosure,https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/
 doc:d-dd8b9cfca1,doc,"Fiscal note, HB 1192 (LC 50 0792S), signed by State Auditor Greg S. Griffin and OPB Director Richard Dunn",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dd8b9cfca1,doc/d-dd8b9cfca1.html,,estimate_by_record_holder,https://opb.georgia.gov/document/fiscal-notes-2024/lc-50-0792s/download
 doc:d-dda9193c38,doc,Decision Document SP3237JU,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-dda9193c38,doc/d-dda9193c38.html,,permitted,https://assets.publishing.service.gov.uk/media/5cc3089040f0b64039aede55/Decision_Document_SP3237JU.pdf
 doc:d-ddce2c10c2,doc,台電：桃園以北不再核供5MW以上資料中心 (reports Taipower press release of 10 Aug 2024: 2023 northern use 931 億度 vs generation 750 億度),https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-ddce2c10c2,doc/d-ddce2c10c2.html,,press_report,https://www.ctee.com.tw/news/20240810700723-430503
@@ -1091,6 +1108,7 @@ doc:d-eee0b30e3e,doc,COM(2026) 500 final,https://kn0wledgebfre3-sys.github.io/co
 doc:d-ef7b41648e,doc,"TAQA Morocco – Conférence de presse, résultats 2025 (deck)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-ef7b41648e,doc/d-ef7b41648e.html,,company_statement,https://www.taqamorocco.ma/sites/default/files/2026-04/TAQA%20Morocco%20Deck%20Conf%C3%A9rence%20de%20presse%201er%20avril%202026.pdf
 doc:d-efb1de0d1c,doc,Komst datacenter Meta verder op losse schroeven,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-efb1de0d1c,doc/d-efb1de0d1c.html,,press_report,https://nos.nl/l/2432182
 doc:d-f00ae761fb,doc,Alberta grid operator launches interim plan to connect up to 1.2GW of data centers by 2028,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-f00ae761fb,doc/d-f00ae761fb.html,,,https://www.datacenterdynamics.com/en/news/alberta-grid-operator-launches-interim-plan-to-connect-up-to-12gw-of-data-centers-by-2028/
+doc:d-f0336521a9,doc,"Request for EIA screening opinion, land at former IBM site, Spango Valley, Greenock",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-f0336521a9,doc/d-f0336521a9.html,,,https://aprs.scot/wp-content/uploads/2026/09/26_0136_IC-EIA_Screening_Request-677275.pdf
 doc:d-f07018e06a,doc,"NRC Issues Construction Permit to US SFR Owner (Kemmerer Power Station, Unit 1, CPAR-1)",https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-f07018e06a,doc/d-f07018e06a.html,,,https://www.nrc.gov/node/2156776
 doc:d-f0f3175472,doc,Stargate Argentina: OpenAI announces US$25 billion AI DC project in Patagonia,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-f0f3175472,doc/d-f0f3175472.html,,company_statement,https://w.media/stargate-argentina-openai-announces-us-25-billion-ai-dc-project-in-patagonia/
 doc:d-f1045d53c1,doc,Echelon Clondalkin Dc Services Limited (company no. 706392) company page,https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/d-f1045d53c1,doc/d-f1045d53c1.html,,registry_record,https://www.solocheck.ie/Irish-Company/Echelon-Clondalkin-Dc-Services-Limited-706392
@@ -1423,6 +1441,7 @@ figure:m-033e09665e,figure,Electricity used: 3937753.5,https://kn0wledgebfre3-sy
 figure:m-0341d31b3e,figure,Share: 84.9%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0341d31b3e,explore.html#m-0341d31b3e,,share_other,claim
 figure:m-034d681305,figure,"Forecast demand: 1,851 MWs",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-034d681305,explore.html#m-034d681305,,forecast_demand,record
 figure:m-036fced0d3,figure,Electricity used: 9545714.9,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-036fced0d3,explore.html#m-036fced0d3,,electricity_consumed,record
+figure:m-036ff6c881,figure,"Scope 1 emissions: 33,555 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-036ff6c881,explore.html#m-036ff6c881,,emissions_scope1,record
 figure:m-037ba881c5,figure,Capacity approved: about 23 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-037ba881c5,explore.html#m-037ba881c5,,approved_capacity,record
 figure:m-03876c74c0,figure,Generators: 9,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-03876c74c0,explore.html#m-03876c74c0,,generator_count,record
 figure:m-03926c849b,figure,SO2 emitted: 0E-10,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-03926c849b,explore.html#m-03926c849b,,emissions_so2,record
@@ -1546,6 +1565,7 @@ figure:m-0a051558e5,figure,Land area: about 15 acres,https://kn0wledgebfre3-sys.
 figure:m-0a06bb25ef,figure,Hardware lifetime: servers from 4 to 6 years,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a06bb25ef,explore.html#m-0a06bb25ef,,hardware_lifetime,record
 figure:m-0a0e8182c8,figure,Electricity used: 27347025.4,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a0e8182c8,explore.html#m-0a0e8182c8,,electricity_consumed,record
 figure:m-0a118ca1bb,figure,"Generating capacity: about 1,240 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a118ca1bb,explore.html#m-0a118ca1bb,,generation_capacity,record
+figure:m-0a1d94dbb7,figure,Count: 18 deaths,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a1d94dbb7,explore.html#m-0a1d94dbb7,,count_other,record
 figure:m-0a2b698189,figure,VOC emitted: 0.4900000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a2b698189,explore.html#m-0a2b698189,,emissions_voc,record
 figure:m-0a2eb01ba0,figure,Public money: $928.6 million,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a2eb01ba0,explore.html#m-0a2eb01ba0,,public_money,record
 figure:m-0a318efd83,figure,Generating capacity: 75 MWe,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0a318efd83,explore.html#m-0a318efd83,,generation_capacity,record
@@ -1648,6 +1668,7 @@ figure:m-0f80f71fab,figure,Duration: 500,https://kn0wledgebfre3-sys.github.io/co
 figure:m-0f817862e1,figure,Count: 71,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0f817862e1,explore.html#m-0f817862e1,,count_other,claim
 figure:m-0f95bed514,figure,VOC emitted: 0.0120000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0f95bed514,explore.html#m-0f95bed514,,emissions_voc,record
 figure:m-0f9ce05333,figure,"Capacity requested: over 20,000 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0f9ce05333,explore.html#m-0f9ce05333,,requested_capacity,record
+figure:m-0fa3607dbc,figure,"Scope 3 emissions: 1,623,917 MTCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0fa3607dbc,explore.html#m-0fa3607dbc,,emissions_scope3,claim
 figure:m-0fb53c44d4,figure,PM10 emitted: 4.5500000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0fb53c44d4,explore.html#m-0fb53c44d4,,emissions_pm10,record
 figure:m-0fbca5f1c6,figure,VOC emitted: 0.9548078000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0fbca5f1c6,explore.html#m-0fbca5f1c6,,emissions_voc,record
 figure:m-0fd0f4f61c,figure,Generating capacity: 200MWt,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-0fd0f4f61c,explore.html#m-0fd0f4f61c,,generation_capacity,record
@@ -1673,6 +1694,7 @@ figure:m-1180e25e9f,figure,Electricity used: 27730606,https://kn0wledgebfre3-sys
 figure:m-118701a160,figure,Share: +262.3%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-118701a160,explore.html#m-118701a160,,share_other,record
 figure:m-118fedc22b,figure,NOx emitted: 2.3446395000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-118fedc22b,explore.html#m-118fedc22b,,emissions_nox,record
 figure:m-11947c7a46,figure,NOx emitted: 13.0182885000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-11947c7a46,explore.html#m-11947c7a46,,emissions_nox,record
+figure:m-11a9d97975,figure,Count: five Chinese workers,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-11a9d97975,explore.html#m-11a9d97975,,count_other,claim
 figure:m-11c1532c2f,figure,IT capacity: 6.4 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-11c1532c2f,explore.html#m-11c1532c2f,,it_capacity,record
 figure:m-11c4ca94fe,figure,Generator fuel burned: 9971,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-11c4ca94fe,explore.html#m-11c4ca94fe,,generator_fuel_burned,record
 figure:m-11da627e80,figure,Customer count: Approximately 500,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-11da627e80,explore.html#m-11da627e80,,customer_count,record
@@ -1701,6 +1723,7 @@ figure:m-1344a5b34d,figure,Investment: £1.2 billion,https://kn0wledgebfre3-sys.
 figure:m-13470b25d5,figure,Share: 30%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-13470b25d5,explore.html#m-13470b25d5,,share_other,record
 figure:m-136745944f,figure,Electricity used: 1792673.3,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-136745944f,explore.html#m-136745944f,,electricity_consumed,record
 figure:m-136f060f41,figure,Generating capacity: 200 MW of renewables,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-136f060f41,explore.html#m-136f060f41,,generation_capacity,claim
+figure:m-13723f7731,figure,Count: 13 the day before,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-13723f7731,explore.html#m-13723f7731,,count_other,record
 figure:m-137d8a890d,figure,Generators: 89.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-137d8a890d,explore.html#m-137d8a890d,,generator_count,record
 figure:m-1383ea5042,figure,"Generator fuel burned: 1,629.28",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1383ea5042,explore.html#m-1383ea5042,,generator_fuel_burned,record
 figure:m-138d65d15b,figure,Capacity planned: 168 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-138d65d15b,explore.html#m-138d65d15b,,planned_capacity,claim
@@ -1718,6 +1741,7 @@ figure:m-1425a5263e,figure,"Electricity used: 737,140.82",https://kn0wledgebfre3
 figure:m-14396736a4,figure,"Count: 3,500 homes",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-14396736a4,explore.html#m-14396736a4,,count_other,record
 figure:m-145766f700,figure,"Public money: $94,800,000",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-145766f700,explore.html#m-145766f700,,public_money,record
 figure:m-14653d6e54,figure,NOx emitted: 6.1500000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-14653d6e54,explore.html#m-14653d6e54,,emissions_nox,record
+figure:m-146b883001,figure,"Scope 1 emissions: 48,963",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-146b883001,explore.html#m-146b883001,,emissions_scope1,record
 figure:m-147074b7e4,figure,Share: 99%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-147074b7e4,explore.html#m-147074b7e4,,share_other,record
 figure:m-14846ea353,figure,PM10 emitted: 0.1224000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-14846ea353,explore.html#m-14846ea353,,emissions_pm10,record
 figure:m-1489248ae2,figure,PM10 emitted: 0.0037000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1489248ae2,explore.html#m-1489248ae2,,emissions_pm10,record
@@ -1771,6 +1795,7 @@ figure:m-171137a7f9,figure,PUE (power usage effectiveness): <= 1.3,https://kn0wl
 figure:m-172bbaf37b,figure,Forecast demand: 6.0 TWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-172bbaf37b,explore.html#m-172bbaf37b,,forecast_demand,record
 figure:m-174888b367,figure,VOC emitted: 0.0700000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-174888b367,explore.html#m-174888b367,,emissions_voc,record
 figure:m-17509f2d9e,figure,Share: about 80%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-17509f2d9e,explore.html#m-17509f2d9e,,share_other,claim
+figure:m-1757de9586,figure,"Scope 1 emissions: 47,242",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1757de9586,explore.html#m-1757de9586,,emissions_scope1,record
 figure:m-1773bf9fb7,figure,Generating capacity: approximately 60 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1773bf9fb7,explore.html#m-1773bf9fb7,,generation_capacity,record
 figure:m-178015afbd,figure,Generating capacity: 200 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-178015afbd,explore.html#m-178015afbd,,generation_capacity,claim
 figure:m-1788e5fd65,figure,Water withdrawn: about 95 GL/yr,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1788e5fd65,explore.html#m-1788e5fd65,,water_withdrawn,record
@@ -1782,7 +1807,9 @@ figure:m-17a949c8db,figure,Forecast demand: 7.15 GW,https://kn0wledgebfre3-sys.g
 figure:m-17c6da4329,figure,Share of an electricity total: >=50%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-17c6da4329,explore.html#m-17c6da4329,,electricity_share,claim
 figure:m-17df18eefb,figure,Capacity requested: 300MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-17df18eefb,explore.html#m-17df18eefb,,requested_capacity,record
 figure:m-17ec5d0900,figure,Grid capacity connected: approximately 380MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-17ec5d0900,explore.html#m-17ec5d0900,,connected_capacity,claim
+figure:m-17f410f485,figure,"Scope 2 emissions, market-based: 5,912",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-17f410f485,explore.html#m-17f410f485,,emissions_scope2_market,record
 figure:m-1807c75294,figure,Capacity requested: about 706 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1807c75294,explore.html#m-1807c75294,,requested_capacity,record
+figure:m-182b3d067a,figure,Land area: approximately 18.92 hectares,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-182b3d067a,explore.html#m-182b3d067a,,land_area,claim
 figure:m-182b779ef1,figure,Standby generation permitted: 20.91,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-182b779ef1,explore.html#m-182b779ef1,,permitted_standby_generation,record
 figure:m-1840c5fb9f,figure,"Scope 2 emissions, location-based: 113,895 t CO2e (computed)",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-1840c5fb9f,explore.html#m-1840c5fb9f,,emissions_scope2_location,record
 figure:m-184aa124e1,figure,Standby generation permitted: 79.4 to 82.6 MW (computed),https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-184aa124e1,explore.html#m-184aa124e1,,permitted_standby_generation,record
@@ -2144,6 +2171,7 @@ figure:m-2e0a4581d6,figure,Other figure: $1.0 billion,https://kn0wledgebfre3-sys
 figure:m-2e1aacad3b,figure,Duration: 20-year,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e1aacad3b,explore.html#m-2e1aacad3b,,duration_other,claim
 figure:m-2e3ee1f0fc,figure,PM10 emitted: 0.0747900000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e3ee1f0fc,explore.html#m-2e3ee1f0fc,,emissions_pm10,record
 figure:m-2e4c4aa89a,figure,Generating capacity: approximately 106 megawatt,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e4c4aa89a,explore.html#m-2e4c4aa89a,,generation_capacity,claim
+figure:m-2e59bab58a,figure,"Scope 2 emissions, location-based: 7,844,361 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e59bab58a,explore.html#m-2e59bab58a,,emissions_scope2_location,record
 figure:m-2e619f3629,figure,PM2.5 emitted: 0.6980000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e619f3629,explore.html#m-2e619f3629,,emissions_pm25,record
 figure:m-2e64dcd6de,figure,"Investment: $210,942,310",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e64dcd6de,explore.html#m-2e64dcd6de,,investment,record
 figure:m-2e890a765a,figure,Duration: 50,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-2e890a765a,explore.html#m-2e890a765a,,duration_other,record
@@ -2232,6 +2260,7 @@ figure:m-31ff4fc02f,figure,CO2 emitted: 228 t CO2 (computed),https://kn0wledgebf
 figure:m-3212957ba8,figure,Generators: 51.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-3212957ba8,explore.html#m-3212957ba8,,generator_count,record
 figure:m-32181cfa82,figure,Electricity used: 7119049.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-32181cfa82,explore.html#m-32181cfa82,,electricity_consumed,record
 figure:m-321daddf47,figure,Duration: 10 to 20 years,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-321daddf47,explore.html#m-321daddf47,,duration_other,claim
+figure:m-3225ff748c,figure,Count: 38 injured,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-3225ff748c,explore.html#m-3225ff748c,,count_other,claim
 figure:m-322c522492,figure,Share: 50%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-322c522492,explore.html#m-322c522492,,share_other,record
 figure:m-32331f66fd,figure,Share: 2-5%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-32331f66fd,explore.html#m-32331f66fd,,share_other,record
 figure:m-323ec4b3c5,figure,Electricity used: 3522619.5,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-323ec4b3c5,explore.html#m-323ec4b3c5,,electricity_consumed,record
@@ -2276,6 +2305,7 @@ figure:m-35046ba485,figure,Count: 10,https://kn0wledgebfre3-sys.github.io/comput
 figure:m-350ad13399,figure,PM2.5 emitted: 0.0039950000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-350ad13399,explore.html#m-350ad13399,,emissions_pm25,record
 figure:m-350d7b9319,figure,"Water withdrawn: 8,702",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-350d7b9319,explore.html#m-350d7b9319,,water_withdrawn,record
 figure:m-3510346633,figure,Duration: 10-year,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-3510346633,explore.html#m-3510346633,,duration_other,record
+figure:m-3517a80d7c,figure,Share: 100 %,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-3517a80d7c,explore.html#m-3517a80d7c,,share_other,record
 figure:m-35252bd97c,figure,Electricity used: 116229580.7,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-35252bd97c,explore.html#m-35252bd97c,,electricity_consumed,record
 figure:m-352c45aca4,figure,Emissions limit: 96.83 tpy NOx,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-352c45aca4,explore.html#m-352c45aca4,,emissions_limit,record
 figure:m-354e03890a,figure,Electricity used: 2650568,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-354e03890a,explore.html#m-354e03890a,,electricity_consumed,record
@@ -2359,7 +2389,6 @@ figure:m-3966d23d14,figure,NOx emitted: 21.4600000000,https://kn0wledgebfre3-sys
 figure:m-39683ba1b5,figure,Water rate: 21 Ml/day,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-39683ba1b5,explore.html#m-39683ba1b5,,water_rate,record
 figure:m-396d0c3740,figure,Capacity planned: up to 50MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-396d0c3740,explore.html#m-396d0c3740,,planned_capacity,claim
 figure:m-39712a6f34,figure,PUE (power usage effectiveness): 1.3 or lower,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-39712a6f34,explore.html#m-39712a6f34,,pue,record
-figure:m-39861c13b1,figure,Count: 8 Chinese,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-39861c13b1,explore.html#m-39861c13b1,,count_other,claim
 figure:m-398c499d25,figure,Electricity used: 5297786.3,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-398c499d25,explore.html#m-398c499d25,,electricity_consumed,record
 figure:m-398cc5ec98,figure,"Scope 2 emissions, location-based: 21.82 MmtCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-398cc5ec98,explore.html#m-398cc5ec98,,emissions_scope2_location,record
 figure:m-39a7153cbe,figure,Generator fuel burned: 351.09,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-39a7153cbe,explore.html#m-39a7153cbe,,generator_fuel_burned,record
@@ -2509,6 +2538,7 @@ figure:m-436e670a65,figure,Count: 16,https://kn0wledgebfre3-sys.github.io/comput
 figure:m-438b44e49d,figure,PM10 emitted: 0.3353257000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-438b44e49d,explore.html#m-438b44e49d,,emissions_pm10,record
 figure:m-438bb57af7,figure,Electricity used: 14179834.6,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-438bb57af7,explore.html#m-438bb57af7,,electricity_consumed,record
 figure:m-43a0918eb8,figure,Jobs: 65,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-43a0918eb8,explore.html#m-43a0918eb8,,jobs,claim
+figure:m-43abcae6bc,figure,Generators: 48no. generators,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-43abcae6bc,explore.html#m-43abcae6bc,,generator_count,claim
 figure:m-43bc1d7a44,figure,Water withdrawn: 17.601 Mt,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-43bc1d7a44,explore.html#m-43bc1d7a44,,water_withdrawn,claim
 figure:m-43bf045d97,figure,PM10 emitted: 1.0111840000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-43bf045d97,explore.html#m-43bf045d97,,emissions_pm10,record
 figure:m-43c00a624c,figure,Generators: 16 Solar,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-43c00a624c,explore.html#m-43c00a624c,,generator_count,record
@@ -2608,6 +2638,7 @@ figure:m-492de47859,figure,Sites: 5,https://kn0wledgebfre3-sys.github.io/compute
 figure:m-4938a0c914,figure,Share: 85% (distribution),https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4938a0c914,explore.html#m-4938a0c914,,share_other,record
 figure:m-498c1110c2,figure,Standby generation permitted: 8.975,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-498c1110c2,explore.html#m-498c1110c2,,permitted_standby_generation,record
 figure:m-4994253a84,figure,Electricity used: 5123935,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4994253a84,explore.html#m-4994253a84,,electricity_consumed,record
+figure:m-49947cd88b,figure,"Electricity used: 8,300 GWh",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-49947cd88b,explore.html#m-49947cd88b,,electricity_consumed,claim
 figure:m-49a2913bf2,figure,CO emitted: 0.1200000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-49a2913bf2,explore.html#m-49a2913bf2,,emissions_co,record
 figure:m-49ab02a83e,figure,"Peak demand: 4,237",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-49ab02a83e,explore.html#m-49ab02a83e,,peak_demand,record
 figure:m-49b0e79efa,figure,Electricity used: 2908619.1,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-49b0e79efa,explore.html#m-49b0e79efa,,electricity_consumed,record
@@ -2695,7 +2726,6 @@ figure:m-4e12a3cadf,figure,Jobs: 540,https://kn0wledgebfre3-sys.github.io/comput
 figure:m-4e177def0e,figure,Other figure: +USD 770 m,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e177def0e,explore.html#m-4e177def0e,,other,record
 figure:m-4e474706eb,figure,Sites: 16 desalination plants,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e474706eb,explore.html#m-4e474706eb,,site_count,record
 figure:m-4e594e43a9,figure,"Capacity approved: about 1,023 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e594e43a9,explore.html#m-4e594e43a9,,approved_capacity,record
-figure:m-4e69872d97,figure,"Scope 3 emissions: 8,151,769 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e69872d97,explore.html#m-4e69872d97,,emissions_scope3,record
 figure:m-4e70ad7e46,figure,"Electricity used: 513,340.74",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e70ad7e46,explore.html#m-4e70ad7e46,,electricity_consumed,record
 figure:m-4e8bb9447e,figure,Water withdrawn: 46.909 Mt/yr,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e8bb9447e,explore.html#m-4e8bb9447e,,water_withdrawn,claim
 figure:m-4e917c8fb1,figure,Standby generation permitted: 287.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-4e917c8fb1,explore.html#m-4e917c8fb1,,permitted_standby_generation,record
@@ -2837,6 +2867,7 @@ figure:m-56c6899ed6,figure,Generators: 15,https://kn0wledgebfre3-sys.github.io/c
 figure:m-56ce01edd7,figure,Waste generated: 82 billion kg,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56ce01edd7,explore.html#m-56ce01edd7,,waste_generated,record
 figure:m-56db9b6a4e,figure,Electricity used: 4851091.5,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56db9b6a4e,explore.html#m-56db9b6a4e,,electricity_consumed,record
 figure:m-56de24590f,figure,CO emitted: 1.5057000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56de24590f,explore.html#m-56de24590f,,emissions_co,record
+figure:m-56ed399b24,figure,"Scope 3 emissions: 11,858,913 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56ed399b24,explore.html#m-56ed399b24,,emissions_scope3,record
 figure:m-56edf59569,figure,Share: 67.6%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56edf59569,explore.html#m-56edf59569,,share_other,record
 figure:m-56f8af3694,figure,NOx emitted: 7.8500000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-56f8af3694,explore.html#m-56f8af3694,,emissions_nox,record
 figure:m-570ac58132,figure,Duration: 500,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-570ac58132,explore.html#m-570ac58132,,duration_other,record
@@ -2903,6 +2934,7 @@ figure:m-5ac0235458,figure,Sites: 15,https://kn0wledgebfre3-sys.github.io/comput
 figure:m-5ae8c2bdbb,figure,Sites: 11,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5ae8c2bdbb,explore.html#m-5ae8c2bdbb,,site_count,record
 figure:m-5afae52f88,figure,Electricity used: 104.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5afae52f88,explore.html#m-5afae52f88,,electricity_consumed,record
 figure:m-5b07b1359a,figure,Share: Zengwen at 15%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5b07b1359a,explore.html#m-5b07b1359a,,share_other,record
+figure:m-5b2c79aa34,figure,"Carbon credits: 50,000 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5b2c79aa34,explore.html#m-5b2c79aa34,,carbon_credits,record
 figure:m-5b2d127936,figure,VOC emitted: 0.2887200000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5b2d127936,explore.html#m-5b2d127936,,emissions_voc,record
 figure:m-5b30469b9e,figure,Electricity used: about 5.3 GWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5b30469b9e,explore.html#m-5b30469b9e,,electricity_consumed,record
 figure:m-5b5958d038,figure,Electricity used: 42585533,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5b5958d038,explore.html#m-5b5958d038,,electricity_consumed,record
@@ -2978,6 +3010,7 @@ figure:m-5f2710e3c4,figure,"Grid capacity contracted: 4,664.9 MW",https://kn0wle
 figure:m-5f2a0d66ba,figure,Investment: >Rs 2 lakh crore,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f2a0d66ba,explore.html#m-5f2a0d66ba,,investment,claim
 figure:m-5f34b9b637,figure,Other figure: -USD 162 m,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f34b9b637,explore.html#m-5f34b9b637,,other,record
 figure:m-5f3e06aef3,figure,Electricity used: 525625778.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f3e06aef3,explore.html#m-5f3e06aef3,,electricity_consumed,record
+figure:m-5f65940691,figure,Count: eight Indonesian,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f65940691,explore.html#m-5f65940691,,count_other,claim
 figure:m-5f7883768c,figure,Count: about 2 million households,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f7883768c,explore.html#m-5f7883768c,,count_other,record
 figure:m-5f83a4711d,figure,Certificates used: 19%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f83a4711d,explore.html#m-5f83a4711d,,certificates_used,claim
 figure:m-5f884fdc98,figure,Electricity used: 2877947.7,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-5f884fdc98,explore.html#m-5f884fdc98,,electricity_consumed,record
@@ -3083,6 +3116,7 @@ figure:m-64a0bc819a,figure,Standby generation permitted: 15.6,https://kn0wledgeb
 figure:m-64cd6794b1,figure,VOC emitted: 0.0200010000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-64cd6794b1,explore.html#m-64cd6794b1,,emissions_voc,record
 figure:m-64d1f0a5bd,figure,PM2.5 emitted: 0.6932121700,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-64d1f0a5bd,explore.html#m-64d1f0a5bd,,emissions_pm25,record
 figure:m-64df203f72,figure,Electricity used: 112.4 GWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-64df203f72,explore.html#m-64df203f72,,electricity_consumed,record
+figure:m-64f5f186f7,figure,Land area: around 46 hectares,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-64f5f186f7,explore.html#m-64f5f186f7,,land_area,claim
 figure:m-6502bed493,figure,Share: 24%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6502bed493,explore.html#m-6502bed493,,share_other,record
 figure:m-6526639487,figure,Count: more than 7.5 million,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6526639487,explore.html#m-6526639487,,count_other,claim
 figure:m-653945cedd,figure,Capacity planned: 12 MW expansion,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-653945cedd,explore.html#m-653945cedd,,planned_capacity,claim
@@ -3118,6 +3152,8 @@ figure:m-6730f7803a,figure,Count: 11 captive generation permits,https://kn0wledg
 figure:m-673104b5fc,figure,PM2.5 emitted: 0.1043035000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-673104b5fc,explore.html#m-673104b5fc,,emissions_pm25,record
 figure:m-675ee92452,figure,Water rate: 12.02 m3/s,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-675ee92452,explore.html#m-675ee92452,,water_rate,record
 figure:m-675f9fc859,figure,"Land area: 700,000 m2",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-675f9fc859,explore.html#m-675f9fc859,,land_area,claim
+figure:m-67614587e4,figure,"Scope 1 emissions: 47,468 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-67614587e4,explore.html#m-67614587e4,,emissions_scope1,record
+figure:m-67660f39c1,figure,Generators: 42 generators,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-67660f39c1,explore.html#m-67660f39c1,,generator_count,claim
 figure:m-676b7104b0,figure,Count: non-technical 20,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-676b7104b0,explore.html#m-676b7104b0,,count_other,record
 figure:m-676cc353b2,figure,"Peak demand: 3,583 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-676cc353b2,explore.html#m-676cc353b2,,peak_demand,record
 figure:m-676d41e6f4,figure,Electricity used: 215735.8,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-676d41e6f4,explore.html#m-676d41e6f4,,electricity_consumed,record
@@ -3143,7 +3179,6 @@ figure:m-68637d78d9,figure,Share: 24%,https://kn0wledgebfre3-sys.github.io/compu
 figure:m-68727e1f75,figure,Electricity used: 113672383.6,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68727e1f75,explore.html#m-68727e1f75,,electricity_consumed,record
 figure:m-6897974068,figure,NOx emitted: 8.6695602000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6897974068,explore.html#m-6897974068,,emissions_nox,record
 figure:m-68b632e239,figure,Waste recycled: 92%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68b632e239,explore.html#m-68b632e239,,waste_recycled,claim
-figure:m-68c54a1f0f,figure,Count: 41 injured,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68c54a1f0f,explore.html#m-68c54a1f0f,,count_other,claim
 figure:m-68e0397b49,figure,Count: 182 permits,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68e0397b49,explore.html#m-68e0397b49,,count_other,record
 figure:m-68e146e724,figure,Generators: 40.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68e146e724,explore.html#m-68e146e724,,generator_count,record
 figure:m-68e714ec67,figure,Grid capacity connected: 37,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-68e714ec67,explore.html#m-68e714ec67,,connected_capacity,claim
@@ -3205,7 +3240,6 @@ figure:m-6caf3962e7,figure,Generation permitted (thermal input): 72.6,https://kn
 figure:m-6ccc4db836,figure,NOx emitted: 20.8 short tons,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6ccc4db836,explore.html#m-6ccc4db836,,emissions_nox,record
 figure:m-6cd072ec7f,figure,Electricity used: 53285204.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6cd072ec7f,explore.html#m-6cd072ec7f,,electricity_consumed,record
 figure:m-6ce94e44c3,figure,Electricity used: 35485762.9,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6ce94e44c3,explore.html#m-6ce94e44c3,,electricity_consumed,record
-figure:m-6cf32d81b0,figure,Count: 10 Indonesian,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6cf32d81b0,explore.html#m-6cf32d81b0,,count_other,claim
 figure:m-6cfda4c2f0,figure,NOx emitted: 2.2740000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6cfda4c2f0,explore.html#m-6cfda4c2f0,,emissions_nox,record
 figure:m-6d018e66c5,figure,Grid capacity contracted: ~1.3 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6d018e66c5,explore.html#m-6d018e66c5,,contracted_capacity,claim
 figure:m-6d3687dba5,figure,Share: at least 50%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6d3687dba5,explore.html#m-6d3687dba5,,share_other,record
@@ -3228,6 +3262,7 @@ figure:m-6dc087313c,figure,Electricity used: 6049760.2,https://kn0wledgebfre3-sy
 figure:m-6dde373841,figure,"Certificates used: 29,829,540",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6dde373841,explore.html#m-6dde373841,,certificates_used,claim
 figure:m-6de82e47b6,figure,Generators: 75,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6de82e47b6,explore.html#m-6de82e47b6,,generator_count,record
 figure:m-6de88da271,figure,CO emitted: 0.8673000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6de88da271,explore.html#m-6de88da271,,emissions_co,record
+figure:m-6dea622043,figure,"Scope 3 emissions: 8,151,769 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6dea622043,explore.html#m-6dea622043,,emissions_scope3,record
 figure:m-6df165a92e,figure,Investment: $3.2B,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6df165a92e,explore.html#m-6df165a92e,,investment,record
 figure:m-6e05c9d6ab,figure,"Scope 2 emissions, location-based: 45,130 t CO2e (computed)",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6e05c9d6ab,explore.html#m-6e05c9d6ab,,emissions_scope2_location,record
 figure:m-6e11db2621,figure,Electricity used: 441478.3,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-6e11db2621,explore.html#m-6e11db2621,,electricity_consumed,record
@@ -3339,6 +3374,7 @@ figure:m-73c23dc1e4,figure,Electricity used: 192323861.1,https://kn0wledgebfre3-
 figure:m-73c9ab29a9,figure,Water withdrawn: 22.450 Mt/yr,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73c9ab29a9,explore.html#m-73c9ab29a9,,water_withdrawn,claim
 figure:m-73cb3c1705,figure,"Grid capacity contracted: 2,700 MWs",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73cb3c1705,explore.html#m-73cb3c1705,,contracted_capacity,claim
 figure:m-73d17381fe,figure,Electricity used: 7781519.8,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73d17381fe,explore.html#m-73d17381fe,,electricity_consumed,record
+figure:m-73d35ad1f1,figure,Count: 13 workers were killed,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73d35ad1f1,explore.html#m-73d35ad1f1,,count_other,claim
 figure:m-73d7f68edd,figure,SO2 emitted: 0.0015200500,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73d7f68edd,explore.html#m-73d7f68edd,,emissions_so2,record
 figure:m-73e7656350,figure,Jobs: 800,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73e7656350,explore.html#m-73e7656350,,jobs,claim
 figure:m-73e8082dd4,figure,Generating capacity: ~944 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-73e8082dd4,explore.html#m-73e8082dd4,,generation_capacity,record
@@ -3346,6 +3382,7 @@ figure:m-73ed6c245c,figure,Sites: 135,https://kn0wledgebfre3-sys.github.io/compu
 figure:m-74161e7665,figure,Jobs: ~307 operating staff,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-74161e7665,explore.html#m-74161e7665,,jobs,record
 figure:m-7427a0f362,figure,Standby generation permitted: 352.85,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7427a0f362,explore.html#m-7427a0f362,,permitted_standby_generation,record
 figure:m-745a0598f6,figure,"Grid capacity contracted: 1,500 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-745a0598f6,explore.html#m-745a0598f6,,contracted_capacity,record
+figure:m-74740ac280,figure,"Carbon credits: 80,000 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-74740ac280,explore.html#m-74740ac280,,carbon_credits,record
 figure:m-747d1fbf7f,figure,Electricity used: 10563199.4,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-747d1fbf7f,explore.html#m-747d1fbf7f,,electricity_consumed,record
 figure:m-747d6977cb,figure,VOC emitted: 0.0019000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-747d6977cb,explore.html#m-747d6977cb,,emissions_voc,record
 figure:m-7489660df3,figure,Public money: £5 million,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7489660df3,explore.html#m-7489660df3,,public_money,claim
@@ -3368,6 +3405,7 @@ figure:m-757167202b,figure,Electricity used: 8138467.1,https://kn0wledgebfre3-sy
 figure:m-757b620f46,figure,"Uranium purchased: 1,056",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-757b620f46,explore.html#m-757b620f46,,uranium_purchased,record
 figure:m-759094f989,figure,PM10 emitted: 0.0600100000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-759094f989,explore.html#m-759094f989,,emissions_pm10,record
 figure:m-75ae38788d,figure,Electricity used: 42261180.4,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-75ae38788d,explore.html#m-75ae38788d,,electricity_consumed,record
+figure:m-75c30064f4,figure,"Scope 1 emissions: 30,161 MTCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-75c30064f4,explore.html#m-75c30064f4,,emissions_scope1,claim
 figure:m-75d5657ebb,figure,Load factor: ~27%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-75d5657ebb,explore.html#m-75d5657ebb,,load_factor,record
 figure:m-75da988495,figure,Jobs: 60,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-75da988495,explore.html#m-75da988495,,jobs,claim
 figure:m-75eade63ca,figure,PM10 emitted: 0.1400000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-75eade63ca,explore.html#m-75eade63ca,,emissions_pm10,record
@@ -3381,7 +3419,6 @@ figure:m-764d1e9b78,figure,Electricity used: 3870918.5,https://kn0wledgebfre3-sy
 figure:m-765d20e411,figure,"Electricity used: 1,150,330.32",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-765d20e411,explore.html#m-765d20e411,,electricity_consumed,record
 figure:m-7664c1d2c5,figure,Forecast demand: 6.2 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7664c1d2c5,explore.html#m-7664c1d2c5,,forecast_demand,claim
 figure:m-7672c02565,figure,Generators: 4.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7672c02565,explore.html#m-7672c02565,,generator_count,record
-figure:m-7681211db1,figure,"Scope 2 emissions, location-based: 5,967,348",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7681211db1,explore.html#m-7681211db1,,emissions_scope2_location,record
 figure:m-76b3ccb43d,figure,Standby generation permitted: 215.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-76b3ccb43d,explore.html#m-76b3ccb43d,,permitted_standby_generation,record
 figure:m-76ba2fef90,figure,Share: 8.5%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-76ba2fef90,explore.html#m-76ba2fef90,,share_other,record
 figure:m-76cd11beff,figure,Generators: 52,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-76cd11beff,explore.html#m-76cd11beff,,generator_count,record
@@ -3425,6 +3462,7 @@ figure:m-797d8827f6,figure,Share: 15-30%,https://kn0wledgebfre3-sys.github.io/co
 figure:m-798ee5dfe1,figure,Count: 4 of 14,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-798ee5dfe1,explore.html#m-798ee5dfe1,,count_other,record
 figure:m-799af9f713,figure,Generators: 8.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-799af9f713,explore.html#m-799af9f713,,generator_count,record
 figure:m-79aa170b7f,figure,Electricity used: 12224936.1,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-79aa170b7f,explore.html#m-79aa170b7f,,electricity_consumed,record
+figure:m-79ac50cfd5,figure,Land area: approximately 57 hectares,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-79ac50cfd5,explore.html#m-79ac50cfd5,,land_area,record
 figure:m-79bcfb08c5,figure,Count: 40 air-to-water heat pumps,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-79bcfb08c5,explore.html#m-79bcfb08c5,,count_other,claim
 figure:m-7a0356152e,figure,SO2 emitted: 0.0051267878,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7a0356152e,explore.html#m-7a0356152e,,emissions_so2,record
 figure:m-7a057084fd,figure,Generators: 21.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7a057084fd,explore.html#m-7a057084fd,,generator_count,record
@@ -3450,6 +3488,7 @@ figure:m-7b84c65aec,figure,NOx emitted: 25.9 short tons,https://kn0wledgebfre3-s
 figure:m-7b885511e8,figure,Water withdrawn: 98 cfs,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7b885511e8,explore.html#m-7b885511e8,,water_withdrawn,record
 figure:m-7ba57dd510,figure,Generators: 7.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7ba57dd510,explore.html#m-7ba57dd510,,generator_count,record
 figure:m-7bbd3212e6,figure,Electricity used: 1859735.5,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7bbd3212e6,explore.html#m-7bbd3212e6,,electricity_consumed,record
+figure:m-7bc7de427b,figure,Count: 41 injured,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7bc7de427b,explore.html#m-7bc7de427b,,count_other,claim
 figure:m-7bd76b11d8,figure,PM2.5 emitted: 0.0080750000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7bd76b11d8,explore.html#m-7bd76b11d8,,emissions_pm25,record
 figure:m-7be586582b,figure,Electricity used: 130751883.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7be586582b,explore.html#m-7be586582b,,electricity_consumed,record
 figure:m-7bebebea38,figure,Capacity approved: 200 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-7bebebea38,explore.html#m-7bebebea38,,approved_capacity,claim
@@ -3624,6 +3663,7 @@ figure:m-85b70fc6ed,figure,Share: >99%,https://kn0wledgebfre3-sys.github.io/comp
 figure:m-85c1c280c8,figure,Generator fuel burned: 509.42,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-85c1c280c8,explore.html#m-85c1c280c8,,generator_fuel_burned,record
 figure:m-85c7ba2cd9,figure,Share of an electricity total: 9%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-85c7ba2cd9,explore.html#m-85c7ba2cd9,,electricity_share,record
 figure:m-85e0d180ab,figure,PM2.5 emitted: 0.0289100000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-85e0d180ab,explore.html#m-85e0d180ab,,emissions_pm25,record
+figure:m-8607869321,figure,"Floor area: c.80,000sqm",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-8607869321,explore.html#m-8607869321,,floor_area,claim
 figure:m-862edde668,figure,"Jobs: about 2,000 indirect",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-862edde668,explore.html#m-862edde668,,jobs,claim
 figure:m-8639ea22f1,figure,CO2 emitted: 6.3 t CO2 (computed),https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-8639ea22f1,explore.html#m-8639ea22f1,,emissions_co2,record
 figure:m-864c310531,figure,SO2 emitted: 0.0022850000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-864c310531,explore.html#m-864c310531,,emissions_so2,record
@@ -3653,6 +3693,7 @@ figure:m-87bfa55a5c,figure,Duration: 50,https://kn0wledgebfre3-sys.github.io/com
 figure:m-87c3139911,figure,Capacity planned: 5 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-87c3139911,explore.html#m-87c3139911,,planned_capacity,claim
 figure:m-87dbf12ed5,figure,Sites: 8,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-87dbf12ed5,explore.html#m-87dbf12ed5,,site_count,claim
 figure:m-87e2831d76,figure,Electricity used: 3754290.5,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-87e2831d76,explore.html#m-87e2831d76,,electricity_consumed,record
+figure:m-87f032a729,figure,Count: 12 Indonesian,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-87f032a729,explore.html#m-87f032a729,,count_other,record
 figure:m-880d1041cc,figure,Other figure: +USD 695 m,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-880d1041cc,explore.html#m-880d1041cc,,other,record
 figure:m-88167d02fb,figure,"Peak demand: 2,767 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-88167d02fb,explore.html#m-88167d02fb,,peak_demand,record
 figure:m-881a5c6106,figure,Sites: three,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-881a5c6106,explore.html#m-881a5c6106,,site_count,claim
@@ -3820,6 +3861,7 @@ figure:m-9150c43824,figure,"Uranium purchased: 43,495",https://kn0wledgebfre3-sy
 figure:m-91579371af,figure,Water rate: 6.81 m3/s,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-91579371af,explore.html#m-91579371af,,water_rate,record
 figure:m-916688406a,figure,PM10 emitted: 0.0764500000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-916688406a,explore.html#m-916688406a,,emissions_pm10,record
 figure:m-916aadc82e,figure,Other figure: 5 MW or more,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-916aadc82e,explore.html#m-916aadc82e,,other,record
+figure:m-917a6ebba4,figure,Share: 100 %,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-917a6ebba4,explore.html#m-917a6ebba4,,share_other,record
 figure:m-91809a853d,figure,Water withdrawn: 114 Mm3,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-91809a853d,explore.html#m-91809a853d,,water_withdrawn,claim
 figure:m-91b170e04a,figure,"Capacity approved: 5,838 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-91b170e04a,explore.html#m-91b170e04a,,approved_capacity,record
 figure:m-91b6788760,figure,CO emitted: 0.7470460000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-91b6788760,explore.html#m-91b6788760,,emissions_co,record
@@ -3988,6 +4030,7 @@ figure:m-9ae9fdbdd1,figure,"Electricity used: 11,053,822",https://kn0wledgebfre3
 figure:m-9aef783e20,figure,Capacity approved: 662 MVA,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9aef783e20,explore.html#m-9aef783e20,,approved_capacity,record
 figure:m-9b1b1516c2,figure,Duration: three-year,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b1b1516c2,explore.html#m-9b1b1516c2,,duration_other,record
 figure:m-9b1d1f0e9d,figure,Electricity used: 3602916,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b1d1f0e9d,explore.html#m-9b1d1f0e9d,,electricity_consumed,record
+figure:m-9b24cefdcf,figure,Capacity planned: 75MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b24cefdcf,explore.html#m-9b24cefdcf,,planned_capacity,claim
 figure:m-9b2ff19dfb,figure,"Floor area: 162,000 square metres",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b2ff19dfb,explore.html#m-9b2ff19dfb,,floor_area,claim
 figure:m-9b485f65d7,figure,Hardware lifetime: network equipment from 5 to 6 years,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b485f65d7,explore.html#m-9b485f65d7,,hardware_lifetime,record
 figure:m-9b4e2be20a,figure,Electricity used: 1186015,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9b4e2be20a,explore.html#m-9b4e2be20a,,electricity_consumed,record
@@ -4020,7 +4063,6 @@ figure:m-9c57a9ca55,figure,Generators: 13,https://kn0wledgebfre3-sys.github.io/c
 figure:m-9c63ab304a,figure,Share: 50-100%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c63ab304a,explore.html#m-9c63ab304a,,share_other,record
 figure:m-9c7cbb6d8d,figure,Generator fuel burned: 0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c7cbb6d8d,explore.html#m-9c7cbb6d8d,,generator_fuel_burned,record
 figure:m-9c85018f21,figure,Carbon-free energy share: 66%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c85018f21,explore.html#m-9c85018f21,,cfe_share,claim
-figure:m-9c8c94a6a5,figure,Count: 18 deaths,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c8c94a6a5,explore.html#m-9c8c94a6a5,,count_other,claim
 figure:m-9c9a480fef,figure,Certificates used: 19%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c9a480fef,explore.html#m-9c9a480fef,,certificates_used,claim
 figure:m-9c9c5c8c4b,figure,PM10 emitted: 0.0864909000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9c9c5c8c4b,explore.html#m-9c9c5c8c4b,,emissions_pm10,record
 figure:m-9ca122ee67,figure,Standby generation permitted: 175.25,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-9ca122ee67,explore.html#m-9ca122ee67,,permitted_standby_generation,record
@@ -4129,6 +4171,7 @@ figure:m-a23fdf494d,figure,CO2 emitted: 183 t CO2 (computed),https://kn0wledgebf
 figure:m-a24a02c395,figure,Electricity used: 954351.9,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a24a02c395,explore.html#m-a24a02c395,,electricity_consumed,record
 figure:m-a24eda012b,figure,PM2.5 emitted: 0.2769600000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a24eda012b,explore.html#m-a24eda012b,,emissions_pm25,record
 figure:m-a24eecc8bc,figure,Sites: 67,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a24eecc8bc,explore.html#m-a24eecc8bc,,site_count,claim
+figure:m-a2555ed2b3,figure,"Scope 3 emissions: 8,267,364",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a2555ed2b3,explore.html#m-a2555ed2b3,,emissions_scope3,record
 figure:m-a259ceb9c3,figure,Grid capacity connected: 110 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a259ceb9c3,explore.html#m-a259ceb9c3,,connected_capacity,record
 figure:m-a2636a8ec3,figure,Generators: 81.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a2636a8ec3,explore.html#m-a2636a8ec3,,generator_count,record
 figure:m-a28987cfb5,figure,NOx emitted: 1.5764000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a28987cfb5,explore.html#m-a28987cfb5,,emissions_nox,record
@@ -4190,6 +4233,7 @@ figure:m-a5a919ae33,figure,Electricity used: 2100082.6,https://kn0wledgebfre3-sy
 figure:m-a5c2d3c5c6,figure,Electricity used: 109467480.6,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a5c2d3c5c6,explore.html#m-a5c2d3c5c6,,electricity_consumed,record
 figure:m-a5c3dc9774,figure,Jobs: 50,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a5c3dc9774,explore.html#m-a5c3dc9774,,jobs,claim
 figure:m-a5f59312f2,figure,Generators: 15 SMT-130,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a5f59312f2,explore.html#m-a5f59312f2,,generator_count,record
+figure:m-a5fcec5066,figure,Count: eight foreign workers,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a5fcec5066,explore.html#m-a5fcec5066,,count_other,record
 figure:m-a60eeb73a8,figure,"Generator fuel burned: 1,476.02058",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a60eeb73a8,explore.html#m-a60eeb73a8,,generator_fuel_burned,record
 figure:m-a60fe98c0f,figure,PM10 emitted: 0.4293815000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a60fe98c0f,explore.html#m-a60fe98c0f,,emissions_pm10,record
 figure:m-a63df2d517,figure,Capacity planned: 4.75 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-a63df2d517,explore.html#m-a63df2d517,,planned_capacity,claim
@@ -4379,6 +4423,7 @@ figure:m-b12cbfd50b,figure,Jobs: 534 new full-time jobs,https://kn0wledgebfre3-s
 figure:m-b12f25e7a8,figure,Generators: 121.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b12f25e7a8,explore.html#m-b12f25e7a8,,generator_count,record
 figure:m-b1392a3ca4,figure,Duration: 22,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b1392a3ca4,explore.html#m-b1392a3ca4,,duration_other,record
 figure:m-b13dbeaf42,figure,Electricity used: 6103674.7,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b13dbeaf42,explore.html#m-b13dbeaf42,,electricity_consumed,record
+figure:m-b1409a44b2,figure,Land area: 9.67ha,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b1409a44b2,explore.html#m-b1409a44b2,,land_area,claim
 figure:m-b140be9828,figure,CO emitted: 3.5000000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b140be9828,explore.html#m-b140be9828,,emissions_co,record
 figure:m-b144f051ad,figure,Generators: 17,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b144f051ad,explore.html#m-b144f051ad,,generator_count,record
 figure:m-b146776575,figure,Public money: $111.6 million,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-b146776575,explore.html#m-b146776575,,public_money,record
@@ -4566,6 +4611,7 @@ figure:m-bbd7805b06,figure,"Other figure: EUR 500,000/day",https://kn0wledgebfre
 figure:m-bbf12cb6f9,figure,NOx emitted: 0.4928000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bbf12cb6f9,explore.html#m-bbf12cb6f9,,emissions_nox,record
 figure:m-bbf2dc0e41,figure,Generator hours: at least 0.3 hours,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bbf2dc0e41,explore.html#m-bbf2dc0e41,,generator_hours,record
 figure:m-bbfb0cb343,figure,Water rate: ~110 ML/day,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bbfb0cb343,explore.html#m-bbfb0cb343,,water_rate,record
+figure:m-bbff822969,figure,Land area: 151 hectares,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bbff822969,explore.html#m-bbff822969,,land_area,claim
 figure:m-bc0215e97f,figure,Sites: 200,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bc0215e97f,explore.html#m-bc0215e97f,,site_count,claim
 figure:m-bc0a22f57c,figure,Capacity planned: up to 192 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bc0a22f57c,explore.html#m-bc0a22f57c,,planned_capacity,claim
 figure:m-bc13e52b2b,figure,CO2 emitted: 52 t CO2 (computed),https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-bc13e52b2b,explore.html#m-bc13e52b2b,,emissions_co2,record
@@ -4708,8 +4754,8 @@ figure:m-c385df313e,figure,Standby generation permitted: 7.6,https://kn0wledgebf
 figure:m-c3a938034f,figure,"Generating capacity: 1,864 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3a938034f,explore.html#m-c3a938034f,,generation_capacity,record
 figure:m-c3a94c2688,figure,Share: +10%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3a94c2688,explore.html#m-c3a94c2688,,share_other,record
 figure:m-c3b65e3ca9,figure,Generators: 31,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3b65e3ca9,explore.html#m-c3b65e3ca9,,generator_count,record
+figure:m-c3bdd9d77a,figure,"Scope 2 emissions, market-based: 10,861 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3bdd9d77a,explore.html#m-c3bdd9d77a,,emissions_scope2_market,record
 figure:m-c3c71b1b1f,figure,Capacity planned: 49,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3c71b1b1f,explore.html#m-c3c71b1b1f,,planned_capacity,claim
-figure:m-c3cc61f3e3,figure,Share: 100 %,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3cc61f3e3,explore.html#m-c3cc61f3e3,,share_other,record
 figure:m-c3d030ec0f,figure,Generators: first 18 units,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3d030ec0f,explore.html#m-c3d030ec0f,,generator_count,record
 figure:m-c3d57cc044,figure,"Other figure: 56,892,701 m³",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3d57cc044,explore.html#m-c3d57cc044,,other,record
 figure:m-c3d8cbf567,figure,Grid capacity contracted: 115 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c3d8cbf567,explore.html#m-c3d8cbf567,,contracted_capacity,record
@@ -4753,12 +4799,12 @@ figure:m-c69408b840,figure,VOC emitted: 1.2304600000,https://kn0wledgebfre3-sys.
 figure:m-c69a72a32f,figure,Capacity planned: 100 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c69a72a32f,explore.html#m-c69a72a32f,,planned_capacity,claim
 figure:m-c6aaf3be81,figure,Electricity used: 13682194.7,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6aaf3be81,explore.html#m-c6aaf3be81,,electricity_consumed,record
 figure:m-c6b6d4f68d,figure,Electricity used: 636448.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6b6d4f68d,explore.html#m-c6b6d4f68d,,electricity_consumed,record
+figure:m-c6b6f356fd,figure,Count: 29 people severely injured,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6b6f356fd,explore.html#m-c6b6f356fd,,count_other,record
 figure:m-c6c298d694,figure,Count: 10 significant,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6c298d694,explore.html#m-c6c298d694,,count_other,claim
 figure:m-c6c53a734c,figure,PM2.5 emitted: 0.1463460000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6c53a734c,explore.html#m-c6c53a734c,,emissions_pm25,record
 figure:m-c6d389f7a8,figure,Electricity used: 148.1 GWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6d389f7a8,explore.html#m-c6d389f7a8,,electricity_consumed,record
 figure:m-c6f0f88e14,figure,NOx emitted: 4.6160351000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6f0f88e14,explore.html#m-c6f0f88e14,,emissions_nox,record
 figure:m-c6ff643c75,figure,Share: 50%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c6ff643c75,explore.html#m-c6ff643c75,,share_other,record
-figure:m-c71099576f,figure,"Scope 1 emissions: 47,468 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c71099576f,explore.html#m-c71099576f,,emissions_scope1,record
 figure:m-c7318dcc07,figure,Cost to customers: $14-$37 per month,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7318dcc07,explore.html#m-c7318dcc07,,cost_to_customers,record
 figure:m-c73398c5e1,figure,Generators: 69,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c73398c5e1,explore.html#m-c73398c5e1,,generator_count,record
 figure:m-c7354559aa,figure,Electricity used: 7857648.3,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7354559aa,explore.html#m-c7354559aa,,electricity_consumed,record
@@ -4771,9 +4817,9 @@ figure:m-c7bffafc21,figure,Generators: 2.0,https://kn0wledgebfre3-sys.github.io/
 figure:m-c7c1c021ac,figure,Generator hours: at least 21.2 hours,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7c1c021ac,explore.html#m-c7c1c021ac,,generator_hours,record
 figure:m-c7df7b55bc,figure,"Jobs: 5,471 operations jobs",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7df7b55bc,explore.html#m-c7df7b55bc,,jobs,record
 figure:m-c7fb3dfd1a,figure,Electricity used: 7402818.8,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7fb3dfd1a,explore.html#m-c7fb3dfd1a,,electricity_consumed,record
+figure:m-c7fdd74d17,figure,"Carbon credits: 50,000",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c7fdd74d17,explore.html#m-c7fdd74d17,,carbon_credits,claim
 figure:m-c80389b4b3,figure,Carbon-free energy share: approximately 65%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c80389b4b3,explore.html#m-c80389b4b3,,cfe_share,claim
 figure:m-c836244698,figure,"Electricity used: 878,805.31",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c836244698,explore.html#m-c836244698,,electricity_consumed,record
-figure:m-c84c3f0063,figure,"Scope 2 emissions, market-based: 1,358",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c84c3f0063,explore.html#m-c84c3f0063,,emissions_scope2_market,record
 figure:m-c84de7186a,figure,Duration: 500,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c84de7186a,explore.html#m-c84de7186a,,duration_other,record
 figure:m-c85470ee00,figure,PM2.5 emitted: 0.0826520000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c85470ee00,explore.html#m-c85470ee00,,emissions_pm25,record
 figure:m-c8574ae952,figure,Investment: £4bn,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-c8574ae952,explore.html#m-c8574ae952,,investment,claim
@@ -4812,6 +4858,7 @@ figure:m-cae2474dd7,figure,Sites: 98,https://kn0wledgebfre3-sys.github.io/comput
 figure:m-cae647b7b2,figure,Share: 65%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cae647b7b2,explore.html#m-cae647b7b2,,share_other,claim
 figure:m-caf4cfbfd7,figure,Share: 100%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-caf4cfbfd7,explore.html#m-caf4cfbfd7,,share_other,claim
 figure:m-cafccab5f1,figure,Distance: ~2.34 km,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cafccab5f1,explore.html#m-cafccab5f1,,distance,record
+figure:m-cb05bc040a,figure,Count: at least eight Chinese workers,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cb05bc040a,explore.html#m-cb05bc040a,,count_other,claim
 figure:m-cb06f45e84,figure,"Count: 11,481",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cb06f45e84,explore.html#m-cb06f45e84,,count_other,record
 figure:m-cb0c69df9a,figure,NOx emitted: 1.9720000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cb0c69df9a,explore.html#m-cb0c69df9a,,emissions_nox,record
 figure:m-cb0cf99682,figure,"Forecast demand: 49,397 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-cb0cf99682,explore.html#m-cb0cf99682,,forecast_demand,record
@@ -4998,6 +5045,7 @@ figure:m-d52997d94b,figure,VOC emitted: 1.1680000000,https://kn0wledgebfre3-sys.
 figure:m-d53804182d,figure,Generator fuel burned: 60.20,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d53804182d,explore.html#m-d53804182d,,generator_fuel_burned,record
 figure:m-d54829e8d2,figure,Electricity used: 11627390.4,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d54829e8d2,explore.html#m-d54829e8d2,,electricity_consumed,record
 figure:m-d555046b0b,figure,Water allocation: 334.8 hm³,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d555046b0b,explore.html#m-d555046b0b,,water_allocation,record
+figure:m-d565b44441,figure,"Scope 2 emissions, market-based: 234,018 MTCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d565b44441,explore.html#m-d565b44441,,emissions_scope2_market,claim
 figure:m-d576148e18,figure,Grid capacity connected: 142 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d576148e18,explore.html#m-d576148e18,,connected_capacity,claim
 figure:m-d5a2cf9b70,figure,Jobs: 400,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d5a2cf9b70,explore.html#m-d5a2cf9b70,,jobs,claim
 figure:m-d5b29fb8e8,figure,Electricity used: 228517117.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d5b29fb8e8,explore.html#m-d5b29fb8e8,,electricity_consumed,record
@@ -5016,6 +5064,7 @@ figure:m-d61d1434c7,figure,Electricity used: 952139.9,https://kn0wledgebfre3-sys
 figure:m-d62736fdd2,figure,Generators: 64.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d62736fdd2,explore.html#m-d62736fdd2,,generator_count,record
 figure:m-d62b2e96f8,figure,SO2 emitted: 0.1500000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d62b2e96f8,explore.html#m-d62b2e96f8,,emissions_so2,record
 figure:m-d63767e2ff,figure,PM10 emitted: 0.2131700000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d63767e2ff,explore.html#m-d63767e2ff,,emissions_pm10,record
+figure:m-d65b232b7e,figure,Count: 11 with minor injuries,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d65b232b7e,explore.html#m-d65b232b7e,,count_other,record
 figure:m-d661141718,figure,Capacity approved: ~2.5 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d661141718,explore.html#m-d661141718,,approved_capacity,record
 figure:m-d679753d8e,figure,"Natural gas burned: 510,550",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d679753d8e,explore.html#m-d679753d8e,,natural_gas_burned,record
 figure:m-d6a380b7df,figure,NOx emitted: 3.0600000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-d6a380b7df,explore.html#m-d6a380b7df,,emissions_nox,record
@@ -5214,6 +5263,7 @@ figure:m-e25f7b7255,figure,NOx emitted: 27.0697028000,https://kn0wledgebfre3-sys
 figure:m-e2668cbf01,figure,Standby generation permitted: 258.6,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e2668cbf01,explore.html#m-e2668cbf01,,permitted_standby_generation,record
 figure:m-e27d35ed22,figure,Count: 16 approved,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e27d35ed22,explore.html#m-e27d35ed22,,count_other,record
 figure:m-e28662e95f,figure,Generators: 37.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e28662e95f,explore.html#m-e28662e95f,,generator_count,record
+figure:m-e2915652e3,figure,"Scope 1 emissions: 35,812 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e2915652e3,explore.html#m-e2915652e3,,emissions_scope1,record
 figure:m-e29d7d10a9,figure,Waste generated: 62 billion kg,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e29d7d10a9,explore.html#m-e29d7d10a9,,waste_generated,record
 figure:m-e2c4ba29bc,figure,Water rate: 17.29 MGD,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e2c4ba29bc,explore.html#m-e2c4ba29bc,,water_rate,record
 figure:m-e2d037064c,figure,Count: 191,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e2d037064c,explore.html#m-e2d037064c,,count_other,claim
@@ -5263,6 +5313,7 @@ figure:m-e592a1adc5,figure,"Natural gas burned: 5,841 GJ",https://kn0wledgebfre3
 figure:m-e59c249bbd,figure,Grid capacity contracted: 25 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e59c249bbd,explore.html#m-e59c249bbd,,contracted_capacity,claim
 figure:m-e59caa245f,figure,PM10 emitted: 0.0260000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e59caa245f,explore.html#m-e59caa245f,,emissions_pm10,record
 figure:m-e5a00568ad,figure,VOC emitted: 0.3066140000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e5a00568ad,explore.html#m-e5a00568ad,,emissions_voc,record
+figure:m-e5a065e3af,figure,Land area: 41.6 hectares,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e5a065e3af,explore.html#m-e5a065e3af,,land_area,claim
 figure:m-e5a51bec3d,figure,Waste recycled: 61.7%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e5a51bec3d,explore.html#m-e5a51bec3d,,waste_recycled,record
 figure:m-e5c89a95a6,figure,IT capacity: 24,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e5c89a95a6,explore.html#m-e5c89a95a6,,it_capacity,claim
 figure:m-e5cbd611aa,figure,Share: 100% renewable electricity coverage.,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e5cbd611aa,explore.html#m-e5cbd611aa,,share_other,claim
@@ -5277,6 +5328,7 @@ figure:m-e63128eebf,figure,Electricity used: 40934719.4,https://kn0wledgebfre3-s
 figure:m-e668d451e5,figure,Forecast demand: 35.9 TWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e668d451e5,explore.html#m-e668d451e5,,forecast_demand,record
 figure:m-e68da60f77,figure,"Cost to customers: $7,271,197,971",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e68da60f77,explore.html#m-e68da60f77,,cost_to_customers,record
 figure:m-e6ba563d7c,figure,Electricity used: 5501622.2,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e6ba563d7c,explore.html#m-e6ba563d7c,,electricity_consumed,record
+figure:m-e6bc66f5aa,figure,"Scope 2 emissions, location-based: 5,967,348",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e6bc66f5aa,explore.html#m-e6bc66f5aa,,emissions_scope2_location,record
 figure:m-e6ccd7c729,figure,Share: about 1-1.5%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e6ccd7c729,explore.html#m-e6ccd7c729,,share_other,record
 figure:m-e6d7760a3e,figure,"Heat delivered: ~6,000 MWh",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e6d7760a3e,explore.html#m-e6d7760a3e,,heat_delivered,record
 figure:m-e6def78874,figure,PM10 emitted: 0.1335030000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e6def78874,explore.html#m-e6def78874,,emissions_pm10,record
@@ -5306,7 +5358,6 @@ figure:m-e8647b5519,figure,Grid capacity contracted: 73,https://kn0wledgebfre3-s
 figure:m-e8743dafe0,figure,Electricity used: 25 TWh to 91 TWh,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8743dafe0,explore.html#m-e8743dafe0,,electricity_consumed,record
 figure:m-e8748be786,figure,PM2.5 emitted: 0.8888871200,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8748be786,explore.html#m-e8748be786,,emissions_pm25,record
 figure:m-e87de04254,figure,"Water withdrawn: 2,910.65",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e87de04254,explore.html#m-e87de04254,,water_withdrawn,record
-figure:m-e8a311e087,figure,"Carbon credits: 50,000 tCO2e",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8a311e087,explore.html#m-e8a311e087,,carbon_credits,record
 figure:m-e8b3e7580f,figure,IT capacity: 54,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8b3e7580f,explore.html#m-e8b3e7580f,,it_capacity,claim
 figure:m-e8b4e3c2c2,figure,Floor area: >3 million sq ft,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8b4e3c2c2,explore.html#m-e8b4e3c2c2,,floor_area,claim
 figure:m-e8ba5f99e1,figure,Electricity used: 3023395,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-e8ba5f99e1,explore.html#m-e8ba5f99e1,,electricity_consumed,record
@@ -5396,6 +5447,7 @@ figure:m-ed53543fee,figure,IT capacity: 54 MW,https://kn0wledgebfre3-sys.github.
 figure:m-ed54837899,figure,NOx emitted: 12.8393250000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-ed54837899,explore.html#m-ed54837899,,emissions_nox,record
 figure:m-ed6292521a,figure,Land area: about 50 acres,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-ed6292521a,explore.html#m-ed6292521a,,land_area,record
 figure:m-ed64dfdf9e,figure,Electricity used: 67216998.7,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-ed64dfdf9e,explore.html#m-ed64dfdf9e,,electricity_consumed,record
+figure:m-ed6b3d76bb,figure,Count: at least 10 Indonesian workers,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-ed6b3d76bb,explore.html#m-ed6b3d76bb,,count_other,claim
 figure:m-edb76eadc8,figure,"Capacity requested: about 26,500 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-edb76eadc8,explore.html#m-edb76eadc8,,requested_capacity,record
 figure:m-edc3d979cc,figure,Count: 18,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-edc3d979cc,explore.html#m-edc3d979cc,,count_other,record
 figure:m-edce30e0c8,figure,Grid capacity contracted: an additional 260 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-edce30e0c8,explore.html#m-edce30e0c8,,contracted_capacity,claim
@@ -5471,6 +5523,7 @@ figure:m-f1e6981bae,figure,PM10 emitted: 4.6625687493,https://kn0wledgebfre3-sys
 figure:m-f1edd052f3,figure,Generating capacity: approximately 320MWe,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f1edd052f3,explore.html#m-f1edd052f3,,generation_capacity,record
 figure:m-f1f03ce271,figure,Generators: 14,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f1f03ce271,explore.html#m-f1f03ce271,,generator_count,record
 figure:m-f1fd91a192,figure,SO2 emitted: 0.0074110126,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f1fd91a192,explore.html#m-f1fd91a192,,emissions_so2,record
+figure:m-f20485c104,figure,"Scope 2 emissions, market-based: 7,876",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f20485c104,explore.html#m-f20485c104,,emissions_scope2_market,record
 figure:m-f20ebd4837,figure,"Electricity used: 876,610.16",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f20ebd4837,explore.html#m-f20ebd4837,,electricity_consumed,record
 figure:m-f2105c4f84,figure,Investment: C$4.6B,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f2105c4f84,explore.html#m-f2105c4f84,,investment,claim
 figure:m-f210c7eb8b,figure,Generators: 4,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f210c7eb8b,explore.html#m-f210c7eb8b,,generator_count,record
@@ -5495,6 +5548,7 @@ figure:m-f2fa44bea9,figure,Electricity used: 6773931.1,https://kn0wledgebfre3-sy
 figure:m-f302c65ff0,figure,Electricity used: 3379530.5,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f302c65ff0,explore.html#m-f302c65ff0,,electricity_consumed,record
 figure:m-f3121a4b95,figure,Water rate: 14.624 MGD,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f3121a4b95,explore.html#m-f3121a4b95,,water_rate,record
 figure:m-f332a086b6,figure,Sites: 8 new data center campus connects,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f332a086b6,explore.html#m-f332a086b6,,site_count,record
+figure:m-f341af987a,figure,Share: 100%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f341af987a,explore.html#m-f341af987a,,share_other,claim
 figure:m-f350e26d69,figure,Share: 43%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f350e26d69,explore.html#m-f350e26d69,,share_other,record
 figure:m-f354cc32a6,figure,Sites: some 50 sites,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f354cc32a6,explore.html#m-f354cc32a6,,site_count,record
 figure:m-f35a16ef09,figure,Electricity used: 1558541,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f35a16ef09,explore.html#m-f35a16ef09,,electricity_consumed,record
@@ -5509,6 +5563,7 @@ figure:m-f3dc29adb0,figure,NOx emitted: 12.5500000000,https://kn0wledgebfre3-sys
 figure:m-f3e20b4cfd,figure,Grid capacity connected: approximately 63 MW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f3e20b4cfd,explore.html#m-f3e20b4cfd,,connected_capacity,claim
 figure:m-f3eabaa893,figure,Electricity used: 7.1,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f3eabaa893,explore.html#m-f3eabaa893,,electricity_consumed,record
 figure:m-f3eeb0921c,figure,PM2.5 emitted: 0.2020000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f3eeb0921c,explore.html#m-f3eeb0921c,,emissions_pm25,record
+figure:m-f3f14e0bfc,figure,Count: 20 fatalities,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f3f14e0bfc,explore.html#m-f3f14e0bfc,,count_other,record
 figure:m-f4221614cf,figure,Share: ~9.4%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f4221614cf,explore.html#m-f4221614cf,,share_other,record
 figure:m-f42ab9c30f,figure,SO2 emitted: 0.0031762700,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f42ab9c30f,explore.html#m-f42ab9c30f,,emissions_so2,record
 figure:m-f433c42910,figure,Generators: 119.0,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f433c42910,explore.html#m-f433c42910,,generator_count,record
@@ -5535,6 +5590,7 @@ figure:m-f577562144,figure,SO2 emitted: 0.0015030000,https://kn0wledgebfre3-sys.
 figure:m-f59857f9c3,figure,Jobs: 53 family-wage jobs,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f59857f9c3,explore.html#m-f59857f9c3,,jobs,record
 figure:m-f59a0e327f,figure,"Generating capacity: 1,100 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f59a0e327f,explore.html#m-f59a0e327f,,generation_capacity,record
 figure:m-f5b2e76704,figure,Capacity requested: ~205 GW,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f5b2e76704,explore.html#m-f5b2e76704,,requested_capacity,record
+figure:m-f5d42d774c,figure,"Scope 2 emissions, market-based: 1,358",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f5d42d774c,explore.html#m-f5d42d774c,,emissions_scope2_market,record
 figure:m-f5e04b322d,figure,CO emitted: 1.1594820000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f5e04b322d,explore.html#m-f5e04b322d,,emissions_co,record
 figure:m-f5e88375d1,figure,Generation permitted (thermal input): 120,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f5e88375d1,explore.html#m-f5e88375d1,,permitted_generation_thermal_input,record
 figure:m-f60be781d7,figure,Share of an electricity total: 48.5%,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f60be781d7,explore.html#m-f60be781d7,,electricity_share,record
@@ -5599,8 +5655,10 @@ figure:m-f98abf4137,figure,Share: 92%,https://kn0wledgebfre3-sys.github.io/compu
 figure:m-f9963b9cbc,figure,NOx emitted: 7.7400000000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9963b9cbc,explore.html#m-f9963b9cbc,,emissions_nox,record
 figure:m-f9affa1403,figure,CO emitted: 1.4733400000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9affa1403,explore.html#m-f9affa1403,,emissions_co,record
 figure:m-f9b9cafbe4,figure,CO emitted: 7.9751428300,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9b9cafbe4,explore.html#m-f9b9cafbe4,,emissions_co,record
+figure:m-f9cda1cedd,figure,Land area: c.28.21ha,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9cda1cedd,explore.html#m-f9cda1cedd,,land_area,claim
 figure:m-f9e68f874f,figure,"Grid capacity contracted: 2,176 MW",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9e68f874f,explore.html#m-f9e68f874f,,contracted_capacity,claim
 figure:m-f9e6f46f59,figure,Emissions limit: 98.94 tpy CO,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9e6f46f59,explore.html#m-f9e6f46f59,,emissions_limit,record
+figure:m-f9f33dd02b,figure,"Scope 3 emissions: 11,985,785",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9f33dd02b,explore.html#m-f9f33dd02b,,emissions_scope3,record
 figure:m-f9f3b357b9,figure,Land area: more than 10 ha,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-f9f3b357b9,explore.html#m-f9f3b357b9,,land_area,record
 figure:m-fa08313aec,figure,PM10 emitted: 0.2851280000,https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-fa08313aec,explore.html#m-fa08313aec,,emissions_pm10,record
 figure:m-fa21e5a205,figure,"Duration: over 3,000 hours",https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#m-fa21e5a205,explore.html#m-fa21e5a205,,duration_other,record
@@ -5768,6 +5826,8 @@ org:org-amazon-data-services-ireland-ltd,org,Amazon Data Services Ireland Ltd,ht
 org:org-amazon-data-services-uk-limited,org,Amazon Data Services UK Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-amazon-data-services-uk-limited,org/org-amazon-data-services-uk-limited.html,,company,named in the site register
 org:org-amg-brasil,org,AMG Brasil,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-amg-brasil,org/org-amg-brasil.html,,company,named in the site register
 org:org-apatura-dc-project-11-ltd,org,Apatura DC Project 11 Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-apatura-dc-project-11-ltd,org/org-apatura-dc-project-11-ltd.html,,company,named in the site register
+org:org-apatura-dc-project-2-ltd,org,Apatura DC Project 2 Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-apatura-dc-project-2-ltd,org/org-apatura-dc-project-2-ltd.html,,company,named in the site register
+org:org-apatura-dc-project-5-ltd,org,Apatura DC Project 5 Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-apatura-dc-project-5-ltd,org/org-apatura-dc-project-5-ltd.html,,company,named in the site register
 org:org-apple-inc,org,Apple Inc.,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-apple-inc,org/org-apple-inc.html,,company,named in the site register
 org:org-applied-digital,org,Applied Digital,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-applied-digital,org/org-applied-digital.html,,company,named in the site register
 org:org-ark-data-centres-limited,org,Ark Data Centres Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ark-data-centres-limited,org/org-ark-data-centres-limited.html,,company,named in the site register
@@ -5832,6 +5892,7 @@ org:org-data-and-power-hub-services-ltd,org,Data and Power Hub Services Ltd,http
 org:org-data-center-culpeper-llc,org,"Data Center Culpeper, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-data-center-culpeper-llc,org/org-data-center-culpeper-llc.html,,company,named in the site register
 org:org-data-center-vint-hill-llc,org,Data Center Vint Hill LLC,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-data-center-vint-hill-llc,org/org-data-center-vint-hill-llc.html,,company,named in the site register
 org:org-databank-holdings-ltd,org,DataBank Holdings Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-databank-holdings-ltd,org/org-databank-holdings-ltd.html,,company,named in the site register
+org:org-datavita-dv4-limited,org,DataVita DV4 Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-datavita-dv4-limited,org/org-datavita-dv4-limited.html,,company,named in the site register
 org:org-decennial,org,Decennial,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-decennial,org/org-decennial.html,,company,named in the site register
 org:org-design-llc,org,"Design, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-design-llc,org/org-design-llc.html,,company,named in the site register
 org:org-digital-filigree-llc,org,"Digital Filigree, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-digital-filigree-llc,org/org-digital-filigree-llc.html,,company,named in the site register
@@ -5903,6 +5964,7 @@ org:org-hunan-shizhuyuan-nonferrous-metals-co-ltd-chenzhou-tungsten-products-bra
 org:org-hut-8,org,Hut 8,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-hut-8,org/org-hut-8.html,,company,named in the site register
 org:org-ie-us-development-holdings-3,org,IE US Development Holdings 3,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ie-us-development-holdings-3,org/org-ie-us-development-holdings-3.html,,company,named in the site register
 org:org-ie-us-development-holdings-7,org,IE US Development Holdings 7,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ie-us-development-holdings-7,org/org-ie-us-development-holdings-7.html,,company,named in the site register
+org:org-ili-aurelius-limited,org,ILI Aurelius Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ili-aurelius-limited,org/org-ili-aurelius-limited.html,,company,named in the site register
 org:org-ili-cato-ltd,org,ILI Cato Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ili-cato-ltd,org/org-ili-cato-ltd.html,,company,named in the site register
 org:org-ili-group-plc,org,ILI Group PLC,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ili-group-plc,org/org-ili-group-plc.html,,company,named in the site register
 org:org-ili-rufus-limited,org,ILI Rufus Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-ili-rufus-limited,org/org-ili-rufus-limited.html,,company,named in the site register
@@ -6038,6 +6100,7 @@ org:org-si-nva02d-llc,org,"SI NVA02D, LLC",https://kn0wledgebfre3-sys.github.io/
 org:org-si-nva05a-llc,org,"SI NVA05A, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-si-nva05a-llc,org/org-si-nva05a-llc.html,,company,named in the site register
 org:org-si-nva06a-llc,org,"SI NVA06A, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-si-nva06a-llc,org/org-si-nva06a-llc.html,,company,named in the site register
 org:org-si-por03-llc,org,"SI POR03, LLC",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-si-por03-llc,org/org-si-por03-llc.html,,company,named in the site register
+org:org-slate-island-developments-ltd,org,Slate Island Developments Ltd,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-slate-island-developments-ltd,org/org-slate-island-developments-ltd.html,,company,named in the site register
 org:org-slough-holdings-uk-limited,org,Slough Holdings UK Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-slough-holdings-uk-limited,org/org-slough-holdings-uk-limited.html,,company,named in the site register
 org:org-sms-horizon-ec1-llc,org,SMS Horizon EC1 LLC,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-sms-horizon-ec1-llc,org/org-sms-horizon-ec1-llc.html,,company,named in the site register
 org:org-sof-11-docklands-dc-uk-bidco-limited,org,SOF-11 Docklands DC UK BIDCO Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-sof-11-docklands-dc-uk-bidco-limited,org/org-sof-11-docklands-dc-uk-bidco-limited.html,,company,named in the site register
@@ -6046,6 +6109,7 @@ org:org-south-dublin-routing-4-no-2-ltd,org,South Dublin Routing 4 No. 2 Ltd,htt
 org:org-st-telemedia-global-data-centres,org,ST Telemedia Global Data Centres,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-st-telemedia-global-data-centres,org/org-st-telemedia-global-data-centres.html,,company,named in the site register
 org:org-stack-infrastructure,org,STACK Infrastructure,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-stack-infrastructure,org/org-stack-infrastructure.html,,company,named in the site register
 org:org-stream-data-centers,org,Stream Data Centers,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-stream-data-centers,org/org-stream-data-centers.html,,company,named in the site register
+org:org-sunlaws-development-company-limited,org,Sunlaws Development Company Limited,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-sunlaws-development-company-limited,org/org-sunlaws-development-company-limited.html,,company,named in the site register
 org:org-switch-ltd,org,"Switch, Ltd",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-switch-ltd,org/org-switch-ltd.html,,company,named in the site register
 org:org-taki-chemical-co-ltd,org,"Taki Chemical Co., Ltd.",https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-taki-chemical-co-ltd,org/org-taki-chemical-co-ltd.html,,company,named in the site register
 org:org-talen-energy,org,Talen Energy,https://kn0wledgebfre3-sys.github.io/compute-ledger/org/org-talen-energy,org/org-talen-energy.html,,company,named in the site register
@@ -6319,13 +6383,14 @@ site:gbr-equinix-ld8-docklands,site,"Equinix LD8 data centre, Isle of Dogs",http
 site:gbr-equinix-powergate,site,"Equinix Powergate data centre, Park Royal",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-equinix-powergate,sites/gbr-equinix-powergate.html,GBR,datacenter,Equinix (UK) Limited
 site:gbr-equinix-slough-akzonobel,site,"Equinix data centre, former AkzoNobel site, Wexham Road, Slough",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-equinix-slough-akzonobel,sites/gbr-equinix-slough-akzonobel.html,GBR,datacenter,Equinix
 site:gbr-equinix-slough-campus,site,"Equinix Slough campus (LD4, LD5, LD6 and others)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-equinix-slough-campus,sites/gbr-equinix-slough-campus.html,GBR,datacenter,Equinix (UK) Limited
-site:gbr-falkirk-larbert,site,"Data centre, land to the north east of Glenbervie Nursery, Stirling Road, Larbert",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-falkirk-larbert,sites/gbr-falkirk-larbert.html,GBR,datacenter,
+site:gbr-falkirk-larbert,site,"Data centre, land to the north east of Glenbervie Nursery, Stirling Road, Larbert",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-falkirk-larbert,sites/gbr-falkirk-larbert.html,GBR,datacenter,Apatura DC Project 5 Ltd
 site:gbr-fife-auchtertool-cato,site,"Data centre campus (Cato), land to the north of Camilla Road, Gleniston, Auchtertool",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-fife-auchtertool-cato,sites/gbr-fife-auchtertool-cato.html,GBR,datacenter,ILI Group PLC (ILI Cato Ltd)
 site:gbr-gb-one-slough,site,"GB One data centre, Slough",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-gb-one-slough,sites/gbr-gb-one-slough.html,GBR,datacenter,GTR Management Services Limited
 site:gbr-global-switch-east-india-dock,site,"Global Switch London North and South, East India Dock Road",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-global-switch-east-india-dock,sites/gbr-global-switch-east-india-dock.html,GBR,datacenter,Global Switch Limited
 site:gbr-google-north-weald,site,"Google data centre, North Weald Airfield",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-google-north-weald,sites/gbr-google-north-weald.html,GBR,datacenter,Google
 site:gbr-google-waltham-cross-data-center,site,Google Waltham Cross data center,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-google-waltham-cross-data-center,sites/gbr-google-waltham-cross-data-center.html,GBR,datacenter,Google
 site:gbr-green-mountain-romford,site,Green Mountain Romford North data centre,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-green-mountain-romford,sites/gbr-green-mountain-romford.html,GBR,datacenter,Green Mountain DC UK Limited
+site:gbr-inverclyde-greenock-spango-valley,site,"Data centre, land at former IBM site, Spango Valley, Inverkip Road, Greenock",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-inverclyde-greenock-spango-valley,sites/gbr-inverclyde-greenock-spango-valley.html,GBR,datacenter,Slate Island Developments Ltd
 site:gbr-iron-mountain-lon3-slough,site,"Iron Mountain LON3 data centre, 111 Buckingham Avenue",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-iron-mountain-lon3-slough,sites/gbr-iron-mountain-lon3-slough.html,GBR,datacenter,Iron Mountain (UK) Data Centre Limited
 site:gbr-iver-court-lane,site,"Court Lane Industrial Estate, Iver (data centre appeal)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-iver-court-lane,sites/gbr-iver-court-lane.html,GBR,datacenter,Affinius Capital LLC
 site:gbr-iver-woodlands-park,site,"Woodlands Park, Iver (data centre appeals)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-iver-woodlands-park,sites/gbr-iver-woodlands-park.html,GBR,datacenter,Greystoke Land and Altrad UK Limited
@@ -6335,6 +6400,9 @@ site:gbr-leeds-skelton-grange,site,"Microsoft data centre, Skelton Grange, Leeds
 site:gbr-lyc10-docklands,site,"LYC 10 data centre, London Docklands",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-lyc10-docklands,sites/gbr-lyc10-docklands.html,GBR,datacenter,SOF-11 Docklands DC UK BIDCO Limited
 site:gbr-microsoft-newport-imperial-park,site,"Microsoft hyperscale data centre, Imperial Park, Newport",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-microsoft-newport-imperial-park,sites/gbr-microsoft-newport-imperial-park.html,GBR,datacenter,MSFT MCIO Limited
 site:gbr-newham-canning-town,site,"Data centre, Canning Town (Newham)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-newham-canning-town,sites/gbr-newham-canning-town.html,GBR,datacenter,Legal & General
+site:gbr-north-lanarkshire-chapelhall-datavita-dv4,site,"DV4 data centre, Chapelhall (Lanarkshire AI Growth Zone)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-north-lanarkshire-chapelhall-datavita-dv4,sites/gbr-north-lanarkshire-chapelhall-datavita-dv4.html,GBR,datacenter,DataVita DV4 Limited
+site:gbr-north-lanarkshire-newhouse-aurelius,site,"Aurelius Data Centre, land at North Lanrigg, Edinburgh Road, Newhouse, Motherwell",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-north-lanarkshire-newhouse-aurelius,sites/gbr-north-lanarkshire-newhouse-aurelius.html,GBR,datacenter,ILI Aurelius Limited
+site:gbr-north-lanarkshire-ravenscraig,site,"Data centre campus, Ravenscraig Regeneration Area (East), Wishaw, Motherwell",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-north-lanarkshire-ravenscraig,sites/gbr-north-lanarkshire-ravenscraig.html,GBR,datacenter,Apatura DC Project 2 Ltd
 site:gbr-nscale-loughton,site,Nscale Loughton data centre,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-nscale-loughton,sites/gbr-nscale-loughton.html,GBR,datacenter,Nscale
 site:gbr-ntt-dagenham,site,NTT Dagenham data centre campus,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-ntt-dagenham,sites/gbr-ntt-dagenham.html,GBR,datacenter,NTT Global Data Centers EMEA UK Limited
 site:gbr-ntt-hemel-hempstead,site,NTT Hemel Hempstead data centres,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-ntt-hemel-hempstead,sites/gbr-ntt-hemel-hempstead.html,GBR,datacenter,NTT Global Data Centers EMEA UK Limited
@@ -6342,6 +6410,7 @@ site:gbr-park-royal-premier-park,site,"Pure DC data centre, Premier Park, Park R
 site:gbr-pure-dc-staples-corner,site,Data Centre Staples Corner (LON1B1 and others),https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-pure-dc-staples-corner,sites/gbr-pure-dc-staples-corner.html,GBR,datacenter,PDCG (Group Services) Limited
 site:gbr-qts-cambois,site,QTS Cambois data centre campus (former Blyth power station),https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-qts-cambois,sites/gbr-qts-cambois.html,GBR,datacenter,Renaissance Land Limited
 site:gbr-santander-carlton-park,site,Santander Carlton Park data centres 1 and 2,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-santander-carlton-park,sites/gbr-santander-carlton-park.html,GBR,datacenter,Santander UK Plc
+site:gbr-scottish-borders-duns-southside,site,"Southside Data Centre, Roxburghe Estate, near Duns",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-scottish-borders-duns-southside,sites/gbr-scottish-borders-duns-southside.html,GBR,datacenter,Sunlaws Development Company Limited
 site:gbr-slough-manor-farm-poyle,site,"Manor Farm, Poyle Road (data centre appeal)",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-slough-manor-farm-poyle,sites/gbr-slough-manor-farm-poyle.html,GBR,datacenter,Manor Farm Propco Limited
 site:gbr-teesworks-south-tees,site,"South Tees data centre campus, Teesworks",https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-teesworks-south-tees,sites/gbr-teesworks-south-tees.html,GBR,datacenter,Teesworks Ltd
 site:gbr-telehouse-docklands,site,Telehouse Docklands data centre campus,https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/gbr-telehouse-docklands,sites/gbr-telehouse-docklands.html,GBR,datacenter,Telehouse International Corporation of Europe Limited

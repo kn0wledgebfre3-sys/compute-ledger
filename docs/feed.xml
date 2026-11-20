@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Compute Ledger: what changed</title>
+<subtitle>Each round of work on a public ledger of AI compute's footprint, built from public records.</subtitle>
+<link rel="self" type="application/atom+xml" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/feed.xml"/>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html"/>
+<id>https://kn0wledgebfre3-sys.github.io/compute-ledger/feed.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>Compute Ledger contributors</name></author>
+<rights>CC BY 4.0</rights>
+<entry>
+<title>Totals that can be added</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-totals-that-can-be-added"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-totals-that-can-be-added</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/totals.html&quot;&gt;&lt;code&gt;totals.html&lt;/code&gt;&lt;/a&gt; adds figures together only where the sum can be stated exactly: figures about sites, read from records, exact, in one unit, for the same stated period, with the same definition in the same country, and one figure per site (where a site has two, neither is added). Each total lists the figures added and every figure of the same kind, unit and period left out, about a site in the country, the country or a company registered there, with the reason; counts those with another definition or for another period; and says how many of the country&#x27;s sites in the ledger it covers. It is never a total for the country. 47 totals, from Ireland&#x27;s annual environmental reports, US state and city benchmarking filings and EPA&#x27;s emissions inventory. A value its filing says was partly or wholly estimated, whose meter covers less than the year, or whose year the ledger has not confirmed is the year of the data, is left out with that reason, and totals for overlapping parts of a year say they are not to be added.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>A richer map</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-a-richer-map"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-a-richer-map</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The map colours sites by what the ledger holds on one topic at a time (electricity, water, generators and the rest), and filters by status and by organisation; an organisation&#x27;s page links to its sites on the map. A site&#x27;s popup lists its figures topic by topic, each linked to Explore, and says when the document gives its position only roughly. The map can be used by keyboard, and on a phone the list shows each site as a card.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Corrections from every page</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-corrections-from-every-page"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-corrections-from-every-page</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Every page&#x27;s footer, the front page and the brief included, has a form to report a problem with that page, filled in for it, and a form to send a record the ledger does not have (a new issue form, &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/.github/ISSUE_TEMPLATE/page.yml&quot;&gt;&lt;code&gt;.github/ISSUE_TEMPLATE/page.yml&lt;/code&gt;&lt;/a&gt;). Every figure on a site, organisation, country or document page links to its citation and its own correction form. A document page whose address changed keeps a page at its old address that sends the reader on.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>What changed, and a feed</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-what-changed-and-a-feed"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-what-changed-and-a-feed</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html&quot;&gt;&lt;code&gt;changes.html&lt;/code&gt;&lt;/a&gt; lists every change in this changelog, newest first, and &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/feed.xml&quot;&gt;&lt;code&gt;feed.xml&lt;/code&gt;&lt;/a&gt; gives the same as an Atom feed. The changelog&#x27;s unreleased changes are now under the date of their round.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Checked twice</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-checked-twice"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-checked-twice</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Two checkers who did not build them checked the totals, the map, the changes page and feed, and the link previews and correction links side by side, each on the first build and again after the fixes: one recomputed every total and list from the tables, the other tested the pages in a browser at desktop and phone widths, light and dark. They found 83 problems, among them estimated, part-year and unconfirmed-year figures added to totals and missing footer links on the front page and the brief; all are fixed but three, which are on the roadmap (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/features_check_2026-11-20&quot;&gt;&lt;code&gt;review/features_check_2026-11-20/&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Meta&#x27;s review for 2025, and a restatement</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-meta-s-review-for-2025-and-a-restatement"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-meta-s-review-for-2025-and-a-restatement</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;EY&#x27;s two review reports for 2025 (30 October 2026, limited assurance) are added as records: Scope 2 of 7,844,361 t location-based and 10,861 t market-based, Scope 1 on two bases (35,812 t under the GHG Protocol, 33,555 t under Meta&#x27;s own criteria), Scope 3 on two bases, 80,000 t of carbon credits and 100% of electricity matched by clean and renewable sources. The same reports restate 2024 and 2023 after Meta corrected errors in its previously reported Scope 1 and market-based Scope 2: 2024 market-based Scope 2 becomes 7,876 t (from 1,358 t) and 2023 becomes 5,912 t (from 1,658 t). Both versions are kept, each with its document; the earlier figures&#x27; notes give the restated values. The address of the review for 2024 now serves the review for 2025, so the 2024 figures link to the dated copy on Meta&#x27;s site (six figures&#x27; ids changed; the aliases file maps them). Meta&#x27;s data index prints the same 2024 values for carbon credits and renewable matching as claims, so two same-year pairs return to the records-beside-claims page. Read by two readers who agree (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/roadmap_round_2026-11-20&quot;&gt;&lt;code&gt;review/roadmap_round_2026-11-20/&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Equinix, 2025</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-equinix-2025"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-equinix-2025</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The 2025 Sustainability Report&#x27;s Scope 1, market-based Scope 2, Scope 3 and electricity consumed are added as claims: the report says they are assured but names no assurer or level, and the assurance statement and the 2025 Data Summary could not be opened.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Scotland, a second round</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-scotland-a-second-round"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-scotland-a-second-round</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Larbert&#x27;s applicant, Apatura DC Project 5 Ltd, from the council&#x27;s minute of a pre-determination hearing, and its position from the applicant&#x27;s grid reference; Chapelcross&#x27;s site area from the council&#x27;s scoping opinion (approximately 57 hectares, and &#x27;an EIA would be required&#x27;) and 42 standby generators per data centre building from the applicant&#x27;s EIA Report. Five more proposals join the UK list from council and applicant documents: Ravenscraig (the council&#x27;s screening opinion: &#x27;an EIA is not required&#x27;), DataVita DV4 at Chapelhall in the Lanarkshire AI Growth Zone, Spango Valley in Greenock, Southside near Duns and Aurelius at Newhouse; two are placed from their applicants&#x27; grid references. Their figures are the applicants&#x27; and so claims. Read by two readers who agree (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/roadmap_round_2026-11-20&quot;&gt;&lt;code&gt;review/roadmap_round_2026-11-20/&lt;/code&gt;&lt;/a&gt;). 633 of the 994 sites are now on the map.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Morowali, the death toll</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-morowali-the-death-toll"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-morowali-the-death-toll</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The 18 deaths the ledger described as the industrial park&#x27;s initial count is the police&#x27;s count of 26 December 2023, as both The Jakarta Post and the police&#x27;s own article of that day give it; the park&#x27;s first count, on 24 December, was 13. The police&#x27;s counts of 26 December (18, up from 13 the day before) and 2 January 2024 (20, with 12 Indonesian and eight foreign workers, 29 severely injured and 11 with minor injuries) are added as records beside the 21 of 4 January, and the park&#x27;s counts of 24 December (13 deaths, 38 injured) and 26 December (at least 10 Indonesian and eight Chinese workers, 41 injured) as claims. Read by two readers who agree.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Link previews and a query link</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-link-previews-and-a-query-link"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-link-previews-and-a-query-link</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Every page carries a title, description and picture for when a link to it is shared, and its own address as the canonical one. Explore&#x27;s data line adds a link that loads the main tables into Datasette Lite, which runs in the reader&#x27;s browser, to query them with SQL; the tables&#x27; and columns&#x27; descriptions come with them (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/docs/data/datasette-metadata.json&quot;&gt;&lt;code&gt;docs/data/datasette-metadata.json&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>How many datacentres</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-how-many-datacentres"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-how-many-datacentres</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Each country&#x27;s page now sets the number of datacentre sites the ledger names from public documents beside the count a commercial directory, Data Center Map, lists for that country (read twice on 20 November 2026; &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/sites/topics/directory&quot;&gt;&lt;code&gt;sites/topics/directory/&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/directory_counts_2026-11-20&quot;&gt;&lt;code&gt;review/directory_counts_2026-11-20/&lt;/code&gt;&lt;/a&gt;). The directory&#x27;s counts are claims: operators list their own facilities, and the count gives no size and does not say what runs in them. The United Kingdom: 73 named from records, 608 listed; Ireland 40 and 135; the United States 683 and 5,149. Neither number says what share serves AI. A new entry, &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#global-datacentre-counts-directory-and-records&quot;&gt;&lt;code&gt;global-datacentre-counts-directory-and-records&lt;/code&gt;&lt;/a&gt;, sets them side by side.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Scotland</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-scotland"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-scotland</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A new entry, &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#uk-scotland-datacentre-directions-2026&quot;&gt;&lt;code&gt;uk-scotland-datacentre-directions-2026&lt;/code&gt;&lt;/a&gt;: the Scottish Government&#x27;s directions for datacentres over 50MW (notification, in force 17 August 2026; environmental impact assessment, in force 17 September 2026), the Parliament&#x27;s resolution of 16 September 2026 that no decisions on hyperscale applications should be made until national planning guidance is complete, and the Minister for Public Finance&#x27;s letter of 8 October 2026 that the Government does not anticipate any being determined before the guidance is issued. Five sites join the UK list: Chapelcross near Annan, Auchtertool in Fife, Wester Hermiston in Edinburgh (placed from its screening request&#x27;s grid reference), Larbert and Hurlford. 17 figures, most of them applicants&#x27; figures and so claims. Every item was read twice and only those on which the readings agree are used (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/scotland_round_2026-11-20&quot;&gt;&lt;code&gt;review/scotland_round_2026-11-20/&lt;/code&gt;&lt;/a&gt;: 77 used, 21 agreed but not used, 5 differ). 630 of the 989 sites are now on the map.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Site notes in full</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-site-notes-in-full"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-site-notes-in-full</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A site&#x27;s page showed at most 300 characters of the notes its topic list gives, so 97 sites&#x27; notes stopped mid-sentence, often before the line saying where the coordinates came from. They are now shown in full.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Three views across the ledger</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-three-views-across-the-ledger"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-three-views-across-the-ledger</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/records-and-claims.html&quot;&gt;&lt;code&gt;records-and-claims.html&lt;/code&gt;&lt;/a&gt; puts records and claims side by side: first nine pairs, chosen by hand and checked, in which a record and a claim state the same quantity (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/views/same_quantity.csv&quot;&gt;&lt;code&gt;sites/views/same_quantity.csv&lt;/code&gt;&lt;/a&gt;), then all 72 rows in which a subject has both a record and a claim of the same kind, with a note that a shared kind of figure is not always a shared meaning. &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/coverage.html&quot;&gt;&lt;code&gt;coverage.html&lt;/code&gt;&lt;/a&gt; is one table of every country by topic, counted exactly as each country&#x27;s page counts it: figures from records, figures computed by the ledger from records, only claims, or nothing found yet; each cell opens its figures in Explore. &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/timeline.html&quot;&gt;&lt;code&gt;timeline.html&lt;/code&gt;&lt;/a&gt; lists the 923 dated documents behind the ledger, newest first, with a chart of documents per year that follows the filters (country, topic, record or claim, kind of document) and a table of the same counts. Two checkers who did not build the pages checked them side by side, twice: one recomputed every number from the ledger&#x27;s tables and opened source documents, the other tested the pages in a browser at desktop and phone widths. All counts were right; the 28 problems they found in notes, labels, layout and behaviour are fixed or, for two figures already in the ledger, on the roadmap (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/views_check_2026-11-20&quot;&gt;&lt;code&gt;review/views_check_2026-11-20/&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Documents dated and sided by one rule</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-20-documents-dated-and-sided-by-one-rule"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-20-documents-dated-and-sided-by-one-rule</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A document&#x27;s page, the document list and the timeline now date it by the latest date recorded for it, giving the range where there are several, and call it a record, a claim, or both where it is read as often for each. Country pages say when a topic holds only figures the ledger computed from records. One-day periods are written as one date.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>The ledger as a graph</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-the-ledger-as-a-graph"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-the-ledger-as-a-graph</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Every organisation, country and document now has a page of its own (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/docs/org&quot;&gt;&lt;code&gt;docs/org/&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/docs/country&quot;&gt;&lt;code&gt;docs/country/&lt;/code&gt;&lt;/a&gt;, &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/docs/doc&quot;&gt;&lt;code&gt;docs/doc/&lt;/code&gt;&lt;/a&gt;), and every page of a kind has the same sections in the same order, so what is known and what is not yet found can be compared across companies and countries. An organisation&#x27;s page gathers the figures about it, its sites, the companies a documented link says belong to its group, its part of the chain, the documents it published, the entries that name it, and the topics with nothing found yet. Each page draws its neighbourhood, and a search box on every page finds any site, organisation, country or document. Built by &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/build_graph.py&quot;&gt;&lt;code&gt;pipeline/build_graph.py&lt;/code&gt;&lt;/a&gt; and &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/site/build_graph_pages.py&quot;&gt;&lt;code&gt;site/build_graph_pages.py&lt;/code&gt;&lt;/a&gt; from the ledger&#x27;s tables alone; &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/data/graph&quot;&gt;&lt;code&gt;data/graph/&lt;/code&gt;&lt;/a&gt; holds the nodes and links as CSV and as JSON-LD (schema.org, PROV-O, QUDT, SKOS), with the vocabulary at &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/vocab.html&quot;&gt;&lt;code&gt;docs/vocab.html&lt;/code&gt;&lt;/a&gt;. The graph sheets are in the workbook, and Explore takes &lt;code&gt;?org=&lt;/code&gt; and &lt;code&gt;?doc=&lt;/code&gt;.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>The chain, drawn</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-the-chain-drawn"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-the-chain-drawn</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/chain.html&quot;&gt;&lt;code&gt;chain.html&lt;/code&gt;&lt;/a&gt; draws every documented link from refiner and fab to chipmaker, site, power, fuel and water, in five columns, with records, claims and the legs not yet traced told apart; choosing a party follows the chain up and down from it. Site and organisation pages draw their own part of it.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Which names are which organisation</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-which-names-are-which-organisation"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-which-names-are-which-organisation</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/sites/organisations&quot;&gt;&lt;code&gt;sites/organisations/&lt;/code&gt;&lt;/a&gt; says by hand which organisation each operator name (405), entry (204 links) and publisher (84) names, under the rules in its README. The register now holds 399 organisations, including UK legal entities.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Identifiers</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-identifiers"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-identifiers</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;78 identifiers for 47 organisations (37 LEIs, 41 SEC CIKs), each read on its register page by two readers who agree (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/organisation_identity_2026-11-17&quot;&gt;&lt;code&gt;review/organisation_identity_2026-11-17/&lt;/code&gt;&lt;/a&gt;). Wikidata items are not included yet: the second reading could not open wikidata.org.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Group links</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-group-links"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-group-links</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;47 documented links saying which group a project company or national subsidiary belongs to (Companies House&#x27;s register of people with significant control, LEI records, SEC subsidiary lists, annual reports, and for a few, regulators&#x27; documents or press reports), each read by two readers who agree. They are rows of &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/chain/edges.csv&quot;&gt;&lt;code&gt;sites/chain/edges.csv&lt;/code&gt;&lt;/a&gt; (leg &lt;code&gt;ownership&lt;/code&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>United Kingdom</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-united-kingdom"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-united-kingdom</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Seven entries (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/registry/europe.json&quot;&gt;&lt;code&gt;registry/europe.json&lt;/code&gt;&lt;/a&gt;): Environment Agency and Natural Resources Wales permits for datacentre standby generators, the West London electricity constraint, planning decisions 2023 to 2026, national demand estimates, the datacentre Climate Change Agreement, water companies&#x27; plans, and public money for AI compute. 322 figures and 67 sites (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/sites/topics/uk&quot;&gt;&lt;code&gt;sites/topics/uk/&lt;/code&gt;&lt;/a&gt;), each figure read by two readers who agree (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/uk_round_2026-11-17&quot;&gt;&lt;code&gt;review/uk_round_2026-11-17/&lt;/code&gt;&lt;/a&gt;). The sites are not on the map yet.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>A check of the graph</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-a-check-of-the-graph"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-a-check-of-the-graph</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;52 links drawn at random were read against their documents (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/graph_check_2026-11-17&quot;&gt;&lt;code&gt;review/graph_check_2026-11-17/&lt;/code&gt;&lt;/a&gt;): 16 as stated and one in part, among the 20 that could be opened. Two roles were corrected: MSFT MCIO Limited is the applicant for the Newport permit, not its operator; and the two Woodlands Park decisions name the appellant company differently (&#x27;Altrad Limited&#x27; in 2023, &#x27;Altrad UK Limited&#x27; in 2025). The other 32 links are to be read in the next check.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Qualifiers</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-qualifiers"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-qualifiers</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A limit written &quot;shall not ... more than&quot; is now read as a cap, not a floor. Only figures new in this round were affected.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>UK sites on the map</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-uk-sites-on-the-map"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-uk-sites-on-the-map</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;43 of the 67 UK sites are placed, each from the grid reference or easting and northing its permit, decision or report gives, copied by two readers who agree and converted with &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/osgb.py&quot;&gt;&lt;code&gt;pipeline/osgb.py&lt;/code&gt;&lt;/a&gt; (tested on the Ordnance Survey&#x27;s worked example; good to about 5 m) (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/uk_locations_2026-11-17&quot;&gt;&lt;code&gt;review/uk_locations_2026-11-17/&lt;/code&gt;&lt;/a&gt;). The site&#x27;s notes give the reference and the document. Digital Realty Redhill is not placed: its decision document prints a grid reference that falls about 45 km from the Redhill address in the same sentence. Sites with only an address are not placed, and their address is now in their notes.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Five more sites placed, a second pass</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-five-more-sites-placed-a-second-pass"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-five-more-sites-placed-a-second-pass</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The Texas and Irish sites, the planned nuclear sites and the first pass&#x27;s single-reading leads were read again with fresh searches (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/site_locations_2_2026-11-17&quot;&gt;&lt;code&gt;review/site_locations_2_2026-11-17/&lt;/code&gt;&lt;/a&gt;). Placed where both readings agree: Fermi America and the VoltaGrid ABI-1 plant at Vantage Frontier (the map position TCEQ&#x27;s notice links for each power plant), Equinix DB1 (the main-entrance grid reference in the EPA&#x27;s 2020 permit), Digital Realty Redhill (the application form&#x27;s TQ 28670 51462) and Manor Farm, Poyle (the appeal form&#x27;s easting and northing). Four more US addresses join the geocoding queue. 613 of the 984 sites are now on the map.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Coordinates from federal datasets</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-coordinates-from-federal-datasets"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-coordinates-from-federal-datasets</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/fetch_records.py&quot;&gt;&lt;code&gt;pipeline/fetch_records.py&lt;/code&gt;&lt;/a&gt; takes the coordinates EPA&#x27;s emissions inventory gives eight Virginia facilities, by their EIS ids, and the coordinates the EIA-860 plant file (2025) gives the nuclear plants, by name and state (exactly one plant each). Run on 17 November: all eight Virginia facilities and six nuclear plants (Beaver Valley, Clinton, Crane, Davis-Besse, Perry, North Anna) placed; the plant file has no plant named Duane Arnold in Iowa or Susquehanna in Pennsylvania under those names. Two more Texas addresses (Stream Houston I, TRG at Spring) were geocoded. 629 of the 984 sites are now on the map.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>198 US sites placed from their addresses</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-198-us-sites-placed-from-their-addresses"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-198-us-sites-placed-from-their-addresses</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The US Census geocoder was asked for the 275 street addresses in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/locations/address_queue.csv&quot;&gt;&lt;code&gt;sites/locations/address_queue.csv&lt;/code&gt;&lt;/a&gt; (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/locations/geocodes.csv&quot;&gt;&lt;code&gt;sites/locations/geocodes.csv&lt;/code&gt;&lt;/a&gt;, with the query, the matched address and the reason for every row). 198 matched the house number and street (and the ZIP, where the record gives one) and are now on the map: benchmarking filings in California, New York City, Boston, Philadelphia, Seattle, Portland, Chicago, San Francisco, Washington DC, Cambridge and Montgomery County, one Virginia permit and Bitdeer&#x27;s Knoxville site. Each site&#x27;s notes give the address, its record and the matched address; the points are interpolated along the street. The other 77 were not accepted: 38 found no match, 31 of them Virginia permits, mostly on new streets the Census data does not yet hold, and the rest matched another house number, street or ZIP, or two places far apart. 608 of the 984 sites are now on the map.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Where the unplaced sites are</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-where-the-unplaced-sites-are"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-where-the-unplaced-sites-are</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The 185 unplaced sites outside the benchmarking, Virginia and refiner lists were read twice for coordinates or an address (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/site_locations_2026-11-17&quot;&gt;&lt;code&gt;review/site_locations_2026-11-17/&lt;/code&gt;&lt;/a&gt;). No coordinates were found by both readers: most of these sites&#x27; documents name only a town or county. Street addresses both readers give are now in 18 sites&#x27; notes (Irish and UK datacentres), and one US address joins the geocoding queue. Leads from one reading (a Redhill grid reference that fits its address, Fermi America&#x27;s power plant, xAI&#x27;s Tulane Road, CyrusOne DFW10, Ebon at Louisa) wait for a second reading.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Placing sites from a table, and geocoding US addresses</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-placing-sites-from-a-table-and-geocoding-us-addresses"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-placing-sites-from-a-table-and-geocoding-us-addresses</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The build now places a site from &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/locations/placed.csv&quot;&gt;&lt;code&gt;sites/locations/placed.csv&lt;/code&gt;&lt;/a&gt; (coordinates read from documents) or an accepted row of &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/locations/geocodes.csv&quot;&gt;&lt;code&gt;sites/locations/geocodes.csv&lt;/code&gt;&lt;/a&gt; when its own list has none, and adds the addresses in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/locations/addresses.csv&quot;&gt;&lt;code&gt;sites/locations/addresses.csv&lt;/code&gt;&lt;/a&gt; to site notes. &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/address_queue.py&quot;&gt;&lt;code&gt;pipeline/address_queue.py&lt;/code&gt;&lt;/a&gt; lists the 275 US sites whose record gives a street address (benchmarking filings, Virginia permits, addresses read twice); &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/geocode_addresses.py&quot;&gt;&lt;code&gt;pipeline/geocode_addresses.py&lt;/code&gt;&lt;/a&gt; asks the US Census geocoder for each, under the ledger&#x27;s rule (the same house number, street and ZIP). &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/pipeline/coords.py&quot;&gt;&lt;code&gt;pipeline/coords.py&lt;/code&gt;&lt;/a&gt; converts latitude and longitude as printed, the Irish Grid, ITM and UTM.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Plain wording</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-plain-wording"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-plain-wording</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Older notes and review files now describe in plain words how pages were read. Three findings whose quoted text changed keep the ids they were published with. A note on the Cheshunt application that stopped mid-sentence now ends.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Google&#x27;s Waltham Cross site</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-google-s-waltham-cross-site"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-google-s-waltham-cross-site</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Its region is now England, with Hertfordshire kept beside the town, as for the other UK sites.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>What states give up for datacenters</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-what-states-give-up-for-datacenters"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-what-states-give-up-for-datacenters</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Six entries from official evaluations and statutory reports on state tax incentives for datacenters, beside the Virginia and Georgia evaluations already held: Minnesota (an evaluation for the legislature: forgone state revenue of $68.7 million in 2024, about $0.98 in value added per $1 forgone, a share of activity attributable to the exemption that fell from 50% to 24%), Washington (two JLARC reviews and Department of Revenue figures; the urban exemption built no new datacenters and JLARC recommends letting it expire), Illinois (the Department of Commerce&#x27;s annual reports, whose &#x27;value of tax benefits&#x27; is a formula, not tax forgone), Ohio, Texas, and eight states whose documents give little or no annual cost (Arizona, Indiana, Oklahoma, North Carolina, South Carolina, Nebraska, Michigan, Nevada). 60 figures, each read by two readers who agree (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/us_state_incentives_check_2026-11-17&quot;&gt;&lt;code&gt;review/us_state_incentives_check_2026-11-17/&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>EPA inventory facilities</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-17-epa-inventory-facilities"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-17-epa-inventory-facilities</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A second search identified 21 of the 23 facilities outside Virginia not yet identified; two remain (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/us_nei_identity_round2_2026-11-17&quot;&gt;&lt;code&gt;review/us_nei_identity_round2_2026-11-17/&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Ireland, 2023</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-ireland-2023"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-ireland-2023</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The ten 2023 Annual Environmental Reports of the licensed datacentres (eight Amazon licences, Microsoft DUB14/15, Equinix DB5) are read and added: 39 figures. They cover part of the year; the period each report states is recorded in a new &lt;code&gt;period_start&lt;/code&gt; column of &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/metered/ireland_aer_transcribed.csv&quot;&gt;&lt;code&gt;sites/metered/ireland_aer_transcribed.csv&lt;/code&gt;&lt;/a&gt; (with the wording in &lt;code&gt;period_basis&lt;/code&gt;) and used for average load. For the eight Amazon licences, average load was 370.6 MW from the month of licence grant (June or July 2023) to December, 377.6 MW in 2024 and 412.0 MW in 2025 (398.5 MW for 2023 if counted from the date of grant; &lt;code&gt;metered_summary.json&lt;/code&gt;). P1181-01&#x27;s 2024 average load is withdrawn: its report says it covers 8 August to 31 December &quot;unless stated otherwise&quot;, but its Table 3 says &quot;the energy used in 2024&quot;. Read from the rendered pages against the weekly pull&#x27;s text extraction, then checked against the PDFs by a second reader; one figure the extraction missed (P1170-01&#x27;s HVO) was added.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>NOx units</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-nox-units"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-nox-units</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;EPA&#x27;s emissions inventory reports US short tons; the text had written them as &lt;code&gt;t&lt;/code&gt; (tonnes), about 10% high. The text now says short tons (393 short tons of NOx at 27 Virginia facilities in 2023 is 357 tonnes). The figures&#x27; converted values were already right. Twelve figures&#x27; wording changed, so their ids changed; see the aliases file.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>EPA&#x27;s emissions inventory beyond Virginia</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-epa-s-emissions-inventory-beyond-virginia"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-epa-s-emissions-inventory-beyond-virginia</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The first weekly pull&#x27;s 71 facilities in 13 more states that a state classed under NAICS 518210 (computing infrastructure, data processing, web hosting), 2020 and 2023: 663 figures (NOx, CO, VOC, SO2, PM10, PM2.5), first readings by script, in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/metered/us_nei_transcribed.csv&quot;&gt;&lt;code&gt;sites/metered/us_nei_transcribed.csv&lt;/code&gt;&lt;/a&gt;, and a new entry, &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/index.html#us-nei-datacenter-facilities-2020-2023&quot;&gt;&lt;code&gt;us-nei-datacenter-facilities-2020-2023&lt;/code&gt;&lt;/a&gt;. What and where each facility is was checked by three readers from other documents (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/us_nei_identity_check_2026-11-02&quot;&gt;&lt;code&gt;review/us_nei_identity_check_2026-11-02/&lt;/code&gt;&lt;/a&gt;): 47 identified, 24 not yet; six inventory addresses are an owner&#x27;s mailing address in another state. 62 new sites are placed by the inventory&#x27;s coordinates; nine facilities were placed on sites already listed, only where a document says they are the same. For 12 Virginia facilities, the other criteria pollutants were added beside their NOx (51 figures).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Benchmarking, earlier years</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-benchmarking-earlier-years"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-benchmarking-earlier-years</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;193 building-years from the weekly pull, back to 2011, for San Francisco, Seattle, Cambridge, Chicago, Washington DC and New York (151 figures; nine rows left out, with reasons, in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/sites/metered/benchmarking_notes.md&quot;&gt;&lt;code&gt;sites/metered/benchmarking_notes.md&lt;/code&gt;&lt;/a&gt;).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Irish licences</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-irish-licences"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-irish-licences</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;A reader checked the 15 licence numbers the pull found outside the ledger&#x27;s list (&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/review/ireland_licences_check_2026-11-02&quot;&gt;&lt;code&gt;review/ireland_licences_check_2026-11-02/&lt;/code&gt;&lt;/a&gt;). EPA documents, then EPA&#x27;s own licence register (as returned to the pull of 16 November), show four more licences in force since 2023 (Microsoft P1190-01 and P1191-01, Google P1189-01, Runways Information Services P1192-01) and three granted since (K2 P1143-01, Echelon P1113-02, EdgeConneX P1204-01), so the statement that the ledger&#x27;s 11 were all of Ireland&#x27;s licensed datacentres was withdrawn. Their annual reports are not read yet; all seven are now on the pull&#x27;s watch list. The register also gives Amazon&#x27;s Leixlip application P1222-01 the status &#x27;Compliance Failure/Rejected&#x27; and lists a new one, P1238-01. The pull now records each unlisted licence&#x27;s profile.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Explore, map and workbook</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-explore-map-and-workbook"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-explore-map-and-workbook</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html&quot;&gt;&lt;code&gt;explore.html&lt;/code&gt;&lt;/a&gt; searches and filters every figure, downloads the rows chosen as CSV (the columns of &lt;code&gt;measurements.csv&lt;/code&gt;), and gives each figure a permanent link and a citation; a retired id leads to the corrected figure. &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html&quot;&gt;&lt;code&gt;map.html&lt;/code&gt;&lt;/a&gt; showed, when it was first published on 2 November, the 305 sites then placed from a document, with the full list of 853 below it. &lt;a href=&quot;https://kn0wledgebfre3-sys.github.io/compute-ledger/data/compute-ledger.xlsx&quot;&gt;&lt;code&gt;data/compute-ledger.xlsx&lt;/code&gt;&lt;/a&gt; holds every table on its own sheet with a sheet describing the columns. All three are built by &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/site/build_explore.py&quot;&gt;&lt;code&gt;site/build_explore.py&lt;/code&gt;&lt;/a&gt; and checked in CI. Corrections and new records go through two GitHub issue forms, linked from each figure.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Data package</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-data-package"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-data-package</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/datapackage.json&quot;&gt;&lt;code&gt;data/datapackage.json&lt;/code&gt;&lt;/a&gt; describes every table and its columns; &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md&quot;&gt;&lt;code&gt;data/DICTIONARY.md&lt;/code&gt;&lt;/a&gt; is its readable version; every build checks every table against it. The entries are now also tables: &lt;code&gt;entries.csv&lt;/code&gt; and &lt;code&gt;entry_sources.csv&lt;/code&gt;.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Weekly pulls</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-weekly-pulls"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-weekly-pulls</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The first live weekly pull (2026-10-26) is kept in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/data/pulls/2026-10-26&quot;&gt;&lt;code&gt;data/pulls/2026-10-26/&lt;/code&gt;&lt;/a&gt; with a note on how to read it; it changes no table until each item is read against its document.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Documentation</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-documentation"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-documentation</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;The README starts with where the data is and how to cite it; the contribution steps now pass the checks as written; adding a country or topic is documented in &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/JURISDICTION_TEMPLATE.md&quot;&gt;&lt;code&gt;JURISDICTION_TEMPLATE.md&lt;/code&gt;&lt;/a&gt;; &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/ci_local.sh&quot;&gt;&lt;code&gt;ci_local.sh&lt;/code&gt;&lt;/a&gt; now fails where CI would; stale files moved to &lt;a href=&quot;https://github.com/kn0wledgebfre3-sys/compute-ledger/tree/main/history&quot;&gt;&lt;code&gt;history/&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Licence</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#2026-11-16-licence"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:2026-11-16-licence</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;30 seed-list rows rest on a Wikipedia article (CC BY-SA 4.0) for the site&#x27;s identity or location; they are now flagged in the README and their licence value is listed in the asset file&#x27;s definitions.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Version 1.0.0, released</title>
+<link rel="alternate" type="text/html" href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html#d-2026-11-16"/>
+<id>tag:kn0wledgebfre3-sys.github.io,2026:compute-ledger:d-2026-11-16</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;First citable release. 203 entries in 44 countries and territories plus EU-wide and global entries; 3,899 figures (663 of them claims); 917 sites, 367 of them placed from a document; 207 documented links in the chain; 727 distinct linked documents; 23 checks and 1,560 findings. The changes it brought are listed under 16 November 2026.&lt;/p&gt;</content>
+</entry>
+</feed>

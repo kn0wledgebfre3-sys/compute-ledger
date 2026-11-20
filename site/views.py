@@ -182,7 +182,8 @@ n.textContent=v.toLocaleString()+' of '+rows.length.toLocaleString()+' shown';co
 
 def select(gp, tbody, f, label, opts):
     e = gp.e
-    return (f'<select data-for="{tbody}" data-f="{f}" aria-label="{e(label)}"><option value="">{e(label)}</option>'
+    name = re.sub(r"^(Every|Any) ", "", label)  # the control's name, not its first option ('Every country' -> 'Country')
+    return (f'<select data-for="{tbody}" data-f="{f}" aria-label="{e(name[:1].upper() + name[1:])}"><option value="">{e(label)}</option>'
             + "".join(f'<option value="{e(v)}">{e(t)}</option>' for v, t in opts) + "</select>")
 
 
@@ -313,8 +314,9 @@ def records_and_claims(ctx, gp):
                        '<p class="vw-note">Figures in the same row share a subject and a kind of figure, not always a meaning: a row of shares can hold the share of '
                        'sites in a region on one side and the share of requests approved on the other. Read each line before comparing.</p>' + group_tbl),
             "</div>"]
-    return (gp.head("Records beside claims · Compute Ledger", "Where a record and a claim state the same kind of figure about the same subject, side by side, each with its document.", P)
-            + "\n".join(body) + "\n" + gp.foot(P, lines=False))
+    return (gp.head("Records beside claims · Compute Ledger", "Where a record and a claim state the same kind of figure about the same subject, side by side, each with its document.", P,
+                    path="records-and-claims.html")
+            + "\n".join(body) + "\n" + gp.foot(P, lines=False, path="records-and-claims.html", name="records beside claims", about=False))
 
 
 # --------------------------------------------------------------------------------------------------- coverage
@@ -395,8 +397,9 @@ const tw=t.parentElement;t.addEventListener('focusin',ev=>{const c=ev.target.clo
             + '<th scope="col">Topics with a record</th><th scope="col">Sites</th></tr></thead><tbody>' + "".join(rows) + "</tbody>"
             + f'<tfoot><tr><td class="cn">Countries</td>{foot_cells}<td></td><td></td></tr></tfoot></table></div><p class="none empty" id="cov-none" hidden>Nothing matches this search.</p>',
             js, "</div>"]
-    return (gp.head("Coverage · Compute Ledger", "What public records the ledger holds for each country, topic by topic: from records, only claims, or nothing found yet.", P)
-            + "\n".join(body) + "\n" + gp.foot(P, lines=False))
+    return (gp.head("Coverage · Compute Ledger", "What public records the ledger holds for each country, topic by topic: from records, only claims, or nothing found yet.", P,
+                    path="coverage.html")
+            + "\n".join(body) + "\n" + gp.foot(P, lines=False, path="coverage.html", name="coverage", about=False))
 
 
 # --------------------------------------------------------------------------------------------------- timeline
@@ -557,5 +560,6 @@ let rw=box.clientWidth;new ResizeObserver(()=>{if(Math.abs(box.clientWidth-rw)>2
             'It is read mostly for records or mostly for claims by the side of the figures, entries and links that cite it most often. '
             f'{undated:,} documents have no date recorded and are not shown; they are in the <a href="{P}doc/index.html">list of documents</a>.</p>',
             js, "</div>"]
-    return (gp.head("Timeline · Compute Ledger", "Every dated document behind the Compute Ledger, newest first, with a chart of documents per year.", P)
-            + "\n".join(body) + "\n" + gp.foot(P, lines=False))
+    return (gp.head("Timeline · Compute Ledger", "Every dated document behind the Compute Ledger, newest first, with a chart of documents per year.", P,
+                    path="timeline.html")
+            + "\n".join(body) + "\n" + gp.foot(P, lines=False, path="timeline.html", name="the timeline", about=False))

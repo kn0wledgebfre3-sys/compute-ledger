@@ -2,7 +2,7 @@
 
 Generated from `data/datapackage.json` by `pipeline/build_data_package.py`; do not edit by hand. Every table below is checked against this schema on every build. Controlled values for `metric`, `unit`, `basis` and `relation` are listed, with definitions, in `pipeline/measurement_vocab.json`.
 
-## `data/climate_trace_seed/measurements.csv` (4,349 rows)
+## `data/climate_trace_seed/measurements.csv` (4,389 rows)
 
 Every figure in the ledger, one row each: permits, metered loads, filed demand, company statements, computed values. Start here.
 
@@ -35,7 +35,7 @@ Every figure in the ledger, one row each: permits, metered loads, filed demand, 
 | `second_read` | string | yes | `yes`, `no` | yes if a second reading, by a different method or person, confirmed it against the document. |
 | `notes` | string |  |  | What a reader needs to know to use the figure: caveats, conversions, part years. |
 
-## `data/climate_trace_seed/measurement_id_aliases.csv` (12 rows)
+## `data/climate_trace_seed/measurement_id_aliases.csv` (25 rows)
 
 Figures whose id changed because their wording or value was corrected: the retired id, the id that replaced it, when and why. A citation of a retired id resolves here.
 
@@ -46,7 +46,7 @@ Figures whose id changed because their wording or value was corrected: the retir
 | `date` | date | yes |  | Date of the correction. |
 | `reason` | string | yes |  | What was corrected. |
 
-## `data/climate_trace_seed/site_register.csv` (989 rows)
+## `data/climate_trace_seed/site_register.csv` (994 rows)
 
 Every site the ledger has figures or links for: datacenters, buildings that file as datacenters, crypto mining sites, nuclear plants, chip fabs, smelters and refiners. One page each on the website.
 
@@ -78,7 +78,7 @@ Site ids that were retired (merged duplicates) and the id that replaced each.
 | `site_id` | string | yes |  | The id that replaced it (in site_register.csv). |
 | `reason` | string | yes |  | Why it was retired. |
 
-## `data/climate_trace_seed/entity_register.csv` (404 rows)
+## `data/climate_trace_seed/entity_register.csv` (410 rows)
 
 Organisations: companies, utilities, public bodies and registers that sites, figures or chain links refer to. Which names in the ledger's sources refer to which organisation is in sites/organisations/.
 
@@ -116,7 +116,7 @@ The ledger's entries as a flat table, built from registry/*.json: the record, th
 | `n_record_sources` | integer | yes |  | Number of record sources (listed in entry_sources.csv). |
 | `n_claim_sources` | integer | yes |  | Number of claim sources. |
 
-## `data/climate_trace_seed/entry_sources.csv` (1,128 rows)
+## `data/climate_trace_seed/entry_sources.csv` (1,144 rows)
 
 Every document an entry cites, one row each, with the side it supports.
 
@@ -158,7 +158,7 @@ Documented links in the chain from smelter to chipmaker to site and its power, f
 | `notes` | string |  |  | What the reader needs to know. |
 | `second_read` | string | yes |  | yes or no, with how it was confirmed. |
 
-## `data/climate_trace_seed/checks.csv` (34 rows)
+## `data/climate_trace_seed/checks.csv` (36 rows)
 
 Every check run on the ledger: what was checked, how, by whom, and what it found. Built from review/CHECKS.csv and the findings files.
 
@@ -179,7 +179,7 @@ Every check run on the ledger: what was checked, how, by whom, and what it found
 | `findings_by_severity` | string |  |  | Counts by severity. |
 | `status_now` | string |  |  | What the current data show for those findings, recomputed at every build. |
 
-## `data/climate_trace_seed/findings.csv` (3,172 rows)
+## `data/climate_trace_seed/findings.csv` (3,520 rows)
 
 Every finding from every check, with what the data show now.
 
@@ -197,7 +197,7 @@ Every finding from every check, with what the data show now.
 | `severity` | string |  |  | As the checker gave it. |
 | `status_now` | string |  |  | What the current data show, recomputed at every build. |
 
-## `data/graph/nodes.csv` (7,202 rows)
+## `data/graph/nodes.csv` (7,271 rows)
 
 Every node of the ledger's graph (pipeline/build_graph.py; data/graph/README.md): organisations, sites, countries, regions, documents, entries, checks, figures and named parties.
 
@@ -212,7 +212,7 @@ Every node of the ledger's graph (pipeline/build_graph.py; data/graph/README.md)
 | `kind` | string |  |  | Kind of site or organisation; the main kind of document; a figure's metric. |
 | `detail` | string |  |  | For a document its URL; for a site the operator as listed; for a figure its side; for an organisation the register's notes. |
 
-## `data/graph/links.csv` (12,760 rows)
+## `data/graph/links.csv` (12,895 rows)
 
 Every link of the ledger's graph, with the document that states it and the line it was read from, or the table of the ledger that holds it.
 

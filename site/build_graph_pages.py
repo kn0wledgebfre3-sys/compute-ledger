@@ -32,6 +32,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_explore as bx  # noqa: E402
 import build_sites as bs  # noqa: E402
 import graphkit as gk  # noqa: E402
+import changes  # noqa: E402
+import totals  # noqa: E402
 import views  # noqa: E402
 from graphdata import CHAIN_RELATIONS, GROUP_RELATIONS, graph  # noqa: E402
 
@@ -72,10 +74,10 @@ def plural(n, one, many=None):
 
 # --------------------------------------------------------------------------------------------------- page frame
 
-def head(title, desc, prefix, jsonld=None):
+def head(title, desc, prefix, jsonld=None, path=""):
     ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False, separators=(",", ":")).replace("</", "<" + chr(92) + "/")}</script>\n' if jsonld else ""
     return ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            f'<title>{e(title)}</title>\n<meta name="description" content="{e(desc)}">\n' + bx.FONTS
+            f'<title>{e(title)}</title>\n<meta name="description" content="{e(desc)}">\n' + bs.share_meta(title, desc, path, prefix) + bx.FONTS
             + f'<link rel="stylesheet" href="{prefix}sites/site.css">\n<link rel="stylesheet" href="{prefix}assets/graph.css">\n' + ld
             + '<body>\n<div class="wrap">\n')
 
@@ -90,19 +92,20 @@ def nav(prefix, crumbs, current=""):
             'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>\n')
 
 
-def foot(prefix, lines=True):
+def foot(prefix, lines=True, path="", name="", about=True):
     return ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
             'Claims are what companies and governments say. A gap means the ledger has not found or read a public record yet, not that none '
             'exists or that anything is wrong.' + (' A line between two names is drawn only where a document states the link.' if lines else
                                                    ' The record side also holds figures from reports of records and figures the ledger computed from records.') + '</p>'
+            f'<p>{bs.report_links(path, name, about)}</p>'
             f'<p>Data CC BY 4.0. <a href="{prefix}explore.html#get-the-data">Get the data</a> · <a href="{REPO}/tree/main/data/graph">The graph as data</a> · '
-            f'<a href="{REPO}#how-to-cite">Cite</a> · <a href="{REPO}/issues/new/choose">Report an error or a missing record</a> · '
+            f'<a href="{REPO}#how-to-cite">Cite</a> · <a href="{prefix}changes.html">What changed</a> (<a href="{prefix}feed.xml">feed</a>) · '
             f'<a href="{prefix}index.html">The ledger</a></p></footer>\n</div>\n'
             f'<script src="{prefix}assets/graph.js" defer></script>\n</body>\n</html>\n')
 
 
 def cite_line(cite, kind, ident, iri):
-    v = f", version {cite['version']}" if cite.get("version") else ""
+    v = f", version {cite['label']}" if cite.get("version") else ""
     doi = f" https://doi.org/{cite['doi']}" if cite.get("doi") else ""
     return f"{cite['authors']} ({cite['year']}). {cite['title']}{v}, {kind} {ident}. {iri}{doi}"
 
@@ -154,7 +157,8 @@ def fig_table(rows, ctx, prefix, limit=60, more_href="", show_doc=True):
         what = "computed" if r["basis"] == "derived" else r["side"]
         tag = SIDE_TAG.get(what, f'<span class="tag">{e(what)}</span>')
         twice = ' <span class="tag" title="read a second time, independently">read twice</span>' if r["second_read"] == "yes" else ""
-        out.append(f'<tr>{subj}<td><strong>{e(bs.metric_label(r["metric"]))}</strong><div class="m">{e(r["metric_detail"])}</div></td>'
+        out.append(f'<tr>{subj}<td><strong>{e(bs.metric_label(r["metric"]))}</strong><div class="m">{e(r["metric_detail"])}</div>'
+                   f'<div class="m"><a href="{prefix}explore.html#{e(r["measurement_id"])}">Cite or report this figure</a></div></td>'
                    f'<td class="v">{e(bs.as_published(r))}<div class="m">{e(bs.period(r))}</div>{twice}</td>'
                    f'<td>{tag}<div class="m">{e(r["basis"].replace("_", " "))}</div></td>'
                    + (f'<td>{docl}<div class="m">{e(" · ".join(x for x in (r["source_publisher"], r["source_date"]) if x))}{src}</div></td>' if show_doc else "")
@@ -344,19 +348,31 @@ def org_page(ctx, oid):
                         fig_table(own, ctx, P, 40, f"{P}explore.html?subject={e(oid)}") or '<p class="none">No figure about the organisation as a whole yet.</p>'))
     if site_ids:
         rows = []
-        for s, l, via in sorted(sites, key=lambda x: (ctx.sites[x[0][5:]]["country"], g.nodes[x[0]]["name"].lower())):
+        ways = defaultdict(list)  # a site named in more than one way gets one row, with every way it is named
+        for s, l, via in sites:
+            role = l["note"].split(";", 1)[0]
+            w = e(role) + (f' <span class="m">through {ctx.ref(via, P)}</span>' if via != nid else "")
+            if w not in ways[s]:
+                ways[s].append(w)
+        for s in sorted(ways, key=lambda x: (ctx.sites[x[5:]]["country"], g.nodes[x]["name"].lower())):
             sr = ctx.sites[s[5:]]
             sf = ctx.by_subject.get(s, [])
             rec = sum(1 for r in sf if r["side"] == "record" and r["basis"] != "derived")
             cl = sum(1 for r in sf if r["side"] == "claim")
-            role = l["note"].split(";", 1)[0]
-            how = e(role) + (f' <span class="m">through {ctx.ref(via, P)}</span>' if via != nid else "")
+            how = "<br>".join(ways[s])
             rows.append(f'<tr><td>{ctx.ref(s, P)}<div class="m">{e(bs.KIND.get(sr["kind"], sr["kind"]))}</div></td>'
                         f'<td class="m">{e(", ".join(x for x in (sr["locality"], sr["admin_region"], bs.COUNTRY.get(sr["country"], "")) if x))}</td>'
                         f'<td class="m">{how}</td><td class="v">{rec or ""}</td><td class="v">{cl or ""}</td></tr>')
-        body.append(section("Its sites", "rec", f"{plural(len(site_ids), 'site')} in the register where it is named, from the list each site came from. "
-                            f'<a href="{P}map.html?org={e(oid)}">On the map</a>' if False else
-                            f"{plural(len(site_ids), 'site')} in the register where it is named, as the list each site came from names it.",
+        n_placed = sum(1 for s in site_ids if ctx.sites[s[5:]]["lat"] and ctx.sites[s[5:]]["lon"])
+        own_named = any(via == nid for _, _, via in sites)
+        who = "it or a company of its group is" if len(group) > 1 else "it is"
+        if not own_named:
+            who = "a company of its group is"
+        placed_txt = ("" if not n_placed else f' <a href="{P}map.html?org={e(oid)}">'
+                      + ("It is placed from a document: see it on the map" if n_placed == len(site_ids) == 1 else
+                         f"The {n_placed:,} placed from a document are on the map" if n_placed > 1 else "One is placed from a document: see it on the map")
+                      + "</a>.")
+        body.append(section("Its sites", "rec", f"{plural(len(site_ids), 'site')} in the register where {who} named, as the list each site came from names it." + placed_txt,
                             '<div class="tw"><table><thead><tr><th>Site</th><th>Where</th><th>How it is named</th><th>Records</th><th>Claims</th></tr></thead><tbody>'
                             + "".join(rows) + "</tbody></table></div>", "sites"))
     else:
@@ -407,7 +423,7 @@ def org_page(ctx, oid):
     if same:
         jl["sameAs"] = same
     desc = f"{n['name']}: what public records show about it and its sites, with its own statements kept apart. From the Compute Ledger."
-    return head(f"{n['name']} · Compute Ledger", desc, P, jl) + "\n".join(body) + "\n" + foot(P)
+    return head(f"{n['name']} · Compute Ledger", desc, P, jl, n["page"]) + "\n".join(body) + "\n" + foot(P, path=n["page"], name=n["name"])
 
 
 def org_ring(ctx, nid, sites, grp, chain, entries, countries, P):
@@ -486,7 +502,8 @@ def how_many(ctx, cc, name, sites, P):
         y, m, d = r["period_end"].split("-")
         when = f"{int(d)} {['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][int(m) - 1]} {y}"
         listed = (f"A commercial directory, {e(r['source_publisher'])}, lists <b>{int(float(r['value'])):,}</b> datacentres there "
-                  f"(read on {when}). Operators list their own facilities; the count gives no size and does not say what runs in them, so it is the directory's claim, not a record.")
+                  f"(read on {when}). Operators list their own facilities; the count gives no size and does not say what runs in them, so it is the directory's claim, not a record. "
+                  f'<a class="m" href="{P}explore.html#{e(r["measurement_id"])}">Cite or report this figure</a>')
     else:
         listed = f"No directory count has been read for {the}{e(name)}."
     doc = "doc:d-" + hashlib.sha1(rows[0]["source_url"].strip().encode("utf-8")).hexdigest()[:10] if rows else ""
@@ -612,10 +629,12 @@ def country_page(ctx, cc, region_rows):
     if entries:
         ring.append({"id": "entries", "name": f"{len(entries)} entries", "type": "entry", "count": len(entries), "side": "", "page": ""})
     body.append(side_panel(ctx, nid, P, ring, "country", cc, [(f"{P}explore.html?{eb}", f"Its {len(figs):,} figures in Explore"),
-                                                              (f"{P}map.html?country={e(cc)}", "Its sites on the map")]))
+                                                              (f"{P}map.html?country={e(cc)}", "Its sites on the map")]
+                           + ([(f"{P}totals.html?c={e(cc)}", f"Its {plural(ctx.total_cc[cc], 'total')} that can be added")] if ctx.total_cc.get(cc) else [])))
     body.append("</div>")
     jl = {"@context": "https://schema.org", "@type": "Country", "@id": n["iri"], "name": name, "identifier": cc}
-    return head(f"{name} · Compute Ledger", f"{name}: what public records show about compute's footprint there. From the Compute Ledger.", P, jl) + "\n".join(body) + "\n" + foot(P)
+    return (head(f"{name} · Compute Ledger", f"{name}: what public records show about compute's footprint there. From the Compute Ledger.", P, jl, n["page"])
+            + "\n".join(body) + "\n" + foot(P, path=n["page"], name=name))
 
 
 # --------------------------------------------------------------------------------------------------- document pages
@@ -693,7 +712,8 @@ def doc_page(ctx, did, by_pub):
         jl["publisher"] = {"@type": "Organization", "name": pub}
     if date:
         jl["datePublished"] = date
-    return head(f"{gk.short(n['name'], 80)} · Compute Ledger", f"What the Compute Ledger read from: {n['name']}.", P, jl) + "\n".join(body) + "\n" + foot(P)
+    return (head(f"{gk.short(n['name'], 80)} · Compute Ledger", f"What the Compute Ledger read from: {n['name']}.", P, jl, n["page"])
+            + "\n".join(body) + "\n" + foot(P, path=n["page"], name=n["name"]))
 
 
 # --------------------------------------------------------------------------------------------------- indexes, chain, search
@@ -708,11 +728,11 @@ rows.forEach(r=>{const ok=sels.every(s=>!s.value||r.dataset[s.dataset.f]===s.val
 n.textContent=v.toLocaleString()+' of '+rows.length.toLocaleString();}
 [q,...sels].forEach(x=>x.addEventListener('input',f));f();})();
 </script>"""
-    return (head(f"{title} · Compute Ledger", intro, prefix) + nav(prefix, [crumb], current)
+    return (head(f"{title} · Compute Ledger", intro, prefix, path=current) + nav(prefix, [crumb], current)
             + f'<p class="eyebrow">{eyebrow}</p><h1>{e(title)}</h1><p>{intro}</p>'
             + f'<div class="filters"><input id="q" type="search" placeholder="Filter this list" aria-label="Filter this list">{filters}</div><p class="m" id="n" aria-live="polite"></p>'
             + f'<div class="tw"><table><thead><tr>{th}</tr></thead><tbody id="rows">' + "".join(rows) + "</tbody></table></div>"
-            + script + foot(prefix))
+            + script + foot(prefix, path=current, name=f"the list of {title.lower()}", about=False))
 
 
 def chain_page(ctx):
@@ -744,7 +764,8 @@ def chain_page(ctx):
             link_table(ls, ctx, ""),
             '<h2>Parties named in a document but not yet in a register</h2>',
             '<ul>' + "".join(f'<li id="party-{e(p["node_id"][6:])}">{e(p["name"])}</li>' for p in parties) + "</ul>"]
-    return head("The chain · Compute Ledger", "Every documented link from refiner to datacenter, with the document behind each.", "") + "\n".join(body) + "\n" + foot("")
+    return (head("The chain · Compute Ledger", "Every documented link from refiner to datacenter, with the document behind each.", "", path="chain.html")
+            + "\n".join(body) + "\n" + foot("", path="chain.html", name="the chain", about=False))
 
 
 def vocab_page():
@@ -770,7 +791,8 @@ def vocab_page():
         rows = "".join(f'<tr id="{e(f)}"><td><code>{e(f)}</code></td><td><strong>{e(lab)}</strong><div class="m">{e(d)}</div></td><td class="m">{e(m)}</td></tr>'
                        for f, lab, d, m in sorted(groups.get(g, [])))
         body.append(f'<h2 id="{e(g)}">{e(titles[g])}</h2><div class="tw"><table><thead><tr><th>Term</th><th>Meaning</th><th>Matches</th></tr></thead><tbody>{rows}</tbody></table></div>')
-    return head("Vocabulary · Compute Ledger", "The classes, relations and controlled lists of the Compute Ledger's graph.", "") + "\n".join(body) + "\n" + foot("")
+    return (head("Vocabulary · Compute Ledger", "The classes, relations and controlled lists of the Compute Ledger's graph.", "", path="vocab.html")
+            + "\n".join(body) + "\n" + foot("", path="vocab.html", name="the vocabulary", about=False))
 
 
 def main():
@@ -778,6 +800,7 @@ def main():
     ap.add_argument("--check", action="store_true")
     a = ap.parse_args()
     ctx = Ctx()
+    ctx.total_cc = Counter(tt["key"][0] for tt in totals.compute(ctx))  # countries with a total, for their pages' links
     g = ctx.g
     files: dict[str, str] = {}
     # organisations
@@ -844,6 +867,21 @@ def main():
     files["chain.html"] = chain_page(ctx)
     files["vocab.html"] = vocab_page()
     files.update(views.build(ctx, sys.modules[__name__]))
+    # a document page whose id changed (its address was corrected) keeps its old address: a short page that sends the reader on
+    for x in read(ROOT / "sites" / "views" / "document_id_aliases.csv"):
+        old, new = x["retired_document_id"], x["document_id"]
+        n = g.nodes.get("doc:" + new)
+        if not n:
+            raise SystemExit(f"sites/views/document_id_aliases.csv: {new} is not a document in the graph")
+        if f"doc/{old}.html" in files:
+            raise SystemExit(f"sites/views/document_id_aliases.csv: {old} is still a document in the graph")
+        files[f"doc/{old}.html"] = (head(f"{gk.short(n['name'], 80)} · Compute Ledger", f"What the Compute Ledger read from: {n['name']}.", "../", path=n["page"]).replace(
+            "<body>", f'<meta http-equiv="refresh" content="0; url={new}.html">\n<body>', 1)
+            + nav("../", ['<a href="index.html">Documents</a>'], "doc/")
+            + f'<h1>This document has moved</h1><p>{e(x["reason"])}. Its page is now <a href="{new}.html">{e(n["name"])}</a>.</p>\n'
+            + foot("../", path=n["page"], name=n["name"]))
+    files.update(totals.build(ctx, sys.modules[__name__]))
+    files.update(changes.build(sys.modules[__name__]))
     # search index
     items = []
     for n in sorted(g.nodes.values(), key=lambda n: n["node_id"]):
@@ -857,7 +895,7 @@ def main():
         items.append([t, n["name"], n["page"], sub, text])
     files["data/search.json"] = json.dumps({"about": "Names and pages of every site, organisation, country, document and entry in the Compute Ledger, for the search box.",
                                             "items": items}, ensure_ascii=False, separators=(",", ":")) + "\n"
-    files["assets/graph.css"] = gk.CSS.lstrip() + views.CSS.lstrip()
+    files["assets/graph.css"] = gk.CSS.lstrip() + views.CSS.lstrip() + totals.CSS.lstrip() + changes.CSS.lstrip()
     files["assets/graph.js"] = gk.JS.lstrip()
 
     if a.check:

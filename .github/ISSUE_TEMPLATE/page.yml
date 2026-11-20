@@ -1,0 +1,27 @@
+name: Report a problem with a page
+description: Something on a page is wrong or broken (a label, a link, a sentence that could mislead, a layout). To correct a figure against its document, use "Correct a figure or an entry".
+title: "Page: "
+labels: ["page"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. Say which page and what is wrong; a screenshot helps. Anyone can read this issue.
+  - type: input
+    id: page
+    attributes:
+      label: The page's address
+      placeholder: https://kn0wledgebfre3-sys.github.io/compute-ledger/
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: What the page shows, and where on it.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What it should show, if you know

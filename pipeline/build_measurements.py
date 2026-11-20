@@ -301,7 +301,7 @@ def build_sites() -> tuple[list[dict], dict]:
     for t in read_csv(PKG / "tx_issued_sites.csv"):
         sid = f"usa-tx-{t['facility_key']}"
         put({"site_id": sid, "name": t["facility_name"], "operator": t["operator"] or t["permittee"], "kind": "datacenter", "country": "USA",
-             "admin_region": "Texas", "locality": t["city"] or t["county"], "lat": t["lat"], "lon": t["lon"], "status": t["authorization_status"],
+             "admin_region": "Texas", "locality": t["city"] or t["county"], "lat": t["lat"], "lon": t["lon"], "status": t["authorization_status"].lstrip(": "),  # no permit number before the colon: drop it
              "ct_source_id": f"ledger-dc-{sid}" if f"ledger-dc-{sid}" in ct else "",
              "backlog_id": f"tx-site-{t['facility_key']}" if f"tx-site-{t['facility_key']}" in backlog else "",
              "register_source": "Texas facilities from TCEQ, EPA and PUC records", "also_known_as": t["tceq_rn"]})

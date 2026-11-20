@@ -334,7 +334,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--rule);font-fa
     </div>
   </div>
   <p class="lede">What permits, grid filings, court records, statistical offices, budgets and trade data say about where AI compute draws its power, burns its fuel, takes its water, uses its land, spends public money, employs people, and sends its hardware. Each entry lays the public record beside what the operator or government says in public, links every figure to the document it came from, and marks figures confirmed only through press reports of the document. The theme introductions and the standard are the ledger's own summaries of those entries. Good cases are entries too.</p>
-  <p class="mono" style="margin-top:10px"><a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html">Explore every figure</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html">Map of sites</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/">Every site, one page each</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/org/">Organisations</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/country/">Countries</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/">Documents</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/chain.html">The chain, drawn</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/records-and-claims.html">Records beside claims</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/coverage.html">Coverage by country and topic</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/timeline.html">Timeline of documents</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html">Brief</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#get-the-data">Get the data (Excel, CSV, JSON)</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a></p>
+  <p class="mono" style="margin-top:10px"><a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html">Explore every figure</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/map.html">Map of sites</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/sites/">Every site, one page each</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/org/">Organisations</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/country/">Countries</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/doc/">Documents</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/chain.html">The chain, drawn</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/records-and-claims.html">Records beside claims</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/coverage.html">Coverage by country and topic</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/timeline.html">Timeline of documents</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/totals.html">Totals that can be added</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/changes.html">What changed</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/brief.html">Brief</a> · <a href="https://kn0wledgebfre3-sys.github.io/compute-ledger/explore.html#get-the-data">Get the data (Excel, CSV, JSON)</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger/blob/main/data/DICTIONARY.md">What each column means</a> · <a href="https://github.com/kn0wledgebfre3-sys/compute-ledger#how-to-cite">Cite</a></p>
 </header>
 
 <section class="guide" id="guide">
@@ -395,11 +395,11 @@ __CHECKS__
   <div><h3>What a gap means</h3><p>A one-line statement of where the record and the claim differ, written without adjectives. "None documented" means the record and the claim agree or no claim was found. "Positive example" means the record shows a practice worth copying.</p></div>
   <div><h3>Confidence and verification</h3><p>High means the record's figures were read in record holders' documents or a mirror of them. Medium means at least one key figure comes from a press report of a record, or the documents were only partly read; an entry whose content is a company's own statements is at most medium, however carefully it was transcribed. Low means the record rests mainly on press, NGO or company material. Every entry has had a second reading against its original documents, or carries a note of which could not be read (the last pass was an independent check on 24 October 2026); inside the record, [press: …], [NGO: …] and [study: …] mark what rests on a press report of a record, an NGO's documented finding or a study, and statements by companies and governments in their own voice are under Claim. 'Verified against primary' means the original confirmed the figures; 'partly verified' means it confirmed some but not a key figure; 'primary not found' means the note says what was searched and what was missing. Mirrors of the actual document (a law firm's copy of a regulator decision, a library copy of a UN report) count as primary; company press releases and law-firm summaries do not. Figures the ledger produced itself from public documents (the Virginia permit extraction) link to the extraction files, which link to each document.</p></div>
   <div><h3>What is excluded</h3><p>Estimates the ledger would have to make itself, modelled footprints, advocacy press releases cited on their own, and anything without a URL to the underlying document. Estimates published by a public body or the cited author (a market monitor's counterfactual, an auditor's projection, a grid operator's forecast, a tracking study's extrapolation) are included and labelled as estimates.</p></div>
-  <div><h3>Corrections</h3><p>Anyone can suggest a correction: the button on each entry opens a public GitHub issue for the document's link and what it says. The correct response to an entry is a newer document, not a rebuttal. Entries change when the record changes, and every entry carries a last-checked date. Every check the ledger has had, and every finding from them, is listed under How it is checked.</p></div>
+  <div><h3>Corrections</h3><p>Anyone can suggest a correction: the button on each entry opens a public GitHub issue for the document's link and what it says. The correct response to an entry is a newer document, not a rebuttal. Entries change when the record changes, and every entry carries a last-checked date. Every check the ledger has had, and every finding from them, is listed under How it is checked. What changed in each round is on <a href="changes.html">its own page</a>, with <a href="feed.xml">a feed</a> to follow it.</p></div>
   <div><h3>Scope</h3><p>Datacenters, the grids and water systems they sit on, the public money and land they use, and both ends of the hardware chain: the mines and fabs upstream, the recyclers and dumps downstream. Labor appears where a court or ministry has recorded it.</p></div>
 </div>
 
-<footer>Compiled from public sources as of __TODAY__. Entries are descriptions of documents, not findings of fact about any company. Coordinates are approximate and mark the county or region, not an exact address.</footer>
+<footer>Compiled from public sources as of __TODAY__. Entries are descriptions of documents, not findings of fact about any company. Coordinates are approximate and mark the county or region, not an exact address.<br>__REPORT__</footer>
 </div>
 
 <script id="data" type="application/json">__DATA__</script>
@@ -609,7 +609,14 @@ __CHECKS__
 </script>
 """
 
-page = (page.replace("__TODAY__", today)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_sites as _bs  # noqa: E402  (the link previews and the feed link are the same on every page)
+_DESC = ("A public ledger of AI compute's footprint built from public records: regulators, courts, grid operators, statistics "
+         "offices and registries, with what companies and governments say kept apart.")
+page = (page.replace("<title>Compute Ledger</title>\n", "<title>Compute Ledger</title>\n" + f'<meta name="description" content="{_bs.e(_DESC)}">\n'
+                     + _bs.share_meta("Compute Ledger", _DESC, "", ""), 1)
+            .replace("__TODAY__", today)
+            .replace("__REPORT__", _bs.report_links("", "the ledger's front page", about=False))
             .replace("__N_ENTRIES__", str(len(entries)))
             .replace("__N_COUNTRIES__", str(len(countries)))
             .replace("__N_SOURCES__", str(n_sources))
@@ -625,7 +632,12 @@ _SKELETON = '<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta na
 open(os.path.join(DOCS, "index.html"), "w").write(_SKELETON + page)
 _brief = os.path.join(ROOT, "site", "brief.html")
 if os.path.exists(_brief):
-    open(os.path.join(DOCS, "brief.html"), "w").write(_SKELETON + open(_brief, encoding="utf-8").read())
+    _bt = open(_brief, encoding="utf-8").read()
+    _bd = "A brief for the Climate TRACE coalition (24 October 2026): datacenters as a facility type, from the permits, licences and dockets that record them."
+    _bt = _bt.replace("</title>\n", "</title>\n" + f'<meta name="description" content="{_bs.e(_bd)}">\n' + _bs.share_meta("Datacenters for Climate TRACE", _bd, "brief.html", ""), 1)
+    _k = _bt.rstrip().rfind("</div>")  # inside the page's column, after its last line
+    _bt = _bt[:_k] + f'<p class="foot">{_bs.report_links("brief.html", "the brief for Climate TRACE", about=False)}</p>\n' + _bt[_k:]
+    open(os.path.join(DOCS, "brief.html"), "w").write(_SKELETON + _bt)
 open(os.path.join(DOCS, ".nojekyll"), "w").close()
 print(f"wrote {OUT}: {len(entries)} entries ({n_verified} verified against primary), {len(countries)} countries and territories (+ EU-wide and global), {n_sources} distinct linked docs, {len(sources)} datasets, {len(guide)} themes, {len(receipts)} receipts")
 if problems:

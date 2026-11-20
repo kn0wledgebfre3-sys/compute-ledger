@@ -1204,8 +1204,20 @@
   "lat": -2.82,
   "lon": 122.15,
   "category": "labor",
-  "record": "The Indonesian National Police (Central Sulawesi Regional Police, published 4 Jan 2024) recorded 21 worker deaths from the furnace explosion at PT ITSS on 24 Dec 2023 and said the case had been upgraded to a formal (pro justitia) investigation into suspected violations of standard operating procedures. No Kemnaker, ILO or Komnas HAM inspection report with findings was found.",
+  "record": "The Indonesian National Police reported 18 deaths on 26 December 2023, when the Morowali Sub-regional Police said the toll had risen from 13 the day before; on 2 January 2024 its site reported 20 fatalities, including 12 Indonesian and eight foreign workers, with 29 people severely injured and 11 with minor injuries. On 4 January 2024 (Central Sulawesi Regional Police, published 4 Jan 2024) it recorded 21 worker deaths from the furnace explosion at PT ITSS on 24 Dec 2023 and said the case had been upgraded to a formal (pro justitia) investigation into suspected violations of standard operating procedures. No Kemnaker, ILO or Komnas HAM inspection report with findings was found.",
   "record_sources": [
+   {
+    "title": "18 Workers Killed in Smelter Explosion: Morowali Police",
+    "url": "https://inp.polri.go.id/artikel/18-victims-killed-in-smelter-explosion-morowali-police",
+    "publisher": "Indonesian National Police (Polri)",
+    "date": "2023-12-26"
+   },
+   {
+    "title": "Police await PT ITSS accident investigation for suspect designation",
+    "url": "https://inp.polri.go.id/artikel/police-await-pt-itss-accident-investigation-for-suspect-designation",
+    "publisher": "Indonesian National Police (Polri)",
+    "date": "2024-01-02"
+   },
    {
     "title": "Police investigate furnace explosion at Morowali nickel smelter",
     "url": "https://inp.polri.go.id/artikel/police-investigate-furnace-explosion-at-morowali-nickel-smelter",
@@ -1213,19 +1225,26 @@
     "date": "2024-01-04"
    }
   ],
-  "claim": "IMIP's spokesperson (Dedi Kurniawan) initially reported 18 deaths, at least 10 Indonesian and at least 8 Chinese, and 41 injured [press: The Jakarta Post]; IMIP stated the blast occurred during furnace repair and attributed the initial release to slag residue contacting flammable material and oxygen tanks.",
+  "claim": "The industrial park's owner, IMIP, said 13 workers were killed (eight Indonesian and five Chinese workers) and 38 injured on the day of the explosion, 24 December 2023 [press: The Jakarta Post]; on 26 December its spokesperson said at least 10 Indonesian workers and at least eight Chinese workers were killed and 41 injured [press: The Jakarta Post, whose sentence reads 'At least 10 Indonesians and eight Chinese workers were killed']. IMIP stated the blast occurred during furnace repair and attributed the initial release to slag residue contacting flammable material and oxygen tanks.",
   "claim_sources": [
    {
-    "title": "As death toll rises, Morowali blast brings work safety squarely into focus",
-    "url": "https://www.thejakartapost.com/id/business/2023/12/27/as-death-toll-rises-morowali-blast-brings-work-safety-squarely-into-focus",
+    "title": "Indonesia nickel smelter furnace blast kills 13 workers, wounds 38",
+    "url": "https://www.thejakartapost.com/indonesia/2023/12/24/indonesia-nickel-smelter-furnace-blast-kills-13-workers-wounds-38.html",
     "publisher": "The Jakarta Post",
-    "date": "2023-12-27"
+    "date": "2023-12-24"
+   },
+   {
+    "title": "As death toll rises, Morowali blast brings work safety squarely into focus",
+    "url": "https://www.thejakartapost.com/business/2023/12/27/as-death-toll-rises-morowali-blast-brings-work-safety-squarely-into-focus",
+    "publisher": "The Jakarta Post",
+    "date": "2023-12-26",
+    "date_note": "the page shows 'Published on Dec. 26, 2023'; its address carries 27 December"
    }
   ],
-  "gap": "The death toll rose from IMIP's initial 18 to 21 in the police record; police treat the case as a criminal investigation into suspected SOP violations; no Kemnaker, ILO or Komnas HAM inspection findings were found. Older source (2023-24).",
+  "gap": "The police count rose from 13 (25 December) to 18 (26 December), 20 (2 January) and 21 (4 January 2024). IMIP's counts were 13 on the day of the explosion and at least 10 Indonesian and at least eight Chinese workers on 26 December. Police treat the case as a criminal investigation into suspected SOP violations; no Kemnaker, ILO or Komnas HAM inspection findings were found. Older source (2023-24).",
   "confidence": "high",
-  "verification_note": "Fetched Indonesian National Police article (inp.polri.go.id, 4 Jan 2024): records 21 deaths and an upgraded investigation for suspected SOP violations; resolves the earlier 18-vs-21 discrepancy (18 was IMIP's initial count, per Jakarta Post) in favour of the police figure. The police item gives no nationality split or injury count, so those remain IMIP figures via the Jakarta Post; Kemnaker and Komnas HAM findings were searched for (Indonesian) and not located. 2026-10-24: IMIP's counts (18 deaths, at least 10 Indonesian and at least 8 Chinese, 41 injured) are the company's statements via the Jakarta Post and moved to claim; the early toll of 13, which the Jakarta Post gives without naming who reported it, and the Tempo commentary (21 deaths; an account of access difficulties for ministry investigators) were dropped.",
-  "last_checked": "2026-10-24",
+  "verification_note": "Fetched Indonesian National Police article (inp.polri.go.id, 4 Jan 2024): records 21 deaths and an upgraded investigation for suspected SOP violations. The police item gives no nationality split or injury count. Kemnaker and Komnas HAM findings were searched for (Indonesian) and not located. 2026-10-24: IMIP's counts moved to claim. 2026-11-20: read again by two readers who agree (review/roadmap_round_2026-11-20/). The 18 the ledger had described as IMIP's initial count is the police's count of 26 December (The Jakarta Post: 'The police also revised the death toll up from 13 to 18'; the police's own article of that day: risen to 18, 'It was 13 yesterday'); IMIP's first count, on 24 December, was 13. The police's counts of 26 December and 2 January and IMIP's count of 24 December are added. The Jakarta Post's article of 26 December is cited at its English address, which both readers opened, and does not name the spokesperson.",
+  "last_checked": "2026-11-20",
   "verification_status": "verified"
  }
 ]

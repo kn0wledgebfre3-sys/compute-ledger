@@ -17,10 +17,13 @@ import json
 import re
 from collections import defaultdict
 from pathlib import Path
+from urllib.parse import quote, urlencode
 
 ROOT = Path(__file__).resolve().parent.parent
 PKG = ROOT / "data" / "climate_trace_seed"
 REPO_URL = "https://github.com/kn0wledgebfre3-sys/compute-ledger"
+SITE_URL = "https://kn0wledgebfre3-sys.github.io/compute-ledger/"
+SHARE_IMAGE = "assets/share.png"  # made by site/make_share_card.py; it holds no figures, so it does not go stale
 
 COUNTRY = {"ARE": "United Arab Emirates", "AUS": "Australia", "AUT": "Austria", "BEL": "Belgium", "BRA": "Brazil",
            "BTN": "Bhutan", "CAN": "Canada", "CHL": "Chile", "CHN": "China", "DEU": "Germany", "DNK": "Denmark",
@@ -117,6 +120,8 @@ UNIT_SHOW = {"pct": "%", "m3": "m³", "short_ton": "short tons", "count": ""}
 def as_published(r: dict) -> str:
     """The value as the document printed it; when it printed a bare number, the unit the ledger recorded beside it."""
     v = r["value_as_published"]
+    if re.fullmatch(r"-?\d+(\.\d+)?[eE][-+]?\d+", v or ""):  # a number in a data file's scientific form (0E-10): written out
+        v = format(float(v), "f").rstrip("0").rstrip(".") if float(v) else "0"
     if re.fullmatch(r"[\d.,\s~<>≈-]+", v or ""):
         u = UNIT_SHOW.get(r["unit"], r["unit"].replace("_", " "))
         return f"{v} {u}".strip()
@@ -132,7 +137,8 @@ def figure_table(rows: list[dict], vocab_bases: dict) -> str:
         twice = (' <span class="tag" title="read a second time, independently">' + ("inputs read twice" if r["basis"] == "derived" else "read twice")
                  + "</span>") if r["second_read"] == "yes" else ""
         qual = f'<div class="m">{e(r["qualifier"].replace("_", " "))}</div>' if r["qualifier"] and r["qualifier"] != "exact" else ""
-        out.append(f'<tr><td><strong>{e(metric_label(r["metric"]))}</strong><div class="m">{e(r["metric_detail"])}</div></td>'
+        out.append(f'<tr><td><strong>{e(metric_label(r["metric"]))}</strong><div class="m">{e(r["metric_detail"])}</div>'
+                   f'<div class="m"><a href="../explore.html#{e(r["measurement_id"])}">Cite or report this figure</a></div></td>'
                    f'<td class="v">{e(as_published(r))}{qual}{twice}</td><td class="m">{e(period(r))}</td>'
                    f'<td class="m" title="{e(vocab_bases.get(r["basis"], ""))}">{e(r["basis"].replace("_", " "))}</td>'
                    f'<td>{src}<div class="m">{e(pub)}</div></td></tr>')
@@ -146,8 +152,32 @@ def order(rows: list[dict]) -> list[dict]:
                                        r["metric_detail"], r["measurement_id"]))
 
 
+def share_meta(title: str, desc: str, path: str, prefix: str) -> str:
+    """What a link to the page shows when it is shared (title, description, the ledger's card), its canonical address,
+    and the feed of changes. The same on every page; path is the page's address from the site's root."""
+    url = SITE_URL + path
+    return (f'<link rel="canonical" href="{e(url)}">\n'
+            f'<link rel="alternate" type="application/atom+xml" title="Compute Ledger: what changed" href="{prefix}feed.xml">\n'
+            '<meta property="og:type" content="website">\n<meta property="og:site_name" content="Compute Ledger">\n'
+            f'<meta property="og:title" content="{e(title)}">\n<meta property="og:description" content="{e(desc)}">\n'
+            f'<meta property="og:url" content="{e(url)}">\n<meta property="og:image" content="{SITE_URL}{SHARE_IMAGE}">\n'
+            '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+            '<meta property="og:image:alt" content="Compute Ledger: public records on AI compute\'s footprint, kept apart from claims">\n'
+            '<meta name="twitter:card" content="summary_large_image">\n')
+
+
+def report_links(path: str, name: str, about: bool = True) -> str:
+    """Two GitHub issue forms, filled in for this page: a problem with the page, and a record the ledger does not hold yet. A page
+    about one subject (a site, an organisation, a country, a document) names it in the record form; a page about the whole ledger leaves
+    the subject for the reader. A figure's own correction form is linked from the figure (Explore's details)."""
+    fix = urlencode({"template": "page.yml", "title": f"Page: {name}", "page": SITE_URL + path}, quote_via=quote)
+    add = urlencode({"template": "new-record.yml", "title": f"Record: {name}" if about else "Record: ", **({"subject": name} if about else {})}, quote_via=quote)
+    return (f'<a href="{REPO_URL}/issues/new?{e(fix)}" rel="noopener">Report a problem with this page</a> · '
+            f'<a href="{REPO_URL}/issues/new?{e(add)}" rel="noopener">Send a record the ledger does not have</a>')
+
+
 HEAD = ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        '<title>{title}</title>\n<meta name="description" content="{desc}">\n'
+        '<title>{title}</title>\n<meta name="description" content="{desc}">\n{meta}'
         '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
         '<link rel="stylesheet" href="site.css">\n<link rel="stylesheet" href="../assets/graph.css">\n{ld}<body>\n<div class="wrap">\n')
@@ -155,7 +185,8 @@ SEARCH = ('<div class="gsearch" data-base="../"><input type="search" placeholder
           'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>\n')
 NAV = [("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("org/", "Organisations"), ("country/", "Countries"),
        ("doc/", "Documents"), ("chain.html", "The chain"), ("records-and-claims.html", "Records and claims"),
-       ("coverage.html", "Coverage"), ("timeline.html", "Timeline"), ("brief.html", "Brief"), ("explore.html#get-the-data", "Get the data")]
+       ("coverage.html", "Coverage"), ("timeline.html", "Timeline"), ("totals.html", "Totals"), ("brief.html", "Brief"),
+       ("explore.html#get-the-data", "Get the data")]
 
 
 def nav_links(prefix: str = "../", current: str = "") -> str:
@@ -163,13 +194,15 @@ def nav_links(prefix: str = "../", current: str = "") -> str:
     return ('<span class="links">' + "".join(f'<a href="{prefix}{h}"' + (' aria-current="page"' if h == current else "") + f'>{t}</a>' for h, t in NAV) + "</span>")
 
 
-FOOT = ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
-        'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap here means the ledger has not '
-        'found or read a public record yet, not that none exists or that anything is wrong.</p>'
-        f'<p>Data CC BY 4.0. <a href="../explore.html#get-the-data">Get the data</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · '
-        f'<a href="{REPO_URL}/issues/new/choose">Report an error or a missing record</a> · '
-        '<a href="../index.html">The ledger</a> · <a href="../explore.html">Explore every figure</a> · <a href="../map.html">Map</a></p></footer>\n</div>\n'
-        '<script src="../assets/graph.js" defer></script>\n</body>\n</html>\n')
+def foot(path: str, name: str, about: bool = True) -> str:
+    return ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
+            'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap here means the ledger has not '
+            'found or read a public record yet, not that none exists or that anything is wrong.</p>'
+            f'<p>{report_links(path, name, about)}</p>'
+            f'<p>Data CC BY 4.0. <a href="../explore.html#get-the-data">Get the data</a> · <a href="{REPO_URL}#how-to-cite">Cite</a> · '
+            '<a href="../changes.html">What changed</a> (<a href="../feed.xml">feed</a>) · '
+            '<a href="../index.html">The ledger</a> · <a href="../explore.html">Explore every figure</a> · <a href="../map.html">Map</a></p></footer>\n</div>\n'
+            '<script src="../assets/graph.js" defer></script>\n</body>\n</html>\n')
 
 CSS = """:root{
   --paper:#F4F6F3; --paper-2:#E9EDE8; --ink:#17211E; --ink-2:#4B5955; --rule:#C9D1CC; --accent:#1C6B5F;
@@ -236,6 +269,7 @@ def main():
     G = ctx.g
     op_note = {r["name_as_listed"]: r["note"] for r in read_csv(ROOT / "sites" / "organisations" / "operator_names.csv") if not r["entity_id"]}
     sites = read_csv(PKG / "site_register.csv")
+    sites_by_id = {s["site_id"]: s for s in sites}
     vocab = json.load(open(ROOT / "pipeline" / "measurement_vocab.json", encoding="utf-8"))
     bases = vocab["bases"]
     by_site = defaultdict(list)
@@ -300,7 +334,12 @@ def main():
             w = ws[sid]
             facts.append(("Water stress where it sits", f'{e(w["bws_label"])} <span class="m">baseline water stress of sub-basin {e(w["pfaf_id"])}, '
                           f'<a href="https://www.wri.org/data/aqueduct-global-maps-40-data" rel="noopener">WRI Aqueduct {e(w["aqueduct_version"])}</a> (CC BY 4.0)</span>'))
-        facts.append(("Listed from", e(s["register_source"])))
+        m_src = re.fullmatch(r"([a-z_]+): (https?://\S+)", s["register_source"])
+        if m_src:  # a topic list (sites/topics/<topic>/sites.csv) and the document the site's row was taken from
+            facts.append(("Listed from", f'the <a href="{REPO_URL}/blob/main/sites/topics/{e(m_src.group(1))}/sites.csv">{e(m_src.group(1).replace("_", " "))} sites list</a>, '
+                                         f'from <a href="{e(m_src.group(2))}" rel="noopener">its source document</a>'))
+        else:
+            facts.append(("Listed from", e(s["register_source"])))
         if s["also_known_as"]:
             facts.append(("Also known as", e(s["also_known_as"])))
         if s["notes"]:
@@ -360,7 +399,9 @@ def main():
             ld["geo"] = {"@type": "GeoCoordinates", "latitude": float(s["lat"]), "longitude": float(s["lon"])}
         ld_html = '<script type="application/ld+json">' + json.dumps(ld, ensure_ascii=False, separators=(",", ":")).replace("</", "<" + chr(92) + "/") + "</script>\n"
         desc = f"{s['name']}: {kind} in {place}. What public records show, from the Compute Ledger."
-        page = HEAD.format(title=e(f"{s['name']} · Compute Ledger"), desc=e(desc), ld=ld_html) + "\n".join(body) + "\n" + FOOT
+        page = (HEAD.format(title=e(f"{s['name']} · Compute Ledger"), desc=e(desc), ld=ld_html,
+                            meta=share_meta(f"{s['name']} · Compute Ledger", desc, f"sites/{sid}.html", "../"))
+                + "\n".join(body) + "\n" + foot(f"sites/{sid}.html", s["name"]))
         (a.out / f"{sid}.html").write_text(page, encoding="utf-8")
         index_rows.append((s, kind, country, len(rec), len(calc), len(claim), len(chain)))
 
@@ -394,18 +435,22 @@ rows.forEach(r=>{const ok=(!k.value||r.dataset.k===k.value)&&(!c.value||r.datase
 n.textContent=v+' of '+rows.length+' sites';}
 [q,k,c].forEach(x=>x.addEventListener('input',f));f();})();
 </script>"""]
-    (a.out / "index.html").write_text(HEAD.format(title="Sites · Compute Ledger", desc=e("Every site in the Compute Ledger, with what public records show."), ld="") + "\n".join(idx) + "\n" + FOOT, encoding="utf-8")
+    idesc = "Every site in the Compute Ledger, with what public records show."
+    (a.out / "index.html").write_text(HEAD.format(title="Sites · Compute Ledger", desc=e(idesc), ld="", meta=share_meta("Sites · Compute Ledger", idesc, "sites/", "../"))
+                                      + "\n".join(idx) + "\n" + foot("sites/", "the list of sites", about=False), encoding="utf-8")
     (a.out / "site.css").write_text(CSS, encoding="utf-8")
     # a retired id keeps its address: a short page that sends the reader to the site's current page
     aliases = {r["retired_site_id"]: r for r in read_csv(PKG / "site_id_aliases.csv")}
     for old, r in sorted(aliases.items()):
         new = e(r["site_id"])
         (a.out / f"{old}.html").write_text(
-            HEAD.format(title="Moved · Compute Ledger", desc=e(f"{old} is now {r['site_id']}"), ld="").replace(
-                '<link rel="stylesheet" href="site.css">', f'<link rel="stylesheet" href="site.css">\n<meta http-equiv="refresh" content="0; url={new}.html">\n<link rel="canonical" href="{new}.html">')
+            HEAD.format(title="Moved · Compute Ledger", desc=e(f"{old} is now {r['site_id']}"), ld="",
+                        meta=share_meta(f"{sites_by_id[r['site_id']]['name']} · Compute Ledger", f"{sites_by_id[r['site_id']]['name']}: what public records show, from the Compute Ledger.",
+                                        f"sites/{r['site_id']}.html", "../")).replace(
+                '<link rel="stylesheet" href="site.css">', f'<link rel="stylesheet" href="site.css">\n<meta http-equiv="refresh" content="0; url={new}.html">')
             + f'<nav class="top"><span><a href="../index.html">Compute Ledger</a> / <a href="index.html">Sites</a></span>{nav_links()}</nav>\n'
             f'<h1>This site has one page</h1><p>The id <code>{e(old)}</code> was retired: {e(r["reason"])}. '
-            f'Its records are on <a href="{new}.html">{new}</a>.</p>\n' + FOOT, encoding="utf-8")
+            f'Its records are on <a href="{new}.html">{new}</a>.</p>\n' + foot(f"sites/{r['site_id']}.html", r["site_id"]), encoding="utf-8")
     stale = sorted(p.name for p in a.out.glob("*.html") if p.stem not in ids and p.stem not in aliases and p.name != "index.html")
     for name in stale:
         (a.out / name).unlink()

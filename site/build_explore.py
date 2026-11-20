@@ -18,6 +18,7 @@ so --check compares the workbook's contents part by part, and every other file b
     python3 site/build_explore.py --check    # exit 1 if a committed file differs from what the build makes
 """
 import argparse
+import datetime as dt
 import csv
 import html
 import io
@@ -34,7 +35,7 @@ import build_sites as bs  # noqa: E402  (labels, periods, country names and the 
 ROOT = Path(__file__).resolve().parent.parent
 PKG = ROOT / "data" / "climate_trace_seed"
 DOCS = ROOT / "docs"
-SITE_URL = "https://kn0wledgebfre3-sys.github.io/compute-ledger/"
+SITE_URL = bs.SITE_URL
 REPO_URL = bs.REPO_URL
 
 # Countries named in entries.csv that no site sits in yet, and the two groupings entries use.
@@ -95,7 +96,14 @@ def citation_meta() -> dict:
     if not year:  # before the release is dated, the year of the changelog heading for this version
         m = re.search(rf"^## {re.escape(version)} \((\d{{4}})-", (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"), re.M)
         year = m.group(1) if m else "n.d."
+    # changes made since the release are under '## Unreleased', each round under its date: the live data are the release plus those
+    ch = (ROOT / "CHANGELOG.md").read_text(encoding="utf-8")
+    un = ch.split("## Unreleased", 1)[1].split("\n## ", 1)[0] if "## Unreleased" in ch else ""
+    m = re.search(r"^### (\d{1,2} [A-Z][a-z]+ \d{4})\s*$", un, re.M)
+    since = m.group(1) if m else ""
     return {"authors": "Compute Ledger contributors", "year": year, "title": "Compute Ledger", "version": version,
+            "label": f"{version}, with changes to {since}" if since else version,
+            "file_tag": version + (f"-with-changes-to-{dt.datetime.strptime(since, '%d %B %Y').date().isoformat()}" if since else ""),
             "doi": doi, "site": SITE_URL, "repo": REPO_URL}
 
 
@@ -135,6 +143,39 @@ def org_subjects() -> dict:
         subj = [x for x in subj if tuple(x.split(":", 1)) in have]
         if subj:
             out[nid[4:]] = [n["name"], subj]
+    return out
+
+
+# A site's status, as a class for the map's filter. The register's own wording stays in the status column and on the map.
+STATUS = {"operating": "Operating", "permitted": "Permitted (the register's word)", "under_construction": "Under construction",
+          "announced": "Announced", "refused": "Refused", "other": "Other wording, as the record gives it (for example a Texas permit's status)",
+          "none": "Not stated"}
+PLURAL = {"datacenter": "datacenters", "telecom_exchange": "telephone exchanges filed as datacenters",
+          "mixed_building_with_datacenter": "buildings that contain a datacenter", "smelter_refiner": "smelters and refiners",
+          "fab": "chip fabs", "crypto_mining": "crypto mining sites", "crypto_to_ai_conversion": "crypto mining sites moving to AI or hosting",
+          "nuclear_plant": "nuclear plants"}
+
+
+def words(xs, last="and"):
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + f" {last} " + xs[-1]
+
+
+def status_class(s: str) -> str:
+    s = s.strip()
+    return "none" if not s else s if s in STATUS else "other"
+
+
+def org_sites(register_ids: set) -> dict:
+    """For each organisation with sites: its name and the sites its page lists (its own and its documented group's)."""
+    from graphdata import graph
+    g = graph()
+    out = {}
+    for nid, nd in sorted(g.nodes.items()):
+        if nd["type"] != "org":
+            continue
+        ss = sorted({s[5:] for s, _, _ in g.org_sites(nid)} & register_ids)
+        if ss:
+            out[nid[4:]] = [nd["name"], ss]
     return out
 
 
@@ -192,11 +233,14 @@ def build_data():
         "orgs": org_subjects(), "docs": doc_urls(),
     }
 
-    # sites: the register's columns, then what the ledger holds for each
+    # sites: the register's columns, then what the ledger holds for each, in all and topic by topic
     n = defaultdict(Counter)
+    bt = defaultdict(lambda: [[0, 0, 0] for _ in TOPICS])
     for r in M:
         if r["subject_type"] == "site":
-            n[r["subject_id"]]["calc" if r["basis"] == "derived" else r["side"]] += 1
+            w = "calc" if r["basis"] == "derived" else r["side"]
+            n[r["subject_id"]][w] += 1
+            bt[r["subject_id"]][metrics[r["metric"]][1]][{"record": 0, "calc": 1, "claim": 2}[w]] += 1
     for e_ in read_csv(ROOT / "data" / "chain" / "edges.csv"):
         for side in ("from", "to"):
             if e_[f"{side}_type"] == "site":
@@ -204,16 +248,26 @@ def build_data():
     with open(PKG / "site_register.csv", newline="", encoding="utf-8") as f:
         rd = csv.reader(f)
         scols = next(rd)
-        srows = [r + [n[r[0]]["record"], n[r[0]]["calc"], n[r[0]]["claim"], n[r[0]]["links"]] for r in rd]
+        si = scols.index("status")
+        srows = [r + [n[r[0]]["record"], n[r[0]]["calc"], n[r[0]]["claim"], n[r[0]]["links"], status_class(r[si]),
+                      ";".join(f"{i}:{a}/{b}/{c}" for i, (a, b, c) in enumerate(bt[r[0]]) if a or b or c)] for r in rd]
+    register_ids = {s["site_id"] for s in sites}
     sites_json = {
         "about": "Every site in the Compute Ledger: the rows of data/climate_trace_seed/site_register.csv, same columns, then "
-                 "the number of figures from records, computed by the ledger from records, and claimed, and the number of "
-                 "documented links in the chain. Columns are described in data/DICTIONARY.md.",
-        "licence": "CC BY 4.0", "cite": cite, "columns": scols + ["n_record_figures", "n_computed_figures", "n_claimed_figures", "n_chain_links"],
+                 "the number of figures from records, computed by the ledger from records, and claimed, the number of "
+                 "documented links in the chain, the site's status as a class (statuses), and the same three counts topic by "
+                 "topic (by_topic: topic index, then records/computed/claimed, for each topic with any). orgs gives, for each "
+                 "organisation, its name and the sites listed under it or a company a document says belongs to its group. "
+                 "Columns are described in data/DICTIONARY.md.",
+        "licence": "CC BY 4.0", "cite": cite,
+        "columns": scols + ["n_record_figures", "n_computed_figures", "n_claimed_figures", "n_chain_links", "status_class", "by_topic"],
         "n_register_columns": len(scols), "rows": srows,
         "countries": {c: countries[c] for c in sorted({s["country"] for s in sites})}, "kinds": bs.KIND,
+        "topics": [t for t, _ in TOPICS], "statuses": STATUS, "orgs": org_sites(register_ids),
     }
-    stats = {"n_figures": len(M), "n_sites": len(sites), "n_placed": sum(1 for s in sites if s["lat"] and s["lon"]),
+    kp = Counter(s["kind"] for s in sites if s["lat"] and s["lon"])
+    stats = {"placed_kinds": [PLURAL.get(k, k) for k in PLURAL if kp[k]], "unplaced_kinds": [PLURAL.get(k, k) for k in PLURAL if not kp[k] and any(s["kind"] == k for s in sites)],
+             "n_figures": len(M), "n_sites": len(sites), "n_placed": sum(1 for s in sites if s["lat"] and s["lon"]),
              "n_claims": sum(1 for r in M if r["side"] == "claim")}
     return figures, sites_json, cite, stats
 
@@ -238,7 +292,7 @@ PAGE_CSS = """
 .btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 .banner{background:var(--paper-2);border-left:4px solid var(--accent);padding:10px 14px;margin:16px 0 0;max-width:820px}
 .banner:empty{display:none}
-#status{font-family:var(--mono);font-size:13px;color:var(--ink-2);margin:14px 0}
+p#status,#loading{font-family:var(--mono);font-size:13px;color:var(--ink-2);margin:14px 0}
 .kind{display:inline-block;font-family:var(--mono);font-size:11.5px;padding:0 6px;border:1px solid currentColor;margin-bottom:2px}
 .k-record{color:var(--rec)} .k-computed{color:var(--calc)} .k-claim{color:var(--claim)}
 button.cite{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--rule);color:var(--accent);padding:5px 8px;cursor:pointer;white-space:nowrap}
@@ -274,27 +328,62 @@ def nav(current: str, prefix: str = "") -> str:
             'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>')
 
 
-def head(title: str, desc: str, extra: str = "") -> str:
+def head(title: str, desc: str, extra: str = "", path: str = "") -> str:
     return ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n'
-            f'<title>{bs.e(title)}</title>\n<meta name="description" content="{bs.e(desc)}">\n' + FONTS
+            f'<title>{bs.e(title)}</title>\n<meta name="description" content="{bs.e(desc)}">\n' + bs.share_meta(title, desc, path, "") + FONTS
             + '<link rel="stylesheet" href="sites/site.css">\n<link rel="stylesheet" href="assets/graph.css">\n' + extra + f"<style>{PAGE_CSS}</style>\n<body>\n<div class=\"wrap\">\n")
 
 
-def foot() -> str:
+def foot(path: str, name: str, about: bool = False) -> str:
     return ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
             'Claims are what companies and governments say. Figures computed by the ledger show their formula. A gap means the ledger has not '
             'found or read a public record yet, not that none exists or that anything is wrong.</p>'
-            f'<p>Data CC BY 4.0. <a href="{REPO_URL}#how-to-cite">Cite</a> · <a href="{REPO_URL}/issues/new/choose">Report an error or a missing record</a> · '
+            f'<p>{bs.report_links(path, name, about)}</p>'
+            f'<p>Data CC BY 4.0. <a href="{REPO_URL}#how-to-cite">Cite</a> · <a href="changes.html">What changed</a> (<a href="feed.xml">feed</a>) · '
             f'<a href="{REPO_URL}">Repository</a> · <a href="index.html">The ledger</a></p></footer>\n</div>\n<script src="assets/graph.js" defer></script>\n')
 
 
+# The tables a reader can query with SQL in the browser, through Datasette Lite (lite.datasette.io, an open-source tool that
+# runs in the reader's browser; it reads the CSV files from the repository and uploads nothing). Each loads as a table named
+# after its file; data/datasette-metadata.json gives the tables' and columns' descriptions from data/datapackage.json.
+QUERY_TABLES = ["climate_trace_seed/measurements.csv", "climate_trace_seed/site_register.csv", "climate_trace_seed/entries.csv",
+                "climate_trace_seed/entry_sources.csv", "climate_trace_seed/entity_register.csv", "chain/edges.csv"]
+RAW = "https://raw.githubusercontent.com/kn0wledgebfre3-sys/compute-ledger/main/data/"
+
+
+def query_mb() -> str:
+    return f"{sum((ROOT / 'data' / p).stat().st_size for p in QUERY_TABLES) / 1e6:.0f}"
+
+
+def query_url() -> str:
+    from urllib.parse import quote
+    q = "&".join(f"csv={quote(RAW + p, safe='')}" for p in QUERY_TABLES)
+    return f"https://lite.datasette.io/?{q}&metadata={quote(SITE_URL + 'data/datasette-metadata.json', safe='')}"
+
+
+def datasette_metadata(cite: dict) -> dict:
+    pkg = json.loads((ROOT / "data" / "datapackage.json").read_text(encoding="utf-8"))
+    res = {r["path"]: r for r in pkg["resources"]}
+    tables = {}
+    for p in QUERY_TABLES:
+        r = res[p]
+        tables[Path(p).stem] = {"description": r["description"], "columns": {fl["name"]: fl["description"] for fl in r["schema"]["fields"]}}
+    return {"title": f"Compute Ledger, version {cite['label']} (the latest tables)",
+            "description": "Public records on the footprint of AI compute, with what companies and governments say kept apart (the column side). "
+                           "Start with the table measurements.",
+            "license": "CC BY 4.0", "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "source": "Compute Ledger", "source_url": cite["repo"], "databases": {"data": {"tables": tables}}}
+
+
 def get_data_line(cite: dict) -> str:
-    v = bs.e(cite["version"])
+    v = bs.e(cite["label"])
     return (f'<p class="getdata" id="get-the-data">Get the data (version {v}): '
-            '<a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a> · '
-            '<a href="data/figures.json">Figures as JSON</a> · <a href="data/sites.json">Sites as JSON</a> · '
-            f'<a href="{REPO_URL}#get-the-data">Every table as CSV</a> · '
-            f'<a href="{REPO_URL}/blob/main/data/DICTIONARY.md">What each column means</a> · '
+            '<a href="data/compute-ledger.xlsx" download>Excel workbook, every table</a>&#160;· '
+            '<a href="data/figures.json">Figures as JSON</a>&#160;· <a href="data/sites.json">Sites as JSON</a>&#160;· '
+            f'<a href="{REPO_URL}#get-the-data">Every table as CSV</a>&#160;· '
+            f'<a href="{bs.e(query_url())}" rel="noopener">Query the six main tables with SQL in your browser</a> '
+            f'<span class="m">(Datasette Lite, another site; it loads the latest tables, about {query_mb()} MB, into your browser and uploads nothing)</span>&#160;· '
+            f'<a href="{REPO_URL}/blob/main/data/DICTIONARY.md">What each column means</a>&#160;· '
             f'<a href="{REPO_URL}#how-to-cite">How to cite</a></p>')
 
 
@@ -308,13 +397,13 @@ const PAGE=100, UNIT={pct:'%',m3:'m³',short_ton:'short tons',count:''};
 const WHAT={record:'Record',computed:'Computed',claim:'Claim'};
 const KEYS=['country','topic','metric','what','basis','year'];
 let D,R=[],ids=new Set(),view=[],shown=PAGE,single=null;
-function asPub(r){const v=r.value_as_published;if(/^[\d.,\s~<>≈-]+$/.test(v||'')){const u=(r.unit in UNIT)?UNIT[r.unit]:r.unit.replace(/_/g,' ');return (v+' '+u).trim();}return v;}
+function asPub(r){let v=r.value_as_published;if(/^-?\d+(\.\d+)?[eE][-+]?\d+$/.test(v||''))v=String(Number(v));if(/^[\d.,\s~<>≈-]+$/.test(v||'')){const u=(r.unit in UNIT)?UNIT[r.unit]:r.unit.replace(/_/g,' ');return (v+' '+u).trim();}return v;}
 function period(r){const s=r.period_start,t=r.period_end;
   if(s&&t&&s.slice(5)==='01-01'&&t.slice(5)==='12-31'&&s.slice(0,4)===t.slice(0,4))return s.slice(0,4);
   if(s&&t&&s.slice(0,7)===s.slice(0,4)+'-07'&&t.slice(5)==='06-30'&&+t.slice(0,4)===+s.slice(0,4)+1)return 'FY to '+t;
   if(s&&t)return s+' to '+t;return s||t||'not stated';}
 function cite(r){const c=D.cite,p=period(r);
-  return c.authors+' ('+c.year+'). '+c.title+', version '+c.version+(c.doi?', https://doi.org/'+c.doi:'')+'. Figure '+r.measurement_id+': '
+  return c.authors+' ('+c.year+'). '+c.title+', version '+c.label+(c.doi?', https://doi.org/'+c.doi:'')+'. Figure '+r.measurement_id+': '
     +r._label+(r.metric_detail?' ('+r.metric_detail+')':'')+', '+r._name+': '+asPub(r)+(p!=='not stated'?', '+p:'')+'. '
     +c.site+'explore.html#'+r.measurement_id+'. Original source: '+[r.source_publisher,r.source_title?'“'+r.source_title+'”':'',r.source_date].filter(Boolean).join(', ')
     +(href(r.source_url)?', '+r.source_url:'')+'.';}
@@ -395,7 +484,7 @@ function readUrl(){const p=new URLSearchParams(location.search);
 function csvCell(v){v=v==null?'':String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
 function download(){const C=D.columns,lines=[C.map(csvCell).join(',')];for(const r of view)lines.push(C.map(c=>csvCell(r[c])).join(','));
   const b=new Blob([lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');
-  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.version+'-figures'+(view.length<R.length?'-selected':'')+'.csv';
+  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.file_tag+'-figures'+(view.length<R.length?'-selected':'')+'.csv';
   document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},0);}
 async function copy(text,btn){try{await navigator.clipboard.writeText(text);}catch(e){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy');}catch(_){}t.remove();}
   const o=btn.textContent;btn.textContent='Copied';setTimeout(()=>{btn.textContent=o;},1600);}
@@ -433,8 +522,9 @@ function init(data){D=data;const C=D.columns;
     if(b.classList.contains('cite')){const id=b.dataset.id,tr=$('d-'+id),open=b.getAttribute('aria-expanded')!=='true';
       if(open&&!tr.firstChild.innerHTML)tr.firstChild.innerHTML=detail(R.find(r=>r.measurement_id===id));tr.hidden=!open;b.setAttribute('aria-expanded',String(open));}
     else if(b.dataset.copy)copy($(b.dataset.copy).textContent,b);else if(b.dataset.copytext)copy(b.dataset.copytext,b);});
-  window.addEventListener('hashchange',()=>{readUrl();render(true);$('banner').scrollIntoView({block:'nearest'});});
-  $('status').hidden=true;$('app').hidden=false;render(true);}
+  window.addEventListener('hashchange',()=>{readUrl();render(true);$('banner').scrollIntoView({block:single?'start':'nearest'});});
+  $('status').hidden=true;$('app').hidden=false;render(true);
+  if(single)setTimeout(()=>$('banner').scrollIntoView({block:'start'}),0);}
 fetch('data/figures.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(init)
   .catch(e=>{$('status').textContent='The figures could not be loaded ('+e.message+'). The same figures are in the Excel workbook and in measurements.csv, linked above.';});
 })();
@@ -443,7 +533,7 @@ fetch('data/figures.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);r
 
 def explore_page(cite: dict, stats: dict) -> str:
     body = [nav("explore.html"),
-            f'<p class="eyebrow">Compute Ledger · version {bs.e(cite["version"])}</p><h1>Explore every figure</h1>',
+            f'<p class="eyebrow">Compute Ledger · version {bs.e(cite["label"])}</p><h1>Explore every figure</h1>',
             f'<p class="lede">Every figure the ledger holds, {stats["n_figures"]:,} of them, one row each, as the document printed it and with '
             'its source. <b>Records</b> are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
             '<b>Claims</b> are what companies and governments say. <b>Computed</b> figures are the ledger’s own arithmetic on records, with the formula '
@@ -479,9 +569,9 @@ def explore_page(cite: dict, stats: dict) -> str:
             f'<a href="{REPO_URL}/blob/main/data/DICTIONARY.md">the data dictionary</a>. A figure corrected after you cite it keeps its old link: '
             'the page sends it to the corrected figure.</p>',
             '</div>',
-            foot(), f"<script>{EXPLORE_JS}</script>\n</body>\n</html>\n"]
+            foot("explore.html", "Explore"), f"<script>{EXPLORE_JS}</script>\n</body>\n</html>\n"]
     return head("Explore every figure · Compute Ledger",
-                "Search, filter, download and cite every figure in the Compute Ledger, each with its public source.") + "\n".join(body)
+                "Search, filter, download and cite every figure in the Compute Ledger, each with its public source.", path="explore.html") + "\n".join(body)
 
 
 MAP_CSS = """
@@ -505,7 +595,22 @@ MAP_CSS = """
 .legend b{color:var(--ink);font-weight:500}
 td.n{font-variant-numeric:tabular-nums;font-family:var(--mono);font-size:13.5px}
 button.show{font-family:var(--mono);font-size:12px;background:none;border:1px solid var(--rule);color:var(--accent);padding:4px 8px;cursor:pointer;white-space:nowrap}
-@media (max-width:760px){ table.sites th:nth-child(3),table.sites td:nth-child(3){display:none} }
+.leaflet-popup-content ul.bt{list-style:none;padding:0;margin:8px 0 0;font-size:13.5px}
+.leaflet-popup-content ul.bt li{margin:0 0 3px}
+.leaflet-container a{color:var(--accent)}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--paper);color:var(--ink);border-bottom-color:var(--rule)}
+.skip{position:absolute;left:-9999px}.skip:focus{position:static;display:inline-block;margin:10px 0 0;font-family:var(--mono);font-size:13px}
+#mapwrap{position:relative}
+#mapnote{position:absolute;left:12px;right:12px;bottom:12px;z-index:500;background:var(--paper);border:1px solid var(--rule);padding:10px 12px;font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+@media (max-width:760px){
+  table.sites thead{display:none}
+  table.sites,table.sites tbody,table.sites tr,table.sites td{display:block;width:auto}
+  table.sites tr{border-top:1px solid var(--rule);padding:10px 0}
+  table.sites td{border:0;padding:2px 0}
+  table.sites th:nth-child(3),table.sites td:nth-child(3){display:block}
+  button.show{min-height:40px;padding:8px 12px;margin-top:4px}
+  .leaflet-popup-content{max-width:calc(100vw - 110px)}
+}
 """
 
 MAP_JS = r"""
@@ -513,31 +618,57 @@ MAP_JS = r"""
 const $=id=>document.getElementById(id);
 const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=n=>n.toLocaleString('en-GB');
-const PAGE=100, KEYS=['kind','country','holds'];
+const PAGE=100, KEYS=['topic','holds','kind','status','country','org'];
 const HOLD={rec:'Records found',claim:'Claims only',none:'No figures yet'};
-let D,S=[],view=[],shown=PAGE,map=null,layer=null,first=true;
+let D,S=[],view=[],shown=PAGE,map=null,layer=null,first=true,lastTopic=null,orgSet=null,badSite='',badKnown=null,opener=null;
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim();}
-function style(s){const paper=css('--paper');
-  if(s._hold==='none')return {radius:5,weight:2,color:css('--mk-none'),fillColor:paper,fillOpacity:.85,opacity:1};
-  return {radius:s._hold==='rec'?6.5:6,weight:1.5,color:paper,fillColor:css(s._hold==='rec'?'--mk-rec':'--mk-claim'),fillOpacity:1,opacity:1};}
+function topic(){return $('topic').value;}
+function holdOf(s,t){if(t==='')return s._hold;const v=s._bt[t];return !v?'none':(v[0]+v[1])>0?'rec':v[2]>0?'claim':'none';}
+function style(s){const paper=css('--paper'),h=holdOf(s,topic());
+  if(h==='none')return {radius:5,weight:2,color:css('--mk-none'),fillColor:paper,fillOpacity:.85,opacity:1};
+  return {radius:h==='rec'?6.5:6,weight:1.5,color:paper,fillColor:css(h==='rec'?'--mk-rec':'--mk-claim'),fillOpacity:1,opacity:1};}
 function where(s){return [s.locality,s.admin_region,s._country].filter(Boolean).join(', ');}
-function counts(s){const p=[];if(s.n_record_figures)p.push(fmt(+s.n_record_figures)+' from records');if(s.n_computed_figures)p.push(fmt(+s.n_computed_figures)+' computed');
-  if(s.n_claimed_figures)p.push(fmt(+s.n_claimed_figures)+' claimed');if(s.n_chain_links)p.push(fmt(+s.n_chain_links)+' chain link'+(+s.n_chain_links===1?'':'s'));return p.join(' · ')||'No figures yet';}
+function plural(n,w){return fmt(n)+' '+w+(n===1?'':'s');}
+function counts3(a,b,c,links){const p=[];if(a)p.push(fmt(a)+' from records');if(b)p.push(fmt(b)+' computed');if(c)p.push(fmt(c)+' claimed');
+  if(links)p.push(plural(links,'chain link'));return p.join(' · ');}
+function counts(s,t){if(t!==''){const v=s._bt[t];return v?counts3(v[0],v[1],v[2],0):'No figures on this topic yet';}
+  return counts3(+s.n_record_figures,+s.n_computed_figures,+s.n_claimed_figures,+s.n_chain_links)||'No figures yet';}
+function status(s){return s.status_class==='other'?s.status.replace(/^[:\s]+/,''):D.statuses[s.status_class];}
+function holdCell(s,t){const h=holdOf(s,t);if(t!==''&&h==='none')return esc('No figures on '+D.topics[+t].toLowerCase()+' yet');
+  return esc(HOLD[h]+(t===''?'':' ('+D.topics[+t]+')'))+'<div>'+esc(counts(s,t))+'</div>';}
+function approx(s){const d=x=>(String(x).split('.')[1]||'').length,n=Math.min(d(s.lat),d(s.lon));
+  if(/to the nearest 100 m/.test(s.notes||''))return 'the nearest 100 m';  // a grid reference printed to 100 m, converted
+  return n<=1?'about 10 km':n===2?'about 1 km':'';}
 function popup(s){const id=encodeURIComponent(s.site_id);
-  return '<b>'+esc(s.name)+'</b><div class="m">'+esc(s._kind)+'</div><div>'+esc(where(s))+'</div>'+(s.operator?'<div class="m">Operator: '+esc(s.operator)+'</div>':'')
-   +'<div class="m" style="margin-top:6px">'+esc(counts(s))+'</div><div style="margin-top:8px"><a href="sites/'+id+'.html">Open the site page</a>'
-   +(s._n?' · <a href="explore.html?subject='+id+'">Its figures</a>':'')+'</div>';}
+  const bt=Object.keys(s._bt).map(Number).sort((a,b)=>a-b).map(i=>{const v=s._bt[i];
+    return '<li><a href="explore.html?subject='+id+'&amp;topic='+i+'">'+esc(D.topics[i])+'</a>: '+esc(counts3(v[0],v[1],v[2],0))+'</li>';}).join('');
+  return '<b>'+esc(s.name)+'</b><div class="m">'+esc(s._kind)+(s.status_class!=='none'?' · '+esc(status(s)):'')+'</div><div>'+esc(where(s))+'</div>'
+   +(s.operator?'<div class="m">Operator: '+esc(s.operator)+'</div>':'')+(s._ll&&approx(s)?'<div class="m">Approximate position: the document gives it to '+approx(s)+'.</div>':'')
+   +(bt?'<ul class="bt">'+bt+'</ul>':'<div class="m" style="margin-top:6px">No figures yet</div>')
+   +(+s.n_chain_links?'<div class="m">'+esc(plural(+s.n_chain_links,'chain link'))+'</div>':'')
+   +'<div style="margin-top:8px"><a href="sites/'+id+'.html">Open the site page</a>'+(s._n?' · <a href="explore.html?subject='+id+'">All its figures</a>':'')+'</div>';}
 function state(){const s={};for(const k of KEYS)s[k]=$(k).value;s.q=$('q').value.trim();s.qw=s.q.toLowerCase().split(/\s+/).filter(Boolean);s.placed=$('placed').checked;return s;}
-function match(s,st){if(st.kind&&s.kind!==st.kind)return false;if(st.country&&s.country!==st.country)return false;if(st.holds&&s._hold!==st.holds)return false;
+function match(s,st){if(st.kind&&s.kind!==st.kind)return false;if(st.country&&s.country!==st.country)return false;if(st.status&&s.status_class!==st.status)return false;
+  if(st.org&&!(orgSet&&orgSet.has(s.site_id)))return false;if(st.holds&&holdOf(s,st.topic)!==st.holds)return false;
   if(st.placed&&!s._ll)return false;for(const w of st.qw)if(!s._text.includes(w))return false;return true;}
-function render(reset,fit){const st=state();if(reset)shown=PAGE;view=S.filter(s=>match(s,st));
-  const placed=view.filter(s=>s._ll),n={rec:0,claim:0,none:0};placed.forEach(s=>n[s._hold]++);
+function legend(t){const tl=t===''?'':D.topics[+t].toLowerCase();
+  $('l-rec').textContent=t===''?'at least one figure from a record, or computed by the ledger from records':'at least one figure on '+tl+' from a record, or computed from records';
+  $('l-claim').textContent=t===''?'only what the company or a government says':'only claims on '+tl;
+  $('l-none').textContent=t===''?'listed from a register or a list of sites, no figure read yet':'no figure on '+tl+' yet';}
+function render(reset,fit){const st=state();if(reset)shown=PAGE;orgSet=st.org&&D.orgs[st.org]?new Set(D.orgs[st.org][1]):null;
+  if(st.topic!==lastTopic){lastTopic=st.topic;legend(st.topic);if(map)restyle();}
+  view=S.filter(s=>match(s,st));
+  const placed=view.filter(s=>s._ll),n={rec:0,claim:0,none:0};placed.forEach(s=>n[holdOf(s,st.topic)]++);
   $('count').innerHTML='<b>'+fmt(view.length)+'</b> of '+fmt(S.length)+' sites · '+fmt(placed.length)+' on the map';
   for(const k in n)$('n-'+k).textContent=fmt(n[k]);
-  if(layer){layer.clearLayers();for(const h of ['none','claim','rec'])for(const s of placed)if(s._hold===h)layer.addLayer(s._mk);
+  $('mapnote').hidden=!(map&&view.length&&!placed.length);if(!$('mapnote').hidden)$('mapnote').textContent=(view.length===1?'This site is not placed yet: no document read gives its location. It is listed below.':'None of these '+fmt(view.length)+' sites is placed yet: no document read gives their location. They are listed below.');
+  if(layer){layer.clearLayers();for(const h of ['none','claim','rec'])for(const s of placed)if(holdOf(s,st.topic)===h)layer.addLayer(s._mk);
+    for(const s of placed){const el=s._mk.getElement&&s._mk.getElement();if(el){el.setAttribute('tabindex','-1');el.removeAttribute('role');}}
     if(fit&&placed.length){const b=L.latLngBounds(placed.map(s=>s._ll));map.fitBounds(b.pad(0.08),{maxZoom:10,animate:!first});first=false;}}
+  $('banner').innerHTML=badSite?(badKnown?'<b>'+esc(badKnown.name)+'</b> is not placed yet: no document read gives its location. <a href="sites/'+esc(encodeURIComponent(badKnown.site_id))+'.html">Its page</a> · ':'No site has the id '+esc(badSite)+'. ')+'<a href="#" id="unbad">Close</a>':orgSet?'Showing the sites of <b>'+esc(D.orgs[st.org][0])+'</b> and of the companies a document says belong to its group (<a href="org/'+esc(encodeURIComponent(st.org))+'.html">its page</a>). <a href="#" id="unorg">Show every site</a>':'';
   $('rows').innerHTML=view.slice(0,shown).map(s=>'<tr><td><a href="sites/'+encodeURIComponent(s.site_id)+'.html">'+esc(s.name)+'</a><div class="m">'+esc(s.operator)+'</div></td>'
-    +'<td class="m">'+esc(s._kind)+'</td><td>'+esc(where(s))+'</td><td class="m">'+esc(HOLD[s._hold])+'<div>'+esc(counts(s))+'</div></td>'
+    +'<td class="m">'+esc(s._kind)+(s.status_class!=='none'?'<div>'+esc(status(s))+'</div>':'')+'</td><td>'+esc(where(s))+'</td>'
+    +'<td class="m">'+holdCell(s,st.topic)+'</td>'
     +'<td>'+(s._ll&&map?'<button type="button" class="show" data-id="'+esc(s.site_id)+'">Show on map</button>':'<span class="m">'+(s._ll?'':'Not placed yet')+'</span>')+'</td></tr>').join('');
   const left=view.length-shown;$('more').hidden=left<=0;if(left>0)$('more').textContent='Show '+fmt(Math.min(PAGE,left))+' more ('+fmt(left)+' not shown yet)';
   $('empty').hidden=view.length>0;$('dl').disabled=!view.length;$('dl').textContent=view.length===1?'Download this site (CSV)':'Download these '+fmt(view.length)+' sites (CSV)';}
@@ -546,40 +677,51 @@ function sync(){const p=new URLSearchParams(),st=state();for(const k of KEYS)if(
 function csvCell(v){v=v==null?'':String(v);return /[",\r\n]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;}
 function download(){const C=D.columns.slice(0,D.n_register_columns),lines=[C.join(',')];for(const s of view)lines.push(C.map(c=>csvCell(s[c])).join(','));
   const b=new Blob([lines.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}),a=document.createElement('a');
-  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.version+'-sites'+(view.length<S.length?'-selected':'')+'.csv';document.body.appendChild(a);a.click();
+  a.href=URL.createObjectURL(b);a.download='compute-ledger-'+D.cite.file_tag+'-sites'+(view.length<S.length?'-selected':'')+'.csv';document.body.appendChild(a);a.click();
   setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},0);}
-function showSite(id){const s=S.find(x=>x.site_id===id);if(!s||!s._ll||!map)return;layer.addLayer(s._mk);map.setView(s._ll,Math.max(map.getZoom(),12));s._mk.openPopup();
-  $('map').scrollIntoView({block:'center'});}
+function showSite(id,btn){const s=S.find(x=>x.site_id===id);if(!s||!s._ll||!map)return;layer.addLayer(s._mk);map.setView(s._ll,Math.max(map.getZoom(),12));s._mk.openPopup();
+  $('map').scrollIntoView({block:'center'});opener=btn||null;
+  if(btn)setTimeout(()=>{const a=document.querySelector('.leaflet-popup-content a');if(a)a.focus({preventScroll:true});},60);}
 function opt(sel,v,t){const o=document.createElement('option');o.value=v;o.textContent=t;sel.appendChild(o);}
 function init(data){D=data;const C=D.columns;
   S=D.rows.map(a=>{const s={};C.forEach((c,i)=>{s[c]=a[i];});s._country=D.countries[s.country]||s.country;s._kind=D.kinds[s.kind]||s.kind;
     s._n=+s.n_record_figures+ +s.n_computed_figures+ +s.n_claimed_figures;s._hold=(+s.n_record_figures+ +s.n_computed_figures)>0?'rec':+s.n_claimed_figures>0?'claim':'none';
+    s._bt={};for(const x of (s.by_topic||'').split(';').filter(Boolean)){const [i,v]=x.split(':');s._bt[i]=v.split('/').map(Number);}
     const la=parseFloat(s.lat),lo=parseFloat(s.lon);s._ll=s.lat&&s.lon&&isFinite(la)&&isFinite(lo)?[la,lo]:null;
-    s._text=[s.name,s.operator,s.site_id,s.locality,s.admin_region,s._country,s.also_known_as,s._kind].join(' ').toLowerCase();return s;});
+    s._text=[s.name,s.operator,s.site_id,s.locality,s.admin_region,s._country,s.also_known_as,s._kind,s.status].join(' ').toLowerCase();return s;});
   S.sort((a,b)=>a.name.localeCompare(b.name));
+  D.topics.forEach((t,i)=>{if(S.some(s=>s._bt[i]))opt($('topic'),String(i),t);});
   Object.keys(D.kinds).forEach(k=>opt($('kind'),k,D.kinds[k]));
+  Object.keys(D.statuses).forEach(k=>{if(S.some(s=>s.status_class===k))opt($('status'),k,D.statuses[k]);});
   Object.keys(D.countries).sort((a,b)=>D.countries[a].localeCompare(D.countries[b])).forEach(c=>opt($('country'),c,D.countries[c]));
+  Object.keys(D.orgs).sort((a,b)=>D.orgs[a][0].localeCompare(D.orgs[b][0])).forEach(o=>opt($('org'),o,D.orgs[o][0]+' ('+plural(D.orgs[o][1].length,'site')+')'));
   const p=new URLSearchParams(location.search);for(const k of KEYS){const v=p.get(k)||'';if([...$(k).options].some(o=>o.value===v))$(k).value=v;}
   $('q').value=p.get('q')||'';$('placed').checked=p.get('placed')==='1';
   if(window.L){map=L.map('map',{scrollWheelZoom:false,worldCopyJump:true,minZoom:2});map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors · sites: Compute Ledger, CC BY 4.0'}).addTo(map);
     map.setView([30,0],2);layer=L.layerGroup().addTo(map);
     map.on('click',()=>map.scrollWheelZoom.enable());map.on('mouseout',()=>map.scrollWheelZoom.disable());
-    for(const s of S)if(s._ll){s._mk=L.circleMarker(s._ll,style(s)).bindTooltip(s.name,{direction:'top',offset:[0,-6]}).bindPopup(popup(s),{maxWidth:280,autoPanPaddingTopLeft:[52,16],autoPanPaddingBottomRight:[16,16]});}
+    for(const s of S)if(s._ll){s._mk=L.circleMarker(s._ll,style(s)).bindTooltip(s.name,{direction:'top',offset:[0,-6]}).bindPopup(popup(s),{maxWidth:300,autoPanPaddingTopLeft:[52,16],autoPanPaddingBottomRight:[16,16]});}
+    map.on('popupopen',e=>{const w=$('map').clientWidth,narrow=w<520,o=e.popup.options;  // measured when shown: the map is hidden while it loads
+      o.maxWidth=narrow?Math.max(180,w-90):300;o.minWidth=Math.min(200,o.maxWidth);o.autoPanPaddingTopLeft=L.point(narrow?[16,16]:[52,16]);e.popup.update();});
     const mq=matchMedia('(prefers-color-scheme: dark)');(mq.addEventListener?mq.addEventListener('change',restyle):mq.addListener(restyle));}
   else{$('map').innerHTML='<p class="m" style="padding:16px">The map could not load. Every site is in the list below.</p>';}
   const ch=()=>{sync();render(true,true);};
-  for(const k of KEYS)$(k).addEventListener('change',ch);$('placed').addEventListener('change',ch);
+  for(const k of KEYS)$(k).addEventListener('change',k==='topic'?()=>{sync();render(true,false);}:ch);$('placed').addEventListener('change',ch);
   let tm;$('q').addEventListener('input',()=>{clearTimeout(tm);tm=setTimeout(ch,180);});
   $('clear').addEventListener('click',()=>{for(const k of KEYS)$(k).value='';$('q').value='';$('placed').checked=false;ch();});
+  $('banner').addEventListener('click',e=>{if(e.target.id==='unorg'){e.preventDefault();$('org').value='';ch();$('org').focus();}
+    else if(e.target.id==='unbad'){e.preventDefault();badSite='';badKnown=null;sync();render(false,false);$('q').focus();}});
   $('more').addEventListener('click',()=>{shown+=PAGE;render(false,false);});
   $('dl').addEventListener('click',download);
-  $('rows').addEventListener('click',e=>{const b=e.target.closest('button.show');if(b)showSite(b.dataset.id);});
-  $('status').hidden=true;$('app').hidden=false;if(map)map.invalidateSize();render(true,true);
-  const site=p.get('site');if(site)showSite(site);}
+  $('rows').addEventListener('click',e=>{const b=e.target.closest('button.show');if(b)showSite(b.dataset.id,b);});
+  if(map){map.on('popupclose',()=>{const o=opener;opener=null;if(o&&document.body.contains(o)&&document.activeElement&&(document.activeElement===document.body||document.activeElement.closest('.leaflet-container')))o.focus();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&document.activeElement&&document.activeElement.closest('.leaflet-popup')){map.closePopup();}});}
+  $('loading').hidden=true;$('app').hidden=false;if(map)map.invalidateSize();render(true,true);
+  const site=p.get('site');if(site){const s=S.find(x=>x.site_id===site);if(s&&s._ll)showSite(site);else{badSite=site;badKnown=s||null;render(false,false);}}}
 function restyle(){for(const s of S)if(s._mk)s._mk.setStyle(style(s));}
 fetch('data/sites.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();}).then(init)
-  .catch(e=>{$('status').textContent='The sites could not be loaded ('+e.message+'). They are in the Excel workbook and in sites.json, linked above.';});
+  .catch(e=>{$('loading').textContent='The sites could not be loaded ('+e.message+'). They are in the Excel workbook and in sites.json, linked above.';});
 })();
 """
 
@@ -593,40 +735,48 @@ def swatch(kind: str) -> str:
 def map_page(cite: dict, stats: dict) -> str:
     extra = '<link rel="stylesheet" href="vendor/leaflet-1.9.4/leaflet.css">\n'
     body = [nav("map.html"),
-            f'<p class="eyebrow">Compute Ledger · version {bs.e(cite["version"])}</p><h1>Map of sites</h1>',
-            '<p class="lede">Every site the ledger holds with coordinates from a public document: datacenters, buildings that file as datacenters, '
-            'crypto mining sites, chip fabs, smelters and refiners, and nuclear plants. The colour shows what the ledger has found for a site so far, '
-            'not anything about the site itself. Click a site for its page and figures.</p>',
+            f'<p class="eyebrow">Compute Ledger · version {bs.e(cite["label"])}</p><h1>Map of sites</h1>',
+            f'<p class="lede">Every site the ledger holds with coordinates from a public document: {words(stats["placed_kinds"])}. '
+            + (f'None of the {words(stats["unplaced_kinds"], "or")} is placed yet: '
+               'they are in the list below the map until a document gives their location. ' if stats["unplaced_kinds"] else "")
+            + 'The colour shows what the ledger has found for a site so far, '
+            'not anything about the site itself. Choose a topic to colour the map by what is found on that topic alone, or an organisation to see '
+            'its sites. Click a site for its page and its figures, topic by topic.</p>',
             get_data_line(cite),
-            f'<p id="status">Loading {stats["n_sites"]:,} sites…</p>',
+            f'<p id="loading">Loading {stats["n_sites"]:,} sites…</p>',
             '<noscript><p>This page needs JavaScript. Every site is listed on <a href="sites/">the sites page</a>.</p></noscript>',
             '<div id="app" hidden>',
             '<div class="filters" id="filters">',
             '<input id="q" type="search" placeholder="Search a site, operator or place" aria-label="Search the sites">',
-            '<select id="kind" aria-label="Kind of site"><option value="">Every kind of site</option></select>',
-            '<select id="country" aria-label="Country"><option value="">Every country</option></select>',
+            '<select id="topic" aria-label="Topic: colours the map by what is found on it"><option value="">Every topic</option></select>',
             '<select id="holds" aria-label="What the ledger has found"><option value="">Anything found or not</option>'
             '<option value="rec">Records found</option><option value="claim">Claims only</option><option value="none">No figures yet</option></select>',
+            '<select id="kind" aria-label="Kind of site"><option value="">Every kind of site</option></select>',
+            '<select id="status" aria-label="Status"><option value="">Any status</option></select>',
+            '<select id="country" aria-label="Country"><option value="">Every country</option></select>',
+            '<select id="org" aria-label="Organisation"><option value="">Every organisation</option></select>',
             '<label class="chk"><input type="checkbox" id="placed"> Only sites on the map</label>',
             '<button class="btn ghost" id="clear" type="button">Clear</button>',
             '</div>',
-            '<div id="map" role="region" aria-label="Map of the sites; the same sites are listed in the table below"></div>',
+            '<div class="banner" id="banner" role="status"></div>',
+            '<a class="skip" href="#sitelist">Skip the map, go to the list of sites</a>',
+            '<div id="mapwrap"><div id="map" role="region" aria-label="Map of the sites; the same sites are listed in the table below"></div><p id="mapnote" hidden></p></div>',
             '<ul class="legend">'
-            f'<li>{swatch("rec")}<span><b>Records found</b> (<span id="n-rec"></span>): at least one figure from a record</span></li>'
-            f'<li>{swatch("claim")}<span><b>Claims only</b> (<span id="n-claim"></span>): only what the company or a government says</span></li>'
-            f'<li>{swatch("none")}<span><b>No figures yet</b> (<span id="n-none"></span>): listed from a register, no figure read yet</span></li></ul>',
+            f'<li>{swatch("rec")}<span><b>Records found</b> (<span id="n-rec"></span>): <span id="l-rec">at least one figure from a record, or computed by the ledger from records</span></span></li>'
+            f'<li>{swatch("claim")}<span><b>Claims only</b> (<span id="n-claim"></span>): <span id="l-claim">only what the company or a government says</span></span></li>'
+            f'<li>{swatch("none")}<span><b>No figures yet</b> (<span id="n-none"></span>): <span id="l-none">listed from a register or a list of sites, no figure read yet</span></span></li></ul>',
             f'<p class="m" style="margin-top:10px">{stats["n_placed"]:,} of {stats["n_sites"]:,} sites are placed from a document. The other '
             f'{stats["n_sites"] - stats["n_placed"]:,} are in the list below but not on the map until a document gives their location.</p>',
             '<div class="bar"><span class="count" id="count" aria-live="polite"></span>'
             '<button class="btn" id="dl" type="button">Download these sites (CSV)</button></div>',
-            '<div class="tw"><table class="sites"><thead><tr><th>Site</th><th>Kind</th><th>Where</th><th>What the ledger holds</th><th></th></tr></thead>'
+            '<div class="tw" id="sitelist" tabindex="-1"><table class="sites"><thead><tr><th>Site</th><th>Kind</th><th>Where</th><th>What the ledger holds</th><th></th></tr></thead>'
             '<tbody id="rows"></tbody></table></div>',
             '<p class="empty" id="empty" hidden>No site matches. Clear a filter, or search for fewer words.</p>',
             '<p class="more"><button class="btn ghost" id="more" type="button" hidden>Show more</button></p>',
             '</div>',
-            foot(), '<script src="vendor/leaflet-1.9.4/leaflet.js"></script>\n', f"<script>{MAP_JS}</script>\n</body>\n</html>\n"]
+            foot("map.html", "the map of sites"), '<script src="vendor/leaflet-1.9.4/leaflet.js"></script>\n', f"<script>{MAP_JS}</script>\n</body>\n</html>\n"]
     return head("Map of sites · Compute Ledger", "Every site in the Compute Ledger on a map, with what public records show for each.",
-                extra + f"<style>{MAP_CSS}</style>\n") + "\n".join(body)
+                extra + f"<style>{MAP_CSS}</style>\n", path="map.html") + "\n".join(body)
 
 
 # ------------------------------------------------------------------------------------------------------------- workbook
@@ -699,9 +849,9 @@ def workbook(cite: dict) -> bytes:
     doi = f" https://doi.org/{cite['doi']}." if cite["doi"] else ""
     readme = [
         ["Compute Ledger: public records on the physical, social and economic footprint of AI compute"],
-        [f"Version {cite['version']}. Data and text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: MIT."],
+        [f"Version {cite['label']}. Data and text: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Code: MIT."],
         [f"Cite as: {cite['authors']} ({cite['year']}). Compute Ledger: public records on the physical, social and economic footprint of AI compute, "
-         f"version {cite['version']}.{doi} {cite['repo']}"],
+         f"version {cite['label']}.{doi} {cite['repo']}"],
         [""],
         ["Records (documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs) are kept apart from claims "
          "(what companies and governments say): see the column side on the sheet Figures. A figure the ledger computed from records has basis "
@@ -790,6 +940,7 @@ def main():
         "data/figures.json": jdump(figures),
         "data/sites.json": jdump(sites_json),
         "data/compute-ledger.xlsx": workbook(cite),
+        "data/datasette-metadata.json": jdump(datasette_metadata(cite)),
     }
     if a.check:
         stale = []

@@ -132,3 +132,27 @@ svg.ego a.nd:hover .lb,svg.ego a.nd:focus .lb{text-decoration:underline}
  .vw table.cards tr{border-bottom:1px solid var(--rule);padding:10px 0}.vw table.cards td{border:0;padding:3px 0}
  .vw table.cards td.side{padding-left:10px;margin-top:6px}.vw table.cards td[data-label]::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
  .vw table.cards tr.yr th{display:block}.vw table.tl.cards td.d,.vw table.tl.cards td.tg{display:inline-block;margin-right:10px}}
+/* totals */
+.tot td.sum{font-family:var(--display);font-size:19px;font-weight:700;white-space:nowrap}
+.tot td.sum .m{font-family:var(--mono);font-weight:400;display:block;white-space:normal}
+.tot details{margin:2px 0 0}
+.tot summary{cursor:pointer;font-family:var(--mono);font-size:12.5px;color:var(--accent)}
+.tot details ul{list-style:none;padding:0;margin:8px 0 0;max-height:420px;overflow:auto;border-top:1px solid var(--rule)}
+.tot details li{font-size:14px;padding:5px 0;border-bottom:1px dashed var(--rule);display:flex;gap:4px 12px;flex-wrap:wrap;justify-content:space-between}
+.tot details li .v{font-family:var(--mono);font-size:13px;white-space:nowrap}
+.tot h4{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--ink-2);margin:12px 0 0}
+.tot ol.rules{max-width:80ch;font-size:16px;padding-left:22px}
+.tot ol.rules li{margin:0 0 6px}
+.tot .warn{border-left:3px solid var(--gap);padding:2px 0 2px 8px;margin:6px 0 0;font-size:14px}
+@media (max-width:640px){.tot details li .v{white-space:normal}.tot td.sum{white-space:normal}}
+/* what changed */
+.chg h2{font-size:clamp(19px,2.2vw,23px);margin-top:36px}
+.chg article{border-top:1px solid var(--rule);padding:14px 0 4px;max-width:80ch}
+.chg article h3{font-family:var(--display);font-stretch:90%;font-size:18px;margin:0 0 6px;line-height:1.25}
+.chg article h3 a{color:var(--ink);text-decoration:none}
+.chg article h3 a:hover,.chg article h3 a:focus-visible{text-decoration:underline}
+.chg article p{font-size:16px;margin:0 0 8px}
+.chg code{font-family:var(--mono);font-size:.86em;overflow-wrap:anywhere}
+.feedline{font-family:var(--mono);font-size:13px;color:var(--ink-2)}
+.chg article:target{background:var(--paper-2);box-shadow:-10px 0 0 var(--paper-2),10px 0 0 var(--paper-2);border-left:3px solid var(--accent);padding-left:10px}
+.chg .relsum p{font-size:16px;color:var(--ink-2);max-width:80ch}

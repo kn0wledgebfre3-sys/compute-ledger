@@ -7,3 +7,5 @@ The pairs are chosen by hand. Most records and claims that share a subject and a
 Columns: `record_id` and `claim_id` (`measurement_id` in `data/climate_trace_seed/measurements.csv`; a corrected figure is followed through `measurement_id_aliases.csv`), `both_describe` (what the two figures measure, in plain words) and `note` (a difference in period or scope the reader should know). The build stops if an id is missing, if the two figures are not about the same subject and metric, or if the sides are not a record (or a figure computed from records) and a claim.
 
 The ledger does not say which figure is right. Each links to its document.
+
+`document_id_aliases.csv` lists document pages whose id changed because the document's address was corrected (columns: retired_document_id, document_id, date, reason). The build keeps a page at each old address that sends the reader to the new one, so a shared link keeps working.

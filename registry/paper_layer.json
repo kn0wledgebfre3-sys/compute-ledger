@@ -173,13 +173,20 @@
   "lat": null,
   "lon": null,
   "category": "accounting",
-  "record": "EY's review report (limited assurance) for the year ended 31 December 2024 lists Scope 2 location-based emissions of 5,967,348 tCO2e and market-based emissions of 1,358 tCO2e, a difference of 5,965,990 t. EY's review report for 2023 lists 5,141,350 t location-based and 1,658 t market-based, a difference of 5,139,692 t. Both Scope 2 methods are in the reviewed schedule. EY's 2024 schedule also lists 100% of electricity matched by renewable sources and 50,000 tCO2e of carbon credits (VCS). Electricity use was 18,423,634 MWh in 2024 and 15,325,314 MWh in 2023.",
+  "record": "EY's review report (limited assurance) for the year ended 31 December 2024 lists Scope 2 location-based emissions of 5,967,348 tCO2e and market-based emissions of 1,358 tCO2e, a difference of 5,965,990 t. EY's review report for 2023 lists 5,141,350 t location-based and 1,658 t market-based, a difference of 5,139,692 t. Both Scope 2 methods are in the reviewed schedule. EY's 2024 schedule also lists 100% of electricity matched by renewable sources and 50,000 tCO2e of carbon credits (VCS). Electricity use was 18,423,634 MWh in 2024 and 15,325,314 MWh in 2023. EY's review reports for the year ended 31 December 2025 (dated 30 October 2026, limited assurance) list 7,844,361 t location-based and 10,861 t market-based Scope 2, 100% of electricity matched by clean and renewable sources, and 80,000 tCO2e of carbon credits. They also restate earlier years after Meta corrected errors in its previously reported Scope 1 and market-based Scope 2 emissions: 2024 market-based Scope 2 becomes 7,876 t (from 1,358 t) and Scope 1 47,242 t (from 47,468 t); 2023 market-based Scope 2 becomes 5,912 t (from 1,658 t) and Scope 1 48,963 t (from 48,952 t). The restatement note says the corrections concern the exclusion of certain Scope 1 and 2 sources and the misclassification of certain Scope 1 sources.",
   "record_sources": [
    {
-    "title": "Independent Accountants' Review Report, year ended December 31, 2024 (EY)",
+    "title": "Independent Accountants' Review Reports, year ended December 31, 2025 (EY)",
     "url": "https://sustainability.atmeta.com/asset/2025-independent-accountants-review-report/",
     "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
-    "date": "2025-08-27"
+    "date": "2026-10-30"
+   },
+   {
+    "title": "Independent Accountants' Review Report, year ended December 31, 2024 (EY)",
+    "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/09/Meta-EY_FY24-Independent-Accountants-Review-Report-and-Appendix.pdf",
+    "publisher": "Ernst & Young LLP for Meta Platforms, Inc.",
+    "date": "2025-08-27",
+    "url_note": "dated copy on Meta's site; the address first cited now serves the review for 2025"
    },
    {
     "title": "Independent Accountants' Review Report, year ended December 31, 2023 (EY)",
@@ -212,11 +219,11 @@
     "date_note": "undated; covers 1 Jan-31 Dec 2024"
    }
   ],
-  "gap": "Market-based Scope 2 was 1,358 t against 5,967,348 t location-based in 2024 (99.98% lower). The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'.",
+  "gap": "Market-based Scope 2 was 10,861 t against 7,844,361 t location-based in 2025 (99.86% lower). For 2024 it was 1,358 t as first reviewed and 7,876 t as restated, against 5,967,348 t location-based. The market-based method replaces grid-average emission factors with the company's contractual instruments and residual-mix factors; the location-based figure is the grids'.",
   "confidence": "high",
   "verification_status": "verified",
-  "verification_note": "Both Scope 2 figures appear in EY review reports (AICPA AT-C 210, limited assurance). Meta gives no MWh split between unbundled EACs, VPPAs and other instruments. It reports no hourly CFE figure. The latest year's assured figures were re-read directly on 2026-10-23.",
-  "last_checked": "2026-10-24"
+  "verification_note": "Both Scope 2 figures appear in EY review reports (AICPA AT-C 210, limited assurance). Meta gives no MWh split between unbundled EACs, VPPAs and other instruments. It reports no hourly CFE figure. The latest year's assured figures were re-read directly on 2026-10-23. 2026-11-20: the address first cited for the 2024 review now serves the review for 2025, so the 2024 figures link to the dated copy of the 2024 review on Meta's site; the reviews for 2025 (two reports, 30 October 2026), with the restated 2023 and 2024 figures, and the data index's 2024 figures were read by two readers who agree (review/roadmap_round_2026-11-20/).",
+  "last_checked": "2026-11-20"
  },
  {
   "id": "oracle-scope2-two-numbers",
@@ -295,7 +302,7 @@
     "date": "2026-02"
    }
   ],
-  "claim": "For 2023 the Data Summary reports 2,623,800 t location-based and 247,600 t market-based, a difference of 2,376,200 t (not covered by the 2024 assurance statement). It reports 2024 renewable coverage of 96% from unbundled EACs (47%), utility-supplied EACs (38%) and PPAs (11%). Equinix reports \"96% renewable energy (RE) coverage, our eighth consecutive year with coverage over 90%\" for 2025.",
+  "claim": "For 2023 the Data Summary reports 2,623,800 t location-based and 247,600 t market-based, a difference of 2,376,200 t (not covered by the 2024 assurance statement). It reports 2024 renewable coverage of 96% from unbundled EACs (47%), utility-supplied EACs (38%) and PPAs (11%). Equinix reports \"96% renewable energy (RE) coverage, our eighth consecutive year with coverage over 90%\" for 2025. Its 2025 Sustainability Report gives 2025 emissions of 30,161 MTCO2e Scope 1, 234,018 MTCO2e market-based Scope 2 and 1,623,917 MTCO2e Scope 3, and 8,300 GWh of electricity consumed; it says energy and emissions are assured to ISO 14064-3:2019 and names no assurer or level.",
   "claim_sources": [
    {
     "title": "Equinix 2024 Sustainability Data Summary (copy hosted by Green Web Foundation; original at equinix.com not reachable)",
@@ -316,13 +323,20 @@
     "publisher": "Equinix, Inc.",
     "date": "",
     "date_note": "undated; accessed 2026-10-23"
+   },
+   {
+    "title": "Equinix 2025 Sustainability Report",
+    "url": "https://d1io3yog0oux5.cloudfront.net/_dd4537fcab139e43b5bb871d20079fe3/equinix/db/2197/27037/file/Equinix-Inc_2025_Sustainability-Report.pdf",
+    "publisher": "Equinix, Inc.",
+    "date": "2026",
+    "date_note": "covers 1 January to 31 December 2025"
    }
   ],
   "gap": "Market-based Scope 2 was 253,300 t against 2,693,500 t location-based in 2024 (90.6% lower); Equinix states that unbundled certificates covered 47% and PPAs 11% of its 2024 electricity, within its stated 96% renewable coverage for 2024.",
   "confidence": "medium",
   "verification_status": "partial",
-  "verification_note": "The 2024 and 2023 values come from a copy of Equinix's 2024 Data Summary hosted by the Green Web Foundation. The originals on equinix.com and its Adobe asset host, including the 2025 Data Summary, the 2026 CDP response and the verification statement, were blocked (robots or proxy 403). The 2025 Scope 1+2 values come from unlabeled chart text in the Form ARS, and Scope 2 cannot be separated from Scope 1 there. The 2025 annual-report chart, whose series labels could not be read, was left out. 2026-10-24: the 2023 values and the 2024 instrument split moved to claim (Lucideon's emissions statement covers 2024 only, and the split is Equinix's own table); the gap now names 2024 for the instrument shares. The instrument table is p.9, Table 1.2.4 'Renewable Energy Coverage by Type'.",
-  "last_checked": "2026-10-24"
+  "verification_note": "The 2024 and 2023 values come from a copy of Equinix's 2024 Data Summary hosted by the Green Web Foundation. The originals on equinix.com and its Adobe asset host, including the 2025 Data Summary, the 2026 CDP response and the verification statement, were blocked (robots or proxy 403). The 2025 Scope 1+2 values come from unlabeled chart text in the Form ARS, and Scope 2 cannot be separated from Scope 1 there. The 2025 annual-report chart, whose series labels could not be read, was left out. 2026-10-24: the 2023 values and the 2024 instrument split moved to claim (Lucideon's emissions statement covers 2024 only, and the split is Equinix's own table); the gap now names 2024 for the instrument shares. The instrument table is p.9, Table 1.2.4 'Renewable Energy Coverage by Type'. 2026-11-20: the 2025 Sustainability Report was read by two readers who agree; the 2025 Data Summary and assurance statement on equinix.com could not be opened, so the 2025 figures are the company's statements.",
+  "last_checked": "2026-11-20"
  },
  {
   "id": "digital-realty-scope2-two-numbers",
