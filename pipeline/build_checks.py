@@ -282,7 +282,8 @@ def main():
                         ("site-locations-2026-11-17", "site_locations_2026-11-17/check_result.csv"),
                         ("site-locations-2-2026-11-17", "site_locations_2_2026-11-17/check_result.csv"),
                         ("directory-counts-2026-11-20", "directory_counts_2026-11-20/check_result.csv"),
-                        ("scotland-round-2026-11-20", "scotland_round_2026-11-20/check_result.csv")):
+                        ("scotland-round-2026-11-20", "scotland_round_2026-11-20/check_result.csv"),
+                        ("views-check-2026-11-20", "views_check_2026-11-20/check_result.csv")):
         for r in read(REVIEW / path):
             m = re.match(r"([a-z0-9-]+-[a-z0-9-]+)", r["location"])
             ent = m.group(1) if m and m.group(1) in entries else ""
@@ -310,7 +311,8 @@ def main():
              "not_found": "primary not found", "contradicted": "contradicted", "verified": "verified", "partial": "partly verified",
              "error": "errors", "inconsistency": "inconsistencies", "weak": "weak", "style": "style", "obtained": "obtained",
              "contradicts": "contradicts the entry", "blocker": "blockers to use", "serious": "serious", "polish": "polish",
-             "first_reading_only": "read once, not used", "agreed_not_used": "agreed, not used", "readings_differ": "the readings differ, not used"}
+             "first_reading_only": "read once, not used", "agreed_not_used": "agreed, not used", "readings_differ": "the readings differ, not used",
+             "inaccuracy": "inaccuracies", "layout": "layout", "behaviour": "behaviour", "wording": "wording"}
 
     def counts(rs, key):
         return ", ".join(f"{n} {LABEL.get(k, k) if key == 'severity' else k}" for k, n in Counter(x[key] for x in rs).most_common())

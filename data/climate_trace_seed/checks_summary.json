@@ -1,6 +1,6 @@
 {
- "checks": 33,
- "findings_in_table": 3144,
+ "checks": 34,
+ "findings_in_table": 3172,
  "random_sample_figures": {
   "n": 166,
   "verdicts": {
@@ -28,7 +28,7 @@
   "differences_still_as_checked": 1
  },
  "status_now": {
-  "as recorded with the finding: applied": 402,
+  "as recorded with the finding: applied": 430,
   "as recorded with the finding: confirmed; not entered as a figure": 310,
   "as recorded with the finding: not placed": 242,
   "quoted text no longer present": 232,

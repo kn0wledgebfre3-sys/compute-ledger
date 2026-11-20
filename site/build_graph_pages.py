@@ -11,8 +11,8 @@ same question gets the same place on every page:
                 who keeps the records · entries · not found yet
   document      facts · tiles · figures read from it · links it states · entries that cite it · checks · also by this publisher
 
-Writes docs/org/, docs/country/, docs/doc/ (each with an index.html), docs/chain.html, docs/data/search.json and
-docs/assets/graph.css and graph.js. Reads data/graph/ (pipeline/build_graph.py) and data/climate_trace_seed/.
+Writes docs/org/, docs/country/, docs/doc/ (each with an index.html), docs/chain.html, the three views in site/views.py
+(records-and-claims.html, coverage.html, timeline.html), docs/data/search.json and docs/assets/graph.css and graph.js. Reads data/graph/ (pipeline/build_graph.py) and data/climate_trace_seed/.
 Output is deterministic; --check compares with the committed files and exits 1 on a difference.
 
     python3 site/build_graph_pages.py [--check]
@@ -32,6 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import build_explore as bx  # noqa: E402
 import build_sites as bs  # noqa: E402
 import graphkit as gk  # noqa: E402
+import views  # noqa: E402
 from graphdata import CHAIN_RELATIONS, GROUP_RELATIONS, graph  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -42,7 +43,22 @@ e = bs.e
 TOPICS = bx.TOPICS
 TOPIC_OF = {m: i for i, (_, ms) in enumerate(TOPICS) for m in ms}
 LAST_TOPIC = len(TOPICS) - 1
-SIDE_TAG = {"record": '<span class="tag rec">record</span>', "claim": '<span class="tag claim">claim</span>'}
+SIDE_TAG = {"record": '<span class="tag rec">record</span>', "claim": '<span class="tag claim">claim</span>',
+            "both": '<span class="tag both">record and claim equally</span>'}
+
+
+def doc_side(m):
+    """a document is a record or a claim by what the ledger reads it for most often; as often for each, both"""
+    r, c = m["sides"]["record"], m["sides"]["claim"]
+    return "record" if r > c else "claim" if c > r else ("both" if r else "")
+
+
+def doc_dates(m):
+    """(the date used, the earliest, how many distinct dates): the latest date recorded for a document, so a register read
+    over time is placed when it was last read from"""
+    ds = sorted(d for d in m["dates"] if d)
+    ds = [d for d in ds if not any(x != d and x.startswith(d + "-") for x in ds)]  # a year or month that a fuller date falls in is the same date
+    return (ds[-1], ds[0], len(ds)) if ds else ("", "", 0)
 
 
 def read(p):
@@ -74,10 +90,11 @@ def nav(prefix, crumbs, current=""):
             'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>\n')
 
 
-def foot(prefix):
+def foot(prefix, lines=True):
     return ('<footer><p>Records are documents from regulators, courts, grid operators, statistics offices, auditors, registries or customs. '
             'Claims are what companies and governments say. A gap means the ledger has not found or read a public record yet, not that none '
-            'exists or that anything is wrong. A line between two names is drawn only where a document states the link.</p>'
+            'exists or that anything is wrong.' + (' A line between two names is drawn only where a document states the link.' if lines else
+                                                   ' The record side also holds figures from reports of records and figures the ledger computed from records.') + '</p>'
             f'<p>Data CC BY 4.0. <a href="{prefix}explore.html#get-the-data">Get the data</a> · <a href="{REPO}/tree/main/data/graph">The graph as data</a> · '
             f'<a href="{REPO}#how-to-cite">Cite</a> · <a href="{REPO}/issues/new/choose">Report an error or a missing record</a> · '
             f'<a href="{prefix}index.html">The ledger</a></p></footer>\n</div>\n'
@@ -92,11 +109,17 @@ def cite_line(cite, kind, ident, iri):
 
 # --------------------------------------------------------------------------------------------------- shared blocks
 
-def topic_grid(rows, explore_base, prefix):
+def topic_counts(rows):
+    """per topic: figures from records, computed by the ledger, and claimed (the rule every topic grid and the coverage table use)"""
     by = defaultdict(Counter)
     for r in rows:
         t = TOPIC_OF.get(r["metric"], LAST_TOPIC)
         by[t]["computed" if r["basis"] == "derived" else r["side"]] += 1
+    return by
+
+
+def topic_grid(rows, explore_base, prefix):
+    by = topic_counts(rows)
     out = ['<ul class="q">']
     for i, (t, _) in enumerate(TOPICS):
         c = by.get(i, Counter())
@@ -105,6 +128,9 @@ def topic_grid(rows, explore_base, prefix):
         if n_rec:
             txt = f'<a href="{href}">{plural(n_rec, "figure")} from records</a>' + (f", {n_calc:,} computed" if n_calc else "") + (f", {n_cl:,} claimed" if n_cl else "")
             out.append(f"<li><b>{e(t)}</b><span>{txt}</span></li>")
+        elif n_calc and not n_cl:
+            out.append(f'<li class="no"><b>{e(t)}</b><span><a href="{href}">{plural(n_calc, "figure")}</a> computed by the ledger from records; '
+                       'none read directly from a record yet</span></li>')
         elif n_cl or n_calc:
             out.append(f'<li class="no"><b>{e(t)}</b><span>Only <a href="{href}">{plural(n_cl + n_calc, "figure")}</a> '
                        f'{"claimed" if n_cl and not n_calc else "claimed or computed"}; no record found yet</span></li>')
@@ -469,11 +495,9 @@ def how_many(ctx, cc, name, sites, P):
     return section("How many datacentres", "", "The same on every country's page.", f"<p>{named}</p><p>{listed}</p><p class=\"m\">{note}</p>")
 
 
-def country_page(ctx, cc, region_rows):
+def country_scope(ctx, cc):
+    """a country's sites, organisations based there, entries and the figures about all three: what its page and the coverage table count"""
     g = ctx.g
-    nid = f"country:{cc}"
-    n = g.nodes[nid]
-    P = "../"
     sites = sorted([s for s in ctx.sites.values() if s["country"] == cc], key=lambda s: s["name"].lower())
     site_nids = [f"site:{s['site_id']}" for s in sites]
     ents_here = [x for x in ctx.ents.values() if x["country"] == cc]
@@ -485,6 +509,15 @@ def country_page(ctx, cc, region_rows):
         figs += ctx.by_subject.get(x, [])
     for x in ents_here:
         figs += ctx.by_subject.get(f"org:{x['entity_id']}", [])
+    return sites, site_nids, ents_here, entries, figs
+
+
+def country_page(ctx, cc, region_rows):
+    g = ctx.g
+    nid = f"country:{cc}"
+    n = g.nodes[nid]
+    P = "../"
+    sites, site_nids, ents_here, entries, figs = country_scope(ctx, cc)
     n_rec = sum(1 for r in figs if r["side"] == "record" and r["basis"] != "derived")
     n_cl = sum(1 for r in figs if r["side"] == "claim")
     placed = sum(1 for s in sites if s["lat"])
@@ -595,18 +628,18 @@ def doc_page(ctx, did, by_pub):
     url = n["detail"]
     m = ctx.doc_meta[url]
     top = lambda c: sorted(((-v, k) for k, v in c.items() if k))[0][1] if any(k for k in c) else ""  # noqa: E731
-    pub, date = top(m["pubs"]), top(m["dates"])
+    pub = top(m["pubs"])
+    date, first, ndates = doc_dates(m)
     figs = order_figs([r for r in ctx.meas if r["source_url"] == url])
     states = [l for l in g.inn.get(nid, []) if False] + [l for l in g.links if l["document_id"] == did and (l["relation"] in CHAIN_RELATIONS or l["relation"] in GROUP_RELATIONS)]
     cites = [l for l in g.rel_in(nid, "cites")]
     pub_org = [l["to_id"] for l in g.rel_out(nid, "published_by")]
-    sides = Counter(r["side"] for r in figs) + Counter(l["side"] for l in states) + Counter(l["side"] for l in cites)
-    kind_side = "record" if sides and sides.most_common(1)[0][0] == "record" else "claim" if sides else ""
+    kind_side = doc_side(m)
     bases = [b for b, _ in m["bases"].most_common()]
     other_titles = [t for t in m["titles"] if t and t != n["name"]]
     checks = sorted({l["from_id"][6:] for l in g.rel_in(nid, "read_again")})
     facts = [("Published by", (ctx.ref(pub_org[0], P) + f' <span class="m">as recorded: {e(pub)}</span>') if pub_org else (e(pub) or "not recorded")),
-             ("Date", e(date) or "not recorded"),
+             ("Date", (e(date) + (f' <span class="m">the latest of {ndates} dates recorded for it, from {e(first)}</span>' if ndates > 1 else "")) if date else "not recorded"),
              ("Kind of document", (SIDE_TAG.get(kind_side, "") + " " + e(", ".join(b.replace("_", " ") for b in bases))) if bases or kind_side else "not recorded"),
              ("Where to read it", f'<a href="{e(url)}" rel="noopener">{e(gk.short(url, 110))}</a>')]
     if other_titles:
@@ -634,7 +667,7 @@ def doc_page(ctx, did, by_pub):
     same = [d for d in by_pub.get(pub, []) if d != did][:12] if pub else []
     if same:
         body.append(section("Also by this publisher", "", f"As the ledger records the publisher: {e(pub)}.",
-                            "<ul>" + "".join(f'<li>{ctx.ref("doc:" + d, P)} <span class="m">{e(top(ctx.doc_meta[g.nodes["doc:" + d]["detail"]]["dates"]))}</span></li>' for d in same) + "</ul>"))
+                            "<ul>" + "".join(f'<li>{ctx.ref("doc:" + d, P)} <span class="m">{e(doc_dates(ctx.doc_meta[g.nodes["doc:" + d]["detail"]])[0])}</span></li>' for d in same) + "</ul>"))
     else:
         body.append(section("Also by this publisher", "", "", '<p class="none">No other document by this publisher in the ledger.</p>'))
     body.append("</main>")
@@ -799,17 +832,18 @@ def main():
         files[f"doc/{did}.html"] = doc_page(ctx, did, by_pub)
         m = ctx.doc_meta[n["detail"]]
         pub = sorted(((-v, k) for k, v in m["pubs"].items() if k))[0][1] if any(k for k in m["pubs"]) else ""
-        date = sorted(((-v, k) for k, v in m["dates"].items() if k))[0][1] if any(k for k in m["dates"]) else ""
-        side = m["sides"].most_common(1)[0][0] if m["sides"] else ""
+        date = doc_dates(m)[0]
+        side = doc_side(m)
         nfig = sum(m["bases"].values()) if False else sum(1 for r in ctx.meas if r["source_url"] == n["detail"])
         d_rows.append((n["name"].lower(), f'<tr data-s="{e(side)}"><td><a href="{e(did)}.html">{e(gk.short(n["name"], 120))}</a></td><td class="m">{e(pub)}</td>'
                        f'<td class="m">{e(date)}</td><td>{SIDE_TAG.get(side, "")}</td><td class="v">{nfig or ""}</td></tr>'))
     files["doc/index.html"] = index_page("Documents", f"{len(d_rows):,} documents read",
                                          "Every document the ledger cites: for a figure, for an entry, or for a link in the chain.",
                                          ["Document", "Publisher", "Date", "Mostly", "Figures"], [r for _, r in sorted(d_rows)], "../", "Documents", "doc/",
-                                         '<select data-f="s" aria-label="Record or claim"><option value="">Records and claims</option><option value="record">Mostly records</option><option value="claim">Mostly claims</option></select>')
+                                         '<select data-f="s" aria-label="Record or claim"><option value="">Records and claims</option><option value="record">Mostly records</option><option value="claim">Mostly claims</option><option value="both">Records and claims equally</option></select>')
     files["chain.html"] = chain_page(ctx)
     files["vocab.html"] = vocab_page()
+    files.update(views.build(ctx, sys.modules[__name__]))
     # search index
     items = []
     for n in sorted(g.nodes.values(), key=lambda n: n["node_id"]):
@@ -823,7 +857,7 @@ def main():
         items.append([t, n["name"], n["page"], sub, text])
     files["data/search.json"] = json.dumps({"about": "Names and pages of every site, organisation, country, document and entry in the Compute Ledger, for the search box.",
                                             "items": items}, ensure_ascii=False, separators=(",", ":")) + "\n"
-    files["assets/graph.css"] = gk.CSS.lstrip()
+    files["assets/graph.css"] = gk.CSS.lstrip() + views.CSS.lstrip()
     files["assets/graph.js"] = gk.JS.lstrip()
 
     if a.check:
@@ -845,7 +879,8 @@ def main():
             if f"{d}/{x.name}" not in files:
                 x.unlink(); removed += 1
     print(f"wrote {sum(1 for p in files if p.startswith('org/')) - 1} organisation, {sum(1 for p in files if p.startswith('country/')) - 1} country and "
-          f"{sum(1 for p in files if p.startswith('doc/')) - 1} document pages, the chain and the search index" + (f"; removed {removed} stale pages" if removed else ""))
+          f"{sum(1 for p in files if p.startswith('doc/')) - 1} document pages, the chain, records beside claims, coverage, the timeline and the search index"
+          + (f"; removed {removed} stale pages" if removed else ""))
     return 0
 
 

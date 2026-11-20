@@ -62,3 +62,73 @@ svg.ego a.nd:hover .lb,svg.ego a.nd:focus .lb{text-decoration:underline}
 .cols2 td,.cols2 .m{overflow-wrap:break-word}
 .tag.rec{color:var(--rec);border-color:currentColor} .tag.claim{color:var(--claim);border-color:currentColor} .tag.gap{color:var(--gap);border-color:currentColor}
 @media (max-width:860px){ .cols2{grid-template-columns:minmax(0,1fr)} .side{position:static} .tiles{grid-template-columns:repeat(2,minmax(0,1fr))} }
+/* views: records beside claims, coverage, timeline */
+:root{--c-rec:#00806A;--c-claim:#BF4A1A;--c-both:#6A5FC1}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--c-rec:#2FA38C;--c-claim:#D9703F;--c-both:#8C85E0}}
+:root[data-theme="dark"]{--c-rec:#2FA38C;--c-claim:#D9703F;--c-both:#8C85E0}
+.vw-note{background:var(--paper-2);padding:10px 14px;margin:14px 0 0;font-size:15px;max-width:80ch}
+.vw table td{font-size:14.5px;overflow-wrap:break-word}
+.vw table td.m,.vw table td .m{font-size:12.5px}
+.vw .side{min-width:220px}
+.vw td.about{min-width:8em}
+.vw .empty{margin:10px 0 0}
+.vw tr[hidden],.cov tr[hidden]{display:none!important}
+.vw .fv strong{font-family:var(--display);font-size:17px}
+.vw .fv .cv{font-family:var(--mono);font-size:12px;color:var(--ink-2);margin-left:6px}
+.vw ul.fl{list-style:none;padding:0;margin:0}
+.vw ul.fl li{padding:0 0 8px;margin:0 0 8px;border-bottom:1px dashed var(--rule)}
+.vw ul.fl li:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.vw th.rh,.vw td.rh{border-left:3px solid var(--rec);padding-left:8px}
+.vw th.ch,.vw td.ch{border-left:3px solid var(--claim);padding-left:8px}
+.vw .count{margin:6px 0 0}
+.cov{border-collapse:separate;border-spacing:2px;width:auto;min-width:100%}
+.cov th{white-space:normal;vertical-align:bottom;font-size:11px;line-height:1.25;padding:4px 3px 6px;min-width:64px;max-width:84px}
+.cov th.cn,.cov td.cn{position:sticky;left:0;background:var(--paper);z-index:1;min-width:130px;max-width:170px;text-align:left}
+.cov td{padding:0;border:0;vertical-align:middle;text-align:center;font-family:var(--mono);font-size:12.5px}
+.cov td.cn{padding:6px 8px 6px 0;font-family:var(--body);font-size:14.5px;border-bottom:1px solid var(--rule)}
+.cov td.cl a,.cov td.cl span{display:block;padding:9px 4px;min-height:36px;text-decoration:none;color:var(--ink)}
+.cov td.k-rec{background:color-mix(in srgb,var(--c-rec) 22%,var(--paper))}
+.cov td.k-claim{background:color-mix(in srgb,var(--c-claim) 16%,var(--paper));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--c-claim) 45%,var(--paper))}
+.cov td.k-calc a{white-space:nowrap;font-size:11.5px}
+.tag.both{color:var(--c-both);border-color:var(--c-both)}
+.tl td.v{white-space:nowrap}
+#tl-counts td.v{min-width:0}
+.cov td.k-calc{background:color-mix(in srgb,var(--calc) 16%,var(--paper));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--calc) 45%,var(--paper))}
+.cov td.k-none{background:var(--paper-2);color:var(--ink-2)}
+.cov td.k-none span{color:var(--ink-2)}
+.cov td.cl a:hover,.cov td.cl a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.cov td.n{font-family:var(--mono);font-size:12px;padding:6px 4px;border-bottom:1px solid var(--rule)}
+.cov tfoot td{font-family:var(--mono);font-size:12px;color:var(--ink-2);padding:8px 4px;border-top:1px solid var(--rule)}
+.cov th button{all:unset;cursor:pointer;display:block;text-align:center;width:100%}
+.cov th button::after{content:" ↕";opacity:.45}
+.cov td.cl a{scroll-margin-left:140px}
+.cov th button:focus-visible{outline:2px solid var(--accent)}
+.cov th[aria-sort] button::after{content:" ↓";color:var(--accent);opacity:1}
+.vw-key{display:flex;flex-wrap:wrap;gap:6px 18px;margin:12px 0 0;font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+.vw-key i{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:6px;border-radius:2px}
+.vw-key i.r{background:color-mix(in srgb,var(--c-rec) 22%,var(--paper));border:1px solid var(--c-rec)}
+.vw-key i.c{background:color-mix(in srgb,var(--c-claim) 16%,var(--paper));border:1px solid var(--c-claim)}
+.vw-key i.n{background:var(--paper-2);border:1px solid var(--rule)}
+.vw-key i.k{background:color-mix(in srgb,var(--calc) 16%,var(--paper));border:1px solid var(--calc)}
+.vw-key i.be{background:var(--c-both)}
+.tl-chart .b-both{fill:var(--c-both)}
+.vw-key i.br{background:var(--c-rec)} .vw-key i.bc{background:var(--c-claim)}
+.tl-chart{position:relative;margin:14px 0 0;border:1px solid var(--rule);background:var(--paper);padding:8px 0 0}
+.tl-chart svg{display:block;width:100%;height:230px}
+.tl td.doc{min-width:11em}
+.tl-chart text{font-family:var(--mono);font-size:11px;fill:var(--ink-2)}
+.tl-chart .grid line{stroke:var(--rule);stroke-width:1}
+.tl-chart .b-rec{fill:var(--c-rec)} .tl-chart .b-claim{fill:var(--c-claim)}
+.tl-chart g.col{cursor:pointer;outline:none}
+.tl-chart g.col:hover path.bar,.tl-chart g.col:focus-visible path.bar{filter:brightness(1.15)}
+.tl-chart g.col.on .hit{fill:color-mix(in srgb,var(--accent) 12%,transparent)}
+.tl-chart g.col:focus-visible .hit{stroke:var(--accent);stroke-width:2}
+.tl-tip{position:absolute;pointer-events:none;background:var(--paper);border:1px solid var(--rule);padding:6px 9px;font-family:var(--mono);font-size:12px;color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.12);white-space:nowrap;z-index:3}
+.tl-tip b{font-size:14px} .tl-tip .k{display:inline-block;width:12px;height:2px;vertical-align:3px;margin-right:6px}
+.tl tr.yr th{font-family:var(--display);font-size:19px;color:var(--ink);padding-top:22px;border-bottom:2px solid var(--ink)}
+.tl td.d{white-space:nowrap;font-family:var(--mono);font-size:12.5px;color:var(--ink-2)}
+@media (max-width:640px){.cov th.cn,.cov td.cn{min-width:118px;max-width:130px}.cov th{min-width:64px}.cov td.cl a{scroll-margin-left:126px}
+ .vw table.cards thead{display:none}.vw table.cards,.vw table.cards tbody,.vw table.cards tr,.vw table.cards td{display:block;width:auto;min-width:0}
+ .vw table.cards tr{border-bottom:1px solid var(--rule);padding:10px 0}.vw table.cards td{border:0;padding:3px 0}
+ .vw table.cards td.side{padding-left:10px;margin-top:6px}.vw table.cards td[data-label]::before{content:attr(data-label);display:block;font-family:var(--mono);font-size:11.5px;color:var(--ink-2)}
+ .vw table.cards tr.yr th{display:block}.vw table.tl.cards td.d,.vw table.tl.cards td.tg{display:inline-block;margin-right:10px}}

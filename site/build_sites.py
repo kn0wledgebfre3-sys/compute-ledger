@@ -79,6 +79,8 @@ def period(r: dict) -> str:
         return s[:4]
     if s and t and s[:7] == "%s-07" % s[:4] and t[5:] == "06-30" and int(t[:4]) == int(s[:4]) + 1:
         return f"FY to {t}"
+    if s and t and s == t:
+        return s
     if s and t:
         return f"{s} to {t}"
     return s or t or "not stated"
@@ -152,7 +154,8 @@ HEAD = ('<!doctype html>\n<html lang="en">\n<meta charset="utf-8">\n<meta name="
 SEARCH = ('<div class="gsearch" data-base="../"><input type="search" placeholder="Search sites, organisations, countries, documents" '
           'aria-label="Search the ledger" autocomplete="off"><ul role="listbox"></ul></div>\n')
 NAV = [("explore.html", "Explore figures"), ("map.html", "Map"), ("sites/", "Sites"), ("org/", "Organisations"), ("country/", "Countries"),
-       ("doc/", "Documents"), ("chain.html", "The chain"), ("brief.html", "Brief"), ("explore.html#get-the-data", "Get the data")]
+       ("doc/", "Documents"), ("chain.html", "The chain"), ("records-and-claims.html", "Records and claims"),
+       ("coverage.html", "Coverage"), ("timeline.html", "Timeline"), ("brief.html", "Brief"), ("explore.html#get-the-data", "Get the data")]
 
 
 def nav_links(prefix: str = "../", current: str = "") -> str:

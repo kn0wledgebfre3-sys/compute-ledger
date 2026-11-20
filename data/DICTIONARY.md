@@ -158,7 +158,7 @@ Documented links in the chain from smelter to chipmaker to site and its power, f
 | `notes` | string |  |  | What the reader needs to know. |
 | `second_read` | string | yes |  | yes or no, with how it was confirmed. |
 
-## `data/climate_trace_seed/checks.csv` (33 rows)
+## `data/climate_trace_seed/checks.csv` (34 rows)
 
 Every check run on the ledger: what was checked, how, by whom, and what it found. Built from review/CHECKS.csv and the findings files.
 
@@ -179,7 +179,7 @@ Every check run on the ledger: what was checked, how, by whom, and what it found
 | `findings_by_severity` | string |  |  | Counts by severity. |
 | `status_now` | string |  |  | What the current data show for those findings, recomputed at every build. |
 
-## `data/climate_trace_seed/findings.csv` (3,144 rows)
+## `data/climate_trace_seed/findings.csv` (3,172 rows)
 
 Every finding from every check, with what the data show now.
 
@@ -197,7 +197,7 @@ Every finding from every check, with what the data show now.
 | `severity` | string |  |  | As the checker gave it. |
 | `status_now` | string |  |  | What the current data show, recomputed at every build. |
 
-## `data/graph/nodes.csv` (7,201 rows)
+## `data/graph/nodes.csv` (7,202 rows)
 
 Every node of the ledger's graph (pipeline/build_graph.py; data/graph/README.md): organisations, sites, countries, regions, documents, entries, checks, figures and named parties.
 

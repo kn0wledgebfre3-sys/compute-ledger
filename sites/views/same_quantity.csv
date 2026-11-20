@@ -1,0 +1,10 @@
+record_id,claim_id,both_describe,note
+m-a3126ddbe2,m-c89fee33d6,the share of Alphabet's 2025 electricity use covered by renewable electricity over the year,
+m-7b5590bc91,m-179da22557,datacenters' electricity consumption in Denmark,"Both as one document cites them: the record is the AF25 figure for 2025, the claim an industry analysis for 2024."
+m-b0f9f9db84,m-72002dc221,the number of Danish datacenters using their waste heat,Neither gives a date.
+m-c3d8cbf567,m-6e871b4b9f,the enhanced geothermal capacity contracted for the grid serving Google's Nevada datacenters,
+m-b6a1c1a450,m-2e4c4aa89a,the generating capacity of Greenidge's gas-fired plant,
+m-0a118ca1bb,m-7d84baeac8,the generating capacity of the turbines permitted at xAI's Southaven site,
+m-f22358d5e6,m-30f519b625,Google's water use at The Dalles in 2024,"The record is the city's municipal supply to Google, from city records as reported; the claim is Google's own site-level figure."
+m-78a46fb812,m-5014ae6bfb,the power available at the start of the Culham AI Growth Zone datacenter,
+m-1788e5fd65,m-f8634fd5cf,Sydney Water's projection of datacenters' water use in 2035,"Different scenarios: the record side is the ledger's yearly total from Sydney Water's average-day forecast if all requests proceed; the claim is an upper bound ('up to'), Sydney Water's figure as a news agency reported it."
