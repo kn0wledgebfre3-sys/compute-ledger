@@ -1,0 +1,105 @@
+task_id,subject,question,url
+T001,government decision,"What does the document state about the name of the instrument (direction, letter or motion)?",https://www.gov.scot/news/data-centre-planning-direction/
+T002,government decision,What does the document state about the name the instrument may be cited as?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T003,government decision,What does the document state about the date it comes into force?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T004,government decision,What does the document state about who issued it?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T005,government decision,What does the document state about the size threshold it uses?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T006,government decision,What does the document state about what it requires?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T007,government decision,What does the document state about which applications it applies to?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T008,government decision,What does the document state about the purpose it states?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T009,government decision,"What does the document state about how long it lasts, or whether a duration or end date is stated?",https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T010,government decision,What does the document state about the legal power it is made under?,https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/
+T011,government decision,What does the document state about who announced it?,https://www.gov.scot/news/data-centre-planning-direction/
+T012,government decision,What does the document state about the instrument it describes?,https://www.parliament.scot/~/media/committ/13490/Paper-5--PE2233
+T013,government decision,"What does the document state about the name of the instrument (direction, letter or motion)?",https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T014,government decision,What does the document state about the date of the letter?,https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T015,government decision,What does the document state about the date it comes into force?,https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T016,government decision,"What does the document state about how long it lasts, or whether a duration or end date is stated?",https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T017,government decision,What does the document state about the size threshold it uses?,https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T018,government decision,What does the document state about how it defines power capacity?,https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T019,government decision,What does the document state about what it requires?,https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/
+T020,government decision,What does the document state about which applications it applies to?,https://www.parliament.scot/-/media/files/committees/session-7/climate-action-committee/correspondence/2026/20261008_mpftoconv.pdf
+T021,government decision,What does the document state about the date of the announcement?,https://www.gov.scot/news/direction-for-new-data-centres/
+T022,government decision,What does the document state about the EIA screening directions it describes for named sites?,https://www.parliament.scot/~/media/committ/13490/Paper-5--PE2233
+T023,government decision,What does the document state about what it says about the appeal being recalled?,https://www.parliament.scot/~/media/committ/13490/Paper-5--PE2233
+T024,government decision,"What does the document state about the name of the instrument (direction, letter or motion)?",https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177
+T025,government decision,What does the document state about the date of the decision or vote?,https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177
+T026,government decision,What does the document state about who decided it?,https://www.parliament.scot/-/media/files/chamber-office/minutes-of-proceedings-session-7/september-2026/chamber_minutes_20260916.pdf
+T027,government decision,"What does the document state about the vote on the motion as amended (for, against, abstentions)?",https://www.parliament.scot/-/media/files/chamber-office/minutes-of-proceedings-session-7/september-2026/chamber_minutes_20260916.pdf
+T028,government decision,What does the document state about the words that pause or hold decisions?,https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177-3
+T029,government decision,"What does the document state about how long the pause lasts, or what ends it?",https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177-3
+T030,government decision,What does the document state about which applications the pause covers?,https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177-3
+T031,government decision,What does the document state about the outcome and vote on amendment S7M-01177.3?,https://www.parliament.scot/-/media/files/chamber-office/minutes-of-proceedings-session-7/september-2026/chamber_minutes_20260916.pdf
+T032,government decision,What does the document state about the outcome and vote on amendment S7M-01177.5?,https://www.parliament.scot/-/media/files/chamber-office/minutes-of-proceedings-session-7/september-2026/chamber_minutes_20260916.pdf
+T033,government decision,What does the document state about the government's position on deciding such applications before guidance?,https://www.parliament.scot/-/media/files/committees/session-7/climate-action-committee/correspondence/2026/20261008_mpftoconv.pdf
+T034,government decision,What does the document state about when guidance is to be issued?,https://www.parliament.scot/-/media/files/committees/session-7/climate-action-committee/correspondence/2026/20261008_mpftoconv.pdf
+T035,government decision,What does the document state about what the government says about monitoring applications?,https://www.parliament.scot/-/media/files/committees/session-7/climate-action-committee/correspondence/2026/20261008_mpftoconv.pdf
+T036,government decision,"What does the document state about how long the pause lasts, or what ends it?",https://www.euronews.com/2026/09/17/scotland-halts-new-hyperscale-ai-data-centre-approvals-amid-environmental-concerns
+T037,government decision,What does the document state about whether an official list of applications exists?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T038,government decision,What does the document state about the number of proposals stated?,https://www.parliament.scot/~/media/committ/13593/Environmental-Impacts-of-Hyperscale-Data-Centres-Clerk-note
+T039,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about where the site is?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T040,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the site area?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T041,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about who owns the land?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T042,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the power supply or connection stated?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T043,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the power supply or connection stated?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T044,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the water supply or cooling stated?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T045,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the investment stated?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T046,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the jobs stated?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T047,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the document's planning status?,https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf
+T048,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the agreement with a developer?,https://www.gov.uk/government/news/nda-working-with-private-developer-to-accelerate-chapelcross-hub
+T049,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the consultation or event named?,https://publicnoticeportal.uk/notice/planning/6a27dff84443e2d2602f96ba
+T050,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the planning application reference?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T051,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the date the application was received or validated?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T052,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the site address?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T053,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the applicant (company)?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T054,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the application's current status?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T055,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the site area?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T056,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the floor area stated?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre/
+T057,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the capacity in MW stated?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T058,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the investment stated?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T059,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the jobs stated?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T060,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the power supply or connection stated?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T061,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the water supply or cooling stated?,https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre
+T062,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about what it says about the EIA report and representation dates?,https://www.planninggeek.co.uk/2026/chapelcross-data-centre-eia/
+T063,"Chapelcross, near Annan (Dumfries and Galloway)",What does the document state about the power supply or connection stated?,https://www.parliament.scot/~/media/committ/13593/Environmental-Impacts-of-Hyperscale-Data-Centres-Clerk-note
+T064,"Auchtertool, Fife (Cato)",What does the document state about the site address?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T065,"Auchtertool, Fife (Cato)",What does the document state about the planning application reference?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T066,"Auchtertool, Fife (Cato)",What does the document state about the development description?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T067,"Auchtertool, Fife (Cato)",What does the document state about the case reference?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T068,"Auchtertool, Fife (Cato)",What does the document state about the decision?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T069,"Auchtertool, Fife (Cato)",What does the document state about the date of the decision or vote?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778
+T070,"Auchtertool, Fife (Cato)",What does the document state about the date the application was received or validated?,https://planning.org.uk/app/194/TE9GGMHFFWY00
+T071,"Auchtertool, Fife (Cato)",What does the document state about where the site is?,https://www.fife.gov.uk/news/2026/environmental-impact-assessment-required-for-proposed-auchtertool-data-centre
+T072,"Auchtertool, Fife (Cato)",What does the document state about what the council had earlier decided on EIA?,https://www.fife.gov.uk/news/2026/environmental-impact-assessment-required-for-proposed-auchtertool-data-centre
+T073,"Auchtertool, Fife (Cato)",What does the document state about the application's current status?,https://www.fife.gov.uk/news/2026/environmental-impact-assessment-required-for-proposed-auchtertool-data-centre
+T074,"Auchtertool, Fife (Cato)",What does the document state about the applicant (company)?,https://publicnoticeportal.uk/notice/planning/67f711c48815fd07231fd819
+T075,"Auchtertool, Fife (Cato)",What does the document state about the capacity in MW stated?,https://www.scottishconstructionnow.com/articles/plans-lodged-for-fife-data-centre
+T076,"Auchtertool, Fife (Cato)",What does the document state about the investment stated?,https://www.scottishconstructionnow.com/articles/plans-lodged-for-fife-data-centre
+T077,"Auchtertool, Fife (Cato)",What does the document state about the water supply or cooling stated?,https://www.scottishconstructionnow.com/articles/plans-lodged-for-fife-data-centre
+T078,"Auchtertool, Fife (Cato)",What does the document state about the power supply or connection stated?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T079,"Auchtertool, Fife (Cato)",What does the document state about the floor area stated?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T080,"Wester Hermiston, Edinburgh",What does the document state about the applicant (company)?,https://publicnoticeportal.uk/notice/planning/68d487c53a36f152051084f5
+T081,"Wester Hermiston, Edinburgh",What does the document state about the site address?,https://publicnoticeportal.uk/notice/planning/68d487c53a36f152051084f5
+T082,"Wester Hermiston, Edinburgh",What does the document state about the capacity in MW stated?,https://publicnoticeportal.uk/notice/planning/68d487c53a36f152051084f5
+T083,"Wester Hermiston, Edinburgh",What does the document state about the grid reference or easting and northing?,https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf
+T084,"Wester Hermiston, Edinburgh",What does the document state about the site area?,https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf
+T085,"Wester Hermiston, Edinburgh",What does the document state about the capacity in MW stated?,https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf
+T086,"Wester Hermiston, Edinburgh",What does the document state about the power supply or connection stated?,https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf
+T087,"Wester Hermiston, Edinburgh",What does the document state about the water supply or cooling stated?,https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf
+T088,"Wester Hermiston, Edinburgh",What does the document state about the EIA decision for this site?,https://www.gov.scot/news/data-centre-planning-direction/
+T089,"Wester Hermiston, Edinburgh",What does the document state about the EIA decision for this site?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T091,"South Gyle / 1 Redheughs Avenue, Edinburgh",What does the document state about the case reference?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582
+T092,"South Gyle / 1 Redheughs Avenue, Edinburgh",What does the document state about the planning application reference?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582
+T093,"South Gyle / 1 Redheughs Avenue, Edinburgh",What does the document state about the grid reference or easting and northing?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582
+T094,"South Gyle / 1 Redheughs Avenue, Edinburgh",What does the document state about what it says about the appeal being recalled?,https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582
+T095,"South Gyle / 1 Redheughs Avenue, Edinburgh",What does the document state about the capacity in MW stated?,"https://www.holyrood.com/news/view,scottish-ministers-tighten-planning-approval-process-for-largescale-data-centres"
+T096,"Larbert, Falkirk",What does the document state about the planning application reference?,https://publicnoticeportal.uk/notice/planning/6a29fb2aa5ec55a0e5e2444e
+T097,"Larbert, Falkirk",What does the document state about the site address?,https://publicnoticeportal.uk/notice/planning/6a29fb2aa5ec55a0e5e2444e
+T098,"Larbert, Falkirk",What does the document state about the capacity in MW stated?,https://publicnoticeportal.uk/notice/planning/6a29fb2aa5ec55a0e5e2444e
+T099,"Larbert, Falkirk",What does the document state about the date the application was received or validated?,https://plota.co.uk/application/228368
+T100,"Larbert, Falkirk",What does the document state about the floor area stated?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T101,"Larbert, Falkirk",What does the document state about the application's current status?,https://www.scotsman.com/news/politics/fate-of-falkirk-data-centre-set-to-be-decided-by-scottish-government-9358833
+T102,"Hurlford, East Ayrshire (Rufus)",What does the document state about the capacity in MW stated?,https://spice-spotlight.scot/2026/06/26/data-centres/
+T103,"Hurlford, East Ayrshire (Rufus)",What does the document state about the site address?,https://www.theconstructionindex.co.uk/planning-leads/Kilmarnock/view/1224537
+T104,"Ravenscraig, North Lanarkshire",What does the document state about the capacity in MW stated?,https://www.parliament.scot/~/media/committ/13694/Environmental-Impacts-of-Hyperscale-Data-Centres-Clerk-note
+T105,Lanarkshire AI Growth Zone,What does the document state about the capacity in MW stated?,https://www.parliament.scot/~/media/committ/13593/Environmental-Impacts-of-Hyperscale-Data-Centres-Clerk-note

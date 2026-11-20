@@ -699,7 +699,7 @@ def topic_sites(sites: dict):
                 "site_id": r["site_id"], "name": r["site_name"], "operator": r["operator"], "kind": r["kind"],
                 "country": r["country"], "admin_region": r["state_or_region"], "locality": r["locality"],
                 "lat": r["lat"], "lon": r["lon"], "register_source": f"{folder.name}: " + r["source_url"],
-                "notes": r["notes"][:300]}
+                "notes": r["notes"]}
 
 
 def topic_side(r: dict, entries: dict) -> str:

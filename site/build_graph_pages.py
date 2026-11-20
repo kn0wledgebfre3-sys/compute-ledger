@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -442,6 +443,32 @@ def side_panel(ctx, nid, P, ring, kind_word, ident, downloads):
 
 # --------------------------------------------------------------------------------------------------- country pages
 
+DIRECTORY_ENTRY = "global-datacentre-counts-directory-and-records"
+DC_KINDS = {"datacenter", "mixed_building_with_datacenter", "telecom_exchange", "crypto_to_ai_conversion"}
+
+
+def how_many(ctx, cc, name, sites, P):
+    """the directory's own count beside the datacentre sites public records name here: the same section on every country's page"""
+    rows = sorted((r for r in ctx.by_subject.get(f"entry:{DIRECTORY_ENTRY}", []) if f"({cc})" in r["metric_detail"]), key=lambda r: r["period_end"], reverse=True)
+    dc = [s for s in sites if s["kind"] in DC_KINDS]
+    placed = sum(1 for s in dc if s["lat"])
+    the = "the " if name.startswith(("United ", "Netherlands", "Philippines", "Democratic Republic")) else ""
+    named = (f"The ledger names <b>{len(dc):,}</b> datacentre {'site' if len(dc) == 1 else 'sites'} in {the}{e(name)}, each from a permit, planning decision, "
+             f"filing or other public document ({placed:,} on the map).")
+    if rows:
+        r = rows[0]
+        y, m, d = r["period_end"].split("-")
+        when = f"{int(d)} {['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][int(m) - 1]} {y}"
+        listed = (f"A commercial directory, {e(r['source_publisher'])}, lists <b>{int(float(r['value'])):,}</b> datacentres there "
+                  f"(read on {when}). Operators list their own facilities; the count gives no size and does not say what runs in them, so it is the directory's claim, not a record.")
+    else:
+        listed = f"No directory count has been read for {the}{e(name)}."
+    doc = "doc:d-" + hashlib.sha1(rows[0]["source_url"].strip().encode("utf-8")).hexdigest()[:10] if rows else ""
+    note = ("Neither number says what share of the capacity serves AI: no record or listing the ledger has read states it. "
+            f"The directory page: {ctx.ref(doc, P)} · the entry that compares the two: {ctx.ref('entry:' + DIRECTORY_ENTRY, P)}." if rows else "")
+    return section("How many datacentres", "", "The same on every country's page.", f"<p>{named}</p><p>{listed}</p><p class=\"m\">{note}</p>")
+
+
 def country_page(ctx, cc, region_rows):
     g = ctx.g
     nid = f"country:{cc}"
@@ -484,6 +511,7 @@ def country_page(ctx, cc, region_rows):
             tiles([(f"{len(sites):,}", f"sites, {placed:,} placed"), (f"{len(orgs):,}", "organisations listed at its sites"),
                    (f"{len(figs):,}", f"figures: {n_rec:,} from records, {n_cl:,} claims"), (f"{len(docs_used):,}", "documents behind them")])]
     eb = f"country={e(cc)}"
+    body.append(how_many(ctx, cc, name, sites, P))
     body.append(section("What the public record holds", "gapc", "For its sites and for the country as a whole: one cell per topic, the same on every country's page.",
                         topic_grid(figs, eb, P)))
     if region_rows:

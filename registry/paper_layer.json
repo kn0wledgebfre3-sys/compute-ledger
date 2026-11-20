@@ -957,5 +957,38 @@
   "verification_status": "partial",
   "verification_note": "Company disclosures were read in the primary documents, and the quoted totals were re-read on 2026-10-23. Registry attempts on 2026-10-23: Verra (application shell), ACR/ICE GreenTrace (shell; login required to download), Puro (registry.puro.earth retirement pages render no fields; puro.earth retirement statements render but none naming the seven was surfaced by search), Isometric (project page shows aggregate retirements only), CarbonPlan OffsetsDB (updates paused; carbonplan.org/transactions client error). Climate Action Reserve's and Gold Standard's registries were not reached: no search result gave a URL for a CAR retirement report or a Gold Standard retirement record. A Quantum Commodity Intelligence item from registry data ('VCM Corporates: Microsoft leads with 171,000 t of IFM retirements', 9 December 2025) is behind a login; its figure is not used. Microsoft's AB 1305 table quantities are purchased vintage volumes, not retirements. The Deloitte review it cites covers Section 1 of the 2024 fact sheet, not this report. 2026-10-24: Isometric's article on the Vaulted Deep offtake is a company statement and moved to claim.",
   "last_checked": "2026-10-24"
+ },
+ {
+  "id": "global-datacentre-counts-directory-and-records",
+  "country": "Global",
+  "region": "Global",
+  "site_or_subject": "How many datacentres each country has: a commercial directory's count, beside the sites public records name",
+  "operator": "All operators",
+  "lat": null,
+  "lon": null,
+  "category": "accounting",
+  "record": "No public record read for the ledger counts every datacentre in a country. Public records name sites one at a time, where a permit, a planning decision, a benchmarking filing, a utility's or regulator's document or an operator's securities filing names them: as of 20 November 2026 the ledger names 825 datacentre sites this way, 683 in the United States, 68 in the United Kingdom, 40 in Ireland, 11 in Singapore and 23 elsewhere. The UK Parliament's Office of Science and Technology counts around 450 large datacentres in the UK (POSTnote 762, March 2026).",
+  "record_sources": [
+   {
+    "title": "What are data centres and how sustainable are they? (POSTnote 762)",
+    "url": "https://www.wired-gov.net/wg/news.nsf/print/What+are+data+centres+and+how+sustainable+are+they+18032026092500",
+    "publisher": "UK Parliament, Parliamentary Office of Science and Technology",
+    "date": "2026-03-17"
+   }
+  ],
+  "claim": "Data Center Map, a commercial directory whose listings \"are primarily submitted and maintained directly by the operators\", lists 13,373 datacentres from 185 countries (read on 20 November 2026): 5,149 in the United States, 608 in the United Kingdom, 583 in Germany, 488 in China, 402 in France, 360 in India, 345 in Australia, 306 in Canada, 135 in Ireland and 65 in Singapore. It describes its database as \"data center operators and service providers, offering colocation, cloud and connectivity\", from \"hyperscale data centers to edge data centers\".",
+  "claim_sources": [
+   {
+    "title": "Data Centers - Database (datacentres listed by country)",
+    "url": "https://www.datacentermap.com/datacenters.html",
+    "publisher": "Data Center Map",
+    "date": "2026-11-20"
+   }
+  ],
+  "gap": "The two counts measure different things. For the 50 countries with a page in the ledger, the directory lists 11,803 datacentres against the 825 sites the ledger names from records: 608 against 68 in the UK, 135 against 40 in Ireland, 5,149 against 683 in the United States. The directory counts the buildings operators choose to list; it gives no size and does not say what runs in them. Public records name mostly the larger sites, those that need an air or environmental permit or a planning decision, and miss buildings that never need one. Neither says what share of any country's datacentre capacity serves AI: no record or listing read for this entry states it.",
+  "confidence": "medium",
+  "verification_status": "verified",
+  "verification_note": "The directory's counts for the 50 countries and its total were read twice, independently, on 20 November 2026, and all agreed (review/directory_counts_2026-11-20/). The directory changes daily, so the counts are dated. The ledger's own counts are of its site register on the same date; each country's page gives the current number.",
+  "last_checked": "2026-11-20"
  }
 ]

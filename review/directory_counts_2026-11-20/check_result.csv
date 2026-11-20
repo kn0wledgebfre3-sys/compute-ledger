@@ -1,0 +1,52 @@
+file,location,what_is_wrong,evidence,suggested_fix,severity,resolution
+sites/topics/directory/figures.csv,All countries,First reading: 13373. Second reading: 13373.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ARE (United Arab Emirates),First reading: 62. Second reading: 62.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ARG (Argentina),First reading: 48. Second reading: 48.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,AUS (Australia),First reading: 345. Second reading: 345.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,AUT (Austria),First reading: 55. Second reading: 55.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,BEL (Belgium),First reading: 54. Second reading: 54.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,BRA (Brazil),First reading: 243. Second reading: 243.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,BTN (Bhutan),First reading: 4. Second reading: 4.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,CAN (Canada),First reading: 306. Second reading: 306.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,CHL (Chile),First reading: 68. Second reading: 68.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,CHN (China),First reading: 488. Second reading: 488.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,COD (DR Congo),First reading: 5. Second reading: 5.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,DEU (Germany),First reading: 583. Second reading: 583.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,DNK (Denmark),First reading: 101. Second reading: 101.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,EGY (Egypt),First reading: 21. Second reading: 21.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ESP (Spain),First reading: 263. Second reading: 263.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,EST (Estonia),First reading: 15. Second reading: 15.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ETH (Ethiopia),First reading: 8. Second reading: 8.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,FIN (Finland),First reading: 154. Second reading: 154.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,FRA (France),First reading: 402. Second reading: 402.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,GBR (United Kingdom),First reading: 608. Second reading: 608.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,GHA (Ghana),First reading: 10. Second reading: 10.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,IDN (Indonesia),First reading: 216. Second reading: 216.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,IND (India),First reading: 360. Second reading: 360.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,IRL (Ireland),First reading: 135. Second reading: 135.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ISR (Israel),First reading: 67. Second reading: 67.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ITA (Italy),First reading: 273. Second reading: 273.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,JPN (Japan),First reading: 268. Second reading: 268.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,KAZ (Kazakhstan),First reading: 19. Second reading: 19.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,KEN (Kenya),First reading: 25. Second reading: 25.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,KOR (South Korea),First reading: 117. Second reading: 117.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,MAR (Morocco),First reading: 21. Second reading: 21.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,MEX (Mexico),First reading: 71. Second reading: 71.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,MMR (Myanmar),First reading: 7. Second reading: 7.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,MYS (Malaysia),First reading: 135. Second reading: 135.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,NGA (Nigeria),First reading: 33. Second reading: 33.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,NLD (The Netherlands),First reading: 200. Second reading: 200.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,NOR (Norway),First reading: 117. Second reading: 117.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,PHL (Philippines),First reading: 45. Second reading: 45.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,PRY (Paraguay),First reading: 11. Second reading: 11.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,RUS (Russia),First reading: 191. Second reading: 191.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,RWA (Rwanda),First reading: 7. Second reading: 7.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,SAU (Saudi Arabia),First reading: 61. Second reading: 61.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,SGP (Singapore),First reading: 65. Second reading: 65.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,SWE (Sweden),First reading: 126. Second reading: 126.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,THA (Thailand),First reading: 71. Second reading: 71.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,TWN (Taiwan),First reading: 44. Second reading: 44.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,URY (Uruguay),First reading: 10. Second reading: 10.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,USA (USA),First reading: 5149. Second reading: 5149.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,VNM (Vietnam),First reading: 48. Second reading: 48.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree
+sites/topics/directory/figures.csv,ZAF (South Africa),First reading: 68. Second reading: 68.,https://www.datacentermap.com/datacenters.html,,confirmed,applied: the two readings agree

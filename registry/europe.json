@@ -1912,5 +1912,188 @@
   "last_checked": "2026-11-17",
   "verification_note": "Read twice on 2026-11-17: three first readers found the documents and took the figures; four second readers, not shown those values, read the same documents for the same items (review/uk_round_2026-11-17/). Only figures on which the two readings agree enter the ledger. Both read the documents through a text-extraction step, as the publishers' servers could not be reached directly; page numbers may be off by one.",
   "verification_status": "partial"
+ },
+ {
+  "id": "uk-scotland-datacentre-directions-2026",
+  "country": "United Kingdom",
+  "region": "Scotland",
+  "site_or_subject": "Scotland: planning directions for datacentres over 50MW, and the Parliament's resolution on decisions, 2026",
+  "operator": "Scottish Ministers; applicants named in the UK site list",
+  "lat": 55.95,
+  "lon": -3.19,
+  "category": "land_biodiversity",
+  "record": "The Town and Country Planning (Notification of Applications) (Data Centres exceeding 50MW Power Capacity) (Scotland) Direction 2026, made under Regulation 31 of the Town and Country Planning (Development Management Procedure) (Scotland) Regulations 2013 and in force on 17 August 2026, requires a planning authority, within seven days of the validation date, to send the Scottish Ministers listed information on an application for a data centre exceeding 50MW power capacity; the Chief Planner's letter says it 'applies to both new planning applications and any that are currently being considered' and will enable 'strategic oversight and monitoring of the progress of the pipeline of applications'. No end date is stated. The Town and Country Planning (Environmental Impact Assessment) (Data Centres exceeding 50MW Power Capacity) (Scotland) Direction, in force on 17 September 2026 (Chief Planner letter of 16 September 2026), makes such development EIA development, defines power capacity as 'the total proposed electrical power available to the data centre, typically expressed in megawatts (MW)', applies to both new and existing applications and 'will be reviewed periodically'. On 17 August 2026 the Scottish Government also issued directions requiring EIA for data centres at locations in Fife and Edinburgh: for Auchtertool, application 26/01243/PPP, the Planning and Environmental Appeals Division records 'EIA Required' (case EIA-250-002), and the Government's release links an EIA decision for Wester Hermiston. Ministers recalled the South Gyle appeal (PPA-230-2794), which 'is currently being considered by Scottish Ministers'. On 16 September 2026 the Parliament agreed motion S7M-01177, Hyperscale Data Centres, as amended (For 80, Against 26, Abstentions 15). Amendment S7M-01177.3 (agreed: For 94, Against 26, Abstentions 0) asks the Government to report back on national planning guidance by the end of the calendar year and publish it within 12 months, and 'believes that no decisions on planning or consenting in relation to such applications should be made until this has been completed', for current and potential hyperscale data centre planning applications. On 8 October 2026 the Minister for Public Finance wrote to the Climate Action Committee that the Government 'does not anticipate any such applications being determined' by planning authorities before the planning guidance is issued, expected before Christmas 2026, and is 'closely monitoring live data centre applications and their intended determination timescales'. Applications read: Chapelcross, near Annan (26/1649/PIP, validated 28 September 2026, as reported); Auchtertool (26/01243/PPP, validated 25 May 2026); Larbert (P/26/0237/FUL, validated 4 June 2026), described in Falkirk Council's notice as 'Construction of an AI Data Centre with 300MW Demand Utility Capacity'; Wester Hermiston (screening request, December 2025).",
+  "record_sources": [
+   {
+    "title": "Chief Planner letter: planning notification direction on data centres (August 2026)",
+    "url": "https://www.gov.scot/publications/planning-notification-direction-letter-data-centres-august-2026/",
+    "publisher": "Scottish Government",
+    "date": "2026-08-17"
+   },
+   {
+    "title": "Data centre planning direction (news release)",
+    "url": "https://www.gov.scot/news/data-centre-planning-direction/",
+    "publisher": "Scottish Government",
+    "date": "2026-08-17"
+   },
+   {
+    "title": "Chief Planner letter: EIA direction on data centres",
+    "url": "https://www.gov.scot/publications/chief-planner-letter-eia-direction-on-data-centres/",
+    "publisher": "Scottish Government",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Direction for new data centres (news release)",
+    "url": "https://www.gov.scot/news/direction-for-new-data-centres/",
+    "publisher": "Scottish Government",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Motion S7M-01177: Hyperscale Data Centres",
+    "url": "https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177",
+    "publisher": "Scottish Parliament",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Amendment S7M-01177.3 to motion S7M-01177",
+    "url": "https://www.parliament.scot/chamber-and-committees/votes-and-motions/S7M-01177-3",
+    "publisher": "Scottish Parliament",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Minutes of Proceedings, 16 September 2026",
+    "url": "https://www.parliament.scot/-/media/files/chamber-office/minutes-of-proceedings-session-7/september-2026/chamber_minutes_20260916.pdf",
+    "publisher": "Scottish Parliament",
+    "date": "2026-09-16"
+   },
+   {
+    "title": "Letter from the Minister for Public Finance to the Convener of the Climate Action Committee, 8 October 2026",
+    "url": "https://www.parliament.scot/-/media/files/committees/session-7/climate-action-committee/correspondence/2026/20261008_mpftoconv.pdf",
+    "publisher": "Scottish Government (published by the Scottish Parliament)",
+    "date": "2026-10-08"
+   },
+   {
+    "title": "Petition PE2233: clerk's paper, with a SPICe briefing and the Scottish Government's submission",
+    "url": "https://www.parliament.scot/~/media/committ/13490/Paper-5--PE2233",
+    "publisher": "Scottish Parliament",
+    "date": ""
+   },
+   {
+    "title": "Case EIA-250-002: Land to the North of Camilla Road, Gleniston, Auchtertool",
+    "url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128778",
+    "publisher": "Scottish Government, Planning and Environmental Appeals Division",
+    "date": "2026-08-17"
+   },
+   {
+    "title": "Case PPA-230-2794: 1 Redheughs Avenue, South Gyle, Edinburgh",
+    "url": "https://www.dpea.scotland.gov.uk/CaseDetails.aspx?id=128582",
+    "publisher": "Scottish Government, Planning and Environmental Appeals Division",
+    "date": "2026-08-17"
+   },
+   {
+    "title": "Environmental Impact Assessment required for proposed Auchtertool data centre (news release)",
+    "url": "https://www.fife.gov.uk/news/2026/environmental-impact-assessment-required-for-proposed-auchtertool-data-centre",
+    "publisher": "Fife Council",
+    "date": "2026-08"
+   },
+   {
+    "title": "Application 26/01243/PPP (copy of the council's register entry)",
+    "url": "https://planning.org.uk/app/194/TE9GGMHFFWY00",
+    "publisher": "Fife Council (copy published by planning.org.uk)",
+    "date": "2026-05-25"
+   },
+   {
+    "title": "Notice of planning application P/26/0237/FUL",
+    "url": "https://publicnoticeportal.uk/notice/planning/6a29fb2aa5ec55a0e5e2444e",
+    "publisher": "Falkirk Council (notice in the Falkirk Herald, via Public Notice Portal)",
+    "date": "2026-06-11"
+   },
+   {
+    "title": "Application P/26/0237/FUL (copy of the council's register entry)",
+    "url": "https://plota.co.uk/application/228368",
+    "publisher": "Falkirk Council (copy published by Plota)",
+    "date": "2026-06-04"
+   },
+   {
+    "title": "Chapelcross Development Framework (November 2024)",
+    "url": "https://www.dumfriesandgalloway.gov.uk/sites/default/files/2024-11/Chapelcross-Development-Framework-Nov-2024.pdf",
+    "publisher": "Dumfries and Galloway Council",
+    "date": "2024-11"
+   },
+   {
+    "title": "NDA working with private developer to accelerate Chapelcross hub",
+    "url": "https://www.gov.uk/government/news/nda-working-with-private-developer-to-accelerate-chapelcross-hub",
+    "publisher": "Nuclear Decommissioning Authority",
+    "date": "2025-11-19"
+   },
+   {
+    "title": "Data centres (SPICe Spotlight)",
+    "url": "https://spice-spotlight.scot/2026/06/26/data-centres/",
+    "publisher": "Scottish Parliament Information Centre (SPICe)",
+    "date": "2026-06-26"
+   }
+  ],
+  "claim": "Applicants' and developers' figures as reported: Chapelcross (CX Tech Limited), approximately 1GW of 'data capacity', approximately £16.5billion of investment, 750 construction and around 450 permanent direct jobs, a roughly 55-hectare campus with up to 162,000 square metres of floorspace, and plans for 2GW of renewable generation within 20km; Auchtertool (Cato, ILI Group), 600MW and around £5 billion, with annual electricity consumption starting at 400GWh as the developer states it; Wester Hermiston (Apatura DC Project 11 Ltd), 200MW demand utility capacity on 30.5 hectares; Larbert, two buildings with a floor area of 128,863 square metres; Hurlford (Rufus, ILI Rufus Limited), 'badged as 540MW'.",
+  "claim_sources": [
+   {
+    "title": "Chapelcross data centre (Planning Geek article)",
+    "url": "https://www.planninggeek.co.uk/2026/chapelcross-data-centre/",
+    "publisher": "Planning Geek (press)",
+    "date": "2026-10-02"
+   },
+   {
+    "title": "Chapelcross data centre EIA (Planning Geek article)",
+    "url": "https://www.planninggeek.co.uk/2026/chapelcross-data-centre-eia/",
+    "publisher": "Planning Geek (press)",
+    "date": "2026-10-31"
+   },
+   {
+    "title": "1,000 objections lodged against plans for large data centre in Dumfries and Galloway",
+    "url": "https://www.itv.com/news/border/2026-09-30/plans-submitted-for-what-could-be-worlds-largest-data-centre",
+    "publisher": "ITV News (press)",
+    "date": "2026-10-07"
+   },
+   {
+    "title": "Plans lodged for Fife data centre",
+    "url": "https://www.scottishconstructionnow.com/articles/plans-lodged-for-fife-data-centre",
+    "publisher": "Scottish Construction Now (press)",
+    "date": "2026-06-03"
+   },
+   {
+    "title": "Pre-application consultation notice: data centre near Camilla, Auchtertool (ILI Cato Ltd)",
+    "url": "https://publicnoticeportal.uk/notice/planning/67f711c48815fd07231fd819",
+    "publisher": "ILI Group PLC (public notice, via Public Notice Portal)",
+    "date": "2025-04-10"
+   },
+   {
+    "title": "Notice of intention to apply: AI data centre campus, West of Hermiston House Road, Currie (Apatura DC Project 11 Ltd)",
+    "url": "https://publicnoticeportal.uk/notice/planning/68d487c53a36f152051084f5",
+    "publisher": "Apatura DC Project 11 Ltd (public notice, via Public Notice Portal)",
+    "date": "2025-09-25"
+   },
+   {
+    "title": "Second request for screening opinion: data centre campus, Wester Hermiston, Edinburgh",
+    "url": "https://cityscope-images.s3.eu-north-1.amazonaws.com/edinburgh/forms/2505576SCR_application_form.pdf",
+    "publisher": "Apatura DC Project 11 Ltd (copy hosted by a planning-data site)",
+    "date": "2025-12"
+   },
+   {
+    "title": "Data centre, Land at Purroch Farm, Mauchline Road, Hurlford (planning lead)",
+    "url": "https://www.theconstructionindex.co.uk/planning-leads/Kilmarnock/view/1224537",
+    "publisher": "The Construction Index (press)",
+    "date": "2025-12-25"
+   },
+   {
+    "title": "Data centres (SPICe Spotlight)",
+    "url": "https://spice-spotlight.scot/2026/06/26/data-centres/",
+    "publisher": "Scottish Parliament Information Centre (SPICe)",
+    "date": "2026-06-26"
+   }
+  ],
+  "gap": "There is no single, official source of data on the number, location or size of current and proposed data centres in Scotland (SPICe); a campaign group's submission to the Climate Action Committee counts 23 proposals for hyperscale data centres in planning or pre-planning, from its own map. The motion is a resolution of the Parliament and the Minister's letter states an expectation; neither is a legal bar on decisions, and neither gives an end date other than the guidance. Chapelcross's application and EIA Report are known from press; the council's register and the EIA Report were not read, so the campus's backup power and water use are not given here from the applicant's documents. The Wester Hermiston EIA decision could not be opened. The capacities are given in different terms (data capacity, demand utility capacity, 'badged as'), so they are not added together. Ravenscraig and the Lanarkshire AI Growth Zone appear in submissions to the Climate Action Committee; no application for either was read.",
+  "confidence": "medium",
+  "last_checked": "2026-11-20",
+  "verification_note": "Read twice on 2026-11-20: a first reader found the documents and took 105 items; two second readers, not shown those values, read the same documents for the same items (review/scotland_round_2026-11-20/). Only items on which the two readings agree enter the ledger. The Chapelcross application is known from press only.",
+  "verification_status": "partial"
  }
 ]

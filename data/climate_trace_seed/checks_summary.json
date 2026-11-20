@@ -1,6 +1,6 @@
 {
- "checks": 31,
- "findings_in_table": 2988,
+ "checks": 33,
+ "findings_in_table": 3144,
  "random_sample_figures": {
   "n": 166,
   "verdicts": {
@@ -28,15 +28,15 @@
   "differences_still_as_checked": 1
  },
  "status_now": {
+  "as recorded with the finding: applied": 402,
   "as recorded with the finding: confirmed; not entered as a figure": 310,
-  "as recorded with the finding: applied": 274,
   "as recorded with the finding: not placed": 242,
   "quoted text no longer present": 232,
   "now on the claim side": 180,
+  "as recorded with the finding: not used": 174,
   "as recorded with the finding: confirmed": 168,
   "resolved against the permit text": 158,
   "now on the record side": 155,
-  "as recorded with the finding: not used": 146,
   "confirmed at the check": 118,
   "as recorded with the finding: not sent for a second reading (not used as a figure)": 104,
   "no longer in the table in the form checked": 81,
@@ -153,7 +153,7 @@
   "as recorded with the finding: applied in uk-datacentre-planning-decisions-2023-2026 (gbr-edinburgh-south-gyle)": 1,
   "as recorded with the finding: applied in uk-datacentre-planning-decisions-2023-2026 (gbr-park-royal-premier-park)": 1
  },
- "entries_with_findings": 186,
+ "entries_with_findings": 187,
  "per_entry": {
   "ae-abudhabi-uae-us-ai-campus-5gw": {
    "sides-2026-10-23": 3,
@@ -671,6 +671,9 @@
   },
   "uk-public-money-ai-compute": {
    "uk-round-2026-11-17": 75
+  },
+  "uk-scotland-datacentre-directions-2026": {
+   "scotland-round-2026-11-20": 105
   },
   "uk-south-mimms-dc01uk": {
    "browser-fetch-2026-10-24": 2,

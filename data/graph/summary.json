@@ -1,35 +1,35 @@
 {
- "nodes": 7093,
- "links": 12558,
+ "nodes": 7201,
+ "links": 12760,
  "nodes_by_type": {
-  "check": 31,
+  "check": 33,
   "country": 52,
-  "doc": 1037,
-  "entry": 216,
-  "figure": 4281,
-  "org": 399,
+  "doc": 1063,
+  "entry": 218,
+  "figure": 4349,
+  "org": 404,
   "party": 14,
   "region": 79,
-  "site": 984
+  "site": 989
  },
  "links_by_relation": {
-  "about": 4281,
+  "about": 4349,
   "acts_for": 2,
   "assembles_for": 3,
   "based_in": 44,
-  "cites": 1099,
+  "cites": 1128,
   "contracts_power_from": 7,
   "examined": 162,
   "fabricates_for": 8,
   "leases_site_to": 5,
-  "listed_operator": 650,
-  "located_in": 1063,
+  "listed_operator": 655,
+  "located_in": 1068,
   "names": 204,
   "owns": 46,
   "packages_for": 8,
   "published_by": 122,
-  "read_again": 398,
-  "read_from": 4281,
+  "read_again": 425,
+  "read_from": 4349,
   "refines_for": 139,
   "renamed_as": 1,
   "supplies_fuel_to": 9,
@@ -38,9 +38,9 @@
   "supplies_water_to": 21
  },
  "links_by_side": {
-  "claim": 2031,
-  "ledger table": 2643,
-  "record": 7884
+  "claim": 2171,
+  "ledger table": 2680,
+  "record": 7909
  },
  "operator_names_not_matched": {}
 }
